@@ -1,0 +1,104 @@
+{
+  "main": {
+    "id": "d2a4e5bbfcde338e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef1cae381c2b4840",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/2021-03-19-19-06.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9ae5698d981035a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0e1fdcf88b84068",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65a72b550754ce3e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "6a0ac590c9e71a5c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6d69c515ffc64f6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5bb7bb254f5d3d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "277600ea1c8352c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "zettelkasten/2021-03-19-19-06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4591e3b452235a93",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "zettelkasten/2021-03-19-19-06.md",
+    "dailies/2021-03-19.md"
+  ]
+}
