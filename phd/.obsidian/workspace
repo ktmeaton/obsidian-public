@@ -1,46 +1,30 @@
 {
   "main": {
-    "id": "13d38c8b033b83ff",
+    "id": "35dba11e4a7ae7f2",
     "type": "split",
     "children": [
       {
-        "id": "40bd4b96436d9eb5",
+        "id": "fc017817ed47b97b",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/2021-03-19-50.md",
-            "mode": "source"
-          }
-        },
-        "group": "676f76b413818535"
-      },
-      {
-        "id": "1e6ebd71bd128b29",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/2021-03-19-50.md",
-            "mode": "preview"
-          }
-        },
-        "group": "676f76b413818535"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "60538fa76c95afd0",
+    "id": "951bcc5230aa7e72",
     "type": "split",
     "children": [
       {
-        "id": "702794cadf2acca7",
+        "id": "ab74201e4c495000",
         "type": "tabs",
         "children": [
           {
-            "id": "177b373aa688f9a7",
+            "id": "b342f914b30e0b55",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +32,7 @@
             }
           },
           {
-            "id": "8a400ef40a533227",
+            "id": "9c5aa3c339a1895b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -69,20 +53,19 @@
     "width": 300
   },
   "right": {
-    "id": "a43f0dabbf0b836c",
+    "id": "279b08d31ac70634",
     "type": "split",
     "children": [
       {
-        "id": "7a78ccdec46d8a27",
+        "id": "05263ac68b692dab",
         "type": "tabs",
         "children": [
           {
-            "id": "c16df45c314f2292",
+            "id": "d6ac414474be083f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/2021-03-19-50.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,13 +81,5 @@
     "width": 300,
     "collapsed": true
   },
-  "lastOpenFiles": [
-    "zettelkasten/2021-03-19-50.md",
-    "zettelkasten/2021-03-20-05.md",
-    "dailies/21-03-19.md",
-    "zettelkasten/2021-03-19-51.md",
-    "figures/valtuena_2017.md",
-    "figures/valtuena_2017_fig2.jpg",
-    "figures/Untitled.md"
-  ]
+  "lastOpenFiles": []
 }
