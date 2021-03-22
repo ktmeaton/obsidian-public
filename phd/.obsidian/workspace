@@ -4,13 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "fc017817ed47b97b",
+        "id": "208f84ada8db834a",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
-        }
+          "type": "markdown",
+          "state": {
+            "file": "log/2021-03-14.md",
+            "mode": "source"
+          }
+        },
+        "group": "af549b551816b9a8"
+      },
+      {
+        "id": "fa335ee23e92c53a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "log/2021-03-14.md",
+            "mode": "preview"
+          }
+        },
+        "group": "af549b551816b9a8"
       }
     ],
     "direction": "vertical"
@@ -47,6 +63,20 @@
             }
           }
         ]
+      },
+      {
+        "id": "b604c5485be9b110",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6279620d7893689",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "log/2021-03-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -73,13 +104,44 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "80313538bb4794c4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fa1de0c65b907b01",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "log/2021-03-14.md"
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 178.5
   },
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "log/2021-03-14.md",
+    "log/2021-03-16.md",
+    "log/2021-03-21.md",
+    "log/2021-03-15.md",
+    "templates/Daily.md",
+    "{{tp_yesterday}}.md",
+    "templates/Untitled.md",
+    "people/Hendrik Poinar.md",
+    "people/Julia Gamble.md",
+    "people/Collaborator B.md"
+  ]
 }

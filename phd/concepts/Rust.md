@@ -1,6 +1,6 @@
 # Rust
 
-Here I'm working on example concept from [[@mcnamara2021rust]]:
+Here I'm working on example concept from [[@valtuena_2017_stone-age-plague]]:
 
 ```rust
 fn main() {

@@ -7,7 +7,7 @@ This link appears many times,[^repeated] so uses a footnote. A reference[^repeat
 This concept only appeared once, so just paste link. 
 https://en.wikipedia.org/wiki/Mental_state
 
-[[Collaborator A]] has a good idea about this, but [[Supervisor]] thinks that this is wrong. I need to check.[^repeated]
+[[Julia Gamble]] has a good idea about this, but [[Hendrik Poinar]] thinks that this is wrong. I need to check.[^repeated]
 
 ## References
 [^repeated]: Flow (psychology): https://en.wikipedia.org/wiki/Flow_(psychology)

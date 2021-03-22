@@ -2,5 +2,5 @@
 A project description will need to go here.
 
 ## People
-- [[Supervisor]]
-- [[Collaborator B]]
+- [[Hendrik Poinar]]
+- [[Jesper Boldsen]]
