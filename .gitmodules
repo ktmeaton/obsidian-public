@@ -1,3 +1,6 @@
 [submodule "slides"]
 	path = slides
 	url = https://github.com/ktmeaton/slides.git
+[submodule "phd/slides"]
+	path = phd/slides
+	url = https://github.com/ktmeaton/slides.git

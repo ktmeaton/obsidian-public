@@ -8,8 +8,11 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "log/2021-03-22.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -64,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 464.5
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -81,6 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "log/2021-03-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +109,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "log/2021-03-22.md"
+              }
             }
           },
           {
@@ -139,6 +145,7 @@
     "width": 197.5
   },
   "lastOpenFiles": [
+    "log/2021-03-22.md",
     "slides/2021/03/23.md.md",
     "kanban/Kanban.md",
     "slides/2021/03/06_Workshop.md",
@@ -147,7 +154,6 @@
     "Untitled.md",
     "literature/rasmussen2015EarlyDivergentStrains.md",
     "literature/eroshenko2021EvolutionCirculationYersinia.md",
-    "literature/andradesvaltuena2017StoneAgePlague.md",
-    "images/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic_fig8.jpg"
+    "literature/andradesvaltuena2017StoneAgePlague.md"
   ]
 }
