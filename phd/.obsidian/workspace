@@ -4,29 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "208f84ada8db834a",
+        "id": "1ddd5e41c1f6ae4c",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "log/2021-03-14.md",
-            "mode": "source"
-          }
-        },
-        "group": "af549b551816b9a8"
-      },
-      {
-        "id": "fa335ee23e92c53a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "log/2021-03-14.md",
-            "mode": "preview"
-          }
-        },
-        "group": "af549b551816b9a8"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -53,7 +37,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#backlog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,11 +49,11 @@
         ]
       },
       {
-        "id": "b604c5485be9b110",
+        "id": "fde9fc2579baeace",
         "type": "tabs",
         "children": [
           {
-            "id": "b6279620d7893689",
+            "id": "36f4026e5d10d540",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -80,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 449
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -89,6 +73,7 @@
       {
         "id": "05263ac68b692dab",
         "type": "tabs",
+        "dimension": 41.39784946236559,
         "children": [
           {
             "id": "d6ac414474be083f",
@@ -96,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "log/2021-03-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,27 +105,48 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "log/2021-03-14.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "a269e1beb77c506a",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "a6bd9f8e1f734c87",
+        "type": "tabs",
+        "dimension": 58.602150537634415,
+        "children": [
+          {
+            "id": "8cbfeff68471d634",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 178.5
+    "width": 197.5
   },
   "lastOpenFiles": [
-    "log/2021-03-14.md",
-    "log/2021-03-16.md",
-    "log/2021-03-21.md",
-    "log/2021-03-15.md",
-    "templates/Daily.md",
-    "{{tp_yesterday}}.md",
-    "templates/Untitled.md",
+    "templates/Literature.md",
+    "templates/People.md",
+    "Saini (2017) – Inferior.md",
     "people/Hendrik Poinar.md",
     "people/Julia Gamble.md",
-    "people/Collaborator B.md"
+    "templates/Daily.md",
+    "people/Marie-Helene B. Hardy.md",
+    "people/Jesper Boldsen.md",
+    "projects/plague-denmark.md",
+    "templates/Untitled.md"
   ]
 }

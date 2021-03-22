@@ -1,8 +1,10 @@
-[[Project A]]
-# Project A CHANGELOG
+# plague-phylogeography CHANGELOG
+
+[[plague-phylogeography]]
+
 Many open source projects have a changelog for tracking project history – this typically exists as a local `CHANGELOG.md` file.
 
-You can track history for [[Project A]] is this changelog here.
+You can track history for [[plague-phylogeography]] is this changelog here.
 
 ## Phase 2: If you're using phases
 - [ ] More new ideas go here
@@ -12,4 +14,4 @@ You can track history for [[Project A]] is this changelog here.
 - [x] Feature Two: Got this one done
 	- [x] Sub-Feature A: Explanation can goe here
 - [x] Feature One: Free-form text goes here
-- [x] Work out whether we should use [[Golang]] or [[Rust]]
+- [x] Work out whether we should use [[Sampling Bias]] or [[Virulence]]
