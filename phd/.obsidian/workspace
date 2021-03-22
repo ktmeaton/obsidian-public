@@ -13,7 +13,20 @@
             "file": "slides/2021/03/23.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "b19932c3902ef81e"
+      },
+      {
+        "id": "942f9c36d9ea3152",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "slides/2021/03/23.md",
+            "mode": "preview"
+          }
+        },
+        "group": "b19932c3902ef81e"
       }
     ],
     "direction": "vertical"
@@ -40,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Sampling-Bias",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 138.5
+    "width": 100
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -146,14 +159,14 @@
   },
   "lastOpenFiles": [
     "slides/2021/03/23.md",
+    "concepts/Geographic Origins.md",
+    "tools/BEAST.md",
+    "tools/Untitled.md",
+    "literature/guellil2020GenomicHistoricalSynthesis.md",
+    "literature/kalkauskas2021SamplingBiasModel.md",
+    "log/2021-03-22.md",
     "literature/spyrou2018Analysis3800yearoldYersinia.md",
     "literature/wagner2014YersiniaPestisPlague.md",
-    "literature/susat2020YersiniaPestisStrains.md",
-    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
-    "literature/rascovan2019EmergenceSpreadBasal.md",
-    "literature/rasmussen2015EarlyDivergentStrains.md",
-    "literature/kalkauskas2021SamplingBiasModel.md",
-    "literature/guellil2020GenomicHistoricalSynthesis.md",
-    "literature/eroshenko2021EvolutionCirculationYersinia.md"
+    "literature/susat2020YersiniaPestisStrains.md"
   ]
 }

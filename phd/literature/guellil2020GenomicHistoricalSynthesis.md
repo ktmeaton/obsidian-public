@@ -33,3 +33,8 @@ doi: https://doi.org/10.1073/pnas.2009677117
   - [[alfani2017PlagueLethalEpidemics]]
  - The above references (except alfani2017) are used to support the claim that:
 	>Strikingly, around the middle of the 17th century, a major shift in plague dynamics occurred, after which only a single continental-scale epidemic was documented in Western Europe during the early 1700s [#18th-century].
+
+- Some interesting background on the historical #Caucasus.
+- >Considering that the disease did not advance far into France during the Great Plague of Marseille, it seems unlikely that the lineage introduced into Europe in 1720 was reintroduced from there to the Caucasus region and then reached Chechnya. Instead, we propose that the disease reached Chechnya directly on a separate route via land or that the region is located close to the wildlife reservoir that is responsible for the plague lineage documented in Europe following the Black Death.
+ 
+- Known modern plague foci are situated in neighboring Georgia, where written sources describing cases of bubonic plague date from the 11th century CE until after the start of the Third Plague Pandemic (1894) ([[oconnel2010SurveillancePlagueNaturalFoci]]).

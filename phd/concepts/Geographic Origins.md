@@ -2,11 +2,30 @@
 
 ## Summary
 
-This page explores #Geographic-Origin(s) using ideas from multiple references: for example, [[rasmussen2015EarlyDivergentStrains]] may recommend Golang for everything, while [[andradesvaltuena2017StoneAgePlague]] may recommend Rust.
+This page explores the #Geographic-Origin(s), particularly of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
 
 ## Projects
 
-You can highlight that this concept is relevant for specific projects such as [[plague-phylogeography]].
+- [[plague-phylogeography]].
+- #Plague-Denmark 
 
 ## Methods
 
+- #Mugration (discrete)
+- #Brownian-Motion (continuous)
+
+## Tools
+
+- [[treetime]]
+- [[BEAST]]
+- [[spreaD3]]
+
+## Literature
+
+- #Genome -based models of #Yersina-pestis have not been grounded with #Geospatial #Statistics. An example from [[guellil2020GenomicHistoricalSynthesis]]:
+
+	|                    Fig 2                     |
+	|:--------------------------------------------:|
+	| ![[guellil2020GenomicHistoricalSynthesis_fig2.jpg]] |
+	| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](guellil2020GenomicHistoricalSynthesis) |
+- It's uncertain what data is being used to construct this map. I think mostly historical, but perhaps also the genomic evidence?
