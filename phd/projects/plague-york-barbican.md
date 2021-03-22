@@ -1,6 +1,5 @@
 # Project B
-A project description will need to go here.
+#Plague-York-Barbican.
 
 ## People
-- [[Hendrik Poinar]]
-- [[Marie
+- [[Marie-Helene B Hardy]]

@@ -9,8 +9,8 @@ You can use this Map of Content for different purposes such as summarising who i
 The [[Geographic Origins]] of plague have been contenious and remain so.
 
 ## References:
-- [[@andradesvaltuena2017StoneAgePlague]] proposed two scenarios for how plague reached Europe in the Bronze Age.
-- [[@rasmussen2015EarlyDivergentStrains]] findings are supported by [[@andradesvaltuena2017StoneAgePlague]].
+- [[andradesvaltuena2017StoneAgePlague]] proposed two scenarios for how plague reached Europe in the Bronze Age.
+- [[rasmussen2015EarlyDivergentStrains]] findings are supported by [[andradesvaltuena2017StoneAgePlague]].
 
 ## Trackers:
 

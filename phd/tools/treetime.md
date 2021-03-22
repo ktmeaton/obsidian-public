@@ -1,11 +1,12 @@
-# treetime
+# TreeTime
 
-Write notes here about a tool or technique. 
+## Summary
 
-If #treetime is mentioned in passing in other notes, you could use tag (for example #treetime ).
+#treetime can infer an #evolution-model, #reroot a tree to maximize #temporal-signal, estimate a #timetree (molecular clock phylogenies), and a #population-size history with the #coalescent and #skyline or #skyride analysis.
 
-If the association is stronger, you could use a link to [[treetime]].
+---
 
-![](https://raw.githubusercontent.com/neherlab/treetime_examples/master/figures/tree_and_clock.png)
+## Figures
 
-![[panda.jpg]]
+Figure 8. EBOV phylodynamic analysis. Top panel is the time tree, bottom panel is the coalescent population sizes.
+![[sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic_fig8.jpg]]

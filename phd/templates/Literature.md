@@ -1,4 +1,8 @@
-# Literature
-Name: #Literature
-Role:
-Project:
+---
+title:
+authors:
+year:
+doi:
+---
+
+# {{title}}

@@ -1,2 +1,4 @@
-# Collaborator B
-Add any short notes here.
+# Jesper Boldsen
+Name: #Jesper-Boldsen
+Role: Collaborator
+Project: #Plague-Denmark 
