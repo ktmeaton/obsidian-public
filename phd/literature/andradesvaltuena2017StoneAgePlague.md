@@ -7,6 +7,7 @@ doi: https://doi.org/10.1016/j.cub.2017.10.025
 
 # [[andradesvaltuena2017StoneAgePlague]]
 
+## Summary 
 - Geospatial models for the #spread of #plague during the #Bronze_Age.
 - Movement of plague from #Central_Eurasia to Europe, with expansion of people from #steppe. Persisted in #Europe until mid-Bronze Age. Moved back to #Central_Eurasia along with moving human populations.
 - 6 #ancient #European #Yersinia_pestis #genomes, 4800 - 3700 YBP.
@@ -14,6 +15,9 @@ doi: https://doi.org/10.1016/j.cub.2017.10.025
 -  #MRCA date: 6078 years (95% HPD: 5036 - YBP), agrees with [[rasmussen2015EarlyDivergentStrains]].
 
 ---
+
+## Figures
+
 Figure 2. Map of Proposed <i>Yersinia pestis</i> Circulation throughout Eurasia.
 ![[andradesvaltuena2017StoneAgePlague_fig2.jpg]]
 

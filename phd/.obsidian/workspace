@@ -4,14 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "6969e3a39366a7d3",
+        "id": "35f7f06f2c32aadc",
         "type": "leaf",
+        "dimension": 47.66505636070853,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "log/2021-03-22.md",
+            "file": "slides/2021/03/23.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "461c1b24cc5f92c7",
+        "type": "leaf",
+        "dimension": 52.33494363929147,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "slides/2021/03/23.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#backlog",
+                "query": "tag:#LNBA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.5
+    "width": 420.5
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -84,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "log/2021-03-22.md",
+                "file": "slides/2021/03/23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "log/2021-03-22.md"
+                "file": "slides/2021/03/23.md"
               }
             }
           },
@@ -122,8 +135,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "a6bd9f8e1f734c87",
@@ -145,15 +157,15 @@
     "width": 197.5
   },
   "lastOpenFiles": [
-    "log/2021-03-22.md",
-    "slides/2021/03/23.md.md",
-    "kanban/Kanban.md",
-    "slides/2021/03/06_Workshop.md",
-    "slides/2021/03/06_Workshop_Plague-Black-Death.svg",
-    "slides/2021/03/Untitled.md",
-    "Untitled.md",
-    "literature/rasmussen2015EarlyDivergentStrains.md",
-    "literature/eroshenko2021EvolutionCirculationYersinia.md",
-    "literature/andradesvaltuena2017StoneAgePlague.md"
+    "slides/2021/03/23.md",
+    "literature/spyrou2018Analysis3800yearoldYersinia.md",
+    "templates/Literature.md",
+    "Pasted image 20210322120650.png",
+    "literature/wagner2014YersiniaPestisPlague.md",
+    "templates/Daily.md",
+    "literature/Untitled.md",
+    "images/rascovan2019EmergenceSpreadBasal_fig5d.jpg",
+    "literature/rascovan2019EmergenceSpreadBasal.md",
+    "literature/rasmussen2015EarlyDivergentStrains.md"
   ]
 }
