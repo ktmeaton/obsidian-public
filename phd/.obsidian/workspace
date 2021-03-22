@@ -4,27 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "35f7f06f2c32aadc",
+        "id": "27036f6b48b16826",
         "type": "leaf",
-        "dimension": 47.66505636070853,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "slides/2021/03/23.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "461c1b24cc5f92c7",
-        "type": "leaf",
-        "dimension": 52.33494363929147,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "slides/2021/03/23.md",
-            "mode": "preview"
           }
         }
       }
@@ -53,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#LNBA",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 420.5
+    "width": 138.5
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -112,7 +99,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -135,7 +122,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "a6bd9f8e1f734c87",
@@ -154,18 +142,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 197.5
+    "width": 336.5
   },
   "lastOpenFiles": [
     "slides/2021/03/23.md",
     "literature/spyrou2018Analysis3800yearoldYersinia.md",
-    "templates/Literature.md",
-    "Pasted image 20210322120650.png",
     "literature/wagner2014YersiniaPestisPlague.md",
-    "templates/Daily.md",
-    "literature/Untitled.md",
-    "images/rascovan2019EmergenceSpreadBasal_fig5d.jpg",
+    "literature/susat2020YersiniaPestisStrains.md",
+    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
     "literature/rascovan2019EmergenceSpreadBasal.md",
-    "literature/rasmussen2015EarlyDivergentStrains.md"
+    "literature/rasmussen2015EarlyDivergentStrains.md",
+    "literature/kalkauskas2021SamplingBiasModel.md",
+    "literature/guellil2020GenomicHistoricalSynthesis.md",
+    "literature/eroshenko2021EvolutionCirculationYersinia.md"
   ]
 }

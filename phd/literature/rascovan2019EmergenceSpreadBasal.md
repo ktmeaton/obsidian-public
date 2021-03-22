@@ -16,6 +16,9 @@ doi: https://doi.org/10.1016/j.cell.2018.11.005
 >
 ## Figures
 
-Figure 5d proposes a dispersion model during the #LNBA.
-![[rascovan2019EmergenceSpreadBasal_fig5d.jpg]]
+
+|    Fig 5d                                       |
+|:--------------------------------------------:|
+| ![[rascovan2019EmergenceSpreadBasal_fig5d.jpg]] |
+| [Proposed dispersion model during the #LNBA.](rascovan2019EmergenceSpreadBasal) |
 

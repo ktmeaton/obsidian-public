@@ -11,7 +11,10 @@ doi:
 
 ## Figures
 
-|    Fig X                                       |
+|                    Fig X                     |
 |:--------------------------------------------:|
 | ![[{{title}}_figX.jpg]] |
-| [Figure caption.](article doi) |
+| [Figure caption.]({{title}}) |
+
+
+## Notes

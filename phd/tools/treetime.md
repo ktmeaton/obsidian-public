@@ -2,7 +2,7 @@
 
 ## Summary
 
-#treetime can infer an #evolution-model, #reroot a tree to maximize #temporal-signal, estimate a #timetree (molecular clock phylogenies), and a #population-size history with the #coalescent and #skyline or #skyride analysis.
+#treetime can infer an #Evolution-Model, #Reroot a tree to maximize #Temporal-Signal, estimate a #Timetree (molecular clock phylogenies), and a #Population-Size history with the #Coalescent and #Skyline or #Skyride analysis.
 
 ---
 

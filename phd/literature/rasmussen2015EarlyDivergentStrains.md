@@ -11,7 +11,7 @@ doi: https://doi.org/10.1016/j.cell.2015.10.009
 
 >* <i>Yersinia pestis</i> was common across #Eurasia in the #LNBA.
 >* The #MRCA  of all <i>Y. pestis</i> was 5,783 years ago
->* The #ymt gene was acquired before 951 cal BC, giving rise to #transmission via #fleas.
+>* The #ymt gene was acquired before 951 cal BC, giving rise to #Transmission via #Flea(s).
 
 
 - According to [[spyrou2018Analysis3800yearoldYersinia]]:

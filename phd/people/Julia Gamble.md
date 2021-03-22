@@ -1,8 +1,5 @@
----
-name: Hendrik Poinar
-role: supervisor
----
+# Julia Gamble
 
-# Hendrik Poinar
-
-#Hendrik_Poinar is my #phd #superivisor.
+Name: #Julia-Gamble
+Role: Collaborator
+Project: #Plague-Denmark

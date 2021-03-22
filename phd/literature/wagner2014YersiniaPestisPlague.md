@@ -17,11 +17,11 @@ doi: http://dx.doi.org/10.1016/S1473-3099(13)70323-2
 |    Fig 3                                          |
 |:--------------------------------------------:|
 | ![[wagner2014YersiniaPestisPlague_fig3.jpg]] |
-| (A) Maximum likelihood tree and (B) posterior distributions of times to most recent common ancestry for different BEAST runs. |
+| [(A) Maximum likelihood tree and (B) posterior distributions of times to most recent common ancestry for different BEAST runs. ](wagner2014YersiniaPestisPlague) |
 
 
 |    Fig 4                                          |
 |:--------------------------------------------:|
 | ![[wagner2014YersiniaPestisPlague_fig4.jpg]] |
-| Hypothetical scenario for the geographic spread of <i>Yersinia pestis</i> |
+| [Hypothetical scenario for the geographic spread of <i>Yersinia pestis</i>](wagner2014YersiniaPestisPlague) |
 

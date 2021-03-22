@@ -13,7 +13,7 @@
 
 - [ ] 13:00 Setup for work
 - [ ] 14:00 Review notes from yesterday
-- [ ] 15:00 Create new notes for #article review
+- [ ] 15:00 Create new notes for article review
 - [ ] 16:00 Lunch
 - [ ] 17:00 Finish work for the day.
 
