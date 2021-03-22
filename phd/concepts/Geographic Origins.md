@@ -22,7 +22,7 @@ This page explores the #Geographic-Origin(s), particularly of human pathogens. I
 
 ## Literature
 
-- #Genome -based models of #Yersina-pestis have not been grounded with #Geospatial #Statistics. An example from [[guellil2020GenomicHistoricalSynthesis]]:
+- #Genome -based models of #Yersinia-pestis have not been grounded with #Geospatial #Statistics. An example from [[guellil2020GenomicHistoricalSynthesis]]:
 
 	|                    Fig 2                     |
 	|:--------------------------------------------:|

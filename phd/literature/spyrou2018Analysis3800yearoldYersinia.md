@@ -16,8 +16,8 @@ doi: https://doi.org/10.1038/s41467-018-04550-9
 
 - The #Virulence profile of RISE509 is identical to that of isolates RK1.001, GEN72, Gyvakarai1, and Kunila23.
 - The #Virulence profile of 1343UnTal85 is identical to 6Postillionstrasse and RISE5053.
-- The #LNBA,  #0-PE2 and #0-PE4 strains seem to lack certain virulence determinants
-- RT5 harbours all known #virulence factors with the exception of the #Filamentous-Prophage (YpfΦ), which is, however, most consistently identified among #1-ORI strains.
+- The #Clade/LNBA,  #Clade/0-PE2 and #Clade/0-PE4 strains seem to lack certain virulence determinants
+- RT5 harbours all known #virulence factors with the exception of the #Filamentous-Prophage (YpfΦ), which is, however, most consistently identified among #Clade/1-ORI strains.
 ## Figures
 
 

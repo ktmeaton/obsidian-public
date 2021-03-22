@@ -11,7 +11,7 @@ doi: https://doi.org/10.1073/pnas.2009677117
 
 - Sequenced 9 #Ancient  #Yersinia-pestis  #Genome(s) from the #17th-Century  #Second-Plague-Pandemic.
 - CHE1 is the first #Second-Plague-Pandemic genome from the #Caucasus region (ie. Non-European).
-- Documents the importance of a non- #Eurocentric approach to historical #Plague dynamics and proposes an #Geographic-Origin(s) of plague introductions outside of Europe.
+- Documents the importance of a non- #Eurocentric approach to historical #Plague dynamics and proposes an #Geographic-Origin of plague introductions outside of Europe.
 
 ## Figures
 

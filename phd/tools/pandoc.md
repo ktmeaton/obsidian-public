@@ -34,3 +34,11 @@ pandoc 23.md --pdf-engine=pdflatex -o 23.pdf
 ```bash
 pandoc -s 23.md -o 23.docx
 ```
+
+### Markdown ->  Slides
+
+#### Beamer
+
+```bash
+pandoc -t beamer 23.md -o 23_beamer.pdf
+```

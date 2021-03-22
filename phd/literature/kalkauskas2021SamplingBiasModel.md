@@ -3,6 +3,7 @@ title: Sampling bias and model choice in continuous phylogeography. Getting lost
 authors: Kalkauskas et al.
 year: 2021
 doi: https://doi.org/10.1371/journal.pcbi.1008561
+zotero: https://www.zotero.org/ktmeaton/collections/D2INRKHS/search/kalkauskas%202021/titleCreatorYear
 ---
 
 # kalkauskas2021SamplingBiasModel
@@ -20,3 +21,10 @@ doi: https://doi.org/10.1371/journal.pcbi.1008561
 |:--------------------------------------------:|
 | ![[kalkauskas2021SamplingBiasModel_fig4.png]] |
 | [(Top) Maximum Clade Credibility tree of West Nile Virus in the western and eastern USA. (Bottom) MRCA location of all western samples. (Blue: All samples, Red: Only western samples, Orange: western samples and sequence-free eastern samples ).](kalkauskas2021SamplingBiasModel) |
+
+|    Fig 4b                                       |
+|:--------------------------------------------:|
+| ![[../images/kalkauskas2021SamplingBiasModel_fig4b.png]] |
+| [MRCA location of all western samples. (Blue: All samples, Red: Only western samples, Orange: western samples and sequence-free eastern samples ).](kalkauskas2021SamplingBiasModel) |
+
+## Notes
