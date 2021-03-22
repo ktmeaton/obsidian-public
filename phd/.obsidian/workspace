@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "1ddd5e41c1f6ae4c",
+        "id": "736358eef684f5d0",
         "type": "leaf",
         "active": true,
         "state": {
@@ -116,7 +116,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "a6bd9f8e1f734c87",
@@ -138,15 +139,15 @@
     "width": 197.5
   },
   "lastOpenFiles": [
-    "templates/Literature.md",
-    "templates/People.md",
-    "Saini (2017) – Inferior.md",
-    "people/Hendrik Poinar.md",
-    "people/Julia Gamble.md",
-    "templates/Daily.md",
-    "people/Marie-Helene B. Hardy.md",
-    "people/Jesper Boldsen.md",
-    "projects/plague-denmark.md",
-    "templates/Untitled.md"
+    "kanban/Kanban.md",
+    "kanban/04_Todo.md",
+    "kanban/01_Ideas.md",
+    "kanban/02_Backlog.md",
+    "kanban/03_Design.md",
+    "kanban/04_To_Do.md",
+    "kanban/05_Doing.md",
+    "kanban/07_Archive.md",
+    "kanban/06_Done.md",
+    "kanban/Untitled.md"
   ]
 }
