@@ -10,10 +10,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
+            "file": "experiments/BEAST2-Phylogeography/README.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "d62cc0e6e2c52ab4"
+      },
+      {
+        "id": "2e380b8ee17e8114",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "experiments/BEAST2-Phylogeography/README.md",
+            "mode": "preview"
+          }
+        },
+        "group": "d62cc0e6e2c52ab4"
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md"
+                "file": "experiments/BEAST2-Phylogeography/README.md"
               }
             }
           }
@@ -91,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.0068016052246
+    "width": 474.0068016052246
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -107,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
+                "file": "experiments/BEAST2-Phylogeography/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,23 +157,22 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 174.99990844726562,
-    "collapsed": true
+    "width": 174.99990844726562
   },
   "lastOpenFiles": [
+    "experiments/BEAST2-Phylogeography/README.md",
+    "literature/SI/xu2019HistoricalGenomicData_SI.pdf",
+    "literature/xu2019HistoricalGenomicDataa.md",
+    "literature/Untitled.md",
+    "experiments/BEAST2-Phylogeography/BEAST2 Phylogeography.md",
     "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
     "projects/plague-phylogeography/plague-phylogeography CHANGELOG.md",
     "projects/plague-phylogeography/plague-phylogeography.md",
     "projects/plague-phylogeography/experiments/Untitled.md",
-    "slides/2021-03-23.md",
-    "scratch/2021-03-23_scratch.md",
-    "scratch/2021-03-22_scratch.md",
-    "scratch/Untitled.md",
-    "scratch/2021-03-23.md",
-    "scratch/2021-03-22.md"
+    "slides/2021-03-23.md"
   ]
 }
