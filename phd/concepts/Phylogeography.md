@@ -1,13 +1,13 @@
-# Geographic Origins
+# Phylogeography
 
 ## Summary
 
-This page explores the #Geographic-Origin(s), particularly of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
+This page explores #Phylogeography , particularly the #Geographic-Origin(s) and #Migration(s) of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
 
 ## Projects
 
-- [[plague-phylogeography]].
-- #Plague-Denmark 
+- [[plague-phylogeography]]
+- #Plague-Denmark
 
 ## Methods
 

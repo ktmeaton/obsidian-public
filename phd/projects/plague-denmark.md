@@ -7,4 +7,4 @@
 - [[Jesper Boldsen]]
 
 ## Ideas
-We're going to expand on [[Geographic Origins]] and show how it relates to [[Virulence]].
+We're going to expand on [[Phylogeography]] and show how it relates to [[Virulence]].

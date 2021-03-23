@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c32b8291385f6522",
+        "id": "951759823576bca8",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "empty",
+          "type": "graph",
           "state": {}
         }
       }
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.50868225097656
+    "width": 129
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -133,15 +133,15 @@
     "width": 193.60414123535156
   },
   "lastOpenFiles": [
-    "concepts/Sampling Bias.md",
-    "literature/Untitled.md",
-    "literature/shi2010UsingJackknifeAssess.md",
-    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
-    "slides/2021-03-23.md",
-    "literature/eaton2021Plague-Phylogeography.md",
-    "images/eaton2021Plague-Phylogeography_map.svg",
-    "log/2021-03-23.md",
-    "log/2021-03-22.md",
-    "literature/wagner2014YersiniaPestisPlague.md"
+    "kanban/Backlog.md",
+    "tools/treetime.md",
+    "kanban/Archive.md",
+    "kanban/Doing.md",
+    "kanban/Done.md",
+    "kanban/Ideas.md",
+    "kanban/Kanban.md",
+    "kanban/Todo.md",
+    "kanban/07_Archive.md",
+    "kanban/06_Done.md"
   ]
 }

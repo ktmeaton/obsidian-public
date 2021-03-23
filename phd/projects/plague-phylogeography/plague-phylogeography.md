@@ -6,7 +6,7 @@ You can use this Map of Content for different purposes such as summarising who i
 
 ## Concepts:
 
-The [[Geographic Origins]] of plague have been contenious and remain so.
+The [[Phylogeography]] of plague have been contenious and remain so.
 
 ## References:
 - [[andradesvaltuena2017StoneAgePlague]] proposed two scenarios for how plague reached Europe in the Bronze Age.
