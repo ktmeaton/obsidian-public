@@ -16,4 +16,4 @@ The [[Phylogeography]] of plague have been contenious and remain so.
 
 [[plague-phylogeography]] has two trackers:
 - [[plague-phylogeography ROADMAP]] for planning the future
-- [[plague--phylogeography CHANGELOG]] for reflecting on the past
+- [[plague-phylogeography CHANGELOG]] for reflecting on the past

@@ -4,12 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "951759823576bca8",
+        "id": "c790aacd05dcb623",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -22,7 +25,7 @@
       {
         "id": "ab74201e4c495000",
         "type": "tabs",
-        "dimension": 48.673740053050395,
+        "dimension": 48.63387978142077,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -52,7 +55,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md"
+              }
             }
           }
         ]
@@ -60,7 +65,7 @@
       {
         "id": "fde9fc2579baeace",
         "type": "tabs",
-        "dimension": 51.326259946949605,
+        "dimension": 51.36612021857923,
         "children": [
           {
             "id": "36f4026e5d10d540",
@@ -69,12 +74,24 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "31956f30c84ad9fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "scratch/2021-03-23_scratch.md",
+                "mode": "source"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 129
+    "width": 321.0068016052246
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -90,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,18 +148,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 193.60414123535156
+    "width": 174.99990844726562,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "kanban/Backlog.md",
-    "tools/treetime.md",
-    "kanban/Archive.md",
-    "kanban/Doing.md",
-    "kanban/Done.md",
-    "kanban/Ideas.md",
-    "kanban/Kanban.md",
-    "kanban/Todo.md",
-    "kanban/07_Archive.md",
-    "kanban/06_Done.md"
+    "projects/plague-phylogeography/experiments/BEAST2 Phylogeography.md",
+    "projects/plague-phylogeography/plague-phylogeography CHANGELOG.md",
+    "projects/plague-phylogeography/plague-phylogeography.md",
+    "projects/plague-phylogeography/experiments/Untitled.md",
+    "slides/2021-03-23.md",
+    "scratch/2021-03-23_scratch.md",
+    "scratch/2021-03-22_scratch.md",
+    "scratch/Untitled.md",
+    "scratch/2021-03-23.md",
+    "scratch/2021-03-22.md"
   ]
 }
