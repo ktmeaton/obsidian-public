@@ -3,12 +3,14 @@ title: The Stone Age Plague and Its Persistence in Eurasia
 authors: Valtuena et al.
 year: 2017
 doi: https://doi.org/10.1016/j.cub.2017.10.025
+aliases:
+  - Andrades Valtuena et al. 2017
 ---
 
 # andradesvaltuena2017StoneAgePlague
 
 ## Summary 
-- Geospatial models for the #Spread of #Plague during the #Clade/LNBA.
+- Geospatial models for the #Spread of #Plague during the [[LNBA]].
 - Movement of plague from #Central_Eurasia to Europe, with expansion of people from #Steppe. Persisted in #Europe until mid-Bronze Age. Moved back to #Central_Eurasia along with moving human populations.
 - 6 #Ancient #Europe(an) #Yersinia-pestis #Genome(s), 4800 - 3700 YBP.
 - All form an extinct clade.

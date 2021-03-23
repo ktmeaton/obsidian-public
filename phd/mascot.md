@@ -1,0 +1,7 @@
+# mascot
+
+## Summary
+
+---
+
+tags: [[Tool]]

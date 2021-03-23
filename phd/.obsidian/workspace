@@ -4,16 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "85a92591c972f2bf",
+        "id": "35a4544ca8b5ee3e",
         "type": "leaf",
+        "dimension": 73.47600518806745,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "slides/2021-03-23_PoinarLab.md",
+            "file": "templates/Tool.md",
+            "mode": "source"
+          }
+        },
+        "group": "3cb9a58738959b98"
+      },
+      {
+        "id": "ca6940a6fc2fe9e5",
+        "type": "leaf",
+        "dimension": 26.523994811932557,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "templates/Tool.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "3cb9a58738959b98"
       }
     ],
     "direction": "vertical"
@@ -41,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#meta",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -56,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "slides/2021-03-23_PoinarLab.md"
+                "file": "templates/Tool.md"
               }
             }
           }
@@ -90,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 699.9999980926514
+    "width": 557.4999980926514
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -106,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slides/2021-03-23_PoinarLab.md",
+                "file": "templates/Tool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,23 +158,22 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 518.0001220703125,
-    "collapsed": true
+    "width": 145.00010681152344
   },
   "lastOpenFiles": [
-    "slides/2021-03-23_PoinarLab.md",
-    "kanban/Priority.md",
-    "scratch/2021-03-23_scratch.md",
-    "tools/geo-sphere.md",
-    "tools/BEAST.md",
-    "tools/mascot.md",
     "templates/Tool.md",
-    "people/Zachery-Dickson.md",
-    "people/Emil-Karpsinki.md",
-    "templates/People.md"
+    "templates/People.md",
+    "templates/Daily.md",
+    "templates/Literature.md",
+    "templates/MOC.md",
+    "templates/Concept.md",
+    "concepts/Phylodynamics.md",
+    "concepts/Virulence.md",
+    "concepts/Sampling Bias.md",
+    "concepts/Phylogeography.md"
   ]
 }

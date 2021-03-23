@@ -1,5 +1,0 @@
-# Julia Gamble
-
-Name: Julia-Gamble
-Role: Collaborator
-Project: [[plague-denmark]]

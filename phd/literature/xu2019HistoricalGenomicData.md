@@ -22,28 +22,4 @@ doi: https://doi.org/10.1073/pnas.1901366116
 
 ## Notes
 
-- The 15 most prevalent modern #Branch / #Genotype
-	1. #Clade/1-ORI/1 
-	1. #Clade/1-ORI/2 
-	1. #Clade/1-ORI/3
-	1. #Clade/2-MED/1 
-	1. #Clade/2-MED/2
-	1. #Clade/2-MED/3
-	1. #Clade/0-ANT/1
-	1. #Clade/0-ANT/3
-	1. #Clade/1-ANT/1
-	1. #Clade/1-ANT/2
-	1. #Clade/1-ANT/3
-	1. #Clade/3-ANT/1
-	1. #Clade/3-ANT/2
-	1. #Clade/3-ANT/3
-	1. #Clade/4-ANT
-- The other modern #Branch / #Genotype:
-	1. #Clade/0-PE/2
-	1. #Clade/0-PE/4
-	1. #Clade/0-PE/7
-- The ancient #Branch / #Genotype:
-	1. #Clade/0-PRE/1
-	2. #Clade/0-PRE/2
-	3. #Clade/1-PRE
-	4. #Clade/0-ANT/4
+- The 15 most prevalent modern [[Yersinia pestis#Phylogenetic Branches|Branches]] / #Genotype

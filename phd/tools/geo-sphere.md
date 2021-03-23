@@ -1,3 +1,0 @@
-# geo-sphere
-
-## Summary

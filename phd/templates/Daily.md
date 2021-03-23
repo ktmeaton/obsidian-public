@@ -15,3 +15,7 @@ line:(#priority #{{date}}) -path:log/{{date}}
 ```
 
 ## Notes
+
+---
+
+tags: [[Log]]

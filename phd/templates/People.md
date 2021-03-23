@@ -1,4 +1,8 @@
 # {{title}}
-Name: #{{title}}
+
 Role:
 Project:
+
+---
+
+tags: [[People]]
