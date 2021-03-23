@@ -1,5 +1,5 @@
 # Project B
-#Plague-York-Barbican.
+[[plague-york-barbican]]
 
 ## People
 - [[Marie-Helene B Hardy]]

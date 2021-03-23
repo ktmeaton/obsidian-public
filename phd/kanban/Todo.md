@@ -1,3 +1,3 @@
 ```query
-tag:todo
+tag:kanban/todo
 ```

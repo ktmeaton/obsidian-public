@@ -1,3 +1,3 @@
 ```query
-tag:backlog
+tag:kanban/backlog
 ```

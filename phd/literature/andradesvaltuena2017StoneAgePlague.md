@@ -8,7 +8,7 @@ doi: https://doi.org/10.1016/j.cub.2017.10.025
 # andradesvaltuena2017StoneAgePlague
 
 ## Summary 
-- Geospatial models for the #Spread of #Plague during the #Bronze_Age.
+- Geospatial models for the #Spread of #Plague during the #Clade/LNBA.
 - Movement of plague from #Central_Eurasia to Europe, with expansion of people from #Steppe. Persisted in #Europe until mid-Bronze Age. Moved back to #Central_Eurasia along with moving human populations.
 - 6 #Ancient #Europe(an) #Yersinia-pestis #Genome(s), 4800 - 3700 YBP.
 - All form an extinct clade.

@@ -1,3 +1,9 @@
+---
+title: Phylogeography
+tags: 
+  - Phylogeography
+---
+
 # Phylogeography
 
 ## Summary
@@ -7,7 +13,7 @@ This page explores #Phylogeography , particularly the #Geographic-Origin(s) and 
 ## Projects
 
 - [[plague-phylogeography]]
-- #Plague-Denmark
+- [[plague-denmark]]
 
 ## Methods
 

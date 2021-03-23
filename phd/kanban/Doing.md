@@ -1,3 +1,3 @@
 ```query
-tag:doing
+tag:kanban/doing
 ```

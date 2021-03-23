@@ -1,3 +1,3 @@
 ```query
-tag:done
+tag:kanban/done
 ```

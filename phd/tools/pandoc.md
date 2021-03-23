@@ -2,7 +2,7 @@
 
 ## Summary
 
-#pandoc converts text files into different formats. I'm hoping to use it to convert markdown files to:
+[[pandoc]] converts text files into different formats. I'm hoping to use it to convert markdown files to:
 - PDF
 - Word docx
 - HTML

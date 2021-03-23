@@ -1,20 +1,17 @@
 # 📆 {{date}}
 
 ## Day Planner
+- [ ] 09:00 Setup for work 💻
+- [ ] 09:30 Plan day 📋
+- [ ] 10:00 Check email 📧
+- [ ] 12:00 Lunch 🍙
+- [ ] 16:00 Write daily notes ✏️
+- [ ] 17:00 Finish work for the day 🎉
 
-### Morning
+## Tasks
 
-- [ ] 09:00 Setup for work
-- [ ] 10:00 Plan day.
-- [ ] 11:00 Check email.
-- [ ] 12:00 Lunch
+```query
+line:(#priority #{{date}}) -path:log/{{date}}
+```
 
-### Afternoon
-
-- [ ] 13:00 Setup for work
-- [ ] 14:00 Review notes from yesterday
-- [ ] 15:00 Create new notes for article review
-- [ ] 16:00 Lunch
-- [ ] 17:00 Finish work for the day.
-
-
+## Notes
