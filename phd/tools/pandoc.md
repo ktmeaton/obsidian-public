@@ -17,9 +17,15 @@
 	
 1. Install pdflatex packages:
 
-```bash
-sudo apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra
-```
+	```bash
+	sudo apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra
+	```
+
+1. Install reveal-md:
+
+	```bash
+	npm install -g reveal-md
+	```
 
 ## Convert
 
@@ -46,7 +52,5 @@ pandoc -t beamer slides/2021-03-23_pandoc.md -o slides/2021-03-23_pandoc.pdf
 #### reveal.js
 
 ```bash
-pandoc -s --mathjax -i -t revealjs slides/2021-03-23_pandoc.md -o slides/2021-03-23_pandoc.html
-
-pandoc -t html5 -s --template=template.revealjs.html --standalone --section-divs --variable theme="sky" -o slides.html slides.md
+reveal-md path/to/my/slides.md
 ```
