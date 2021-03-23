@@ -40,5 +40,13 @@ pandoc -s 23.md -o 23.docx
 #### Beamer
 
 ```bash
-pandoc -t beamer 23.md -o 23_beamer.pdf
+pandoc -t beamer slides/2021-03-23_pandoc.md -o slides/2021-03-23_pandoc.pdf
+```
+
+#### reveal.js
+
+```bash
+pandoc -s --mathjax -i -t revealjs slides/2021-03-23_pandoc.md -o slides/2021-03-23_pandoc.html
+
+pandoc -t html5 -s --template=template.revealjs.html --standalone --section-divs --variable theme="sky" -o slides.html slides.md
 ```

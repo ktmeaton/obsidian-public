@@ -4,13 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "1aea85d2991ca9a5",
+        "id": "c9ef98e8d8c06a1d",
         "type": "leaf",
+        "dimension": 46.14835948644793,
         "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
-        }
+          "type": "markdown",
+          "state": {
+            "file": "tools/pandoc.md",
+            "mode": "source"
+          }
+        },
+        "group": "a4b62646fdc3f5a1"
+      },
+      {
+        "id": "8b64d91a941c14d8",
+        "type": "leaf",
+        "dimension": 53.85164051355207,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "tools/pandoc.md",
+            "mode": "preview"
+          }
+        },
+        "group": "a4b62646fdc3f5a1"
       }
     ],
     "direction": "vertical"
@@ -81,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "tools/pandoc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "tools/pandoc.md"
+              }
             }
           },
           {
@@ -136,18 +157,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 107.5
   },
   "lastOpenFiles": [
-    "slides/2021/03/23.md",
-    "log/2021-03-22.md",
-    "literature/faria2018GenomicEpidemiologicalMonitoring.md",
-    "literature/Untitled.md",
-    "slides/2021/03/23_beamer.pdf",
-    "literature/kalkauskas2021SamplingBiasModel.md",
     "tools/pandoc.md",
-    "literature/morelli2010YersiniaPestisGenome.md",
-    "images/morelli2010YersiniaPestisGenome_tabl1.jpg",
-    "concepts/Geographic Origins.md"
+    "slides/2021-03-23_pandoc.md",
+    "slides/2021-03-23.md",
+    "slides/2021-03-23 1.md",
+    "literature/eaton2021Plague-Phylogeography.md",
+    "tools/Untitled.md",
+    "images/eaton2021Plague-Phylogeography_timetree-1.PRE.jpg",
+    "log/2021-03-22.md",
+    "slides/2021/03/23.md",
+    "literature/faria2018GenomicEpidemiologicalMonitoring.md"
   ]
 }
