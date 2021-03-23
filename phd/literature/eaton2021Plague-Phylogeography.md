@@ -31,9 +31,20 @@ doi: TBD
 |   ![[eaton2021Plague-Phylogeography_animate-1.PRE.mp4]]                              |
 | [Medieval and Early Modern  pandemic clade 1.PRE spread animation. ](eaton2021Plague-Phylogeography) |
 
-|                                                Fig 5                                                |
-|:----------------------------------------------------------------------------------------------------:|
+| Fig 5 |
+|:-----:|
 |  ![[eaton2021Plague-Phylogeography_spreadmap-1.ANT.svg]]                            |
-| [African  clade 1.ANT spreadmap. ](eaton2021Plague-Phylogeography) |
+| [African  clade 1.ANT spread map. ](eaton2021Plague-Phylogeography) |
+
+| Fig 6 |
+|:-----:|
+|  ![[eaton2021Plague-Phylogeography_spreadmap-0.ANT.svg]]                            |
+| [Justinian clade 0.ANT spread map. ](eaton2021Plague-Phylogeography) |
+
+| Fig 7 |
+|:-----:|
+| ![[eaton2021Plague-Phylogeography_spreadmap-1.IN.png]] |
+| [Intermediate clade 1.IN spread map. ](eaton2021Plague-Phylogeography) |
+
 
 ## Notes

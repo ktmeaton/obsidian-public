@@ -4,31 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0ffaf0b1ef02454d",
+        "id": "c32b8291385f6522",
         "type": "leaf",
-        "dimension": 81.62711864406779,
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "slides/2021-03-23.md",
-            "mode": "source"
-          }
-        },
-        "group": "25151e1c56bd9f51"
-      },
-      {
-        "id": "d8f295c9e8ae5484",
-        "type": "leaf",
-        "dimension": 18.3728813559322,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "slides/2021-03-23.md",
-            "mode": "preview"
-          }
-        },
-        "group": "25151e1c56bd9f51"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -40,7 +22,7 @@
       {
         "id": "ab74201e4c495000",
         "type": "tabs",
-        "dimension": 69.7653429602888,
+        "dimension": 48.673740053050395,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -70,9 +52,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "slides/2021-03-23.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -80,7 +60,7 @@
       {
         "id": "fde9fc2579baeace",
         "type": "tabs",
-        "dimension": 30.234657039711195,
+        "dimension": 51.326259946949605,
         "children": [
           {
             "id": "36f4026e5d10d540",
@@ -94,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285
+    "width": 207.50868225097656
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -110,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slides/2021-03-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,18 +130,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 193.60414123535156
   },
   "lastOpenFiles": [
+    "concepts/Sampling Bias.md",
+    "literature/Untitled.md",
+    "literature/shi2010UsingJackknifeAssess.md",
+    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
     "slides/2021-03-23.md",
     "literature/eaton2021Plague-Phylogeography.md",
-    "images/eaton2021Plague-Phylogeography_animate-1.PRE.mp4",
-    "images/andradesvaltuena2017StoneAgePlague_fig2.jpg",
-    "images/eaton2021Plague-Phylogeography_spreadmap-1.ANT.svg",
-    "images/eaton2021Plague-Phylogeography_timetree.jpg",
-    "images/eaton2021Plague-Phylogeography_timetree-1.PRE.jpg",
-    "literature/faria2018GenomicEpidemiologicalMonitoring.md",
-    "literature/kalkauskas2021SamplingBiasModel.md",
-    "slides/2021-03-23_pandoc.md"
+    "images/eaton2021Plague-Phylogeography_map.svg",
+    "log/2021-03-23.md",
+    "log/2021-03-22.md",
+    "literature/wagner2014YersiniaPestisPlague.md"
   ]
 }
