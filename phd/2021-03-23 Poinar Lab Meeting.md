@@ -25,8 +25,8 @@ Poinar Lab Meeting
 
 ## Introduction
 
- - The ancestral location of pathogens can be estimated using #Phylogeography.
-- #Geographic-Origin(s) of an emerging disease (**Fig 1**).
+ - The ancestral location of pathogens can be estimated using [[Phylogeography]].
+- [[Geographic Origin]]s of an emerging disease (**Fig 1**).
 - #Migration history of an outbreak (**Fig 2**).
 
 | Fig. 1                                            |                   Fig 2.                    |
@@ -48,7 +48,7 @@ Poinar Lab Meeting
 | [Timeline of ancient <i>Yersinia pestis</i> genomes.](spyrou2018Analysis3800yearoldYersinia) | 
 
  ###### 2. Hot Debates!
-- The #Geographic-Origin(s) are contentious (**Fig 4**).
+- The [[Geographic Origin]](s) are contentious (**Fig 4**).
 - Multiple #Reemergences  with distinct spatial patterns (**Fig 5**).
 
 |                                                   Fig 4                                                   |                              Fig 5                               |
@@ -57,14 +57,14 @@ Poinar Lab Meeting
 | [Dispersion model during the Late Neolithic Bronze Age.](rascovan2019EmergenceSpreadBasal) | [Hypothesized dissemination routes of the major plague pandemics.](wagner2014YersiniaPestisPlague) |
 
  ###### 3. Potential Contributions
-- Novel Synthesis: Triple the sample size of existing #Yersinia-pestis  phylogenies.
-- Geospatial Analysis: Use a statistical approach to mapping the #Geographic-Origin(s) and #Migration.
+- Novel Synthesis: Triple the sample size of existing [[Yersinia pestis]] phylogenies.
+- Geospatial Analysis: Use a statistical approach to mapping the [Geographic Origin]](s) and #Migration.
 
 ---
 
 ## Problem
 
-- #Phylogeography is highly sensitive to #Sampling-Bias.
+- [[Phylogeography]] is highly sensitive to #Sampling-Bias.
 - The true distribution is not evenly sampled (under/over-sampling).
 - [Kalkauskas et al. 2021](kalkauskas2021SamplingBiasModel) demonstrates this looking at West Nile Virus in the USA.
  
@@ -77,7 +77,7 @@ Poinar Lab Meeting
 
 ## Questions
 
-1. What are the #Geographic-Origin(s) and #Migration patterns of the #Medieval #Plague #Pandemic?
+1. What are the [[Geographic Origin]]s and [[Migration]] patterns of the [[Medieval]] [[Plague]] [[Pandemic]]?
 1. To what extent are the results influenced by sampling biases?
 	- Over-sampling of East-Asia and the Caucasus.
 	- Under-sampling of Africa and the Mediterranean.
@@ -101,14 +101,14 @@ Poinar Lab Meeting
 | ![[eaton2021Plague-Phylogeography_map.svg]]                                |
 | [Geographic distribution of <i>Y. pestis</i> genomes in this study.](eaton2021Plague-Phylogeography)            |
 
-3. Plot the arrival of #Plague in #Medieval #Europe and subsequent #Migration(s).
+3. Plot the arrival of [[Plague]] in [[Medieval]] [[Europe]] and subsequent [[Migration]]s.
 
 |                                                Fig 9                                                 |
 |:----------------------------------------------------------------------------------------------------:|
 |                             ![[eaton2021Plague-Phylogeography_animate-1.PRE.mp4]]                              |
 | [Medieval and Early Modern  pandemic clade 1.PRE timetree. ](eaton2021Plague-Phylogeography) |
                 					
-4. Plot the departure of #Plague from #Medieval #Europe.
+4. Plot the departure of [[Plague]] from #Medieval [[Europe]].
 
 | Fig 10 |
 |:---------:|
@@ -130,7 +130,7 @@ Poinar Lab Meeting
 	-  #Bootstrap: Sampling with replacement. 
 <br>	  
 2. Visualize the geographic variance  of historically important nodes on a map.
-	- Ex. #MRCA of all #Medieval #Plague.
+	- Ex. #MRCA of all #Medieval [[Plague]].
 	- Probability distribution of locations (Western China, Caucasus, etc.)
 	- Check if the distributions overlap?
 <br>

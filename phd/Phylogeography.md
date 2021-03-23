@@ -2,7 +2,7 @@
 
 ## Summary
 
-This page explores #Phylogeography , particularly the #Geographic-Origin(s) and #Migration(s) of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
+This page explores [[Phylogeography]], particularly the [Geographic Origin]](s) and #Migration(s) of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
 
 ## Projects
 
@@ -22,7 +22,7 @@ This page explores #Phylogeography , particularly the #Geographic-Origin(s) and 
 
 ## Literature
 
-- #Genome -based models of #Yersinia-pestis have not been grounded with #Geospatial #Statistics. An example from [[guellil2020GenomicHistoricalSynthesis]]:
+- [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with #Geospatial #Statistics. An example from [[guellil2020GenomicHistoricalSynthesis]]:
 
 	|                    Fig 2                     |
 	|:--------------------------------------------:|

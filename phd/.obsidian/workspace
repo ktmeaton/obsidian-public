@@ -6,29 +6,29 @@
       {
         "id": "35a4544ca8b5ee3e",
         "type": "leaf",
-        "dimension": 73.47600518806745,
+        "dimension": 44.08805031446541,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "templates/Tool.md",
+            "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
             "mode": "source"
           }
         },
-        "group": "3cb9a58738959b98"
+        "group": "cf62831024d7bf26"
       },
       {
-        "id": "ca6940a6fc2fe9e5",
+        "id": "c516dda095174b19",
         "type": "leaf",
-        "dimension": 26.523994811932557,
+        "dimension": 55.91194968553459,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "templates/Tool.md",
+            "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
             "mode": "preview"
           }
         },
-        "group": "3cb9a58738959b98"
+        "group": "cf62831024d7bf26"
       }
     ],
     "direction": "vertical"
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#LNBA",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -71,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "templates/Tool.md"
+                "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md"
               }
             }
           }
@@ -96,7 +96,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scratch/2021-03-23_scratch.md",
+                "file": "scratch/2021-03-23 Scratch.md",
                 "mode": "source"
               }
             }
@@ -105,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 557.4999980926514
+    "width": 334.49999809265137
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/Tool.md",
+                "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true
               }
             }
@@ -162,18 +162,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 145.00010681152344
+    "width": 319.0000915527344
   },
   "lastOpenFiles": [
-    "templates/Tool.md",
-    "templates/People.md",
-    "templates/Daily.md",
+    "literature/faria2018GenomicEpidemiologicalMonitoring.md",
+    "literature/eaton2021Plague-Phylogeography.md",
+    "literature/eroshenko2021EvolutionCirculationYersinia.md",
+    "Yellow Fever Virus.md",
+    "templates/Organism.md",
+    "templates/Untitled.md",
     "templates/Literature.md",
-    "templates/MOC.md",
-    "templates/Concept.md",
-    "concepts/Phylodynamics.md",
-    "concepts/Virulence.md",
-    "concepts/Sampling Bias.md",
-    "concepts/Phylogeography.md"
+    "literature/andradesvaltuena2017StoneAgePlague.md",
+    "literature/duchene2015PerformanceDateRandomizationTest.md",
+    "templates/People.md"
   ]
 }

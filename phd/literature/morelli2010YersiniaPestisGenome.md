@@ -3,13 +3,14 @@ title: <i>Yersinia pestis</i> genome sequencing identifies patterns of global ph
 authors: Morelli et al.
 year: 2010
 doi: https://doi.org/10.1038/ng.705
+aliases: Morelli et al. 2010
 ---
 
 # morelli2010YersiniaPestisGenome
 
 ## Summary
 
-- #Yersinia-pestis  evolved in or near #China and spread through multiple #Migration(s) to #Europe, #South-America, #Africa and #Southeast-Asia,
+- [[Yersinia pestis]]  evolved in or near #China and spread through multiple #Migration(s) to [[Europe]], #South-America, #Africa and #Southeast-Asia,
 - Country-specific [[Clade]]s have emerged and can be traced by [[Clade]]-specific #SNP(s).
 - Strict clock minimal and maximal rates: 2.9 × 10−9 and 2.3 × 10−8 per site per year.
 - Comparable results were obtained using #Intergenic #SNP(s) or a variable clock rate.
