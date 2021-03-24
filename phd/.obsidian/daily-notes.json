@@ -1,1 +1,1 @@
-{"format":"YYYY-MM-DD","folder":"log","autorun":true,"template":"templates/Daily"}
+{"format":"YYYY-MM-DD","folder":"journal","autorun":true,"template":"templates/Daily"}

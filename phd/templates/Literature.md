@@ -27,4 +27,4 @@ aliases:
 
 ---
 
-tags: [[Literature]]
+tags: #📥/📰

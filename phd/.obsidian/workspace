@@ -4,31 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "35a4544ca8b5ee3e",
+        "id": "5bc6ad19f6d1143c",
         "type": "leaf",
-        "dimension": 44.08805031446541,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
+            "file": "journal/2021-03-24.md",
             "mode": "source"
           }
         },
-        "group": "cf62831024d7bf26"
+        "group": "99a49a32973ca2f2"
       },
       {
-        "id": "c516dda095174b19",
+        "id": "4ca5d4f5bbf145e7",
         "type": "leaf",
-        "dimension": 55.91194968553459,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
+            "file": "journal/2021-03-24.md",
             "mode": "preview"
           }
         },
-        "group": "cf62831024d7bf26"
+        "group": "99a49a32973ca2f2"
       }
     ],
     "direction": "vertical"
@@ -56,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#LNBA",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -71,7 +69,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md"
+                "file": "journal/2021-03-24.md"
               }
             }
           }
@@ -121,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature/faria2018GenomicEpidemiologicalMonitoring.md",
+                "file": "journal/2021-03-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,22 +156,22 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 319.0000915527344
+    "width": 462.5001220703125
   },
   "lastOpenFiles": [
-    "literature/faria2018GenomicEpidemiologicalMonitoring.md",
-    "literature/eaton2021Plague-Phylogeography.md",
-    "literature/eroshenko2021EvolutionCirculationYersinia.md",
-    "Yellow Fever Virus.md",
-    "templates/Organism.md",
-    "templates/Untitled.md",
-    "templates/Literature.md",
+    "journal/2021-03-24.md",
+    "templates/Daily.md",
     "literature/andradesvaltuena2017StoneAgePlague.md",
-    "literature/duchene2015PerformanceDateRandomizationTest.md",
-    "templates/People.md"
+    "literature/duchene2020ImpactEarlyPublic.md",
+    "scratch/2021-03-24 Scratch.md",
+    "INDEX.md",
+    "Markdown.md",
+    "journal/2021-03-22.md",
+    "model and prior sensitivity analysis.md",
+    "Markov Reward.md"
   ]
 }

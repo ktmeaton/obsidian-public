@@ -1,3 +1,8 @@
+---
+aliases:
+  - Hendrik
+---
+
 # Hendrik Poinar
 
 Role: PhD Supervisor

@@ -1,4 +1,9 @@
-# Emil-Karpsinki
+---
+aliases:
+  - Emil
+---
+
+# Emil Karpsinki
 
 Role: PhD Student
 Project: [[Megafauna]]

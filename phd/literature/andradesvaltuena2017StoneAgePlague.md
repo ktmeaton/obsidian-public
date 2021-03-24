@@ -30,8 +30,16 @@ aliases:
 
 ## Tables
 
-|   Table 2  |
-|:---------:|
-|    [Table](https://www.cell.com/action/showFullTableHTML?isHtml=true&tableId=tbl2&pii=S0960-9822%2817%2931328-3)     |
-| [Statistics of the <i>[[Yersinia pestis]]</i> [[Genome\|genome]] Reconstruction](andradesvaltuena2017StoneAgePlague) |
-|   ([[andradesvaltuena2017StoneAgePlague\|Andrades Valtuena et al. 2017]])  | 
+|                                                       Table 2                                                        |     |
+|:--------------------------------------------------------------------------------------------------------------------:| --- |
+|    [Table](https://www.cell.com/action/showFullTableHTML?isHtml=true&tableId=tbl2&pii=S0960-9822%2817%2931328-3)     |     |
+| [Statistics of the <i>[[Yersinia pestis]]</i> [[Genome\|genome]] Reconstruction](andradesvaltuena2017StoneAgePlague) |     |
+|                       ([[andradesvaltuena2017StoneAgePlague\|Andrades Valtuena et al. 2017]])                        |     |
+
+## Notes
+
+---
+
+tags: 
+  - #📥/📰 
+  - #🟨

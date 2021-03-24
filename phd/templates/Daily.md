@@ -10,12 +10,23 @@
 
 ## Tasks
 
+### Due Today
+
 ```query
-line:(#priority #{{date}}) -path:log/{{date}}
+line:(⬜/🧨 {{date}}) -path:journal/{{date}} -path:templates
 ```
+
+### Upcoming
+
+```query
+line:(⬜/🧨 -{{date}}) -path:templates -path:templates -INDEX
+```
+
 
 ## Notes
 
 ---
 
-tags: [[Log]]
+tags: [[Journal]]
+prev: [[{{date}}]]
+next: [[{{date}}]]

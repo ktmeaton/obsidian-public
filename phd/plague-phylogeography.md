@@ -2,7 +2,7 @@
 
 This page is a Map of Content (see [In what ways can we form useful relationships between notes \[LONG READ\]](https://forum.obsidian.md/t/in-what-ways-can-we-form-useful-relationships-between-notes-long-read/702)) for [[plague-phylogeography]].
 
-You can use this Map of Content for different purposes such as summarising who is involved with this project: such as [[Hendrik Poinar]] and [[Julia Gamble]].
+You can use this Map of Content for different purposes such as summarising who is involved with this project: such as [[@Hendrik Poinar]] and [[Julia Gamble]].
 
 ## Concepts:
 
