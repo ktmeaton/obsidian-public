@@ -4,29 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "5bc6ad19f6d1143c",
+        "id": "b3a89dbc543d0969",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-24.md",
+            "file": "INDEX.md",
             "mode": "source"
           }
         },
-        "group": "99a49a32973ca2f2"
+        "group": "1edece75d3a54c02"
       },
       {
-        "id": "4ca5d4f5bbf145e7",
+        "id": "c8befe1e07afdd37",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-24.md",
+            "file": "INDEX.md",
             "mode": "preview"
           }
         },
-        "group": "99a49a32973ca2f2"
+        "group": "1edece75d3a54c02"
       }
     ],
     "direction": "vertical"
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mermaid",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -69,11 +69,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journal/2021-03-24.md"
+                "file": "INDEX.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "fde9fc2579baeace",
@@ -119,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journal/2021-03-24.md",
+                "file": "INDEX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,22 +157,23 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 462.5001220703125
+    "width": 462.5001220703125,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "journal/2021-03-24.md",
-    "templates/Daily.md",
-    "literature/andradesvaltuena2017StoneAgePlague.md",
-    "literature/duchene2020ImpactEarlyPublic.md",
-    "scratch/2021-03-24 Scratch.md",
     "INDEX.md",
-    "Markdown.md",
-    "journal/2021-03-22.md",
-    "model and prior sensitivity analysis.md",
-    "Markov Reward.md"
+    "journal/2021-03-24.md",
+    "scratch/2021-03-24 Scratch.md",
+    "Mermaid.md",
+    "scratch/2021-03-23 Scratch.md",
+    "templates/Daily.md",
+    "Chromosome Resequencing.md",
+    "SAMN00715800.md",
+    "SAMEA3713715.md",
+    "Plotly.md"
   ]
 }

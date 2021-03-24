@@ -22,9 +22,6 @@ line:(⬜/🧨 {{date}}) -path:journal/{{date}} -path:templates
 line:(⬜/🧨 -{{date}}) -path:templates -path:templates -INDEX
 ```
 
-
-## Notes
-
 ---
 
 tags: [[Journal]]
