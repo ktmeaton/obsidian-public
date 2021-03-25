@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-24.md",
+            "file": "scratch/2021-03-24 Scratch.md",
             "mode": "source"
           }
         },
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-24.md",
+            "file": "scratch/2021-03-24 Scratch.md",
             "mode": "preview"
           }
         },
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journal/2021-03-24.md"
+                "file": "scratch/2021-03-24 Scratch.md"
               }
             }
           }
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journal/2021-03-24.md",
+                "file": "scratch/2021-03-24 Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,6 +170,7 @@
     "width": 462.5001220703125
   },
   "lastOpenFiles": [
+    "scratch/2021-03-24 Scratch.md",
     "journal/2021-03-24.md",
     "literature/morelli2010YersiniaPestisGenome.md",
     "2021-03-23 Poinar Lab Meeting.md",
@@ -178,7 +179,6 @@
     "kanban/Kanban.md",
     "kanban/Priority.md",
     "kanban/Backlog.md",
-    "INDEX.md",
-    "kanban/Todo.md"
+    "INDEX.md"
   ]
 }
