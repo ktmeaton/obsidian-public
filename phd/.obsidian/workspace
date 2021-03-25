@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8f00f806e0acada2",
+        "id": "d048d48eaa238227",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "scratch/2021-03-24 Scratch.md",
-            "mode": "source"
-          }
-        },
-        "group": "849437803cc24dca"
-      },
-      {
-        "id": "35b586557a46a707",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "scratch/2021-03-24 Scratch.md",
+            "file": "journal/2021-03-26.md",
             "mode": "preview"
           }
-        },
-        "group": "849437803cc24dca"
+        }
       }
     ],
     "direction": "vertical"
@@ -38,7 +25,7 @@
       {
         "id": "dd79d13c0c7b83db",
         "type": "tabs",
-        "dimension": 24.316939890710383,
+        "dimension": 24.328358208955223,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -53,7 +40,7 @@
       {
         "id": "ab74201e4c495000",
         "type": "tabs",
-        "dimension": 24.316939890710383,
+        "dimension": 25.37313432835821,
         "children": [
           {
             "id": "9c5aa3c339a1895b",
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Migration",
+                "query": "tag:#⬜/✨",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -76,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scratch/2021-03-24 Scratch.md"
+                "file": "journal/2021-03-26.md"
               }
             }
           }
@@ -85,7 +72,7 @@
       {
         "id": "fde9fc2579baeace",
         "type": "tabs",
-        "dimension": 51.36612021857923,
+        "dimension": 50.29850746268657,
         "children": [
           {
             "id": "36f4026e5d10d540",
@@ -126,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scratch/2021-03-24 Scratch.md",
+                "file": "journal/2021-03-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,15 +157,15 @@
     "width": 462.5001220703125
   },
   "lastOpenFiles": [
-    "scratch/2021-03-24 Scratch.md",
+    "journal/2021-03-26.md",
+    "journal/2021-03-25.md",
+    "templates/Daily.md",
+    "scratch/2021-03-25 Scratch.md",
+    "Kanban.md",
     "journal/2021-03-24.md",
-    "literature/morelli2010YersiniaPestisGenome.md",
-    "2021-03-23 Poinar Lab Meeting.md",
+    "scratch/2021-03-24 Scratch.md",
     "scratch/2021-03-23 Scratch.md",
-    "README.md",
-    "kanban/Kanban.md",
-    "kanban/Priority.md",
-    "kanban/Backlog.md",
-    "INDEX.md"
+    "Chromosome Resequencing.md",
+    "pandoc.md"
   ]
 }

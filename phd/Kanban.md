@@ -3,23 +3,23 @@
 ## Priority
 
 ```query
-tag:⬜/🧨 -README
+tag:⬜/🧨 -path:README
 ```
 
 ## Todo
 
 ```query
-tag:⬜/📋 -README  
+tag:⬜/📋 -path:README  
 ```
 
 ## Backlog
 
 ```query
-tag:⬜/🚂 -README
+tag:⬜/🚂 -path:README
 ```
 
 ## Done
 
 ```query
-tag:⬜/✨ -README
+tag:⬜/✨ -path:README
 ``` 

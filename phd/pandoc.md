@@ -55,6 +55,15 @@ pandoc -t beamer slides/2021-03-23_pandoc.md -o slides/2021-03-23_pandoc.pdf
 reveal-md path/to/my/slides.md
 ```
 
+
+### Markdown -> Standalone HTML
+
+HTML with table of contents, CSS, and custom footer:
+
+```
+pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
+```
+
 ---
 
 tags: [[Tool]]

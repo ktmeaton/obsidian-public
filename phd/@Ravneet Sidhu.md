@@ -1,6 +1,7 @@
 ---
 aliases:
   - Ravneet
+  - Rav
 ---
 
 # Ravneet Sidhu

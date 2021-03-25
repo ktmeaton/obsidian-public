@@ -5,11 +5,13 @@ aliases:
 
 # Chromosome Resequencing
 
-| Field   | Value      |
-| ------- | ---------- |
+| Field   | Value              |
+| ------- | ------------------ |
 | Project | [[Plague Denmark]] |
-|         |            |
+| Date    | 2021-APR           | 
 
+
+---
 
 ## Objectives
 
@@ -18,37 +20,102 @@ aliases:
 	- [[Genome coverage]], specifically the [[Chromosome]].
 	- Informative [[SNP|SNPs]].
 
+---
+
+## Conclusions
+
+1. The following enriched libraries are good candidates for resequencing:
+	- D24, D62, D72, R21
+2. The threshold of 50% coverage at 3X is a relatively good predictor of reaching the minimum number of informative [[SNP|SNPs]] for [[Phylogeny|phylogenetic]] applications.
+3. All of the libraries that [[@Ravneet Sidhu|Ravneet]] has enriched have drastically better complexity than libraries enriched by [[@Katherine Eaton|Katherine]]. Some factors could be:
+	- Different samples, with different preservation and infectious load.
+	- Different baitsets, [[@Ravneet Sidhu|Ravneet]] was the first to use the newly synthesized core baits.
+	- Different technique, [[@Ravneet Sidhu|Ravneet]] may have better laboratory technique somewhere in the workflow :)
+
+---
+
 ## Overview
 1. Run the [[plague-phylogeography]] [[snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
-1. [[Preseq]]: Calculate [[complexity curves]].
-1. [[Snippy]]: Calculate 
-3. Link [[complexity curves]] with:
-	- [[Genome coverage]] of the [[Chromosome]].
-	- [[SNP]]s identify by [[Snippy]].
-4. Identify samples for [[Resequencing]].
+1. Calculate library complexity: [[Preseq]]. 
+1. Calculate the number of informative SNPs: [[Snippy]].
+1. Calculate genome coverage: [[Qualimap]].
+1. Create charts: [[Plotly]].
+1. Identify samples for [[Resequencing]].
 
 
 ```mermaid
 graph TD;
 1-->2;
 2-->3;
-3-->6;
 2-->4;
 4-->6;
 2-->5;
 5-->6;
-5-->7;
-5-->8;
+3-->6;
 
 1[Load Project]
 2[Snakemake Pipeline]
 3[Library Complexity]
 4[Genome Coverage]
 5[Informative SNPs]
-6[MultiQC]
-7[Missing Data]
-8[SNP Matrix]
+6[Plotly]
+
 ```
+
+---
+
+## Results
+
+### Genome Coverage and SNPs
+
+This stats table reflects the [[Genome coverage]] and [[SNP]]s merged across all libraries for a sample. The [[Black Death]] sample [[SAMN00715800|8291]] is included for context as a high coverage genome, and setting the minimum expected number of [[SNP|SNPs]].
+
+```Coverage Status``` is set to 0 if the sample is below 50% and will be colored red on the following chart.
+
+```SNP Status``` is set to 0 if the sample is below 90 SNPs and will be colored red on the following chart.
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/0.embed" height="525" width="100%"></iframe>
+
+
+<br>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/1.embed" height="525" width="100%"></iframe>
+
+- The [[Coverage]] of the reference and the Number of [[SNP|SNPs]] is highly related.
+- The threshold of 50% coverage at 3X is a relatively good predictor of reaching the minimum number of SNPs (relative to [[Black Death]] [[SAMN00715800|8291]]).
+- Three samples have high coverage (70%+) and do not need resequencing.
+	- D51, D71, D75, R36
+- Five samples have moderate coverage (50-70%) which could be improved by resequencing.
+	- D62, D72, P187, P212, P387
+- Three samples have low coverage and moderate SNPs. Depending on the [[complexity curves]], they may be good candidates for resequencing.
+	- D24, P384, R21
+- Two samples have extremely low coverage and few SNPs. These are NOT good candidates for resequencing.
+	- D25, P246, R44 
+
+---
+
+### Library Complexity
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/33.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/35.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/39.embed" height="525" width="100%"></iframe>
+
+Based on the [[Chromosome Resequencing#Genome Coverage and SNPs|Genome Coverage and SNPs]], these plots are being used to evaluate whether medium and low coverage samples should be resequenced.
+
+| Category | Sample | Description                          | Action     |
+| -------- | ------ | ------------------------------------ | ---------- |
+| Medium   | D62    | Still has an upward trajectory.      | Resequence |
+| Medium   | D72    | Starting to plateau.                 | Resequence |
+| Medium   | P187   | Plateaued with few unique molecules. | None       |
+| Medium   | P212   | Plateaued with few unique molecules. | None       |
+|          |        |                                      |            |
+| Low      | P384   | Plateaued with few unique molecules. | None       |
+| Low      | P387   | Plateaued with few unique molecules. | None       |
+| Low      | R21    | Similar to D72.                      | Resequence |
+| Low      | D24    | Marginally worse than D72.           | Resequence |
+	
+---
 
 ## Methods
 
@@ -79,6 +146,28 @@ graph TD;
 	```bash
 	snakemake multiqc_local --profile profiles/infoserv --configfile results/config/snakemake.yaml
 	```
+\*Note: This output was very messy and complicated. I used [[Plotly]] instead to make individual charts.
+
+1. Prep tables for plotly.
+
+	```bash
+	cd plague-phylogeography-projects/denmark/multiqc/local/multiqc_data
+	mkdir -p plotly
+	cd plotly
+	../../../../../scripts/plotly_preseq.sh ../mqc_preseq_plot_1.txt
+	```
+	
+	The following samples had multiple libraries:
+	
+	- P187
+	- P212
+	- P246
+	- P384
+	- P387
+	
+	There appeared to be little significant variation between the libraries. I chose the M4 experiment on library a to be representative of each.
+	
+	\*Note: I just made the "Perfect" one manually.
 
 1. Create a [[snakemake]] report.
 
@@ -86,16 +175,6 @@ graph TD;
 	mkdir -p results/report/local/
 	snakemake multiqc_local --report results/report/local/report.html --profile profiles/infoserv --configfile results/config/snakemake.yaml
 	```
-
-#### Manual Analysis
-
-1. 
-```bash
-for file in `ls results/eager/local/D*/preseq/*L001*.filtered.ccurve`; 
-do 
-  tail -n 1 $file | awk -v file=`basename $file` '{print file"\t"$2 / $1}'
-; done
-```
 
 
 ### Upload Results
@@ -114,51 +193,6 @@ do
 	git commit -m ""
 	git push origin
 	```
-
-## Results
-
-| Sample                 | Library                | [[Coverage]] % (3X) | [[SNP]] | Mapped    | Duplicates |
-| ---------------------- | ---------------------- | ------------------- | ------- | --------- | ---------- |
-| [[SAMN00715800\|8291]] | [[SAMN00715800\|8291]] | 90.04               | 104     | 1,141,530 | 52.97      |
-| D24                    | D24                    | 33.35               | 46      | 107,868   | 27.17      |
-| D25                    | D25                    | 0.03                | 7       | 2,680     | 20.62      |
-| D51                    | D51                    | 70.91               | 118     | 378,558   | 63.95      |
-| D62                    | D62                    | 55.23               | 59      | 280,646   | 15.82      |
-| D71                    | D71                    | 89.17               | 111     | 1,125,120 | 26.08      |
-| D72                    | D72                    | 67.86               | 108     | 316,952   | 33.29      |
-| D75                    | D75                    | 89.34               | 144     | 1,048,030 | 14.10      |
-|                        |                        |                     |         |           |            |
-| P187                   | P187                   | 54.6                | 108     |           |            |
-| P212                   |                        | 61.39               | 100     |           |            |
-| P246                   |                        | 0.41                | 6       |           |            |
-| P384                   |                        | 15.67               | 39      |           |            |
-|                        |                        |                     |         |           |            |
-| P387                   | P387                   | 58.95               | 95      |           |            |
-|                        | P387M2                 |                     |         | 71,235    | 8.68       |
-|                        | P387aM3                |                     |         | 55,359    | 16.93      |
-|                        | P387bM3                |                     |         | 61,301    | 16.39      |
-|                        | P387cM3                |                     |         | 57,186    | 14.48      |
-|                        | P387S6aM4              |                     |         | 40,973    | 7.72       |
-|                        | P387S6bM4              |                     |         | 41,893    | 8.80       |
-|                        | P387S6cM4              |                     |         | 37,227    | 8.72       |
-|                        | P387S6dM4              |                     |         | 43,774     | 8.47       |
-|                        | P387S6eM4              |                     |         | 40,678     | 7.68       |
-|                        | P387S6aM5              |                     |         | 3,729      | 93.22      |
-|                        | P387S6bM5              |                     |         | 6,272      | 89.60      |
-|                        | P387S6cM5              |                     |         | 8,561      | 85.61      |
-|                        |                        |                     |         |           |            |
-| R21                    | R21E1S1S2              | 32.12               | 60      | 138,809   | 47.87      |
-| R36                    | R36E1S1S2              | 91.4                | 101     | 1,160,240 | 25.86      |
-| R44                    | R44E1S1S2              | 0.08                | 30      | 4,927     | 23.46      |
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/1.embed" height="525" width="100%"></iframe>
-
-
-- The [[Coverage]] of the reference and the Number of [[SNP|SNPs]] is highly related. There 
-
-## Conclusions
-
-
 
 ---
 

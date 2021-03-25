@@ -34,6 +34,9 @@ Plotly is software that creates interactive charts.
 	  >
 	 </iframe>
 
+## Notes
+
+Free accounts have a file upload limit of 500 kb.
 
 ---
 
