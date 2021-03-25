@@ -27,7 +27,7 @@ Poinar Lab Meeting
 
  - The ancestral location of pathogens can be estimated using [[Phylogeography]].
 - [[Geographic Origin]]s of an emerging disease (**Fig 1**).
-- #Migration history of an outbreak (**Fig 2**).
+- [[Migration]] history of an outbreak (**Fig 2**).
 
 | Fig. 1                                            |                   Fig 2.                    |
 |:-------------------------------------------------:|:-------------------------------------------:|
@@ -58,7 +58,7 @@ Poinar Lab Meeting
 
  ###### 3. Potential Contributions
 - Novel Synthesis: Triple the sample size of existing [[Yersinia pestis]] phylogenies.
-- Geospatial Analysis: Use a statistical approach to mapping the [Geographic Origin]](s) and #Migration.
+- Geospatial Analysis: Use a statistical approach to mapping the [Geographic Origin]](s) and [[Migration]].
 
 ---
 

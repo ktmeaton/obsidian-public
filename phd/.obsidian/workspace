@@ -4,29 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "b3a89dbc543d0969",
+        "id": "8f00f806e0acada2",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "INDEX.md",
+            "file": "journal/2021-03-24.md",
             "mode": "source"
           }
         },
-        "group": "1edece75d3a54c02"
+        "group": "849437803cc24dca"
       },
       {
-        "id": "c8befe1e07afdd37",
+        "id": "35b586557a46a707",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "INDEX.md",
+            "file": "journal/2021-03-24.md",
             "mode": "preview"
           }
         },
-        "group": "1edece75d3a54c02"
+        "group": "849437803cc24dca"
       }
     ],
     "direction": "vertical"
@@ -36,9 +36,9 @@
     "type": "split",
     "children": [
       {
-        "id": "ab74201e4c495000",
+        "id": "dd79d13c0c7b83db",
         "type": "tabs",
-        "dimension": 48.63387978142077,
+        "dimension": 24.316939890710383,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -47,14 +47,21 @@
               "type": "file-explorer",
               "state": {}
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "ab74201e4c495000",
+        "type": "tabs",
+        "dimension": 24.316939890710383,
+        "children": [
           {
             "id": "9c5aa3c339a1895b",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "mermaid",
+                "query": "tag:#Migration",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -69,12 +76,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INDEX.md"
+                "file": "journal/2021-03-24.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "fde9fc2579baeace",
@@ -120,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INDEX.md",
+                "file": "journal/2021-03-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,23 +163,22 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 462.5001220703125,
-    "collapsed": true
+    "width": 462.5001220703125
   },
   "lastOpenFiles": [
-    "INDEX.md",
     "journal/2021-03-24.md",
-    "scratch/2021-03-24 Scratch.md",
-    "Mermaid.md",
+    "literature/morelli2010YersiniaPestisGenome.md",
+    "2021-03-23 Poinar Lab Meeting.md",
     "scratch/2021-03-23 Scratch.md",
-    "templates/Daily.md",
-    "Chromosome Resequencing.md",
-    "SAMN00715800.md",
-    "SAMEA3713715.md",
-    "Plotly.md"
+    "README.md",
+    "kanban/Kanban.md",
+    "kanban/Priority.md",
+    "kanban/Backlog.md",
+    "INDEX.md",
+    "kanban/Todo.md"
   ]
 }

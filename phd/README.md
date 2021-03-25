@@ -28,6 +28,10 @@ gantt
 	Last Day to Defend 	:	crit,diss-defend,    2021-08-19,2021-08-20
 ```
 
+## Kanban
+
+![[Kanban]]
+
 ## Tag Taxonomy
 
 ### Kanban 

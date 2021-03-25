@@ -1,3 +1,0 @@
-```query
-tag:kanban/priority
-```

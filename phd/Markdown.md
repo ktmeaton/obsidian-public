@@ -12,21 +12,21 @@ Embedding the full INDEX page:
 ![](INDEX)
 ```
 
-![](INDEX)
+![](README.md)
 
 ### Heading
 
-Embedding a specific heading like the [[INDEX#Tag Taxonomy|Tag Taxonomy]].
+Embedding a specific heading like the [[README#Tag Taxonomy|Tag Taxonomy]].
 
 ```markdown
 ![](INDEX#Tag\ Taxonomy)
 ```
 
-![](INDEX#Tag\ Taxonomy)
+![](README.md#Tag%5C%20Taxonomy Taxonomy)
 
 ### Subheading
 
-Embedding a specific subheading like the [[INDEX#Tag Taxonomy#Inputs|Inputs]].
+Embedding a specific subheading like the [[README#Tag Taxonomy#Inputs|Inputs]].
 
 ```markdown
 ![](INDEX#Inputs)
@@ -36,7 +36,7 @@ OR
 ![](INDEX#Tag\ Taxonomy#Inputs)
 ```
 
-![](INDEX#Inputs)
+![](README.md#Inputs)
 
 
 ---
