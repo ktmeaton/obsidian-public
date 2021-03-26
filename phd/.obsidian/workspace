@@ -6,10 +6,11 @@
       {
         "id": "2cfb48430068c3a2",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Chromosome Resequencing.md",
+            "file": "scratch/2021-03-25 Scratch.md",
             "mode": "source"
           }
         },
@@ -18,11 +19,10 @@
       {
         "id": "0fd19d27b7d9f1fa",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Chromosome Resequencing.md",
+            "file": "scratch/2021-03-25 Scratch.md",
             "mode": "preview"
           }
         },
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chromosome Resequencing.md"
+                "file": "scratch/2021-03-25 Scratch.md"
               }
             }
           }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chromosome Resequencing.md",
+                "file": "scratch/2021-03-25 Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,11 +172,11 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "scratch/2021-03-25 Scratch.md",
     "Chromosome Resequencing.md",
     "journal/2021-03-26.md",
     "pandoc.md",
     "Obsidian.md",
-    "scratch/2021-03-25 Scratch.md",
     "Document Conversion MOC.md",
     "Document Conversion.md",
     "pandoc/pandoc-example.md",
