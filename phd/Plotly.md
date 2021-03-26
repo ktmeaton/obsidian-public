@@ -6,7 +6,7 @@ Plotly is software that creates interactive charts.
 
 ## Embed in [[Markdown]]
 - Link: <https://chart-studio.plotly.com/~ktmeaton/1/#/>
--[[iframe]] [[html]]:
+-[[iframe]] [[HTML]]:
 
 	```html
 	<iframe 

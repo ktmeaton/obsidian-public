@@ -1,3 +1,9 @@
+---
+aliases:
+  - Julia Gamble
+  - Julia
+---
+
 # Julia Gamble
 
 Role: Collaborator

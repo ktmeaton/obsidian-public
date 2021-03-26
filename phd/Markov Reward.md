@@ -10,7 +10,7 @@ For [[Phylogeography|phylogeography]], I'm guessing this can be done for either 
 
 ## Literature
 
-- [[duchene2020ImpactEarlyPublic|Duchene et al. 2020]]
+- [[Duchene et al. 2020 Impact Early Public|Duchene et al. 2020]]
 
 
 ---

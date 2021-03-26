@@ -16,7 +16,7 @@ aliases:
 >* The #ymt gene was acquired before 951 cal BC, giving rise to #Transmission via #Flea(s).
 
 
-- According to [[spyrou2018Analysis3800yearoldYersinia]]:
+- According to [[Spyrou et al. 2018 Analysis 3800-Year-Old Yersinia]]:
 >  show genetic characteristics incompatible with arthropod adaptation
 	ie. Not capable of causing bubonic plague.
 	

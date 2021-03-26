@@ -5,7 +5,7 @@
 [[pandoc]] converts text files into different formats. I'm hoping to use it to convert [[Markdown]] files to:
 - [[PDF]]
 - [[Word doc]]
--  [[html]]
+-  [[HTML]]
 
 ## Installation (WSL2)
 

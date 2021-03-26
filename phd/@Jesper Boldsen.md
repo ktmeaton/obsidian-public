@@ -1,3 +1,9 @@
+---
+aliases:
+  - Jesper Boldsen
+  - Jesper
+---
+
 # Jesper Boldsen
 
 Role: Collaborator

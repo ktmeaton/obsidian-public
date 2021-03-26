@@ -4,10 +4,14 @@ aliases:
   - Kat
 ---
 
-# @Katherine Eaton
+# Katherine Eaton
 
-Role:
-Project:
+| Field       | Information                     | Role            |
+| ----------- | ------------------------------- | --------------- |
+| Institution | [[McMaster Ancient DNA Center]] | [[PhD Student]] |
+| Projects    | [[Plague Denmark]]              | [[Author]]      |
+|             | [[plague-phylogeography]]       | [[Author]]      | 
+|             | [[Plague York Barbican]]        | [[Author]]      |
 
 ---
 

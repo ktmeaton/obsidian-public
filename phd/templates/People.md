@@ -1,7 +1,14 @@
+---
+aliases:
+  - {{title}}
+---
+
 # {{title}}
 
-Role:
-Project:
+| Field       | Information | Role |
+| ----------- | ----------- | ---- |
+| Institution |             |      | 
+| Projects    |             |      |
 
 ---
 

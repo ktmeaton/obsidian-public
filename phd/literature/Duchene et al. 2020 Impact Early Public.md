@@ -3,7 +3,7 @@ aliases:
   - Duchene et al. 2020
 ---
 
-# duchene2020ImpactEarlyPublic
+# Duchene et al. 2020 Impact Early Public
 
 | Field   | Value     |
 | ------- | --------- |
@@ -23,7 +23,7 @@ This article was recommended to me by [[@Sebastian Duchene]] as an example of [[
 |:-----------------------:| --- |
 | ![[duchene2020ImpactEarlyPublic_figX.jpg]] |     |
 |     Figure caption.     |     |
-[[duchene2020ImpactEarlyPublic\|Alias]] | 	|	
+[[Duchene et al. 2020 Impact Early Public\|Alias]] | 	|	
 
 ## Notes
 

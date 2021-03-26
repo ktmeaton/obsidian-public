@@ -19,7 +19,14 @@
 | #⬜/🧨 | Priority |
 | #⬜/✨ | Done     | 
 
-### Notes
+### Note Types
+
+|  Type  |    Description    |
+|:------:|:-----------------:|
+| People | Individual humans |
+|  Tool  |     Software      | 
+
+### Note Growth
 
 |  Tag   |    Use    |
 |:------:|:---------:|
@@ -37,9 +44,10 @@
 
 ### Status
 
-| Tag |    Use     |
-|:---:|:----------:|
-| #🟥 |   Inbox    |
-| #🟨 | Processing |
-| #🟩 |  Complete  | 
-| #🟦 |  Archive   |
+| Tag |    Use     |     |     |
+|:---:|:----------:| --- | --- |
+| #🟥 |   Inbox    |     |     |
+| #🟨 | Processing |     |     |
+| #🟩 |  Complete  |     |     |
+| #🟦 |  Archive   |     |     |
+

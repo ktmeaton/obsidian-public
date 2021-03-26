@@ -8,7 +8,7 @@ You can highlight that this concept is relevant for specific projects such as [[
 
 ## Methods
 
-- [[TreeTime]] ([[sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic]])
+- [[TreeTime]] ([[Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic]])
 
 ---
 

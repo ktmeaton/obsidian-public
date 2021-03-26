@@ -45,7 +45,7 @@ Poinar Lab Meeting
 |                      Fig. 3                       |
 |:-------------------------------------------------:|
 |           ![[spyrou2018Analysis3800yearoldYersinia_fig2c.jpg]]           |
-| [Timeline of ancient <i>Yersinia pestis</i> genomes.](spyrou2018Analysis3800yearoldYersinia) | 
+| [Timeline of ancient <i>Yersinia pestis</i> genomes.](Spyrou%20et%20al.%202018%20Analysis%203800-Year-Old%20Yersinia.md) | 
 
  ###### 2. Hot Debates!
 - The [[Geographic Origin]](s) are contentious (**Fig 4**).
@@ -54,7 +54,7 @@ Poinar Lab Meeting
 |                                                   Fig 4                                                   |                              Fig 5                               |
 |:---------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
 |                              ![[rascovan2019EmergenceSpreadBasal_fig5d.jpg]]                              |           ![[wagner2014YersiniaPestisPlague_fig4.jpg]]           |
-| [Dispersion model during the Late Neolithic Bronze Age.](rascovan2019EmergenceSpreadBasal) | [Hypothesized dissemination routes of the major plague pandemics.](wagner2014YersiniaPestisPlague) |
+| [Dispersion model during the Late Neolithic Bronze Age.](Rascovan%20et%20al.%202019%20Emergence%20Spread%20Basal.md) | [Hypothesized dissemination routes of the major plague pandemics.](wagner2014YersiniaPestisPlague) |
 
  ###### 3. Potential Contributions
 - Novel Synthesis: Triple the sample size of existing [[Yersinia pestis]] phylogenies.
@@ -126,7 +126,7 @@ Poinar Lab Meeting
 
 1. Estimate the bias and variance in ancestral geographic locations.
 	-  #Jacknife: Leave <i>n</i> out ([[shi2010UsingJackknifeAssess|Shi et al. 2010]]).
-	-  #Randomization: Shuffle the location labels ([[duchene2015PerformanceDateRandomizationTest|Duchene et al. 2015]]).
+	-  #Randomization: Shuffle the location labels ([[Duchene et al. 2015 Performance Date-Randomization Test|Duchene et al. 2015]]).
 	-  #Bootstrap: Sampling with replacement. 
 <br>	  
 2. Visualize the geographic variance  of historically important nodes on a map.

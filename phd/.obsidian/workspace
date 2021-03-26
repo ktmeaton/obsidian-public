@@ -4,29 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "2cfb48430068c3a2",
+        "id": "f55686544622f863",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "scratch/2021-03-25 Scratch.md",
+            "file": "templates/Literature.md",
             "mode": "source"
           }
         },
-        "group": "58eddb16dc3e2978"
+        "group": "fe2fc03b225c6c21"
       },
       {
-        "id": "0fd19d27b7d9f1fa",
+        "id": "aa4f456bc24daed9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "scratch/2021-03-25 Scratch.md",
+            "file": "templates/Literature.md",
             "mode": "preview"
           }
         },
-        "group": "58eddb16dc3e2978"
+        "group": "fe2fc03b225c6c21"
       }
     ],
     "direction": "vertical"
@@ -38,7 +38,7 @@
       {
         "id": "dd79d13c0c7b83db",
         "type": "tabs",
-        "dimension": 24.328358208955223,
+        "dimension": 70.1492537313433,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -53,7 +53,7 @@
       {
         "id": "ab74201e4c495000",
         "type": "tabs",
-        "dimension": 25.37313432835821,
+        "dimension": 14.925373134328357,
         "children": [
           {
             "id": "9c5aa3c339a1895b",
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#⬜/✨",
+                "query": "@Marie",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scratch/2021-03-25 Scratch.md"
+                "file": "templates/Literature.md"
               }
             }
           }
@@ -85,7 +85,7 @@
       {
         "id": "fde9fc2579baeace",
         "type": "tabs",
-        "dimension": 50.29850746268657,
+        "dimension": 14.925373134328357,
         "children": [
           {
             "id": "36f4026e5d10d540",
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scratch/2021-03-25 Scratch.md",
+                "file": "templates/Literature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,23 +164,22 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 462.5001220703125,
-    "collapsed": true
+    "width": 462.5001220703125
   },
   "lastOpenFiles": [
-    "scratch/2021-03-25 Scratch.md",
-    "Chromosome Resequencing.md",
-    "journal/2021-03-26.md",
-    "pandoc.md",
-    "Obsidian.md",
-    "Document Conversion MOC.md",
-    "Document Conversion.md",
-    "pandoc/pandoc-example.md",
-    "pandoc/pandoc-example.md.md",
-    "pandoc/Untitled.md"
+    "templates/Literature.md",
+    "scratch/2021-03-26 Scratch.md",
+    "literature/Spyrou et al. 2018 Analysis 3800-Year-Old Yersinia.md",
+    "literature/spyrou2018Analysis3800yearoldYersinia.md",
+    "literature/Eroshenko et al. 2021 Evolution Circulation Yersinia.md",
+    "literature/eroshenko2021EvolutionCirculationYersinia.md",
+    "literature/Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic.md",
+    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
+    "literature/Rascovan et al. 2019 Emergence Spread Basal.md",
+    "literature/rascovan2019EmergenceSpreadBasal.md"
   ]
 }

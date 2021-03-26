@@ -5,10 +5,12 @@ aliases:
 
 # Hendrik Poinar
 
-Role: PhD Supervisor
-Project: 
-	- [[plague-phylogeography]]
-	- [[Plague Denmark]]
+| Field       | Information                     | Role                       |
+| ----------- | ------------------------------- | -------------------------- |
+| Institution | [[McMaster Ancient DNA Center]] | [[Principal Investigator]] |
+| Projects    | [[Plague Denmark]]              | [[Supervisor]]             |
+|             | [[plague-phylogeography]]       | [[Supervisor]]             |
+|             | [[Plague York Barbican]]        | [[Supervisor]]             |
 
 ---
 

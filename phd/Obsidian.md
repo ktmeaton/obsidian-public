@@ -4,8 +4,9 @@
 
 Obsidian is software that performs...
 
+## [[HTML]]
 
-For future reference, the following html tags work:
+For future reference, the following [[HTML]] tags work:
 
 ```html
 <iframe>
@@ -20,6 +21,21 @@ Examples:
 ```html
 <div style="page-break-after: always;"></div>
 ```
+
+## [[Graph]]
+
+### General
+
+```yaml
+Filters: -path:pandoc -path:templates
+```
+
+### People and Projects
+
+```yaml
+Filters: ([[Project]] OR [[PEOPLE]] OR [[Institution]])
+```
+
 
 ---
 

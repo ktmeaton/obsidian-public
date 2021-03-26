@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Alias
+  - @{{title}}
 ---
 
 # {{title}}
