@@ -10,20 +10,17 @@ aliases:
 | Project | [[Plague Denmark]] |
 | Date    | 2021-APR           | 
 
-
 ---
 
 ## Objectives
-
-1. Identify [[Yersinia pestis]]-positive samples for [[Resequencing]] based on:
+1. Identify [[Yersinia pestis]]-positive samples for [[resequencing]] based on:
 	- [[Library complexity]]
-	- [[Genome coverage]], specifically the [[Chromosome]].
+	- [[Genome coverage]], specifically the [[chromosome]].
 	- Informative [[SNP|SNPs]].
-
+	
 ---
 
 ## Conclusions
-
 1. The following enriched libraries are good candidates for resequencing:
 	- D24, D62, D72, R21
 2. The threshold of 50% coverage at 3X is a relatively good predictor of reaching the minimum number of informative [[SNP|SNPs]] for [[Phylogeny|phylogenetic]] applications.
@@ -34,13 +31,15 @@ aliases:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## Overview
 1. Run the [[plague-phylogeography]] [[snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
 1. Calculate library complexity: [[Preseq]]. 
 1. Calculate the number of informative SNPs: [[Snippy]].
 1. Calculate genome coverage: [[Qualimap]].
 1. Create charts: [[Plotly]].
-1. Identify samples for [[Resequencing]].
+1. Identify samples for [[resequencing]].
 
 
 ```mermaid
@@ -97,6 +96,7 @@ This stats table reflects the [[Genome coverage]] and [[SNP]]s merged across all
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/33.embed" height="525" width="100%"></iframe>
 
+<br>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/35.embed" height="525" width="100%"></iframe>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/39.embed" height="525" width="100%"></iframe>
@@ -109,7 +109,6 @@ Based on the [[Chromosome Resequencing#Genome Coverage and SNPs|Genome Coverage 
 | Medium   | D72    | Starting to plateau.                 | Resequence |
 | Medium   | P187   | Plateaued with few unique molecules. | None       |
 | Medium   | P212   | Plateaued with few unique molecules. | None       |
-|          |        |                                      |            |
 | Low      | P384   | Plateaued with few unique molecules. | None       |
 | Low      | P387   | Plateaued with few unique molecules. | None       |
 | Low      | R21    | Similar to D72.                      | Resequence |

@@ -4,16 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "d048d48eaa238227",
+        "id": "2cfb48430068c3a2",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-26.md",
+            "file": "Chromosome Resequencing.md",
+            "mode": "source"
+          }
+        },
+        "group": "58eddb16dc3e2978"
+      },
+      {
+        "id": "0fd19d27b7d9f1fa",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Chromosome Resequencing.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "58eddb16dc3e2978"
       }
     ],
     "direction": "vertical"
@@ -63,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journal/2021-03-26.md"
+                "file": "Chromosome Resequencing.md"
               }
             }
           }
@@ -97,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.49999809265137
+    "width": 334.49999809265137,
+    "collapsed": true
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -113,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journal/2021-03-26.md",
+                "file": "Chromosome Resequencing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,18 +168,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 462.5001220703125
+    "width": 462.5001220703125,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "journal/2021-03-26.md",
-    "journal/2021-03-25.md",
-    "templates/Daily.md",
-    "scratch/2021-03-25 Scratch.md",
-    "Kanban.md",
-    "journal/2021-03-24.md",
-    "scratch/2021-03-24 Scratch.md",
-    "scratch/2021-03-23 Scratch.md",
     "Chromosome Resequencing.md",
-    "pandoc.md"
+    "pandoc.md",
+    "Obsidian.md",
+    "scratch/2021-03-25 Scratch.md",
+    "Document Conversion MOC.md",
+    "Document Conversion.md",
+    "pandoc/pandoc-example.md",
+    "pandoc/pandoc-example.md.md",
+    "pandoc/Untitled.md",
+    "journal/2021-03-25.md"
   ]
 }

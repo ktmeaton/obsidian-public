@@ -12,8 +12,15 @@ For future reference, the following html tags work:
 <figure>
 <figcaption>
 <table>
+<div>
+```
+
+Examples:
+
+```html
+<div style="page-break-after: always;"></div>
 ```
 
 ---
 
-tags: [[Tool]]
+tags: [[Tool]], [[Document Conversion MOC]], #📝/🌱 
