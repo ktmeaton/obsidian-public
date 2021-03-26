@@ -6,7 +6,6 @@
       {
         "id": "2cfb48430068c3a2",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -19,6 +18,7 @@
       {
         "id": "0fd19d27b7d9f1fa",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -173,6 +173,7 @@
   },
   "lastOpenFiles": [
     "Chromosome Resequencing.md",
+    "journal/2021-03-26.md",
     "pandoc.md",
     "Obsidian.md",
     "scratch/2021-03-25 Scratch.md",
@@ -180,7 +181,6 @@
     "Document Conversion.md",
     "pandoc/pandoc-example.md",
     "pandoc/pandoc-example.md.md",
-    "pandoc/Untitled.md",
-    "journal/2021-03-25.md"
+    "pandoc/Untitled.md"
   ]
 }
