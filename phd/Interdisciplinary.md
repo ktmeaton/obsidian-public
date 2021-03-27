@@ -1,0 +1,6 @@
+---
+aliases:
+  - interdisciplinary
+---
+
+# Interdisciplinary

@@ -1,13 +1,14 @@
 ---
 aliases:
   - Andrades Valtuena et al. 2017
+  - '@andradesvaltuena2017StoneAgePlague'  
 ---
 
 # Andrades Valtuena et al. 2017 Stone Age Plague
 
 | Field   | Value                                               |
 | ------- | --------------------------------------------------- |
-| Title   | The Stone Age Plague and Its Persistence in Eurasia |
+| Title   | The Stone Age [[Plague]] and Its Persistence in [[Eurasia]] |
 | Year    | 2017                                                |
 | Authors | Valtuena et al.                                     |
 | DOI     | <https://doi.org/10.1016/j.cub.2017.10.025>         |
@@ -18,7 +19,7 @@ aliases:
 - Movement of plague from Central [[Eurasia]] to [[Europe]], with expansion of people from the [[Steppe]]. Persisted in [[Europe]] until mid-[[LNBA|Bronze Age]]. Moved back to Central [[Eurasia]] along with moving human populations.
 - 6 [[Ancient]] [[Europe]](an) [[Yersinia pestis]] [[Genome|genome]]s, 4800 - 3700 YBP.
 - All form an extinct [[Clade|clade]].
--  [[MRCA]] date: 6078 years (95% HPD: 5036 - YBP), agrees with [[rasmussen2015EarlyDivergentStrains|Rasmussen et al. 2015]].
+-  [[MRCA]] date: 6078 years (95% HPD: 5036 - YBP), agrees with [[Rasmussen et al. 2015 Early Divergent Strains|Rasmussen et al. 2015]].
 
 ---
 
@@ -26,7 +27,7 @@ aliases:
 |   Fig 2  |
 |:-------:|
 |   ![[andradesvaltuena2017StoneAgePlague_fig2.jpg]]   |
-| [[Map]] of Proposed <i>[[Yersinia pestis]]</i> [[Migration\|migration]] throughout [[Eurasia]].  |
+| [[Map]] of Proposed <i>[[Yersinia pestis]]</i> [[Spread\|migration]] throughout [[Eurasia]].  |
 |   ([[Andrades Valtuena et al. 2017 Stone Age Plague\|Andrades Valtuena et al. 2017]])  | 
 
 ## Tables

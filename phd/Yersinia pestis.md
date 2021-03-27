@@ -1,8 +1,13 @@
+---
+aliases:
+  - 'Y. pestis'
+---
+
 # [[Yersinia pestis]]
 
 ## Phylogenetic Branches
 
-| [[Branch]]   | [[Clade]] | [[Subclade]] |
+| [[Branch]]   | [[Clade]] | Subclade |
 | ------------ | --------- | ------------ |
 | [[Branch 0]] | [[0.ANT]] | [[0.ANT1]]   |
 |              |           | [[0.ANT3]]   |

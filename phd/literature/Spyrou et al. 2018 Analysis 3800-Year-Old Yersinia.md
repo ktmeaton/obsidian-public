@@ -19,7 +19,7 @@ aliases:
 ## Summary
 
 - Sequenced the new strain RT5 from the Late Bronze Age period (~3800 BP) in the Samara region of modern-day Russia.
-- This strain is distinct from the [[LNBA]] strains of [[rasmussen2015EarlyDivergentStrains]] both in clade placement and the acquisition of components required for  flea-mediated transmission #ymt ?
+- This strain is distinct from the [[LNBA]] strains of [[Rasmussen et al. 2015 Early Divergent Strains]] both in clade placement and the acquisition of components required for  flea-mediated transmission #ymt ?
 
 >- Propose that several Y. pestis lineages were established during the Bronze Age, some of which persist to the present day.
 
@@ -50,3 +50,8 @@ aliases:
 | ![[spyrou2018Analysis3800yearoldYersinia_fig3.jpg]] |
 |         [Heat map of virulence gene coverage.](Spyrou%20et%20al.%202018%20Analysis%203800-Year-Old%20Yersinia.md) |
 
+---
+
+tags: 
+  - #📥/📰 
+  - #🟨

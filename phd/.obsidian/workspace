@@ -4,29 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "f55686544622f863",
+        "id": "0d6e13916f34a1e7",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "templates/Literature.md",
+            "file": "2021-03-27 Scratch.md",
             "mode": "source"
           }
         },
-        "group": "fe2fc03b225c6c21"
+        "group": "5070f94830309fbf"
       },
       {
-        "id": "aa4f456bc24daed9",
+        "id": "2781110ac90228d1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "templates/Literature.md",
+            "file": "2021-03-27 Scratch.md",
             "mode": "preview"
           }
         },
-        "group": "fe2fc03b225c6c21"
+        "group": "5070f94830309fbf"
       }
     ],
     "direction": "vertical"
@@ -38,7 +38,7 @@
       {
         "id": "dd79d13c0c7b83db",
         "type": "tabs",
-        "dimension": 70.1492537313433,
+        "dimension": 60.59701492537314,
         "children": [
           {
             "id": "b342f914b30e0b55",
@@ -53,7 +53,7 @@
       {
         "id": "ab74201e4c495000",
         "type": "tabs",
-        "dimension": 14.925373134328357,
+        "dimension": 24.47761194029851,
         "children": [
           {
             "id": "9c5aa3c339a1895b",
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "@Marie",
+                "query": "[[subclade",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "templates/Literature.md"
+                "file": "2021-03-27 Scratch.md"
               }
             }
           }
@@ -110,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.49999809265137,
+    "width": 894.4999980926514,
     "collapsed": true
   },
   "right": {
@@ -127,12 +127,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/Literature.md",
+                "file": "2021-03-27 Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -171,15 +171,15 @@
     "width": 462.5001220703125
   },
   "lastOpenFiles": [
-    "templates/Literature.md",
-    "scratch/2021-03-26 Scratch.md",
-    "literature/Spyrou et al. 2018 Analysis 3800-Year-Old Yersinia.md",
-    "literature/spyrou2018Analysis3800yearoldYersinia.md",
-    "literature/Eroshenko et al. 2021 Evolution Circulation Yersinia.md",
-    "literature/eroshenko2021EvolutionCirculationYersinia.md",
-    "literature/Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic.md",
-    "literature/sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic.md",
-    "literature/Rascovan et al. 2019 Emergence Spread Basal.md",
-    "literature/rascovan2019EmergenceSpreadBasal.md"
+    "2021-03-27 Scratch.md",
+    "Bos et al. 2016 Eighteenth Century Yersinia.md",
+    "literature/Spyrou et al. 2016 Historical Pestis Genomes.md",
+    "literature/Guellil et al. 2020 Genomic Historical Synthesis.md",
+    "literature/Xu et al. 2019 Historical Genomic Data.md",
+    "Yersinia pestis.md",
+    "Anisimov et al. 2004 Intraspecific Diversity Yersinia.md",
+    "literature/Zhgenti et al. 2015 Genome Assemblies 11.md",
+    "Bakanidze et al. 2010 Surveillance PlagueNatural.md",
+    "Under-represnted.md"
   ]
 }

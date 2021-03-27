@@ -10,7 +10,7 @@ The [[Phylogeography]] of plague has been contentious and remain so.
 
 ## References:
 - [[Andrades Valtuena et al. 2017 Stone Age Plague]] proposed two scenarios for how plague reached Europe in the Bronze Age.
-- [[rasmussen2015EarlyDivergentStrains]] findings are supported by [[Andrades Valtuena et al. 2017 Stone Age Plague]].
+- [[Rasmussen et al. 2015 Early Divergent Strains]] findings are supported by [[Andrades Valtuena et al. 2017 Stone Age Plague]].
 
 ---
 

@@ -1,7 +1,13 @@
 # Sampling Bias
 
-Here I'm working on the concept of #Sampling-Bias from [[rasmussen2015EarlyDivergentStrains]].
+Here I'm working on the concept of #Sampling-Bias from [[Rasmussen et al. 2015 Early Divergent Strains]].
 
+## Concepts
+
+- [[Even Sample]]
+- [[Over-Represented]]
+- [[Under-represented]]
+- 
 ## Methods
 
 - #Bootstrap

@@ -27,12 +27,12 @@ Poinar Lab Meeting
 
  - The ancestral location of pathogens can be estimated using [[Phylogeography]].
 - [[Geographic Origin]]s of an emerging disease (**Fig 1**).
-- [[Migration]] history of an outbreak (**Fig 2**).
+- [[Spread|migration]] history of an outbreak (**Fig 2**).
 
 | Fig. 1                                            |                   Fig 2.                    |
 |:-------------------------------------------------:|:-------------------------------------------:|
 |  ![[kalkauskas2021SamplingBiasModel_fig4b.png]]   | ![[faria2018GenomicEpidemiologicalMonitoring_fig4e.jpg]] |
-| [MRCA Location of West Nile Virus (WNV) in the USA.](kalkauskas2021SamplingBiasModel) | [Migration of the Yellow Fever Virus (YFV) outbreak in Brazil.](faria2018GenomicEpidemiologicalMonitoring) |
+| [MRCA Location of West Nile Virus (WNV) in the USA.](Kalkauskas%20et%20al.%202021%20Sampling%20Bias%20Model.md) | [Migration of the Yellow Fever Virus (YFV) outbreak in Brazil.](Faria%20et%20al.%202018%20Genomic%20Epidemiological%20Monitoring.md) |
 
 ---
 
@@ -54,11 +54,11 @@ Poinar Lab Meeting
 |                                                   Fig 4                                                   |                              Fig 5                               |
 |:---------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
 |                              ![[rascovan2019EmergenceSpreadBasal_fig5d.jpg]]                              |           ![[wagner2014YersiniaPestisPlague_fig4.jpg]]           |
-| [Dispersion model during the Late Neolithic Bronze Age.](Rascovan%20et%20al.%202019%20Emergence%20Spread%20Basal.md) | [Hypothesized dissemination routes of the major plague pandemics.](wagner2014YersiniaPestisPlague) |
+| [Dispersion model during the Late Neolithic Bronze Age.](Rascovan%20et%20al.%202019%20Emergence%20Spread%20Basal.md) | [Hypothesized dissemination routes of the major plague pandemics.](Wagner%20et%20al.%202014%20Yersinia%20Pestis%20Plague.md) |
 
  ###### 3. Potential Contributions
 - Novel Synthesis: Triple the sample size of existing [[Yersinia pestis]] phylogenies.
-- Geospatial Analysis: Use a statistical approach to mapping the [Geographic Origin]](s) and [[Migration]].
+- Geospatial Analysis: Use a statistical approach to mapping the [[Geographic Origin]](s) and [[Spread]].
 
 ---
 
@@ -66,18 +66,18 @@ Poinar Lab Meeting
 
 - [[Phylogeography]] is highly sensitive to #Sampling-Bias.
 - The true distribution is not evenly sampled (under/over-sampling).
-- [Kalkauskas et al. 2021](kalkauskas2021SamplingBiasModel) demonstrates this looking at West Nile Virus in the USA.
+- [Kalkauskas et al. 2021](Kalkauskas%20et%20al.%202021%20Sampling%20Bias%20Model.md) demonstrates this looking at West Nile Virus in the USA.
  
 |    Fig 6                                                                                      |
 |:-----------------------------------------------------------------:|
 | ![[kalkauskas2021SamplingBiasModel_fig4.png]] |
-| [(Top) Maximum Clade Credibility tree of West Nile Virus in the western and eastern USA. (Bottom) MRCA location of all western samples. (Blue: All samples, Red: Only western samples, Orange: western samples and sequence-free eastern samples ).](kalkauskas2021SamplingBiasModel) |
+| [(Top) Maximum Clade Credibility tree of West Nile Virus in the western and eastern USA. (Bottom) MRCA location of all western samples. (Blue: All samples, Red: Only western samples, Orange: western samples and sequence-free eastern samples ).](Kalkauskas%20et%20al.%202021%20Sampling%20Bias%20Model.md) |
 
 ---
 
 ## Questions
 
-1. What are the [[Geographic Origin]]s and [[Migration]] patterns of the [[Medieval]] [[Plague]] [[Pandemic]]?
+1. What are the [[Geographic Origin]]s and [[Spread|Migration]] patterns of the [[Medieval]] [[Plague]] [[Pandemic]]?
 1. To what extent are the results influenced by sampling biases?
 	- Over-sampling of East-Asia and the Caucasus.
 	- Under-sampling of Africa and the Mediterranean.
@@ -90,7 +90,7 @@ Poinar Lab Meeting
 	|                                     Fig 7                                     |
 	|:-----------------------------------------------------------------------------:|
 	|               ![[eaton2021Plague-Phylogeography_timetree.jpg]]                |
-	| [Time-scaled phylogeny of <i>Y. pestis</i>. ](eaton2021Plague-Phylogeography) |
+	| [Time-scaled phylogeny of <i>Y. pestis</i>. ](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md) |
 	|                                                                               |
 
 1. Estimated geographic location for all internal nodes.
@@ -99,24 +99,24 @@ Poinar Lab Meeting
 | Fig  8                                                                                                      |
 |:--------------------------------------------------------------------:|
 | ![[eaton2021Plague-Phylogeography_map.svg]]                                |
-| [Geographic distribution of <i>Y. pestis</i> genomes in this study.](eaton2021Plague-Phylogeography)            |
+| [Geographic distribution of <i>Y. pestis</i> genomes in this study.](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md)            |
 
 3. Plot the arrival of [[Plague]] in [[Medieval]] [[Europe]] and subsequent [[Migration]]s.
 
 |                                                Fig 9                                                 |
 |:----------------------------------------------------------------------------------------------------:|
 |                             ![[eaton2021Plague-Phylogeography_animate-1.PRE.mp4]]                              |
-| [Medieval and Early Modern  pandemic clade 1.PRE timetree. ](eaton2021Plague-Phylogeography) |
+| [Medieval and Early Modern  pandemic clade 1.PRE timetree. ](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md) |
                 					
 4. Plot the departure of [[Plague]] from #Medieval [[Europe]].
 
 | Fig 10 |
 |:---------:|
 | ![[eaton2021Plague-Phylogeography_spreadmap-1.ANT.svg]] |
-| [African  clade 1.ANT spreadmap. ](eaton2021Plague-Phylogeography) |
+| [African  clade 1.ANT spreadmap. ](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md) |
 | **Fig 11** |
 | ![[eaton2021Plague-Phylogeography_spreadmap-1.IN.png]] |
-| [Intermediate clade 1.IN spread map. ](eaton2021Plague-Phylogeography) |
+| [Intermediate clade 1.IN spread map. ](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md) |
 
 ---
 
@@ -125,7 +125,7 @@ Poinar Lab Meeting
 ###### Objectives
 
 1. Estimate the bias and variance in ancestral geographic locations.
-	-  #Jacknife: Leave <i>n</i> out ([[shi2010UsingJackknifeAssess|Shi et al. 2010]]).
+	-  #Jacknife: Leave <i>n</i> out ([[literature/# Shi et al. 2010 Using Jackknife Assess|Shi et al. 2010]]).
 	-  #Randomization: Shuffle the location labels ([[Duchene et al. 2015 Performance Date-Randomization Test|Duchene et al. 2015]]).
 	-  #Bootstrap: Sampling with replacement. 
 <br>	  

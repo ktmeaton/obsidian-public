@@ -1,0 +1,6 @@
+---
+aliases:
+  - geospatial
+---
+
+# Geospatial

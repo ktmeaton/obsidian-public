@@ -31,7 +31,8 @@ modified: 2021-03-26T21:39:11-04:00
 
 - [[bokeh]] style graphs are difficult to embed in [[Markdown]] because they are [[Javascript]]. This is also why this won't display on [[github]], which scrubs all the [[Javascript]] out.
 
-I was partially incorrect about this. raw.githack doesn't seem to work but hosting as a github pages does:
+<iframe id="igraph" scrolling="no" seamless="seamless" src="https://ktmeaton.github.io/edi-tagging/edi-tagging-graph.html" width=600px height=400px ></iframe>
+</div>
 
 [bokeh network graph](https://ktmeaton.github.io/edi-tagging/edi-tagging-graph.html)
 ---

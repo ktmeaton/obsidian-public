@@ -19,4 +19,6 @@ This is the publication to accompany the tool [[TreeTime]].
 
 ---
 
-tags: [[Literature]]
+tags: 
+  - #📥/📰 
+  - #🟨

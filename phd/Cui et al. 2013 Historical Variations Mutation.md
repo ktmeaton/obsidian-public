@@ -1,9 +1,11 @@
 ---
 aliases:
-  - @{{title}}
+  - Cui et al. 2013
+  - Cui et al. (2013)
+  - '@cui2013HistoricalVariationsMutation'
 ---
 
-# {{title}}
+# Cui et al. 2013 Historical Variations Mutation
 
 | Field   | Value              |
 | ------- | ------------------ |
@@ -20,9 +22,9 @@ aliases:
 
 |          Fig X          |     |
 |:-----------------------:| --- |
-| ![[{{title}}_figX.jpg]] |     |
+| ![[Cui et al. 2013 Historical Variations Mutation_figX.jpg]] |     |
 |     Figure caption.     |     |
-[[{{title}}\|Alias]] | 	|	
+[[Cui et al. 2013 Historical Variations Mutation\|Alias]] | 	|	
 
 ## Notes
 

@@ -1,0 +1,7 @@
+---
+aliases:
+  - environment
+  - environmental
+---
+
+# Environment

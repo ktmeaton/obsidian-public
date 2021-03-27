@@ -1,18 +1,19 @@
 ---
 aliases:
   - Duchene et al. 2015
+  - '@duchene2015PerformanceDateRandomizationTest'
 ---
 
 # Duchene et al. 2015 Performance Date-Randomization Test
 
 
-| Field   | Value                                                                                                 |
-| ------- | ----------------------------------------------------------------------------------------------------- |
-| Title   | The Performance of the Date-Randomization Test in Phylogenetic Analyses of Time-Structured Virus Data |
-| Year    | 2015                                                                                                  |
-| Authors | Duchene et al. 2015                                                                                   |
-| DOI     | https://doi.org/10.1093/molbev/msv056                                                                 | 
-| bibtex  | duchene2015PerformanceDateRandomizationTest                                                           |
+| Field   | Value                                       |                                                                                         |
+| ------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Title   | The performance of the [[date randomization]] test in [[Phylogenetic\|phylogenetic]] Analyses of [[temporal signal\|Time-Structured]] Virus Data |
+| Year    | 2015                                        |                                                                                         |
+| Authors | Duchene et al. 2015                         |                                                                                         |
+| DOI     | https://doi.org/10.1093/molbev/msv056       |                                                                                         |
+| bibtex  | duchene2015PerformanceDateRandomizationTest |                                                                                         |
 
 ## Summary
 
@@ -25,3 +26,9 @@ aliases:
 
 
 ## Notes
+
+---
+
+tags: 
+  - #📥/📰 
+  - #🟨

@@ -15,4 +15,6 @@ aliases:
 
 ---
 
-tags: [[Literature]]
+tags: 
+  - #📥/📰 
+  - #🟥 
