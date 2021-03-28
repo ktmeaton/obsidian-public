@@ -4,13 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6d2aecd5c5853682",
+        "id": "01559a241e603274",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
+            "file": "scratch/2021-03-28 Scratch.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "fa4b907564d3c81c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "BIOLOGIST III.md",
             "mode": "source"
           }
         }
@@ -55,7 +66,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md"
+                "file": "scratch/2021-03-28 Scratch.md"
               }
             }
           },
@@ -98,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346
+    "width": 346,
+    "collapsed": true
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
+                "file": "scratch/2021-03-28 Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,38 +163,22 @@
             }
           }
         ]
-      },
-      {
-        "id": "6a4dfec9f64ff6b2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "20cc135db187e66e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "scratch/2021-03-28 Scratch.md",
-                "mode": "source"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 653
+    "width": 653,
+    "collapsed": true
   },
   "lastOpenFiles": [
+    "scratch/2021-03-28 Scratch.md",
+    "BIOLOGIST III.md",
+    "NML Inventory.md",
+    "Biologist III.md",
+    "Resume.md",
+    "Untitled.md",
+    "PhD Timeline.md",
     "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
     "Sequence-Free.md",
-    "literature/Untitled.md",
-    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md",
-    "scratch/2021-03-27 Scratch.md",
-    "literature/Xu et al. 2019 Historical Genomic Data.md",
-    "Sampling Bias.md",
-    "literature/Faria et al. 2018 Genomic Epidemiological Monitoring.md",
-    "Chromosome Resequencing.md",
-    "pandoc/templates/Eisvogel/examples/custom-titlepage/logo-inverted.svg"
+    "literature/Untitled.md"
   ]
 }
