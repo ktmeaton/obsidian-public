@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0d6e13916f34a1e7",
+        "id": "6d2aecd5c5853682",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "journal/2021-03-27.md",
+            "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
             "mode": "source"
           }
-        },
-        "group": "5070f94830309fbf"
-      },
-      {
-        "id": "2781110ac90228d1",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "journal/2021-03-27.md",
-            "mode": "preview"
-          }
-        },
-        "group": "5070f94830309fbf"
+        }
       }
     ],
     "direction": "vertical"
@@ -36,10 +23,42 @@
     "type": "split",
     "children": [
       {
-        "id": "dd79d13c0c7b83db",
+        "id": "6059501da97b004a",
         "type": "tabs",
-        "dimension": 60.597014925373145,
+        "dimension": 35.15342960288809,
         "children": [
+          {
+            "id": "9c5aa3c339a1895b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "sequence-free",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ab74201e4c495000",
+        "type": "tabs",
+        "dimension": 35.15342960288809,
+        "children": [
+          {
+            "id": "fa1de0c65b907b01",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md"
+              }
+            }
+          },
           {
             "id": "b342f914b30e0b55",
             "type": "leaf",
@@ -48,44 +67,13 @@
               "state": {}
             }
           }
-        ]
-      },
-      {
-        "id": "ab74201e4c495000",
-        "type": "tabs",
-        "dimension": 24.477611940298505,
-        "children": [
-          {
-            "id": "9c5aa3c339a1895b",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "[[subclade",
-                "matchingCase": false,
-                "explainSearch": true,
-                "collapseAll": false,
-                "extraContext": true,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "fa1de0c65b907b01",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "journal/2021-03-27.md"
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "fde9fc2579baeace",
         "type": "tabs",
-        "dimension": 14.925373134328357,
+        "dimension": 29.693140794223826,
         "children": [
           {
             "id": "36f4026e5d10d540",
@@ -110,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 894.4999980926514,
-    "collapsed": true
+    "width": 346
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -127,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journal/2021-03-27.md",
+                "file": "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,23 +150,39 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
+      },
+      {
+        "id": "6a4dfec9f64ff6b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20cc135db187e66e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "scratch/2021-03-28 Scratch.md",
+                "mode": "source"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 462.5001220703125
+    "width": 653
   },
   "lastOpenFiles": [
-    "journal/2021-03-27.md",
-    "2021-03-27 Scratch.md",
-    "Bos et al. 2016 Eighteenth Century Yersinia.md",
-    "literature/Spyrou et al. 2016 Historical Pestis Genomes.md",
-    "literature/Guellil et al. 2020 Genomic Historical Synthesis.md",
+    "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
+    "Sequence-Free.md",
+    "literature/Untitled.md",
+    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md",
+    "scratch/2021-03-27 Scratch.md",
     "literature/Xu et al. 2019 Historical Genomic Data.md",
-    "Yersinia pestis.md",
-    "Anisimov et al. 2004 Intraspecific Diversity Yersinia.md",
-    "literature/Zhgenti et al. 2015 Genome Assemblies 11.md",
-    "Bakanidze et al. 2010 Surveillance PlagueNatural.md"
+    "Sampling Bias.md",
+    "literature/Faria et al. 2018 Genomic Epidemiological Monitoring.md",
+    "Chromosome Resequencing.md",
+    "pandoc/templates/Eisvogel/examples/custom-titlepage/logo-inverted.svg"
   ]
 }

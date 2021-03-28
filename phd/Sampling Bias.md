@@ -1,6 +1,11 @@
+---
+aliases:
+  - sampling bias
+---
+
 # Sampling Bias
 
-Here I'm working on the concept of #Sampling-Bias from [[Rasmussen et al. 2015 Early Divergent Strains]].
+Here I'm working on the concept of [[Sampling Bias]] from [[Rasmussen et al. 2015 Early Divergent Strains]].
 
 ## Concepts
 
