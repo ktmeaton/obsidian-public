@@ -3,7 +3,7 @@ aliases:
   - Chromosome Resequencing
 ---
 
-# Chromosome Resequencing
+# Chromosome Resequencing Experiment
 
 | Field   | Value              |
 | ------- | ------------------ |
@@ -101,7 +101,7 @@ This stats table reflects the [[Genome coverage]] and [[SNP]]s merged across all
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/39.embed" height="525" width="100%"></iframe>
 
-Based on the [[Chromosome Resequencing#Genome Coverage and SNPs|Genome Coverage and SNPs]], these plots are being used to evaluate whether medium and low coverage samples should be resequenced.
+Based on the [[Chromosome Resequencing Experiment#Genome Coverage and SNPs|Genome Coverage and SNPs]], these plots are being used to evaluate whether medium and low coverage samples should be resequenced.
 
 | Category | Sample | Description                          | Action     |
 | -------- | ------ | ------------------------------------ | ---------- |

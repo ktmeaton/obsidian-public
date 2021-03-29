@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "01559a241e603274",
+        "id": "b180e63896f5e0aa",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "scratch/2021-03-28 Scratch.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "fa4b907564d3c81c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "BIOLOGIST III.md",
+            "file": "Sampling Bias Experiment.md",
             "mode": "source"
           }
         }
@@ -44,7 +33,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sequence-free",
+                "query": "geographic origin",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -66,7 +55,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scratch/2021-03-28 Scratch.md"
+                "file": "Sampling Bias Experiment.md"
               }
             }
           },
@@ -126,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scratch/2021-03-28 Scratch.md",
+                "file": "Sampling Bias Experiment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,22 +152,38 @@
             }
           }
         ]
+      },
+      {
+        "id": "b231b844f83e74ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1773b7fb96e940f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "scratch/2021-03-29 Scratch.md",
+                "mode": "source"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 653,
-    "collapsed": true
+    "width": 505
   },
   "lastOpenFiles": [
+    "Sampling Bias Experiment.md",
+    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md",
+    "literature/Faria et al. 2018 Genomic Epidemiological Monitoring.md",
+    "Sampling Bias.md",
+    "scratch/2021-03-27 Scratch.md",
     "scratch/2021-03-28 Scratch.md",
-    "BIOLOGIST III.md",
-    "NML Inventory.md",
-    "Biologist III.md",
-    "Resume.md",
-    "Untitled.md",
-    "PhD Timeline.md",
-    "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
-    "Sequence-Free.md",
-    "literature/Untitled.md"
+    "Sabin 2020 Seventeenth-Century Mycobacterium Tuberculosis.md",
+    "literature/Rascovan et al. 2019 Emergence Spread Basal.md",
+    "literature/Rasmussen et al. 2015 Early Divergent Strains.md",
+    "literature/Andrades Valtuena et al. 2017 Stone Age Plague.md"
   ]
 }

@@ -1,0 +1,7 @@
+---
+aliases:
+  - geographic
+  - geography
+---
+
+# Geographic

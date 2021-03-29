@@ -1,6 +1,7 @@
 ---
 aliases:
   - Kalkauskas et al. 2021
+  - Kalkauskas et al. (2021)
   - '@kalkauskas2021SamplingBiasModel'
 ---
 

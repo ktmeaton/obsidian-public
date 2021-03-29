@@ -5,19 +5,24 @@ aliases:
 
 # {{title}}
 
-| Field   | Value     |
-| ------- | --------- |
-| Project   |           |
+| Field   | Value |
+| ------- | ----- |
+| Project |       |
+| Date    |       | 
 
-
+---
 ## Objectives
 
+---
 ## Outline
 
+---
 ## Methods
 
+---
 ## Results
 
+---
 ## Conclusions
 
 
