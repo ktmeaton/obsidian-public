@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b180e63896f5e0aa",
+        "id": "776f2bb1ae32ab33",
         "type": "leaf",
         "active": true,
         "state": {
@@ -33,7 +33,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "geographic origin",
+                "query": "iframe",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346,
-    "collapsed": true
+    "width": 346
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -172,18 +171,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505
+    "width": 505,
+    "collapsed": true
   },
   "lastOpenFiles": [
     "Sampling Bias Experiment.md",
-    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md",
-    "literature/Faria et al. 2018 Genomic Epidemiological Monitoring.md",
-    "Sampling Bias.md",
+    "literature/Xu et al. 2019 Historical Genomic Data.md",
+    "images/xu2019.png",
+    "images/xu2019HistoricalGenomicData_fig1.jpg",
+    "images/xu2019HistoricalGenomicData_timeline.jpg",
     "scratch/2021-03-27 Scratch.md",
+    "Chromosome Resequencing Experiment.md",
     "scratch/2021-03-28 Scratch.md",
-    "Sabin 2020 Seventeenth-Century Mycobacterium Tuberculosis.md",
-    "literature/Rascovan et al. 2019 Emergence Spread Basal.md",
-    "literature/Rasmussen et al. 2015 Early Divergent Strains.md",
-    "literature/Andrades Valtuena et al. 2017 Stone Age Plague.md"
+    "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
+    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md"
   ]
 }
