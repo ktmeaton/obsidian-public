@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "776f2bb1ae32ab33",
+        "id": "8598218fa50d0c7c",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Sampling Bias Experiment.md",
+            "file": "BEAST2.md",
             "mode": "source"
           }
         }
@@ -33,7 +33,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "iframe",
+                "query": "scra",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -55,7 +55,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sampling Bias Experiment.md"
+                "file": "BEAST2.md"
               }
             }
           },
@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346
+    "width": 346,
+    "collapsed": true
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -114,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sampling Bias Experiment.md",
+                "file": "BEAST2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,19 +151,20 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
-        "id": "b231b844f83e74ac",
+        "id": "f1bc247fbefc77bb",
         "type": "tabs",
         "children": [
           {
-            "id": "1773b7fb96e940f7",
+            "id": "776f2bb1ae32ab33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scratch/2021-03-29 Scratch.md",
+                "file": "scratch/2021-03-30 Scratch.md",
                 "mode": "source"
               }
             }
@@ -175,15 +177,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "BEAST2.md",
     "Sampling Bias Experiment.md",
+    "NML Inventory.md",
+    "BEAST.md",
+    "scratch/2021-03-30 Scratch.md",
+    "Obsidian.md",
     "literature/Xu et al. 2019 Historical Genomic Data.md",
-    "images/xu2019.png",
-    "images/xu2019HistoricalGenomicData_fig1.jpg",
-    "images/xu2019HistoricalGenomicData_timeline.jpg",
-    "scratch/2021-03-27 Scratch.md",
-    "Chromosome Resequencing Experiment.md",
-    "scratch/2021-03-28 Scratch.md",
-    "literature/Duchene et al. 2019 Inferring Infectious Disease.md",
-    "literature/Kalkauskas et al. 2021 Sampling Bias Model.md"
+    "journal/2021-03-30.md",
+    "journal/2021-03-21.md",
+    "images/xu2019.png"
   ]
 }

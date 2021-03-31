@@ -16,10 +16,16 @@ For future reference, the following [[HTML]] tags work:
 <div>
 ```
 
-Examples:
+### div
 
 ```html
 <div style="page-break-after: always;"></div>
+```
+
+### iframe
+
+```html
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~ktmeaton/41.embed" height="540px" width=900px ></iframe>
 ```
 
 ## [[Graph]]

@@ -147,11 +147,13 @@ style 7 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1,color:white
 style 8 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1,color:white
 ```
 
+#### [[Maximum-likelihood]]
+
 Model selection was performed using Modelfinder and a maximum likelihood tree was estimated across 10 independent runs of IQTREE ([[CITE]]). A [[TBD]] model was selected for the genomic alignment and a [[TBD]] model was selected for the integrated alignment. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation (UFboot) and site concordance factors (sCF) ([[CITE]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
 
 Clock model.... mugration....
 
-#### Code
+##### Code
 - Estimate a [[Maximum-likelihood|maximum likelihood]] phylogeny..
 ```bash
 
@@ -160,7 +162,103 @@ snakemake iqtree_scf_assembly \
   --configfile results/config/snakemake.yaml
 ```
 
+#### [[bayesian dating analysis|Bayesian]]
 
+##### Code
+
+- Change to the subfolder:
+	```bash
+	cd modern/beast/
+	```
+- Copy alignment:
+	```bash
+	cp ../../snippy_multi/assembly/snippy-core_chromosome.snps.filter1.aln modern.fasta
+	```
+- Prep tip dates file:
+	```bash
+	tail -n+2 ../../metadata/assembly/metadata.tsv  | while read line;
+	do
+	  sample=`echo -e "$line" | cut -f 1`;
+	  date=`echo -e "$line" |
+	        cut -f 4 |
+			sed -E -e 's/-|\[|\]//g' |
+			cut -d ":" --output-delimiter " " -f 1,2 | 
+			awk -F " " '{if (NF > 1){av=($1 + $2)/2; printf "%1.0f\n", av} else {print $1}}'`;
+	  echo -e "$sample\t$date";
+	done > beauti_dates.tsv
+	echo -e "Reference\t1992" >> modern_dates.tsv
+	```
+- Prep geo file:
+	```bash
+	tail -n+2 ../../metadata/assembly/metadata.tsv  | cut -f 1,9 | grep -v "NA" > modern_lat.tsv;
+	tail -n+2 ../../metadata/assembly/metadata.tsv  | cut -f 1,10 | grep -v "NA" > modern_lon.tsv;
+	```
+
+- Load tips in [[BEAUti]] as "numerically as year before the present".
+- Spherical geometry:
+	```bash
+	Trait name: geo
+	```
+- Site model:
+	```yaml
+	Gamma Category Count: 4
+	Shape: 0
+	Proportion Invariant: 0.999
+	Model: 
+	  - GTR
+	  - Rates:
+	    - 1.0 (estimated)
+	  - Frequencies: Empirical
+	```
+- Clock model (sequence)
+	```yaml
+	Model: Relaxed Clock Log Normal
+	Number of Discrete Rates: -1 (number of branches)
+	Clock Rate: 1.0E-5 (estimate)
+	```
+- Clock model (geo)
+	```yaml
+	Model: Relaxed Clock Log Normal
+	Number of Discrete Rates: -1 (number of branches)
+	Clock Rate: 1
+	```
+- Priors:
+	```yaml
+	Tree: Coalescent Bayesian Skyline
+	```
+- MCMC (store no more than 10,000 samples, 10% burn-in
+	```yaml
+	Chain:
+	  - Length: 1000000
+	  - Store Every: -1
+	  - Pre Burnin: 0
+	  - Num Initialization Attempts: 10
+	tracelog:
+	  - File Name: beast_trace.log
+	  - Log Every: 100
+	  - Mode: autodetect
+	  - Sort: smart
+	  - Sanitise Headers: True
+	screenlog:
+	  - File Name: beast_screen.log
+	  - Log Every: 100
+	  - Mode: autodetect
+	  - Sort: none
+	  - Sanitise Headers: True	  
+	treelog:
+	  - File Name: beast_$(tree).trees
+	  - Log Every: 100
+	  - Mode: tree
+	  - Sort: none
+	  - Sanitise Headers: True
+	Sample From Prior: True
+	```
+- Run [[BEAST2]]:
+	```bash
+	beast -seed 1617121788804 -beagle_SSE -beagle_double -prefix modern modern.xml
+	```
+
+---
 
 ## Results
 
@@ -176,9 +274,21 @@ snakemake iqtree_scf_assembly \
 | ![[eaton2021PlaguePhylogeography_plotly-map.png]] |
 | ![[eaton2021PlaguePhylogeography_timeline.jpg]]                                          |
 
+---
 
 ### Alignment
 
-|                                                |
-| ----------------------------------------------- |
+|                                                      |
+| ---------------------------------------------------- |
 | ![[eaton2021PlaguePhylogeography_missing-sites.jpg]] |
+|                                                      |
+
+---
+
+### Phylogeny
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/modern/parse-tree?onlyPanels&sidebar=closed&tl=strain" height="700px" width=900px ></iframe>
+
+---
+
+tags: [[Experiment]]
