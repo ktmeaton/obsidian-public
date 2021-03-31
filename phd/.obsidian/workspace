@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "8598218fa50d0c7c",
+        "id": "a2c0db68b24aaaf9",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "BEAST2.md",
+            "file": "BEAST2 Experiment.md",
             "mode": "source"
           }
         }
@@ -33,7 +33,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scra",
+                "query": "x11",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -55,7 +55,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BEAST2.md"
+                "file": "BEAST2 Experiment.md"
               }
             }
           },
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346,
-    "collapsed": true
+    "width": 346
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BEAST2.md",
+                "file": "BEAST2 Experiment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,15 +176,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "BEAST2 Experiment.md",
+    "2021-03-31 Scratch.md",
     "BEAST2.md",
+    "Untitled.md",
     "Sampling Bias Experiment.md",
+    "Sampling Bias.md",
+    "spreaD3.md",
     "NML Inventory.md",
     "BEAST.md",
-    "scratch/2021-03-30 Scratch.md",
-    "Obsidian.md",
-    "literature/Xu et al. 2019 Historical Genomic Data.md",
-    "journal/2021-03-30.md",
-    "journal/2021-03-21.md",
-    "images/xu2019.png"
+    "scratch/2021-03-30 Scratch.md"
   ]
 }

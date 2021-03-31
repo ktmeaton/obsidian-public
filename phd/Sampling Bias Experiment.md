@@ -132,49 +132,40 @@ The output multiple alignments were filtered to only include chromosomal regions
 graph TD;
 
 4;
-5;
 4-->7;
-5-->8;
+7-->9;
+7-->10;
+9-->11;
+10-->11;
 
 4[Genomic Alignment];
-5[Integrated Alignment];
-7[Phylogeny]
-8[Phylogeny]
+7[Bayesian Phylogeny]
+9[Tree Distribution]
+10[MCC Tree]
+11[spreaD3]
+
 
 style 4 fill:#ff7f0e,stroke:#333,stroke-width:1px,fill-opacity:0.25;
-style 5 fill:#ff7f0e,stroke:#333,stroke-width:1px,fill-opacity:0.25;
 style 7 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1,color:white
-style 8 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1,color:white
+style 9 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:0.25
+style 10 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:0.25
+style 11 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:0.25
 ```
 
-#### [[Maximum-likelihood]]
-
-Model selection was performed using Modelfinder and a maximum likelihood tree was estimated across 10 independent runs of IQTREE ([[CITE]]). A [[TBD]] model was selected for the genomic alignment and a [[TBD]] model was selected for the integrated alignment. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation (UFboot) and site concordance factors (sCF) ([[CITE]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
-
-Clock model.... mugration....
-
-##### Code
-- Estimate a [[Maximum-likelihood|maximum likelihood]] phylogeny..
-```bash
-
-snakemake iqtree_scf_assembly \
-  --profile profiles/infoserv \
-  --configfile results/config/snakemake.yaml
-```
 
 #### [[bayesian dating analysis|Bayesian]]
 
+
 ##### Code
 
-- Change to the subfolder:
+###### Setup
+1. Create directory and copy input alignment:
 	```bash
-	cd modern/beast/
-	```
-- Copy alignment:
-	```bash
+	mkdir -p modern/beast/assembly
+	cd modern/beast/assembly
 	cp ../../snippy_multi/assembly/snippy-core_chromosome.snps.filter1.aln modern.fasta
 	```
-- Prep tip dates file:
+1. Format tip dates file:
 	```bash
 	tail -n+2 ../../metadata/assembly/metadata.tsv  | while read line;
 	do
@@ -185,79 +176,115 @@ snakemake iqtree_scf_assembly \
 			cut -d ":" --output-delimiter " " -f 1,2 | 
 			awk -F " " '{if (NF > 1){av=($1 + $2)/2; printf "%1.0f\n", av} else {print $1}}'`;
 	  echo -e "$sample\t$date";
-	done > beauti_dates.tsv
-	echo -e "Reference\t1992" >> modern_dates.tsv
+	done > modern_dates.tsv
+	echo -e "Reference\t29" >> modern_dates.tsv
 	```
-- Prep geo file:
+1. Prep latitude and longitude files:
 	```bash
 	tail -n+2 ../../metadata/assembly/metadata.tsv  | cut -f 1,9 | grep -v "NA" > modern_lat.tsv;
 	tail -n+2 ../../metadata/assembly/metadata.tsv  | cut -f 1,10 | grep -v "NA" > modern_lon.tsv;
 	```
+1. Install the [[GEO_SPHERE]] package using the [[BEAUti]] GUI package manager.
 
-- Load tips in [[BEAUti]] as "numerically as year before the present".
-- Spherical geometry:
+###### [[BEAUti]]
+1. Run parameters:
+	```yaml
+	alignment: modern.fasta
+	
+	tip-dates: 
+	  - file: modern_dates.tsv
+	  - mode: numerically as year before the present
+	  
+	spherical-geometry:
+	  - trait-name: geo
+	  - lat-file: modern_lat.tsv
+	  - lon-file: modern_lon.tsv
+	 
+	site-model:
+	  - modern:
+	    - gamma-category-count: 0
+	    - proportion-invariant: 0.999
+	    - subst-model: HKY
+	    - subst-model-params:
+	      - kappa: 2.0
+	    - frequencies: Estimated
+	  - geo:
+	    - subst-model: JC69
+	    - frequencies: Estimated
+	    
+	clock-model:
+	  modern:
+	    - clock: Strict
+	    - Clock.rate: 0.00001 (estimate)
+	  geo:
+	    - clock: "Relaxed Clock Log Normal"
+	    - discrete-rates: -1
+	    - Clock.rate: 1.0	 
+	
+	priors:
+	  - tree: Coalescent Constant Population
+	
+	mcmc:
+	  - chain-length: 1000000
+	  - store-every: -1
+	  - pre-burnin: 0
+	  - num-initialization-attempts: 10
+	  - tracelog: 
+	    - file-name: modern_trace.log
+	    - log-every: 1000
+	  - screenlog:
+	    - log-every: 1000
+	  - treelog:
+	    - file-name: modern.trees
+	    - log-every: 1000
+	 
+	```
+1. Save output as ```modern.xml```.
+1. Manually delete geo trait lines that are missing data in xml.
+1. Manually change storing and logging frequency in xml.
+
+###### [[BEAST2]]
+1. Run the analysis (locally: ~50min):
 	```bash
-	Trait name: geo
+	beast -seed 1154791454 -threads 4 -beagle_SSE -beagle_double modern.xml | tee modern_screen.log
+	beast -seed 1154791454 -threads 4 -beagle_SSE -beagle_double modern_relaxed.xml | tee modern_relaxed_screen.log
 	```
-- Site model:
-	```yaml
-	Gamma Category Count: 4
-	Shape: 0
-	Proportion Invariant: 0.999
-	Model: 
-	  - GTR
-	  - Rates:
-	    - 1.0 (estimated)
-	  - Frequencies: Empirical
-	```
-- Clock model (sequence)
-	```yaml
-	Model: Relaxed Clock Log Normal
-	Number of Discrete Rates: -1 (number of branches)
-	Clock Rate: 1.0E-5 (estimate)
-	```
-- Clock model (geo)
-	```yaml
-	Model: Relaxed Clock Log Normal
-	Number of Discrete Rates: -1 (number of branches)
-	Clock Rate: 1
-	```
-- Priors:
-	```yaml
-	Tree: Coalescent Bayesian Skyline
-	```
-- MCMC (store no more than 10,000 samples, 10% burn-in
-	```yaml
-	Chain:
-	  - Length: 1000000
-	  - Store Every: -1
-	  - Pre Burnin: 0
-	  - Num Initialization Attempts: 10
-	tracelog:
-	  - File Name: beast_trace.log
-	  - Log Every: 100
-	  - Mode: autodetect
-	  - Sort: smart
-	  - Sanitise Headers: True
-	screenlog:
-	  - File Name: beast_screen.log
-	  - Log Every: 100
-	  - Mode: autodetect
-	  - Sort: none
-	  - Sanitise Headers: True	  
-	treelog:
-	  - File Name: beast_$(tree).trees
-	  - Log Every: 100
-	  - Mode: tree
-	  - Sort: none
-	  - Sanitise Headers: True
-	Sample From Prior: True
-	```
-- Run [[BEAST2]]:
+  - HKY, Strict Clock: 41m17s/Msamples
+  - GTR, Relaxed Log Normal Clock: 48m/Msamples
+
+1. Run the analysis (remotely: ~1h2min)
 	```bash
-	beast -seed 1617121788804 -beagle_SSE -beagle_double -prefix modern modern.xml
+	beast -seed 1154791454 -threads 10 -beagle_SSE -beagle_double modern.xml
 	```
 
+###### In-Process
+
+- Examine a set number of states in the trace:
+	```bash
+	 header=`grep "#" modern_trace.log  | wc -l`
+	 states=300;
+	 lines=`echo "$(( $header + 2 + $states ))"`
+	 head -n $lines modern_trace.log > modern_trace_300000.log
+	```
+
+- Examine a set number of trees from the distribution:
+	```bash
+	 header=`grep -v "tree STATE" modern.trees | wc -l`;
+	 states=300;
+	 lines=`echo "$(( $header + 1 + $samples ))"`	
+	 head -n $lines modern.trees > modern_300000.trees
+	```
+
+###### Post
+
+1. [ ] Examine the tracelog with [[Tracer]].
+1. [ ] Examine the distribution of trees with [[DensiTree]].
+1. [ ] Create an [[Maximum Clade Credibility|MCC]] tree with [[TreeAnnotator]].
+	```bash
+	treeannotator -burnin 10 -hpd2D 0.95 modern_300000.trees modern_300000_mcc_hpd95.nex
+	treeannotator -burnin 10 -hpd2D 0.95 modern.trees modern_mcc_hpd95.nex
+	```
+1. [ ] Create a geospatial visualization with [[spreaD3]].
 ---
 
 ## Results

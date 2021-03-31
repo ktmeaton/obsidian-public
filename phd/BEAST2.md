@@ -8,11 +8,21 @@
 beast -version
 ```
 
+### Windows
+
+- Run in git bash:
+```bash
+C:/users/ktmea/Programs/BEAST_with_JRE.v2.6.2.Windows/bat/beast.bat -seed 1154791454 -threads -1 -beagle_GPU -beagle_double modern.xml
+```
+
 ### [[beagle-lib]] resources
 
 ```bash
 beast -beagle_info
 ```
+
+- To use beagle with the [[BEAST2]] GUI, you have to download the BEAST version that includes the JRE.
+- But using my NVIDIA GPU was 3X slower.
 
 ### Packages
 
@@ -20,6 +30,22 @@ The package manager is GUI, so we need an [[X11 Server]]. I run [[MobaXTerm]] in
 
 ```bash
 ```
+
+## Speed
+
+- My desktop (48m29s/Msamples) appears to be faster than infoserv (1h5m44s) using the CPU.
+- 
+
+## Logging
+
+To use the -resume flag, the log files need to be sampled at the same frequency.
+
+## TreeAnnotator
+
+```bash
+treeannotator -burnin 10 -hpd2D 0.95 HBV.trees HBV_mcc_hpd95.nex
+```
+
 
 ## Fixed Tree
 
