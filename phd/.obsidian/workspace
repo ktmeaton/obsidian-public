@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "BEAST2 Experiment.md",
+            "file": "scratch/2021-04-01 Scratch.md",
             "mode": "source"
           }
         }
@@ -55,7 +55,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BEAST2 Experiment.md"
+                "file": "scratch/2021-04-01 Scratch.md"
               }
             }
           },
@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346
+    "width": 346,
+    "collapsed": true
   },
   "right": {
     "id": "279b08d31ac70634",
@@ -114,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BEAST2 Experiment.md",
+                "file": "scratch/2021-04-01 Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,15 +177,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "scratch/2021-04-01 Scratch.md",
     "BEAST2 Experiment.md",
+    "Sampling Bias Experiment.md",
     "BEAST2.md",
     "PhyD3.md",
-    "scratch/2021-04-01 Scratch.md",
     "substiution rate.md",
     "Untitled.md",
     "journal/2021-04-01.md",
     "BEAST.md",
-    "scratch/2021-03-31 Scratch.md",
-    "2021-04-01 Scratch.md"
+    "scratch/2021-03-31 Scratch.md"
   ]
 }
