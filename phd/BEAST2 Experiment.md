@@ -10,48 +10,47 @@ aliases:
 | Project | [[plague-phylogeography]] |
 | Date    | [[2021-03-31]]            |
 
----
 ## Objectives
+---
 
 1. Estimate a global phylogeny of modern and ancient [[Yersinia pestis]].
 1. Visualize the geographic [[Spread|dispersal]] of specific clades on a map.
 1. Discuss the variance observed in the spatiotemporal results.
 
----
 ## Outline
+---
 
 ```mermaid
 graph LR;
 1-->2;
 2-->3;
-2-->5;
 3-->4;
-5-->4;
+4-->5;
 
 1[Data Collection];
 2[Alignment];
 3[ML Phylogeny];
-4[Visualization];
-5[Bayesian Phylogeny]
+4[Bayesian Phylogeny]
+5[Visualization];
 
 style 1 fill:#1f77b4,stroke:#333,stroke-width:1px,color:white,fill-opacity:1.0;
 style 2 fill:#ff7f0e,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 style 3 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 4 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 5 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
+style 4 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
+style 5 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 ```
 
----
 ## Methods
+---
 
 ### Data Collection
 
 614 [[Yersinia pestis|Y. pestis]] genomic projects were identified from the NCBI databases using [[NCBImeta]]. Of these projects, 553 (90%) were modern in origin and 61 (10%) were ancient. Collection date and location were curated by cross-referencing the original publications.  [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
 
-| Geographic and temporal distribution of plague genomic records. |
-| --------------------------------------------------------------- |
-| ![[eaton2021PlaguePhylogeography_plotly-map.png]]               |
-|                                                                 |
+| [[Geographic]] and [[Temporal\|temporal]] [[Distribution\|distribution]] of [[Plague\|plague]] [[Genome\|genomic]] records. |
+| ------------------------------------------------------------------------------------------------------------------- |
+| ![[eaton2021PlaguePhylogeography_plotly-map.png]]                                                                   |
+|                                                                                                                     |
 
 
 #### Code
@@ -96,16 +95,16 @@ style 5 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 	```
 - Upload to [[Plotly Chart Studio]] and create map plot.
 
----
 ### [[Alignment]]
+---
 
 Pre-processing of the ancient samples and reference-based was performed using the [[nf-core/eager]] pipeline. The [[Snippy|snippy pipeline]] was used to perform variant calling and multiple alignment across all modern and ancient samples.
 
-The output multiple alignment were filtered to only include chromosomal regions, and exclude sites that were singletons or had more than 5% missing data.
+The output multiple alignment was filtered to only include chromosomal regions, and exclude sites that were singletons or had more than 5% missing data.
 
 |                                                      |
 | ---------------------------------------------------- |
-| ![[eaton2021PlaguePhylogeography_missing-sites.jpg]] |
+| ![[eaton2021PlaguePhylogeography_missing-sites.jpg\|600]] |
 |                                                      |
 
 #### Code
@@ -121,10 +120,11 @@ The output multiple alignment were filtered to only include chromosomal regions,
 	```
 
 
-### [[ML]] [[Phylogeny]]
+### [[Maximum-likelihood]] [[Phylogeny]]
+---
+Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]]. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation ([[UFboot]]) and site concordance factors ([[sCF]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
 
-Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using the K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation ([[UFboot]]) and site concordance factors ([[sCF]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
-
+A [[Phylogenetic|phylogeny]] was estimated with [[TreeTime]]  using an [[Relaxed Clock|uncorrelated relaxed clock]] with a diffuse normal prior on the mean [[Substitution Rate|substitution rate]]. [[TreeTime]] was additionally used for ancestral state reconstruction using mugration to model the [[Geographic Origin|geographic origin]] of ancestral nodes. 
 
 #### Code
 1. Estimate a ML tree.
@@ -133,26 +133,77 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	  --profile profiles/infoserv \
 	  --configfile results/config/snakemake.yaml	
 	```
+1. Identify model parameters:
+```yaml
+substitution-model: K3Pu+F+I / K81
+rates-parameters:
+  - A-C: 1.0000
+  - A-G: 1.2368
+  - A-T: 0.3638
+  - C-G: 0.3638
+  - C-T: 1.2368
+  - G-T: 1.0000
+state-frequencies:
+  - pi(A): 0.2626
+  - pi(C): 0.2365
+  - pi(G): 0.2391
+  - pi(T): 0.2619
+proportion-invariant: 0.998
+constant-sites:
+  - A: 1119279
+  - C: 1007240
+  - G: 1018377
+  - T: 1115997
+```
+1. Identify and plot the clock model:
+```bash
+snakemake clock_plot_all \
+	  --profile profiles/infoserv \
+	  --configfile results/config/snakemake.yaml	
+```
+1. Identify and plot the clock model:
+	```bash
+	snakemake mugration_plot_all \
+		  --profile profiles/infoserv \
+		  --configfile results/config/snakemake.yaml	
+	```
+1. Filter the alignment for tips that were removed:
+	```bash
+	# Copy over the alignment and metadata
+	../../../scripts/fasta_unwrap.sh ../../snippy_multi/all/snippy-core_chromosome.snps.filter5.aln > raw.aln
+	grep -v "NODE" ../../clock/all/chromosome_filter5/clock_model.tsv > metadata.tsv
+	
+	# Filter alignment on metadata
+	cat raw.aln | while read line;
+	do
+	  if [[ "$line" =~ ">" ]]; then
+	    clean=`echo "$line" | sed 's/>//g'`;
+		match=`grep "$clean" metadata.tsv`;
+		if [[ $match ]]; then
+		  grep -A 1 "$clean" raw.aln;
+		fi;
+	  fi;
+	done > main.fasta
 
+	```
 
 ### [[BEAST2|Bayesian]] [[Phylogeny]]
 
 #### Code
 
 ##### Setup
-1. Create directory and copy input alignment:
+1. Create directory:
 	```bash
 	mkdir -p main/beast/all
 	cd main/beast/all
-	cp ../../snippy_multi/all/snippy-core_chromosome.snps.filter5.aln main.fasta
 	```
 1. Format tip dates file:
 	```bash
-	tail -n+2 ../../metadata/all/metadata.tsv  | while read line;
+	tail -n+2 metadata.tsv  | while read line;
 	do
 	  sample=`echo -e "$line" | cut -f 1`;
 	  date=`echo -e "$line" |
-	        cut -f 4 |
+	        cut -f 10 |
 			sed -E -e 's/-|\[|\]//g' |
 			cut -d ":" --output-delimiter " " -f 1,2 | 
 			awk -F " " '{if (NF > 1){av=($1 + $2)/2; printf "%1.0f\n", av} else {print $1}}'`;
@@ -162,12 +213,12 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	```
 1. Prep latitude and longitude files:
 	```bash
-	tail -n+2 ../../metadata/all/metadata.tsv  | 
-	  cut -f 1,7,9 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lat.tsv
+	tail -n+2 metadata.tsv  | 
+	  cut -f 1,13,15 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lat.tsv
 	echo -e "Reference\t38.7251776" >> main_lat.tsv
 
-	tail -n+2 ../../metadata/all/metadata.tsv  | 
-	  cut -f 1,8,10 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lon.tsv
+	tail -n+2 metadata.tsv  | 
+	  cut -f 1,14,16 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lon.tsv
 	echo -e "Reference\t-105.607716" >> main_lon.tsv
 	```
 1. Install the [[GEO_SPHERE]] and [[CoupledMCMC]] packages using the [[BEAUti]] GUI package manager:
@@ -180,7 +231,7 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	
 ##### [[BEAUti]]
 
-1. Run parameters:
+1. Setup run parameters in GUI:
 	```yaml
 	alignment: main.fasta
 	
@@ -196,11 +247,9 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	site-model:
 	  - modern:
 	    - gamma-category-count: 0
-	    - proportion-invariant: 0.999
-	    - subst-model: HKY
-	    - subst-model-params:
-	      - kappa: 2.0
-	    - frequencies: Estimated
+	    - proportion-invariant: 0.998
+	    - subst-model: GTR
+	    - frequencies: Empirical
 	  - geo:
 	    - subst-model: JC69
 	    - frequencies: Estimated
@@ -209,12 +258,16 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	  modern:
 	    - clock: Relaxed Clock Log Normal
 	    - discrete-rates: -1
-	    - Clock.rate: 0.000001 (estimate)
+	    - Clock.rate: 0.00000001 (estimate)
 	  geo:
 	    - clock: "Relaxed Clock Log Normal"
 	    - discrete-rates: -1
 	    - Clock.rate: 1.0	 
 	
+	starting-tree:
+	  - newick-tree
+	  	- is-labelled-newick: True
+	  	- Newick: (paste in TreeTime newick with internal nodes removed)
 	priors:
 	  - tree: Coalescent Skyline Population
 	    - ngroups: 5
@@ -243,21 +296,38 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	  - num-initialization-attempts: 10
 	  - tracelog: 
 	    - file-name: modern_trace.log
-	    - log-every: 1000
+	    - log-every: 10000
 	  - screenlog:
-	    - log-every: 1000
+	    - log-every: 10000
 	  - treelog:
 	    - file-name: modern.trees
-	    - log-every: 1000
+	    - log-every: 10000
 	 
 	```
 1. Save output as ```main.xml```.
-1. Check storing and logging frequency is the same in xml.
-1. Convert to a [[CoupledMCMC]] by replacing the ```<run>``` element with:
-```xml
-<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
-```
+1. Convert to a [[CoupledMCMC]] by changing:
+	```xml
+	<run id="mcmc" spec="MCMC" chainLength="10000000" numInitializationAttempts="10">
+	
+	<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
+	```
+1. [ ] Add the constant sites by changing:
+	```xml
+    <data id="main" spec="Alignment" name="alignment">
+		
+	<data id="main-original" spec="Alignment" name="alignment">	
+	```
+	And changing:
+	```xml
+ 	<alignment idref="main"/>
+		
+    <alignment id="main" spec="FilteredAlignment" filter="-">
+    	<data idref="main-original"/>
+        <constantSiteWeights id="IntegerParameter.0" spec="parameter.IntegerParameter" dimension="4" lower="0" upper="0">1119279 1007240 1018377 1115997</constantSiteWeights>
+   	</alignment>
 
+	```
+	
 ##### [[BEAST2]]
 
 1. Run the analysis.
@@ -298,7 +368,11 @@ Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|m
 	treeannotator -burnin 10 -hpd2D 0.95 main.trees main_mcc_hpd95.nex
 	```
 1. [ ] Create a geospatial visualization with [[spreaD3]].
-2. 
+
+| [[Spread\| Dispersal]] of  [[Y. pestis]] during the [[LNBA]] |
+| ---------------------------------------------------- | ------------------------------------------------ |
+| ![[eaton2021PlaguePhylogeography_spreaD3-0.PRE.jpg]] |                                                  |
+
 ## Results
 
 ---

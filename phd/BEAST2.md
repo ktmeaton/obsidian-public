@@ -1,4 +1,13 @@
+---
+aliases:
+  - Bayesian
+  - bayesian
+  - BEAST
+---
+
 # BEAST2
+
+Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST2|BEAST]] ).
 
 ## Command-Line
 
@@ -34,7 +43,19 @@ The package manager is GUI, so we need an [[X11 Server]]. I run [[MobaXTerm]] in
 ## Speed
 
 - My desktop (48m29s/Msamples) appears to be faster than infoserv (1h5m44s) using the CPU.
-- 
+
+## Modules
+
+- [[spreaD3]]
+- [[mascot]]
+- [[geo-sphere]]
+
+## Custom Model Selection
+Custom model selection to create the K3P model in BEAST can be found [here](https://beast.community/custom_substitution_models#k3p-unequal-frequencies) and [here](https://github.com/BEAST2-Dev/bModelTest/wiki/How-to-use-bModelTest). 
+
+## Constant Sites
+
+Adding constant sites is [here](https://www.beast2.org/2019/07/18/ascertainment-correction.html).
 
 ## Logging
 

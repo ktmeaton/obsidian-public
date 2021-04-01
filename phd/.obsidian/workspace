@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "a2c0db68b24aaaf9",
+        "id": "6ec996dcc840a42f",
         "type": "leaf",
         "active": true,
         "state": {
@@ -33,7 +33,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "x11",
+                "query": "fixed",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -177,14 +177,14 @@
   },
   "lastOpenFiles": [
     "BEAST2 Experiment.md",
-    "2021-03-31 Scratch.md",
     "BEAST2.md",
+    "PhyD3.md",
+    "scratch/2021-04-01 Scratch.md",
+    "substiution rate.md",
     "Untitled.md",
-    "Sampling Bias Experiment.md",
-    "Sampling Bias.md",
-    "spreaD3.md",
-    "NML Inventory.md",
+    "journal/2021-04-01.md",
     "BEAST.md",
-    "scratch/2021-03-30 Scratch.md"
+    "scratch/2021-03-31 Scratch.md",
+    "2021-04-01 Scratch.md"
   ]
 }
