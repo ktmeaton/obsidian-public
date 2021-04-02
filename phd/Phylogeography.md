@@ -7,7 +7,7 @@ aliases:
 
 ## Summary
 
-This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s) and #Migration(s) of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
+This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s) and [[Spread|migration]] of human pathogens. It concerns discussions in the literature, and methods of reconstruction.
 
 ## Projects
 
@@ -16,8 +16,8 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 
 ## Methods
 
-- #Mugration (discrete)
-- #Brownian-Motion (continuous)
+- [[Mugration]] ([[Discrete|discrete]])
+- [[Brownian-Motion]] ([[Continuous|continuous]])
 
 ## Tools
 
@@ -27,7 +27,7 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 
 ## Literature
 
-- [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with #Geospatial #Statistics. An example from [[Guellil et al. 2020 Genomic Historical Synthesis]]:
+- [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with [[Geospatial|geospatial]] [[Statistics]]. An example from [[Guellil et al. 2020 Genomic Historical Synthesis]]:
 
 	|                    Fig 2                     |
 	|:--------------------------------------------:|

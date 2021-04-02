@@ -17,8 +17,8 @@ aliases:
 
 ## Summary
 
->* [[Yersinia pestis]] lineages that caused the #Plague-of-Justinian and the [[Black Death]] 800 years were independent #Reemergences   from #Rodent(s) into #Human(s). 
->* Rodent species worldwide represent important reservoirs for the repeated emergence of diverse lineages of [[Yersinia pestis]]  into #Human populations.
+>* [[Yersinia pestis]] lineages that caused the [[Plague of Justinian]] and the [[Black Death]] 800 years were independent [[Emergence]]  from [[Rodent|rodent]] into [[Human|humans]].
+>* Rodent species worldwide represent important reservoirs for the repeated [[Emergence|emergence]] of diverse [[Clade|lineages]] of [[Yersinia pestis]]  into [[Human|human]] populations.
 
 ## Figures
 

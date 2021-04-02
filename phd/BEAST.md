@@ -5,9 +5,9 @@ aliases:
   - BEAST
 ---
 
-# BEAST2
+# BEAST
 
-Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST2|BEAST]] ).
+Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST|BEAST]] ).
 
 ## Command-Line
 
@@ -30,7 +30,7 @@ C:/users/ktmea/Programs/BEAST_with_JRE.v2.6.2.Windows/bat/beast.bat -seed 115479
 beast -beagle_info
 ```
 
-- To use beagle with the [[BEAST2]] GUI, you have to download the BEAST version that includes the JRE.
+- To use beagle with the [[BEAST]] GUI, you have to download the BEAST version that includes the JRE.
 - But using my NVIDIA GPU was 3X slower.
 
 ### Packages

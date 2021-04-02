@@ -6,7 +6,7 @@
 Based on this description I can infer a few things.
 1. This process will examine a [[Markov Chain]] of <i>n</i> generations. This chain will be sampling a parameter, in this case [[Geographic Location]] of a particular node.
 
-For [[Phylogeography|phylogeography]], I'm guessing this can be done for either a [[discrete trait]] or a [[continuous trait]].
+For [[Phylogeography|phylogeography]], I'm guessing this can be done for either a [[Discrete]] or a [[Continuous]].
 
 ## Literature
 

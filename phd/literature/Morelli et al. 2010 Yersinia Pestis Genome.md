@@ -17,11 +17,11 @@ aliases:
 
 ## Summary
 
-- [[Yersinia pestis]]  evolved in or near #China and spread through multiple [[Spread|migrations]] to [[Europe]], #South-America, #Africa and #Southeast-Asia,
-- Country-specific [[Clade]]s have emerged and can be traced by [[Clade]]-specific #SNP(s).
-- Strict clock minimal and maximal rates: 2.9 × 10−9 and 2.3 × 10−8 per site per year.
-- Comparable results were obtained using #Intergenic #SNP(s) or a variable clock rate.
-- Rate estimates are based on modelling #Madagascar.
+- [[Yersinia pestis]]  evolved in or near [[China]] and spread through multiple [[Spread|migrations]] to [[Europe]], [[South America]], [[Africa]] and [[Southeast Asia]],
+- Country-specific [[Clade|clades]] have emerged and can be traced by [[Clade|clade-specific]] [[SNP|SNPs]].
+- [[Clock Model|Strict clock]] minimal and maximal rates: 2.9 × 10−9 and 2.3 × 10−8 per site per year.
+- Comparable results were obtained using [[SNP|Integenic SNPs]] or a [[Clock Model|variable clock]] rate.
+- Rate estimates are based on modelling [[Madagascar]].
 
 ## Figures
 

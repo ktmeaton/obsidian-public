@@ -122,9 +122,9 @@ The output multiple alignment was filtered to only include chromosomal regions, 
 
 ### [[Maximum-likelihood]] [[Phylogeny]]
 ---
-Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]]. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation ([[UFboot]]) and site concordance factors ([[sCF]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
+Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using a K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation ([[UFboot]]) and site concordance factors ([[sCF]]). A branch was considered to have strong support if UFboot >= 95 and sCF >= 95%.
 
-A [[Phylogenetic|phylogeny]] was estimated with [[TreeTime]]  using an [[Relaxed Clock|uncorrelated relaxed clock]] with a diffuse normal prior on the mean [[Substitution Rate|substitution rate]]. [[TreeTime]] was additionally used for ancestral state reconstruction using mugration to model the [[Geographic Origin|geographic origin]] of ancestral nodes. 
+A time-scaled [[Phylogenetic|phylogeny]] was estimated with [[TreeTime]]  using an [[Clock Model|uncorrelated relaxed clock]] with a diffuse normal prior on the mean [[Substitution Rate|substitution rate]]. [[TreeTime]] was additionally used for ancestral state reconstruction using mugration to model the [[Geographic Origin|geographic origin]] of ancestral nodes. 
 
 #### Code
 1. Estimate a ML tree.
@@ -187,7 +187,7 @@ snakemake clock_plot_all \
 
 	```
 
-### [[BEAST2|Bayesian]] [[Phylogeny]]
+### [[BEAST|Bayesian]] [[Phylogeny]]
 
 #### Code
 
@@ -328,7 +328,7 @@ snakemake clock_plot_all \
 
 	```
 	
-##### [[BEAST2]]
+##### [[BEAST]]
 
 1. Run the analysis.
 	```bash

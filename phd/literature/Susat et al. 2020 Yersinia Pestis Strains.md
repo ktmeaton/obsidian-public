@@ -11,10 +11,10 @@
 
 ## Summary
 
-- Sequenced two #Ancient [[Yersinia pestis]]  genomes from Riga, #Latvia dated to the #17th-Century
+- Sequenced two [[Ancient]] [[Yersinia pestis]]  [[Genome|genomes]] from Riga, [[Latvia]] dated to the [[17th Century]].
 - Fell within the diversity of post [[Black Death]] strains.
 - The two Latvian isolates did not cluster together.
-- Drop in coverage of the #pPCP1 #plasmid region containing the #pla gene, caused by the presence of two distinct #pPCP1 plasmids.
+- Drop in coverage of the [[pPCP1]] [[Plasmid|plasmid]] region containing the [[pla]] gene, caused by the presence of two distinct [[pPCP1]] [[Plasmid|plasmids]].
 - Found the same pattern in the majority of post-[[Black Death]] strains, but not in the [[Black Death]] strains.
 
 ## Figures

@@ -7,4 +7,4 @@ alias:
 
 ---
 
-tags: [[Organism]]
+tags: [[Organism]], #📝/🌱

@@ -126,7 +126,7 @@ pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
 
 	```
 
-- [[github]] css from [@dashed](https://gist.github.com/dashed) (looks super good!)
+- [[GitHub]] css from [@dashed](https://gist.github.com/dashed) (looks super good!)
 	```bash
 	pandoc \
 	  -s pandoc-example-convert.md \

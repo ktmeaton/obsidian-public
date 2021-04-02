@@ -16,9 +16,9 @@ aliases:
 
 ## Summary
 
->* <i>Yersinia pestis</i> was common across #Eurasia in the [[LNBA]].
->* The #MRCA  of all <i>Y. pestis</i> was 5,783 years ago
->* The #ymt gene was acquired before 951 cal BC, giving rise to #Transmission via #Flea(s).
+>* [[Yersinia pestis]] was common across [[Eurasia]] in the [[LNBA]].
+>* The [[MRCA]]  of all[[Yersinia pestis|Y. pestis]] was 5,783 years ago
+>* The [[ymt]] gene was acquired before 951 cal BC, giving rise to [[Transmission|transmission]] via [[Flea|fleas]].
 
 
 - According to [[Spyrou et al. 2018 Analysis 3800-Year-Old Yersinia]]:

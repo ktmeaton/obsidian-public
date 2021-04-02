@@ -29,4 +29,4 @@ aliases:
 
 ---
 
-tags: [[Experiment]]
+tags: [[Experiment]], #📝/🌱

@@ -23,7 +23,7 @@ aliases:
 - The [[Sequence-Free]] approach is cited to [[Edwards et al. 2011]] and [[Duchene et al. 2019]]. An important question is how many [[Sequence-Free|sequence-free]] samples do you need? They tested 100 sequence samples, and 20 sequence-free was sufficient (as compared to 40, 60, or 80)
 - [[Phylogeography]] reconstructions using a [[Brownian-Motion]] model are strongly affected by [[Sampling Bias]], such as [[Under-represented|undersampling]] of certain areas.
 - The spatial [[Λ-Fleming-Viot]] process (ΛFV) is more appropriate for scenarios of [[Endemic]] [[Spread]], and BMP is more appropriate for recent outbreaks or colonizations.
-- The authors have helpful advice regarding whether to choose [[discrete trait|discrete]] analysis or [[continuous trait|continuous analysis]]. [[discrete trait|Discrete]] is either out of necessity (only country is known) and/or spread is hindered by geographical or political barriers. [[continuous trait|Continuous]] is appropriate when [[latitude]] and [[longitude]] are known, and [[Spread|spread]] is geographically homogenous over an area (ie. continent.)
+- The authors have helpful advice regarding whether to choose [[Discrete|discrete]] analysis or [[Continuous|continuous analysis]]. [[Discrete|Discrete]] is either out of necessity (only country is known) and/or spread is hindered by geographical or political barriers. [[Continuous|Continuous]] is appropriate when [[latitude]] and [[longitude]] are known, and [[Spread|spread]] is geographically homogenous over an area (ie. continent.)
 
 ## Notes
 

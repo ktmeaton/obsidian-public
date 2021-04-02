@@ -19,14 +19,14 @@ aliases:
 ## Summary
 
 - Sequenced the new strain RT5 from the Late Bronze Age period (~3800 BP) in the Samara region of modern-day Russia.
-- This strain is distinct from the [[LNBA]] strains of [[Rasmussen et al. 2015 Early Divergent Strains]] both in clade placement and the acquisition of components required for  flea-mediated transmission #ymt ?
+- This strain is distinct from the [[LNBA]] strains of [[Rasmussen et al. 2015 Early Divergent Strains]] both in clade placement and the acquisition of components required for  flea-mediated transmission [[ymt]] ?
 
 >- Propose that several Y. pestis lineages were established during the Bronze Age, some of which persist to the present day.
 
 - The [[Virulence]] profile of RISE509 is identical to that of isolates RK1.001, GEN72, Gyvakarai1, and Kunila23.
 - The [[Virulence]] profile of 1343UnTal85 is identical to 6Postillionstrasse and RISE5053.
 - The [[LNBA]],  [[0.PE2]] and [[0.PE4]] strains seem to lack certain virulence determinants
-- RT5 harbours all known [[Virulence]] factors with the exception of the #Filamentous-Prophage (YpfΦ), which is, however, most consistently identified among [[1.ORI]] strains.
+- RT5 harbours all known [[Virulence]] factors with the exception of the [[Filamentous Prophage (YpfΦ)]], which is, however, most consistently identified among [[1.ORI]] strains.
 ## Figures
 
 

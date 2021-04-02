@@ -12,4 +12,4 @@ aliases:
 
 ---
 
-tags: [[People]]
+tags: [[People]], #📝/🌱

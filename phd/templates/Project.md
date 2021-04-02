@@ -6,4 +6,4 @@
 
 ---
 
-tags: [[Project]]
+tags: [[Project]], #📝/🌱

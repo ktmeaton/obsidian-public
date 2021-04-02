@@ -16,10 +16,10 @@ aliases:
 
 ## Summary
 
->* Discovery of the most ancient case of plague in humans, 4,900 years ago in #Sweden.
->* Basal lineages of Y. pestis emerged and spread during the Neolithic decline.
->* Plague infections in distinct #Eurasia populations during Neolithic and Bronze Age  ( [[LNBA]] ).
->* A plague #pandemic likely emerged in large settlements and spread over #Trade-Routes.
+>* Discovery of the most ancient case of plague in humans, 4,900 years ago in [[Sweden]].
+>* Basal lineages of [[Yersinia pestis|Y. pestis]] emerged and spread during the [[LNBA|Neolithic]] decline.
+>* Plague infections in distinct [[Eurasia]] populations during Neolithic and Bronze Age  ( [[LNBA]] ).
+>* A [[Plague|plague]] [[Pandemic|pandemic]] likely emerged in large settlements and [[Spread|spread]] over [[Trade Routes|trade routes]].
 >
 ## Figures
 

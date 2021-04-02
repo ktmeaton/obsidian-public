@@ -15,12 +15,12 @@ Here I'm working on the concept of [[Sampling Bias]] from [[Rasmussen et al. 201
 - 
 ## Methods
 
-- #Bootstrap
-- #Jacknife
+- [[Resampling#Bootstrap]]
+- [[Resampling#Jacknife]]
 
 ## Notes
 
-- I have an idea about variance saturation. #Bootstrap(ping) can continue until a threshold is met (more bootstraps do not produce a meaningful change). Does the same thing exist for #Jacknife and #Leave-One-Out analysis?
+- I have an idea about variance saturation. [[Resampling#Bootstrap|Bootstrapping]] can continue until a threshold is met (more bootstraps do not produce a meaningful change). Does the same thing exist for [[Resampling#Jacknife]] and [[Resampling#Jacknife#Leave One Out]] analysis?
 
 ---
 

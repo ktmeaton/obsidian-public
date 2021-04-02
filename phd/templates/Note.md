@@ -1,3 +1,8 @@
+---
+aliases:
+  - {{title}}
+---
+
 # {{title}}
 
 ---

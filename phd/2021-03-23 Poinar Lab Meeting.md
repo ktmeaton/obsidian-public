@@ -49,7 +49,7 @@ Poinar Lab Meeting
 
  ###### 2. Hot Debates!
 - The [[Geographic Origin]](s) are contentious (**Fig 4**).
-- Multiple #Reemergences  with distinct spatial patterns (**Fig 5**).
+- Multiple [[Emergence|reemergences]] with distinct spatial patterns (**Fig 5**).
 
 |                                                   Fig 4                                                   |                              Fig 5                               |
 |:---------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
@@ -64,7 +64,7 @@ Poinar Lab Meeting
 
 ## Problem
 
-- [[Phylogeography]] is highly sensitive to #Sampling-Bias.
+- [[Phylogeography]] is highly sensitive to [[Sampling Bias|sampling bias]].
 - The true distribution is not evenly sampled (under/over-sampling).
 - [Kalkauskas et al. 2021](Kalkauskas%20et%20al.%202021%20Sampling%20Bias%20Model.md) demonstrates this looking at West Nile Virus in the USA.
  
@@ -108,7 +108,7 @@ Poinar Lab Meeting
 |                             ![[eaton2021Plague-Phylogeography_animate-1.PRE.mp4]]                              |
 | [Medieval and Early Modern  pandemic clade 1.PRE timetree. ](Eaton%20et%20al.%202021%20Plague%20Phylogeography%20Novel.md) |
                 					
-4. Plot the departure of [[Plague]] from #Medieval [[Europe]].
+4. Plot the departure of [[Plague]] from [[Medieval]] [[Europe]].
 
 | Fig 10 |
 |:---------:|
@@ -125,13 +125,13 @@ Poinar Lab Meeting
 ###### Objectives
 
 1. Estimate the bias and variance in ancestral geographic locations.
-	-  #Jacknife: Leave <i>n</i> out ([[literature/# Shi et al. 2010 Using Jackknife Assess|Shi et al. 2010]]).
-	-  #Randomization: Shuffle the location labels ([[Duchene et al. 2015 Performance Date-Randomization Test|Duchene et al. 2015]]).
-	-  #Bootstrap: Sampling with replacement. 
+	-  [[Resampling#Jacknife]]: Leave <i>n</i> out ([[literature/# Shi et al. 2010 Using Jackknife Assess|Shi et al. 2010]]).
+	-   [[Resampling#Randomization]]: Shuffle the location labels ([[Duchene et al. 2015 Performance Date-Randomization Test|Duchene et al. 2015]]).
+	-  [[Resampling#Bootstrap]]: Sampling with replacement. 
 <br>	  
 2. Visualize the geographic variance  of historically important nodes on a map.
-	- Ex. #MRCA of all #Medieval [[Plague]].
-	- Probability distribution of locations (Western China, Caucasus, etc.)
+	- Ex. [[MRCA]] of all [[Medieval]] [[Plague]].
+	- Probability distribution of locations (Western [[China]], [[Caucasus]], etc.)
 	- Check if the distributions overlap?
 <br>
 
