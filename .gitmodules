@@ -1,0 +1,6 @@
+[submodule "phd/.obsidian"]
+	path = phd/.obsidian
+	url = https://github.com/ktmeaton/obsidian-settings
+[submodule "life/.obsidian"]
+	path = life/.obsidian
+	url = https://github.com/ktmeaton/obsidian-settings
