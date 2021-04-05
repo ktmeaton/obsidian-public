@@ -19,6 +19,10 @@ National Microbiology Laboratory Omics, Bioinformatics, and Computational Biolog
   
 >To see examples of some of our software please visit: [phac-nml](https://github.com/phac-nml)"
 
+## Resume
+
+I typed up a plain-text [[Resume]].
+
 ## Screening Questions
 
 > **Recent and significant experience working in the area of comparative “omics” (genomics, proteomics, transcriptomics, metagenomics, metatranscriptomics, etc.), bioinformatics, computational biology or population genetics.**
