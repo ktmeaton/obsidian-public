@@ -1,6 +1,6 @@
 ---
 created: 2021-04-03T17:04:05-04:00
-modified: 2021-04-05T21:13:34-04:00
+modified: 2021-04-05T21:14:19-04:00
 ---
 
 # Forward Splits
@@ -30,7 +30,9 @@ This is a workout for forward splits.
 - [1:15] Right
 >- [0:30] Rest
 
-1. [ ]
+- [ ] Set 1
+- [ ] Set 2
+- [ ] Set 3
 ---
 
 tags: [[Workout]], [[Splits]]
