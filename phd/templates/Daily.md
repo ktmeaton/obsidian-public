@@ -19,13 +19,13 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 ### Due Today
 
 ```query
-line:("⬜/🧨 | #{{date}}") -path:README -path:Kanban -path:journal -path:templates
+line:("⬜/🧨 | [[{{date}}]]") -path:README -path:Kanban -path:journal -path:templates
 ```
 
 ### Done Today
 
 ```query
-line:("⬜/✨ | #{{date}}") -path:README -path:Kanban -path:journal -path:templates
+line:("⬜/✨ | [[{{date}}]]") -path:README -path:Kanban -path:journal -path:templates
 ```
 
 
