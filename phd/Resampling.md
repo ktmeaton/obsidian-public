@@ -1,3 +1,12 @@
+---
+aliases:
+  - Bootstrap
+  - bootstrap
+  - Jackknife
+  - jackknife
+  - leave one out
+---
+
 # Resampling
 
 ## Bootstrap

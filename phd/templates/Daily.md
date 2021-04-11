@@ -40,4 +40,4 @@ line:(⬜/🧨 -{{date}}) -path:README -path:Kanban -path:journal -path:template
 tags: [[Journal]]  
 prev: [[{{date}}]]  
 next: [[{{date}}]]  
-scratch: [[scratch/[{{date}}] Scratch|{{date}} Scratch]]
+scratch: [[scratch/{{date}} Scratch|{{date}} Scratch]]

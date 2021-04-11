@@ -154,3 +154,34 @@ For a *BEAST analysis (one generated in BEAUti using the StarBeast template) the
 ```
 beast -seed 1617135315 -beagle_SSE -beagle_double beast_fix_starting_tree_murray.xml
 ```
+
+
+## Tip Dates File
+
+1. Format tip dates file:
+	```bash
+	tail -n+2 metadata.tsv  | while read line;
+	do
+	  sample=`echo -e "$line" | cut -f 1`;
+	  date=`echo -e "$line" |
+	        cut -f 10 |
+			sed -E -e 's/-|\[|\]//g' |
+			cut -d ":" --output-delimiter " " -f 1,2 | 
+			awk -F " " '{if (NF > 1){av=($1 + $2)/2; printf "%1.0f\n", av} else {print $1}}'`;
+	  echo -e "$sample\t$date";
+	done > main_dates.tsv
+	echo -e "Reference\t29" >> main_dates.tsv
+	```
+	
+## Lat and Long File
+
+1. Prep latitude and longitude files:
+```bash
+tail -n+2 metadata.tsv  | 
+  cut -f 1,13,15 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lat.tsv
+echo -e "Reference\t38.7251776" >> main_lat.tsv
+
+tail -n+2 metadata.tsv  | 
+  cut -f 1,14,16 | awk -F "\t" '{if ($3 == "NA"){print $1"\t"$2} else{print $1"\t"$3}}' > main_lon.tsv
+echo -e "Reference\t-105.607716" >> main_lon.tsv
+```
