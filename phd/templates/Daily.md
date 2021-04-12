@@ -12,6 +12,7 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 - [ ] 10:00 Check email 📧
 - [ ] 12:00 Lunch 🍙
 - [ ] 16:00 Write daily notes ✏️
+- [ ] 16:30 Check email 📧
 - [ ] 17:00 Finish work for the day 🎉
 
 ## Tasks
@@ -19,13 +20,13 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 ### Due Today
 
 ```query
-line:("⬜/🧨 | [[{{date}}]]") -path:README -path:Kanban -path:journal -path:templates
+line:("⬜/🧨 | [[2021-04-12]]") -path:README -path:Kanban -path:journal -path:templates
 ```
 
 ### Done Today
 
 ```query
-line:("⬜/✨ | [[{{date}}]]") -path:README -path:Kanban -path:journal -path:templates
+line:("⬜/✨ | [[2021-04-12]]") -path:README -path:Kanban -path:journal -path:templates
 ```
 
 
