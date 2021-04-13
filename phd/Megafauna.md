@@ -4,7 +4,7 @@
 
 ## People
 
-- [[@Emil Karpsinki]]
+- [[Emil Karpinski]]
 
 ---
 

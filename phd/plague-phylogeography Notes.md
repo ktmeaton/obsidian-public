@@ -7,3 +7,4 @@
 - Require a manual rerooting step in figtree.
 - Change the input of ```parse_tree``` to the rerooted tree.
 - Add country to continent mapping for metadata.
+- Improvements to plotting missing data and filtering log.

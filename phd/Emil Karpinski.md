@@ -3,7 +3,7 @@ aliases:
   - Emil
 ---
 
-# Emil Karpsinki
+# Emil Karpinski
 
 Role: PhD Student
 Project: [[Megafauna]]

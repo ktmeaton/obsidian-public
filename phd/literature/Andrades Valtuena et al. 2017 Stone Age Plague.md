@@ -2,6 +2,8 @@
 aliases:
   - Andrades Valtuena et al. 2017
   - '@andradesvaltuena2017StoneAgePlague'  
+Date: 2017
+Authors: Valtuena et al.
 ---
 
 # Andrades Valtuena et al. 2017 Stone Age Plague

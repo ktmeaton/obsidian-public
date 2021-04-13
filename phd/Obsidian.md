@@ -1,3 +1,8 @@
+---
+tags: 
+  - Tool
+---
+
 # Obsidian
 
 ## Summary

@@ -3,6 +3,8 @@ aliases:
   - Anisimov et al. 2004
   - Anisimov et al. (2004)
   - '@anisimov2004IntraspecificDiversityYersinia'
+tags:
+  - 📥/📰
 ---
 
 # Anisimov et al. 2004 Intraspecific Diversity Yersinia

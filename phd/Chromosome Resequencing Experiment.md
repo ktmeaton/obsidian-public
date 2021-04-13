@@ -24,17 +24,17 @@ aliases:
 1. The following enriched libraries are good candidates for resequencing:
 	- D24, D62, D72, R21
 2. The threshold of 50% coverage at 3X is a relatively good predictor of reaching the minimum number of informative [[SNP|SNPs]] for [[Phylogeny|phylogenetic]] applications.
-3. All of the libraries that [[@Ravneet Sidhu|Ravneet]] has enriched have drastically better complexity than libraries enriched by [[@Katherine Eaton|Katherine]]. Some factors could be:
+3. All of the libraries that [[Ravneet Sidhu|Ravneet]] has enriched have drastically better complexity than libraries enriched by [[Katherine Eaton|Katherine]]. Some factors could be:
 	- Different samples, with different preservation and infectious load.
-	- Different baitsets, [[@Ravneet Sidhu|Ravneet]] was the first to use the newly synthesized core baits.
-	- Different technique, [[@Ravneet Sidhu|Ravneet]] may have better laboratory technique somewhere in the workflow :)
+	- Different baitsets, [[Ravneet Sidhu|Ravneet]] was the first to use the newly synthesized core baits.
+	- Different technique, [[Ravneet Sidhu|Ravneet]] may have better laboratory technique somewhere in the workflow :)
 
 ---
 
 <div style="page-break-after: always;"></div>
 
 ## Overview
-1. Run the [[plague-phylogeography]] [[snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
+1. Run the [[plague-phylogeography]] [[Snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
 1. Calculate library complexity: [[Preseq]]. 
 1. Calculate the number of informative SNPs: [[Snippy]].
 1. Calculate genome coverage: [[Qualimap]].
@@ -126,7 +126,7 @@ Based on the [[Chromosome Resequencing Experiment#Genome Coverage and SNPs|Genom
 	git clone https://github.com/ktmeaton/plague-phylogeography-projects.git /2/scratch/keaton/plague-phylogeography-projects
 	```
 
-1. Load the [[Plague Denmark]] into the [[plague-phylogeography]] [[snakemake]] pipeline.
+1. Load the [[Plague Denmark]] into the [[plague-phylogeography]] [[Snakemake]] pipeline.
 
 	```bash
 	workflow/scripts/project_load.sh results ../plague-phylogeography-projects/denmark rsync
@@ -168,7 +168,7 @@ Based on the [[Chromosome Resequencing Experiment#Genome Coverage and SNPs|Genom
 	
 	\*Note: I just made the "Perfect" one manually.
 
-1. Create a [[snakemake]] report.
+1. Create a [[Snakemake]] report.
 
 	```bash
 	mkdir -p results/report/local/

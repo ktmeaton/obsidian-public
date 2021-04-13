@@ -15,7 +15,7 @@ aliases:
 
 ## Summary
 
-This article was recommended to me by [[@Sebastian Duchene]] as an example of [[Markov Reward]].
+This article was recommended to me by [[Sebastian Duchene]] as an example of [[Markov Reward]].
 
 ## Figures
 
