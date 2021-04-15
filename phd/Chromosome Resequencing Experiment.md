@@ -1,6 +1,13 @@
 ---
 aliases:
   - Chromosome Resequencing
+type:
+  - [[Experiment]]
+tags: 
+  - ⬜/🧨 
+  - 📝/🌿 
+status:
+  - priority
 ---
 
 # Chromosome Resequencing Experiment

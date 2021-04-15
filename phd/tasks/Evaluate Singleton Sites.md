@@ -17,8 +17,18 @@ status: done
 
 I think I need to edit the [[Jupyter Notebook]] that plots [[Missing Data]]. I think it would be more informative as a stacked/side bar chart with parsimony and singleton sites separate. I am quite pleased with this:
 
+#### Keep [[Singleton|Singletons]]
+
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/d1bfaa7a3b410183e79b89acef2b952ff1e35a89/main/snippy_multi/all/missing_data_chromosome.snps.html" height="500px" width=800px ></iframe>
+
+#### Remove [[Singleton|Singletons]]
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/92b77c6037966de09386f4a4a5879550c3de4f1c/main/snippy_multi/all/missing_data_chromosome.snps.html" height="500px" width=800px ></iframe>
+
+### Phylogeny
+
+The resulting trees produced from an alignment that includes singletons are problematic. There are a large of long terminal branches. Node dates become very strange and too young.
 
 ## Conclusion
 
-I'm going to proceed with a [[Missing Data]] threshold of 1%. This is going to be ultraconservative, however, it does allow ~6 samples to be missing sites data.
+I'm going to proceed with a [[Missing Data]] threshold of 1%. This is going to be ultraconservative, however, it does allow ~6 samples to be missing sites data. 
