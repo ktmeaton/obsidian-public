@@ -51,3 +51,14 @@ treetime homoplasy \
 ```
 
 This takes a really long time to run.
+
+## Taxon detection
+
+```bash
+treetime homoplasy \
+  --aln results/snippy_multi/all/chromosome/filter5/snippy-multi.snps.aln \
+  --const `awk -F "," '{print $1 + $2 + $3 + $4}' results/snippy_multi/all/chromosome/snippy-multi.full.constant_sites.txt` \
+  --gtr infer \
+  --verbose 6 \
+  --zero-based
+```

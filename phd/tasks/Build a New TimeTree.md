@@ -70,3 +70,5 @@ treetime-iterations: 1 or 10
 ```bash
 snakemake iqtree_scf_all --profile profiles/infoserv --configfile results/config/snakemake.yaml 
 ```
+
+It might be useful to ...
