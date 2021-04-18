@@ -38,7 +38,7 @@ I'm curious to know if using [[Polytomy|polytomies]] and keeping [[Singleton|sin
 
 ![[Pasted image 20210414150247.png]]
 
-## Without Russian Samples
+### Without Russian Samples
 
 ```yaml
 snippy_missing_data: 1
@@ -65,10 +65,19 @@ iqtree-runs: 1 or 10
 treetime-iterations: 1 or 10
 ```
 
-## Revert Parameters
+### Revert Parameters
 
 ```bash
 snakemake iqtree_scf_all --profile profiles/infoserv --configfile results/config/snakemake.yaml 
 ```
 
 It might be useful to ...
+
+### Prune Alignment
+
+```bash
+snakemake snippy_multi_all -np --profile profiles/infoserv --configfile results/config/snakemake.yaml
+snakemake lsd_prune_all -np --profile profiles/infoserv --configfile results/config/snakemake.yaml
+```
+
+##

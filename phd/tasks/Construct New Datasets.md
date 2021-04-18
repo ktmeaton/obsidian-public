@@ -30,3 +30,19 @@ I've been struggling with this task for a few reasons.
 >
 > Cheers,
 > Kat
+
+## [[Reduce]]
+
+How can I reduce the number of tips? I want to maximize:
+- Geographic Diversity (Country)
+- Temporal Diversity (Date)
+
+I want to reduce:
+- Long terminal branches
+
+```yaml
+- branch:
+  - country:
+    - date:
+	  - snp-dist: min
+```

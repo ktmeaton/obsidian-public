@@ -9,3 +9,4 @@
 - Add country to continent mapping for metadata.
 - Improvements to plotting missing data and filtering log.
 - Change all metadata column names to lowercase.
+- Prune multiple alignment to maximum signal.

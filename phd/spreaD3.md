@@ -16,9 +16,12 @@ Pathogen spread analysis using the D3 javascript library.
 	```
 
 - create a spreaD3 rendering for an MCC tree with continuous traits then run this script.
+- 
 ```
-../../../../../convert-spread3/convert-spread3.sh
+/mnt/c/Users/ktmea/Projects/BEAST2-Phylogeography/convert-spread3/convert-spread3.sh
 ```
+
 - But how about a distribution of trees?
+
 ---
 tags: [[Tool]], [[BEAST]]
