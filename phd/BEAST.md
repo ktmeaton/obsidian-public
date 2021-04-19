@@ -7,6 +7,63 @@ aliases:
 
 # BEAST
 
+## BEAST1
+
+1. What kind of [[Nexus]] format does [[BEAST#BEAST1|BEAST1]] need?
+  - Rooted, bifurcating (binary) trees.
+  - Confidence values?
+  - Internally named nodes?
+
+### Constant Sites
+
+```bash
+cat results/snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt
+
+1115134,1003304,1014310,1112092
+
+1108245,997240,1008295,1105069
+```
+
+```xml
+<!-- The unique patterns from 1 to end                                       -->
+<!-- npatterns=571 
+<patterns id="patterns" from="1" strip="false">
+	<alignment idref="alignment"/>
+</patterns>
+-->
+<mergePatterns id="patterns">
+	<patterns from="1" every="1">
+		<alignment idref="alignment"/>
+	</patterns>
+
+	<constantPatterns>
+		<alignment idref="alignment"/>
+		<counts>
+			<parameter value="1108245 997240 1008295 1105069"/>
+		</counts>
+	</constantPatterns>
+</mergePatterns>
+```
+
+### Fixed Topology and Branch Lengths
+
+Change
+```xml
+<rescaledTree id="startingTree">
+	<newick usingDates="false">
+	((4:0.143716199312,3:0.143716199312):906.962270176,(2:1.33042015929,1:1.33042015929):905.775566216);
+	</newick>
+</rescaledTree>
+```
+to:
+```
+<newick id="startingTree" usingDates="false">
+((4:0.143716199312,3:0.143716199312):906.962270176,(2:1.33042015929,1:1.33042015929):905.775566216);
+</newick>
+```
+
+## BEAST2
+
 Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST|BEAST]] ).
 
 ## Command-Line

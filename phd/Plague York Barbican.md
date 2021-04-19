@@ -2,7 +2,7 @@
 [[Plague York Barbican]]
 
 ## People
-- [[@Marie-Helene B Hardy]]
+- [[Marie-Helene B Hardy]]
 
 ---
 

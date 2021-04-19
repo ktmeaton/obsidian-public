@@ -2,11 +2,17 @@
 project: [[plague-phylogeography]]
 due: 2021-04-14
 people:
-tags: ⬜/🧨
-status: priority
+tags: #⬜/✨ 
+status: done
 ---
 
 # Build a New TimeTree
+
+## Sub Tasks
+```dataview
+task from "tasks"
+where contains(file.name, "Build a New TimeTree")
+```
 
 ## [[Snakemake]] Pipeline
 
@@ -24,12 +30,7 @@ snakemake iqtree_all --profile profiles/infoserv --configfile results/config/sna
 [Tue Apr 13 21:17:15 2021]
 ```
 
-- [x] Compare the ```keep-singletons``` with the [[Singleton|singletons]] removed.
-	The branch lengths are considerably longer for some tips and clades.
-	
-- [x] Do we need parse tree? Yes.
-- [x] Remove samples with unknown province in Russia.
-- [ ] Examine the clock model and RTT.
+- [x] [[Evaluate Singleton Sites]]
 
 The issue of the marginal dates being out of sync with the joint rates is now present.
 ![[Pasted image 20210414145808.png]]
@@ -80,4 +81,5 @@ snakemake snippy_multi_all -np --profile profiles/infoserv --configfile results/
 snakemake lsd_prune_all -np --profile profiles/infoserv --configfile results/config/snakemake.yaml
 ```
 
-##
+- [x] [[Add Outgroup to Main Project]]
+- [x] [[Filter Constant Sites in Script]]

@@ -5,7 +5,7 @@ aliases:
   - Jess
 ---
 
-# @Jessica Hider
+# Jessica Hider
 
 Role:
 Project:
