@@ -1,9 +1,9 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-04-15
+due: 2021-04-16
 people:
-tags: ⬜/🧨 
-status: priority
+tags: #⬜/✨
+status: done
 ---
 
 # Create New Directories for Snippy and IQTREE

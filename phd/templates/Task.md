@@ -4,8 +4,8 @@ due: {{date}}
 people:
 tags: ⬜/📋 
 status: idea
-aliases:
-  - {{title}}
+title: {{title}}
+type: [[Task]]
 ---
 
 # {{title}}

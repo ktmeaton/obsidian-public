@@ -7,6 +7,7 @@ people:
   - [[Hendrik Poinar]]
 tags: ⬜/🧨 
 status: priority
+type: [[Task]]
 ---
 
 # Construct New Datasets
@@ -46,3 +47,15 @@ I want to reduce:
     - date:
 	  - snp-dist: min
 ```
+
+## Dataset
+
+```bash
+  - aln.fasta: lsd.filter.aln
+  - tree.nex: beast.nex
+  - dates.txt: beast.dates.txt
+  - latlon.txt: beast.latlon.txt
+  - contant-sites.txt: snippy-multi.constant_sites.txt
+```
+
+## Root To Tip Regression

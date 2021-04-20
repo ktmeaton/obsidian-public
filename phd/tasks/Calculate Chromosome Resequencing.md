@@ -4,6 +4,7 @@ due: 2021-04-16
 people: [[Ravneet Sidhu]]
 tags: #⬜/🧨 
 status: priority
+type: [[Task]]
 ---
 
 # Calculate Chromosome Resequencing

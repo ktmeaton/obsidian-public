@@ -83,3 +83,15 @@ snakemake lsd_prune_all -np --profile profiles/infoserv --configfile results/con
 
 - [x] [[Add Outgroup to Main Project]]
 - [x] [[Filter Constant Sites in Script]]
+
+I just realized I [[lose bootstrap values]] when I import a nwk into lsd. Should I bootstrap the MCC tree?
+
+### [[Root to Tip Regression]] (by [[Clade]])
+
+![[Pasted image 20210419143838.png]]
+
+How to calculate the [[Substitution Rate|substitution rate]]? Is it the slope?
+
+### [[spreaD3]] of [[0.PRE]]
+
+![[Pasted image 20210419170431.png]]

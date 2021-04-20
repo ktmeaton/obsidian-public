@@ -23,4 +23,23 @@ where contains(file.name, "Winter 2021 Writing Bootcamp")
 
 ## Monday
 
-- [ ] [[Analyze First BEAST Run.]]
+One Hope and One Struggle:
+- Make the spreaD3 figures for each clade.
+- Don't get bogged down in details
+
+| Category                 | Goal                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| (**S**)pecific           | I want to create a geographic distribution figure. |
+| (**M**)easurable         | Make any level of figure.                                                                   |
+| (**A**)ttainable         | 100%. Perfectionist is the enemy here.                                                      |
+| (**R**)ealistic/Relevant | One of the central figures for my paper.                                                                                            |
+| (**T**)imely/Tangible    | If I can't do it within 1 week, it's problematic.                                           | 
+
+Plan each day, what are the steps to get there
+
+Book a research consultation with a librarian: https://library.mcmaster.ca/forms/request-research-consultation
+LibGuides—Reading and Notetaking: https://libguides.mcmaster.ca/c.php?g=718531
+LibGuides—Writing: https://libguides.mcmaster.ca/c.php?g=718509
+
+
+- [x] [[Analyze First BEAST Run.]]

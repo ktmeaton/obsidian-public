@@ -7,6 +7,7 @@ people:
   - [[Hendrik Poinar]]
 tags: ⬜/🧨 
 status: priority
+type: [[Task]]
 ---
 
 # Verify Dates
