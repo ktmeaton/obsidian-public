@@ -89,8 +89,10 @@ I just realized I [[lose bootstrap values]] when I import a nwk into lsd. Should
 ### [[Root to Tip Regression]] (by [[Clade]])
 
 ![[Pasted image 20210419143838.png]]
+  
+How to calculate the [[Substitution Rate|substitution rate]]? Is it the [[slope]]? Yes!
 
-How to calculate the [[Substitution Rate|substitution rate]]? Is it the slope?
+I should do this for the full dataset.
 
 ### [[spreaD3]] of [[0.PRE]]
 
