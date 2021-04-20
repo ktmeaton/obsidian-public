@@ -1,9 +1,16 @@
 ---
 aliases:
-  - plague-phylogeography BEAST2 Experiment
+  - BEAST Experiment
+  - plague-phylogeography BEAST Experiment
+title:
+  - BEAST Experiment
+tags:
+  - ⬜/🧨 
+status:
+  - priority
 ---
 
-# BEAST2 Experiment
+# BEAST Experiment
 
 | Field   | Value       |
 | ------- | ----------- |
@@ -154,31 +161,40 @@ A time-scaled [[Phylogenetic|phylogeny]] was estimated with [[TreeTime]]  using 
 	  -pre test
 	```
 
-### [[Discrete|Discrete]] [[Phylogeography]]
-[[Discrete]] trait phylogeography was performed using [[Mugration|mugration]] to model the [[Geographic Origin|geographic origin]] of ancestral nodes with [[TreeTime]]. 
-
-#### Code
-1. Identify and plot the discrete phylogeography model:
-	```bash
-	snakemake mugration_plot_all \
-		  --profile profiles/infoserv \
-		  --configfile results/config/snakemake.yaml	
-	```
-
-
 
 ### [[Continuous]] [[Phylogeography]]
 [[Continuous]] trait phylogeography was performed using the [[GEO_SPHERE]] package in [[BEAST|BEAST2]] using a fixed tree.
+
+```bash
+mkdir beast1 beast2 beast3 beastMC3;
+sed  "s/beast.trees/beast1.trees/g" beast.xml | sed "s/beast.log/beast1.log/g" > beast1/beast1.xml;
+sed  "s/beast.trees/beast2.trees/g" beast.xml | sed "s/beast.log/beast2.log/g" > beast2/beast2.xml;
+sed  "s/beast.trees/beast3.trees/g" beast.xml | sed "s/beast.log/beast3.log/g" > beast2/beast3.xml;
+cp beast.xml beastMC3/beastMC3.xml;
+```
+
+```
+<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
+```
+
+```
+screen -S beast-runs
+beast -overwrite -threads 5 -beagle -seed 10000000 beast1.xml | tee beast1.screenlog
+beast -overwrite -threads 5 -beagle -seed 20000000 beast2.xml | tee beast2.screenlog
+beast -overwrite -threads 5 -beagle -seed 30000000 beast3.xml | tee beast3.screenlog
+beast -overwrite -threads 5 -beagle -seed 40000000 beastMC3.xml | tee beastMC3.screenlog
+```
 
 #### Code
 
 1. Create directory:
 	```bash
-	mkdir -p results/beast/all/chromosome_filter5/
-	cd results/beast/all/chromosome_filter5/
+	snakemake beast_geo_all -np --profile profiles/infoserv
 	```
 1. Run Parameters:
 	```YAML
+	alignment:
+	  - beast.fasta
 	spherical-geometry:
 	  - trait: geo
 	  - tree:  clock_model_beauti.nex

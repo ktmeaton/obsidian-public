@@ -2,13 +2,14 @@
 project:
 due: 2021-04-18
 people:
-tags: ⬜/📋 
+tags: #⬜/✨  
 status: idea
+type: [[Task]]
 aliases:
-  - Analyze First BEAST Run.
+  - Analyze First BEAST1 Run
 ---
 
-# Analyze First BEAST Run.
+# Analyze First BEAST1 Run
 
 ## Tasks
 
@@ -132,23 +133,7 @@ beast -threads 10 -beagle -seed 648754524 beast.xml | tee beast.screenlog
 treeannotator -burnin 10000000 -hpd2D 0.95 beast.trees beast_mcc-hpd95.nex
 ```
 
-
->Hi Emil,
->
-> I have my first results for a BEAST run! I've attached my log if you wanted to take a look. This run is 100M generations, using a fixed-tree. I'm estimating parameters of two general models:
-> - DNA substitutions (rates, nucleotide frequencies)
-> - Geographic location (mean rate, standard deviation)
-> 
-> My interpretation is that the DNA substitution model is well-sampled, although that's just recapitulating the tree that I used as input. The geographic location model has problems, in that around generation 90M the state changes dramatically. Which results in a bimodal distribution for the rate parameters ([[ucld.mean]] and [[ucld.stdev]]). 
-
-| [[ucld.mean]] Estimate                    | [[ucld.mean]] Trace                       |
-| ----------------------------------------- | ----------------------------------------- |
-| ![[Pasted image 20210420113311.png\|500]] | ![[Pasted image 20210420113351.png\|300]]  |
-
-> I wonder if my next experiment should be to run 3 independent chains of 50-100M generations each, and check for convergence? A 100M generation run only takes about a day.
-
-> Cheers,
-> Kat
+- [ ] [[Email BEAST Log to Emil]]
 
 [[What does the rate mean?]]. Rather than reporting sub/site/year, how about years/1 substitution. Years to accumulate one substitution.
 

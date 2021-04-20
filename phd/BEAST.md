@@ -9,6 +9,9 @@ aliases:
 
 ## BEAST1
 
+### Inputs
+
+#### Tree
 1. What kind of [[Nexus]] format does [[BEAST#BEAST1|BEAST1]] need?
   - Rooted, bifurcating (binary) trees.
   - Confidence values?
@@ -66,7 +69,47 @@ to:
 
 Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST|BEAST]] ).
 
-## Command-Line
+
+#### Alignment
+
+1. [[BEAST#BEAST2|BEAST2]] needs an alignment in [[Nexus]] or [[FASTA]] format.
+
+### [[Continuous]] [[Phylogeography]]
+
+1. Partitions: Import Alignment File
+1. Tip Dates: Use tip dates, set as time before present.
+1. Site Model: Use proportion invariant, and a GTR model.
+1. Clock Model: Change to a relaxed clock lognormal, set default value to 1e-8.
+1. Starting Tree: Is Labelled Newick
+
+Edit the [[XML]] to:
+1. Add constant sites.
+1. Change to a CoupledMCMC Run.
+
+### Constant Sites
+
+Adding constant sites is [here](https://www.beast2.org/2019/07/18/ascertainment-correction.html).
+
+
+```xml
+# Change
+<data id="alignment" spec="Alignment" name="alignment">
+#To
+<data id="original-alignment" spec="Alignment" name="original-alignment">	
+# Add
+<data id="alignment" spec="FilteredAlignment" filter="-" data="@original-alignment" constantSiteWeights="1108245 997240 1008295 1105069"/>	
+```
+
+### [[CoupledMCMC]]
+
+1. Convert to a [[CoupledMCMC]] by changing:
+	```xml
+	<run id="mcmc" spec="MCMC" chainLength="10000000" numInitializationAttempts="10">
+	
+	<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
+	```
+
+### Command-Line
 
 ### Version
 
@@ -107,88 +150,17 @@ The package manager is GUI, so we need an [[X11 Server]]. I run [[MobaXTerm]] in
 - [[mascot]]
 - [[geo-sphere]]
 
-## Custom Model Selection
+### Custom Model Selection
 Custom model selection to create the K3P model in BEAST can be found [here](https://beast.community/custom_substitution_models#k3p-unequal-frequencies) and [here](https://github.com/BEAST2-Dev/bModelTest/wiki/How-to-use-bModelTest). 
 
-## Constant Sites
-
-Adding constant sites is [here](https://www.beast2.org/2019/07/18/ascertainment-correction.html).
-
-## Logging
+### Logging
 
 To use the -resume flag, the log files need to be sampled at the same frequency.
 
-## TreeAnnotator
+### TreeAnnotator
 
 ```bash
 treeannotator -burnin 10 -hpd2D 0.95 HBV.trees HBV_mcc_hpd95.nex
-```
-
-
-## Fixed Tree
-
-```xml
-<stateNode spec='beast.util.TreeParser' id='Tree.t:xyz' IsLabelledNewick='true' adjustTipHeights='false'
- taxa='@xyz'
- newick="(((((chimp:0.009603178109055574,bonobo:0.009603178109055574):0.01049225186311567):0.013418689384830318):0.02460624740645495,orangutan:0.05812036676345651):0.010656607109573349,siamang:0.06877697387302986);"/>
-```
-
-
-1. Create the multiple alignment as ```test.fasta```.
-	```fasta
-	>chimp
-	ACGT
-	>bonobo
-	ACGT
-	>orangutan
-	ACGT
-	>siamang
-	ACGT
-	```
-1. Import into beauti and save the xml output.
-1. Remove Windows line endings and empty lines:
-	```bash
-	sed -i 's/\r$//' modern.xml; sed -i '/^$/d' modern.xml;
-	```
-1. Add a ```<stateNode>``` element within the ```<state>``` element.
-
-```xml
-<stateNode spec='beast.util.TreeParser' id='Tree.t:template' IsLabelledNewick='true' adjustTipHeights='false'
- taxa='@template'
- newick="(((((chimp:0.009603178109055574,bonobo:0.009603178109055574):0.01049225186311567):0.013418689384830318):0.02460624740645495,orangutan:0.05812036676345651):0.010656607109573349,siamang:0.06877697387302986);"/>
-```
-
-1. Generate the data element (alignment) from a fasta file:
-
-	```bash
-	../../../scripts/fasta_unwrap.sh modern.fasta | 
-	  sed 's/>//g' | 
-	  awk '{
-	  if (NR % 2 == 1){id="seq_"$0; taxon=$0} else {value=$0; 
-	  print "  <sequence id=\""id"\" spec=\"Sequence\" taxon=\""taxon"\" totalcount=\"4\" value=\""value"\"/>";
-	  }}' > modern_data.xml
-	```
-
-1. Create a combined xml
-
-```bash
-# Insert the template header
-head -n5 template_fixed.xml > modern.xml;
-
-# Add the data node
-cat modern_data.xml >> modern.xml;
-
-# Add template before tree
-tail -n+6 template_fixed.xml | head -n 19 >> modern.xml;
-
-# Add the newick string
-sed "s/'//g" modern.nwk >> modern.xml;
-
-# Add the rest
-tail -n+25 template_fixed.xml >> modern.xml;
-
-# Replace references to template
-sed -i 's/template/modern/g' modern.xml;
 ```
 
 1. Comment out the following operators

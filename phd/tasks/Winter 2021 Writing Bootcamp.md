@@ -23,7 +23,7 @@ where contains(file.name, "Winter 2021 Writing Bootcamp")
 
 ## Monday
 
-One Hope and One Struggle:
+One Hope and One Struggle for the week:
 - Make the spreaD3 figures for each clade.
 - Don't get bogged down in details
 
@@ -42,4 +42,12 @@ LibGuides—Reading and Notetaking: https://libguides.mcmaster.ca/c.php?g=718531
 LibGuides—Writing: https://libguides.mcmaster.ca/c.php?g=718509
 
 
-- [x] [[Analyze First BEAST Run.]]
+- [x] [[Analyze First BEAST1 Run]]
+
+## Tuesday
+
+### Goals
+
+- Update [[Ravneet Sidhu|Ravneet]] on [[Chromosome Resequencing Experiment|Chromosome Resequencing]].
+- Email [[Emil Karpinski|Emil]] about [[BEAST|BEAST]] run.
+
