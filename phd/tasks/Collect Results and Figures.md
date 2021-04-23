@@ -1,9 +1,9 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-04-16
+due: 2021-04-23
 people:
-tags: ⬜/🧨
-status: priority
+tags: #⬜/✨ 
+status: done
 type: [[Task]]
 ---
 

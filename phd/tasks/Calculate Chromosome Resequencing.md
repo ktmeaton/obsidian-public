@@ -2,8 +2,8 @@
 project: [[Plague Denmark]]
 due: 2021-04-16
 people: [[Ravneet Sidhu]]
-tags: #⬜/🧨 
-status: priority
+tags: #⬜/✨  
+status: done
 type: [[Task]]
 ---
 

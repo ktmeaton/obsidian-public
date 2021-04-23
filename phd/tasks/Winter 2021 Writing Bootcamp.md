@@ -4,8 +4,8 @@ due: 2021-04-23
 people:
   - [[Jessica Hider]]
   - [[Marie-Helene B Hardy]]
-tags: #⬜/🧨  
-status: priority
+tags: #⬜/✨   
+status: done
 aliases:
   - Winter 2021 Writing Bootcamp
 ---

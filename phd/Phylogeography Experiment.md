@@ -121,22 +121,6 @@ The output multiple alignment was filtered to only include chromosomal regions, 
 ---
 Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using a K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation  [[Hoang 2018 UFBoot2 Improving Ultrafast|UFBoot]], with a threshold of 95% required for strong support.
 
-#### [[Root to Tip Regression]]
-
-![[rtt_all.png]]
-
-![[rtt.png]]
-
-#### [[Tip Dating]]
-
-![[tip-dating.png]]
-
-### [[Isolation By Distance]]
- 
-![[ibd_all.png]]
-
-![[ibd.png]]
-
 ### [[Timetree|Time Tree]]
 
 A time-scaled [[Phylogenetic|phylogeny]] was estimated using the least-squares criteria as implemented in [[To 2016 Fast Dating Using|LSD2]]. The [[Yersinia pseudotuberculosis|Y. pseudotuberculosis]] clade was used to mark the outgroup, with the root estimated on this branch. Node uncertainty was estimated using a lognormal relaxed clock, with a distribution mean of 1 and standard deviation of 0.2.
@@ -239,6 +223,31 @@ beast -overwrite -threads 5 -beagle -seed 40000000 beastMC3.xml | tee beastMC3.s
 | ![[eaton2021PlaguePhylogeography_spreaD3-0.PRE.jpg]] |                                                  |
 
 ## Results
+
+### Overview
+
+| Root To Tip Regression | Isolation By Distance |
+|:----------------------:|:---------------------:|
+|  ![[rtt_all 2.png]]    |    ![[ibd_all 2.png]]|
+
+### Clades
+
+#### Root To Tip Regression
+
+The only clades that show temporal structure are the ancient clades:
+- [[0.PRE]] : [[LNBA|Late Neolithic Bronze Age]]
+- [[0.ANT4]] : [[Plague of Justinian]]
+- [[1.PRE]] : [[Black Death]]/[[Medieval Europe]]
+
+![[rtt_clades.png]]
+
+#### Tip Dating
+
+![[tip-dating 1.png]]
+
+#### IBD
+
+![[ibd_clades.png]]
 
 ---
 
