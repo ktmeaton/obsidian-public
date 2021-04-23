@@ -1,16 +1,15 @@
 ---
 aliases:
-  - BEAST Experiment
-  - plague-phylogeography BEAST Experiment
+  - Phylogeography Experiment
 title:
-  - BEAST Experiment
+  - Phylogeography Experiment
 tags:
   - ⬜/🧨 
 status:
   - priority
 ---
 
-# BEAST Experiment
+# Phylogeography Experiment
 
 | Field   | Value       |
 | ------- | ----------- |
@@ -21,8 +20,8 @@ status:
 ---
 
 1. Estimate a global phylogeny of modern and ancient [[Yersinia pestis]].
+1. Explore the temporal structure and variation.
 1. Visualize the geographic [[Spread|dispersal]] of specific clades on a map.
-1. Discuss the variance observed in the spatiotemporal results.
 
 ## Outline
 ---
@@ -54,13 +53,16 @@ style 6 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 ---
 
 ### Data Collection
+[[Zhou 2020 EnteroBase User Guide|Zhou et al. (2020)]] described how the number of sequences is rapidly expanding. 1693 [[Yersinia pestis|Y. pestis]] genome sequencing projects were identified from the NCBI databases using [[NCBImeta]]. Collection date and geographic location were curated by cross-referencing the original publications. [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. Genomes were removed if no associated date or location information were removed, or if there was documented evidence of laboratory manipulation. After curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient.
 
-615 [[Yersinia pestis|Y. pestis]] genomic projects were identified from the NCBI databases using [[NCBImeta]]. Of these projects, 553 (90%) were modern in origin and 61 (10%) were ancient. Collection date and location were curated by cross-referencing the original publications.  [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
+To estimate the phylogeny root, two genomes from the outgroup [[Yersinia pseudotuberculosis]] were downloaded, strain NCTC10275 and strain IP32953.
 
-| [[Geographic]] and [[Temporal\|temporal]] [[Distribution\|distribution]] of [[Plague\|plague]] [[Genome\|genomic]] records. |
+| [[Geographic]] [[Distribution\|distribution]] of [[Yersinia pestis]] [[Genome\|genomes]]. |
 | ------------------------------------------------------------------------------------------------------------------- |
-| ![[eaton2021PlaguePhylogeography_plotly-map.png]]                                                                   |
+|    ![[map_comparison.png]]                                                            |
 |                                                                                                                     |
+
+The ancient samples are primarily collected from [[Europe]], with a few unique samples drawn from [[Central Asia]]. In contrast, the modern samples are primarily drawn from [[East Asia|East]] and [[Central Asia]]. Contrast this with the known geographic distribution of modern plague ([[Xu et al. 2019 Historical Genomic Data|Xu et al. 2019]]).
 
 
 #### Code
@@ -73,10 +75,11 @@ style 6 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 	LEFT JOIN Assembly
 		ON AssemblyBioSampleAccession = BioSampleAccession
 	WHERE
-		BioSampleComment LIKE '%KEEP%Assembly%Modern%' 
+		(BioSampleComment LIKE '%KEEP%Assembly%Modern%' 
 	  	AND length(AssemblyFTPGenbank) > 0 
 	  	AND length(BioSampleCollectionDate) > 0
-	  	AND length(BioSampleGeographicLocation) > 0
+	  	AND length(BioSampleGeographicLocation) > 0)
+		OR (BioSampleComment LIKE '%KEEP%Assembly%Modern%Outgroup%')
 	```
 - SQL statement (SRA):
 	```sql
@@ -97,13 +100,6 @@ style 6 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 	```bash
 	workflow/scripts/project_load.sh results ../plague-phylogeography-projects/main rsync
 	```
-- Create metadata sheet:
-	```bash
-	snakemake metadata_all \
-	  --profile profiles/infoserv   \
-	  --configfile results/config/snakemake.yaml
-	```
-- Upload to [[Plotly Chart Studio]] and create map plot.
 
 ### [[Alignment]]
 ---
@@ -112,58 +108,51 @@ Pre-processing of the ancient samples and reference-based was performed using th
 
 The output multiple alignment was filtered to only include chromosomal regions, and exclude sites that were singletons or had more than 5% missing data.
 
-|                                                      |
-| ---------------------------------------------------- |
-| ![[eaton2021PlaguePhylogeography_missing-sites.jpg]] |
-|                                                      |
-
 #### Code
 
 - Create multiple alignments and plot missing data across sites (no singletons):
 
 	```bash
-	snakemake plot_missing_data_all \
-	  --profile profiles/infoserv \
-	  --configfile results/config/snakemake.yaml
-	# Cleanup tmp files
-	rm results/snippy_multi/all/*.tmp
+	snakemake snippy_multi_prune_all --profile profiles/infoserv
 	```
 
 
 ### [[Maximum-likelihood]] [[Phylogenetic|Tree]]
 ---
-Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using a K3Pu+F+I model.
+Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using a K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation  [[Hoang 2018 UFBoot2 Improving Ultrafast|UFBoot]], with a threshold of 95% required for strong support.
+
+#### [[Root to Tip Regression]]
+
+![[rtt_all.png]]
+
+![[rtt.png]]
+
+#### [[Tip Dating]]
+
+![[tip-dating.png]]
+
+### [[Isolation By Distance]]
+ 
+![[ibd_all.png]]
+
+![[ibd.png]]
 
 ### [[Timetree|Time Tree]]
 
-A time-scaled [[Phylogenetic|phylogeny]] was estimated with [[TreeTime]]  using an [[Clock Model|uncorrelated relaxed clock]] with a diffuse normal prior on the mean [[Substitution Rate|substitution rate]], and a [[Tree Prior|skyline coalescent tree prior]].  The clock estimation procedure was run iteratively until convergence (X iterations).
+A time-scaled [[Phylogenetic|phylogeny]] was estimated using the least-squares criteria as implemented in [[To 2016 Fast Dating Using|LSD2]]. The [[Yersinia pseudotuberculosis|Y. pseudotuberculosis]] clade was used to mark the outgroup, with the root estimated on this branch. Node uncertainty was estimated using a lognormal relaxed clock, with a distribution mean of 1 and standard deviation of 0.2.
 
 #### Code
-1. Estimate a ML tree.
+1. Estimate a time-scaled phylogeny tree.
 	```bash
-	snakemake iqtree_scf_all \
-	  --profile profiles/infoserv \
-	  --configfile results/config/snakemake.yaml	
+	snakemake lsd_all --profile profiles/infoserv
 	```
-1. Identify and plot the clock model:
-	```bash
-	snakemake clock_plot_all \
-		  --profile profiles/infoserv \
-		  --configfile results/config/snakemake.yaml	
-	```
-1. Should I bootstrap the tree now?
-	```bash
-	iqtree \
-	  -s clock_model.fasta
-	  -te clock_model_divtree.nwk \
-	  -m K3Pu+F+I \
-	  -b 100 \
-	  -pre test
-	```
+
 
 
 ### [[Continuous]] [[Phylogeography]]
 [[Continuous]] trait phylogeography was performed using the [[GEO_SPHERE]] package in [[BEAST|BEAST2]] using a fixed tree.
+
+
 
 ```bash
 mkdir beast1 beast2 beast3 beastMC3;

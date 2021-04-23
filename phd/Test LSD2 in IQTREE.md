@@ -1,12 +1,12 @@
 ---
-project:
+project: [[plague-phylogeography]]
 due: 2021-04-15
 people:
-tags: ⬜/📋
-status: idea
+tags: #⬜/✨ 
+status: done
 ---
 
-# Test LSD in IQTREE
+# Test [[LSD2]] in IQTREE
 
 ```bash
 cut -f 1,4 ../metadata/all/metadata.tsv  | tail -n+2 | sed 's/\[\|\]//g' > dates.txt

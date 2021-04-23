@@ -74,6 +74,11 @@ Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST|BEAST]] ).
 
 1. [[BEAST#BEAST2|BEAST2]] needs an alignment in [[Nexus]] or [[FASTA]] format.
 
+#### Tree
+
+1. Definitely doesn't like comments, throws an error.
+1. Can it handle branch supports and bootstraps?
+
 ### [[Continuous]] [[Phylogeography]]
 
 1. Partitions: Import Alignment File
