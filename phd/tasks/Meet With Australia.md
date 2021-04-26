@@ -16,7 +16,7 @@ time: 18:00
 
 # Meet With Australia
 
-[Meeting Link]([https://us02web.zoom.us/j/84583403662?pwd=OWZpbVhmMVhLc1hJOGd0aVFEZEJRZz09](https://us02web.zoom.us/j/84583403662?pwd=OWZpbVhmMVhLc1hJOGd0aVFEZEJRZz09))
+[Meeting Link](https://us02web.zoom.us/j/84583403662?pwd=OWZpbVhmMVhLc1hJOGd0aVFEZEJRZz09)
 
 ## Preparation
 
@@ -54,4 +54,25 @@ time: 18:00
 
 ## Notes
 
+- Set up different priors on the mean rate
+- No good mixing for the relaxed clock, for many of the parameters
+- High values for the coefficient of variation (high rate variation)
+- Fitting the rate variation to a model is really hard!	
+- Strict clock: Setting different priors ends up the with similar/overlapping distributions. Not sensitive to prior!
+- How do rates differ between strict and relaxed? Very different!
+- Root heights differ (20,000 - 8,000 YBP)
+- Need to make a lot of assumptions 
+
 ## Tasks
+- Send them a IQTREE that's in genetic distance (reduced, unrooted)
+- Alignments  by clade (all samples).
+- Send isolation by distance plots.
+
+- Dating by clade (BETS analysis).
+- Relative branch rates (genetic distance, 
+- Relaxed clock, fit rate to 1, for phylogeography
+- Visualized as a matrix
+- Leave one out analysis
+
+
+- BETS -> 	Leave One Out 
