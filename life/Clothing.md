@@ -1,6 +1,6 @@
 ---
 created: 2021-04-11T16:29:35-04:00
-modified: 2021-04-11T17:43:34-04:00
+modified: 2021-04-25T19:57:21-04:00
 ---
 
 # Clothing
@@ -18,13 +18,6 @@ tops:
 ```
 
 ## Wishlist
-
-- [ ] Black Jeans
-- [ ] Grey Jeans
-- [ ] White Jeans
-- [ ] White shirt
-- [ ] Black shirt
-- [ ] Army Canvas Jacket
 
 ## Outfits
 
