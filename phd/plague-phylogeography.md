@@ -10,6 +10,10 @@ This page is a Map of Content (see [In what ways can we form useful relationship
 
 You can use this Map of Content for different purposes such as summarising who is involved with this project: such as [[Hendrik Poinar]] and [[@Julia Gamble]].
 
+## Writing
+
+- [[Manuscript Plague Phylogeography]]
+
 ## Concepts:
 
 The [[Phylogeography]] of plague has been contentious and remain so.

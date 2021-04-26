@@ -22,7 +22,7 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 ```dataview
 table due, project, tags
 from "tasks"
-where contains(status, "priority") and !contains(status, "done") and due<date({{date}})
+where status="priority" and status!="done" and due<date({{date}})
 sort due
 ```
 
@@ -32,7 +32,7 @@ sort due
 ```dataview
 table due, time, project, tags
 from "tasks"
-where !contains(status, "done") and due=date({{date}})
+where status!="done" and due=date({{date}})
 sort due
 ```
 
@@ -41,7 +41,7 @@ sort due
 ```dataview
 table due, project, tags
 from "tasks"
-where contains(status, "done") and due=date({{date}})
+where status="done" and due=date({{date}})
 sort due
 ```
 
@@ -50,7 +50,7 @@ sort due
 ```dataview
 table due, project, tags
 from "tasks"
-where !contains(status, "done") and !contains(status, "idea") and due>date({{date}})
+where status!="done" and status!="idea" and due>date({{date}})
 sort due
 ```
 

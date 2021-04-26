@@ -17,12 +17,17 @@ import click
     help="Output markdown file.",
     show_default=True,
 )
-
+@click.pass_context
 def main(
+    ctx,
     input: str,
     output: str,
 ):
     """This script converts wikilinks in markdown to plain text."""
+
+    if not input and not output:
+        click.echo(ctx.get_help())        
+        quit()
 
     # Save up a string for the output file.
     output_str = ""

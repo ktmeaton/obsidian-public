@@ -1,15 +1,22 @@
 ---
-aliases:
+title:
   - {{title}}
+people:
 tags:
-  - ⬜/📋  
+  - ⬜/🧨  
 status:
-  - idea  
+  - priority  
 type: [[Meeting]]
+due: {{date}}
+time: 09:00
 ---
 
 # {{title}}
 
 [Meeting Link]()
 
-## Meeting Notes
+## Preparation
+
+## Notes
+
+## Tasks

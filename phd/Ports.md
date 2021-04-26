@@ -13,6 +13,13 @@ remote: 8001
 local: 6419
 remote: 6418
 ```
+
+## [[Manubot]]
+
+```yaml
+local: 8000
+```
+
 ---
 
 tags: #📝/🌱

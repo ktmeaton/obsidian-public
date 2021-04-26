@@ -1,9 +1,20 @@
-# {{title}}
-
-[[{{title}}]] started out as a single notes (like the others) but grew into its own folder of concepts.
-
-## People
-
+---
+type: [[Project]]
+title: {{title}}
+tags: 
+  - ⬜/📋
+status: idea
+people:
 ---
 
-tags: [[Project]], #📝/🌱
+# {{title}}
+
+The [[{{title}}]] project is...
+
+## Tasks
+
+```dataview
+table tags
+from "tasks"
+where project=[[{{title}}]]
+```
