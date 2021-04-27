@@ -6,9 +6,8 @@ people:
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
 tags:
-  - ⬜/🧨  
-status:
-  - priority  
+  - ⬜/✨
+status: done  
 type: [[Meeting]]
 due: 2021-04-26
 time: 18:00
@@ -64,10 +63,10 @@ time: 18:00
 - Need to make a lot of assumptions 
 
 ## Tasks
-- Send them a IQTREE that's in genetic distance (reduced, unrooted)
-- Alignments  by clade (all samples).
-- Send isolation by distance plots.
-
+- [[Send Starting Tree to Australia]]
+- [[Create Multiple Alignments by Clade]]
+- [[tasks/Send IBD Plots]]
+- 
 - Dating by clade (BETS analysis).
 - Relative branch rates (genetic distance, 
 - Relaxed clock, fit rate to 1, for phylogeography

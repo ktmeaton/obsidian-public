@@ -4,6 +4,3 @@
 [submodule "life/.obsidian"]
 	path = life/.obsidian
 	url = https://github.com/ktmeaton/obsidian-settings
-[submodule "phd/plague-phylogeography-paper"]
-	path = phd/plague-phylogeography-paper
-	url = https://github.com/ktmeaton/plague-phylogeography-paper

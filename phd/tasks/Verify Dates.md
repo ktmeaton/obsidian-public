@@ -1,12 +1,12 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-04-13
+due: 2021-04-26
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨  
+status: done
 type: [[Task]]
 ---
 

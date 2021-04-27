@@ -9,10 +9,3 @@ type: [[Task]]
 ---
 
 # {{title}}
-
-## Tasks
-
-```dataview
-task from "tasks"
-where contains(file.name, "{{title}}")
-```
