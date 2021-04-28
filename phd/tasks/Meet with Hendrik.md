@@ -1,11 +1,11 @@
 ---
+project: [[plague-phylogeography]]
 title:
   - Meet with Hendrik
 people:
 tags:
-  - ⬜/🧨  
-status:
-  - priority  
+  - ⬜/✨   
+status: done 
 type: [[Meeting]]
 due: 2021-04-27
 time: 11:30
@@ -34,5 +34,5 @@ time: 11:30
 
 ### Tasks
 
-- [ ] Update, write new paper outline.
+- [[tasks/Write New Outline]]
 - "How does this shift dialogue?"

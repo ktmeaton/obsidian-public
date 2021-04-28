@@ -4,8 +4,8 @@ due: 2021-04-27
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
-tags: #⬜/🧨 
-status: priority
+tags: ⬜/✨  
+status: done
 title: Send Starting Tree to Australia
 type: [[Task]]
 ---
@@ -14,4 +14,4 @@ type: [[Task]]
 
 ## Tasks
 
-- [ ] Send them a IQTREE that's in genetic distance (reduced, unrooted)
+Send them a IQTREE that's in genetic distance (reduced, unrooted)
