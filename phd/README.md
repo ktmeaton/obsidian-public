@@ -1,5 +1,13 @@
 # Katherine Eaton's PhD Obsidian Vault
 
+## [[Graph Groups]]
+
+| Query       | Color   |
+| ----------- | ------- |
+| [[Project]] | #8000FF |
+| [[Tool]]    | #80FFB4 |
+
+
 ## PhD Timeline
 
 ![[PhD Timeline]]
@@ -14,17 +22,20 @@
 
 | Tag    | Use      |
 |:------:|:--------:|
-| #⬜/🚂 | Backlog  |
 | #⬜/📋 | Todo     |
+| #⬜/🚂 | Backlog  |
 | #⬜/🧨 | Priority |
-| #⬜/✨ | Done     | 
+| #⬜/✨ | Done     |
 
 ### Note Types
 
-|  Type  |    Description    |
-|:------:|:-----------------:|
-| People | Individual humans |
-|  Tool  |     Software      | 
+|    Type    |    Description    |
+|:----------:|:-----------------:|
+| [[People]] | Individual humans |
+|  [[Tool]]  |     Software      |
+|  [[Note]]  |   Generic Note    |
+|  [[MOC]]   |  Map of Content   |
+| [[Task]]           |     Task              |
 
 ### Note Growth
 

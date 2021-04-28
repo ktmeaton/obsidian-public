@@ -1,6 +1,9 @@
 ---
 aliases:
   - phylogeography
+type: [[MOC]]
+tags:
+  - 📝/🌿 
 ---
 
 # Phylogeography
@@ -35,6 +38,3 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 	| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](Guellil%20et%20al.%202020%20Genomic%20Historical%20Synthesis.md) |
 - It's uncertain what data is being used to construct this map. I think mostly historical, but perhaps also the genomic evidence?
 
----
-
-tags: [[MOC]]

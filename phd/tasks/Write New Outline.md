@@ -10,6 +10,9 @@ type: [[Task]]
 
 # Write New Outline
 
+Keywords: [[Plague]], [[Yersinia pestis]], [[Phylogenetic]], [[Phylogeography]], [[Spread]], [[Geographic Origin]]
+- 
+
 ## Background
 
 Estimating the timing and dispersal of past pandemics is of interest. People want to know when and where plague has been, and how it moved between locations. One way of doing this is with phylogenetics. Where the 

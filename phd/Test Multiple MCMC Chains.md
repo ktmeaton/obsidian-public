@@ -2,8 +2,8 @@
 project:
 due: 2021-04-20
 people:
-tags: #⬜/🧨  
-status: priority
+tags: ⬜/✨  
+status: done
 title: Test Multiple MCMC Chains
 type: [[Task]]
 ---

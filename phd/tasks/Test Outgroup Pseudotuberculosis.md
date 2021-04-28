@@ -2,8 +2,8 @@
 project: [[plague-phylogeography]]
 due: 2021-04-17
 people:
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨
+status: done
 ---
 
 # Test Outgroup Pseudotuberculosis

@@ -39,7 +39,7 @@ This produces the exact same problem as with the [[clock rate being extremely sm
 
 | Full                                 | Prune                                |
 | ------------------------------------ | ------------------------------------ |
-| ![[Pasted image 20210416170009.png]] | ![[Pasted image 20210416170050.png]] |
+| ![[Outgroup Rooting 1.png]] | ![[Outgroup Rooting 2.png]] |
 
 
 ### [[LSD]]
@@ -57,7 +57,7 @@ This produces the exact same problem as with the [[clock rate being extremely sm
 
 ### Full TimeTree
 
-![[Pasted image 20210416170850.png]]
+![[Placement Phylogeny.png]]
 
 ### Filter [[LSD]] Alignment
 
@@ -74,4 +74,4 @@ beast -seed 154343149 -beagle beast.xml | tee beast.screenlog
 
 - I might want to put an upper bound on the stdev of the rate
 
-![[Pasted image 20210416192113.png]]
+![[LSD Phylogeny.png]]

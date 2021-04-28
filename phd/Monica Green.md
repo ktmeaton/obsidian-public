@@ -1,10 +1,10 @@
 ---
 aliases:
-  - {{title}}
+  - Monica Green
 type: [[People]]
 ---
 
-# {{title}}
+# Monica Green
 
 | Field       | Information | Role |
 | ----------- | ----------- | ---- |

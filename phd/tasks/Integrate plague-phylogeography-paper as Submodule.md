@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-04-28
+due: 2021-04-29
 people:
-tags: ⬜/📋 
-status: idea
+tags: #⬜/🧨
+status: priority
 title: Integrate plague-phylogeography-paper as Submodule
 type: [[Task]]
 ---

@@ -2,8 +2,8 @@
 project: [[plague-phylogeography]]
 due: 2021-04-28
 people:
-tags: ⬜/🧨   
-status: priority
+tags: ⬜/✨   
+status: done
 title: Run TreeTime Mugration
 type: [[Task]]
 ---
@@ -17,7 +17,7 @@ task from "tasks"
 where contains(file.name, "Run TreeTime Mugration")
 ```
 
-## Code
+## Manual
 Copy Data
 ```bash
 # Tree
@@ -63,3 +63,8 @@ do
 	  done > mugration_${attr}_states.csv; 
 done
 ```
+
+## Snakemake
+
+1. Modify metadata to replace NA with ?.
+

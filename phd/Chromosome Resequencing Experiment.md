@@ -1,10 +1,13 @@
 ---
 aliases:
   - Chromosome Resequencing
+project: [[Plague Denmark]]
+people:
+  - [[Ravneet Sidhu]]
 type:
   - [[Experiment]]
 tags: 
-  - ⬜/🧨 
+  - ⬜/🚂  
   - 📝/🌿 
 status:
   - priority

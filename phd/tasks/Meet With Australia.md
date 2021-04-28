@@ -48,7 +48,7 @@ time: 18:00
 
 1. Experimented with [[Continuous|continuous]] [[Phylogeography|phylogeography]] in [[BEAST2]].
 
-![[Pasted image 20210426175417.png]]
+![[spreaD3 All.png]]
 
 
 ## Notes

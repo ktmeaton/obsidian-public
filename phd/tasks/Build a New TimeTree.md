@@ -33,11 +33,11 @@ snakemake iqtree_all --profile profiles/infoserv --configfile results/config/sna
 - [x] [[Evaluate Singleton Sites]]
 
 The issue of the marginal dates being out of sync with the joint rates is now present.
-![[Pasted image 20210414145808.png]]
+![[Marginal Confidence Interval 1.png]]
 
 I'm curious to know if using [[Polytomy|polytomies]] and keeping [[Singleton|singletons]] will impact the distribution of branch rates. Possibly removing the peak of ultra short ones? Nope.
 
-![[Pasted image 20210414150247.png]]
+![[Rate Variation 2.png]]
 
 ### Without Russian Samples
 
@@ -88,7 +88,7 @@ I just realized I [[lose bootstrap values]] when I import a nwk into lsd. Should
 
 ### [[Root to Tip Regression]] (by [[Clade]])
 
-![[Pasted image 20210419143838.png]]
+![[RTT Clades 1.png]]
   
 How to calculate the [[Substitution Rate|substitution rate]]? Is it the [[slope]]? Yes!
 
@@ -96,4 +96,4 @@ I should do this for the full dataset.
 
 ### [[spreaD3]] of [[0.PRE]]
 
-![[Pasted image 20210419170431.png]]
+![[spreaD3 0.PRE.png]]

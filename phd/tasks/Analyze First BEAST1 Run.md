@@ -45,13 +45,13 @@ treeannotator -burnin 1000 -hpd2D 0.95 beast_10M.trees beast_10M_mcc_hpd95.nex
 ```
 
 If I don't use tip dates, the tree becomes ultrametric
-![[Pasted image 20210419101113.png|500]]
+![[Unknown Phylogeny.png|500]]
 
 ### Tip Dates 10M
 
 Using tip dates does seem to be promising in the test tree.
 
-![[Pasted image 20210419102055.png|500]]
+![[Unknown Phylogeny 2.png|500]]
 
 ```bash
 cat main/snippy_multi/all/chromosome/prune/snippy-multi.constant_sites.txt
@@ -107,19 +107,19 @@ treeannotator -burnin 1000000 -hpd2D 0.80 beast.trees beast_mcc_hpd80.nex
 ```
 
 1. [x] Check tree in [[FigTree]].
-	![[Pasted image 20210419121639.png|300]]
+	![[Unknown Phylogeny 3.png|300]]
 1. Check log in [[Tracer]].
 
 	- The substitution model is well-sampled.
 | [[meanRate]] Estimate                     | [[meanRate]] Trace                        |
 | ----------------------------------------- | ----------------------------------------- |
-| ![[Pasted image 20210419121734.png\|500]] | ![[Pasted image 20210419121808.png\|300]] |
+| ![[BEAST Tracer Histogram.png\|500]] | ![[BEAST Tracer Trace 1.png\|300]] |
 
 	- The geography model is not well-sampled.
 	
 | [[ucld.mean]] Estimate                    | [[ucld.mean]] Trace                       |
 | ----------------------------------------- | ----------------------------------------- |
-| ![[Pasted image 20210419121920.png\|500]] | ![[Pasted image 20210419121937.png\|300]] |
+| ![[BEAST Tracer Histogram 2.png\|500]] | ![[BEAST Tracer Trace 2.png\|300]] |
 
 1. Check geography in [[spreaD3]].
 

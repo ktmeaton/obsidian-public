@@ -2,8 +2,8 @@
 project:
 due: 2021-04-20
 people:
-tags: #⬜/🚂  
-status: backlog
+tags: ⬜/✨  
+status: done
 title: Email Sam About BEAST
 type: [[Task]]
 ---

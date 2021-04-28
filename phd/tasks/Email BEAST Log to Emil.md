@@ -29,7 +29,7 @@ where contains(file.name, "Email BEAST Log to Emil")
 
 | [[ucld.mean]] Estimate                    | [[ucld.mean]] Trace                       |
 | ----------------------------------------- | ----------------------------------------- |
-| ![[Pasted image 20210420113311.png\|500]] | ![[Pasted image 20210420113351.png\|300]]  |
+| ![[BEAST Tracer Histogram 3.png\|500]] | ![[BEAST Tracer Trace 3.png\|300]]  |
 
 > I wonder if my next experiment should be to run 3 independent chains of 50-100M generations each, and check for convergence? A 100M generation run only takes about a day.
 

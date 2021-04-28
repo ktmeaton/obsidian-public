@@ -1,8 +1,8 @@
 ---
 project:
 due: 2021-04-16
-people:
-tags:
+tags: ⬜/✨ 
+status: done
 ---
 
 # Test Compute Canada

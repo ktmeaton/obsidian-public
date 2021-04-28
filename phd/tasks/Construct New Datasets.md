@@ -5,7 +5,7 @@ people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
-tags: #⬜/✨  
+tags: ⬜/✨  
 status: done
 type: [[Task]]
 ---

@@ -25,16 +25,16 @@ type: [[Task]]
 
 - [x] Full Dataset
 	- [x] IQTREE No Outgroup
-	![[Pasted image 20210427141723.png|500]]
+	![[Placement Phylogeny 3.png|500]]
 	- [x] Alignment No Outgroup
-	![[Pasted image 20210427141800.png|500]]
+	![[Missing Data Sites Command Line.png|500]]
 	- [x] LSD2 No Outgroup
-	![[Pasted image 20210427141912.png|500]]
+	![[Placement Time Tree.png|500]]
 	- [ ] Alignment by Clade
 
 - [x] Prune Dataset
 	- [x] IQTREE No Outgroup
-	![[Pasted image 20210427143128.png]]
+	![[Placment Phylogeny Divergence Tree.png]]
 	- [x] Alignment No Outgroup
 	- [x] LSD2 No Outgroup
 

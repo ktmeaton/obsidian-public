@@ -40,12 +40,12 @@ pandoc -s pandoc-example-convert.md -o pandoc-example.html
 	```bash
 	pandoc pandoc-example.md -o pandoc-example_default.pdf
 	```
-![[Pasted image 20210325182718.png]]
+![[Pandoc Example Default.png]]
 - Eisvogel Latex Template:
 	```bash
 	pandoc pandoc-example.md -o pandoc-example_eisvogel.pdf --template templates/Eisvogel/eisvogel.latex 
 	```
-![[Pasted image 20210325182740.png]]
+![[Pandoc Example Style.png]]
 
 - Can you use css with a pdf output? NOPE.
 ```bash
