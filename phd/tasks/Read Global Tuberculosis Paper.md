@@ -8,3 +8,5 @@ type: [[Task]]
 ---
 
 # Read Global Tuberculosis Paper
+
+- [[Zimpel 2020 Global Distribution Evolutiona]]

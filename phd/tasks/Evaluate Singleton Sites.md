@@ -17,6 +17,8 @@ status: done
 
 > [Singletons are NOT uninformative, not to a likelihood-based (maximum likelihood or Bayesian inference) program. Sites that are not parsimony-informative are very informative about the rate of evolution, and the rate is crucial to the analysis. [This paper](https://www.ncbi.nlm.nih.gov/pubmed/26227865) shows that even dropping invariant sites can screw up an analysis. If you're using something like radseq to get the data, then perhaps singletons are more likely to be misaligned in an assembly step. In these cases, people have some rules of thumb for minor allele frequencies to keep in the process. But this is taken care of in assembly pipelines (like [stacks](http://catchenlab.life.illinois.edu/stacks/)), it's a threshold you set.](https://www.reddit.com/r/bioinformatics/comments/68ieub/should_i_remove_singletonscolumns_with_n_in_an_msa/)
 
+## No [[Outgroup]]
+
 ### [[Missing Data]]
 
 I think I need to edit the [[Jupyter Notebook]] that plots [[Missing Data]]. I think it would be more informative as a stacked/side bar chart with parsimony and singleton sites separate. I am quite pleased with this:
@@ -36,3 +38,6 @@ The resulting trees produced from an alignment that includes singletons are prob
 ## Conclusion
 
 I'm going to proceed with a [[Missing Data]] threshold of 1%. This is going to be ultraconservative, however, it does allow ~6 samples to be missing sites data. 
+
+## With [[Outgroup]]
+
