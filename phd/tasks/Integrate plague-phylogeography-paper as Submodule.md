@@ -17,7 +17,7 @@ type: [[Task]]
 ```bash
 cd phd/
 git submodule add https://github.com/ktmeaton/plague-phylogeography-paper
-```
+```g
 
 - [x] Create ```manubot``` conda environment to build.
 

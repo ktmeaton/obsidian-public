@@ -14,6 +14,33 @@ You can use this Map of Content for different purposes such as summarising who i
 
 - [[Manuscript Plague Phylogeography]]
 
+## Figures
+
+### [[1.PRE]]
+<!--
+| Tree                              |     |
+| --------------------------------- | --- |
+| ![[1.PRE Tree 2483512d.png\|800]] |     |
+| ![[1.PRE Map 2483512d.png\|800]]                                   |     |
+-->
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/1.PRE?branchLabel=timetree_num_date&c=node_type&ci&d=tree&legend=closed&onlyPanels&tl=country&sidebar=closed" height="540px" width=900px ></iframe>
+
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/1.PRE?c=node_type&d=map&legend=closed&onlyPanels&sidebar=closed" height="540px" width=900px ></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/1.PRE?branchLabel=timetree_num_date&branches=hide&c=node_type&d=tree&l=clock&legend=closed&onlyPanels&p=full&tl=country&sidebar=closed" height="540px" width=900px ></iframe>
+
+
+### [[0.PRE]]
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/0.PRE?branchLabel=timetree_num_date&c=node_type&ci&d=tree&legend=closed&onlyPanels&tl=country&sidebar=closed" height="540px" width=900px ></iframe>
+
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/0.PRE?c=node_type&legend=closed&d=map&onlyPanels&sidebar=closed" height="540px" width=900px ></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.6/main/full/0.PRE?branchLabel=timetree_num_date&branches=hide&c=node_type&d=tree&l=clock&legend=closed&onlyPanels&p=full&tl=country&sidebar=closed" height="540px" width=900px ></iframe>
+
 ## Concepts:
 
 The [[Phylogeography]] of plague has been contentious and remain so.
