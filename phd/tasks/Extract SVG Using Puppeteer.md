@@ -29,3 +29,5 @@ type: [[Task]]
 	export NODE_PATH=/home/ktmeaton/miniconda3/envs/puppeteer/lib/node_modules
 	export PATH=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/:$PATH
 	```
+	
+- [ ] [[Test Miniconda on Windows]]
