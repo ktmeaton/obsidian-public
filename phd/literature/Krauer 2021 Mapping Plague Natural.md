@@ -5,10 +5,10 @@ aliases:
 tags: 
   - 📥/📰
   - 📝/🌱  
-title:Mapping the plague through natural language processing 
+title: Mapping the plague through natural language processing 
 year: 2021
 authors: Krauer et al.
-doi:https://doi.org/10.1101/2021.04.27.21256212
+doi: 'https://doi.org/10.1101/2021.04.27.21256212'
  
 ---
 
