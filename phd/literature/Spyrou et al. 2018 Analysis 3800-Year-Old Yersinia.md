@@ -2,7 +2,10 @@
 aliases:
   - Spyrou et al. 2018
   - Spyrou et al. (2018)
-  - @spyrou2018Analysis3800yearoldYersinia 
+  - '@spyrou2018Analysis3800yearoldYersinia' 
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Spyrou et al. 2018 Analysis 3800-Year-Old Yersinia
@@ -49,9 +52,3 @@ aliases:
 |:----------------------------------------------------:|
 | ![[spyrou2018Analysis3800yearoldYersinia_fig3.jpg]] |
 |         [Heat map of virulence gene coverage.](Spyrou%20et%20al.%202018%20Analysis%203800-Year-Old%20Yersinia.md) |
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

@@ -1,4 +1,10 @@
 
+---
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
+---
+
 # Susat et al. 2020 Yersinia Pestis Strains
 
 | Field   | Value                                                                                                                                                          |
@@ -31,9 +37,3 @@
 |        [(A,B) Coverage plots of the <i>pla<i> positive reference in G701and G488. (C,D) Coverage plots of the <i>pla<i> negative reference in G701 and G488.](Susat%20et%20al.%202020%20Yersinia%20Pestis%20Strains.md)        |
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

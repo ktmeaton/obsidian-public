@@ -1,6 +1,9 @@
 ---
 aliases:
   - Rasmussen et al. 2015
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Rasmussen et al. 2015 Early Divergent Strains
@@ -26,9 +29,3 @@ aliases:
 	ie. Not capable of causing bubonic plague.
 	
 ## Figures
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

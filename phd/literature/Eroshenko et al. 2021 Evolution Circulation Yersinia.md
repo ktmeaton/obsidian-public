@@ -1,6 +1,9 @@
 ---
 aliases:
   - Eroshenko et al. 2021
+tags: 
+  - 📥/📰 
+  - 📝/🌱     
 ---
 
 # Eroshenko et al. 2021 Evolution Circulation Yersinia
@@ -12,9 +15,3 @@ aliases:
 | Authors | Eroshenko et al.                                                                                                                                               |
 | DOI     | <https://doi.org/10.1371/journal.pone.0244615>                                                                                                                 |
 | bibtex  | eroshenko2021EvolutionCirculationYersinia                                                                                                                      | 
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟥 

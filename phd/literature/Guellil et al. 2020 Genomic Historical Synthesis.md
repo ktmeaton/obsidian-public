@@ -2,7 +2,10 @@
 aliases:
   - Guellil et al. 2020
   - Guellil et al. (2020)
-  - '@guellil2020GenomicHistoricalSynthesis '
+  - '@guellil2020GenomicHistoricalSynthesis'
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 # Guellil et al. 2020 Genomic Historical Synthesis
 
@@ -46,9 +49,3 @@ aliases:
 - >Considering that the disease did not advance far into France during the Great Plague of Marseille, it seems unlikely that the lineage introduced into Europe in 1720 was reintroduced from there to the Caucasus region and then reached Chechnya. Instead, we propose that the disease reached Chechnya directly on a separate route via land or that the region is located close to the wildlife reservoir that is responsible for the plague lineage documented in Europe following the Black Death.
  
 - Known modern plague foci are situated in neighboring Georgia, where written sources describing cases of bubonic plague date from the 11th century CE until after the start of the Third Plague Pandemic (1894) ([[oconnel2010SurveillancePlagueNaturalFoci]]).
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

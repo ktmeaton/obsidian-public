@@ -1,6 +1,11 @@
 ---
 tags: 
   - Tool
+type: 
+  - [[Tool]]
+  - [[Document Conversion MOC]] 
+tags:
+  - 📝/🌱   
 ---
 
 # Obsidian
@@ -46,8 +51,3 @@ Filters: -path:pandoc -path:templates
 ```yaml
 Filters: ([[Project]] OR [[PEOPLE]] OR [[Institution]])
 ```
-
-
----
-
-tags: [[Tool]], [[Document Conversion MOC]], #📝/🌱 

@@ -1,57 +1,64 @@
 ---
 title:
-  - Meet With Sebastian
+  - Meet With Australia
+project: [[plague-phylogeography]]
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
 tags:
-  - ⬜/✨
-status: done  
+  - ⬜/🧨 
+status: priority  
 type: [[Meeting]]
-due: 2021-04-26
+due: 2021-05-06
 time: 18:00
 ---
 
 # Meet With Australia
 
+## [[2021-05-06]]
+
+[Meeting Link]()
+
+## [[2021-04-26]]
+
 [Meeting Link](https://us02web.zoom.us/j/84583403662?pwd=OWZpbVhmMVhLc1hJOGd0aVFEZEJRZz09)
 
-## Preparation
+### Preparation
 
-### 1. Datasets
+#### 1. Datasets
 1. Constructed two datasets based on samples that have [[Geographic Location]] and [[Date]]:
 	- Full (n=600)
 	- Reduced (n=200)
 
-### 2. [[Clock Model]]
+#### 2. [[Clock Model]]
 
-#### Regression
+##### Regression
 
 ![[rtt_all 3.png|500]]
 
 ![[rtt_clades 1.png]]
 	
-#### Node Dating
+##### Node Dating
 
 ![[dating_1.PRE.png|700]]
 
-### 3. [[Phylogeography]]	
+#### 3. [[Phylogeography]]	
 
 ![[ibd_all 3.png]]
 
-#### [[Discrete]]
+##### [[Discrete]]
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography/337baaf80e5e1f356737e46bb0bf8afb2f164fd8/workflow/scripts/arc_diagram.html" height="600px" width=900px ></iframe>
 
-#### [[Continuous]]
+##### [[Continuous]]
 
 1. Experimented with [[Continuous|continuous]] [[Phylogeography|phylogeography]] in [[BEAST2]].
 
 ![[spreaD3 All.png]]
 
 
-## Notes
+### Notes
 
 - Set up different priors on the mean rate
 - No good mixing for the relaxed clock, for many of the parameters
@@ -62,10 +69,10 @@ time: 18:00
 - Root heights differ (20,000 - 8,000 YBP)
 - Need to make a lot of assumptions 
 
-## Tasks
-- [[Send Starting Tree to Australia]]
-- [[Create Multiple Alignments by Clade]]
-- [[tasks/Send IBD Plots]]
+### Tasks
+- [x] [[Send Starting Tree to Australia]]
+- [x] [[Create Multiple Alignments by Clade]]
+- [x] [[tasks/Send IBD Plots]]
 - 
 - Dating by clade (BETS analysis).
 - Relative branch rates (genetic distance, 

@@ -15,8 +15,10 @@ time: 09:00
 
 [Meeting Link]()
 
-## Preparation
+## {{date}}
 
-## Notes
+### Preparation
 
-## Tasks
+### Notes
+
+### Tasks

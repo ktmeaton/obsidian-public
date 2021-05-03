@@ -2,6 +2,9 @@
 aliases:
   - Duchene et al. 2015
   - '@duchene2015PerformanceDateRandomizationTest'
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Duchene et al. 2015 Performance Date-Randomization Test
@@ -26,9 +29,3 @@ aliases:
 
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

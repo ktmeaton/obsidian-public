@@ -3,6 +3,9 @@ aliases:
   - Xu et al. 2019
   - Xu et al. (2019)
   - '@xu2019HistoricalGenomicData'
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Xu et al. 2019 Historical Genomic Data
@@ -49,12 +52,3 @@ aliases:
 |                                 ![[xu2019HistoricalGenomicData_timeline.jpg]]                                  |     |
 | The [[Temporal\|temporal]] distribution of [[Human\|human]] [[Plague\|plague]] during the [[Third Pandemic]] (1776-2008) |     |
 |                         [[Xu et al. 2019 Historical Genomic Data\|Xu et al. (2019)]]                         |     |
-
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨
-
-[[]]

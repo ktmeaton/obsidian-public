@@ -3,7 +3,6 @@ type: [[Project]]
 title: Bison Mitochondria
 tags: 
   - 📝/🌱
-  - Test
 people:
   - [[Tyler Murchie]]
 ---

@@ -1,6 +1,9 @@
 ---
 aliases:
   - Sagulenko et al. 2018
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic
@@ -34,9 +37,3 @@ Marginal reconstruction produces a:
 | Comparison of the influenza skyline with WHO Case Reports         |
 | ----------------------------------------------------------------- |
 | ![[sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic _fig8.png]] |
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

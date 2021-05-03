@@ -3,6 +3,9 @@ aliases:
   - Morelli et al. 2010
   - Morelli et al. (2010)
   - '@morelli2010YersiniaPestisGenome'
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Morelli et al. 2010 Yersinia Pestis Genome
@@ -53,9 +56,3 @@ aliases:
 | [Routes of plague transmission.](Morelli%20et%20al.%202010%20Yersinia%20Pestis%20Genome.md)                                              |
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

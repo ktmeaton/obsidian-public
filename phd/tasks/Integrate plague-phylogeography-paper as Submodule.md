@@ -2,8 +2,8 @@
 project:
 due: 2021-04-29
 people:
-tags: #⬜/🧨
-status: priority
+tags: ⬜/✨ 
+status: done
 title: Integrate plague-phylogeography-paper as Submodule
 type: [[Task]]
 ---
@@ -34,6 +34,8 @@ mamba env create -n build/environment.yaml
 ```bash
 ../pandoc/convert_wikilinks.py --input content/methods.md --output content/03.methods.md
 ```
+
+- [ ] Note, Must clear [[webpage]] directory otherwise obsidian has permissions issues.
 
 - [ ] Get mermaid filter working.
 

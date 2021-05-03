@@ -2,6 +2,9 @@
 ---
 aliases:
   - Rascovan et al. 2019
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Rascovan et al. 2019 Emergence Spread Basal
@@ -28,9 +31,3 @@ aliases:
 |:--------------------------------------------:|
 | ![[rascovan2019EmergenceSpreadBasal_fig5d.jpg]] |
 | [Proposed dispersion model during the [[LNBA]].](Rascovan et al. 2019 Emergence Spread Basal) |
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

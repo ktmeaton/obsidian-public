@@ -1,8 +1,8 @@
 ---
-project:
-due: 2021-04-20
+project: [[Lab Admin]]
+due: 2021-05-03
 people:
-tags: ⬜/📋 
+tags: ⬜/🧨
 status: idea
 title: Plan for BaseSpace Account
 type: [[Task]]
@@ -10,12 +10,7 @@ type: [[Task]]
 
 # Plan for BaseSpace Account
 
-## Tasks
-
-```dataview
-task from "tasks"
-where contains(file.name, "Plan for BaseSpace Account")
-```
+## Emails
 
 > Hi Everyone,
 > 
@@ -31,3 +26,10 @@ where contains(file.name, "Plan for BaseSpace Account")
 > 
 > Cheers,
 > Kat
+
+## Deleting Projects
+
+- [ ] [190809\_Poinar\_KE\_Megapestis5](https://basespace.illumina.com/projects/140009878 "190809_Poinar_KE_Megapestis5")
+- [ ] [180802\_Poinar\_KE\_Megapestis4](https://basespace.illumina.com/projects/89755666 "180802_Poinar_KE_Megapestis4")
+- [x] [180426\_KE\_Megapestis\_set3](https://basespace.illumina.com/projects/75450375 "180426_KE_Megapestis_set3")
+- [x] [190809\_Poinar\_KE\_Pestis\_Shotgun3](https://basespace.illumina.com/projects/139993863 "190809_Poinar_KE_Pestis_Shotgun3")

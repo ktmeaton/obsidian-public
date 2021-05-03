@@ -1,6 +1,9 @@
 ---
 aliases:
   - Muller et al. 2017
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Muller et al. 2017 Structured Coalescent Its
@@ -32,9 +35,3 @@ aliases:
 
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

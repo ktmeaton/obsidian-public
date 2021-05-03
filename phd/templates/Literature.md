@@ -1,13 +1,17 @@
 ---
 aliases:
-  - @{{title}}
+  - {{title}}
+  - '@{{title}}'
+tags: 
+  - 📥/📰
+  - 📝/🌱  
 ---
 
 # {{title}}
 
 | Field   | Value              |
 | ------- | ------------------ |
-| Title   |                    |
+| Title   |                    | 
 | Year    |                    |
 | Authors |                    |
 | DOI     | <https://doi.org/> |
@@ -18,14 +22,10 @@ aliases:
 
 ## Figures
 
-|          Fig X          |     |
-|:-----------------------:| --- |
-| ![[{{title}}_figX.jpg]] |     |
-|     Figure caption.     |     |
-[[{{title}}\|Alias]] | 	|	
+|          Fig X           |     |
+|:------------------------:| --- |
+| ![[{{title}}\_figX.jpg]] |     |
+|     Figure caption.      |     |
+|   [[{{title}}\|Alias]]   |     |
 
 ## Notes
-
----
-
-tags: #📥/📰, #📝/🌱

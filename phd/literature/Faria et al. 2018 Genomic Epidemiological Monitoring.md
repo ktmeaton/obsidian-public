@@ -1,6 +1,9 @@
 ---
 aliases:
   - Faria et al. 2018
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Faria et al. 2018 Genomic Epidemiological Monitoring
@@ -31,9 +34,3 @@ aliases:
 |     [[Faria et al. 2018 Genomic Epidemiological Monitoring\|Faria et al. 2018]]     |     |
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

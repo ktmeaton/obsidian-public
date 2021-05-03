@@ -2,8 +2,8 @@
 project:
 due: 2021-04-30
 people:
-tags: #⬜/🧨  
-status: priority
+tags: ⬜/✨   
+status: done
 title: Clade Dating Experiment
 type: [[Task]]
 ---
@@ -35,3 +35,7 @@ lsd2 \
 	-g {output.outgroups} \
 	-G > {output.log};
 ```
+
+## Conclusions
+
+Instead, I'm going to try to add [[Temporal Constraints]] to clades with strong [[Clock Model|temporal signal]].

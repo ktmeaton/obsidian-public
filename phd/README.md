@@ -52,13 +52,3 @@
 | #📥/📰 | Article |
 | #📥/📗 |  Book   |
 |        |         |
-
-### Status
-
-| Tag |    Use     |     |     |
-|:---:|:----------:| --- | --- |
-| #🟥 |   Inbox    |     |     |
-| #🟨 | Processing |     |     |
-| #🟩 |  Complete  |     |     |
-| #🟦 |  Archive   |     |     |
-

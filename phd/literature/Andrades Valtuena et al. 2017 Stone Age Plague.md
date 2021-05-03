@@ -4,6 +4,9 @@ aliases:
   - '@andradesvaltuena2017StoneAgePlague'  
 Date: 2017
 Authors: Valtuena et al.
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Andrades Valtuena et al. 2017 Stone Age Plague
@@ -41,9 +44,3 @@ Authors: Valtuena et al.
 |                       ([[Andrades Valtuena et al. 2017 Stone Age Plague\|Andrades Valtuena et al. 2017]])                        |     |
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

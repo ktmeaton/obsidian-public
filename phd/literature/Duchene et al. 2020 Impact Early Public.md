@@ -1,6 +1,9 @@
 ---
 aliases:
   - Duchene et al. 2020
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Duchene et al. 2020 Impact Early Public
@@ -26,11 +29,3 @@ This article was recommended to me by [[Sebastian Duchene]] as an example of [[M
 [[Duchene et al. 2020 Impact Early Public\|Alias]] | 	|	
 
 ## Notes
-
----
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟥 

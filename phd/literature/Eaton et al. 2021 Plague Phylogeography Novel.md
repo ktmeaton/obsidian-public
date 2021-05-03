@@ -3,6 +3,9 @@ aliases:
   - Eaton et al. In Prep
 Date: 2021
 Authors: Eaton et al.
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
 ---
 
 # Eaton et al. 2021 Plague Phylogeography Novel
@@ -63,9 +66,3 @@ Authors: Eaton et al.
 
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

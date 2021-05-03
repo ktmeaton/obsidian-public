@@ -3,6 +3,9 @@ aliases:
   - Wagner et al. 2014
   - Wagner et al. (2014)
   - '@wagner2014YersiniaPestisPlague'
+tags: 
+  - 📥/📰 
+  - 📝/🌱   
 ---
 
 # Wagner et al. 2014 Yersinia Pestis Plague
@@ -32,9 +35,3 @@ aliases:
 |:--------------------------------------------:|
 | ![[wagner2014YersiniaPestisPlague_fig4.jpg]] |
 | [Hypothetical scenario for the geographic spread of <i>Yersinia pestis</i>](Wagner%20et%20al.%202014%20Yersinia%20Pestis%20Plague.md) |
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨

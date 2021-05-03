@@ -1,3 +1,10 @@
+---
+aliases:
+tags: 
+  - 📥/📰 
+  - 📝/🌱 
+---
+
 # Plazzi et al. 2010 Phylogenetic Representativeness New
 
 | Field   | Value                                                                                       |
@@ -21,9 +28,3 @@
 
 
 ## Notes
-
----
-
-tags: 
-  - #📥/📰 
-  - #🟨
