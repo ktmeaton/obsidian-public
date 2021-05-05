@@ -2,7 +2,7 @@
 title: Pandoc Example
 subtitle: An example file for testing pandoc conversion
 date: 2021-05-05
-author: 
+author:
   - Katherine Eaton
 authorLinks: 'https://ktmeaton.github.io/'
 affiliations: McMaster Ancient DNA Centre
@@ -20,13 +20,13 @@ This is an example markdown file for pandoc.
 
 This is under Heading 1.
 
-This is a [[test wikilink]].
+This is a test wikilink.
 
-This is a [[test wikilink with an alias|test alias]].
+This is a test alias.
 
 This is a [test markdown link](path) that should not be altered.
 
-This line [[has]] double [[links]] oh boy [[oh boy|OH BOY]].
+This line has double links oh boy OH BOY.
 
 ## Code Blocks
 
@@ -44,21 +44,21 @@ echo TYPED
 
 ## Tables
 
-The table extension in [[Obsidian]] is extremely helpful for this. Note the use of a table caption.
+Use a [table generator](https://www.tablesgenerator.com/html_tables#) to make these. Use ```<br>``` to put line breaks between tables.
 
 Table: Test
 
 | Test      | Test2 |
 | --------- | ----- |
-| Something | Else  | 
+| Something | Else  |
 
 ## Citations
 
-This is an in-text citation uses a [[BibTeX]] key [@eaton2020NCBImetaEfficientComprehensive] .
+This is an in-text citation uses a BibTeX key [@eaton2020NCBImetaEfficientComprehensive] .
 
-This is an in-text citation that uses an [[Obsidian]] link that is aliased to a [[BibTeX]] key [[Andrades Valtuena et al. 2017 Stone Age Plague|[@andradesvaltuena2017StoneAgePlague]]]. Note the internal square brackets in the alias.
+This is an in-text citation that uses an Obsidian link that is aliased to a BibTeX key [@andradesvaltuena2017StoneAgePlague]. Note the internal square brackets in the alias.
 
-The DOI filter [[pandoc-doi2bib]] causes a lot of conversion problems, so is avoided.
+The DOI filter pandoc-doi2bib causes a lot of conversion problems, so is avoided.
 
 
 ## References

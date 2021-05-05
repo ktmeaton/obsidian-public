@@ -34,9 +34,8 @@ output="${input%.*}_self.md"
 pandoc \
   -s ${input} \
   -o $output \
-  --filter pandoc-doi2bib \
   --citeproc \
-  -t markdown-citations
+  -t markdown-citations-simple_tables-multiline_tables-grid_tables
 
 # 3. Cleanup Markdown
 echo "Cleaning markdown..."
