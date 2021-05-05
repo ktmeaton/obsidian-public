@@ -6,6 +6,8 @@
 INPUT=$1
 BIB=$2
 CSL=$3
+CSS=$4
+TEMPLATE=$5
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Setup
@@ -63,8 +65,8 @@ output="${input%.*}.html"
 pandoc \
   -s $input \
   -o $output \
-  -c templates/pandoc-mvp-css/css/mvp.css \
-  --template templates/pandoc-mvp-css/template.html \
+  -c $CSS \
+  --template $TEMPLATE \
   --toc \
   --toc-depth=2
 
@@ -75,9 +77,9 @@ prefix="${INPUT%.*}"
 #mv ${input} ${prefix}_auspice.md
 mv $output ${prefix}.html
 # Remove files
-#rm -f ${prefix}_convert*;
-#rm -f $bib;
-#rm -f $csl;
+rm -f ${prefix}_convert*;
+rm -f $bib;
+rm -f $csl;
 
 
 echo "All done!"
