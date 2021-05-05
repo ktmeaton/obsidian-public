@@ -10,6 +10,8 @@ website: https://ktmeaton.github.io
 logo: https://github.com/ktmeaton/plague-phylogeography/raw/master/docs/images/thumbnail_DHSI2020.png
 bibliography: zotero.bib
 csl: apa-numeric-superscript-brackets.csl
+numberSections: true
+sectionsDepth: 3
 ---
 
 # Pandoc Example
@@ -42,11 +44,13 @@ echo TYPED
 
 ^Note^: Do not use indented code blocks!
 
-## Tables
+## Tables {#sec:tables-section }
 
-Use a [table generator](https://www.tablesgenerator.com/html_tables#) to make these. Use ```<br>``` to put line breaks between tables.
+The table extension in Obsidian is extremely helpful for this. Note the use of a table caption.
 
-Table: Test
+### Pipe Tables
+
+Table: Test Pipe Table {#tbl:pipe-table}
 
 | Test      | Test2 |
 | --------- | ----- |
@@ -60,5 +64,14 @@ This is an in-text citation that uses an Obsidian link that is aliased to a BibT
 
 The DOI filter pandoc-doi2bib causes a lot of conversion problems, so is avoided.
 
+## CrossRef {#sec:test1 }
+
+- A Cross reference to the tables section [#sec:tables].
+- A reference to @sec:test1.
+- A reference to the tables section (@sec:tables-section).
+- A reference to an upcoming figure (@fig:figure-map).
+- A reference to a previous table (@tbl:pipe-table).
+
+![This is a figure caption.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography/master/docs/images/thumbnail_DHSI2020.png){#fig:figure-map}
 
 ## References

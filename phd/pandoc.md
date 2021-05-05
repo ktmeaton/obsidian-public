@@ -38,6 +38,12 @@ python3 convert_wikilinks.py -i pandoc-example.md -o pandoc-example-convert.md
 pandoc -s pandoc-example-convert.md -o pandoc-example.html
 ```
 
+## [[CrossRef]]
+
+```bash
+mamba install -c conda-forge pandoc-crossref
+```
+
 ## Citations
 
 ```bash

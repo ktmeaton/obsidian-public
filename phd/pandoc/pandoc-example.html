@@ -104,7 +104,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ul>
           <li><a href="#">Navigation</a>
             <ul>
-            <li><a href="#pandoc-example">Pandoc Example</a></li>
+            <li><a href="#pandoc-example">1 Pandoc Example</a></li>
             </ul>
           </li>
       </ul>
@@ -118,24 +118,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <main>
 <hr>
 <article>
-<h2 id="pandoc-example">Pandoc Example</h2>
+<h2 id="pandoc-example">1 Pandoc Example</h2>
 <p>This is an example markdown file for pandoc.</p>
-<h3 id="heading-1">Heading 1</h3>
+<h3 id="heading-1">1.1 Heading 1</h3>
 <p>This is under Heading 1.</p>
 <p>This is a test wikilink.</p>
 <p>This is a test alias.</p>
 <p>This is a <a href="path">test markdown link</a> that should not be altered.</p>
 <p>This line has double links oh boy OH BOY.</p>
-<h3 id="code-blocks">Code Blocks</h3>
+<h3 id="code-blocks">1.2 Code Blocks</h3>
 <p>This is an untyped code block</p>
 <pre><code>echo UNTYPED</code></pre>
 <p>This is an typed code block</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> TYPED</span></code></pre></div>
 <p><sup>Note</sup>: Do not use indented code blocks!</p>
-<h3 id="tables">Tables</h3>
-<p>Use a <a href="https://www.tablesgenerator.com/html_tables#">table generator</a> to make these. Use <code>&lt;br&gt;</code> to put line breaks between tables.</p>
+<h3 id="sec:tables-section">1.3 Tables</h3>
+<p>The table extension in Obsidian is extremely helpful for this. Note the use of a table caption.</p>
+<h4 id="pipe-tables">1.3.1 Pipe Tables</h4>
 <table>
-<caption>Test</caption>
+<caption>Table 1: Test Pipe Table</caption>
 <thead>
 <tr class="header">
 <th>Test</th>
@@ -149,11 +150,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </tbody>
 </table>
-<h3 id="citations">Citations</h3>
+<h3 id="citations">1.4 Citations</h3>
 <p>This is an in-text citation uses a BibTeX key<sup>1</sup> .</p>
 <p>This is an in-text citation that uses an Obsidian link that is aliased to a BibTeX key.<sup>2</sup> Note the internal square brackets in the alias.</p>
 <p>The DOI filter pandoc-doi2bib causes a lot of conversion problems, so is avoided.</p>
-<h3 id="references">References</h3>
+<h3 id="sec:test1">1.5 CrossRef</h3>
+<ul>
+<li>A Cross reference to the tables section [#sec:tables].</li>
+<li>A reference to sec. 1.5.</li>
+<li>A reference to the tables section (sec. 1.3).</li>
+<li>A reference to an upcoming figure (fig. 1).</li>
+<li>A reference to a previous table (tbl. 1).</li>
+</ul>
+<figure>
+<img src="https://raw.githubusercontent.com/ktmeaton/plague-phylogeography/master/docs/images/thumbnail_DHSI2020.png" id="fig:figure-map" alt="Figure 1: This is a figure caption." /><figcaption aria-hidden="true">Figure 1: This is a figure caption.</figcaption>
+</figure>
+<h3 id="references">1.6 References</h3>
 <p>1. Eaton, K. (2020). NCBImeta: Efficient and comprehensive metadata retrieval from NCBI databases. <em>Journal of Open Source Software</em>, <em>5</em>(46), 1990. <a href="https://doi.org/10.21105/joss.01990" class="uri">https://doi.org/10.21105/joss.01990</a></p>
 <p>2. Andrades Valtueña, A., Mittnik, A., Key, F. M., Haak, W., Allmäe, R., Belinskij, A., Daubaras, M., Feldman, M., Jankauskas, R., Janković, I., Massy, K., Novak, M., Pfrengle, S., Reinhold, S., Šlaus, M., Spyrou, M. A., Szécsényi-Nagy, A., Tõrv, M., Hansen, S., … Krause, J. (2017). The Stone Age Plague and Its Persistence in Eurasia. <em>Current Biology</em>, <em>27</em>(23), 3683–3691.e8. <a href="https://doi.org/10.1016/j.cub.2017.10.025" class="uri">https://doi.org/10.1016/j.cub.2017.10.025</a></p>
 <hr>

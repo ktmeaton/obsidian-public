@@ -30,12 +30,14 @@ echo "Rendering new markdown..."
 input=$output;
 output="${input%.*}_self.md"
 
-# Always put the pandoc-doi2bib filter before citeproc
+# Put the pandoc-doi2bib filter before citeproc
+# Put pandoc-crossref before citeproc
 pandoc \
   -s ${input} \
   -o $output \
+  --filter pandoc-crossref \
   --citeproc \
-  -t markdown-citations-simple_tables-multiline_tables-grid_tables
+  -t markdown-citations-simple_tables-multiline_tables-grid_tables \
 
 # 3. Cleanup Markdown
 echo "Cleaning markdown..."
