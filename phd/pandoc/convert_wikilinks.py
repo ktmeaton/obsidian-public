@@ -88,7 +88,8 @@ def main(
                     read_line = read_line.replace("[[" + target + "]]", replacement)                   
 
             # I may regret this, but add 2 blank spaces at the end to enable line breaks
-            output_str += read_line + "  " + "\n"
+            #output_str += read_line + "  " + "\n"
+            output_str += read_line + "\n"
             read_line = infile.readline()
 
     if output:

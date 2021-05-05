@@ -1,3 +1,10 @@
+---
+title: pandoc
+type: [[Tool]]
+tags: 
+- 📝/🌿  
+---
+
 # pandoc
 
 ## Summary
@@ -31,21 +38,39 @@ python3 convert_wikilinks.py -i pandoc-example.md -o pandoc-example-convert.md
 pandoc -s pandoc-example-convert.md -o pandoc-example.html
 ```
 
+## Citations
+
+```bash
+npm install -g pandoc-doi2bib
+```
+
+Using a bibliography as a relative path causes the error [[(node:1331) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined]]
+
+### [[Citation Style]]
+
+Download a [[CSL]] style from <https://www.zotero.org/styles>.
+Ex. <https://www.zotero.org/styles/apa-numeric-superscript-brackets>
+
 ## Convert
 
 ### Markdown
 ####  [[PDF]]
 
 - Default:
-	```bash
+	```
 	pandoc pandoc-example.md -o pandoc-example_default.pdf
 	```
 ![[Pandoc Example Default.png]]
 - Eisvogel Latex Template:
-	```bash
+	```
 	pandoc pandoc-example.md -o pandoc-example_eisvogel.pdf --template templates/Eisvogel/eisvogel.latex 
 	```
 ![[Pandoc Example Style.png]]
+
+- [[PLOS Pathogens]] [[LaTeX]]  Template:
+	```
+	pandoc pandoc-example.md -o pandoc-example_plos.pdf --template templates/PLOS/plos_latex_template.pdf 
+	```
 
 - Can you use css with a pdf output? NOPE.
 ```bash
@@ -126,6 +151,18 @@ pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
 
 	```
 
+- [[MVP]] css:
+	```bash
+	./convert_wikilinks.py --input pandoc-example.md --output pandoc-example_convert.md;
+	pandoc \
+	  -s pandoc-example_convert.md \
+	  -c templates/pandoc-mvp-css/css/mvp.css \
+	  --template templates/pandoc-mvp-css/template.html \
+	  --toc \
+	  --toc-depth=2 \
+	  -o pandoc-example_convert_mvp.html
+	```
+
 - [[GitHub]] css from [@dashed](https://gist.github.com/dashed) (looks super good!)
 	```bash
 	pandoc \
@@ -140,6 +177,3 @@ pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
 	  -o 'Chromosome Resequencing Github.html'	  
 
 	```
----
-
-tags: [[Tool]], [[Document Conversion MOC]], #📝/🌿  
