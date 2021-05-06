@@ -10,10 +10,20 @@ tags:
 
 ## Tasks
 
+### Pending
+
 ```dataview
 table tags
 from ""
 where project=[[Obsidian]] and status!="done"
+```
+
+### Completed
+
+```dataview
+table tags
+from ""
+where project=[[Obsidian]] and status="done"
 ```
 
 ## Summary

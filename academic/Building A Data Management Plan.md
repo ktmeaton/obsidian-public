@@ -23,5 +23,6 @@ Presenter: [[Isaac Pratt]]
 - The institutional level [[Data Management Plan]] is being led by [[Jay Brodeur]].
 - [[Portage Network]] [[DMP Assistant]]
 - <https://u.mcmaster.ca/storagefinder>
+- [[Compute Canada]] as a long-term data storage?
 
 ## Tasks

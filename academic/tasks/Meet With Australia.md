@@ -18,7 +18,27 @@ time: 18:00
 
 ## [[2021-05-06]]
 
-[Meeting Link]()
+[Meeting Link](https://us02web.zoom.us/j/84756536944?pwd=YWFMaTRJZ24wYVlxQ01ZckRFcUdadz09)
+
+### Preparation
+
+- Discuss the Big Bang Polytomy dating.
+- Phylogeography subsampling
+- [Second Pandemic Nextstrain](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branchLabel=Province%20Confidence&c=clade_rtt_dist&m=div&tl=country) 
+
+### Notes
+
+- Fixing the tree helped, but estimated Marginal likelihood still a problem.
+- Coefcient of variation: tandard deviation of branch lengths divided by the mean. Does not support a fixed clock!
+- Blue: Strict, Green: Relaxed. Treeheight is overlapping, but different variation
+- Non-overlapping for strict and relaxed (yellow is relaxed, difficult to get good mixing)
+- Theory, there's a few branches that have really high rates. Branches with high rates are next to branches with low rates.
+- Testing local clocks 
+- "has_signal", Bayse Factor for having temporal signal, BETS
+- Reported rate for each clade.
+
+- Send geo names for each sample.
+- Go look at the BETS paper comparing to regressions, restating those points
 
 ## [[2021-04-26]]
 
