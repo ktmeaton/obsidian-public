@@ -1,14 +1,20 @@
 ---
-tags: 
-  - Tool
 type: 
   - [[Tool]]
-  - [[Document Conversion MOC]] 
+  - [[MOC]]
 tags:
   - 📝/🌱   
 ---
 
 # Obsidian
+
+## Tasks
+
+```dataview
+table tags
+from ""
+where project=[[Obsidian]] and status!="done"
+```
 
 ## Summary
 

@@ -15,10 +15,12 @@ time: 14:00
 
 # Building A Data Management Plan
 
-[Workshop Link]([https://libcal.mcmaster.ca/calendar/library/build-dmp](https://libcal.mcmaster.ca/calendar/library/build-dmp?f=h))
-
-## Preparation
+[Workshop Link](https://libcal.mcmaster.ca/calendar/library/build-dmp)
+Presenter: [[Isaac Pratt]]
 
 ## Notes
+
+- The institutional level [[Data Management Plan]] is being led by [[Jay Brodeur]].
+- [[Portage Network]] [[DMP Assistant]]
 
 ## Tasks

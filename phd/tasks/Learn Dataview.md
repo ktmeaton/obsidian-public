@@ -1,9 +1,7 @@
 ---
 project: [[Obsidian]]
-due:
-people:
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨  
+status: done
 ---
 
 # Learn Dataview
