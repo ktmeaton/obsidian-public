@@ -11,7 +11,7 @@ type: [[Task]]
 
 # Bison Metadata for Tyler
 
-- [x] Create [[NCBImeta]] database
+- [x] Create [[NCBImeta Paper]] database
 ```bash
 ncbimeta/NCBImeta --config config/bison.yaml --flat
 ncbimeta/NCBImetaExport --database bison/bison_db.sqlite --outputdir bison

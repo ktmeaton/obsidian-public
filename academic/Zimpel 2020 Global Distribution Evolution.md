@@ -35,7 +35,7 @@ tags:
 - [[Clade|Lineaege]] have independent evolutionary trajectories that underly the current distribution of [[Tuberculosis]].
 - Sampling biases such as the lack of genomes from [[Africa]], [[Asia]], and [[Continental Europe]] prevent precise estimation of geographic origin.
 
-There are many similarities between this and [[plague-phylogeography]], and thus is a useful reference for formatting and content.
+There are many similarities between this and [[Plague Phylodynamics and Phylogeography]], and thus is a useful reference for formatting and content.
 
 ## Notes
 
@@ -65,7 +65,7 @@ There are many similarities between this and [[plague-phylogeography]], and thus
 	- Four countries were over-represented, with samples forming clusters of highly similar genomes. Thus it was helpful to use [[Treemer]] to remove redundancy in the dataset.
 	
 	>After removal, we carefully checked to guarantee that all countries were still represented and that all _M. bovis_ genomes from small clades were still part of the dataset.
-	- This is how I subsampled [[Yersinia pestis|Y. pestis]] for [[plague-phylogeography]], ensuring all locations and clades were retained.
+	- This is how I subsampled [[Yersinia pestis|Y. pestis]] for [[Plague Phylodynamics and Phylogeography]], ensuring all locations and clades were retained.
 	- They describe the [[Clade|clades]] in the tree, and their natural history of emergence and [[Distribution]].
 	- They compare [[Clock Model|clock models]] with regards to [[Node Dating]] and [[Substitution Rate]]. And identify which publications this agrees with [[Bos et al. 2014]].
 

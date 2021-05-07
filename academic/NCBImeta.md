@@ -1,6 +1,8 @@
 ---
 title: NCBImeta
-type: [[Tool]]
+type: 
+  - [[Tool]]
+  - [[Project]]
 tags:
   - 📝/🌱
 ---
@@ -9,4 +11,5 @@ tags:
 
 ## Summary
 
-NCBImeta is software that performs...
+[[NCBImeta]] is a command-line application that retrieves and organizes metadata from the [[National Centre for Biotechnology Information]] ([[National Centre for Biotechnology Information|NCBI]]).
+

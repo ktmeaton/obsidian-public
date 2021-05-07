@@ -21,7 +21,7 @@ tags:
 ## Summary
 
 - This study is a crucial  [[Plague]] reference for the [[Geographic Origin]] of [[Foci|foci]].
-- I have used the [[Map|maps]] here to help with [[Geocode|geocoding]] strains in the [[plague-phylogeography]] project.
+- I have used the [[Map|maps]] here to help with [[Geocode|geocoding]] strains in the [[Plague Phylodynamics and Phylogeography]] project.
 
 ## Figures
 

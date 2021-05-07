@@ -10,7 +10,7 @@ aliases:
 | ----------- | ------------------------------- | --------------- |
 | Institution | [[McMaster Ancient DNA Center]] | [[PhD Student]] |
 | Projects    | [[Plague Denmark]]              | [[Author]]      |
-|             | [[plague-phylogeography]]       | [[Author]]      | 
+|             | [[Plague Phylodynamics and Phylogeography]]       | [[Author]]      | 
 |             | [[Plague York Barbican]]        | [[Author]]      |
 
 ---

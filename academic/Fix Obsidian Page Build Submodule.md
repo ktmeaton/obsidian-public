@@ -1,7 +1,7 @@
 ---
 project: [[Obsidian]]
-tags: ⬜/📋 
-status: idea
+tags: #⬜/✨  
+status:done
 title: Fix Obsidian Page Build Submodule
 type: [[Task]]
 ---

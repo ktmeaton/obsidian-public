@@ -142,7 +142,7 @@ HTML with table of contents, CSS, and custom footer:
 pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
 ```
 
-- [[@killercup]] css (looks great)
+- [[killercup]] css (looks great)
 	```bash
 	pandoc \
 	  -s pandoc-example.md \

@@ -57,20 +57,18 @@ For future reference, the following [[HTML]] tags work:
 
 ### [[Progress Bar]]
 
+```html
+<progress id="file" value="32" max="100"> 32% </progress>
+```
 <progress id="file" value="32" max="100"> 32% </progress>
 
+### [[page breaks]]
 
-
-
-
-
-
-
-
-
-
-
-            
+```html
+<div style="page-break-after: always; visibility: hidden">
+\pagebreak
+</div>
+```
 
 ## [[Graph]]
 

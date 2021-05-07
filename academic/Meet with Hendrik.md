@@ -70,5 +70,5 @@ time: 15:00
 
 ### Tasks
 
-- [[Write New Outline]]
+- [[Plague Phylodynamics and Phylogeography Outline]]
 - "How does this shift dialogue?"

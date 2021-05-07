@@ -1,16 +1,30 @@
 # Katherine Eaton's Academic Obsidian Vault
 
-## [[Graph Groups]]
+## Note Hierarchy
 
-| Query       | Color   |
-| ----------- | ------- |
-| [[Project]] | #8000FF |
-| [[Tool]]    | #80FFB4 |
+```mermaid
+graph TD;
+1-->2;
+1-->3;
+2-->4;
+2-->5;
+4-->6;
+4-->7;
+6-->8;
+6-->9;
 
+1[Thesis];
+2[Project 1];
+3[Project ...];
+4[Experiment 1];
+5[Experiment ...];
+6[Lit Review 1...];
+7[Lit Review ...];
+8[Lit Note 1]
+9[Lit Note ...]
+```
 
-## PhD Timeline
-
-![[PhD Timeline]]
+[[Literature]] notes are the [[building blocks of writing]]. "Literature" can be more broadly defined as content produced by others such as articles, books, videos, software, webpages, etc.
 
 ## Tag Taxonomy
 
@@ -57,3 +71,15 @@
 ## Kanban
 
 ![[Kanban]]
+
+## [[Graph Groups]]
+
+| Query       | Color   |
+| ----------- | ------- |
+| [[Project]] | #8000FF |
+| [[Tool]]    | #80FFB4 |
+
+
+## PhD Timeline
+
+![[PhD Timeline]]

@@ -7,7 +7,7 @@ aliases:
 
 | Field   | Value                     |
 | ------- | ------------------------- |
-| Project | [[plague-phylogeography]] |
+| Project | [[Plague Phylodynamics and Phylogeography]] |
 | Date    | [[2021-03-29]]            | 
 
 ## Introduction
@@ -60,7 +60,7 @@ style 3 fill:#1f77b4,stroke:#333,stroke-width:1px,fill-opacity:0.25;
 
 4,552 records of human plague cases dating from 1776 - 2008 were selected to be the case records dataset ([[Xu et al. 2019 Historical Genomic Data|Xu et al. 2019]]). The number of records was randomly subsampled down to 455 (10%).
 
-558 [[Yersinia pestis|Y. pestis]] genomic assembles were identified from the NCBI databases using [[NCBImeta]]. Collection date and location were curated by cross-referencing the original publications. Of the initial 558 genomes, 367 genomes were collected between 1776 - 2008 and are associated with clades causing infection in humans. [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
+558 [[Yersinia pestis|Y. pestis]] genomic assembles were identified from the NCBI databases using [[NCBImeta Paper]]. Collection date and location were curated by cross-referencing the original publications. Of the initial 558 genomes, 367 genomes were collected between 1776 - 2008 and are associated with clades causing infection in humans. [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
 
 #### Code
 

@@ -4,7 +4,7 @@
 
 ## Projects
 
-You can highlight that this concept is relevant for specific projects such as [[plague-phylogeography]].
+You can highlight that this concept is relevant for specific projects such as [[Plague Phylodynamics and Phylogeography]].
 
 ## Methods
 

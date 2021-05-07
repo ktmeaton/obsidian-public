@@ -9,7 +9,7 @@ aliases:
 | ----------- | ------------------------------- | -------------------------- |
 | Institution | [[McMaster Ancient DNA Center]] | [[Principal Investigator]] |
 | Projects    | [[Plague Denmark]]              | [[Supervisor]]             |
-|             | [[plague-phylogeography]]       | [[Supervisor]]             |
+|             | [[Plague Phylodynamics and Phylogeography]]       | [[Supervisor]]             |
 |             | [[Plague York Barbican]]        | [[Supervisor]]             |
 
 ---

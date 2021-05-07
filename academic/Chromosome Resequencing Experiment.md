@@ -44,7 +44,7 @@ status:
 <div style="page-break-after: always;"></div>
 
 ## Overview
-1. Run the [[plague-phylogeography]] [[Snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
+1. Run the [[Plague Phylodynamics and Phylogeography]] [[Snakemake]] pipeline for [[Medieval]] [[Denmark]] samples.
 1. Calculate library complexity: [[Preseq]]. 
 1. Calculate the number of informative SNPs: [[Snippy]].
 1. Calculate genome coverage: [[Qualimap]].
@@ -130,13 +130,13 @@ Based on the [[Chromosome Resequencing Experiment#Genome Coverage and SNPs|Genom
 
 ### Data Preparation
 
-1. Clone the [[plague-phylogeography]] projects repository.
+1. Clone the [[Plague Phylodynamics and Phylogeography]] projects repository.
 
 	```bash
 	git clone https://github.com/ktmeaton/plague-phylogeography-projects.git /2/scratch/keaton/plague-phylogeography-projects
 	```
 
-1. Load the [[Plague Denmark]] into the [[plague-phylogeography]] [[Snakemake]] pipeline.
+1. Load the [[Plague Denmark]] into the [[Plague Phylodynamics and Phylogeography]] [[Snakemake]] pipeline.
 
 	```bash
 	workflow/scripts/project_load.sh results ../plague-phylogeography-projects/denmark rsync

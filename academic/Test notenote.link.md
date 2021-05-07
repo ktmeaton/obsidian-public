@@ -1,7 +1,7 @@
 ---
 project: [[Obsidian]]
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨
+status: done
 title: Test notenote.link
 type: [[Task]]
 ---
@@ -80,4 +80,4 @@ bundle exec jekyll build && bundle exec jekyll serve
 
 ## Add Obsidian Vault
 
-- [ ] Add public vaults as submodule
+- [x] Add public vaults as submodule

@@ -12,7 +12,7 @@ type: [[Task]]
 
 ## Problem
 
-I am analyzing [[plague-phylogeography]] on multiple computers. However, all of the per-sample output ([[snippy_pairwise]], [[nf-core/eager|eager]]) are on [[Infoserv]]. I would like to be able to ignore upstream [[Snakemake]] rules that don't have output on the local computer.
+I am analyzing [[Plague Phylodynamics and Phylogeography]] on multiple computers. However, all of the per-sample output ([[snippy_pairwise]], [[nf-core/eager|eager]]) are on [[Infoserv]]. I would like to be able to ignore upstream [[Snakemake]] rules that don't have output on the local computer.
 
 ## Solution
 

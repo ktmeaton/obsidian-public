@@ -1,7 +1,7 @@
 ---
 project: [[Obsidian]]
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨  
+status: done
 title: Test mvp CSS with notenote.link 
 type: [[Task]]
 ---

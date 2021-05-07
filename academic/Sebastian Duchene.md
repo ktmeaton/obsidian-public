@@ -6,7 +6,7 @@ aliases:
 # Sebastian Duchene
 
 Role: Collaborator
-Project: [[plague-phylogeography]]
+Project: [[Plague Phylodynamics and Phylogeography]]
 
 ---
 

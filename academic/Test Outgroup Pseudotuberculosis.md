@@ -13,7 +13,7 @@ status: done
 | NCTC10275 | SAMEA4442458 | Reference Genome  |
 | IP32953   | SAMN03121000 | Plague Literature | 
 
-1. [[NCBImeta]]
+1. [[NCBImeta Paper]]
 
 	```bash
 	NCBImeta.py --flat --config results/config/ncbimeta.yaml

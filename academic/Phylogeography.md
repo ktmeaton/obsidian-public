@@ -14,7 +14,7 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 
 ## Projects
 
-- [[plague-phylogeography]]
+- [[Plague Phylodynamics and Phylogeography]]
 - [[Plague Denmark]]
 
 ## Methods
