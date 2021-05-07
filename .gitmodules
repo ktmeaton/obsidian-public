@@ -4,6 +4,3 @@
 [submodule "academic/pandoc/templates/pandoc-mvp-css"]
 	path = academic/pandoc/templates/pandoc-mvp-css
 	url = https://gitlab.com/vimalkvn/pandoc-mvp-css.git
-[submodule "academic/rootstock"]
-	path = academic/rootstock
-	url = https://github.com/ktmeaton/rootstock.git
