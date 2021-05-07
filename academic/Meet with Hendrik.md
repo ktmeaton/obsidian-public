@@ -70,5 +70,5 @@ time: 15:00
 
 ### Tasks
 
-- [[tasks/Write New Outline]]
+- [[Write New Outline]]
 - "How does this shift dialogue?"

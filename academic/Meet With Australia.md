@@ -92,7 +92,7 @@ time: 18:00
 ### Tasks
 - [x] [[Send Starting Tree to Australia]]
 - [x] [[Create Multiple Alignments by Clade]]
-- [x] [[tasks/Send IBD Plots]]
+- [x] [[Send IBD Plots]]
 - 
 - Dating by clade (BETS analysis).
 - Relative branch rates (genetic distance, 

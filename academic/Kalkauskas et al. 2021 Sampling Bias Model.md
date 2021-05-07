@@ -40,5 +40,5 @@ tags:
 
 |    Fig 4b                                       |
 |:--------------------------------------------:|
-| ![[../images/kalkauskas2021SamplingBiasModel_fig4b.png]] |
+| ![[kalkauskas2021SamplingBiasModel_fig4b.png]] |
 | [MRCA location of all western samples. (Blue: All samples, Red: Only western samples, Orange: western samples and sequence-free eastern samples ).](Kalkauskas%20et%20al.%202021%20Sampling%20Bias%20Model.md) |

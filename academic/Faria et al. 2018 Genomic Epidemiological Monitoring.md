@@ -29,7 +29,7 @@ tags:
 
 |                                  Fig 4e                                  |     |
 |:------------------------------------------------------------------------:| --- |
-|    ![[../images/faria2018GenomicEpidemiologicalMonitoring_fig4e.jpg]]    |     |
+|    ![[faria2018GenomicEpidemiologicalMonitoring_fig4e.jpg]]    |     |
 | Reconstructed [[Spread\|migration]] of the [[Yellow Fever Virus\|Yellow Fever Virus]] (YFV) outbreak. |     |
 |     [[Faria et al. 2018 Genomic Epidemiological Monitoring\|Faria et al. 2018]]     |     |
 
