@@ -2,9 +2,13 @@
 aliases:
   - {{title}}
   - '@{{title}}'
+type: [[Literature]]
 tags: 
   - 📥/📰
   - 📝/🌱  
+due:
+status: idea
+project:
 ---
 
 # {{title}}

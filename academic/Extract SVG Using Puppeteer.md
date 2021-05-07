@@ -2,7 +2,7 @@
 project:
 due: 2021-05-01
 people:
-tags: ⬜/📋 
+tags: ⬜/✨ 
 status: idea
 title: Extract SVG Using Puppeteer
 type: [[Task]]
@@ -10,7 +10,11 @@ type: [[Task]]
 
 # Extract SVG Using Puppeteer
 
-## Dependencies
+## Workflow
+
+The full workflow is documented in [this comment](https://github.com/nextstrain/auspice/issues/1066#issuecomment-830712128).
+
+## Notes
 
 1. Install google-chrome for WSL2
 	```bash
@@ -30,4 +34,3 @@ type: [[Task]]
 	export PATH=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/:$PATH
 	```
 	
-- [ ] [[Test Miniconda on Windows]]

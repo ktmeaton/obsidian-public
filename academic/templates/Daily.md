@@ -11,9 +11,11 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 ![[PhD Timeline]]
 
 ## Day Planner
-- [ ] 09:00 Setup for work 💻
-- [ ] 09:15 Plan day 📋
-- [ ] 09:30 Check email 📧
+- [ ] 08:30 Setup for work 💻
+- [ ] 08:40 Check email 📧
+- [ ] 08:50 Plan day 📋
+- [ ] 09:00 [[A Paper A Day]]
+- [ ] 10:00 Meditate 🧘🏻‍♀️
 - [ ] 12:00 Lunch 🍙
 - [ ] 16:00 Write daily notes ✏️
 - [ ] 16:30 Check email 📧
@@ -21,45 +23,9 @@ Before planning a day, reflect on the [[PhD Timeline]]. Does what you [[want to 
 
 ## Tasks
 
-### Overdue
-
-```dataview
-table due, project, tags
-from "tasks"
-where status="priority" and status!="done" and due<date({{date}})
-sort due
-```
-
-
-### Due
-
-```dataview
-table due, time, project, tags
-from "tasks"
-where status!="done" and due=date({{date}})
-sort due
-```
-
-### Done
-
-```dataview
-table due, project, tags
-from "tasks"
-where status="done" and due=date({{date}})
-sort due
-```
-
-### Upcoming
-
-```dataview
-table due, project, tags
-from "tasks"
-where status!="done" and status!="idea" and due>date({{date}})
-sort due
-```
+![[Kanban]]
 
 ---
 
-tags: [[Journal]]  
 prev: [[{{date}}]]  
 next: [[{{date}}]]  

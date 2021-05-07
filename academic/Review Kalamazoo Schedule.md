@@ -1,9 +1,9 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-05-06
+due: 2021-05-07
 people:
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨  
+status: done
 title: Review Kalamazoo Schedule
 type: [[Task]]
 ---

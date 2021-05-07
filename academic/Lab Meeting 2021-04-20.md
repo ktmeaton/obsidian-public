@@ -2,9 +2,9 @@
 title:
   - Lab Meeting 2021-04-20
 tags:
-  - ⬜/🧨 
+  - ⬜/✨ 
 status:
-  - priority
+  - done
 due: 2021-04-20
 time: 11:00
 type: [[Meeting]]

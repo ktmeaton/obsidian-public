@@ -5,9 +5,9 @@ project:
   - [[Lab Admin]]
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨ 
 status:
-  - priority  
+  - done  
 type: [[Workshop]]
 due: 2021-05-06
 time: 14:00

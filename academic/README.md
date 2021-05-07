@@ -1,4 +1,4 @@
-# Katherine Eaton's PhD Obsidian Vault
+# Katherine Eaton's Academic Obsidian Vault
 
 ## [[Graph Groups]]
 
@@ -12,30 +12,31 @@
 
 ![[PhD Timeline]]
 
-## Kanban
-
-![[Kanban]]
-
 ## Tag Taxonomy
 
 ### Kanban 
 
-| Tag    | Use      |
+| Tag    | Status      |
 |:------:|:--------:|
-| #⬜/📋 | Todo     |
+| #⬜/📋 | Idea     |
 | #⬜/🚂 | Backlog  |
 | #⬜/🧨 | Priority |
 | #⬜/✨ | Done     |
 
 ### Note Types
 
-|    Type    |    Description    |
-|:----------:|:-----------------:|
-| [[People]] | Individual humans |
-|  [[Tool]]  |     Software      |
-|  [[Note]]  |   Generic Note    |
-|  [[MOC]]   |  Map of Content   |
-| [[Task]]           |     Task              |
+|      Type      |     Description     |
+|:--------------:|:-------------------:|
+|    [[Note]]    |    Generic Note     |
+|   [[People]]   |  Individual Humans  |
+|    [[Tool]]    |      Software       |
+|    [[MOC]]     |   Map of Content    |
+|    [[Task]]    |        Task         |
+|   [[Video]]    | Youtube, Movie, etc.                    |
+| [[Literature]] | Article, Book, etc. |
+|  [[Meeting]]   |      A Meeting      |
+| [[Conference]] |    A Conference     |
+|  [[Workshop]]  |     A Workshop      |
 
 ### Note Growth
 
@@ -51,4 +52,8 @@
 |:------:|:-------:|
 | #📥/📰 | Article |
 | #📥/📗 |  Book   |
-|        |         |
+| #📥/📽  |  Video  | 
+
+## Kanban
+
+![[Kanban]]

@@ -7,8 +7,8 @@ people:
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
 tags:
-  - ⬜/🧨 
-status: priority  
+  - ⬜/✨ 
+status: done  
 type: [[Meeting]]
 due: 2021-05-06
 time: 18:00
@@ -39,6 +39,11 @@ time: 18:00
 
 - Send geo names for each sample.
 - Go look at the BETS paper comparing to regressions, restating those points
+
+### Tasks
+
+- [ ] Read [[Duchene 2020 Bayesian Evaluation Temporal]]
+
 
 ## [[2021-04-26]]
 
