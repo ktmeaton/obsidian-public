@@ -4,4 +4,4 @@ My public Obsidian vaults.
 
 ## Vaults
 
-- [Academic]("academic/")
+- [Academic](academic/)
