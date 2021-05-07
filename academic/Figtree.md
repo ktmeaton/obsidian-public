@@ -1,3 +1,10 @@
+---
+aliases: figtree
+type: [[Tool]]
+tags:
+  - 📝/🌱 
+---
+
 # Figtree
 
 ## Summary
@@ -12,7 +19,3 @@ figtree -graphic PNG -width 320 -height 320 test.tree test.png
 
 java -jar figtree.jar -graphic SVG input.tree output.svg
 ```
-
----
-
-tags: [[Tool]], #📝/🌱

@@ -2,11 +2,15 @@
 project: [[Obsidian]]
 tags: ⬜/✨
 status: done
-title: Test notenote.link
-type: [[Task]]
+title: notenote.link
+type: [[Tool]]
 ---
 
-# Test notenote.link
+# notenote.link
+
+## Notes
+- [[Markdown]] files with no [[YAML]] frontmatter  don't get built into [[HTML]].
+
 
 ## Install 
 
@@ -55,10 +59,10 @@ bundle exec jekyll serve
 	
 ## Deploy to [[Github Pages]]
 
-1. [x] Read [this Issue](https://github.com/Maxence-L/notenote.link/issues/5#issuecomment-762508069) to review the changes needed for github pages.
+1. [x] Read [this Issue](https://github.com/Maxence-L/notenote.link/issues/5#issuecomment-762508069) to review the changes needed for github pages. (Subsitute PERC for %)
 ```bash
 cd _includes/
-sed -i "s/{%- include toc.html -%}/{% include toc.html html=content %}/g" content.html
+sed -i "s/{PERC- include toc.html -PERC}/{PERC include toc.html html=content PERC}/g" content.html
 rm toc.html
 wget https://raw.githubusercontent.com/allejo/jekyll-toc/master/_includes/toc.html
 ```
