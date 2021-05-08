@@ -1,5 +1,6 @@
 ---
-title: "1000 Plagues in the Genomics Era: Exhibiting Biographies of Bacteria"
+title: "1000 Plagues in the Genomics Era"
+subtitle: "Exhibiting Biographies of Bacteria"
 authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
@@ -13,6 +14,8 @@ tags:
 status: idea
 type: [[Abstract]]
 lang: en-US
+repo: ktmeaton/obsidian-public
+filepath: academic/[[Kalamazoo 2021 Abstract]]
 ---
 
 When used within a multi-disciplinary approach, genetic evidence provides an intriguing window into the [[disease experience]] of past populations. [[Ancient DNA]] techniques have been developed to identify [[bacterial]] and [[viral]] DNA in [[skeletal remains]], and even affected artefacts. These methods have additionally been used to explore the patterns of [[Spread|spread]] and [[Geographic Origin|geographic origins]] of several high-profile diseases, including [[Medieval|medieval]] [[Plague|plague]]. However, the ability to accurately reconstruct [[Geospatial|spatial patterns]] of an ancient disease requires [[robust comparative datasets]]. In order to produce such datasets, extensive sampling is required across both time and place, followed by careful [[Curation|curation]]. Fortunately, recent advances in DNA [[Sequencing|sequencing]] technology have facilitated efforts to conduct this extensive sampling on a [[Global]] scale, and [[data repositories]] continue to grow at unprecedented rates.
