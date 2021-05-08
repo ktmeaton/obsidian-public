@@ -4,39 +4,42 @@
 
 INPUT=$1
 BIB=$2
+ROOTSTOCK_DIR="${3:-rootstock}"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-ROOTSTOCK_DIR="rootstock"
 
 # Convert Wikilinks
-${SCRIPT_DIR}/convert_wikilinks.py --input "$INPUT" --output ${ROOTSTOCK_DIR}/output/manuscript.md
+input="$INPUT"
+output=${ROOTSTOCK_DIR}/content/01.manuscript.md
+${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output $output
+
 
 # Copy over bibliography
-# This is deliberately not in the output directory
-cp $BIB ${ROOTSTOCK_DIR}/
+cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
+# For .bib this is deliberately not in the output directory
+#cp $BIB ${ROOTSTOCK_DIR}/
+
+# Strip out the Frontmatter
+echo "Preparing frontmatter..."
+input=$output
+output=${ROOTSTOCK_DIR}/content/metadata.yaml
+start=`grep -n -m 2 "\---" $input | cut -d ":" -f 1 | head -n 1`;
+end=`grep -n -m 2 "\---" $input | cut -d ":" -f 1 | tail -n+2`;
+tail -n+`expr $start + 1` $input | head -n `expr $end - $start - 1` > $output;
 
 # Change to rootstock directory since relative links will be used
 cwd=`pwd`
 cd ${ROOTSTOCK_DIR};
 
-# Export PDF
-output="${cwd}/${INPUT%.*}.pdf";
-echo "Exporting PDF $output ..."
-pandoc --data-dir=build/pandoc --defaults=common.yaml --defaults=html.yaml --defaults=pdf-weasyprint.yaml
-mv output/manuscript.pdf "$output";
-
-# Export HTML
-output="${cwd}/${INPUT%.*}.html";
-echo "Exporting HTML $output ..."
-pandoc --data-dir=build/pandoc --defaults=common.yaml --defaults=html.yaml
-mv output/manuscript.html "$output"
-
-# Export DOCX
-output="${cwd}/${INPUT%.*}.docx";
-echo "Exporting DOCX $output ..."
-pandoc --data-dir=build/pandoc --defaults=common.yaml --defaults=docx.yaml
-mv output/manuscript.docx "$output"
+# Build manuscripts
+echo "Building manuscript..."
+build/build.sh
 
 #Cleanup
-cd $cwd
-rm ${ROOTSTOCK_DIR}/$BIB
-rm ${ROOTSTOCK_DIR}/output/manuscript.md
+cp -f output/manuscript.html ${cwd}/"${INPUT%.*}".html
+cp -f output/manuscript.pdf ${cwd}/"${INPUT%.*}".pdf
+cp -f output/manuscript.docx ${cwd}/"${INPUT%.*}".docx
+
+rm output/*.{pdf,html,tsv,json,docx} output/manuscript.md
+rm content/01.manuscript.md
+rm content/manual-references.json
+rm content/metadata.yaml
