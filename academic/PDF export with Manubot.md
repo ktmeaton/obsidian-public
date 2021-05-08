@@ -3,7 +3,6 @@ project: [[Obsidian]]
 tags: ⬜/📋 
 status: idea
 type: [[Task]]
-bibliography: library.bib
 ---
 
 # PDF export with Manubot
@@ -13,8 +12,18 @@ bibliography: library.bib
 - Manubot was developed by [@himmelstein2019OpenCollaborativeWriting].
 - A summary script was created at [[pandoc/manubot.sh]].
 	```bash
-	pandoc/manubot.sh 'PDF export with Manubot.md' library.bib 2> manubot.log
+	pandoc/manubot.sh 'Kalamazoo 2021 Abstract.md' library.json ../../rootstock
 	```
+- [[Bibliography]] must be in [[Better CSL JSON]] format.
+- [[SVG]] images must be converted to [[JPG]] for [[DOCX]].
+
+```bash
+convert github.svg github.jpg;
+convert twitter.svg twitter.jpg;
+convert orcid.svg orcid.jpg;
+
+sed -i "s/\.jpg/\.svg/g" content/00.front-matter.md
+```
 
 
 ## Installation
@@ -64,4 +73,6 @@ pandoc --verbose --data-dir=build/pandoc --defaults=common.yaml --defaults=docx.
 
 ```
 
-## References
+## References {.page_break_before}
+
+<div id="refs"></div>
