@@ -4,11 +4,15 @@ aliases:
   - wkhtmltopdf
 tags:
   - 📝/🌱
-status: priority
+status: done
 due: 2021-05-07
 ---
 
 # wkhtmltopdf
+
+I don't like this and gave up on it.
+
+## Install
 
 1. Configure Ubuntu
 ```bash
@@ -88,5 +92,3 @@ wkhtmltopdf wkhtmltopdf_mvp.html wkhtmltopdf_mvp.pdf
 
 wkhtmltopdf --zoom 1 wkhtmltopdf_mvp.html wkhtmltopdf_mvp.pdf
 ```
-
---zoom --dpi and --disable-smart-shrinking

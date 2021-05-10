@@ -368,7 +368,7 @@ $endif$
 $if(csl-refs)$
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
-\newenvironment{cslreferences}%
+\newenvironment{CSLReferences}%
 	{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
 	\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
 	{\par}
@@ -413,111 +413,150 @@ $endif$
 \usepackage{fancyhdr} % page style fancy
 \usepackage{calc,array} % table formatting and arraybackslash
 
-% ------------------------------------------------------------
-% Definitions
-
-\newif\iffigurespage \newif\iftablespage
-\figurespagetrue \tablespagetrue
-
-% Simple Title Page of Just the Short Title
-\def\shorttitlep{
-	\thispagestyle{empty}
-	\null\vfill
-	\begin{center}
-		\LARGE \uppercase\expandafter{$shorttitle$}
-	\end{center}
-	\vfill
-	\vskip1in\newpage\setcounter{page}{1}}
-
-% Full Title Page    
-\def\titlep{
-	\thispagestyle{empty}
-	\null\vskip1in
-	\begin{center}
-		\large\uppercase\expandafter{$title$}
-	\end{center}
-	\vfill
-	\begin{center}
-		\rm\uppercase{By}\\
-		\uppercase\expandafter{$author$, $prevdegree$}\\
-	\end{center}\vskip.5in
-	\vfill
-	\begin{center}
-		\sc   a thesis\\
-			submitted to the department of $deptartment$\\
-			and  the school of graduate studies\\
-			of mcmaster university\\
-			in partial fulfilment of the requirements\\
-			for the degree of\\
-			$degree$
-	\end{center}
-	\vfill
-
-	\begin{center}
-		\large
-	 	\copyright\ Copyright\ by $author$, $submitdate$\\
-	 		All Rights Reserved
-	\end{center}
-	\vskip.5in
-	\newpage}
-
-\def\referencepages{
-	\newpage
-	\doublespacing
-	\tableofcontents
-	
-	\iffigurespage{
-		\newpage
-		\addvspace{10pt}
-		\let\saveaddvspace=\addvspace
-		\def\addvspace##1{}
-		\listoffigures
-		\let\addvspace=\saveaddvspace}
-	\fi
-	
-	\iftablespage{
-		\newpage
-		\addvspace{10pt}
-		\let\saveaddvspace=\addvspace
-		\def\addvspace##1{}
-		\listoftables
-		\let\addvspace=\saveaddvspace}
-	\fi
-	\label{NumPrefacePages}
-	\newpage
-}
-
-% ------------------------------------------------------------
-% Begin Document
+% #############################################################################
+% Document
 
 \begin{document}
 $if(has-frontmatter)$\frontmatter$endif$
 
-% Simple Title Page
+% -------------------------------------
+% Setup
 \hypersetup{pageanchor=false}
 \doublespacing
 \pagenumbering{roman}
 \pagestyle{plain}
-\shorttitlep
-\titlep
 
-% Table of Contents, List of Figures, List of Tables, Notations
-\referencepages
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preface Pages
 
-% Simple Title Page
+% -------------------------------------
+% Half Title Page
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+	\LARGE \uppercase\expandafter{$half-title$}
+\end{center}
+\vfill
+\vskip1in\newpage\setcounter{page}{1}
+
+% -------------------------------------
+% Full Title Page  
+\thispagestyle{empty}
+\null\vskip1in
+\begin{center}
+	\large\uppercase\expandafter{$title$}
+\end{center}
+\vfill
+\begin{center}
+	\rm\uppercase{By}\\
+	\uppercase\expandafter{$author$, $prev-degree-short$}\\
+\end{center}\vskip.5in
+\vfill
+\begin{center}
+	\sc   a thesis\\
+		submitted to the department of $deptartment$\\
+		and  the school of graduate studies\\
+		of mcmaster university\\
+		in partial fulfilment of the requirements\\
+		for the degree of\\
+		$degree$
+\end{center}
+\vfill
+
+\begin{center}
+	\large
+	\copyright\ Copyright\ by $author$, $subtmit-date$\\
+		All Rights Reserved
+\end{center}
+\vskip.5in
+\newpage
+
+% -------------------------------------
+% Signature Page
+\noindent
+$degree$ ($copyright-year$) \hfill  McMaster University \\
+($department$)                                \hfill  Hamilton, Ontario, Canada
+
+
+\vspace{1in}
+\noindent
+\begin{tabular}{ll}
+TITLE:           & \parbox[t]{4in}{$title$} \\ \\
+AUTHOR:          & \parbox[t]{4in}{$author$ \\ $prev-degree-full$} \\ \\
+SUPERVISOR:      & \parbox[t]{4in}{$supervisor$} \\ \\
+NUMBER OF PAGES: & \parbox[t]{4in}{\pageref{NumPrefacePages}, \pageref{NumDocumentPages}}
+\end{tabular}
+\newpage
+
+% -------------------------------------
+% Lay Abstract
+\chapter{Lay Abstract}
+$lay-abstract$
+
+% -------------------------------------
+% Full Abstract
+\chapter{Abstract}
+$abstract$
+
+% -------------------------------------
+% Dedication
+\newpage
+\null\vfill
+\begin{center}
+\textsl{$dedication-line-one$ \\ $dedication-line-two$}
+\end{center}
+\vfill
+	
+% -------------------------------------
+% Acknowledgements
+\chapter{Acknowledgments}
+$acknowledgments$
+\newpage
+
+% -------------------------------------
+% Table of Contents
+\doublespacing
+\tableofcontents
+
+% -------------------------------------
+% List of Figures
+\newpage
+\addvspace{10pt}
+\let\saveaddvspace=\addvspace
+\def\addvspace#1{}
+\listoffigures
+\let\addvspace=\saveaddvspace
+
+% -------------------------------------
+% List of Tables
+\newpage
+\addvspace{10pt}
+\let\saveaddvspace=\addvspace
+\def\addvspace#1{}
+\listoftables
+\let\addvspace=\saveaddvspace
+\label{NumPrefacePages}
+\newpage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Content Pages
 \hypersetup{pageanchor=true}
 \pagenumbering{arabic}
 \doublespacing
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
-% Insert Content
+
 $body$
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
 \begin{appendix}
 \end{appendix}
 
 $if(biblatex)$
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 $endif$
+
+\label{NumDocumentPages}
 
 \end{document}

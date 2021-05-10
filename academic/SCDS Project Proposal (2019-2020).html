@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Katherine Eaton" />
-  <meta name="dcterms.date" content="2021-05-08" />
+  <meta name="dcterms.date" content="2021-05-10" />
   <title>SCDS Project Proposal (2019-2020)</title>
   <style>
     code{white-space: pre-wrap;}
@@ -27,8 +27,8 @@
   <meta name="citation_title" content="SCDS Project Proposal (2019-2020)" />
   <meta property="og:title" content="SCDS Project Proposal (2019-2020)" />
   <meta property="twitter:title" content="SCDS Project Proposal (2019-2020)" />
-  <meta name="dc.date" content="2021-05-08" />
-  <meta name="citation_publication_date" content="2021-05-08" />
+  <meta name="dc.date" content="2021-05-10" />
+  <meta name="citation_publication_date" content="2021-05-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,13 +49,13 @@
 <header id="title-block-header">
 <h1 class="title">SCDS Project Proposal (2019-2020)</h1>
 </header>
-<p><subtitle><strong>1000 Plagues in the Genomics Era: Databases and Digital Exhibit</strong></subtitle></p>
+<p><subtitle><strong>1000 Plagues in the Genomics Era: Databases and Digital Exhibits</strong></subtitle></p>
 <p><small><em>
 This manuscript
-(<a href="https://rawcdn.githack.com/ktmeaton/obsidian-public/None/academic/SCDS%20Project%20Proposal%20(2019-2020).html">permalink</a>)
+(<a href="https://rawcdn.githack.com/ktmeaton/obsidian-public/c2e4bac4/academic/SCDS%20Project%20Proposal%20(2019-2020).html">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ktmeaton/obsidian-public/tree/None">ktmeaton/obsidian-public@None</a>
-on May 8, 2021.
+from <a href="https://github.com/ktmeaton/obsidian-public/tree/c2e4bac4">ktmeaton/obsidian-public@c2e4bac4</a>
+on May 10, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -70,14 +70,131 @@ McMaster Ancient DNA Center, McMaster University
 </ul>
 <h2 id="project-overview">Project Overview</h2>
 <h3 id="background">Background</h3>
-<p>When used within a multi-disciplinary approach, genetic evidence provides an intriguing window into the disease experience of past populations. Ancient DNA techniques have been developed to identify bacterial and viral DNA present in skeletal remains, and even affected artifacts <span class="citation" data-cites="739QRfYf">[<a href="#ref-739QRfYf" role="doc-biblioref">1</a>]</span>. These methods have additionally been used to explore the patterns of spread and geographic origins of several high-profile diseases, including the plague (Bos et al., 2011). However, the ability to accurately reconstruct spatial patterns of an ancient disease requires robust comparative datasets. In order to produce such datasets, extensive sampling is required across both time and place, followed by careful curation. Fortunately, recent advances in DNA sequencing technology have facilitated efforts to conduct this extensive sampling on a global scale, and data repositories continue to grow at unprecedented rates (Stephens et al., 2015).</p>
-<h2 class="page_break_before" id="references">References</h2>
+<p>When used within a multi-disciplinary approach, genetic evidence provides an intriguing window into the disease experience of past populations. Ancient DNA techniques have been developed to identify bacterial and viral DNA present in skeletal remains, and even affected artifacts <span class="citation" data-cites="15SbrOBAL">[<a href="#ref-15SbrOBAL" role="doc-biblioref">1</a>]</span>. These methods have additionally been used to explore the patterns of spread and geographic origins of several high-profile diseases, including the plague <span class="citation" data-cites="vk7LFPKc">[<a href="#ref-vk7LFPKc" role="doc-biblioref">2</a>]</span>. However, the ability to accurately reconstruct spatial patterns of an ancient disease requires robust comparative datasets. In order to produce such datasets, extensive sampling is required across both time and place, followed by careful curation. Fortunately, recent advances in DNA sequencing technology have facilitated efforts to conduct this extensive sampling on a global scale, and data repositories continue to grow at unprecedented rates <span class="citation" data-cites="14ZtihTZK">[<a href="#ref-14ZtihTZK" role="doc-biblioref">3</a>]</span>.</p>
+<p>However, this technological progress has also placed a strain on our ability to effectively manage, curate, and present the avalanche of data effectively. Over the course of my residency in the 2017/2018 period, I curated and visualized approximately 300 plague records. In 2019, there are now more than 1000 available records, of which the vast majority are underutilized in published literature <span class="citation" data-cites="19LMpiGZs">[<a href="#ref-19LMpiGZs" role="doc-biblioref">4</a>]</span>. The rapid pace at which this information is generated, and the slow pace at which it is incorporated into ongoing research, suggests an urgent need for new strategies for curation, visualization, and dissemination of genetic disease records.</p>
+<p>Despite my previous efforts to curate and visualize a portion of this information, it was in the realm of dissemination that I encountered substantial obstacles. Firstly, I was uncertain about the process of publishing software, as opposed to a typical research paper, as digital tools have a public life before and after publication that must be considered. Secondly, the dynamic, interactive maps I created did not translate well to figure generation for sharing in a static document. Finally, I wasn’t easily able to incorporate a multidisciplinary approach, as the software platforms I selected did not allow for integrating heterogeneous data types (ex. evolutionary trees, historical records, and archaeological artifacts). I thus needed to rethink my objectives for completing software development and explore alternative dissemination outlets for my analysis.</p>
+<h2 id="proposal">Proposal</h2>
+<p>The project I propose for the duration of the residency program would be conducted in two phases. The first phase (Fall Term) is a direct continuation of my work from the 2017/2018 residency by moving the database tool I created towards release, publication, and continuing support infrastructure. In this aspect of the project, I would be primarily focused on how to “complete” a digital humanities project and navigate the hurdles therein.</p>
+<p>The second phase would involve putting the database software to work by analyzing ancient and modern samples of plague DNA. In my 2017/2018 residency, I generated 2 initial visualizations: a global map of disease distribution, and a dynamic time series of historical outbreaks. While overall a productive experience, this output also suffered from issues such as an inflexibility in incorporating disparate data forms and a restriction to only being functionally displayed on my local computer. Thus I am seeking new avenues for web-based visualization that could allow greater flexibility in terms of public dissemination, collaborator participation from other disciplines, and storytelling engagement.</p>
+<p>The intended audience for this project would be two-fold. First, for the content provided, the database and exhibits produced would primarily be targeted towards plague geneticists, archaeologists, and historians. The second audience group I would like to focus on are teams pursuing cross-disciplinary work who are interested in exploring creative means of communicating. This project emphasizes the role that digital exhibits play not just as showpieces, but as integral parts of the analytical methodology. As such, I hope to explore how digital humanities tools might present new opportunities for multidisciplinary teams to create and investigate research questions using visual elements as a primary means of exchange.</p>
+<h2 id="influences">Influences</h2>
+<p>This project draws inspiration from diverse sources, including academic articles, software repositories, and online exhibits. My original database software was motivated by projects such as SRAdb <span class="citation" data-cites="HdtZh6tX">[<a href="#ref-HdtZh6tX" role="doc-biblioref">5</a>]</span> and MetaSRA <span class="citation" data-cites="ZDdMY8tq">[<a href="#ref-ZDdMY8tq" role="doc-biblioref">6</a>]</span>. While these provided an excellent foundation, they also left methodological issues outstanding, which gave me a clear vision of possible future contributions. These works also introduced me to different platforms for project management, regarding how to package, release, update, and document code changes. In a similar vein, engaging with the Ancient DNA project repository EAGER revealed to me many unknown functions of Github that I aspire to learn in terms of user support and issue tracking <span class="citation" data-cites="gc7UXhSZ">[<a href="#ref-gc7UXhSZ" role="doc-biblioref">7</a>]</span>.</p>
+<p>The inspiration for the data visualization and exhibiting aspects of this project first come from the NextStrain project <span class="citation" data-cites="S0T839fB">[<a href="#ref-S0T839fB" role="doc-biblioref">8</a>]</span>. This is an international effort primarily focused on mapping the evolutionary history of bacterial and viral diseases, of which I find the tuberculosis exhibit particular striking and fun to explore (https://nextstrain.org/tb/global). This interface style is suitable for interrogating evolutionary relationships and patterns, as well as conducting a superficial exploration of the contextual metadata. My initial goal will be to recreate this display for the plague data that is publicly available, along with the data I have generated throughout the course of my dissertation’s lab work.</p>
+<p>When going beyond a superficial exploration of contextual evidence, a <a href="https://storymaps.arcgis.com/">StoryMap</a> exhibit may be particularly suited to weaving together rich historical, archaeological, and genetic sources. My first StoryMap inspiration was the Black Death plague map where the viewer can move throughout Europe learning about plague history with visual aids <span class="citation" data-cites="WKP9kr7Z">[<a href="#ref-WKP9kr7Z" role="doc-biblioref">9</a>]</span>. With regards to form, I’m enthralled with the Naonaiyaotit Traditional Knowledge Project Atlas and how it presents a tab-navigable map series of different regions and narratives [ntkp2019NaonaiyaotitTraditionalKnowledge]. Currently, I envision a similar format for the plague narratives, in which the user selects tabs to navigate between notable regions, events, and evidence in the history of this disease.</p>
+<h2 id="materials-and-methods">Materials and Methods</h2>
+<h3 id="data-and-access">Data and Access</h3>
+<p>The data for this project consists of two sources:</p>
+<ol type="1">
+<li>Publicly acquired plague records and DNA sequences from online genetic repositories <span class="citation" data-cites="wugbVLJd E2sCnrTc">[<a href="#ref-wugbVLJd" role="doc-biblioref">10</a>,<a href="#ref-E2sCnrTc" role="doc-biblioref">11</a>]</span>. The records and accompanying metadata are retrieved using an API provided by the National Centre for Biotechnology Information (NCBI) and my customizable software <span class="citation" data-cites="6YubepsW">[<a href="#ref-6YubepsW" role="doc-biblioref">12</a>]</span>.</li>
+<li>Ancient plague DNA samples I have sequenced throughout the course of my dissertation. Contextual metadata is provided by archaeologist contacts and surviving historical records.</li>
+</ol>
+<p>The primary metadata fields I will be visualizing are geographic location and time period, although supplemental variables (of which there are over 50 available, including environmental data) may also prove informative when incorporating socioecological theories of disease.</p>
+<h3 id="curation-and-comparison">Curation and Comparison</h3>
+<p>In my previous work, I laid out an initial curation and metadata standardization strategy for the plague record database. However, I did not have a way to organize and link to the literature I was using to perform this curation so that others may critique and build on this strategy. For this project, I first plan to create an open bibliography through Zotero in order to organize the primary source documents to improve curation transparency, reproducibility, and facilitate collaboration if possible.</p>
+<p>The foundation of the first exhibit (“NextStrain”), involves evolutionary analysis to compare the genetic relatedness of plague strains against each other. This approach shares many similarities with how stylometry methodology operates in digital humanities projects <span class="citation" data-cites="ngQEi2YK">[<a href="#ref-ngQEi2YK" role="doc-biblioref">13</a>]</span>. A document is compared to other texts in order to construct a pedigree of similarities, so as to answer a specific question (perhaps authorship of an unidentified object). But instead of English documents, I have DNA “texts” to compare against each other. This is an intensive computational step, and is conducted on a high performance computing cluster where an account is generously provided by Dr. Brian Golding.</p>
+<p>Following comparison and curation, the database contents and the relationships within can be exhibited. The first exhibit, a <a href="https://nextstrain.org/">NextStrain</a> project, provides the visualization engine in the form of a web application that connects to a users’ local GitHub repository. The website also hosts community projects on the front page for higher visibility and thus I hope to apply for a display there. The second exhibit is planned to be a shared community map series of <a href="https://storymaps.arcgis.com/">StoryMaps</a> using ArcGIS online. The primary localizing points on the map would be genetic plague records, while the textual and visual element of the story would be historical and archaeological evidence that ties the disease experiences together across the globe.</p>
+<h3 id="technical-expertise-skills-and-requirements">Technical Expertise, Skills, and Requirements</h3>
+<p>The technical skills needed to accomplish these objectives expand upon my previous work in database design and geovisualization (2017/2018 Residency), as well as web design and pedagogical resources (2018/2019 Residency). The skills that I am looking to develop first include furthering my GitHub project management and user support skills. I also hope to gain more familiarity in geocoding and georeferencing skills, and will take relevant DMDS workshops to continue that skill progression. In addition to instructional workshops, it would be beneficial to discuss with others about tackling subjectivity with ambiguous data and the politics of place names in a historical context. In addition, I will be learning two new visualization engines, NextStrain and ArcGIS Online, which I have only used in a learning capacity for tutorial completion. I am therefore looking forward to more advanced design options and to improve my short-form communication skills through these media. Finally, I will be developing my ability to work in a multidisciplinary context as I communicate with collaborating archaeologists and historian co-authors to contribute to the StoryMap.</p>
+<h3 id="project-timeline">Project Timeline</h3>
+<p>The two phases of this project are divided between Fall Term 2019 and Winter Term 2020. As “completing” a digital project is a high priority, I will begin with publishing and disseminating my database software (Phase I) before proceeding to learning about exhibiting the products of that project (Phase II).</p>
+<h4 id="phase-i-september---december-2019">Phase I: September - December 2019</h4>
+<ul>
+<li><strong>Sept</strong>: Software Packaging and Release</li>
+<li><strong>Sept-Oct</strong>: Publication Writing</li>
+<li><strong>Nov-Dec</strong>: Project Page improvements</li>
+<li><strong>Nov-Dec</strong>: Documentation and Support Infrastructure</li>
+</ul>
+<p>This period also includes the foundational analysis for Phase II.</p>
+<h4 id="phase-ii-january---april-2020">Phase II: January - April 2020</h4>
+<ul>
+<li><strong>Jan-Feb</strong>: NextStrain Phylogeny Exhibit</li>
+<li><strong>Mar-Apr</strong>: ArcGIS StoryMap Exhibit</li>
+<li><strong>May 7-10</strong>: Conference Presentation</li>
+</ul>
+<p>The final objective will be a podium presentation at a digital exhibit-centric session at the International Congress of Medieval Studies (Kalamazoo, MI, May 2020) entitled “Curating Medieval Plague and Pestilence.”</p>
+<h3 id="dissemination">Dissemination</h3>
+<p>Dissemination outcomes for this project are distributed across four categories. First would be the Github repositories and project pages that host the source code for the software and exhibits. Second are the academic papers, and third are the two digital exhibits themselves, NextStrain and StoryMap. Fourth, and finally, is an international conference presentation to showcase the exhibits created and exchange ideas about digital exhibits with other ancient disease scholars.</p>
+<p>While these dissemination products all build on each other in a logical progression, I learned from my 2018/2019 residency that my goals tend to be overly ambitious and full completion is not a realistic expectation. Therefore, I will approach Phase II being reasonably satisfied with reporting works in progress and try to embrace the productive failures emerge throughout the digital humanities research process.</p>
+<div style="page-break-after: always; visibility: hidden">
+
+</div>
+<h2 class="unnumbered" id="references">References</h2>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
-<div id="ref-739QRfYf">
-<p>1. <strong>17 th Century Variola Virus Reveals the Recent History of Smallpox</strong> <br />
+<div id="ref-15SbrOBAL">
+<p>1. <strong>17th Century Variola Virus Reveals the Recent History of Smallpox</strong> <br />
 Ana T. Duggan, Maria F. Perdomo, Dario Piombino-Mascali, Stephanie Marciniak, Debi Poinar, Matthew V. Emery, Jan P. Buchmann, Sebastian Duchêne, Rimantas Jankauskas, Margaret Humphreys, … Hendrik N. Poinar<br />
 <em>Current Biology</em> (2016-12) <a href="https://linkinghub.elsevier.com/retrieve/pii/S0960982216313240">https://linkinghub.elsevier.com/retrieve/pii/S0960982216313240</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cub.2016.10.061">10.1016/j.cub.2016.10.061</a></p>
+</div>
+<div id="ref-vk7LFPKc">
+<p>2. <strong>A draft genome of <em>Yersinia pestis</em> from victims of the Black Death</strong> <br />
+Kirsten I. Bos, Verena J. Schuenemann, G. Brian Golding, Hernán A. Burbano, Nicholas Waglechner, Brian K. Coombes, Joseph B. McPhee, Sharon N. DeWitte, Matthias Meyer, Sarah Schmedes, … Johannes Krause<br />
+<em>Nature</em> (2011-10) <a href="http://www.nature.com/articles/nature10549">http://www.nature.com/articles/nature10549</a> <br />
+DOI: <a href="https://doi.org/10.1038/nature10549">10.1038/nature10549</a></p>
+</div>
+<div id="ref-14ZtihTZK">
+<p>3. <strong>Big Data: Astronomical or Genomical?</strong> <br />
+Zachary D. Stephens, Skylar Y. Lee, Faraz Faghri, Roy H. Campbell, Chengxiang Zhai, Miles J. Efron, Ravishankar Iyer, Michael C. Schatz, Saurabh Sinha, Gene E. Robinson<br />
+<em>PLOS Biology</em> (2015-07-07) <a href="https://dx.plos.org/10.1371/journal.pbio.1002195">https://dx.plos.org/10.1371/journal.pbio.1002195</a> <br />
+DOI: <a href="https://doi.org/10.1371/journal.pbio.1002195">10.1371/journal.pbio.1002195</a></p>
+</div>
+<div id="ref-19LMpiGZs">
+<p>4. <strong>Ancient <em>Yersinia pestis</em> genomes from across Western Europe reveal early diversification during the First Pandemic (541–750)</strong> <br />
+Marcel Keller, Maria A. Spyrou, Christiana L. Scheib, Gunnar U. Neumann, Andreas Kröpelin, Brigitte Haas-Gebhard, Bernd Päffgen, Jochen Haberstroh, Albert Ribera i Lacomba, Claude Raynaud, … Johannes Krause<br />
+<em>Proceedings of the National Academy of Sciences</em> (2019-06-18) <a href="https://www.pnas.org/content/116/25/12363">https://www.pnas.org/content/116/25/12363</a> <br />
+DOI: <a href="https://doi.org/10.1073/pnas.1820447116">10.1073/pnas.1820447116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31164419">31164419</a></p>
+</div>
+<div id="ref-HdtZh6tX">
+<p>5. <strong>SRAdb: query and use public next-generation sequencing data from within R</strong> <br />
+Yuelin Zhu, Robert M Stephens, Paul S Meltzer, Sean R Davis<br />
+<em>BMC Bioinformatics</em> (2013) <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-19">http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-19</a> <br />
+DOI: <a href="https://doi.org/10.1186/1471-2105-14-19">10.1186/1471-2105-14-19</a></p>
+</div>
+<div id="ref-ZDdMY8tq">
+<p>6. <strong>MetaSRA: normalized human sample-specific metadata for the Sequence Read Archive</strong> <br />
+Matthew N Bernstein, AnHai Doan, Colin N Dewey<br />
+<em>Bioinformatics</em> (2017-09-15) <a href="https://academic.oup.com/bioinformatics/article/33/18/2914/3848915">https://academic.oup.com/bioinformatics/article/33/18/2914/3848915</a> <br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/btx334">10.1093/bioinformatics/btx334</a></p>
+</div>
+<div id="ref-gc7UXhSZ">
+<p>7. <strong>EAGER</strong> <br />
+Alexander Peltzer<br />
+(2019) <a href="https://github.com/nf-core/eager">https://github.com/nf-core/eager</a></p>
+</div>
+<div id="ref-S0T839fB">
+<p>8. <strong>Nextstrain: real-time tracking of pathogen evolution</strong> <br />
+James Hadfield, Colin Megill, Sidney M. Bell, John Huddleston, Barney Potter, Charlton Callender, Pavel Sagulenko, Trevor Bedford, Richard A. Neher<br />
+<em>Bioinformatics</em> (2018-12-01) <a href="https://academic.oup.com/bioinformatics/article/34/23/4121/5001388">https://academic.oup.com/bioinformatics/article/34/23/4121/5001388</a> <br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/bty407">10.1093/bioinformatics/bty407</a></p>
+</div>
+<div id="ref-WKP9kr7Z">
+<p>9. <strong>The Black Death</strong> <br />
+The Black Death<br />
+<em>The Black Death</em> (2019) <a href="https://uploads.knightlab.com/storymapjs/428a8c7a4899449a5949f9fe5bd79d06/the-spread-of-the-black-death/index.html">https://uploads.knightlab.com/storymapjs/428a8c7a4899449a5949f9fe5bd79d06/the-spread-of-the-black-death/index.html</a></p>
+</div>
+<div id="ref-wugbVLJd">
+<p>10. <strong>Assembly: a resource for assembled genomes at NCBI</strong> <br />
+Paul A Kitts, Deanna M Church, Françoise Thibaud-Nissen, Jinna Choi, Vichet Hem, Victor Sapojnikov, Robert G Smith, Tatiana Tatusova, Charlie Xiang, Andrey Zherikov, … Avi Kimchi<br />
+<em>Nucleic acids research</em> (2016-01-04) <a href="https://www.ncbi.nlm.nih.gov/pubmed/26578580">https://www.ncbi.nlm.nih.gov/pubmed/26578580</a> <br />
+DOI: <a href="https://doi.org/10.1093/nar/gkv1226">10.1093/nar/gkv1226</a></p>
+</div>
+<div id="ref-E2sCnrTc">
+<p>11. <strong>The EnteroBase user’s guide, with case studies on <em>Salmonella</em> transmissions, <em>Yersinia pestis</em> phylogeny, and <em>Escherichia</em> core genomic diversity</strong> <br />
+Zhemin Zhou, Nabil-Fareed Alikhan, Khaled Mohamed, Yulei Fan, Mark Achtman<br />
+<em>Genome Research</em> (2020-01) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6961584/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6961584/</a> <br />
+DOI: <a href="https://doi.org/10.1101/gr.251678.119">10.1101/gr.251678.119</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31809257">31809257</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6961584">PMC6961584</a></p>
+</div>
+<div id="ref-6YubepsW">
+<p>12. <strong>NCBImeta: efficient and comprehensive metadata retrieval from NCBI databases</strong> <br />
+Katherine Eaton<br />
+<em>Journal of Open Source Software</em> (2020) <a href="https://doi.org/10.21105/joss.01990">https://doi.org/10.21105/joss.01990</a> <br />
+DOI: <a href="https://doi.org/10.21105/joss.01990">10.21105/joss.01990</a></p>
+</div>
+<div id="ref-ngQEi2YK">
+<p>13. <strong>Stylometry with R: A Package for Computational Text Analysis</strong> <br />
+Maciej Eder, Jan Rybicki, Mike Kestemont<br />
+<em>The R Journal</em> (2016) <a href="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html">https://journal.r-project.org/archive/2016/RJ-2016-007/index.html</a> <br />
+DOI: <a href="https://doi.org/10.32614/RJ-2016-007">10.32614/rj-2016-007</a></p>
 </div>
 </div>
 <!-- default theme -->
