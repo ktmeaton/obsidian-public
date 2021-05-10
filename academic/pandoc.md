@@ -38,11 +38,25 @@ python3 convert_wikilinks.py -i pandoc-example.md -o pandoc-example-convert.md
 pandoc -s pandoc-example-convert.md -o pandoc-example.html
 ```
 
-## [[CrossRef]]
+## Filters
+
+### [[pandoc-crossref]]
 
 ```bash
 mamba install -c conda-forge pandoc-crossref
 ```
+
+### [[pandoc-include]]
+
+- First install [[Cabal]]:
+	```bash
+	sudo apt-get install -y cabal-install
+	cabal update
+	sudo apt install zlibc zlib1g-dev
+	cabal install pandoc-include
+	```
+
+Before [[zlib]] is installed, it generates the error [[Failed to install digest-0.0.1.2]]. Installing [[pandoc-include]] downloads an extraordinary number of packages.
 
 ## Citations
 

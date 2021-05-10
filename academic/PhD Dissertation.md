@@ -5,7 +5,7 @@ aliases:
 tags:
   - 📝/🌱
 status: idea
-type: [[Thesis]]
+type: [[Project]]
 ---
 
 # PhD Dissertation
@@ -15,6 +15,14 @@ type: [[Thesis]]
 1. [[NCBImeta]]
 2. [[Plague Phylodynamics and Phylogeography]]
 3. [[Plague Denmark]]
+
+## Writing
+
+ Compile [[dissertation]] with:
+ 
+ ```bash
+ pandoc -o dissertation.pdf --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex dissertation.md
+ ```
 
 ## Graph
 

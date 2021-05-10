@@ -8,19 +8,29 @@ authorLinks: 'https://ktmeaton.github.io/'
 affiliations: McMaster Ancient DNA Centre
 website: https://ktmeaton.github.io
 logo: https://github.com/ktmeaton/plague-phylogeography/raw/master/docs/images/thumbnail_DHSI2020.png
-bibliography: zotero.bib
-csl: apa-numeric-superscript-brackets.csl
 numberSections: true
 sectionsDepth: 3
+reference-section-title: References
 ---
 
 # Pandoc Example
 
 This is an example markdown file for pandoc.
 
-## Heading 1
+##  Compile
 
-This is under Heading 1.
+```bash
+pandoc -s pandoc-example.md -o pandoc-example.pdf \
+  --filter pandoc-crossref pandoc-include \
+  --citeproc \
+  --bibliography ../library.bib \
+  --csl templates/csl/apa-numeric-superscript.csl
+  
+```
+
+## Heading 2
+
+This is under Heading 2.
 
 This is a [[test wikilink]].
 
@@ -74,4 +84,10 @@ The DOI filter [[pandoc-doi2bib]] causes a lot of conversion problems, so is avo
 
 ![This is a figure caption.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography/master/docs/images/thumbnail_DHSI2020.png){#fig:figure-map}
 
-## References
+## [[Transclusion]] with [[pandoc-include]]
+
+This is where the transclusion begins:
+
+```include
+pandoc-include.md
+```
