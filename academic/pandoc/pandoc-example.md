@@ -21,10 +21,11 @@ This is an example markdown file for pandoc.
 
 ```bash
 pandoc -s pandoc-example.md -o pandoc-example.pdf \
-  --filter pandoc-crossref pandoc-include \
+  --filter pandoc-crossref \
+  --lua-filter lua-filters/include-files/include-files.lua \
   --citeproc \
-  --bibliography ../library.bib \
-  --csl templates/csl/apa-numeric-superscript.csl
+  --bibliography bib/library.bib \
+  --csl csl/apa-numeric-superscript.csl
   
 ```
 
@@ -88,6 +89,6 @@ The DOI filter [[pandoc-doi2bib]] causes a lot of conversion problems, so is avo
 
 This is where the transclusion begins:
 
-```include
+```{.include shift-heading-level-by=1}
 pandoc-include.md
 ```

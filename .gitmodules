@@ -4,3 +4,6 @@
 [submodule "academic/pandoc/templates/pandoc-mvp-css"]
 	path = academic/pandoc/templates/pandoc-mvp-css
 	url = https://gitlab.com/vimalkvn/pandoc-mvp-css.git
+[submodule "academic/pandoc/lua-filters"]
+	path = academic/pandoc/lua-filters
+	url = https://github.com/pandoc/lua-filters

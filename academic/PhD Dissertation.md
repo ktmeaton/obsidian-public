@@ -20,9 +20,17 @@ type: [[Project]]
 
  Compile [[dissertation]] with:
  
- ```bash
- pandoc -o dissertation.pdf --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex dissertation.md
- ```
+```bash
+pandoc -s dissertation.md -o dissertation_mcmaster.pdf \
+  --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex \
+  --lua-filter pandoc/lua-filters/include-files/include-files.lua \
+  --filter pandoc-crossref \
+  --citeproc \
+  --bibliography pandoc/bib/library.bib \
+  --csl pandoc/csl/apa-numeric-superscript.csl
+```
+
+- Tables must be [[multi-line tables]] according to the [pandoc table docs](https://pandoc.org/MANUAL.html#tables).
 
 ## Graph
 

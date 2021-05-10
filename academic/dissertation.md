@@ -39,33 +39,40 @@ Begin with the metadata of the published article,  example:
 
 Contextualize this publication within the dissertation.
 
-## Summary
+<!-- 
+## Summary 
+![[NCBImeta Paper#Summary]] 
+-->
 
-![[NCBImeta Paper#Summary]]
+```{.include shift-heading-level-by=1}
+NCBImeta_Paper.md
+```
+
+<!-- ![[NCBImeta Paper#Summary]] -->
 
 ## Background
 
-![[NCBImeta Paper#Background]]
+![[NCBImeta_Paper#Background]]
 
 ## NCBImeta
 
-![[NCBImeta Paper#NCBImeta]]
+![[NCBImeta_Paper#NCBImeta]]
 
 ## Use Case
 
-![[NCBImeta Paper#Use Case]]
+![[NCBImeta_Paper#Use Case]]
 
 ## Future Work
 
-![[NCBImeta Paper#Future Work]]
+![[NCBImeta_Paper#Future Work]]
 
 ## Availability
 
-![[NCBImeta Paper#Availability]]
+![[NCBImeta_Paper#Availability]]
 
 ## Acknowledgements
 
-![[NCBImeta Paper#Acknowledgements]]
+![[NCBImeta_Paper#Acknowledgements]]
 
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
