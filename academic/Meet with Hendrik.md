@@ -24,8 +24,29 @@ time: 09:00
 3. Discuss, future plague research - where we should be headed, in this area, given the crowded nature of plague research. Low hanging fruit (or long term project focus) etc. other folks to bring into the fold
 4. Other items
 
+- Buddism introduction in the 15th century = burials in fields for birds to come through.
+- Mass burials not typical
+- 12-13th century, 
+
+[[Alisiya Petrushkevich]] Database
+- Citation -> DOI
+- Just need the accession number to link it
+
+Reoccuring plague meeting
+
+
 ### 0900
 - Discuss presentations for [[Kalamazoo 2021 Conference]]
+- Tree, rates, clock calibration, temporal structure in clade
+- 2 slides, "how we think about plague", expect an acceleration, then show the real tree, how the ecology explains this, why we need curated data
+- Ascertainment bias (John Avis, phylogeography)
+- Phylogeography and the dangers thereof
+
+1. Rate Variation
+2. Ascertainment Bias
+
+- Rate Variation -> Clocks -> Origins -> Ecology
+- Ascertainment Bias in Phylogeography
 
 ## [[2021-05-04]]
 
