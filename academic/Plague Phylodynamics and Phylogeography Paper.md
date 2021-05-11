@@ -1,6 +1,6 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-05-13
+due: [[2021-05-13]]
 people:
   - [[Katherine Eaton]]
   - [[Hendrik Poinar]]

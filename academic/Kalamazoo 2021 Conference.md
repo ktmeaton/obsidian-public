@@ -9,7 +9,7 @@ status:
 - priority  
 type: 
   - [[Conference]]
-due: 2021-05-15
+due: [[2021-05-15]]
 time: 13:00
 ---
 

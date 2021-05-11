@@ -19,7 +19,7 @@ tags:
 | bibtex  | kalkauskas2021SamplingBiasModel                                                             |
 
 ## Summary
-- The authors demonstrate how [[Sampling Bias|sampling bias]] is severely detrimental to [[Phylogeography|phylogeographic]] models of [[Pathogen|pathogen]] spread. They show that the inclusion of [[Sequence-Free]] samples significantly alleviates [[Sampling Bias]]. However, this approach depends on knowing the [[full extent of an organism's spatial distribution]].
+- The authors demonstrate how [[Sampling Bias|sampling bias]] is severely detrimental to [[Phylogeography|phylogeographic]] models of [[Pathogen|pathogen]]/ [[West Nile Virus]] spread. They show that the inclusion of [[Sequence-Free]] samples significantly alleviates [[Sampling Bias]]. However, this approach depends on knowing the [[full extent of an organism's spatial distribution]].
 - This is extremely exciting for two reasons:
 	- Provides a statistical argument for the importance of [[Interdisciplinary]] work, and the dangers of not doing so (in agreement with [[Faria et al. 2018 Genomic Epidemiological Monitoring|Faria et al. 2018]]). Thus supplying a strong motivation to purse this work.
 	- Provides an explicit methodological framework for the integration of [[Interdisciplinary|interdisciplinary]] datasets, in the form of [[Sequence-Free]] data being added to [[Genome|genomic]] analyses.

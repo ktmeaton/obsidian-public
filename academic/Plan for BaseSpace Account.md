@@ -1,6 +1,6 @@
 ---
 project: [[Lab Admin]]
-due: 2021-05-14
+due: [[2021-05-14]]
 people:
 tags: ⬜/🧨
 status: priority

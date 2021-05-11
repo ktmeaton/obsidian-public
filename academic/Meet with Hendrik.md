@@ -4,10 +4,10 @@ title:
   - Meet with Hendrik
 people:
 tags:
-  - ⬜/✨    
-status: done
+  - ⬜/🧨    
+status: priority
 type: [[Meeting]]
-due: 2021-05-11
+due: [[2021-05-11]]
 time: 09:00
 ---
 
@@ -32,7 +32,8 @@ time: 09:00
 - Citation -> DOI
 - Just need the accession number to link it
 
-Reoccuring plague meeting
+- Reoccuring plague meeting
+- [[Mongolia Sampling Strategy]]
 
 
 ### 0900
