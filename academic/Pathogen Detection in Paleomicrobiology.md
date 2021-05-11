@@ -10,9 +10,9 @@ aliases:
   - Comprehensive Exam 2
 tags:
   - 📝/🌱
-  - ⬜/🧨 
+  - ⬜/📋 
 due: 2021-05
-status: priority
+status: idea
 type: [[Paper]]
 lang: en-US
 repo: ktmeaton/obsidian-public

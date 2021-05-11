@@ -21,7 +21,7 @@ title: Plague Phylodynamics and Phylogeography
 
 ## Outline
 
-![[Plague Phylodynamics and Phylogeography Outline]]
+![[Plague Phylodynamics and Phylogeography Paper]]
 
 
 

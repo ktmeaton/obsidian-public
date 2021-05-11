@@ -2,7 +2,7 @@
 title: "Consensus and Controversy in Modern Plague Ecology"
 subtitle: "Implications for Interpreting the Second Plague Pandemic"
 authors: 
-  - name: Katherine Eaton
+  - name: [[Katherine Eaton]]
     github: ktmeaton
     orcid: 0000-0001-6862-7756
     affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
@@ -11,9 +11,9 @@ aliases:
   - Comprehensive Exam 1
 tags:
   - 📝/🌱
-  - ⬜/🧨 
+  - ⬜/📋
 due: 2021-05
-status: priority
+status: status
 type: [[Paper]]
 lang: en-US
 repo: ktmeaton/obsidian-public

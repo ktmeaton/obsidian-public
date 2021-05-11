@@ -48,7 +48,7 @@ time: 18:00
 ### Tasks
 
 - [ ] [[Katherine Eaton]] | [[Create geographic traits file by Clade]].
-- [ ] [[Katherine Eaton]] | [[Plague Phylodynamics and Phylogeography Outline]].
+- [ ] [[Katherine Eaton]] | [[Plague Phylodynamics and Phylogeography Paper]].
 - [ ] [[Sebastian Duchene]] | [[Run BETS on all Clades]].
 
 ### Next Meeting

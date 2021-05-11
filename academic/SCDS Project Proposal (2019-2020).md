@@ -88,7 +88,7 @@ This period also includes the foundational analysis for Phase II.
 - **Mar-Apr**: ArcGIS StoryMap Exhibit
 - **May 7-10**: Conference Presentation
 
-The final objective will be a podium presentation at a digital exhibit-centric session at the [[Kalamazoo 2021\| International Congress of Medieval Studies (Kalamazoo, MI, May 2020) entitled “Curating Medieval Plague and Pestilence.”]]
+The final objective will be a podium presentation at a digital exhibit-centric session at the [[Kalamazoo 2021 Conference\| International Congress of Medieval Studies (Kalamazoo, MI, May 2020) entitled “Curating Medieval Plague and Pestilence.”]]
 
 ### Dissemination
 

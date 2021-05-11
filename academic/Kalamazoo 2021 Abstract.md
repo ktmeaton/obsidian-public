@@ -4,9 +4,8 @@ subtitle: "Exhibiting Biographies of Bacteria"
 authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
-    affiliations: "[[McMaster Ancient DNA Center]], [[McMaster University]]"
-    github: ktmeaton
     orcid: 0000-0001-6862-7756
+    affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
 aliases:
   - Kalamazoo 2021 Abstract
 tags:

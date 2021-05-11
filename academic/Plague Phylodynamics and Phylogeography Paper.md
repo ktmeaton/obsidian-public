@@ -8,13 +8,13 @@ people:
   - [[Leo Featherstone]]
 tags: ⬜/🧨 
 status: priority
-title: Plague Phylodynamics and Phylogeography Outline
+title: Plague Phylodynamics and Phylogeography Paper
 type: 
   - [[Task]]
   - [[Note]]
 ---
 
-# Plague Phylodynamics and Phylogeography Outline
+# Plague Phylodynamics and Phylogeography Paper
 
 ## Concepts
 
@@ -32,10 +32,7 @@ type:
   - Introduce the problem.
 
 ---
-<div style="page-break-after: always; visibility: hidden">
-\pagebreak
-</div>
-
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## Materials and Methods
 
@@ -52,9 +49,7 @@ type:
 ### Phylogeography
 
 ---
-<div style="page-break-after: always; visibility: hidden">
-\pagebreak
-</div>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## Results
 
