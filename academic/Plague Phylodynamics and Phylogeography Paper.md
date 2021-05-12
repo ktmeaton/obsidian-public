@@ -33,6 +33,8 @@ authors:
       "[[Department of Anthropology]], [[McMaster University]]"
     ]
 lang: en-US
+repo: ktmeaton/obsidian-public
+filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
 tags: ⬜/🧨 
 status: priority
 title: Plague Phylodynamics and Phylogeography
