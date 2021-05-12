@@ -7,7 +7,7 @@ people:
   - [[Hendrik Poinar]]
 tags:
   - ⬜/🧨  
-status: done  
+status: priority
 type: [[Meeting]]
 due: 2021-05-13
 time: 18:00
@@ -20,9 +20,7 @@ time: 18:00
 [Meeting Link]()
 
 ---
-<div style="page-break-after: always; visibility: hidden">
-\pagebreak
-</div>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 # Meet With Australia
 
@@ -143,7 +141,7 @@ time: 18:00
 
 ### Tasks
 - [x] [[Send Starting Tree to Australia]]
-- [x] [[Create Multiple Alignments by Clade]]
+- [x] [[Datasets by Clade]]
 - [x] [[Send IBD Plots]]
 - Dating by clade (BETS analysis).
 - Relative branch rates (genetic distance, 

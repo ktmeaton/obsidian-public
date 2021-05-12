@@ -2,33 +2,49 @@
 title: Pandoc Example
 subtitle: An example file for testing pandoc conversion
 date: 2021-05-05
-author: 
+author:
   - Katherine Eaton
 authorLinks: 'https://ktmeaton.github.io/'
 affiliations: McMaster Ancient DNA Centre
 website: https://ktmeaton.github.io
 logo: https://github.com/ktmeaton/plague-phylogeography/raw/master/docs/images/thumbnail_DHSI2020.png
-numberSections: true
+numberSections: false
 sectionsDepth: 3
+tblPrefix: Table
+figPrefix: Figure
+secPrefix: Section
 reference-section-title: References
+theme: simple
 ---
 
-# Pandoc Example
+# Pandoc Slides
 
-This is an example markdown file for pandoc.
+This is an example markdown file for revealjs slides.
 
 ---
 
 ##  Compile
 
+1. Convert wiki links.
+
 ```bash
-pandoc -s pandoc-example.md -o pandoc-example.pdf \
+python3 convert_wikilinks.py \
+  --input pandoc-slides.md \
+  --output pandoc-slides-convert.md;
+```
+
+1. Compile to HTML.
+
+```bash
+pandoc \
+  -s pandoc-slides-convert.md \
+  -o pandoc-slides-convert.html \
+  -t revealjs \
   --filter pandoc-crossref \
-  --lua-filter lua-filters/include-files/include-files.lua \
   --citeproc \
   --bibliography bib/library.bib \
   --csl csl/apa-numeric-superscript.csl
-  
+
 ```
 
 ---
@@ -37,13 +53,10 @@ pandoc -s pandoc-example.md -o pandoc-example.pdf \
 
 This is under Heading 2.
 
-This is a [[test wikilink]].
-
-This is a [[test wikilink with an alias|test alias]].
-
-This is a [test markdown link](path) that should not be altered.
-
-This line [[has]] double [[links]] oh boy [[oh boy|OH BOY]].
+- This is a test wikilink.
+- This is a test alias.
+- This is a [test markdown link](path) that should not be altered.
+- This line has double links oh boy OH BOY.
 
 ---
 
@@ -54,19 +67,13 @@ This is an untyped code block
 echo UNTYPED
 ```
 
-This is an typed code block
-```bash
-echo TYPED
-```
-
 ^Note^: Do not use indented code blocks!
-
 
 ---
 
 ## Tables {#sec:tables-section }
 
-The table extension in [[Obsidian]] is extremely helpful for this. Note the use of a table caption.
+The table extension in Obsidian is extremely helpful for this. Note the use of a table caption.
 
 ### Pipe Tables
 
@@ -76,15 +83,19 @@ Table: Test Pipe Table {#tbl:pipe-table}
 | --------- | ----- |
 | Something | Else  |
 
+---
+
 ## Citations
 
-This is an in-text citation uses a [[BibTeX]] key [@eaton2020NCBImetaEfficientComprehensive] .
+This is an in-text citation uses a BibTeX key [@eaton2020NCBImetaEfficientComprehensive] .
 
-This is an in-text citation that uses an [[Obsidian]] link that is aliased to a [[BibTeX]] key [[Andrades Valtuena et al. 2017 Stone Age Plague|[@andradesvaltuena2017StoneAgePlague]]]. Note the internal square brackets in the alias.
+This is an in-text citation that uses an Obsidian link that is aliased to a BibTeX key [@andradesvaltuena2017StoneAgePlague]. Note the internal square brackets in the alias.
 
-The DOI filter [[pandoc-doi2bib]] causes a lot of conversion problems, so is avoided.
+The DOI filter pandoc-doi2bib causes a lot of conversion problems, so is avoided.
 
-## [[CrossRef]] {#sec:test1 }
+---
+
+## CrossRef {#sec:test1 }
 
 - A Cross reference to the tables section [#sec:tables].
 - A reference to @sec:test1.
@@ -94,10 +105,4 @@ The DOI filter [[pandoc-doi2bib]] causes a lot of conversion problems, so is avo
 
 ![This is a figure caption.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography/master/docs/images/thumbnail_DHSI2020.png){#fig:figure-map}
 
-## [[Transclusion]] with [[pandoc-include]]
-
-This is where the transclusion begins:
-
-```{.include shift-heading-level-by=1}
-pandoc-include.md
-```
+---

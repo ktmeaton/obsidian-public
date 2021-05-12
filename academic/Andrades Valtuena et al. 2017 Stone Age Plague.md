@@ -24,7 +24,7 @@ tags:
 - Movement of plague from Central [[Eurasia]] to [[Europe]], with expansion of people from the [[Steppe]]. Persisted in [[Europe]] until mid-[[LNBA|Bronze Age]]. Moved back to Central [[Eurasia]] along with moving human populations.
 - 6 [[Ancient]] [[Europe]](an) [[Yersinia pestis]] [[Genome|genome]]s, 4800 - 3700 YBP.
 - All form an extinct [[Clade|clade]].
--  [[MRCA]] date: 6078 years (95% HPD: 5036 - YBP), agrees with [[Rasmussen et al. 2015 Early Divergent Strains|Rasmussen et al. 2015]].
+-  [[MRCA]] date: 6078 years (95% HPD: 5036 - YBP), agrees with [[Rasmussen 2015 Early Divergent Strains|Rasmussen et al. 2015]].
 
 ---
 

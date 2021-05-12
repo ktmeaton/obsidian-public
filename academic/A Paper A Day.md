@@ -12,19 +12,19 @@ tags:
 
 #### Week 1
 
-<progress id="file" value="100" max="100"> 0% </progress>
+<progress id="file" value="100" max="100"> 0% </progress> 100% ✨ 
 
-|                                07                                |
-|:----------------------------------------------------------------:|
-| [[Zimpel 2020 Global Distribution Evolution\|Zimpel et al (2020) Global Distribution Evolution]] |
+|                      07                       |     | 
+|:---------------------------------------------:| --- |
+| [[Zimpel 2020 Global Distribution Evolution]] |     |
 
 #### Week 2
 
-<progress id="file" value="0" max="100"> 0% </progress>
+<progress id="file" value="20" max="100"> 0% </progress> 20%
 
-| 10  | 11  | 12  | 13  | 14  |
-|:---:|:---:|:---:|:---:|:---:|
-| [[Bramanti 2021 Assessing Origins European\|Bramanti et al. (2021) Assessing Origins European]]    |     |     |     |     |
+| 10  | 11  |                      12                      |                      13                       | 14  |
+|:---:|:---:|:--------------------------------------------:|:---------------------------------------------:|:---:|
+|     |     | [[Bramanti 2021 Assessing Origins European]] | [[Duchene 2020 Bayesian Evaluation Temporal]] |     |
 
 #### Week 3
 

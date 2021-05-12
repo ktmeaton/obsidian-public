@@ -5,7 +5,7 @@ aliases:
   - '@spyrou2016HistoricalPestisGenomes'
 ---
 
-# Spyrou et al. 2016 Historical Pestis Genomes 
+# Spyrou 2016 Historical Pestis Genomes 
 
 | Field   | Value                                                                                                                                                                                                                |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ aliases:
 
 ## Dialogue
 
-- [[Spyrou et al. 2016 Historical Pestis Genomes|Spyrou et al. (2016)]] discusses the analysis of [[Cui et al. 2013 Historical Variations Mutation|Cui et al. (2013)]] and [[Morelli et al. 2010 Yersinia Pestis Genome|Morelli et al. (2010)]] with regards to the [[Geographic Origin|geographic origins]] of plague being in [[China]]. The authors argue that those findings may be influenced by a strong [[East Asia|East Asian]] [[Sampling Bias]]. To additionally support their claim, they point to [[Cui et al. 2013 Historical Variations Mutation|Cui et al. (2013) own findings]] that the most basally [[Divergence|diverging]] [[Clade|clades]] of [[Plague]] are found in the [[Former Soviet Union]], ie. the [[Caucasus]].
+- [[Spyrou 2016 Historical Pestis Genomes|Spyrou et al. (2016)]] discusses the analysis of [[Cui et al. 2013 Historical Variations Mutation|Cui et al. (2013)]] and [[Morelli et al. 2010 Yersinia Pestis Genome|Morelli et al. (2010)]] with regards to the [[Geographic Origin|geographic origins]] of plague being in [[China]]. The authors argue that those findings may be influenced by a strong [[East Asia|East Asian]] [[Sampling Bias]]. To additionally support their claim, they point to [[Cui et al. 2013 Historical Variations Mutation|Cui et al. (2013) own findings]] that the most basally [[Divergence|diverging]] [[Clade|clades]] of [[Plague]] are found in the [[Former Soviet Union]], ie. the [[Caucasus]].
 - This paper integrates [[Caucasus]] [[Yersinia pestis|Y. pestis]] strains from [[Zhgenti et al. 2015 Genome Assemblies 11|Zhgenti et al. (2015)]], 
 
 ## Figures
@@ -33,7 +33,7 @@ aliases:
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------:| --- |
 |                                                             ![[spyrou2016HistoricalPestisGenomes_fig3.jpg]]                                                             |     |
 | Hypothesized [[spread\|dissemination]] of [[Yersinia pestis\|Y. pestis]] during the [[Second Pandemic\|second]] and [[Third Pandemic\|third]] [[Pandemic\|pandemics]]. |     |
-|                                                 [[Spyrou et al. 2016 Historical Pestis Genomes\|Spyrou et al. (2016)]]                                                  |     |
+|                                                 [[Spyrou 2016 Historical Pestis Genomes\|Spyrou et al. (2016)]]                                                  |     |
 
 ## Tables
 
@@ -41,7 +41,7 @@ aliases:
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------:| --- |
 |                                                             ![[spyrou2016HistoricalPestisGenomes_table1.jpg]]                                                             |     |
 | Diagnostic [[SNP\|SNPs]] present in this study. |     |
-|                                                 [[Spyrou et al. 2016 Historical Pestis Genomes\|Spyrou et al. (2016)]]                                                  |     |
+|                                                 [[Spyrou 2016 Historical Pestis Genomes\|Spyrou et al. (2016)]]                                                  |     |
 
 
 ## Notes

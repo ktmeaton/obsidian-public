@@ -39,6 +39,9 @@ tail -n+`expr $end + 1` $input > ${output}
 
 # Change to rootstock directory since relative links will be used
 cwd=`pwd`
+
+# Tell Manubot to use resources in the cwd (ie obsidian vault)
+export RESOURCE_DIR=$cwd
 cd ${ROOTSTOCK_DIR};
 
 # Build manuscripts

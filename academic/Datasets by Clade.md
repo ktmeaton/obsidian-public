@@ -1,18 +1,17 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-04-28
+due: 2021-05-12
+time: 17:00
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
-tags: ⬜/✨  
+tags: ⬜/✨
 status: done
-title: Create Multiple Alignments by Clade
+title: Datasets by Clade
 type: [[Task]]
 ---
 
-# Create Multiple Alignments by Clade
-
-## Tasks
+# Datasets by Clade
 
 ## Clades
 
@@ -28,7 +27,9 @@ type: [[Task]]
 - [[3.ANT]]
 - [[4.ANT]]
 
-- [ ] Ask which clades (all of them), you want alignments for? There are 12 in total?
+## Alignments
+
+- [x] Ask which clades (all of them), you want alignments for? There are 12 in total?
 
 ```bash
 cd results/iqtree/all/chromosome/full/filter5/;
@@ -44,7 +45,7 @@ do
   rm -rf $branch/;
   mkdir -p $branch;
   grep "$query" ../filter-taxa/metadata.tsv | cut -f 1 > ${branch}/${branch}.txt;
-	python3 /mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/filter_taxa.py \
+  python3 /mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/filter_taxa.py \
 	  --metadata ../filter-taxa/metadata.tsv \
 	  --aln ../filter-sites/snippy-multi.snps.aln \
 	  --outdir ${branch}/ \
@@ -58,4 +59,20 @@ done
 
   
 
+```
+
+## Geography
+
+```bash
+cd iqtree/all/chromosome/full/filter5/filter-clades;
+cat clades.txt | while read line;
+do
+  branch=`echo "$line" | cut -f 1`;
+  echo $branch;
+  query=`echo -e "$line" | cut -f 2`
+  grep "$query" ../filter-taxa/metadata.tsv | cut -f 1,5 > ${branch}/${branch}.country.txt;
+  grep "$query" ../filter-taxa/metadata.tsv | cut -f 1,6 > ${branch}/${branch}.province.txt;
+done
+
+cp */*country* */*province* ../../../../../../share/geography
 ```

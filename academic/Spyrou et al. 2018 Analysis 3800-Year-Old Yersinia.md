@@ -22,7 +22,7 @@ tags:
 ## Summary
 
 - Sequenced the new strain RT5 from the Late Bronze Age period (~3800 BP) in the Samara region of modern-day Russia.
-- This strain is distinct from the [[LNBA]] strains of [[Rasmussen et al. 2015 Early Divergent Strains]] both in clade placement and the acquisition of components required for  flea-mediated transmission [[ymt]] ?
+- This strain is distinct from the [[LNBA]] strains of [[Rasmussen 2015 Early Divergent Strains]] both in clade placement and the acquisition of components required for  flea-mediated transmission [[ymt]] ?
 
 >- Propose that several Y. pestis lineages were established during the Bronze Age, some of which persist to the present day.
 

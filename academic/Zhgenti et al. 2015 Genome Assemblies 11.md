@@ -25,7 +25,7 @@ aliases:
 - The authors credit the surveillance study work of [[Bakanidze et al. 2010 Surveillance Plague Natural|Bakanidze et al. (2010)]] for the [[11th-Century]] mention of [[Plague|plague]].
 -  The [[Caucasus]] has very unique [[Clade|strains]] of [[Plague|plague]], referencing the work of [[Anisimov et al. 2004 Intraspecific Diversity Yersinia|Anisimov et al. (2004)]], [[Gage and Kosoy 2005 Natural History Plague|Gage and Kosoy (2005)]], and [[Revazishvili et al. 2008 Characterisation Yersinia Pestis|Revazishvili et al. (2008)]].
 - This is an important contributions to reducing [[Sampling Bias]].
-- These [[Genome|genomes]] will be included by [[Spyrou et al. 2016 Historical Pestis Genomes|Spyrou et al. (2016)]] in their study.
+- These [[Genome|genomes]] will be included by [[Spyrou 2016 Historical Pestis Genomes|Spyrou et al. (2016)]] in their study.
 
 ## Tables
 

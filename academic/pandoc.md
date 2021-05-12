@@ -74,6 +74,7 @@ Ex. <https://www.zotero.org/styles/apa-numeric-superscript-brackets>
 ## Convert
 
 ### Markdown
+
 ####  [[PDF]]
 
 - Default:
@@ -143,9 +144,29 @@ Customize the formatting, for example, change the title to font size 50.
 
 #### [[reveal.js]] Slides
 
-- Run the reveal.js server
+1. Convert with [[pandoc]], preferred.
 	```bash
-	reveal-md path/to/my/slides.md
+	# Convert wikilinks
+	python3 convert_wikilinks.py --input pandoc-slides.md --output pandoc-slides-convert.md;
+	# Basic
+	pandoc -s pandoc-slides-convert.md -o pandoc-slides-convert.html -t revealjs;
+	
+	# Filters
+	pandoc \
+	  -s pandoc-slides-convert.md \
+	  -o pandoc-slides-convert.html \
+	  -t revealjs \
+	  --filter pandoc-crossref \
+	  --citeproc \
+	  --bibliography bib/library.bib;
+	```
+1. Convert with [[reveal-md]], not preferred.
+	```bash
+	npm install -g reveal-md
+	reveal-md pandoc-example.md
+	
+	# Themes
+	reveal-md pandoc-example.md --theme simple
 	```
 
 #### Standalone [[HTML]]

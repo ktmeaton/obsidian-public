@@ -9,9 +9,9 @@ status: idea
 
 # Directionality is Fragile
 
-Appropriate use of phylogeography requires two conditions:
-- The geographic distribution is 'known', or at least a strong hypothesis
-- The geographic distribution is densely sampled. 
+Appropriate use of phylogeography requires three conditions:
+- The geographic distribution is densely sampled ([[Sampling Bias]]). 
+- The organism measurable evolves across the geographic distribution .
 
 Inferring directed movement (ie. migration) with [[Phylogeography|phylogeography]] is an extremely fragile process. That is to say, the results and thus interpretations are sensitive to a number of factors. Perhaps the most obvious and intuitive is [[Sampling Bias]]. When the full distribution of a disease is not known, or sparsely sampled, geographic reconstructions reflect the [[Sampling Bias|sampling strategy]], rather than disease processes
 

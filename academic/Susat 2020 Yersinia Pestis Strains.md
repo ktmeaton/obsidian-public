@@ -5,7 +5,7 @@ tags:
   - 📝/🌱 
 ---
 
-# Susat et al. 2020 Yersinia Pestis Strains
+# Susat 2020 Yersinia Pestis Strains
 
 | Field   | Value                                                                                                                                                          |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,12 +28,12 @@ tags:
 |                    Fig 2                   |
 |:--------------------------------------------:|
 | ![[susat2020YersiniaPestisStrains_fig2.jpg]] |
-|        [Maximum-likelihood tree. (N=228 modern, 36 ancient, one <i>Y. pseudotuberculosis</i>, G701, G488. 15,976 SNP sites.) ](Susat%20et%20al.%202020%20Yersinia%20Pestis%20Strains.md)        |
+|        [Maximum-likelihood tree. (N=228 modern, 36 ancient, one <i>Y. pseudotuberculosis</i>, G701, G488. 15,976 SNP sites.) ](Susat%202020%20Yersinia%20Pestis%20Strains.md)        |
 
 	
 |                    Fig 3                   |
 |:--------------------------------------------:|
 | ![[susat2020YersiniaPestisStrains_fig3.jpg]] |
-|        [(A,B) Coverage plots of the <i>pla<i> positive reference in G701and G488. (C,D) Coverage plots of the <i>pla<i> negative reference in G701 and G488.](Susat%20et%20al.%202020%20Yersinia%20Pestis%20Strains.md)        |
+|        [(A,B) Coverage plots of the <i>pla<i> positive reference in G701and G488. (C,D) Coverage plots of the <i>pla<i> negative reference in G701 and G488.](Susat%202020%20Yersinia%20Pestis%20Strains.md)        |
 
 ## Notes

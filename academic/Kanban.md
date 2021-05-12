@@ -7,7 +7,7 @@ aliases:
 
 ## Overdue
 ```dataview
-table project as Project,type as Type,due as Due
+table project as Project,type as Type,due as Due, time as Time
 from ""
 where due and contains(status,"priority") and due<date(today) and !contains(file.path, "templates")
 ```
@@ -15,7 +15,7 @@ where due and contains(status,"priority") and due<date(today) and !contains(file
 ## Due
 
 ```dataview
-table project as Project,type as Type,due as Due
+table project as Project,type as Type,due as Due, time as Time
 from ""
 where due and contains(status,"priority") and due=date(today) and !contains(file.path, "templates")
 ```
@@ -23,7 +23,7 @@ where due and contains(status,"priority") and due=date(today) and !contains(file
 ## Upcoming
 
 ```dataview
-table project as Project,type as Type,due as Due
+table project as Project,type as Type,due as Due, time as Time
 from ""
 where due and contains(status,"priority") and due>date(today) and !contains(file.path, "templates")
 sort due asc

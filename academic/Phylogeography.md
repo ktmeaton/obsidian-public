@@ -30,11 +30,11 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 
 ## Literature
 
-- [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with [[Geospatial|geospatial]] [[Statistics]]. An example from [[Guellil et al. 2020 Genomic Historical Synthesis]]:
+- [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with [[Geospatial|geospatial]] [[Statistics]]. An example from [[Guellil 2020 Genomic Historical Synthesis]]:
 
 	|                    Fig 2                     |
 	|:--------------------------------------------:|
 	| ![[guellil2020GenomicHistoricalSynthesis_fig2.jpg]] |
-	| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](Guellil%20et%20al.%202020%20Genomic%20Historical%20Synthesis.md) |
+	| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](Guellil%202020%20Genomic%20Historical%20Synthesis.md) |
 - It's uncertain what data is being used to construct this map. I think mostly historical, but perhaps also the genomic evidence?
 

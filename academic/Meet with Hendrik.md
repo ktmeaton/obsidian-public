@@ -4,10 +4,10 @@ title:
   - Meet with Hendrik
 people:
 tags:
-  - ⬜/🧨    
-status: priority
+  - ⬜/✨  
+status: done
 type: [[Meeting]]
-due: [[2021-05-11]]
+due: 2021-05-11
 time: 09:00
 ---
 
@@ -24,14 +24,10 @@ time: 09:00
 3. Discuss, future plague research - where we should be headed, in this area, given the crowded nature of plague research. Low hanging fruit (or long term project focus) etc. other folks to bring into the fold
 4. Other items
 
+#### Notes
 - Buddism introduction in the 15th century = burials in fields for birds to come through.
-- Mass burials not typical
-- 12-13th century, 
-
-[[Alisiya Petrushkevich]] Database
-- Citation -> DOI
-- Just need the accession number to link it
-
+- Mass burials not typical in Mongolia
+- [[Alisiya Petrushkevich]] Database, Just need the accession number to link it
 - Reoccuring plague meeting
 - [[Mongolia Sampling Strategy]]
 

@@ -9,7 +9,7 @@ aliases:
 
 | Field   | Value                                                                                                                                                                                               |     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| Title   | [[18th-Century\|Eighteenth century]] [[Yersinia pestis]] [[Genome\|genomes]] reveal the long-term [[Persistence\|persistence]]e of an [[Historical\|historical]] [[Plague\|plague]] [[Foci\|focus]] |     |
+| Title   | [[18th Century\|Eighteenth century]] [[Yersinia pestis]] [[Genome\|genomes]] reveal the long-term [[Persistence\|persistence]]e of an [[Historical\|historical]] [[Plague\|plague]] [[Foci\|focus]] |     |
 | Year    | 2016                                                                                                                                                                                                |     |
 | Authors | Bos et al. 2106                                                                                                                                                                                     |     |
 | DOI     | <https://doi.org/10.7554/eLife.12994>                                                                                                                                                                                           |     |
@@ -22,7 +22,7 @@ aliases:
 - Their two hypotheses are:
 	1. [[Plague]] [[Foci|foci]] within [[Europe]] once existed, and has now gone [[Extinct|extinct]].
 	1. [[Plague]] was continually [[Reintroduction|reintroduced]] via a [[Foci|reservoir]] outside of [[Europe]].
-- To investigate these hypotheses, they use [[Ancient DNA|ancient DNA]] to sequence five [[Ancient]] [[Yersinia pestis]] [[Genome|genomes]] from [[18th-Century]] Marseille, [[France]], dated to 1720-1722.
+- To investigate these hypotheses, they use [[Ancient DNA|ancient DNA]] to sequence five [[Ancient]] [[Yersinia pestis]] [[Genome|genomes]] from [[18th Century]] Marseille, [[France]], dated to 1720-1722.
 
 ## Dialogue
 

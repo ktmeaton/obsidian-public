@@ -7,7 +7,7 @@ tags:
   - 📥/📰 
   - 📝/🌱 
 ---
-# Guellil et al. 2020 Genomic Historical Synthesis
+# Guellil 2020 Genomic Historical Synthesis
 
 | Field   | Value                                                                               |
 | ------- | ----------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ tags:
 |                    Fig 2                     |
 |:--------------------------------------------:|
 | ![[guellil2020GenomicHistoricalSynthesis_fig2.jpg]] |
-| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](Guellil%20et%20al.%202020%20Genomic%20Historical%20Synthesis.md) |
+| [Historically reconstructed introduction routes of _Y. pestis_ for available 18th century genomes, consisting of multiple spatiotemporal waves.](Guellil%202020%20Genomic%20Historical%20Synthesis.md) |
 
 
 ## Notes
