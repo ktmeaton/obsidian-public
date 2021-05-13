@@ -53,8 +53,8 @@ cp -f output/manuscript.html ${cwd}/"${INPUT%.*}".html
 cp -f output/manuscript.pdf ${cwd}/"${INPUT%.*}".pdf
 cp -f output/manuscript.docx ${cwd}/"${INPUT%.*}".docx
 
-rm output/*.{pdf,html,tsv,json,docx} output/manuscript.md
-rm content/01.manuscript.md
+#rm output/*.{pdf,html,tsv,json,docx} output/manuscript.md
+#rm content/01.manuscript.md
 rm content/01.manuscript.md.tmp
 rm content/manual-references.json
 rm content/metadata.yaml

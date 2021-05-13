@@ -8,13 +8,23 @@ title: Extract SVG Using Puppeteer
 type: [[Task]]
 ---
 
-# Extract SVG Using Puppeteer
+# Extract SVG Using Puppeteer and Pyppeteer
 
 ## Workflow
 
 The full workflow is documented in [this comment](https://github.com/nextstrain/auspice/issues/1066#issuecomment-830712128).
 
-## Notes
+## [[Pyppeteer]]
+
+1. Create a conda environment.
+```bash
+mamba create -n puppeteer python3
+conda activate puppeteer
+mamba install python=3.8
+pip install pyppeteer
+```
+
+## [[Puppeteer]]
 
 1. Install google-chrome for WSL2
 	```bash

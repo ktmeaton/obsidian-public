@@ -2,6 +2,8 @@
 ---
 aliases:
   - Rascovan et al. 2019
+  - Rascovan et al. (2019)
+  - '@rascovan2019EmergenceSpreadBasal'
 tags: 
   - 📥/📰 
   - 📝/🌱 
@@ -15,7 +17,7 @@ tags:
 | Year    | 2019                                                                                         |
 | Authors | Rascovan et al.                                                                              |
 | DOI     | <https://doi.org/10.1016/j.cell.2018.11.005>                                                 |
-| bibtex  |                                                                                              | 
+| bibtex  | rascovan2019EmergenceSpreadBasal                                                             | 
 
 ## Summary
 

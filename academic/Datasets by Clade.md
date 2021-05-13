@@ -1,12 +1,12 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-05-12
-time: 17:00
+due: 2021-05-13
+time: 11:00
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
-tags: ⬜/✨
-status: done
+tags: ⬜/🧨
+status: priority
 title: Datasets by Clade
 type: [[Task]]
 ---
@@ -76,3 +76,6 @@ done
 
 cp */*country* */*province* ../../../../../../share/geography
 ```
+
+## [[Root to Tip Regression]]
+
