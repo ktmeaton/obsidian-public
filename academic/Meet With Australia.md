@@ -17,7 +17,13 @@ time: 18:00
 
 ## [[2021-05-13]] 1800 EST / 0800 AEST
 
-[Meeting Link]()
+[Meeting Link](https://us02web.zoom.us/j/88245943522?pwd=V2FHbitaOE1MTCtDM2hsMHUyR1Fjdz09)
+
+- For clade dating results, the [[MRCA]] is reported in years before the most recent 
+- Population Size Prior and Tree Root Prior are key! Have to be very careful in selecting, and make sure the data can overcome.
+- Diffuse pop size prior.
+- To just these, run just prior without data.
+- These rates are very high! 
 
 ---
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
