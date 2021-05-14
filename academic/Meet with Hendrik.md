@@ -7,11 +7,26 @@ tags:
   - ⬜/✨  
 status: done
 type: [[Meeting]]
-due: 2021-05-11
-time: 09:00
+due: 2021-05-14
+time: 12:00
 ---
 
 # Meet with Hendrik
+
+## [[2021-05-14]]
+
+[Meeting Link](https://us02web.zoom.us/j/84161407832?pwd=NlJFcGpXVDBteXk5Y2JpanBPMWRNUT09)
+
+### Notes
+
+- Ful tree 
+- Host tree part 2, have the mirror be colored by rate?
+- Instead of CI intervals, have the timetree subtree with confidence intervals.
+- Instead of 4 clades, just do second pandemic and third pandemic.
+- Fix the labelling of the second pandemic clade, Branch labels as number of substitutions.
+- For a future figures, visualize an HPD on top of the tree.
+- Estimating temporal with clades can be accurate and powerful! Moving outside clades (ex. Polytomy) is very unstable, because of rate variation (after regression and subtree, transition to why polytomy is a problem)
+
 
 ## [[2021-05-11]]
 
