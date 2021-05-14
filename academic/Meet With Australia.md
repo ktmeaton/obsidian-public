@@ -6,11 +6,11 @@ people:
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
 tags:
-  - ⬜/🧨  
-status: priority
+  - ⬜/✨  
+status: done
 type: [[Meeting]]
 due: 2021-05-13
-time: 18:00
+time: "18:00"
 ---
 
 # Meet With Australia

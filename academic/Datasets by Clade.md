@@ -5,8 +5,8 @@ time: 11:00
 people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
-tags: ⬜/🧨
-status: priority
+tags: ⬜/✨ 
+status: done
 title: Datasets by Clade
 type: [[Task]]
 ---

@@ -20,21 +20,21 @@ from ""
 where due and contains(status,"priority") and due=date(today) and !contains(file.path, "templates")
 ```
 
-## Upcoming
-
-```dataview
-table project as Project,type as Type,due as Due, time as Time
-from ""
-where due and contains(status,"priority") and due>date(today) and !contains(file.path, "templates")
-sort due asc
-```
-
 ## Done
 
 ```dataview
 table project as Project,type as Type,due as Due
 from ""
 where due and contains(status,"done") and due=date(today) and !contains(file.path, "templates")
+sort due asc
+```
+
+## Upcoming
+
+```dataview
+table project as Project,type as Type,due as Due, time as Time
+from ""
+where due and contains(status,"priority") and due>date(today) and !contains(file.path, "templates")
 sort due asc
 ```
 
