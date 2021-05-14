@@ -10,3 +10,6 @@
 [submodule "academic/pandoc/plugins/reveal.js-menu"]
 	path = academic/pandoc/plugins/reveal.js-menu
 	url = https://github.com/denehyg/reveal.js-menu.git
+[submodule "academic/pandoc/plugins/reveal.js-tableofcontents"]
+	path = academic/pandoc/plugins/reveal.js-tableofcontents
+	url = https://github.com/naamor/reveal.js-tableofcontents.git

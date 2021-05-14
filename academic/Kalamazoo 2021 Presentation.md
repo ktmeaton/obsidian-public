@@ -24,16 +24,25 @@ type: [[Slides]]
 due: 2021-05-15
 time: 12:30
 date: 15 May 2021
-compile-revealjs: "pandoc/convert_wikilinks.py --input 'Kalamazoo 2021 Presentation.md' --output 'Kalamazoo 2021 Presentation_convert.md' && pandoc --standalone -o 'Kalamazoo 2021 Presentation.html' -t revealjs --slide-level 3 --template pandoc/templates/revealjs-obsidian/template.html --css pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa-numeric-superscript.csl 'Kalamazoo 2021 Presentation_convert.md' && rm 'Kalamazoo 2021 Presentation_convert.md';" 
+toc: false
+compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input 'Kalamazoo 2021 Presentation.md' --output 'Kalamazoo 2021 Presentation_convert.md' && pandoc --standalone -o 'Kalamazoo 2021 Presentation.html' -t revealjs --slide-level 3 --template pandoc/templates/revealjs-obsidian/template.html --css pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa-numeric-superscript.csl 'Kalamazoo 2021 Presentation_convert.md' && rm 'Kalamazoo 2021 Presentation_convert.md';" 
 ---
 
 ## Introduction
+
+<aside class="notes" style="visibility: hidden">
+Notes about the introduction section.
+</aside>
 
 ### Ancient DNA
 
 - Genetic evidence offers a window into past [[disease experience]].
 - [[Ancient DNA]] (aDNA) techniques can identify [[bacterial]] and [[viral]] DNA in [[skeletal remains]] (and even artifacts!)
 - aDNA can then be used to study [[Infectious Disease\|infectious diseases]], like [[Medieval|medieval]] [[Plague|plague]].
+
+<aside class="notes" style="visibility: hidden">
+Notes about the Ancient DNA section
+</aside>
 
 ### Applications
 
@@ -67,12 +76,50 @@ To tackle these obstacles, this project aims to do the following.
 3. And third, to integrate these data into an updated [[Global|global]] [[Phylogenetic|phylogeny]], to broaden the scope of historical [[Narrative|narratives]] present.
 4. Digital Exhibit
 
-## Methods
+## Data Collection
 
-### Collection
+### DNA Archives
 
-### Curation
+- What and where are the DNA archives?
+- International Nucleotide Sequence Database Collaboration:
+	1. USA - [National Centre for Biotechnology Information](https://www.ncbi.nlm.nih.gov/)
+	2. Europe - [European Nucleotide Archive](https://www.ebi.ac.uk/ena/)
+	3. Japan - [DNA Data Bank of Japan](https://www.ddbj.nig.ac.jp/dra/index-e.html)
+	
+<img src="https://www.ddbj.nig.ac.jp/assets/images/center/insdc_shoukai.gif" width="40%">
 
-### Dissemination
+<aside class="notes" style="visibility: hidden">
+Just as historians dive into the literary archives, geneticist tackle the DNA archives.
+</aside>
 
-## Results
+### Archive Access
+
+- Power: Rich in informative metadata!
+- Problem: No inter-record comparison or bulk record retrieval.
+
+|                                                                  |                               |
+| ------------------------------------------------------------------------ | ------------------------------ |
+| ![\|300](https://raw.githubusercontent.com/ktmeaton/NCBImeta/master/logo.png) | ![[NCBImeta Paper Header.png]] |
+
+### Data Conversion
+
+![[NCBImeta Data Conversion.png]]
+
+## Data Curation
+
+### Geography
+
+How do you go from a written description
+```
+Bayan-Ölgii, Mongolia
+```
+to geographic coordinates?
+```
+48.5470083, 89.8549358
+```
+
+- [[Geocoding]]
+
+## Dissemination
+
+## Conclusion
