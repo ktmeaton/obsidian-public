@@ -51,7 +51,7 @@
   <h1 class="title">1000 Plagues in the Genomics Era</h1>
   <p class="subtitle">Exhibiting Biographies of Bacteria</p>
   <p class="author">Katherine Eaton</p>
-  <i>Curating Medieval Plague and Pestilence</i>
+  <p>Curating Medieval Plague and Pestilence</p>
 
   <p class="date">15 May 2021</p>
 </section>
@@ -110,12 +110,32 @@ Notes about the introduction section.
 <section id="what-can-we-do" class="slide level3">
 <h3>What can we do?</h3>
 <hr>
-<ol type="1">
-<li><p>First, to design Database software to assist geneticists with the acquisition, organization, and discovery of infectious disease metadata.</p></li>
-<li><p>Second, to curate historically-meaningful metadata for the available plague genomes, both ancientand modern, and provide an accompanying bibliography.</p></li>
-<li><p>And third, to integrate these data into an updated global phylogeny, to broaden the scope of historical narratives present.</p></li>
-<li><p>Digital Exhibit</p></li>
-</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Task</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Data Collection</td>
+<td>Design Database software to assist geneticists with data collection.</td>
+</tr>
+<tr class="even">
+<td>2. Curation</td>
+<td>Curate historically-meaningful metadata for the available plague genomes.</td>
+</tr>
+<tr class="odd">
+<td>3. Dissemination</td>
+<td>Digital Exhibit</td>
+</tr>
+</tbody>
+</table>
 </section></section>
 <section>
 <section id="data-collection" class="title-slide slide level2">
@@ -142,8 +162,12 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 <h3>How is the archive accessed?</h3>
 <hr>
 <ul>
-<li>Power: Rich in informative metadata!</li>
-<li>Problem: No inter-record comparison or bulk record retrieval.</li>
+<li>Web-Browser experience is rich in informative metadata.</li>
+<li>But there is little inter-record comparison or bulk record retrieval.</li>
+</ul>
+<p>!NCBI Search Bar.png</p>
+<ul>
+<li>In response, I designed database software.</li>
 </ul>
 <p><img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBImeta%20Paper%20Header.png" style="width:60%;border: 1px solid #555"></p>
 </section>
@@ -155,31 +179,51 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 <section id="what-has-been-learned" class="slide level3">
 <h3>What has been learned?</h3>
 <hr>
+<p><strong>The Good</strong></p>
 <ul>
-<li>Strategic and transparent data collection system, very useful for interdisciplinary work.</li>
+<li>Developed a strategic and reproducible data collection process.</li>
 <li>Staying up to date with the latest and greatest <em>Y. pestis</em> research.</li>
+</ul>
+<p><strong>The Bad</strong></p>
+<ul>
 <li>Many research groups are re-inventing the wheel (myself included).</li>
 <li>Search for ways to reduce redundancy, or if the uniqueness of each project and analysis precludes that.</li>
 </ul>
+<aside class="notes" style="visibility: hidden">
+Strategic plan is very helpful for coordinating interdisciplinary projects.
+</aside>
 </section></section>
 <section>
 <section id="data-curation" class="title-slide slide level2">
 <h2>Data Curation</h2>
 
 </section>
+<section id="process" class="slide level3">
+<h3>Process</h3>
+<hr>
+<ol type="1">
+<li><p>Cross-reference the automated database with primary sources.</p>
+<ul>
+<li>Correct discrepancies and gather additional context.</li>
+</ul></li>
+<li><p>Standardize metadata fields for analysis.</p>
+<ul>
+<li>Collection Location: <em>Peru Chota, San Juan de Licupis</em></li>
+<li>Collection Date: <em>1999-04-10</em></li>
+<li>Collection Host: <em>Neopsylla setosa</em></li>
+</ul></li>
+<li><p>Examine the DNA sequence data for quality.</p></li>
+</ol>
+</section>
 <section id="collection-location" class="slide level3">
 <h3>Collection Location</h3>
 <hr>
 <ol type="1">
-<li>Selecting a <strong>nomenclature</strong> system and coordinate reference.
+<li><p>Select a <u><strong>geographic resolution</strong></u> that is appropriate for the study.</p>
 <ul>
-<li>Google Maps, MapBox, OpenStreetMap*</li>
+<li>Country, Province*, City, etc.</li>
 </ul></li>
-<li>Select a geographic <u><strong>resolution</strong></u> that is appropriate for the study.</li>
 </ol>
-<blockquote>
-<p>Analyzing plague at the level of country produces strange results!</p>
-</blockquote>
 <table>
 <tbody>
 <tr class="odd">
@@ -192,28 +236,78 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 </tr>
 </tbody>
 </table>
+<ol start="2" type="1">
+<li><p>Select a <strong>nomenclature</strong> system and coordinate reference.</p>
+<ul>
+<li>Google Maps, MapBox, OpenStreetMap*, etc.</li>
+<li>Raw: <em>Peru Chota, San Juan de Licupis, Los Porongos</em></li>
+<li>Standardized: <em>Peru, Cajamarca, Province of Chota, San Juan de Licupis</em></li>
+<li>Coordinates: <em>-6.25, -78.833333</em></li>
+</ul></li>
+</ol>
 </section>
 <section id="collection-date" class="slide level3">
 <h3>Collection Date</h3>
 <hr>
+<ol type="1">
+<li><p>Select a <u><strong>temporal resolution</strong></u> that is appropriate for the study.</p>
 <ul>
-<li>If you scour the internet, you will find it.</li>
-</ul>
+<li>Millennia, Century, Year*, Month, Day, etc.</li>
+<li>Raw: <em>1999-04-10</em></li>
+<li>Standardized: <em>1999</em></li>
+</ul></li>
+<li><p>Research how your analytical tools will handle <u><strong>uncertainty</strong></u>.</p>
+<ul>
+<li>Raw: <em>Between -2876 BCE and -2677 BCE.</em></li>
+<li>Standardized: <em>-2776 BCE +/ 100</em></li>
+</ul></li>
+<li><p>Research how your analytical tools will handle years <u><strong>BCE</strong></u>.</p>
+<ul>
+<li>Raw: <em>-2776 BCE +/ 100</em></li>
+<li>Standardized: <em>4797 YBP +/100</em></li>
+</ul></li>
+</ol>
 </section>
-<section id="sequence-quality" class="slide level3">
-<h3>Sequence Quality</h3>
+<section id="collection-host" class="slide level3">
+<h3>Collection Host</h3>
 <hr>
+<ol type="1">
+<li><p>Select a <u><strong>biological resolution</strong></u> that is appropriate for the study.</p>
 <ul>
-<li>nf-core/eager</li>
-</ul>
+<li>Family, Genus, Species etc.</li>
+<li>Human vs. Non-Human*</li>
+</ul></li>
+<li><p>This is an extremely complex field because:</p>
+<ul>
+<li>Plague Ecology: Wild Rodents – Insects – Other Mammals</li>
+<li>Taxonomic identification of a wide range of mammals is hard!</li>
+<li>“<em>Meriones libycus</em>” vs. “<em>rat</em>”</li>
+</ul></li>
+</ol>
+<p><img src="https://www.worldlifeexpectancy.com/images/a/w/b/meriones-libycus/meriones-libycus.jpg" width=30%></p>
+</section>
+<section id="dna-sequence-quality" class="slide level3">
+<h3>DNA Sequence Quality</h3>
+<hr>
+<ol type="1">
+<li><p>Select a <u><strong>genetic resolution</strong></u> that is appropriate for the study.</p>
+<ul>
+<li>Millennia, Century, Decade*, Year, Month, Day, etc.</li>
+</ul></li>
+<li><p>Process the DNA sequences using standardized workflows.</p></li>
+</ol>
+<p><img src="https://github.com/nf-core/eager/raw/master/docs/images/usage/eager2_workflow.png" width="50%"></p>
+<ol start="3" type="1">
+<li>Verify the results are congruent with the original publications.</li>
+</ol>
 </section>
 <section id="what-has-been-learned-1" class="slide level3">
 <h3>What has been learned?</h3>
 <hr>
 </section></section>
 <section>
-<section id="data-presentation" class="title-slide slide level2">
-<h2>Data Presentation</h2>
+<section id="dissemination" class="title-slide slide level2">
+<h2>Dissemination</h2>
 
 </section>
 <section id="digital-exhibit" class="slide level3">

@@ -86,13 +86,11 @@ Notes about the introduction section.
 
 <hr>
 
-1. First, to design [[Database]] [[Software|software]] to assist geneticists with the acquisition, organization, and discovery of [[Infectious Disease|infectious disease]] [[Metadata|metadata]]. 
-
-2. Second, to [[Curate|curate]] historically-meaningful [[Metadata|metadata]] for the available plague genomes, both [[Ancient|ancient]]and [[Modern|modern]], and provide an accompanying [[Bibliography|bibliography]]. 
-
-3. And third, to integrate these data into an updated [[Global|global]] [[Phylogenetic|phylogeny]], to broaden the scope of historical [[Narrative|narratives]] present.
-
-4. Digital Exhibit
+| Step            | Task            |
+| --------------- | --------------- |
+| 1. Data Collection | Design [[Database]] [[Software\|software]] to assist geneticists with data collection.                |
+| 2. Curation        |  [[Curate\|Curate]] historically-meaningful [[Metadata\|metadata]] for the available plague genomes.                 |
+| 3. Dissemination     | Digital Exhibit | 
 
 ## Data Collection
 
@@ -115,8 +113,12 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 
 <hr>
 
-- Power: Rich in informative metadata!
-- Problem: No inter-record comparison or bulk record retrieval.
+- Web-Browser experience is rich in informative metadata.
+- But there is little inter-record comparison or bulk record retrieval.
+
+![[NCBI Search Bar.png]]
+
+- In response, I designed database software.
 
 <img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBImeta%20Paper%20Header.png" style="width:60%;border: 1px solid #555">
 
@@ -130,47 +132,126 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 
 <hr>
 
-- Strategic and transparent data collection system, very useful for interdisciplinary work. 
+**The "Good"**
+
+- Developed a strategic and reproducible data collection process. 
 - Staying up to date with the latest and greatest *[[Yersinia pestis|Y. pestis]]* research.
+
+**The "Bad"**
+
 - Many research groups are re-inventing the wheel (myself included). 
 - Search for ways to reduce redundancy, or if the uniqueness of each project and analysis precludes that.
 
+<aside class="notes" style="visibility: hidden">
+Strategic plan is very helpful for coordinating interdisciplinary projects.
+</aside>
+
 ## Data [[Curate\|Curation]]
+
+### Process
+
+<hr>
+
+1. Cross-reference the automated database with primary sources.
+
+	- Correct discrepancies and gather additional context.
+
+2. Standardize metadata fields for analysis.
+
+	- Collection Location: *Peru Chota, San Juan de Licupis*
+	- Collection Date: *1999-04-10*
+	- Collection Host: *Neopsylla setosa*
+
+3. Examine the DNA sequence data for quality.
 
 ### Collection Location
 
 <hr>
 
-1. Selecting a **nomenclature** system and coordinate reference.
-	- Google Maps, MapBox, OpenStreetMap*
+ 1. Select a <u>**geographic resolution**</u> that is appropriate for the study.
 
-
-2. Select a geographic <u>**resolution**</u> that is appropriate for the study.
-
-> Analyzing plague at the level of country produces strange results!
+	- Country, Province*, City, etc.
 
 |                                                                                                           |                                                                                                            |
 |:---------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
 | <img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/russia_country.jpg"> | <img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/russia_province.jpg"> |
 |                                       <small>*Country (N=85)*</small>                                       |                                       <small>*Province (N=85)*</small>                                       |
 
+2. Select a **nomenclature** system and coordinate reference.
+
+	- Google Maps, MapBox, OpenStreetMap*, etc.
+    - Raw: *Peru Chota, San Juan de Licupis, Los Porongos*
+    - Standardized: *Peru, Cajamarca, Province of Chota, San Juan de Licupis*
+    - Coordinates: *-6.25, -78.833333*
+
 ### Collection Date
 
 <hr>
 
-- If you scour the internet, you will find it.
+1. Select a <u>**temporal resolution**</u> that is appropriate for the study.
 
-### Sequence Quality
+	- Millennia, Century, Year*, Month, Day, etc.
+	- Raw: *1999-04-10*
+	- Standardized: *1999*
+
+2. Research how your analytical tools will handle <u>**uncertainty**</u>.
+
+	- Raw: *Between -2876 BCE and -2677 BCE.*
+	- Standardized: *-2776 BCE +/ 100*
+
+3. Research how your analytical tools will handle years <u>**[[BCE]]**</u>.
+
+	- Raw: *-2776 BCE +/ 100*
+	- Standardized: *4797 YBP +/100*
+
+### Collection Host
 
 <hr>
 
-- [[nf-core/eager]]
+1. Select a <u>**biological resolution**</u> that is appropriate for the study.
+
+	- Family, Genus, Species etc.
+	- Human vs. Non-Human*
+
+2. This is an extremely complex field because:
+
+	- Plague Ecology: Wild Rodents -- Insects -- Other Mammals
+	- Taxonomic identification of a wide range of mammals is hard!
+	- "*Meriones libycus*" vs. "*rat*"
+
+<img src="https://www.worldlifeexpectancy.com/images/a/w/b/meriones-libycus/meriones-libycus.jpg" width=30%>
+
+### DNA Sequence Quality
+
+<hr>
+
+1. Select a <u>**genetic resolution**</u> that is appropriate for the study.
+
+	- Millennia, Century, Decade*, Year, Month, Day, etc.
+
+2. Process the DNA sequences using standardized workflows.
+
+<img src="https://github.com/nf-core/eager/raw/master/docs/images/usage/eager2_workflow.png" width="50%">
+
+3. Verify the results are congruent with the original publications.
+
 
 ### What has been learned?
 
 <hr>
 
-## Data Presentation
+**The "Good"**
+
+- Despite the automated database missing many fields, they could *easily* be recovered from the primary sources.
+
+**The "Bad"**
+
+- Data curation is a thoughtful process, that is highly tailored to a specific researcher's needs.
+- How are we to integrate curated and standardized metadata across projects?
+
+![[AncientMetagenomeDir Paper Header.png]]
+
+## Dissemination
 
 ### Digital Exhibit
 
