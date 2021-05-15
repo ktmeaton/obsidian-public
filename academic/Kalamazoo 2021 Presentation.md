@@ -137,32 +137,44 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 
 ## Data [[Curate\|Curation]]
 
-### Geographic Database
+### Collection Location
 
-1. Select a geographic <u>**database**</u> for nomenclature and coordinate systems.
+<hr>
 
-| Google Maps                    | OpenStreetMap*                     |
-| ------------------------------ | ---------------------------------- |
-| ![[google_maps_kurdistan.jpg]] | ![[open_street_map_kurdistan.jpg]] |
+1. Selecting a **nomenclature** system and coordinate reference.
+	- Google Maps, MapBox, OpenStreetMap*
 
-
-### Geographic Resolution
 
 2. Select a geographic <u>**resolution**</u> that is appropriate for the study.
 
-| Country (N=85)          | Province*   (N=85)        |
-| ----------------------- | ------------------------ |
-| ![[russia_country.jpg]] | ![[russia_province.jpg]] |
-	
+> Analyzing plague at the level of country produces strange results!
+
+|                                                                                                           |                                                                                                            |
+|:---------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
+| <img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/russia_country.jpg"> | <img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/russia_province.jpg"> |
+|                                       <small>*Country (N=85)*</small>                                       |                                       <small>*Province (N=85)*</small>                                       |
+
 ### Collection Date
+
+<hr>
 
 - If you scour the internet, you will find it.
 
 ### Sequence Quality
 
+<hr>
+
 - [[nf-core/eager]]
 
-## Digital Exhibit
+### What has been learned?
+
+<hr>
+
+## Data Presentation
+
+### Digital Exhibit
+
+<hr>
 
 ## Conclusion
 
