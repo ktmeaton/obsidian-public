@@ -6,7 +6,7 @@ aliases:
   - "1000 Plagues in the Genomics Era"
   - "Exhibiting Biographies of Bacteria"
 author: 
-  - [[Katherine Eaton]]
+  - [[Katherine Eaton]], [[Ann Carmichael]], [[Edward Holmes]], [[Brian Golding]], [[Sebastian Duchene]], [[Leo Featherstone]], [[Hendrik Poinar]]
 authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
@@ -277,9 +277,10 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 <!--
 <iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?d=map&p=full" height="500px" width=800px ></iframe>
--->
 
 <iframe id="igraph" scrolling="no" style="border:1px;" src="http://localhost:4000/all?d=map&p=full" height="500px" width=800px ></iframe>
+
+-->
 
 ### [[Nextstrain]] Phylogeny
 
@@ -287,13 +288,32 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 <!--
 <iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?d=tree&p=full" height="500px" width=800px ></iframe>
--->
 
 <iframe id="igraph" scrolling="no" style="border:1px;" src="http://localhost:4000/all?d=tree&p=full" height="500px" width=800px ></iframe>
 
+-->
+
 ### [[Nextstrain]] Narrative
 
+<!--
+
 <iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography/DHSI2020Remote?n=6" height="500px" width=800px ></iframe>
+
+-->
+
+### What has been learned?
+
+<hr>
+
+**The "Good"**
+
+- Digital exhibits are not just for polished, final products.
+- Useful in collaborative work, discussing how interpretations connect with the data.
+
+**The "Bad"**
+
+- Web servers and web pages require maintenance, can be fragile, and can crash!
+- Requires extensive documentation to be accessible for the target audience.
 
 ## Conclusion
 
@@ -315,11 +335,12 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 > Digital exhibits are a fun way to share data, and pair well with scholarly publication.
 > 
-> Testing testing
+> The interactive nature is powerful for large sample sizes with a lot of contextual metadata.
 
 ## Acknowledgements
 
-![[Acknowledgements.png]]
+<img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/Acknowledgements.png" style="width:100%">
+
 
 
 ## References
