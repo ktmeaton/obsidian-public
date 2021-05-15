@@ -68,7 +68,7 @@ Notes about the introduction section.
 1. Extensive sampling across time and place.
 1. Careful [[Curation|curation]] of DNA sequences and metadata. 
 
-> Fortunately, recent advances in DNA [[Sequencing|sequencing]] technology have facilitated efforts to conduct this extensive sampling on a [[Global]] scale, and [[data repositories]] continue to grow at unprecedented rates.
+> Fortunately, recent advances in DNA [[Sequencing|sequencing]] technology have facilitated efforts to conduct this extensive sampling on a [[Global\|global]] scale, and [[data repositories]] continue to grow at unprecedented rates.
 
 ### What are some obstacles?
 
@@ -88,9 +88,9 @@ Notes about the introduction section.
 
 | Step            | Task            |
 | --------------- | --------------- |
-| 1. Data Collection | Design [[Database]] [[Software\|software]] to assist geneticists with data collection.                |
+| 1. Data Collection | Design [[Database\|database]] [[Software\|software]] to assist geneticists with data collection.                |
 | 2. Curation        |  [[Curate\|Curate]] historically-meaningful [[Metadata\|metadata]] for the available plague genomes.                 |
-| 3. Dissemination     | Digital Exhibit | 
+| 3. Dissemination     | Construction of digital exhibits. | 
 
 ## Data Collection
 
@@ -113,12 +113,12 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 
 <hr>
 
-- Web-Browser experience is rich in informative metadata.
+- The web browser experience is rich in informative metadata.
 - But there is little inter-record comparison or bulk record retrieval.
 
-![[NCBI Search Bar.png]]
+<img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBI Search Bar.png" style="width:60%;border: 1px solid #555">
 
-- In response, I designed database software.
+- In response, I designed database software!
 
 <img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBImeta%20Paper%20Header.png" style="width:60%;border: 1px solid #555">
 
@@ -139,8 +139,8 @@ Just as historians dive into the literary archives, geneticist tackle the DNA ar
 
 **The "Bad"**
 
-- Many research groups are re-inventing the wheel (myself included). 
-- Search for ways to reduce redundancy, or if the uniqueness of each project and analysis precludes that.
+- Yet Another Software Tool (YAST).
+- Time will tell if this tool has longevity and wider applicability.
 
 <aside class="notes" style="visibility: hidden">
 Strategic plan is very helpful for coordinating interdisciplinary projects.
@@ -152,17 +152,21 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 <hr>
 
-1. Cross-reference the automated database with primary sources.
+#### 1. Cross-reference the automated database with primary sources.
 
-	- Correct discrepancies and gather additional context.
+- Correct discrepancies and gather additional context.
 
-2. Standardize metadata fields for analysis.
+> *Never blindly trust an automatation tool. Even one you wrote yourself :) *
 
-	- Collection Location: *Peru Chota, San Juan de Licupis*
-	- Collection Date: *1999-04-10*
-	- Collection Host: *Neopsylla setosa*
+#### 2. Select a metadata "resolution" and standardize fields for analysis.
 
-3. Examine the DNA sequence data for quality.
+- Collection Location: "*Peru Chota, San Juan de Licupis*"
+
+- Collection Date: "*1999-04-10*"
+
+- Collection Host: "*Neopsylla setosa*"
+
+#### 3. Examine and filter the DNA sequence data based on quality.
 
 ### Collection Location
 
@@ -231,7 +235,7 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 2. Process the DNA sequences using standardized workflows.
 
-<img src="https://github.com/nf-core/eager/raw/master/docs/images/usage/eager2_workflow.png" width="50%">
+<img src="https://github.com/nf-core/eager/raw/master/docs/images/usage/eager2_workflow.png" width="50%" >
 
 3. Verify the results are congruent with the original publications.
 
@@ -242,14 +246,14 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 **The "Good"**
 
-- Despite the automated database missing many fields, they could *easily* be recovered from the primary sources.
+- Most missing metadata fields could be recovered from the primary sources.
+- Curation is very subjective, but the process can still be transparent.
 
 **The "Bad"**
 
-- Data curation is a thoughtful process, that is highly tailored to a specific researcher's needs.
 - How are we to integrate curated and standardized metadata across projects?
 
-![[AncientMetagenomeDir Paper Header.png]]
+<img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/master/academic/AncientMetagenomeDir Paper Header.png" style="width:40%;border: 1px solid #555">
 
 ## Dissemination
 
@@ -257,6 +261,65 @@ Strategic plan is very helpful for coordinating interdisciplinary projects.
 
 <hr>
 
+*"To facilitate [[Curate|curation]] and to promote engagement with the project, two [[Digital Exhibit|digital exhibits]] are planned."*
+
+#### 1. [[Nextstrain]] [[Phylogenetic]] Presentation.
+
+- [[Interactive]] display of [[Disease\|disease]] relationships between regions and over time.
+
+#### ~~2. [[ArcGIS]] [[Interactive]] [[StoryMap]]~~
+
+- Spatial distribution can be interrogated along with an accompanying presentation of relevant historical records and archaeologically artifacts.
+
+### [[Nextstrain]] Maps
+
+<hr>
+
+<!--
+<iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?d=map&p=full" height="500px" width=800px ></iframe>
+-->
+
+<iframe id="igraph" scrolling="no" style="border:1px;" src="http://localhost:4000/all?d=map&p=full" height="500px" width=800px ></iframe>
+
+### [[Nextstrain]] Phylogeny
+
+<hr>
+
+<!--
+<iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?d=tree&p=full" height="500px" width=800px ></iframe>
+-->
+
+<iframe id="igraph" scrolling="no" style="border:1px;" src="http://localhost:4000/all?d=tree&p=full" height="500px" width=800px ></iframe>
+
+### [[Nextstrain]] Narrative
+
+<iframe id="igraph" scrolling="no" style="border:1px;" src="https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography/DHSI2020Remote?n=6" height="500px" width=800px ></iframe>
+
 ## Conclusion
+
+### Contributions
+
+<hr> 
+
+#### 1. Data Collection
+
+> Automated database tools <u>**save time and reduce error**</u> in parsing DNA archives.
+
+#### 2. Curation
+
+>Curated is subjective and produces project-specific metadata. But this subjective process can be transparent and standardized!
+>
+> Geocoding plague genomes will pave the way for in-depth geospatial analysis.
+
+#### 3. Dissemination
+
+> Digital exhibits are a fun way to share data, and pair well with scholarly publication.
+> 
+> Testing testing
+
+## Acknowledgements
+
+![[Acknowledgements.png]]
+
 
 ## References
