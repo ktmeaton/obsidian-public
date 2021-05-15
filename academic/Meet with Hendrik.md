@@ -19,7 +19,6 @@ time: 12:00
 
 ### Notes
 
-- Ful tree 
 - Host tree part 2, have the mirror be colored by rate?
 - Instead of CI intervals, have the timetree subtree with confidence intervals.
 - Instead of 4 clades, just do second pandemic and third pandemic.

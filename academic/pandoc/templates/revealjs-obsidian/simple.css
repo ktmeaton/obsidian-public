@@ -17,7 +17,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --background-color: #fff;
   --main-font: Lato, sans-serif;
   --main-font-size: 0.80em;
-  --code-font-size: 0.40em;
+  --code-font-size: 0.60em;
   --list-font-size: 0.80em;
   --main-color: #000;
   --block-margin: 20px;
@@ -85,13 +85,21 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 1.75em; }
+  font-size: 1.75em; 
+  font-weight: bold;  
+}
 
 .reveal h2 {
-  font-size: 2.00em; }
+  font-size: 2.00em; 
+  font-weight: bold; 
+  text-transform: uppercase;
+}
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.55em; 
+  font-weight: bold;
+  text-transform: uppercase;  
+}
 
 .reveal h4 {
   font-size: 1em; }
@@ -170,12 +178,16 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); 
+}
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
-  display: inline-block; }
+  display: inline-block; 
+  font-size: var(--code-font-size);
+}
 
 .reveal q {
   font-style: italic; }
@@ -299,3 +311,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+/*********************************************
+ * Custom
+ *********************************************/
+ .csl-entry {
+  font-size: 0.5em; }

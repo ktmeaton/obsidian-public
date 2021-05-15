@@ -34,53 +34,72 @@ compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input 
 Notes about the introduction section.
 </aside>
 
-### Ancient DNA
+### What is Ancient DNA?
 
+<hr>
+
+- DNA retrieved from [[skeletal remains]] (+soil and artifacts!)
 - Genetic evidence offers a window into past [[disease experience]].
-- [[Ancient DNA]] (aDNA) techniques can identify [[bacterial]] and [[viral]] DNA in [[skeletal remains]] (and even artifacts!)
-- aDNA can then be used to study [[Infectious Disease\|infectious diseases]], like [[Medieval|medieval]] [[Plague|plague]].
+- Can be used to study [[Infectious Disease\|infectious diseases]], like [[Medieval|medieval]] [[Plague|plague]].
 
-<aside class="notes" style="visibility: hidden">
-Notes about the Ancient DNA section
-</aside>
+<img src="https://newhumanist.org.uk/images/rowson-DNA.jpg" width="40%" />
 
-### Applications
+<small>*Illustration by Martin Rowson*</small>
 
-1. **WHEN** did [[plague]] first appear in human populations? [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains ]]]
-1. **WHERE** has [[plague]] appeared [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]]?
-1. **HOW** has [[plague]] moved across the landscape?
+### How is Ancient DNA applied?
 
-### Requirements
+<hr>
 
-- However, the ability to accurately reconstruct [[Geospatial|spatial patterns]] of an ancient disease requires [[robust comparative datasets]]. 
-- In order to produce such datasets, extensive sampling is required across both time and place, followed by careful [[Curation|curation]]. 
-- Fortunately, recent advances in DNA [[Sequencing|sequencing]] technology have facilitated efforts to conduct this extensive sampling on a [[Global]] scale, and [[data repositories]] continue to grow at unprecedented rates.
+1. **WHEN** did [[plague]] first appear in human populations [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains ]]] ?
+1. **WHERE** has [[plague]] appeared [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]] ?
+1. **HOW** has [[plague]] moved across the landscape [[Guellil 2020 Genomic Historical Synthesis\|[@guellil2020GenomicHistoricalSynthesis]]] ?
 
-### Problem
 
-- However, this technological progress has also placed a strain on our ability to effectively manage, [[curate]], and present the avalanche of data effectively. 
-- Despite there being over 1000 publicly available [[plague]] [[Genome|genomes]], only 200-300 are routinely used in comparative frameworks. 
+<img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/guellil2020GenomicHistoricalSynthesis_fig2.jpg" width="40%" />
 
-We hypothesize this may be primarily attributed to the following three reasons, as the additional datasets are: 
+<small>*[[Guellil 2020 Genomic Historical Synthesis\|Guellil et al. (2020)]]*</small>
 
-1. not known about
-2. known about, but difficult to access
-3. accessible, but lack historically-meaningful [[Metadata|metadata]] .
+### What evidence is needed?
 
-### Objectives
+<hr>
 
-To tackle these obstacles, this project aims to do the following. 
+<span style="color:#00008B">[[Robust comparative datasets]]</span>
+
+1. Extensive sampling across time and place.
+1. Careful [[Curation|curation]] of DNA sequences and metadata. 
+
+> Fortunately, recent advances in DNA [[Sequencing|sequencing]] technology have facilitated efforts to conduct this extensive sampling on a [[Global]] scale, and [[data repositories]] continue to grow at unprecedented rates.
+
+### What are some obstacles?
+
+<hr>
+
+- This technological progress has created an avalanche of data.
+
+- Challenging to <u>**collect**</u>, <u>**[[curate]]**</u>, and <u>**present**</u> this information. 
+
+- 1600+ publicly available [[plague]] [[Genome|genomes]].
+
+- Only 200-300 are routinely used in comparative frameworks. 
+
+### What can we do?
+
+<hr>
 
 1. First, to design [[Database]] [[Software|software]] to assist geneticists with the acquisition, organization, and discovery of [[Infectious Disease|infectious disease]] [[Metadata|metadata]]. 
+
 2. Second, to [[Curate|curate]] historically-meaningful [[Metadata|metadata]] for the available plague genomes, both [[Ancient|ancient]]and [[Modern|modern]], and provide an accompanying [[Bibliography|bibliography]]. 
+
 3. And third, to integrate these data into an updated [[Global|global]] [[Phylogenetic|phylogeny]], to broaden the scope of historical [[Narrative|narratives]] present.
+
 4. Digital Exhibit
 
 ## Data Collection
 
-### DNA Archives
+### What is a DNA archive?
 
-- What and where are the DNA archives?
+<hr>
+
 - International Nucleotide Sequence Database Collaboration:
 	1. USA - [National Centre for Biotechnology Information](https://www.ncbi.nlm.nih.gov/)
 	2. Europe - [European Nucleotide Archive](https://www.ebi.ac.uk/ena/)
@@ -92,34 +111,59 @@ To tackle these obstacles, this project aims to do the following.
 Just as historians dive into the literary archives, geneticist tackle the DNA archives.
 </aside>
 
-### Archive Access
+### How is the archive accessed?
+
+<hr>
 
 - Power: Rich in informative metadata!
 - Problem: No inter-record comparison or bulk record retrieval.
 
-|                                                                  |                               |
-| ------------------------------------------------------------------------ | ------------------------------ |
-| ![\|300](https://raw.githubusercontent.com/ktmeaton/NCBImeta/master/logo.png) | ![[NCBImeta Paper Header.png]] |
+<img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBImeta%20Paper%20Header.png" style="width:60%;border: 1px solid #555">
 
-### Data Conversion
+### How is the data transformed?
 
-![[NCBImeta Data Conversion.png]]
+<hr>
 
-## Data Curation
+<img src="https://github.com/ktmeaton/obsidian-public/raw/master/academic/NCBImeta%20Data%20Conversion.png" style="width:80%;border: 1px solid #555">
 
-### Geography
+### What has been learned?
 
-How do you go from a written description
-```
-Bayan-Ölgii, Mongolia
-```
-to geographic coordinates?
-```
-48.5470083, 89.8549358
-```
+<hr>
 
-- [[Geocoding]]
+- Strategic and transparent data collection system, very useful for interdisciplinary work. 
+- Staying up to date with the latest and greatest *[[Yersinia pestis|Y. pestis]]* research.
+- Many research groups are re-inventing the wheel (myself included). 
+- Search for ways to reduce redundancy, or if the uniqueness of each project and analysis precludes that.
 
-## Dissemination
+## Data [[Curate\|Curation]]
+
+### Geographic Database
+
+1. Select a geographic <u>**database**</u> for nomenclature and coordinate systems.
+
+| Google Maps                    | OpenStreetMap*                     |
+| ------------------------------ | ---------------------------------- |
+| ![[google_maps_kurdistan.jpg]] | ![[open_street_map_kurdistan.jpg]] |
+
+
+### Geographic Resolution
+
+2. Select a geographic <u>**resolution**</u> that is appropriate for the study.
+
+| Country (N=85)          | Province*   (N=85)        |
+| ----------------------- | ------------------------ |
+| ![[russia_country.jpg]] | ![[russia_province.jpg]] |
+	
+### Collection Date
+
+- If you scour the internet, you will find it.
+
+### Sequence Quality
+
+- [[nf-core/eager]]
+
+## Digital Exhibit
 
 ## Conclusion
+
+## References
