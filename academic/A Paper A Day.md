@@ -22,15 +22,17 @@ tags:
 
 <progress id="file" value="20" max="100"> 0% </progress> 20%
 
-| 10  | 11  |                      12                      |                      13                       | 14  |
-|:---:|:---:|:--------------------------------------------:|:---------------------------------------------:|:---:|
-|     |     | [[Bramanti 2021 Assessing Origins European]] | [[Duchene 2020 Bayesian Evaluation Temporal]] |     |
+| 10  | 11  |                      12                      | 13  | 14  |
+|:---:|:---:|:--------------------------------------------:|:---:|:---:|
+|     |     | [[Bramanti 2021 Assessing Origins European]] |     |     |
 
 #### Week 3
 
+<progress id="file" value="20" max="100"> 0% </progress> 20%
+
 | 17  | 18  | 19  | 20  | 21  |
 |:---:|:---:|:---:|:---:|:---:|
-|     |     |     |     |     |
+|     | [[Duchene 2020 Bayesian Evaluation Temporal]]    |     |     |     |
 
 #### Week 4
 

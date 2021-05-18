@@ -8,7 +8,7 @@
   <meta name="author" content="Leo Featherstone" />
   <meta name="author" content="Sebastian Duchene" />
   <meta name="author" content="Hendrik Poinar" />
-  <meta name="dcterms.date" content="2021-05-13" />
+  <meta name="dcterms.date" content="2021-05-18" />
   <title>Plague Phylodynamics and Phylogeography</title>
   <style>
     code{white-space: pre-wrap;}
@@ -30,8 +30,8 @@
   <meta name="citation_title" content="Plague Phylodynamics and Phylogeography" />
   <meta property="og:title" content="Plague Phylodynamics and Phylogeography" />
   <meta property="twitter:title" content="Plague Phylodynamics and Phylogeography" />
-  <meta name="dc.date" content="2021-05-13" />
-  <meta name="citation_publication_date" content="2021-05-13" />
+  <meta name="dc.date" content="2021-05-18" />
+  <meta name="citation_publication_date" content="2021-05-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,10 +65,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://rawcdn.githack.com/ktmeaton/obsidian-public/4f0256a5/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html">permalink</a>)
+(<a href="https://rawcdn.githack.com/ktmeaton/obsidian-public/bd0cba1c/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ktmeaton/obsidian-public/tree/4f0256a5">ktmeaton/obsidian-public@4f0256a5</a>
-on May 13, 2021.
+from <a href="https://github.com/ktmeaton/obsidian-public/tree/bd0cba1c">ktmeaton/obsidian-public@bd0cba1c</a>
+on May 18, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -120,9 +120,55 @@ McMaster Ancient DNA Center; Department of Anthropology, McMaster University
 </ul>
 <h2 class="page_break_before" id="materials-and-methods">Materials and Methods</h2>
 <h3 id="data-collection">Data Collection</h3>
-<h3 id="data-quality-criteria">Data Quality Criteria</h3>
-<h3 id="subsampled-datasets">Subsampled Datasets</h3>
+<p><em>Y. pestis</em> genome sequencing projects were retrieved from the NCBI databases using NCBImeta <span class="citation" data-cites="131fQLiJt">[<a href="#ref-131fQLiJt" role="doc-biblioref">10</a>]</span>. 1657 projects were identified and comprised three genomic types: 586 modern assembled, 184 ancient unassembled, and 887 modern unassembled genomes. The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. Future work will investigate computationally efficient methods for integrating this data.</p>
+<p>Collection location, collection date, and collection host metadata were curated by cross-referencing the original publications. Collection location was transformed to latitude and longitude coordinates using GeoPy and the Nominatim API for OpenStreetMap <span class="citation" data-cites="hxWSqZgm M15a78x5 5rCiNisz">[<a href="#ref-hxWSqZgm" role="doc-biblioref">11</a>,<a href="#ref-M15a78x5" role="doc-biblioref">12</a>,<a href="#ref-5rCiNisz" role="doc-biblioref">13</a>]</span>. Coordinates were standardized at a sub-country resolution, taking the centroid of the parent province/state. Collection dates were standardized according to their year, and recording uncertainty arising from missing data and radiocarbon estimates. Collection host was the most diverse field with regards to precision, ranging from colloquial nomenclature (<em>“rat”</em>) to a genus species taxonomy (<em>“Meriones libycus”</em>). For the purposes of this study, collection host was recorded as <em>Human</em>, <em>Non-Human</em>, or <em>Not Available</em>, given the inability to differentiate non-human mammalian hosts.</p>
+<p>Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation. After curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient.</p>
+<p>Two additional datasets were required for downstream analyses. First, <em>Y. pestis</em> strain CO92 (GCA_000009065.1) was used as the reference genome for sequence alignment and variant annotation. Second, <em>Yersinia pseudotuberculosis</em> strains NCTC10275 (GCA_900637475.1) and IP32953 (GCA_000834295.1) served as an outgroup to root the maximum likelihood phylogeny.</p>
+<h3 id="sequence-quality-criteria">Sequence Quality Criteria</h3>
+<h4 id="alignment">Alignment</h4>
+<p>Ancient unassembled genomes were downloaded from the SRA databases in FASTQ format using the SRA Toolkit <span class="citation" data-cites="puYDXtJ9">[<a href="#ref-puYDXtJ9" role="doc-biblioref">14</a>]</span>. Pre-processing and alignment to the reference genome was performed using the nf-core/eager pipeline, a reproducible workflow for ancient genome reconstruction <span class="citation" data-cites="17yD9OrGW">[<a href="#ref-17yD9OrGW" role="doc-biblioref">15</a>]</span>. Ancient genomes were removed if the number of sites covered at a minimum depth of 3X was less than 70% of the reference genome.</p>
+<p>Modern assembled genomes were aligned to the reference genome using Snippy, a pipeline for core genome alignments <span class="citation" data-cites="1DR126iIZ">[<a href="#ref-1DR126iIZ" role="doc-biblioref">16</a>]</span>. Modern genomes were removed if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome.</p>
+<p>A multiple sequence alignment was constructed using the Snippy Core module of the Snippy pipeline. The output alignment was filtered to only include chromosomal variants and to exclude sites that had more than 5% missing data.</p>
 <h3 id="phylogenetic-reconstruction">Phylogenetic Reconstruction</h3>
+<p>Model selection was performed using Modelfinder which identified the K3Pu+F+I model as the optimal choice based on the Bayesian Information Criterion (BIC) <span class="citation" data-cites="QZIPWLUx">[<a href="#ref-QZIPWLUx" role="doc-biblioref">17</a>]</span>. A maximum-likelihood phylogeny was then estimated across 10 independent runs of IQTREE <span class="citation" data-cites="mkkgRhHT">[<a href="#ref-mkkgRhHT" role="doc-biblioref">18</a>]</span>. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation, with a threshold of 95% required for strong support <span class="citation" data-cites="Hoang">[<span class="citeproc-not-found" data-reference-id="Hoang"><strong>???</strong></span> Improving Ultrafast]</span>.</p>
+<h3 id="subsampled-datasets">Subsampled Datasets</h3>
+<p>To improve the performance of Bayesian analysis, three datasets were constructed.</p>
+<table>
+<colgroup>
+<col style="width: 7%"></col>
+<col style="width: 10%"></col>
+<col style="width: 32%"></col>
+<col style="width: 50%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Total Size</th>
+<th>Composition</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Full</td>
+<td>N=600</td>
+<td>Single alignment of all genomes.</td>
+<td>Alignment, maximum-likelihood phylogeny.</td>
+</tr>
+<tr class="even">
+<td>Clade</td>
+<td>N=600</td>
+<td>Separated by clade</td>
+<td>Dating and phylogeography</td>
+</tr>
+<tr class="odd">
+<td>Reduced</td>
+<td>N=200</td>
+<td>Subsampled</td>
+<td>Demonstrate dating instability</td>
+</tr>
+</tbody>
+</table>
 <h3 id="phylodynamics">Phylodynamics</h3>
 <h3 id="phylogeography">Phylogeography</h3>
 <h2 class="page_break_before" id="results">Results</h2>
@@ -348,6 +394,54 @@ DOI: <a href="https://doi.org/10.1016/j.micinf.2004.08.002">10.1016/j.micinf.200
 Lee Mordechai, Merle Eisenberg, Timothy P. Newfield, Adam Izdebski, Janet E. Kay, Hendrik Poinar<br />
 <em>Proceedings of the National Academy of Sciences</em> (2019-12-17) <a href="http://www.pnas.org/content/116/51/25546">http://www.pnas.org/content/116/51/25546</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1903797116">10.1073/pnas.1903797116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31792176">31792176</a></p>
+</div>
+<div id="ref-131fQLiJt">
+<p>10. <strong>NCBImeta</strong> <br />
+Katherine Eaton<br />
+<em>NCBImeta</em> (2019) <a href="https://github.com/ktmeaton/NCBImeta">https://github.com/ktmeaton/NCBImeta</a></p>
+</div>
+<div id="ref-hxWSqZgm">
+<p>11. <strong>GeoPy: A Python client for several popular geocoding web services.</strong> <br />
+Kostya Esmukov<br />
+(2020-12) <a href="https://github.com/geopy/geopy">https://github.com/geopy/geopy</a></p>
+</div>
+<div id="ref-M15a78x5">
+<p>12. <strong>Nominatim: A tool to search OpenStreetMap data.</strong> <br />
+Sarah Hoffman<br />
+(2020-12) <a href="https://github.com/osm-search/Nominatim">https://github.com/osm-search/Nominatim</a></p>
+</div>
+<div id="ref-5rCiNisz">
+<p>13. <strong>Planet dump retrieved from https://planet.osm.org</strong> <br />
+OpenStreetMap Contributors<br />
+(2017) <a href="https://www.openstreetmap.org">https://www.openstreetmap.org</a></p>
+</div>
+<div id="ref-puYDXtJ9">
+<p>14. <strong>ncbi/sra-tools</strong> <br />
+NCBI - National Center for Biotechnology Information/NLM/NIH<br />
+(2021-05-18) <a href="https://github.com/ncbi/sra-tools">https://github.com/ncbi/sra-tools</a></p>
+</div>
+<div id="ref-17yD9OrGW">
+<p>15. <strong>Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager</strong> <br />
+James A. Fellows Yates, Thiseas C. Lamnidis, Maxime Borry, Aida Andrades Valtueña, Zandra Fagernäs, Stephen Clayton, Maxime U. Garcia, Judith Neukamm, Alexander Peltzer<br />
+<em>PeerJ</em> (2021-03-16) <a href="https://peerj.com/articles/10947">https://peerj.com/articles/10947</a> <br />
+DOI: <a href="https://doi.org/10.7717/peerj.10947">10.7717/peerj.10947</a></p>
+</div>
+<div id="ref-1DR126iIZ">
+<p>16. <strong>Snippy: Rapid haploid variant calling and core genome alignment.</strong> <br />
+Torsten Seemann<br />
+(2020-03-08) <a href="https://github.com/tseemann/snippy">https://github.com/tseemann/snippy</a></p>
+</div>
+<div id="ref-QZIPWLUx">
+<p>17. <strong>ModelFinder: fast model selection for accurate phylogenetic estimates</strong> <br />
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas K. F. Wong, Arndt von Haeseler, Lars S. Jermiin<br />
+<em>Nature Methods</em> (2017-06) <a href="http://www.nature.com/articles/nmeth.4285">http://www.nature.com/articles/nmeth.4285</a> <br />
+DOI: <a href="https://doi.org/10.1038/nmeth.4285">10.1038/nmeth.4285</a></p>
+</div>
+<div id="ref-mkkgRhHT">
+<p>18. <strong>IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era</strong> <br />
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf, Michael D. Woodhams, Arndt von Haeseler, Robert Lanfear<br />
+<em>Molecular Biology and Evolution</em> (2020-05-01) <a href="https://academic.oup.com/mbe/article/37/5/1530/5721363">https://academic.oup.com/mbe/article/37/5/1530/5721363</a> <br />
+DOI: <a href="https://doi.org/10.1093/molbev/msaa015">10.1093/molbev/msaa015</a></p>
 </div>
 </div>
 <!-- default theme -->

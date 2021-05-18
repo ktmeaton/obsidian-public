@@ -4,9 +4,8 @@ title:
 people:
 project: [[plague-phylogeography]]
 tags:
-  - ⬜/🧨 
-status: 
-- priority  
+  - ⬜/✨  
+status: done 
 type: 
   - [[Conference]]
 due: 2021-05-15

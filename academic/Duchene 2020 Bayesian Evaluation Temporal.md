@@ -8,8 +8,8 @@ type: [[Literature]]
 tags: 
   - 📥/📰
   - 📝/🌱  
-due: 2021-05-17
-status: priority
+due: 2021-05-18
+status: done
 project: [[plague-phylogeography]]
 ---
 
@@ -25,6 +25,18 @@ project: [[plague-phylogeography]]
 
 
 ## Summary
+
+- [[Root to Tip Regression]] is practical, but has several important limitations. 
+1. Data points are not independent observations, given that internal branches are traversed multiple times.
+2. A strict clock-like behavior is assumed.
+- An important concept that is reiterated is [[Measurably Evolving Populations]], which is that sufficient molecular evolution has occurred over the time span of interest.
+- [[Date Randomization]] is a powerful way to test for temporal signal, but is a frequentist approach that does not mix well with [[Bayesian]] methods.
+- The new model [[Bayesian Evaluation of Temporal Signal|BETS]] compares two competing models:
+1.  [[Heterochronous]]: The true sampling date is used.
+2.[[Isochronous]]: The sampling dates are all made contemporaneous.
+- [[Bayesian Evaluation of Temporal Signal|BETS]] is therefore a test of [[Ultrametric\|ultrametricity]].
+- [[Bayes Factor]] is used to evaluate these competing models. In essence, it is the ratio of the [[Marginal Likelihood]] of the models.
+- There are numerous ways to estimate the [[Marginal Likelihood]].
 
 ## Figures
 

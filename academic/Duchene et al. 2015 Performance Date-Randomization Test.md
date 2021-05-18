@@ -12,7 +12,7 @@ tags:
 
 | Field   | Value                                       |                                                                                         |
 | ------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Title   | The performance of the [[date randomization]] test in [[Phylogenetic\|phylogenetic]] Analyses of [[temporal signal\|Time-Structured]] Virus Data |
+| Title   | The performance of the [[Date Randomization]] test in [[Phylogenetic\|phylogenetic]] Analyses of [[temporal signal\|Time-Structured]] Virus Data |
 | Year    | 2015                                        |                                                                                         |
 | Authors | Duchene et al. 2015                         |                                                                                         |
 | DOI     | https://doi.org/10.1093/molbev/msv056       |                                                                                         |
