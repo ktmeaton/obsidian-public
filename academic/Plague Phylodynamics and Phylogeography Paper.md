@@ -142,17 +142,13 @@ The first finding is that the geographic sampling strategy of *[[Yersinia pestis
 
 The second observation is that the temporal structure of genomic data reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. This is evidenced by the [[Medieval Plague]] in [[Western Europe]] having more representative samples than all of the African continent. Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
 
-The final takeaway is a highly complex pattern of geographic clustering or lack-thereof. Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]], that are routinely under biosurveillance. Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe. In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]*, which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
-
-The result is that *[[Yersinia pestis|Y. pestis]]* (Figure @fig_ibd_all).
-
-> Note: I feel a little suspicious of this figure having such a high R2 value.
-
-![Isolation by Distance (IBD) of *[[Yersinia pestis|Y. pestis]]* genomes.](https://rawcdn.githack.com/ktmeaton/obsidian-public/b68709889cd450acb654666f0362d664d4733cd2/academic/ibd_all%203.png){#fig:fig_ibd_all}
-
-The exception to this rule is the Americas, reflecting the recent history of plague's introduction to the New World in the turn of the 20th century. However, given what was previously stated concerning [[Sampling Bias]], we must be cautious in extrapolating the genomic evidence.
+The final takeaway is a highly complex pattern of geographic clustering or lack-thereof. Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]], that are routinely under biosurveillance. Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe. In these examples, a relatively large amount of genetic diversity appears in a small geographic range (Figure @fig:fig_ibd_all : blue). In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]*, which shows a relatively small amount of genetic diversity over a tremendously large geographic range (Figure @fig:fig_ibd_all : orange). 
 
 ![Geographic distribution of *Yersinia pestis* genomes](https://rawcdn.githack.com/ktmeaton/obsidian-public/b68709889cd450acb654666f0362d664d4733cd2/academic/Auspice%20Map%20Draft.png){#fig:fig_map_all}
+
+> Note: I feel a little suspicious of this figure having such a high R2 value...
+
+![Isolation by Distance (IBD) of *[[Yersinia pestis|Y. pestis]]* genomes.](https://rawcdn.githack.com/ktmeaton/obsidian-public/49fe1338ac25adafb07669075474bc0a35277790/academic/Isolation%20By%20Distance%20All%20Annotate.png){#fig:fig_ibd_all}
 
 <!--
 <iframe id="igraph" scrolling="no" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.7/main/full/all?d=map&onlyPanels&p=full&sidebar=closed&transmissions=hide" width=800px height=400px ></iframe>
