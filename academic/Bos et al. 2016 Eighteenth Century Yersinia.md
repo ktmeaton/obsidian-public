@@ -26,7 +26,7 @@ aliases:
 
 ## Dialogue
 
-- The authors cite [[Wagner et al. 2014 Yersinia Pestis Plague|Wagner et al. (2014)]] and [[Cui et al. 2013 Historical Variations Mutation]].
+- The authors cite [[Wagner et al. 2014 Yersinia Pestis Plague|Wagner et al. (2014)]] and [[Cui 2013 Historical Variations Mutation]].
  
 ## Figures
 

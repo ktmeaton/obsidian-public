@@ -16,7 +16,6 @@ tags:
 ## Tasks
 
 - [x] [[NCBImeta Test Export]]
-- [ ] [[NCBImeta Python 3.9]]
-
+- [x] [[NCBImeta Python 3.9]]
 - [ ] [[NCBImeta PyPI Release]]
 - [ ] [[NCBImeta Conda Release]]
