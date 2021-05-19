@@ -112,15 +112,17 @@ Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+
 
 To investigate the influence of between-clade variation in substitution rates, the multiple alignment was separated into the major clades of *[[Yersinia pestis\|Y. pestis]]*, which will be referred to as the *Clade* dataset. The subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade separate from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness. In total, 12 clades were considered and are described in Table @tbl:table_temporal_signal.
 
-To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 200 representative samples.
+To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of uniquely derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 200 representative samples.
 
 ### Phylodynamics
 
-To investigate the degree of temporal signal present in the data, two tests were formed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date. This linear model is a simple approach to explore whether the data follows a [[Clock Model|strict clock]] model. Uncertainty in the model parameters, namely the [[Substitution Rate\|mean substitution rate]] and [[tMRCA]], were estimated using 1000 iterations of the non-parametric bootstrap on the residuals.
+To investigate the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date. This linear model is a simple approach to explore whether the data follows a [[Clock Model|strict clock]] model. Uncertainty in the model parameters, namely the [[Substitution Rate\|mean substitution rate]] and [[tMRCA]], were estimated using 1000 iterations of the non-parametric bootstrap on the residuals.
 
 While RTT is a practical approach, it has two main limitations: 1) No rate variation is accounted for, and 2) The data are not independent observations due to shared internal branch lengths. Therefore to complement this approach, a [[Bayesian Evaluation of Temporal Signal|bayesian evaluation of temporal signal (BETS)]] was performed.
 
-A  [[Maximum-likelihood|maximum-likelihood]] [[Timetree|timetree]] was estimated using a [[Least Square Dating\|least-squares approach]] as implemented in [[LSD2]] [[To 2016 Fast Dating Using\|[@to2016FastDatingUsing]]]. Rate variation was modeled using a [[Lognormal\|lognormal]] [[Clock Model|relaxed clock]] using the default parameters for the mean (1.0) and the standard deviation (0.2). The outgroup *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* was used to root the tree and then subsequently removed.
+A  [[Maximum-likelihood|maximum-likelihood]] [[Timetree|timetree]] was estimated using a [[Least Square Dating\|least-squares approach]] as implemented in [[LSD2]] [[To 2016 Fast Dating Using\|[@to2016FastDatingUsing]]]. Rate variation was modeled using a [[Lognormal\|lognormal]] [[Clock Model|relaxed clock]] with default parameters for the mean (1.0) and the standard deviation (0.2). The outgroup *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* was used to root the tree and then subsequently removed.
+
+> Note: I'm still pondering the best choice of parameters for the LSD2 relaxed clock.
 
 A [[Bayesian\|bayesian]] [[Timetree|timetree]] was estimated using ... as implemented in [[BEAST]].
 
@@ -132,17 +134,25 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ### Curated Public Dataset
 
-After curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient. The geographic distribution of samples is shown in Figure @fig:fig_map_all. Two important findings can be drawn from this figure. One, is that the sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomic research does not reflect the known distribution of modern plague [@xu2019HistoricalGenomicData] nor does it characterize the most heavily affected regions of the world, namely [[Madagascar]] and the  [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] ([[China]]) was previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]].
+After curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient. The geographic distribution of samples is shown in Figure @fig:fig_map_all. Three important findings can be drawn from this distribution. 
 
-This visualizes the significant [[Sampling Bias\|sampling bias]] that has been previously describecd
+>Note: I want to have a timeline histogram to show the date variation.
 
-While the [[Third Pandemic]] has been intensively [[Sequencing|sequenced]], significant [[Sampling Bias]] have been described such as the [[Over-Represented|over-sampling]] of [[East Asia]] ([[China]]) by [[Spyrou 2016 Historical Pestis Genomes|Spyrou et al. (2016)]]. ... 
+The first finding is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes does not reflect the known distribution of modern plague nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague;]]  [[Xu 2019 Historical Genomic Data\|@xu2019HistoricalGenomicData]]] . The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and is a lingering latent factor in the debate on the origins and spread of historical plague [[CITE]].
 
-Which is not representative of the known distribution of modern plague [[Xu et al. 2019 Historical Genomic Data|[@xu2019HistoricalGenomicData]]] or the most severely affected populations [[WHO 2017 Plague\|[@who2017Plague]]].
+The second observation is that the temporal structure of genomic data reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. This is evidenced by the [[Medieval Plague]] in [[Western Europe]] having more representative samples than all of the African continent. Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
 
-![
-Geographic distribution of *Yersinia pestis* genomes.
-](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Auspice%20Map%Draft.png){#fig:fig_map_all}
+The final takeaway is a highly complex pattern of geographic clustering or lack-thereof. Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]], that are routinely under biosurveillance. Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe. In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]*, which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
+
+The result is that *[[Yersinia pestis|Y. pestis]]* (Figure @fig_ibd_all).
+
+> Note: I feel a little suspicious of this figure having such a high R2 value.
+
+![Isolation by Distance (IBD) of *[[Yersinia pestis|Y. pestis]]* genomes.](https://rawcdn.githack.com/ktmeaton/obsidian-public/b68709889cd450acb654666f0362d664d4733cd2/academic/ibd_all%203.png){#fig:fig_ibd_all}
+
+The exception to this rule is the Americas, reflecting the recent history of plague's introduction to the New World in the turn of the 20th century. However, given what was previously stated concerning [[Sampling Bias]], we must be cautious in extrapolating the genomic evidence.
+
+![Geographic distribution of *Yersinia pestis* genomes](https://rawcdn.githack.com/ktmeaton/obsidian-public/b68709889cd450acb654666f0362d664d4733cd2/academic/Auspice%20Map%20Draft.png){#fig:fig_map_all}
 
 <!--
 <iframe id="igraph" scrolling="no" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.7/main/full/all?d=map&onlyPanels&p=full&sidebar=closed&transmissions=hide" width=800px height=400px ></iframe>
