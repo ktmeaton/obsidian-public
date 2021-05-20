@@ -2,8 +2,8 @@
 project:
 due: 2021-05-18
 people: [[Fabio]]
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨
+status: done
 title: NCBImeta Troubleshoting for Fabio
 type: [[Task]]
 ---

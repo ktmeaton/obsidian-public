@@ -14,3 +14,7 @@ type: [[Task]]
 - [[PyPI]]: https://pypi.org/project/NCBImeta/
 - Bioconda Recipes: https://github.com/bioconda/bioconda-recipes/pulls?q=ncbimeta
 
+
+Sadly, numpy dropped support for Python 3.6 in version 1.20, and only started releasing binary wheels for Python 3.9 in version 1.19.3. Without the binary wheels, build errors occur in my CI. I did some testing and the numpy versions that can support this range of Python are extremely narrow, 1.19.3-1.19.5 . I'll do a new commit with relaxed dependencies for your review.
+
+This might be the sign that I'll also be dropping Python 3.6 in my next release...
