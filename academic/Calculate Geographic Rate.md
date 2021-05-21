@@ -2,8 +2,8 @@
 project:
 due: 2021-05-02
 people:
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨
+status: done
 title: Calculate Geographic Rate
 type: [[Task]]
 ---

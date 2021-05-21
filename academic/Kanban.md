@@ -41,8 +41,10 @@ sort due asc
 ## Backlog
 
 ```dataview
-table project as Project,type as Type
-from ""
-where contains(status,"idea") and !contains(file.path, "templates")
-sort file.name asc
+table project as Project,type as Type, tags as Tag
+from "" 
+where (contains(status,"idea") or contains(status,"backlog"))
+      and !contains(file.path, "templates")
+	  and type and type!=[[Note]]
+sort file.mtime desc
 ```

@@ -10,7 +10,7 @@ aliases:
   - Kalamazoo 2021 Abstract
 tags:
   - 📝/🌿
-status: idea
+status: done
 type: [[Abstract]]
 lang: en-US
 repo: ktmeaton/obsidian-public

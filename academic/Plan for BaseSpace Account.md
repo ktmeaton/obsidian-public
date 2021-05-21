@@ -1,9 +1,9 @@
 ---
 project: [[Lab Admin]]
-due: 2021-05-14
+due: 2021-05-21
 people:
-tags: ⬜/🚂
-status: backlog
+tags: ⬜/🧨
+status: priority
 title: Plan for BaseSpace Account
 type: [[Task]]
 ---

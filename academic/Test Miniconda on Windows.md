@@ -2,8 +2,8 @@
 project:
 due: 2021-05-01
 people:
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨ 
+status: done
 title: Test Miniconda on Windows
 type: [[Task]]
 ---

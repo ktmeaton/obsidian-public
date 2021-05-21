@@ -3,7 +3,7 @@ aliases:
   - Test Github Pages Locally
 tags:
   - 📝/🌿
-status: idea
+status: done
 type:
   - [[Note]]
   - [[Blog]]

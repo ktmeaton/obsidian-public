@@ -3,7 +3,7 @@ project:
 due:
 people:
 tags: 📝/🌱 
-status: idea
+status: done
 title: Sed Fix Tree Files
 type: [[Task]]
 ---

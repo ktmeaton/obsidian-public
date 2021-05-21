@@ -1,7 +1,7 @@
 ---
 project: [[Obsidian]]
-tags: ⬜/📋 
-status: idea
+tags: ⬜/✨
+status: done
 title: Docx export with Manubot
 type: [[Task]]
 ---

@@ -2,8 +2,8 @@
 project:
 due: 2021-04-18
 people:
-tags: #⬜/✨  
-status: idea
+tags: ⬜/✨  
+status: done
 type: [[Task]]
 aliases:
   - Analyze First BEAST1 Run

@@ -3,7 +3,7 @@ project:
 due: 2021-05-01
 people:
 tags: ⬜/✨ 
-status: idea
+status: done
 title: Extract SVG Using Puppeteer
 type: [[Task]]
 ---

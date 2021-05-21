@@ -1,9 +1,9 @@
 ---
 project: [[plague-phylogeography]]
-due: 2021-05-20
+due: 2021-05-21
 people:
-tags: #⬜/📋 
-status: idea
+tags: ⬜/🧨
+status: priority
 title: Generate Snakemake Diagram
 type: [[Task]]
 ---
@@ -22,6 +22,7 @@ type: [[Task]]
 snakemake \
   auspice_all \
   beast_all \
-  --report \
+  plot_missing_data_all \
+  --report results/report/report.html \
   --profile profiles/infoserv
 ```

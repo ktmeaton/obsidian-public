@@ -4,7 +4,11 @@ aliases:
   - '@krauer2021MappingPlagueNatural'
 tags: 
   - 📥/📰
-  - 📝/🌱  
+  - 📝/🌱 
+  - ⬜/🚂
+type: [[Literature]]
+due: 2021-05-25
+status: backlog
 title: Mapping the plague through natural language processing 
 year: 2021
 authors: Krauer et al.

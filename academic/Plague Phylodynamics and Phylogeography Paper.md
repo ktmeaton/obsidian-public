@@ -83,7 +83,11 @@ Despite a close genetic similarity between *[[Yersinia pestis|Y. pestis]]* and *
 
 ## Materials and Methods {.page_break_before}
 
-### Data Collection
+### Workflow Overview
+
+![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6d9ab2e/main/report/workflow.png){#fig:fig_workflow}
+
+### Data Collection {.page_break_before}
 
 *[[Yersinia pestis|Y. pestis]]* genome sequencing projects were retrieved from the [[National Centre for Biotechnology Information|NCBI]] databases using NCBImeta [[Eaton 2019 NCBImeta\|[@eaton2019NCBImeta]]]. 1657 projects were identified and comprised three genomic types: 
 
@@ -99,9 +103,7 @@ Genomes were removed if no associated date or location information could be iden
 
 Two additional datasets were required for downstream analyses. First, *[[Yersinia pestis|Y. pestis]]* strain [[CO92]] (GCA_000009065.1) was used as the reference genome for sequence alignment and annotation. Second, *[[Yersinia pseudotuberculosis]]* strains [[NCTC10275]] (GCA_900637475.1) and [[IP32953]] (GCA_000834295.1) served as an outgroup to root the [[Maximum-likelihood\|maximum likelihood]] phylogeny.
 
-### Sequence Quality Criteria
-
-#### Alignment
+### Alignment
 
 Modern assembled genomes were aligned to the reference genome using [[Snippy]], a pipeline for core genome alignments [[Snippy 2020\|[@snippy2020]]]. Modern genomes were removed if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome.
 
@@ -109,15 +111,15 @@ Ancient unassembled genomes were downloaded from the SRA database in [[FASTQ]] f
 
 A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] module of the [[Snippy]] pipeline. The output alignment was filtered to only include chromosomal variants and to exclude sites that had more than 5% missing data.
 
-### Phylogenetic Reconstruction
-
-Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
-
 ### Modified Datasets
 
 To investigate the influence of between-clade variation in substitution rates, the multiple alignment was separated into the major clades of *[[Yersinia pestis\|Y. pestis]]*, which will be referred to as the *Clade* dataset. Clade and subclade labeling was derived from the five-branch population structure accompanied by a biovar abbreviation ([[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. Only one modification was made, in that the subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness. In total, 12 clades were considered and are described in Table @tbl:table_temporal_signal.
 
 To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed and will be referred to as the *Reduced* dataset. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of uniquely derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 200 representative samples.
+
+### Phylogenetics
+
+Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
 
 ### Phylodynamics
 
@@ -143,31 +145,34 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ## Results {.page_break_before}
 
-### Descriptive Summary
+### Spatiotemporal Distribution
 
-After curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient. The geographic distribution of samples is shown in Figure @fig:fig_map_all. Three important findings can be drawn from a descriptive summary of the data.
+![
+Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
+**A**: Geographic distribution,
+**B**: Isolation by distance as a function of geographic distance and genetic distance, 
+**C**: Temporal distribution. 
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/138ad20/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd_timeline.png){#fig:fig_map_ibd_timeline}
 
->Note: I want to have a timeline histogram to show the date variation.
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-The first finding is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (0.PRE and 0.PE) have been isolated from all across [[Eurasia]] (Figure @fig:fig_map_all).
+After careful curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient. The spatiotemporal distribution of samples is shown in Figure @fig:fig_map_ibd_timeline. Three important findings can be drawn from a descriptive summary of the spatiotemporal distribution.
 
-The second observation is that the temporal structure of genomic data reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. One example of this is that the [[Medieval Plague]] in [[Western Europe]] has more representative samples than all of the African continent. Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
+The first finding is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline .A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
 
-The final takeaway is a highly complex pattern of geographic clustering or lack-thereof. Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]], that are routinely under biosurveillance. Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe. In these examples, a relatively large amount of genetic diversity appears in a small geographic range (Figure @fig:fig_ibd_all : blue). In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]*, which shows a relatively small amount of genetic diversity over a tremendously large geographic range (Figure @fig:fig_ibd_all : orange). 
+The second observation is that the temporal sampling strategy of genomic data (Figure @fig:fig_map_ibd_timeline .C) reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. One example of this is that the [[Medieval Plague]] in [[Western Europe]] (Clade [[1.PRE]]) has more representative samples than all of the African continent (Clade [[1.ANT]]). Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
+
+The final takeaway is a highly complex pattern of geographic clustering or lack-thereof (Figure @fig:fig_map_ibd_timeline .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clade [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) and shows a relatively small amount of genetic diversity over a tremendously large geographic range.
 
 Taken together, these findings should be taken as a cautionary warning. Given the biases documented here, extrapolating the data runs the risk of reconstructing the *sampling history* of plague researchers, rather than the *natural history* of the disease. This is particularly relevant for analyses that assume an absence of evidence is evidence of absence, such as in phylogeographic reconstruction.
 
-![Geographic distribution of *[[Yersinia pestis|Y. pestis]]* genomes](https://rawcdn.githack.com/ktmeaton/obsidian-public/b68709889cd450acb654666f0362d664d4733cd2/academic/Auspice%20Map%20Draft.png){#fig:fig_map_all}
+### [[Phylogenetics]]  {.page_break_before}
 
-> Note: I feel a little suspicious of this figure having such a high R2 value...
+![
+*[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8bc8a9e/main/auspice/all/chromosome/full/filter5/divtree_compare.png){#fig:fig_divtree_all}
 
-![Isolation by Distance (IBD) of *[[Yersinia pestis|Y. pestis]]* genomes.](https://rawcdn.githack.com/ktmeaton/obsidian-public/49fe1338ac25adafb07669075474bc0a35277790/academic/Isolation%20By%20Distance%20All%20Annotate.png){#fig:fig_ibd_all}
-
-<!--
-<iframe id="igraph" scrolling="no" seamless="seamless" src="https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@v0.2.7/main/full/all?d=map&onlyPanels&p=full&sidebar=closed&transmissions=hide" width=800px height=400px ></iframe>
--->
-
-### [[Phylogeny]]
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree_all)?
 
@@ -175,13 +180,7 @@ What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree
 - **Rate Variation**: *[[Yersinia pestis|Y. pestis]]* shows extraordinary rate variation. This can most clearly be seen in samples from the Bronze Age accumulating more substitutions than several modern clades.
 - **Ecological Structure**: There is no obvious clustering by host. If there is, its reflects the sampling strategy (ex. Ancient DNA from skeletal remains) rather than the natural history.
 
-![
-*[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny. |800
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/960159274f4adbb4f78d170d8526499bf8916c36/main/auspice/all/chromosome/full/filter5/divtree.png){#fig:fig_divtree_all}
-
 ### [[Phylodynamics]]  {.page_break_before}
-
-#### [[Clock Model\|Temporal Signal]]
 
 - *[[Yersinia pestis|Y. pestis]]* has extreme [[rate variation]]. 
 - A [[Root to Tip Regression]] on collection date confirms this, as the [[Coefficient of Determination]] (R<sup>2</sup> ) is 0.09, revealing a poor fit to a [[simple  linear model]] (Table @tbl:table_temporal_signal). 
@@ -190,7 +189,7 @@ What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree
 
 | Branch | Clade      | Origin          | RTT R<sup>2</sup> | RTT p-value | BETS Bayes Factor |
 | ------ | ---------- | --------------- | ----------------- | ----------- | ----------------- |
-| all    | all        | Ancient, Modern | 0.09              | 3.81E-14*   |                   |
+| All    | All        | Ancient, Modern | 0.09              | 3.81E-14*   |                   |
 | 0      | [[0.PRE]]  | Ancient         | 0.91              | 1.53E-04*   |                   |
 | 0      | [[0.PE]]   | Modern          | 0.01              | 2.25E-01    |                   |
 | 0      | [[0.ANT4]] | Ancient         | 0.66              | 7.84E-04*   |                   |
@@ -209,7 +208,7 @@ Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|
 
 ![
 Substitition rate uncertainty by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades are known to be associated with human pandemics.
-](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/09171cdb19/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
+](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/d53c63b/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
 
 #### Relaxing the Clock
 
@@ -228,6 +227,8 @@ Substitition rate uncertainty by clade based on a [[Root to Tip Regression\|root
 - There doesn't appear to be clustering of rates. Branches with high rates are next to those with low rates  (Figure @fig:fig_timetree_color_rate).
 
 ![Time tree colored by rate.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Time%20Tree%20Colored%20by%20Rate.png){#fig:fig_timetree_color_rate width="100%"}
+
+### [[Phylogeography]]  {.page_break_before}
 
 ## Conclusion {.page_break_before}
 
