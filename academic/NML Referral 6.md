@@ -22,6 +22,11 @@ type: [[Task]]
 | Salary Range:                               | BI $81,359 to $104,748                                      |
 
 
+- Signal Pipeline
+- Nanopore data, NextFlow, Tom Connor Pipeline
+- Gary Van Domselaar -> - Natalie Knox
+- Cancagen Project
+
 ## Description
 
 The [[Bioinformatics Core at the National Microbiology Laboratory]] is leading the analysis of sequence data as part of Canada's national SARS-CoV-2 genomic surveillance program. We are looking for talented computational biologists to participate in our effort to use SARS-CoV-2 genomic data to inform and control the COVID-19 pandemic in Canada.

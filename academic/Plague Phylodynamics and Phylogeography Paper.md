@@ -145,6 +145,28 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ## Results {.page_break_before}
 
+
+### [[Phylogenetics]]  {.page_break_before}
+
+![
+*[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/09bef0b/main/auspice/all/chromosome/full/filter5/divtree.png){#fig:fig_divtree_all}
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+The phylogenetic structure of *[[Yersinia pestis|Y. pestis]]* is defined by a combination of molecular biochemical, and ecological properties. Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4. All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]].
+
+All branches have the potential to cause human epidemics. While the [[Pestoides]] group is typically considered avirulent in humans, sporadic cases of human plague are known to occur [[(CITE]]: Eroshenko).
+
+There are three historically documented pandemics of plague, 
+
+What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree_all)?
+
+- **Problems of the Three Pandemic Structure**: There are three historically documented pandemics of plague but...
+- **Rate Variation**: *[[Yersinia pestis|Y. pestis]]* shows extraordinary rate variation. This can most clearly be seen in samples from the Bronze Age accumulating more substitutions than several modern clades.
+- **Ecological Structure**: There is no obvious clustering by host. If there is, its reflects the sampling strategy (ex. Ancient DNA from skeletal remains) rather than the natural history.
+
+
 ### Spatiotemporal Distribution
 
 ![
@@ -165,20 +187,6 @@ The second observation is that the temporal sampling strategy of genomic data (F
 The final takeaway is a highly complex pattern of geographic clustering or lack-thereof (Figure @fig:fig_map_ibd_timeline .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clade [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) and shows a relatively small amount of genetic diversity over a tremendously large geographic range.
 
 Taken together, these findings should be taken as a cautionary warning. Given the biases documented here, extrapolating the data runs the risk of reconstructing the *sampling history* of plague researchers, rather than the *natural history* of the disease. This is particularly relevant for analyses that assume an absence of evidence is evidence of absence, such as in phylogeographic reconstruction.
-
-### [[Phylogenetics]]  {.page_break_before}
-
-![
-*[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8bc8a9e/main/auspice/all/chromosome/full/filter5/divtree_compare.png){#fig:fig_divtree_all}
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree_all)?
-
-- **Problems of the Three Pandemic Structure**: There are three historically documented pandemics of plague but...
-- **Rate Variation**: *[[Yersinia pestis|Y. pestis]]* shows extraordinary rate variation. This can most clearly be seen in samples from the Bronze Age accumulating more substitutions than several modern clades.
-- **Ecological Structure**: There is no obvious clustering by host. If there is, its reflects the sampling strategy (ex. Ancient DNA from skeletal remains) rather than the natural history.
 
 ### [[Phylodynamics]]  {.page_break_before}
 

@@ -22,6 +22,8 @@ type: [[Task]]
 | Salary Range:                               | BI $81,359 to $104,748                   | 
 
 
+- CADHAM Public Laboratory 
+
 ## Description
 
 **Genomics Liaison Technical Officer (GLTO)**
