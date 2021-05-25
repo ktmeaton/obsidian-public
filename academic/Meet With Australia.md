@@ -19,6 +19,39 @@ time: "18:00"
 
 [Meeting Link](https://us02web.zoom.us/j/88245943522?pwd=V2FHbitaOE1MTCtDM2hsMHUyR1Fjdz09)
 
+### Preparation
+
+> I'm surprised that the relaxed clock (UCLN) is favored for all clades. 
+> I'm surprised that 0.PRE did not have temporal signal (ultrameric model prevailed), given that this clade has the strongest regression in MLE (R2=0.91). But the tMRCA is similar (-3000).
+> I'm surprised that 0.PE and 4.ANT have temporal signal, these ones have huge variation for me and the tMRCA can be in the future.
+
+> Led me to a few thoughts. In comparing our results, you are estimating topology and a clock model jointly for each clade in isolation. Whereas, my results come from the full tree (both topology and clock model), and I extract subtrees for analysis and plotting.
+> One takeway might be that the topology estimation step is causing a lot of variance?
+
+
+
+In general, the clades which I identified as following a strict clock have similar tMRCA although different rates. The exception is 0.PRE.
+
+What makes sense/is congruent:
+- In general, the ancient clades are similar:
+- 0.ANT4 (Plague of Justinian) has similar tMRCA and rates.
+- 1.PRE, the tMRCA is similar (~1300) but rates differ (4.24E-08 vs. 6.54E-08)
+-
+
+What does not make sense:
+- I'm surprised that the relaxed clock is favored for all clades.
+- I'm surprised that 
+
+### Tasks
+
+- [ ] [[Migrate ML auspice results to subdir]]
+- [ ] [[Add BEAST trees to auspice]]
+- [ ] [[Create file has most recent date for each clade]]
+
+## [[2021-05-13]] 1800 EST / 0800 AEST
+
+[Meeting Link](https://us02web.zoom.us/j/88245943522?pwd=V2FHbitaOE1MTCtDM2hsMHUyR1Fjdz09)
+
 - For clade dating results, the [[MRCA]] is reported in years before the most recent 
 - Population Size Prior and Tree Root Prior are key! Have to be very careful in selecting, and make sure the data can overcome.
 - Diffuse pop size prior.
