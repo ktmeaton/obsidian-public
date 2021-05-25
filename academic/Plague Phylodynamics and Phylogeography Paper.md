@@ -145,90 +145,74 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ## Results {.page_break_before}
 
+### [[Phylogenetics]]
 
-### [[Phylogenetics]]  {.page_break_before}
+The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
+
+Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4 (Figure @fig:fig_divtree_all). All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]]. The associated branch number of a *[[Yersinia pestis|Y. pestis]]* strain thus serves as a prefix before a clade designation.
+
+Each major branch is further subdivided into clades, which were historically defined into biovars according to their metabolic properties [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. Biovar *antiqua* (ANT) is the ancestral state prior to the [[Big Bang Polytomy]] and has been isolated from all major branches in clades [[0.ANT]], [[1.ANT]], [[2.ANT]], [[3.ANT]], and [[4.ANT]]. Biovar *medievalis* (MED) emerged in [[Branch 2]] as clade [[2.MED]] and biovar *orientalis* (ORI) emerged in [[Branch 1]] as clade [[1.ORI]]. Note that biovar *medievalis* was once hypothesized to be associated with the [[Medieval]] [[Black Death]], but is now known to be a distinct emergence.
 
 ![
 *[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/09bef0b/main/auspice/all/chromosome/full/filter5/divtree.png){#fig:fig_divtree_all}
 
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+#### Time  {.page_break_before}
 
-### Phylogenetic Structure
+> How has the known diversity of plague changed over time?
 
-The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
+In addition to the biovar nomenclature is the categorization of plague according to collection date. Historical strains of plague isolated prior to the 20th century cluster into three time periods: the [[LNBA|Late Neolithic Bronze Age (LNBA)]], Roman Period/Late Antiquity(?), and the Medieval Period (@fig:fig_timeline). 
+For example, all strains of *Y. pestis* isolated in the [[Roman]] period group together in [[Branch 0]] and form a distinct subclade within [[0.ANT]]. Similarly, all [[Medieval]] strains of *Y. pestis* cluster together in [[Branch 1]] as clade [[1.PRE]]. The LNBA is a notable exception as mixing between clades [[0.PE]] and [[0.PRE]] is observed.
 
-#### Major Branches
+However, collection date and collection location are highly confounded as ancient DNA sampling strategies have predominantly targeted [[Western Europe]]. Due to this sampling bias, it is challenging to evaluate whether multiple strains of plague have co-occured in human populations in the past. 
 
-Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4 (Figure @fig:fig_divtree_all). All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]]. The associated branch number of a *[[Yersinia pestis|Y. pestis]]* strain thus serves as a prefix before a clade designation.
+An additional observation is that the temporal sampling strategy of genomic data  reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. One example of this is that the [[Medieval Plague]] in [[Western Europe]] (Clade [[1.PRE]]) has more representative samples than all of the African continent (Clade [[1.ANT]]). Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
 
-#### Biovar
+![
+Temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/1464d035c4f364bd634e7081d46a978c1638246b/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all.png){#fig:fig_timeline}
 
-Each major branch is further subdivided into clades, which were historically defined into biovars according to their metabolic properties [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. Biovar *antiqua* (ANT) is the ancestral state prior to the [[Big Bang Polytomy]] and has been isolated from all major branches in clades [[0.ANT]], [[1.ANT]], [[2.ANT]], [[3.ANT]], and [[4.ANT]]. Biovar *medievalis* (MED) emerged in [[Branch 2]] as clade [[2.MED]] and biovar *orientalis* (ORI) emerged in [[Branch 1]] as clade [[1.ORI]]. Note that biovar *medievalis* was once hypothesized to be associated with the [[Medieval]] [[Black Death]], but is now known to be a distinct emergence.
+#### Geography  {.page_break_before}
 
-#### Time Period
+The geographic distribution of *[[Yersinia pestis|Y. pestis]]* reflects a complex dispersal history (Figure @fig:fig_map_ibd_timeline .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clades [[0.ANT]] and [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) which shows a relatively small amount of genetic diversity over a tremendously large geographic range.
 
-In combination with the biovar system, is the categorization of plague by time period. Prior to the 20th century, lineages of plague formed unique emergences by time period (Figure @fig:fig_map_ibd_timeline C). For example, all strains of *Y. pestis* isolated in the [[Roman]] period cluster together in [[Branch 0]] and form a distinct subclade within [[0.ANT]]. Similarly, all [[Medieval]] strains of *Y. pestis* group together as clade [[1.PRE]]. One exception to this is a mixing of clades [[0.PE]] and [[0.PRE]] during the [[LNBA|Late Neolithic Bronze Age]]. This diversity may reflect the broader sampling range of [[Bronze Age]] plague as compared to [[Roman]] and [[Medieval]] plague which mainly derive from [[Western Europe]] archaeological sites. Due to this sampling bias, it is challenging to evaluate whether multiple strains of plague have co-occured in human populations in the past.
+An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline .A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
 
-#### Host Virulence
-
-Clades of *Y. pestis* are additionally defined by virulence in particular hosts. For example, the [[Pestoides]] clade is frequently avirulent in humans, although sporadic cases of human plague do still occur ([[CITE]]). In general, all branches of *Y. pestis* are capable of causing plague in humans and the species barrier between wild rodents and human popluations is crossed frequently ([[FIGURE]]).
-
-While clades of ancient *Y. pestis* are exclusively associated with humans, this is more likely due to the sampling strategies of ancient DNA studies which have prioritized human skeletal remains over zooarchaeological remains. Given that no other clades across the *[[Yersinia pestis|Y. pestis]]* phylogeny show a specificty for human hosts, ... isolate aDNA *Y. pestis* from rats.
-
-#### Pandemics
-
-Finally, *Y. pestis* can be structured according to historically documented human pandemics. Ancient isolates of *Y. pestis* that date to the Roman period are hypothesizd to be associated with [[First Pandemic]] which includes the [[Plague of Justinian]]. [[Medieval]] isolates have been linked to the [[Second Pandemic]] and the [[Black Death]] based on spatiotemporal overlap.
-
-While thethree-pandemic nomenclature is undeniably useful in discourse, it does pose several problems.
-
-Given that the sampling dates of these *[[Yersinia pestis|Y. pestis]]* clades align with 
-
-Following the global dispersal of plague in the 20th century, 
-
-A significant caveat to this finding is the limited samping range during historical pandemics such as the 
-
-One exception to this is a mixing of clades [[0.PE]] and [[0.PRE]] during the [[LNBA|Late Neolithic Bronze Age]]. However, a significant caveat to this observation 
-
-
-
-- Bronze Age: A unique emergence of plague observed across Eurasia during the [[LNBA|Late Neolithic Bronze Age]].
-- Pestoides: typically avirulent in humans, although sporadic human cases are observed. ([[CITE]]).
-- Antiqua: The ancestral biovar/metabolic state prior to the Big Bang.
-
-All major branches have been observed to cause disease in humans. While some lineages of *Y. pestis* cluster by host genera, this is confounded by geographical clustering and thus it is challenging to evaluate the relative importance of geography and ecology in shaping *Y. pestis* population structure. 	 [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]].
-
-There are three historically documented pandemics of plague, 
-
-What can we learn from the maximum-likelihood phylogeny (Figure @fig:fig_divtree_all)?
-
-- **Problems of the Three Pandemic Structure**: There are three historically documented pandemics of plague but...
-- **Rate Variation**: *[[Yersinia pestis|Y. pestis]]* shows extraordinary rate variation. This can most clearly be seen in samples from the Bronze Age accumulating more substitutions than several modern clades.
-- **Ecological Structure**: There is no obvious clustering by host. If there is, its reflects the sampling strategy (ex. Ancient DNA from skeletal remains) rather than the natural history.
-
-
-### Spatiotemporal Distribution
+> The geographic distribution of *[[Yersinia pestis|Y. pestis]]* genomes reflects the *sampling history* more so than the *natural history* of the disease.
 
 ![
 Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
 **A**: Geographic distribution,
-**B**: Isolation by distance as a function of geographic distance and genetic distance, 
-**C**: Temporal distribution. 
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/138ad20/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd_timeline.png){#fig:fig_map_ibd_timeline}
+**B**: Isolation by distance as a function of geographic distance and genetic distance.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/152e6ac/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd.png){#fig:fig_map_ibd_timeline}
 
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+#### Hosts {.page_break_before}
 
-After careful curation, 600 genomes remained, with 539 (90%) being modern in origin and 61 (10%) being ancient. The spatiotemporal distribution of samples is shown in Figure @fig:fig_map_ibd_timeline. Three important findings can be drawn from a descriptive summary of the spatiotemporal distribution.
+Clades of *Y. pestis* are additionally defined by virulence in particular hosts. For example, the [[Pestoides]] clade is frequently avirulent in humans, although sporadic cases of human plague do still occur ([[CITE]]). In general, all branches of *Y. pestis* are capable of causing plague in humans and the species barrier between wild rodents and human popuations is crossed frequently ([[FIGURE]]).
 
-The first finding is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline .A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
+While clades of ancient *Y. pestis* are exclusively associated with humans, this is more likely due to the sampling strategies of ancient DNA studies which have prioritized human skeletal remains over zooarchaeological remains. Given that no other clades across the *[[Yersinia pestis|Y. pestis]]* phylogeny show a specificty for human hosts, ... isolate aDNA *Y. pestis* from rats.
 
-The second observation is that the temporal sampling strategy of genomic data (Figure @fig:fig_map_ibd_timeline .C) reflects greater interest in *[[Yersinia pestis|Y. pestis]]* as a historical pathogen, rather than a public health threat to modern humans. One example of this is that the [[Medieval Plague]] in [[Western Europe]] (Clade [[1.PRE]]) has more representative samples than all of the African continent (Clade [[1.ANT]]). Sequencing initiatives are greatly needed that shift the balance away from Eurocentrism and encompass a greater diversity of affected populations.
+> Plague can cause disease in humans at any time, and from anywhere. There are virtually no lineages that are "safe" for humans. Thus plague as a disease is treated with exceptional caution.
 
-The final takeaway is a highly complex pattern of geographic clustering or lack-thereof (Figure @fig:fig_map_ibd_timeline .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clade [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) and shows a relatively small amount of genetic diversity over a tremendously large geographic range.
+> No lineage of modern plague has been observed to exclusively infect humans (?) and thus ... attention to multi-host ecology.
 
-Taken together, these findings should be taken as a cautionary warning. Given the biases documented here, extrapolating the data runs the risk of reconstructing the *sampling history* of plague researchers, rather than the *natural history* of the disease. This is particularly relevant for analyses that assume an absence of evidence is evidence of absence, such as in phylogeographic reconstruction.
+![
+Distribution of human vs. non-human samples.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/1464d03/main/auspice/all/chromosome/full/filter5/divtree_map_host.png){#fig:fig_divtree_map_host}
+
+#### Pandemics
+
+Finally, *Y. pestis* can be structured according to historically documented human pandemics. Ancient isolates of *Y. pestis* that date to the [[Late Antiquity]] are hypothesized to be associated with [[First Pandemic]] which includes the [[Plague of Justinian]]. [[Medieval]] isolates have been linked to the [[Second Pandemic]] and the [[Black Death]] based on spatiotemporal overlap.
+
+While the three-pandemic nomenclature is undeniably useful in discourse, it does pose several problems...
+
+> Are the Second and Third Pandemics genetically separate? If so, what does this mean for clade [[1.ANT]]? Is it Pandemic 2.5?
+> Why are there no pandemics attribute to branch 2? The two clades within branch 2 stretch across Asia, from the Caucasus to Eastern China to South Asia.
+
 
 ### [[Phylodynamics]]  {.page_break_before}
+
+#### Rate Variation
 
 - *[[Yersinia pestis|Y. pestis]]* has extreme [[rate variation]]. 
 - A [[Root to Tip Regression]] on collection date confirms this, as the [[Coefficient of Determination]] (R<sup>2</sup> ) is 0.09, revealing a poor fit to a [[simple  linear model]] (Table @tbl:table_temporal_signal). 
@@ -258,7 +242,7 @@ Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|
 Substitition rate uncertainty by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades are known to be associated with human pandemics.
 ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/d53c63b/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
 
-#### Relaxing the Clock
+#### Clock Model
 
 - [[Clock Model#Relaxed Clock|Relaxed clock]] [[MCMC]] runs produce a high [[Coefficient of Variation]] indicating a relaxed model is favored over a strict model (Figure @fig:fig_coefficient_variation). However, these runs do not converge, suggesting there is too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate]] or [[MRCA|tMRCA]].
 
