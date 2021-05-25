@@ -19,6 +19,11 @@ time: "18:00"
 
 [Meeting Link](https://us02web.zoom.us/j/88245943522?pwd=V2FHbitaOE1MTCtDM2hsMHUyR1Fjdz09)
 
+### Notes
+
+Discuss [[0.PRE]] temporal signal
+- phylogeography on 0.PRE, 0.ANT4, 
+
 ### Preparation
 
 > I'm surprised that the relaxed clock (UCLN) is favored for all clades. 

@@ -147,7 +147,11 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ### [[Phylogenetics]]
 
-The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
+> What characteristics help us explain the structure of the *[[Yersinia pestis|Y. pestis]]* phylogeny?
+
+The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex in recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
+
+#### Molecular Divergences
 
 Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4 (Figure @fig:fig_divtree_all). All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]]. The associated branch number of a *[[Yersinia pestis|Y. pestis]]* strain thus serves as a prefix before a clade designation.
 
