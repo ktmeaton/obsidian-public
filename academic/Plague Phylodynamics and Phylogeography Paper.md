@@ -154,9 +154,49 @@ Geographic location was modeled as a discrete state with transitions following a
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-The phylogenetic structure of *[[Yersinia pestis|Y. pestis]]* is defined by a combination of molecular biochemical, and ecological properties. Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4. All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]].
+### Phylogenetic Structure
 
-All branches have the potential to cause human epidemics. While the [[Pestoides]] group is typically considered avirulent in humans, sporadic cases of human plague are known to occur [[(CITE]]: Eroshenko).
+The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
+
+#### Major Branches
+
+Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4 (Figure @fig:fig_divtree_all). All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]]. The associated branch number of a *[[Yersinia pestis|Y. pestis]]* strain thus serves as a prefix before a clade designation.
+
+#### Biovar
+
+Each major branch is further subdivided into clades, which were historically defined into biovars according to their metabolic properties [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. Biovar *antiqua* (ANT) is the ancestral state prior to the [[Big Bang Polytomy]] and has been isolated from all major branches in clades [[0.ANT]], [[1.ANT]], [[2.ANT]], [[3.ANT]], and [[4.ANT]]. Biovar *medievalis* (MED) emerged in [[Branch 2]] as clade [[2.MED]] and biovar *orientalis* (ORI) emerged in [[Branch 1]] as clade [[1.ORI]]. Note that biovar *medievalis* was once hypothesized to be associated with the [[Medieval]] [[Black Death]], but is now known to be a distinct emergence.
+
+#### Time Period
+
+In combination with the biovar system, is the categorization of plague by time period. Prior to the 20th century, lineages of plague formed unique emergences by time period (Figure @fig:fig_map_ibd_timeline C). For example, all strains of *Y. pestis* isolated in the [[Roman]] period cluster together in [[Branch 0]] and form a distinct subclade within [[0.ANT]]. Similarly, all [[Medieval]] strains of *Y. pestis* group together as clade [[1.PRE]]. One exception to this is a mixing of clades [[0.PE]] and [[0.PRE]] during the [[LNBA|Late Neolithic Bronze Age]]. This diversity may reflect the broader sampling range of [[Bronze Age]] plague as compared to [[Roman]] and [[Medieval]] plague which mainly derive from [[Western Europe]] archaeological sites. Due to this sampling bias, it is challenging to evaluate whether multiple strains of plague have co-occured in human populations in the past.
+
+#### Host Virulence
+
+Clades of *Y. pestis* are additionally defined by virulence in particular hosts. For example, the [[Pestoides]] clade is frequently avirulent in humans, although sporadic cases of human plague do still occur ([[CITE]]). In general, all branches of *Y. pestis* are capable of causing plague in humans and the species barrier between wild rodents and human popluations is crossed frequently ([[FIGURE]]).
+
+While clades of ancient *Y. pestis* are exclusively associated with humans, this is more likely due to the sampling strategies of ancient DNA studies which have prioritized human skeletal remains over zooarchaeological remains. Given that no other clades across the *[[Yersinia pestis|Y. pestis]]* phylogeny show a specificty for human hosts, ... isolate aDNA *Y. pestis* from rats.
+
+#### Pandemics
+
+Finally, *Y. pestis* can be structured according to historically documented human pandemics. Ancient isolates of *Y. pestis* that date to the Roman period are hypothesizd to be associated with [[First Pandemic]] which includes the [[Plague of Justinian]]. [[Medieval]] isolates have been linked to the [[Second Pandemic]] and the [[Black Death]] based on spatiotemporal overlap.
+
+While thethree-pandemic nomenclature is undeniably useful in discourse, it does pose several problems.
+
+Given that the sampling dates of these *[[Yersinia pestis|Y. pestis]]* clades align with 
+
+Following the global dispersal of plague in the 20th century, 
+
+A significant caveat to this finding is the limited samping range during historical pandemics such as the 
+
+One exception to this is a mixing of clades [[0.PE]] and [[0.PRE]] during the [[LNBA|Late Neolithic Bronze Age]]. However, a significant caveat to this observation 
+
+
+
+- Bronze Age: A unique emergence of plague observed across Eurasia during the [[LNBA|Late Neolithic Bronze Age]].
+- Pestoides: typically avirulent in humans, although sporadic human cases are observed. ([[CITE]]).
+- Antiqua: The ancestral biovar/metabolic state prior to the Big Bang.
+
+All major branches have been observed to cause disease in humans. While some lineages of *Y. pestis* cluster by host genera, this is confounded by geographical clustering and thus it is challenging to evaluate the relative importance of geography and ecology in shaping *Y. pestis* population structure. 	 [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]].
 
 There are three historically documented pandemics of plague, 
 
