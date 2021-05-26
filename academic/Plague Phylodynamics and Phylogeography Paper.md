@@ -41,6 +41,7 @@ title: Plague Phylodynamics and Phylogeography
 type: 
   - [[Task]]
   - [[Note]]
+  - [[Paper]]
 numberSections: false
 sectionsDepth: 3
 tblPrefix: Table
@@ -145,21 +146,39 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ## Results {.page_break_before}
 
-### [[Phylogenetics]]
+### [[Population Structure]]
 
-> What characteristics help us explain the structure of the *[[Yersinia pestis|Y. pestis]]* phylogeny?
+A maximum-likelihood phylogeny was estimated from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). A total of 26,282 [[Single Nucleotide Polymorphism\| Single Nucleotide Polymorphisms (SNPs) ]] were identified with  17,333 sites present in at least two genomes and 16,370 sites present in only one. Following removal of the outgroup taxa, 10,249 sites remained with 3,844 sites shared by at least two genomes and 6,405 sites in only one.
 
-The nomenclature used to described the phylogeny of *[[Yersinia pestis|Y. pestis]]* has become increasingly complex in recent years. This complexity arises because plague is categorized based not just on a few traits, but on a vast assortment of historical, ecological, biochemical, and molecular characteristics.
-
-#### Molecular Divergences
-
-Arguably the most important molecular event is the [[Big Bang Polytomy]], from which arose four monophyletic clades: Branches 1-4 (Figure @fig:fig_divtree_all). All lineages that diverged prior to this multifurcation are grouped into [[Branch 0]]. The associated branch number of a *[[Yersinia pestis|Y. pestis]]* strain thus serves as a prefix before a clade designation.
-
-Each major branch is further subdivided into clades, which were historically defined into biovars according to their metabolic properties [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. Biovar *antiqua* (ANT) is the ancestral state prior to the [[Big Bang Polytomy]] and has been isolated from all major branches in clades [[0.ANT]], [[1.ANT]], [[2.ANT]], [[3.ANT]], and [[4.ANT]]. Biovar *medievalis* (MED) emerged in [[Branch 2]] as clade [[2.MED]] and biovar *orientalis* (ORI) emerged in [[Branch 1]] as clade [[1.ORI]]. Note that biovar *medievalis* was once hypothesized to be associated with the [[Medieval]] [[Black Death]], but is now known to be a distinct emergence.
+The global population structure of *[[Yersinia pestis|Y. pestis]]*  is organized according to a vast array of historical, ecological, biochemical, and molecular characteristics (Figure @fig:fig_divtree_all). Arguably the most important event, in terms of phylogenetic structure, is the [[Big Bang Polytomy]] from which arose four monophyletic clades: ```Branches 1-4```. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]```. 
 
 ![
-*[[Yersinia pestis\|Y. pestis]]* maximum-likelihood phylogeny.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/09bef0b/main/auspice/all/chromosome/full/filter5/divtree.png){#fig:fig_divtree_all}
+The maximum-likeilhood tree, constructed from 10,249 SNPs, depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/67dd984/main/auspice/all/chromosome/full/filter5/divtree.png){#fig:fig_divtree_all}
+
+Each major branch is further subdivided into biovars according to metabolic properties [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics;]] [[Li 2009 Genotyping Phylogenetic Analysis\|@li2009GenotypingPhylogeneticAnalysis]]]. The oldest isolates of plague date to the [[LNBA|Late Neolithic Bronze Age]] following a divergence that pre-dates all known modern lineages [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. In the absence of metabolic evidence, this clade is designated ```[[0.PRE]]```.  The *microtus* biovar, alias *pestoides* (```PE```), is also a basal clade found in ```[[Branch 0]]``` and while it is typically avirulent in humans, sporadic cases can occur ([[CITE]]). 
+
+The other inhabitant of ```[[Branch 0]]``` is biovar *antiqua* (```[[Antiqua\|ANT]]```) which is the ancestral state prior to the [[Big Bang Polytomy]] and continues to be isolated from all major branches. ```[[Branch 1 ]]``` encapsulates a transition from *antiqua* (```[[Antiqua\|ANT]]```) through the *intermedium* biovar (```[[Intermedium\|IN]]```) and into *orientalis* (```[[Orientalis\|ORI]]```). ```[[Branch 2]]``` includes the transition from *antiqua* (```[[Antiqua\|ANT]]```) to *medievalis* (```[[Medievalis\|MED]]```), which was once hypothesized to be associated with the [[Medieval]] [[Black Death]], but is now known to be a distinct emergence. ```[[Branch 3]]``` and  ```[[Branch 4]]``` are exclusively composed of *antiqua* (```[[Antiqua\|ANT]]```) strains.
+
+#### Pandemics of Plague
+
+Additionally, several lineages of plague have been associated with historically documented plague pandemics. The [[First Pandemic]] (6th - 8th century CE) began with the [[Plague of Justinian]] and proceeded to devastate the Byzantine Empire of the Mediterranean world ([[CITE]]). A unique emergence of *[[Yersinia pestis|Y. pestis]]* within the *antiqua* biovar of [[Branch 0]] (```[[0.ANT4]]```) is thought to derive from this pandemic given spatiotemporal overlap of the skeletal remains from which this lineage was retrieved [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague;]] [[Keller 2019 Ancient Yersinia Pestis\|@keller2019AncientYersiniaPestis]]]. 
+
+Similarly, variants of the the *antiqua* biovar of [[Branch 1]] are thought to have given rise to the [[Second Pandemic]]. This well-documented pandemic began with the infamous [[Black Death]] and swept across most of Eurasia from the 14th to 19th centuries ([[CITE]]). The divergence of ancient *[[Yersinia pestis|Y. pestis]]* dated to this time period pre-dates all other ```[[Branch 1]]``` lineages, with several samples placed directly at the base of ```[[Branch 1]]```. To mark this unique phylogenetic positioning, this clade is designated ```[[1.PRE]]``` rather than a subclade of  ```[[1.ANT]]```.
+
+The third documented pandemic of plague, alias the *Modern Pandemic*, spread globally from the end of the [[18th Century]] and until the mid-[[20th Century]]. There is little dispute that a new lineage of plague emerging from [[Branch 1]] as biovar *orientalis* (```1.ORI```) was the causative agent of this pandemic. While the World Health Organization (WHO) declared the third pandemic over in 1950 ([[CITE)]]), this lineage continues to re-emerge to cause recent epidemics such as the [[2010 plague in Peru]] and the [[Madagascar Outbreaks of 2017]].
+
+#### The Three Pandemic Problem
+
+While the pandemic clade nomenclature provides an excellent foundation for historical discussion, there are several problems with this system. First is the growing awareness of the spatiotemporal overlap of the [[Second Pandemic\|Second]] and the [[Third Pandemic]]. Previously, the temporal extents of these events were mutually exclusive, dating from the 14th-18th century, and the 19th-20th century respectively. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague ([[CITE Nukhet]]). The [[Second Pandemic]] is now known to have extended into the [[19th Century]] in parts of the [[Ottoman Empire]], with the latest epidemics dating to 1819 ([[CITE]]). Similarly, the [[Third Pandemic]] is now hypothesized to have began as early as 1772 in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. It remains unclear where to draw the distinction, if it even exists, between the [[Second Pandemic\|Second]] and [[Third Pandemic]].
+
+Another limitation of the pandemic nomenclature is the complete disconnection of ```[[Branch 2]]``` to any pandemic-related events. This is surprising given that several criteria of a pandemic pathogen are fulfilled by ```[[Branch 2]]``` lineages, namely extensive spread and virulence. ```[[Branch 2]]``` genomes of *[[Yersinia pestis|Y. pestis]]* have been collected from all throughout [[Eurasia]], stretching from the [[Caucasus]], to [[India]], and to eastern [[China]] (Figure @fig:fig_map_branch2). Furthermore, clade [[2.MED]] was demonstrated to have the highest spread velocity of any *[[Y. pestis]]* clade [[Xu et al. 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. And finally, while [[Branch 2]] isolates are not historically linked to the [[Third Pandemic]] Proper, clade [[2.MED]] has been implicated in numerous modern plague outbreaks. 
+
+As historical plague scholarship extends beyonds the bounds of [[Western Europe]], the traditional narrative of three pandemic plague becomes unstable.
+
+![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:fig_map_branch2 style="border:1px solid black"}
+
+
 
 #### Time  {.page_break_before}
 
@@ -216,35 +235,73 @@ While the three-pandemic nomenclature is undeniably useful in discourse, it does
 
 ### [[Phylodynamics]]  {.page_break_before}
 
+> - How does the evolutionary rate of *[[Yersinia pestis|Y. pestis]]* compare to other human pathogens?
+
+*[[Yersinia pestis|Y. pestis]]* has one of the slowest substitution rates observed in a bacterial pathogen (Table tbl:table_bacterial rate_comparison). Given the tremendous variation observed in modern plague ecology, it is surprising that the evolutionary rate does not reflect this need to rapidly adapt to changing environtments. However, this slow rate makes perfect sense when viewed in the context of rate *[[Time-Dependency\|time-dependency]]*, wherein the observed [[Substitution Rate\|substitution rate]] decreases as the sampling time frame increases.
+
+| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study     | 
+| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | ---- |
+| *[[Yersinia pestis]]*            | Plague       | 1.42 x 10<sup>-8</sup>                          | 4687                  | This Study |
+| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
+| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
+| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+
+Table: Substitution rates of bacterial pathogens.
+{#tbl:table_bacterial rate_comparison}
+
+> - Lack of temporal signal in Wagner et al. (2014)
+
+> - *[[Yersinia pestis|Y. pestis]]* has substantial [[rate variation]], and estimates in the literature have ranged from 1E-8 to 2.85E-8 [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague\|@spyrou2019PhylogeographySecondPlague]]]
+
+The mean substitution rate observed here falls within this described range. Using a [[Clock Model|strict clock]] model for all of *[[Yersinia pestis|Y. pestis]]* likely underestimates the mean substitution rate (1E-8) .
+
+> - A root-to-tip regression is a poor measure of [[Clock Model|temporal signal]] in *[[Yersinia pestis|Y. pestis]]*. 
+
+This is due to several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]].
+
+> [[BETS]] can detect [[Clock Model|temporal signal]] when the RTT R<sup>2</sup>.
+
+
+> - Using a [[Clock Model|strict clock]] model for all of *[[Yersinia pestis|Y. pestis]]* underestimates the mean substitution rate.
+> - Several clades of *[[Yersinia pestis|Y. pestis]]* demonstrate strong evidence of [[Clock Model|temporal signal]].
+> - All pandemic clades have [[Clock Model|temporal signal]] and the least rate variation.
+> The [[Big Bang Polytomy]] is surrounded by clades with varying degrees of [[Clock Model|temporal signal]]. The branches surrounded the Big Bang Polytomy [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]] show some of the most dramatic rate acceleration to accomodate.
+
 #### Rate Variation
 
-- *[[Yersinia pestis|Y. pestis]]* has extreme [[rate variation]]. 
+
 - A [[Root to Tip Regression]] on collection date confirms this, as the [[Coefficient of Determination]] (R<sup>2</sup> ) is 0.09, revealing a poor fit to a [[simple  linear model]] (Table @tbl:table_temporal_signal). 
 - To some extent, this variation can be explained by examining the clades in isolation (Figure @fig:fig_rate_boxplot_all).
 - Finding an appropriate evolutionary model is key to estimating historic events, like clade emergence (Figure @fig:fig_tmrca_boxplot_all).
 
-| Branch | Clade      | Origin          | RTT R<sup>2</sup> | RTT p-value | BETS Bayes Factor |
-| ------ | ---------- | --------------- | ----------------- | ----------- | ----------------- |
-| All    | All        | Ancient, Modern | 0.09              | 3.81E-14*   |                   |
-| 0      | [[0.PRE]]  | Ancient         | 0.91              | 1.53E-04*   |                   |
-| 0      | [[0.PE]]   | Modern          | 0.01              | 2.25E-01    |                   |
-| 0      | [[0.ANT4]] | Ancient         | 0.66              | 7.84E-04*   |                   |
-| 0      | [[0.ANT]]  | Modern          | -0.01             | 7.35E-01    |                   |
-| 1      | [[1.ANT]]  | Modern          | 0.45              | 2.03E-01    |                   |
-| 1      | [[1.IN]]   | Modern          | 0.0               | 3.24E-01    |                   |
-| 1      | [[1.ORI]]  | Modern          | 0.04              | 1.32E-02*   |                   |
-| 1      | [[1.PRE]]  | Ancient         | 0.76              | 1.68E-13*   |                   |
-| 2      | [[2.ANT]]  | Modern          | 0.05              | 5.96E-02    |                   |
-| 2      | [[2.MED]]  | Modern          | 0.01              | 1.86E-01    |                   |
-| 3      | [[3.ANT]]  | Modern          | -0.04             | 4.39E-01    |                   |
-| 4      | [[4.ANT]]  | Modern          | -0.11             | 8.80E-01    |                   |
+| Branch |   Clade    |     Origin      | RTT R<sup>2</sup> | RTT p-value | Strict Clock BF | Relaxed Clock BF | Clock Model |
+|:------:|:----------:|:---------------:| -----------------:| -----------:| ---------------:| ----------------:|:-----------:|
+|  All   |    All     | Ancient, Modern |              0.09 |   3.81E-14* |              -- |               -- |     --      |
+|   0    | [[0.PRE]]  |     Ancient     |              0.91 |   1.53E-04* |           83.0* |             -2.9 |   Strict?   |
+|   0    |  [[0.PE]]  |     Modern      |              0.01 |    2.25E-01 |           -82.1 |            12.4* |   Relaxed   |
+|   0    | [[0.ANT4]] |     Ancient     |              0.66 |   7.84E-04* |            5.3* |             5.9* |   Relaxed   |
+|   0    | [[0.ANT]]  |     Modern      |             -0.01 |    7.35E-01 |            -2.3 |             -6.5 |    None     |
+|   1    | [[1.ANT]]  |     Modern      |              0.45 |    2.03E-01 |            8.9* |            12.6* |   Relaxed   |
+|   1    |  [[1.IN]]  |     Modern      |               0.0 |    3.24E-01 |            -3.9 |            -10.2 |    None     |
+|   1    | [[1.ORI]]  |     Modern      |              0.04 |   1.32E-02* |           29.6* |            35.7* |   Relaxed   |
+|   1    | [[1.PRE]]  |     Ancient     |              0.76 |   1.68E-13* |           10.1* |            44.1* |   Relaxed   |
+|   2    | [[2.ANT]]  |     Modern      |              0.05 |    5.96E-02 |           -20.8 |            -13.7 |    None     |
+|   2    | [[2.MED]]  |     Modern      |              0.01 |    1.86E-01 |              -- |               -- |     --      |
+|   3    | [[3.ANT]]  |     Modern      |             -0.04 |    4.39E-01 |            -9.6 |            -11.4 |    None     |
+|   4    | [[4.ANT]]  |     Modern      |             -0.11 |    8.80E-01 |            -2.9 |             3.7* |   Relaxed   |
 
-Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]].
+Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. * indicates a significant p-value or bayes factor.
 {#tbl:table_temporal_signal}
 
 ![
+Substitition rate uncertainty by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades are associated with historically documented pandemics.
+](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fe7091d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all_highlight.png){#fig:fig_rate_boxplot_all}
+
+![
 Substitition rate uncertainty by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades are known to be associated with human pandemics.
-](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/d53c63b/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
+](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/d53c63b/main/iqtree/all/chromosome/full/filter5/filter-taxa/tmrca_boxplot_all.png){#fig:fig_tmrca_boxplot_all}
 
 #### Clock Model
 
