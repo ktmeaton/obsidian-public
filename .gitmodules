@@ -1,6 +1,3 @@
-[submodule "academic/.obsidian"]
-	path = academic/.obsidian
-	url = https://github.com/ktmeaton/obsidian-settings
 [submodule "academic/pandoc/templates/pandoc-mvp-css"]
 	path = academic/pandoc/templates/pandoc-mvp-css
 	url = https://gitlab.com/vimalkvn/pandoc-mvp-css.git
