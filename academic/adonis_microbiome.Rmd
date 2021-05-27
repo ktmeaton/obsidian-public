@@ -1,0 +1,60 @@
+---
+title: "Adonis Microbiome"
+author: "Katherine Eaton"
+date: "5/27/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+Load libraries and example data.
+
+```{r cars}
+# Load Libraries
+library(microbiome)
+library(ggplot2)
+library(dplyr)
+
+# Load Example Data
+data(peerj32) # Source: https://peerj.com/articles/32/
+pseq <- peerj32$phyloseq # Rename the example data
+```
+
+## Store 
+
+```{r}
+# Inspect the OTU table
+# View(pseq@otu_table)
+
+# Transform counts to relative abundance
+pseq.rel <- microbiome::transform(pseq, "compositional")
+otu <- abundances(pseq.rel) # Equivalent to pseq.otu_table
+meta <- meta(pseq.rel) # Equivalent to pseq.sam_data
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+p <- plot_landscape(pseq.rel, method = "NMDS", distance = "bray", col = "group", size = 3)
+p
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Empirical Data
+
+### Inputs
+
+1. Sample Data 
+2. Distance Matrix
+
+- Combined sample data and distance matrix in one object. 
+
+
+
