@@ -10,3 +10,6 @@
 [submodule "academic/pandoc/plugins/reveal.js-tableofcontents"]
 	path = academic/pandoc/plugins/reveal.js-tableofcontents
 	url = https://github.com/naamor/reveal.js-tableofcontents.git
+[submodule "academic/.obsidian"]
+	path = academic/.obsidian
+	url = https://github.com/ktmeaton/obsidian-settings

@@ -28,7 +28,7 @@ I typed up a plain-text [[Resume]].
 > **Recent and significant experience working in the area of comparative “omics” (genomics, proteomics, transcriptomics, metagenomics, metatranscriptomics, etc.), bioinformatics, computational biology or population genetics.**
 > I am currently completing my PhD in the field of ancient pathogen genomics at the McMaster Ancient DNA Centre. This unique institute has given me the opportunity to learn specialized laboratory techniques for next-generation sequencing of ancient DNA from fossil specimens. I have also been encouraged to develop novel computational techniques, which has led me to develop and publish database software. I am currently finishing my final dissertation manuscript on the reconstruction of ancient bacterial genomes and the pipeline I created to analyze this large and complex dataset.
 
->Recent and significant* experience with bioinformatics methods and databases, and using open-source bioinformatics software (installation and usage).
+>**Recent and significant* experience with bioinformatics methods and databases, and using open-source bioinformatics software (installation and usage).**
  My PhD involves analyzing neglected datasets found in the NCBI databases such as the SRA. I frequently access these resources both in the browse, and with command-line APIs. Furthermore, I designed novel database software to access and organize these databases for high-throughput projects.
  The software I interact with most are within the fields of genome alignment (ex. bwa), metagenomics (ex. kraken), and phylogenetic analysis (ex. IQTREE). I am an advocate for containerizing applications with conda, docker, or singularity although I am capable of compiling from source when needed. Because of my passion for bioinformatics software, I often assist other co-workers in acquiring, installing, and testing software for their own projects.
 
@@ -36,7 +36,7 @@ I typed up a plain-text [[Resume]].
 -	Developed a snakemake pipeline to process SRA data into phylogenies.
 -	Experience containerizing software and dependencies using conda, docker, and singularity.
 
->Recent and significant\* experience in the assembly, annotation, analysis and interpretation of complex “omics” datasets such as pathogen and/or host genomes.
+> **Recent and significant\* experience in the assembly, annotation, analysis and interpretation of complex “omics” datasets such as pathogen and/or host genomes.**
 > For one of my PhD dissertation manuscripts,  I am assembling and aligning 600+ bacterial genomes for global phylogenetic reconstruction. This work involved genome annotation, such as identifying key variants related to virulence, and geospatial analysis of pathogen spread between countries.
 
 >**Recent and significant* experience in applying project management practices to data acquisition and analysis.**
@@ -49,14 +49,14 @@ I typed up a plain-text [[Resume]].
 > I designed multiple laboratory-based projects in my PhD that concerned pathogen detection in ancient biological specimens. These research projects include PCR optimization and screening, shotgun metagenomics evaluation, and targeted enrichment for genome capture.
 >To expand on the laboratory work, I developed database tools and pipelines to identify publicly available datasets and perform phylogenetic analyses. Projects that include non-sensitive data are published open-source on Github, with supporting documentation, issue trackers, and changelogs.
 
->Recent and significant experience in coordinating, and supervising or managing multidisciplinary teams or projects.
-**Yes**
+>**Recent and significant experience in coordinating, and supervising or managing multidisciplinary teams or projects.**
+Yes
 At the present moment, I am actively engaged with three multidisciplinary teams and I fill three general roles. The first is coordination, which includes scheduling meetings, creating agendas, and developing action plans. The second is communication, where I help develop publication plans and draft manuscripts. The third is research, where I assist in identifying datasets and designing experiments relevant to the shared publication goals.
 
->Graduation with a degree from a recognized post-secondary institution with specialization in a biological science (ex. Microbiology, Virology, Parasitology, Biochemistry, Immunology, Genetics/Genomics, Molecular Biology, Bioinformatics, or Biology or other related discipline); or
-**Yes
+>**Graduation with a degree from a recognized post-secondary institution with specialization in a biological science (ex. Microbiology, Virology, Parasitology, Biochemistry, Immunology, Genetics/Genomics, Molecular Biology, Bioinformatics, or Biology or other related discipline); o**r
+Yes
 I am currently completing my PhD in the McMaster Ancient DNA Centre, at McMaster University. My field of research is genomic sequencing of ancient pathogenic bacteria. My secondary focus is the development of bioinformatic tools and pipelines to streamline the process of data acquisition all the way through to phylogenetic analyses.
-I will have filed for defense on June 25, with an anticipated defense in August, and final submission in September.**
+I will have filed for defense on June 25, with an anticipated defense in August, and final submission in September.
 
 > For multidisciplinary positions classified as BI, the minimum standard is:
 Graduation with a degree from a recognized post-secondary institution in a natural, physical or applied science with specialization in a field relevant to the duties of the position (ex. Computer Science, Bioinformatics, Computational Biology, Biomedical Engineering, Biotechnology).
