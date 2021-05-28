@@ -3,9 +3,9 @@ title:
   - Meet with Samantha
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨   
 status:
-  - priority  
+  - done  
 type: [[Meeting]]
 due: 2021-05-27
 time: 13:00

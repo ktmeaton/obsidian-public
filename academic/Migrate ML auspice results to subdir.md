@@ -2,8 +2,8 @@
 project:
 due: 2021-05-25
 people:
-tags: ⬜/🧨
-status: priority
+tags: ⬜/📋 
+status: idea
 title: Migrate ML auspice results to subdir
 type: [[Task]]
 ---

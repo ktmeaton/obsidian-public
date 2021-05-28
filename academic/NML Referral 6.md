@@ -3,8 +3,8 @@ project:
 due: 2021-05-27
 time: 17:00
 people:
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨
+status: done
 title: NML Referral 8
 type: [[Task]]
 ---

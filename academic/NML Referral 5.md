@@ -3,8 +3,8 @@ project:
 due: 2021-05-26
 time: 17:00
 people:
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/📋 
+status: idea
 title: NML Referral 5
 type: [[Task]]
 ---

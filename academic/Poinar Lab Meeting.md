@@ -3,9 +3,9 @@ title:
   - Poinar Lab Meeting
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨   
 status:
-  - priority  
+  - done 
 type: [[Meeting]]
 due: 2021-05-25
 time: 09:00
