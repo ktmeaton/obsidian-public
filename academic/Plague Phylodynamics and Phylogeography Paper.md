@@ -75,7 +75,7 @@ This high priority disease status is unsurprising given that *[[Yersinia pestis\
 
 Despite a close genetic similarity between *[[Yersinia pestis|Y. pestis]]* and *[[Yersinia pseudotuberculosis\|Y. pseudotuberculosis]]*, in which they share 97% gene identity, they differ widely in their [[Transmission\|transmission]] and [[Pathogenicity\|pathogenecity]] [[Chain 2004 Insights Evolution Yersinia\|[@chain2004InsightsEvolutionYersinia]]]. Whereas *[[Yersinia pseudotuberculosis\|Y. pseudotuberculosis]]* causes [[Gastrointestinal\|gastrointestinal]] disease and is transmitted by the food-borne route, *[[Yersinia pestis|Y. pestis]]* is primarily transmitted between mammalian hosts by fleas and causes septicemia, pneumonia, and lymphadenitis. Because of this apparent contradiction of genetic homogeneity and diverse phenotypes, an extensive body of research has formed to address how, when, and where, these epidemiological shifts occurred.
 
-Two epidemiological transitions that have been extensively researched are the time to Most Recent Common Ancestor (tMRCA) and the advent of historically documented plague pandemics. Substantial progress on these topics has been made as *[[Yersinia pestis|Y. pestis]]* is the most intensively sequenced ancient pathogen, and over 100 ancient genomes are available to serve as fossil calibrations. Furthermore, there are now over 1000 publicly-available modern *[[Yersinia pestis|Y. pestis]]* genomes [[Zhou 2020 EnteroBase User Guide|[@zhou2020EnteroBaseUserGuide]]], offering the potential to  model rate variations and dating uncertainty with greater nuance. However, it is unclear whether this additional data will prove useful as it is contentious whether *[[Yersinia pestis|Y. pestis]]* demonstrates sufficient temporal signal to robustly estimate a clock model [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]]. Different *[[Yersinia pestis|Y. pestis]]* have been shown to produce dramatically different patterns of temporal signal from weak support to a complete absence of temporal structure [[Duchene 2016 Genome-scale Rates Evolutionary|@duchene2016GenomescaleRatesEvolutionary]]. It was thus posited that variations in temporal signal "*may be a property of  individual data sets rather than a true species effect*.
+Two epidemiological transitions that have been extensively researched are the time to Most Recent Common Ancestor (tMRCA) and the advent of historically documented plague pandemics. Substantial progress on these topics has been made as *[[Yersinia pestis|Y. pestis]]* is the most intensively sequenced ancient pathogen, and over 100 ancient genomes are available to serve as fossil calibrations. Furthermore, there are now over 1000 publicly-available modern *[[Yersinia pestis|Y. pestis]]* genomes [[Zhou 2020 EnteroBase User Guide|[@zhou2020EnteroBaseUserGuide]]], offering the potential to  model rate variations and dating uncertainty with greater nuance. However, it is unclear whether this additional data will prove useful as it is contentious whether *[[Yersinia pestis|Y. pestis]]* demonstrates sufficient temporal signal to robustly estimate a clock model [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]]. Different *[[Yersinia pestis|Y. pestis]]* datasets have been shown to produce dramatically different patterns of temporal signal from weak support to a complete absence of temporal structure [[Duchene 2016 Genome-scale Rates Evolutionary|@duchene2016GenomescaleRatesEvolutionary]]. It was thus posited that variations in temporal signal "*may be a property of  individual data sets rather than a true species effect*.
 
 While powerful in potential, this recent avalanche of data comes with new challenges inherent to Big Data, with curation of the geospatial metadata proving to be a substantial obstacle.
 
@@ -138,17 +138,11 @@ Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+
 
 ### Phylodynamics
 
-#### Temporal Signal
-
 To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date. This linear model is a simple approach to explore whether the data follows a [[Clock Model|strict clock]] model. Uncertainty in the model parameters, namely the [[Substitution Rate\|mean substitution rate]] and [[tMRCA]], were estimated using 1000 iterations of the non-parametric bootstrap on the residuals.
 
 While RTT is a practical approach, it has two main limitations: 1) No rate variation is accounted for, and 2) The data are not independent observations due to shared internal branch lengths. Therefore to complement this approach, a [[Bayesian Evaluation of Temporal Signal|bayesian evaluation of temporal signal (BETS)]] was performed.
 
-#### Rate Variation
-
 A [[Bayesian\|bayesian]] [[Timetree|timetree]] was estimated using ... as implemented in [[BEAST]].
-
-#### Time Tree
 
 A  [[Maximum-likelihood|maximum-likelihood]] [[Timetree|timetree]] was estimated using a [[Least Square Dating\|least-squares approach]] as implemented in [[LSD2]] [[To 2016 Fast Dating Using\|[@to2016FastDatingUsing]]]. Rate variation was modeled using a [[Lognormal\|lognormal]] [[Clock Model|relaxed clock]] with default parameters for the mean (1.0) and the standard deviation (0.2). The outgroup *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* was used to root the tree and then subsequently removed.
 
@@ -212,23 +206,27 @@ Temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
 
 #### Temporal Signal {#sec:temporal_signal}
 
-*[[Yersinia pestis|Y. pestis]]* has been shown previously to exhibit substantial rate variation both between and within clades [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The ability to adequately model the substitution rates in *[[Yersinia pestis|Y. pestis]]* is of great interest for estimating the timing of key historic events, such as clade emergence and pandemic origins (Figure @fig:fig_tmrca_boxplot_all). The 
+> **TDLR;**
+>
+> - *[[Yersinia pestis|Y. pestis]]* has more temporal signal than previously thought.
+> - A root-to-tip regression is a poor measure of [[Clock Model|temporal signal]]. 
 
-- [[Duchene 2016 Genome-scale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]] showed that altering the *[[Yersinia pestis|Y. pestis]]* dataset composition produced vastly different results in terms of temporal signal. With some alterations producing weak temporal signal, while others a complete lack of signal (negative rates!). They argue that this finding is finding "*may be a property of the individual data sets rather than a true species effect*".
+*[[Yersinia pestis|Y. pestis]]* has been unambiguously shown to exhibit substantial rate variation both between and within clades [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. It is therefore unsurprising that extreme rate variation is also observed in this study. The [[Coefficient of Determination]] (R<sup>2</sup>) of the linear regression for the full dataset is extremely low at 0.09 (Table @tbl:table_temporal_signal). This suggests that a simple linear model, such as the strict clock model, is overall a poor fit for the data. 
 
-It is debated whether this rate variation reflects a complete lack of temporal signal in [[Yersinia pestis|Y. pestis]] 
-This has been argued to reflect a lack of temporal signal [[Wagner et al. 2014 Yersinia Pestis Plague|[@wagner2014YersiniaPestisPlague;]] [[Duchene 2016 Genome-scale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]]].
+> What were the BETS results for the reduced dataset? 
 
+Taken together, these findings seem to support the observation that *[[Yersinia pestis|Y. pestis]]* as a whole does not demonstrate temporal signal.
 
-Extreme rate variation is also observed in the larger dataset of this study, as the [[Coefficient of Determination]] (R<sup>2</sup>) of the linear regression is extremely low at 0.09 (Table @tbl:table_temporal_signal). This suggests that a simple linear model, such as the strict clock model, is overall a poor fit for the data.
+However, visual inspection of the [[Root to Tip Regression]] hints that rate variation may be partially explained by clade-specific clocks (Figure @fig:fig_rtt_all). When examining each clade in isolation, evidence of strict clock-like behavior is recovered in both the [[Root to Tip Regression]] and the [[Bayesian Evaluation of Temporal Signal|BETS]] Bayes factors (Table @tbl:table_temporal_signal, Figure @fig:fig_rate_boxplot_all). Intriguingly, clades that have been associated with historically documented pandemics are well-modeled by a strict clock including the [[First Pandemic]] clade ```[[0.ANT4]]```, the [[Second Pandemic]] clade ```[[1.PRE]] ``` and the [[Third Pandemic]] clade ```[[1.OR1]]```. The final clade which demonstrates strict clock behavior is the [[LNBA|Late Neolithic Bronze Age]] group ```[[0.PRE]]```. As this time period pre-dates historical records, there is little opportunity to estimate mortality rates. However, this similarity may lend support to the hypothesis that an early pandemic of plague was occurring at that time [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]. It may be a useful avenue of research to investigate to what extent rate variation is a useful predictor for 'pandemic potential'.
+
+While a [[Root to Tip Regression]] can be useful tool to explore temporal signal, it has several known limitations. Namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters both of these limitations, and is overall more sensitive given that multiple clock models can be tested. The superior performance of the [[Bayesian Evaluation of Temporal Signal|BETS]] test can be seen in (Table @tbl:table_temporal_signal). The [[Root to Tip Regression]] detects temporal signal in 5/12 clades while [[Bayesian Evaluation of Temporal Signal|BETS]] detects signal in 7/12 clades. Furthermore, in all cases the [[Clock Model|relaxed clock]] proves to have stronger support, even when the regression [[Coefficient of Determination]] is high. The conclusion is that a root-to-tip regression is a relatively poor measure of [[Clock Model|temporal signal]] in *[[Yersinia pestis|Y. pestis]]*.
+
+> Wait for an update on [[0.PRE]] to confirm this.
 
 ![ [[Root to Tip Regression]] of [[Yersinia pestis|Y. pestis]] on sampling date, colored by clade. (PLACEHOLDER)](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1a46ac0/main/auspice/all/chromosome/full/filter5/rtt_all.png){#fig:fig_rtt_all style="border:1px solid black"}
 
- To some extent this variation can be explained by examining the clades in isolation. Several clades show strong support for strict clock-like behavior according to both the [[Root to Tip Regression]] and the [[Bayesian Evaluation of Temporal Signal|BETS]] Bayes factors (Table @tbl:table_temporal_signal, Figure @fig:fig_rate_boxplot_all). Intriguingly, clades that have been associated with historically documented pandemics are well-modeled by a strict clock including the [[First Pandemic]] clade ```[[0.ANT4]]```, the [[Second Pandemic]] clade ```[[1.PRE]] ``` and the [[Third Pandemic]] clade ```[[1.OR1]]```. The final clade which demonstrates strict clock behavior is the [[LNBA|Late Neolithic Bronze Age]] group ```[[0.PRE]]```. As this time period pre-dates historical records, there is little opportunity to estimate mortality rates. However, this similarity may lend support to the hypothesis that an early pandemic of plague was occurring at that time [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]].
 
-> Unknown to what extent rate variation is a useful predictor for 'pandemic potential'.
 > So what about Branch 2, since I was so adamant that it could be an undocumented historical pandemic?
-> In all cases, the relaxed clock is a better fit to the data even if strict clock-like behavior is exhibited.
 
 | Branch |   Clade    |     Origin      | RTT R<sup>2</sup> | RTT p-value | Strict Clock BF | Relaxed Clock BF |
 |:------:|:----------:|:---------------:| -----------------:| -----------:| ---------------:| ----------------:|
@@ -248,47 +246,7 @@ Extreme rate variation is also observed in the larger dataset of this study, as 
 
 Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. A * indicates a significant p-value or bayes factor. {#tbl:table_temporal_signal}
 
-> When unconstrained, the regression bootstrap can produce rate estimates that are negative. Is it also useful to do a constrained bootstrap?
-
-![Substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades show statistical support for a strict clock.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fe7091d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all_highlight.png){#fig:fig_rate_boxplot_all}
-
-![
-tMRCA uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip linear regression]].
-](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/d53c63b/main/iqtree/all/chromosome/full/filter5/filter-taxa/tmrca_boxplot_all.png){#fig:fig_tmrca_boxplot_all}
-
-### Mean Substitution Rate
-
-> **TLDR;**
->
-> - The mean substitution rate of *[[Yersinia pestis|Y. pestis]]* is of little interpretive value given substantial rate variation and the time-dependency on sampling date.
-
-*[[Yersinia pestis|Y. pestis]]* has one of the slowest substitution rates observed in a bacterial pathogen (Table @tbl:table_bacterial_rate_comparison). Given the tremendous variation observed in modern plague ecology, it is surprising that the evolutionary rate does not reflect this need to rapidly adapt to changing environments. However, this slow rate makes perfect sense when viewed in the context of rate *[[Time-Dependency\|time-dependency]]*, wherein the observed [[Substitution Rate\|substitution rate]] decreases as the sampling time frame increases. Given this [[Time-Dependency\|time-dependency]] and the substantial rate variation characterized in Section @sec:temporal_signal, the mean substitution rate is of little interpretive value here. Beyond that it falls within the range of substitution rates previously observed (1E-8, 2.85E-8) [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague\|@spyrou2019PhylogeographySecondPlague]]].
-
-| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study     | 
-| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | ---- |
-| *[[Yersinia pestis]]*            | Plague       | 1.42 x 10<sup>-8</sup>                          | 4687                  | This Study |
-| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
-| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
-| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
-| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
-| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
-
-Table: Substitution rates of bacterial pathogens.
-{#tbl:table_bacterial_rate_comparison}
-
-> - Lack of temporal signal in Wagner et al. (2014)
-
-> - *[[Yersinia pestis|Y. pestis]]* has substantial [[rate variation]], and estimates in the literature have ranged from 1E-8 to 2.85E-8 
-
-> - A root-to-tip regression is a poor measure of [[Clock Model|temporal signal]] in *[[Yersinia pestis|Y. pestis]]*. 
-
-This is due to several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]].
-
-> [[BETS]] can detect [[Clock Model|temporal signal]] when the RTT R<sup>2</sup>.
-> - Using a [[Clock Model|strict clock]] model for all of *[[Yersinia pestis|Y. pestis]]* underestimates the mean substitution rate.
-> - Several clades of *[[Yersinia pestis|Y. pestis]]* demonstrate strong evidence of [[Clock Model|temporal signal]].
-> - All pandemic clades have [[Clock Model|temporal signal]] and the least rate variation.
-> The [[Big Bang Polytomy]] is surrounded by clades with varying degrees of [[Clock Model|temporal signal]]. The branches surrounded the Big Bang Polytomy [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]] show some of the most dramatic rate acceleration to accomodate.
+![Mean substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades show statistical support for a strict clock.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fe7091d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all_highlight.png){#fig:fig_rate_boxplot_all}
 
 
 #### Clock Model
@@ -309,6 +267,32 @@ This is due to several known limitations, namely the underlying assumption of st
 
 ![Time tree colored by rate.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Time%20Tree%20Colored%20by%20Rate.png){#fig:fig_timetree_color_rate width="100%"}
 
+
+#### Mean Substitution Rate
+
+> **TLDR;**
+>
+> - The mean substitution rate of *[[Yersinia pestis|Y. pestis]]* is of little interpretive value given substantial rate variation and the time-dependency on sampling date.
+
+*[[Yersinia pestis|Y. pestis]]* has one of the slowest substitution rates observed in a bacterial pathogen (Table @tbl:table_bacterial_rate_comparison). Given the tremendous variation observed in modern plague ecology, it is surprising that the evolutionary rate does not reflect this need to rapidly adapt to changing environments. However, this slow rate makes perfect sense when viewed in the context of rate *[[Time-Dependency\|time-dependency]]*, wherein the observed [[Substitution Rate\|substitution rate]] decreases as the sampling time frame increases. Furthermore, given that the full dataset shows no temporal signal, likely due to the lineage-specific variation showed in Figure @fig:fig_rate_boxplot_all, the mean substitution rate is of little interpretive value. 
+
+The time-dependency does not hold in the clade datasets. Clades sampled in a narrow time frame (ex. ```[[1.ORI]])``` can have a slower rate than clades with wider sampling times  (ex. ```[[0.PRE]]```).
+
+| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study     | 
+| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | ---- |
+| *[[Yersinia pestis]]*            | Plague       | 1.42 x 10<sup>-8</sup>                          | 4687                  | This Study |
+| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
+| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
+| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+
+Table: Substitution rates of bacterial pathogens.
+{#tbl:table_bacterial_rate_comparison}
+
+
+> The [[Big Bang Polytomy]] is surrounded by clades with varying degrees of [[Clock Model|temporal signal]]. The branches surrounded the Big Bang Polytomy [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]] show some of the most dramatic rate acceleration to accomodate.
+
 ### [[Phylogeography]]   {.page_break_before}
 
 #### Geographic Distribution
@@ -324,9 +308,6 @@ Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
 **A**: Geographic distribution,
 **B**: Isolation by distance as a function of geographic distance and genetic distance.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/152e6ac/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd.png){#fig:fig_map_ibd_timeline}
-
-
-### [[Phylogeography]]  {.page_break_before}
 
 ### Hosts {.page_break_before}
 
