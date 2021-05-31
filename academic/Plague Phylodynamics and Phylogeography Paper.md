@@ -151,7 +151,7 @@ A  [[Maximum-likelihood|maximum-likelihood]] [[Timetree|timetree]] was estimated
 
 ### Phylogeography
 
-Geographic location was modeled as a discrete state with transitions following a [[GTR]] [[Mugration\|mugration]] model as implemented in [[TreeTime]] [[Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic\|[@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic]]].
+Geographic location was modeled as a discrete state with transitions following a [[GTR]] [[Mugration\|mugration]] model as implemented in [[TreeTime]] [[Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic\|[@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic]]].  A node was considered to have strong support if the inferred probability of the mugration state was >= 95% and the topological branch support (UFboot) was >= 95%.
 
 ## Results {.page_break_before}
 
@@ -237,39 +237,11 @@ While a [[Root to Tip Regression]] can be useful tool to explore temporal signal
 
 > Wait for an update on [[0.PRE]] to confirm this.
 
-![ [[Root to Tip Regression]] of [[Yersinia pestis|Y. pestis]] on sampling date, colored by clade. (PLACEHOLDER)](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1a46ac0/main/auspice/all/chromosome/full/filter5/rtt_all.png){#fig:fig_rtt_all style="border:1px solid black"}
+![ [[Root to Tip Regression]] of [[Yersinia pestis|Y. pestis]] on sampling date, colored by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4dcc459/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:fig_rtt_all}
 
 
 > So what about Branch 2, since I was so adamant that it could be an undocumented historical pandemic?
 
-| Branch |   Clade    |     Origin      | RTT R<sup>2</sup> | RTT p-value | Strict Clock BF | Relaxed Clock BF |
-|:------:|:----------:|:---------------:| -----------------:| -----------:| ---------------:| ----------------:|
-|  All   |    All     | Ancient, Modern |              0.09 |   3.81E-14* |              -- |               -- |
-|   1    | [[1.ORI]]  |     Modern      |              0.04 |   1.32E-02* |           29.6* |            35.7* |
-|   1    |  [[1.IN]]  |     Modern      |               0.0 |    3.24E-01 |            -3.9 |            -10.2 |
-|   1    | [[1.ANT]]  |     Modern      |              0.45 |    2.03E-01 |            8.9* |            12.6* |
-|   1    | [[1.PRE]]  |     Ancient     |              0.76 |   1.68E-13* |           10.1* |            44.1* |
-|   2    | [[2.MED]]  |     Modern      |              0.01 |    1.86E-01 |              -- |               -- |
-|   2    | [[2.ANT]]  |     Modern      |              0.05 |    5.96E-02 |           -20.8 |            -13.7 |
-|   4    | [[4.ANT]]  |     Modern      |             -0.11 |    8.80E-01 |            -2.9 |             3.7* |
-|   3    | [[3.ANT]]  |     Modern      |             -0.04 |    4.39E-01 |            -9.6 |            -11.4 |
-|   0    | [[0.ANT]]  |     Modern      |             -0.01 |    7.35E-01 |            -2.3 |             -6.5 |
-|   0    | [[0.ANT4]] |     Ancient     |              0.66 |   7.84E-04* |            5.3* |             5.9* |
-|   0    |  [[0.PE]]  |     Modern      |              0.01 |    2.25E-01 |           -82.1 |            12.4* |
-|   0    | [[0.PRE]]  |     Ancient     |              0.91 |   1.53E-04* |           83.0* |             -2.9 |
-
-
-
-
-
-
-
-
-
-
-Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. A * indicates a significant p-value or bayes factor. {#tbl:table_temporal_signal}
-
-![Mean substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades show statistical support for a strict clock.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fe7091d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all_highlight.png){#fig:fig_rate_boxplot_all}
 
 
 #### Clock Model
@@ -278,13 +250,9 @@ Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|
 
 ![Coefficient of variation.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Coefficient%20of%20Variation.png){#fig:fig_coefficient_variation width="100%"}
 
-- A [[Clock Model#Strict Clock|strict clock]] and [[Clock Model#Relaxed Clock|relaxed clock]] have overlapping distributions with similar peaks for the [[Tree Height]] (blue: strict, green: relaxed) (Figure @fig:fig_tree_height_compare).
+- When estimating a [[Substitution Rate]] for all of *[[Yersinia pestis|Y. pestis]]*, a [[Clock Model|strict clock]] and [[Clock Model|relaxed clock]] produce different estimates. This is observed in a Bayesian framework, where the strict clock underestimates the mean and the relaxed clock is multi-modal (Figure @fig:fig_sub_rate_compare). Also in a maximum likelihood framework (strict: 7.86E-09, relaxed: 1.63E-08)
 
-![Tree height comparison.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Tree%20Height%20Comparison.png){#fig:fig_tree_height_compare width="100%"}
-
-- When estimating a [[Substitution Rate]] for all of *[[Yersinia pestis|Y. pestis]]*, a [[Clock Model|strict clock]] and [[Clock Model|relaxed clock]] produce different estimates (green: strict, orange: relaxed) (Figure @fig:fig_sub_rate_compare).
-
-![Substitution rate comparison.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Substitution%20Rate%20Comparison.png){#fig:fig_sub_rate_compare width="100%"}
+![Substitution rate comparison (green: strict clock, orange: relaxed clock.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Substitution%20Rate%20Comparison.png){#fig:fig_sub_rate_compare width="100%"}
 	
 - There doesn't appear to be clustering of rates. Branches with high rates are next to those with low rates  (Figure @fig:fig_timetree_color_rate).
 
@@ -299,16 +267,16 @@ Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|
 
 *[[Yersinia pestis|Y. pestis]]* has one of the slowest substitution rates observed in a bacterial pathogen (Table @tbl:table_bacterial_rate_comparison). Given the tremendous variation observed in modern plague ecology, it is surprising that the evolutionary rate does not reflect this need to rapidly adapt to changing environments. However, this slow rate makes perfect sense when viewed in the context of rate *[[Time-Dependency\|time-dependency]]*, wherein the observed [[Substitution Rate\|substitution rate]] decreases as the sampling time frame increases. Furthermore, given that the full dataset shows no temporal signal, likely due to the lineage-specific variation showed in Figure @fig:fig_rate_boxplot_all, the mean substitution rate is of little interpretive value. 
 
-The time-dependency does not hold in the clade datasets. Clades sampled in a narrow time frame (ex. ```[[1.ORI]])``` can have a slower rate than clades with wider sampling times  (ex. ```[[0.PRE]]```).
+> The time-dependency does not hold in the clade datasets! (Figure @fig:fig_time-dependency_clades)
 
-| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study     | 
-| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | ---- |
-| *[[Yersinia pestis]]*            | Plague       | 1.42 x 10<sup>-8</sup>                          | 4687                  | This Study |
-| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
-| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]     |
-| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
-| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
-| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]      |
+| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study                                                                                        |
+| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
+| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
+| *[[Yersinia pestis]]*            | Plague       | 1.63 x 10<sup>-8</sup>                          | 4687                  | This Study                                                                                 
+| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
+| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
+| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
+| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
 
 Table: Substitution rates of bacterial pathogens.
 {#tbl:table_bacterial_rate_comparison}
@@ -334,45 +302,80 @@ Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
 
 ### Ancestral Reconstruction
 
-The confidence with which ancestral location could be estimated is described in Table @tbl:table_discrete_phylogeography_confidence and visualized in Figure @fig:fig_phylogeography_confidence. Across the entire tree, 77% of internal nodes could be estimated with high confidence (>=0.95). 
+The confidence with which ancestral location could be estimated is described in Table @tbl:table_discrete_phylogeography_confidence and visualized in Figure @fig:fig_phylogeography_confidence. Across the entire phylogeny, the location of 34% of internal nodes could be estimated with high confidence given the data. Uncertainty derives from X sources:
 
-![ Discrete state phylogeography confidence. High confidence branches (>=0.95) are colored black, low confidence branches are colored light grey.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/69cbfd3/main/auspice/all/chromosome/full/filter5/divtree_mugration_confidence.png){#fig:fig_phylogeography_confidence}
+- Overall slow substitution rate.
+- Rapid geographic spread with little SNP differentiation.
 
-
-| Clade  | Total Nodes | Tips | Internal Nodes | High Confidence Nodes | Percent High Confidence |
-| ------ | -----------:| ----:| --------------:| ---------------------:| -----------------------:|
-| All    |        1201 |  601 |            600 |                   461 |                   76.83 |
-| 1.ORI  |         233 |  117 |            116 |                    93 |                   80.17 |
-| 1.IN   |          78 |   39 |             39 |                    37 |                   94.87 |
-| 1.ANT  |           7 |    4 |              3 |                     0 |                     0.0 |
-| 1.PRE  |          80 |   40 |             40 |                    30 |                    75.0 |
-| 2.MED  |         231 |  116 |            115 |                    62 |                   53.91 |
-| 2.ANT  |         107 |   54 |             53 |                    47 |                   88.68 |
-| 4.ANT  |          21 |   11 |             10 |                     6 |                    60.0 |
-| 3.ANT  |          21 |   11 |             10 |                     6 |                    60.0 |
-| 0.ANT  |         207 |  103 |            104 |                    98 |                   94.23 |
-| 0.ANT4 |          23 |   12 |             11 |                     8 |                   72.73 |
-| 0.PE   |         169 |   84 |             85 |                    70 |                   82.35 |
-| 0.PRE  |          15 |    8 |              7 |                     3 |                   42.86 |
-
-Table: Discrete state phylogeography confidence.
-{#tbl:table_discrete_phylogeography_confidence}
+ie. Not great for pandemic spread, not measurable evolving across the landscape. Phylogeography is better suited to ...
 
 
-The clade associated with the highest confidence (95% of nodes) is the *intermedium* biovar (```[[Intermedium\|INT]]```) that falls just basal to the [[Third Pandemic]] clade ```[[1.ORI]]``` (Figure @fig:fig_1.IN_map). The root of this clade is estimated to originate in Qinghai Province China, followed by independent radiations to Xinjian, Gansu, Tibet, and Yunnan. The lineage associated with Yunnan province then gives rise to ```[[1.ORI]]```. Overall this geographic ancestry is consistent with the known history of the [[Third Pandemic]].
-
-![Geographic distribution of ```[[1.IN]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/382133e/main/auspice/all/chromosome/full/filter5/1.IN_map.PNG){#fig:fig_1.IN_map style="border:1px solid black"}
-
-
-The clade with the next highest confidence is the basal *antiqua* biovar ```[[0.ANT]```. However, this clade is dominated by 50 years (1956-2006) of environment surveillance in the Junggar Basin of Xinjiang.
-
-
-![Geographic distribution of ```[[0.ANT]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1c029b5/main/auspice/all/chromosome/full/filter5/0.ANT_map.png){#fig:fig_0.ANT_map style="border:1px solid black"}
-
-![Geographic distribution of ```[[0.ANT4]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1c029b5/main/auspice/all/chromosome/full/filter5/0.ANT4_map.png){#fig:fig_0.ANT4_map style="border:1px solid black"}
 
 ## Conclusion {.page_break_before}
 
 ## Appendix
+
+### [[Root to Tip Regression]]
+
+![ Time to Most Recent Common Ancestor (tMRCA) by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/b1bcfbc/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_clades.png){#fig:fig_tmrca_boxplot_all}
+
+### [[Isolation By Distance]]
+
+![Isolation By Distance (IBD) by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/4dcc459/main/iqtree/all/chromosome/full/filter5/filter-taxa/ibd_clades.png){#fig:fig_tmrca_boxplot_all}
+
+### [[Time-Dependency]]
+
+![Time-dependency of substitution rate on sampling time frame by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/4dcc459/main/iqtree/all/chromosome/full/filter5/filter-taxa/time-dependency_clades.png){#fig:fig_time-dependency_clades}
+
+### [[tMRCA]]
+
+![ Time to Most Recent Common Ancestory (tMRCA) by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/b1bcfbc/main/iqtree/all/chromosome/full/filter5/filter-taxa/tmrca_boxplot_all.png){#fig:fig_tmrca_boxplot_all}
+
+### [[Phylodynamics]]
+
+| Branch |   Clade    |     Origin      | RTT R<sup>2</sup> | RTT p-value | Strict Clock BF | Relaxed Clock BF |
+|:------:|:----------:|:---------------:| -----------------:| -----------:| ---------------:| ----------------:|
+|  All   |    All     | Ancient, Modern |              0.09 |   3.81E-14* |              -- |               -- |
+|   1    | [[1.ORI]]  |     Modern      |              0.04 |   1.32E-02* |           29.6* |            35.7* |
+|   1    |  [[1.IN]]  |     Modern      |               0.0 |    3.24E-01 |            -3.9 |            -10.2 |
+|   1    | [[1.ANT]]  |     Modern      |              0.45 |    2.03E-01 |            8.9* |            12.6* |
+|   1    | [[1.PRE]]  |     Ancient     |              0.76 |   1.68E-13* |           10.1* |            44.1* |
+|   2    | [[2.MED]]  |     Modern      |              0.01 |    1.86E-01 |              -- |               -- |
+|   2    | [[2.ANT]]  |     Modern      |              0.05 |    5.96E-02 |           -20.8 |            -13.7 |
+|   4    | [[4.ANT]]  |     Modern      |             -0.11 |    8.80E-01 |            -2.9 |             3.7* |
+|   3    | [[3.ANT]]  |     Modern      |             -0.04 |    4.39E-01 |            -9.6 |            -11.4 |
+|   0    | [[0.ANT]]  |     Modern      |             -0.01 |    7.35E-01 |            -2.3 |             -6.5 |
+|   0    | [[0.ANT4]] |     Ancient     |              0.66 |   7.84E-04* |            5.3* |             5.9* |
+|   0    |  [[0.PE]]  |     Modern      |              0.01 |    2.25E-01 |           -82.1 |            12.4* |
+|   0    | [[0.PRE]]  |     Ancient     |              0.91 |   1.53E-04* |           83.0* |             -2.9 |
+
+Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. A * indicates a significant p-value or bayes factor. {#tbl:table_temporal_signal}
+
+![Mean substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip linear regression]]. Highlighted clades show statistical support for a strict clock.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fe7091d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all_highlight.png){#fig:fig_rate_boxplot_all}
+
+### [[Phylogeography]]
+
+
+![ Discrete state phylogeography confidence. High confidence branches (>=0.95) are colored black, low confidence branches are colored light grey.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/69cbfd3/main/auspice/all/chromosome/full/filter5/divtree_mugration_confidence.png){#fig:fig_phylogeography_confidence}
+
+
+| Clade  | Internal Nodes | High Confidence (Nodes) | High Confidence (Percent) | IBD R<sup>2</sup> | IBD p-value |
+| ------ | --------------:| -----------------------:| -------------------------:| ----------------- | ----------- |
+| All    |            600 |                     202 |                     33.67 | --                | --          |
+| 1.ORI  |            116 |                      29 |                     25.00 | 0.35              | 0.00E+00*   |
+| 1.IN   |             39 |                      17 |                     43.59 | 0.08              | 6.68E-15*   |
+| 1.ANT  |              3 |                       0 |                      0.00 | 0.21              | 3.55E-01    | 
+| 1.PRE  |             40 |                      13 |                     32.50 | 0.05              | 6.23E-11*   |
+| 2.MED  |            115 |                      34 |                     29.57 | 0.0               | 5.38E-06*   |
+| 2.ANT  |             53 |                      23 |                     43.40 | 0.21              | 8.15E-76*   |
+| 4.ANT  |             10 |                       3 |                     30.00 | 0.21              | 3.69E-04*   |
+| 3.ANT  |             10 |                       6 |                     60.00 | 0.31              | 9.98E-06*   |
+| 0.ANT  |            104 |                      26 |                     25.00 | 0.27              | 0.00E+00*   |
+| 0.ANT4 |             11 |                       4 |                     36.36 | --                | --          |
+| 0.PE   |             85 |                      43 |                     50.59 | 0.46              | 0.00E+00*   |
+| 0.PRE  |              7 |                       3 |                     42.86 | 0.01              | 7.16E-01    |
+
+Table: Discrete state phylogeography confidence.
+{#tbl:table_discrete_phylogeography_confidence}
 
 ## References {.page_break_before}

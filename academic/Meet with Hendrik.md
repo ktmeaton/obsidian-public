@@ -4,14 +4,18 @@ title:
   - Meet with Hendrik
 people:
 tags:
-  - ⬜/✨  
-status: done
+  - ⬜/🧨
+status: priority
 type: [[Meeting]]
-due: 2021-05-14
-time: 12:00
+due: 2021-06-01
+time: 11:00
 ---
 
 # Meet with Hendrik
+
+## [[2021-06-01]]
+
+[Meeting Link](https://us02web.zoom.us/j/84161407832?pwd=NlJFcGpXVDBteXk5Y2JpanBPMWRNUT09)
 
 ## [[2021-05-14]]
 
