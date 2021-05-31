@@ -50,6 +50,7 @@ figPrefix: Figure
 secPrefix: Section
 compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague Phylodynamics and Phylogeography Paper.md' pandoc/bib/library.json ../../rootstock"
 compile-pandoc: "conda activate pandoc && pandoc/convert_wikilinks.py --input 'Plague Phylodynamics and Phylogeography Paper.md' --output 'Plague Phylodynamics and Phylogeography Paper_convert.md';"
+url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html
 ---
 
 ## Keywords
@@ -186,6 +187,19 @@ As historical plague scholarship extends beyonds the bounds of [[Western Europe]
 
 ![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:fig_map_branch2 style="border:1px solid black"}
 
+#### Hosts {.page_break_before}
+
+Clades of *Y. pestis* are additionally defined by virulence in particular hosts. For example, the [[Pestoides]] clade is frequently avirulent in humans, although sporadic cases of human plague do still occur ([[CITE]]). In general, all branches of *Y. pestis* are capable of causing plague in humans and the species barrier between wild rodents and human popuations is crossed frequently ([[FIGURE]]).
+
+While clades of ancient *Y. pestis* are exclusively associated with humans, this is more likely due to the sampling strategies of ancient DNA studies which have prioritized human skeletal remains over zooarchaeological remains. Given that no other clades across the *[[Yersinia pestis|Y. pestis]]* phylogeny show a specificty for human hosts, ... isolate aDNA *Y. pestis* from rats.
+
+> Plague can cause disease in humans at any time, and from anywhere. There are virtually no lineages that are "safe" for humans. Thus plague as a disease is treated with exceptional caution.
+
+> No lineage of modern plague has been observed to exclusively infect humans (?) and thus ... attention to multi-host ecology.
+
+![
+Distribution of human vs. non-human samples.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/1464d03/main/auspice/all/chromosome/full/filter5/divtree_map_host.png){#fig:fig_divtree_map_host}
 
 ### [[Phylodynamics]] {.page_break_before}
 
@@ -231,18 +245,27 @@ While a [[Root to Tip Regression]] can be useful tool to explore temporal signal
 | Branch |   Clade    |     Origin      | RTT R<sup>2</sup> | RTT p-value | Strict Clock BF | Relaxed Clock BF |
 |:------:|:----------:|:---------------:| -----------------:| -----------:| ---------------:| ----------------:|
 |  All   |    All     | Ancient, Modern |              0.09 |   3.81E-14* |              -- |               -- |
-|   0    | [[0.PRE]]  |     Ancient     |              0.91 |   1.53E-04* |           83.0* |             -2.9 |
-|   0    |  [[0.PE]]  |     Modern      |              0.01 |    2.25E-01 |           -82.1 |            12.4* |
-|   0    | [[0.ANT4]] |     Ancient     |              0.66 |   7.84E-04* |            5.3* |             5.9* |
-|   0    | [[0.ANT]]  |     Modern      |             -0.01 |    7.35E-01 |            -2.3 |             -6.5 |
-|   1    | [[1.ANT]]  |     Modern      |              0.45 |    2.03E-01 |            8.9* |            12.6* |
-|   1    |  [[1.IN]]  |     Modern      |               0.0 |    3.24E-01 |            -3.9 |            -10.2 |
 |   1    | [[1.ORI]]  |     Modern      |              0.04 |   1.32E-02* |           29.6* |            35.7* |
+|   1    |  [[1.IN]]  |     Modern      |               0.0 |    3.24E-01 |            -3.9 |            -10.2 |
+|   1    | [[1.ANT]]  |     Modern      |              0.45 |    2.03E-01 |            8.9* |            12.6* |
 |   1    | [[1.PRE]]  |     Ancient     |              0.76 |   1.68E-13* |           10.1* |            44.1* |
-|   2    | [[2.ANT]]  |     Modern      |              0.05 |    5.96E-02 |           -20.8 |            -13.7 |
 |   2    | [[2.MED]]  |     Modern      |              0.01 |    1.86E-01 |              -- |               -- |
-|   3    | [[3.ANT]]  |     Modern      |             -0.04 |    4.39E-01 |            -9.6 |            -11.4 |
+|   2    | [[2.ANT]]  |     Modern      |              0.05 |    5.96E-02 |           -20.8 |            -13.7 |
 |   4    | [[4.ANT]]  |     Modern      |             -0.11 |    8.80E-01 |            -2.9 |             3.7* |
+|   3    | [[3.ANT]]  |     Modern      |             -0.04 |    4.39E-01 |            -9.6 |            -11.4 |
+|   0    | [[0.ANT]]  |     Modern      |             -0.01 |    7.35E-01 |            -2.3 |             -6.5 |
+|   0    | [[0.ANT4]] |     Ancient     |              0.66 |   7.84E-04* |            5.3* |             5.9* |
+|   0    |  [[0.PE]]  |     Modern      |              0.01 |    2.25E-01 |           -82.1 |            12.4* |
+|   0    | [[0.PRE]]  |     Ancient     |              0.91 |   1.53E-04* |           83.0* |             -2.9 |
+
+
+
+
+
+
+
+
+
 
 Table: Temporal signal statistics by clade based on a [[Root to Tip Regression\|root-to-tip linear regression]]. A * indicates a significant p-value or bayes factor. {#tbl:table_temporal_signal}
 
@@ -309,19 +332,44 @@ Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
 **B**: Isolation by distance as a function of geographic distance and genetic distance.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/152e6ac/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd.png){#fig:fig_map_ibd_timeline}
 
-### Hosts {.page_break_before}
+### Ancestral Reconstruction
 
-Clades of *Y. pestis* are additionally defined by virulence in particular hosts. For example, the [[Pestoides]] clade is frequently avirulent in humans, although sporadic cases of human plague do still occur ([[CITE]]). In general, all branches of *Y. pestis* are capable of causing plague in humans and the species barrier between wild rodents and human popuations is crossed frequently ([[FIGURE]]).
+The confidence with which ancestral location could be estimated is described in Table @tbl:table_discrete_phylogeography_confidence and visualized in Figure @fig:fig_phylogeography_confidence. Across the entire tree, 77% of internal nodes could be estimated with high confidence (>=0.95). 
 
-While clades of ancient *Y. pestis* are exclusively associated with humans, this is more likely due to the sampling strategies of ancient DNA studies which have prioritized human skeletal remains over zooarchaeological remains. Given that no other clades across the *[[Yersinia pestis|Y. pestis]]* phylogeny show a specificty for human hosts, ... isolate aDNA *Y. pestis* from rats.
+![ Discrete state phylogeography confidence. High confidence branches (>=0.95) are colored black, low confidence branches are colored light grey.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/69cbfd3/main/auspice/all/chromosome/full/filter5/divtree_mugration_confidence.png){#fig:fig_phylogeography_confidence}
 
-> Plague can cause disease in humans at any time, and from anywhere. There are virtually no lineages that are "safe" for humans. Thus plague as a disease is treated with exceptional caution.
 
-> No lineage of modern plague has been observed to exclusively infect humans (?) and thus ... attention to multi-host ecology.
+| Clade  | Total Nodes | Tips | Internal Nodes | High Confidence Nodes | Percent High Confidence |
+| ------ | -----------:| ----:| --------------:| ---------------------:| -----------------------:|
+| All    |        1201 |  601 |            600 |                   461 |                   76.83 |
+| 1.ORI  |         233 |  117 |            116 |                    93 |                   80.17 |
+| 1.IN   |          78 |   39 |             39 |                    37 |                   94.87 |
+| 1.ANT  |           7 |    4 |              3 |                     0 |                     0.0 |
+| 1.PRE  |          80 |   40 |             40 |                    30 |                    75.0 |
+| 2.MED  |         231 |  116 |            115 |                    62 |                   53.91 |
+| 2.ANT  |         107 |   54 |             53 |                    47 |                   88.68 |
+| 4.ANT  |          21 |   11 |             10 |                     6 |                    60.0 |
+| 3.ANT  |          21 |   11 |             10 |                     6 |                    60.0 |
+| 0.ANT  |         207 |  103 |            104 |                    98 |                   94.23 |
+| 0.ANT4 |          23 |   12 |             11 |                     8 |                   72.73 |
+| 0.PE   |         169 |   84 |             85 |                    70 |                   82.35 |
+| 0.PRE  |          15 |    8 |              7 |                     3 |                   42.86 |
 
-![
-Distribution of human vs. non-human samples.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/1464d03/main/auspice/all/chromosome/full/filter5/divtree_map_host.png){#fig:fig_divtree_map_host}
+Table: Discrete state phylogeography confidence.
+{#tbl:table_discrete_phylogeography_confidence}
+
+
+The clade associated with the highest confidence (95% of nodes) is the *intermedium* biovar (```[[Intermedium\|INT]]```) that falls just basal to the [[Third Pandemic]] clade ```[[1.ORI]]``` (Figure @fig:fig_1.IN_map). The root of this clade is estimated to originate in Qinghai Province China, followed by independent radiations to Xinjian, Gansu, Tibet, and Yunnan. The lineage associated with Yunnan province then gives rise to ```[[1.ORI]]```. Overall this geographic ancestry is consistent with the known history of the [[Third Pandemic]].
+
+![Geographic distribution of ```[[1.IN]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/382133e/main/auspice/all/chromosome/full/filter5/1.IN_map.PNG){#fig:fig_1.IN_map style="border:1px solid black"}
+
+
+The clade with the next highest confidence is the basal *antiqua* biovar ```[[0.ANT]```. However, this clade is dominated by 50 years (1956-2006) of environment surveillance in the Junggar Basin of Xinjiang.
+
+
+![Geographic distribution of ```[[0.ANT]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1c029b5/main/auspice/all/chromosome/full/filter5/0.ANT_map.png){#fig:fig_0.ANT_map style="border:1px solid black"}
+
+![Geographic distribution of ```[[0.ANT4]]``` and inferred migration history. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1c029b5/main/auspice/all/chromosome/full/filter5/0.ANT4_map.png){#fig:fig_0.ANT4_map style="border:1px solid black"}
 
 ## Conclusion {.page_break_before}
 
