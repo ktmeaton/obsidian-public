@@ -157,6 +157,9 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ### [[Population Structure]]
 
+> *[[Yersinia pestis|Y. pestis]]* is globally structured by multifurcations (Big Bang), metabolism (biovar), time period and epidemiology (pandemics).
+> *[[Yersinia pestis|Y. pestis]]* is not globally structured by host and geography.
+
 A maximum-likelihood phylogeny was estimated from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). A total of 26,282 [[Single Nucleotide Polymorphism\| Single Nucleotide Polymorphisms (SNPs) ]] were identified with  17,333 sites present in at least two genomes and 16,370 sites present in only one. Following removal of the outgroup taxa, 10,249 sites remained with 3,844 sites shared by at least two genomes and 6,405 sites in only one.
 
 The global population structure of *[[Yersinia pestis|Y. pestis]]*  is organized according to a vast array of historical, ecological, biochemical, and molecular characteristics (Figure @fig:fig_divtree_all). Arguably the most important event, in terms of phylogenetic structure, is the [[Big Bang Polytomy]] from which arose four monophyletic clades: ```Branches 1-4```. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]```. 

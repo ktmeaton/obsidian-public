@@ -15,12 +15,15 @@ time: 11:00
 
 ## [[2021-06-01]]
 
-[Meeting Link](https://us02web.zoom.us/j/84161407832?pwd=NlJFcGpXVDBteXk5Y2JpanBPMWRNUT09)
+[Meeting Link](https://us02web.zoom.us/j/82186947563?pwd=c0Z4eGdqK2VYZUpRdmE3NEE1NUVSUT09)
 
 
 Last Day to Defend: August 19, 2020
 File for Defense | Traditional: 2 + 6 weeks before defense (June 19, 2020)
 File for Defense | Accelerated: 2 + 6 weeks before defense (June 19, 2020)
+
+- Email Blackout Dates
+- When do you have to apply for the extension? How far in advance?
 
 ## [[2021-05-14]]
 
