@@ -2,24 +2,27 @@
 gantt
 	dateFormat  YYYY-MM-DD
 	title PhD Timeline
-	axisFormat %B
+	axisFormat %b-%d
 
-	section Paper 2
-	Draft  :  crit, paper2-draft,                         2021-03-24,2021-03-31
-	Edits  :        paper2-edits,   after paper2-draft,   30d
-	Submit :        paper2-submit,  after paper2-edits,   1d
-	Review :        paper2-review,  after paper2-submit,  30d
+	section Katherine
+	Submit Chapter 2               	:   crit,submit-chap2,	    2021-06-15, 2021-06-16	
+	Submit Chapter 3               	:   crit,submit-chap3,	    2021-07-04, 2021-07-05
+	Submit Thesis            		:   crit,submit-diss,	    2021-07-20, 2021-07-21	
+	Initiate Accelerated Defense	:	crit,defense-initiate,	2021-08-03, 2021-08-04
+	Defense 	           			:	crit,defense,			2021-09-01, 2021-09-02
+	Revisions 	           			:	revisions,				2021-09-02, 2021-09-26	
+	Last Day to File 	           	:	crit,revisions,			2021-09-26, 2021-09-27
 	
-	section Paper 3
-	Draft  :  crit, paper3-draft,                         2021-03-24,2021-04-30
-	Edits  :        paper3-edits,   after paper3-draft,   30d
-	Submit :        paper3-submit,  after paper3-edits,   7d
-	Review :        paper3-review,  after paper3-submit,  30d
-		
-	section Dissertation
-	Draft  				: crit,	diss-draft,     2021-05-01,2021-05-31
-	Edits				:	diss-edits,		2021-05-31, 2021-06-24
-	Last Day to File	:	crit,diss-submit,    2021-06-24,2021-06-25
-	Review 				:	diss-review,    2021-06-25,2021-08-19	
-	Last Day to Defend 	:	crit,diss-defend,    2021-08-19,2021-08-20
+	section Hendrik
+	Review Ch. 2					:	diss-chap2,	        	2021-06-16, 2021-06-30	
+	Review Ch. 3					:	diss-chap3,	        	2021-07-05, 2021-07-20
+	Review Thesis     				:   diss-review,	    	2021-07-21, 2021-08-03	
+	Select External,Approvals		:	select-ext,     		2021-08-04, 2021-08-11
+	Defense 	           			:	crit,defense,			2021-09-01, 2021-09-02	
+	
+	section External
+	Read Thesis	       				:	external-read,    		2021-08-11, 2021-08-25
+	Submit Report        			:	crit,external-report,	2021-08-25, 2021-08-26	
+	Defense 	           			:	crit,defense,			2021-09-01, 2021-09-02	
+	
 ```
