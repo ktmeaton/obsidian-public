@@ -225,6 +225,16 @@ Temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
 > - *[[Yersinia pestis|Y. pestis]]* has more temporal signal than previously thought.
 > - A root-to-tip regression is a poor measure of [[Clock Model|temporal signal]]. 
 
+> 1. We first tried to test for temporal signal using BETS in the *"reduced"* dataset (N=194 genomes). 
+
+This run failed to achieve good mixing of the clock model.
+
+> 2. Visual inspection of a [[Root to Tip Regression]] suggested there may be local clade clocks.
+
+![ [[Root to Tip Regression]] of *[[Yersinia pestis|Y. pestis]]* genomes on sampling date, colored by clade. The dashed black line shows the observed linear trends that may indicate local clade clocks.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a632ff2/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:fig_rtt_all}
+
+> 3. A BETS analysis of the clade-separated datasets detected temporal signal in 7/12 clades.
+
 *[[Yersinia pestis|Y. pestis]]* has been unambiguously shown to exhibit substantial rate variation both between and within clades [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. It is therefore unsurprising that extreme rate variation is also observed in this study. The [[Coefficient of Determination]] (R<sup>2</sup>) of the linear regression for the full dataset is extremely low at 0.09 (Table @tbl:table_temporal_signal). This suggests that a simple linear model, such as the strict clock model, is overall a poor fit for the data. 
 
 > What were the BETS results for the reduced dataset? 
@@ -237,7 +247,7 @@ While a [[Root to Tip Regression]] can be useful tool to explore temporal signal
 
 > Wait for an update on [[0.PRE]] to confirm this.
 
-![ [[Root to Tip Regression]] of [[Yersinia pestis|Y. pestis]] on sampling date, colored by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4dcc459/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:fig_rtt_all}
+
 
 
 > So what about Branch 2, since I was so adamant that it could be an undocumented historical pandemic?
@@ -285,6 +295,8 @@ Table: Substitution rates of bacterial pathogens.
 > The [[Big Bang Polytomy]] is surrounded by clades with varying degrees of [[Clock Model|temporal signal]]. The branches surrounded the Big Bang Polytomy [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]] show some of the most dramatic rate acceleration to accomodate.
 
 ### [[Phylogeography]]   {.page_break_before}
+
+(Geographic Patterns in Global Y. pestis Communities.)
 
 #### Geographic Distribution
 

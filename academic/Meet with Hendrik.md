@@ -17,6 +17,11 @@ time: 11:00
 
 [Meeting Link](https://us02web.zoom.us/j/84161407832?pwd=NlJFcGpXVDBteXk5Y2JpanBPMWRNUT09)
 
+
+Last Day to Defend: August 19, 2020
+File for Defense | Traditional: 2 + 6 weeks before defense (June 19, 2020)
+File for Defense | Accelerated: 2 + 6 weeks before defense (June 19, 2020)
+
 ## [[2021-05-14]]
 
 [Meeting Link](https://us02web.zoom.us/j/84161407832?pwd=NlJFcGpXVDBteXk5Y2JpanBPMWRNUT09)
