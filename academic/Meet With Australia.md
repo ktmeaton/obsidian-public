@@ -6,10 +6,10 @@ people:
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
 tags:
-  - ⬜/✨  
-status: done
+  - ⬜/🧨
+status: priority
 type: [[Meeting]]
-due: 2021-05-13
+due: 2021-06-03
 time: "18:00"
 ---
 

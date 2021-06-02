@@ -3,9 +3,9 @@ title:
   - Meet with Tyler
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨  
 status:
-  - priority  
+  - done 
 type: [[Meeting]]
 due: 2021-06-01
 time: 09:00

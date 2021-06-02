@@ -4,8 +4,8 @@ title:
   - Meet with Hendrik
 people:
 tags:
-  - ⬜/🧨
-status: priority
+  - ⬜/✨
+status: done
 type: [[Meeting]]
 due: 2021-06-01
 time: 11:00
