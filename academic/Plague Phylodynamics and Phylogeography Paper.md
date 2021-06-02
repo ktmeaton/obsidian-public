@@ -152,6 +152,39 @@ Another limitation of the pandemic nomenclature is the complete disconnection of
 
 ![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
 
+
+#### Geography  {.page_break_before}
+
+The geographic distribution of *[[Yersinia pestis|Y. pestis]]* reflects a complex dispersal history (Figure @fig:map_ibd .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clades [[0.ANT]] and [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) which shows a relatively small amount of genetic diversity over a tremendously large geographic range.
+
+An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
+
+The global phylogeny of *[[Yersinia pestis|Y. pestis]]* exhibits varying degrees of geographic structure (Table @tbl:mantel). 
+
+![
+Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
+**A**: Geographic distribution,
+**B**: Isolation by distance as a function of geographic distance and genetic distance.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/152e6ac/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd.png){#fig:map_ibd}
+
+| Clade  | N   | Coefficient | p      |
+| ------ | --- | ----------- | ------ |
+| All    | 601 |             |        |
+| 0.PRE  | 8   | -0.07       | 0.594  |
+| 0.ANT4 | 12  | 0.81        | 0.136  |
+| 0.PE   | 83  | 0.71        | 0.012* |
+| 0.ANT  | 103 | 0.58        | 0.012* |
+| 1.PRE  | 40  | 0.23        | 0.042* |
+| 1.ANT  | 4   | 0.46        | 0.153  |
+| 1.IN   | 39  | 0.28        | 0.042* |
+| 1.ORI  | 117 | 0.59        | 0.012* |
+| 2.ANT  | 54  | 0.46        | 0.014* |
+| 2.MED  | 116 | 0.06        | 0.594  |
+| 3.ANT  | 11  | 0.56        | 0.012* |
+| 4.ANT  | 11  | 0.46        | 0.012* |
+
+Table: Mantel test results. A * indicates a significant p-value.{#tbl:mantel}
+
 #### Hosts  {.page_break_before}
 
 While some pathogens show high specificity for particular hosts, *[[Yersinia pestis|Y. pestis]]* is capable of infecting virtually all mammals ([[CITE]]). As a result, the global phylogeny of plague is overall not structured by host (Figure @fig:divtree_host). While the ancient clades of [[Yersinia pestis|Y. pestis]] ([[LNBA|Late Neolithic Bronze Age\|Bronze Age]], [[First Pandemic]], [[Second Pandemic]]) are exclusively associated with humans, this is more likely due to the sampling biases discusses previously. In archaeological investigations of *[[Yersinia pestis|Y. pestis]]*, human skeletal remains have been prioritized over zooarchaeological remains either due to abundance and/or availability.
@@ -161,18 +194,6 @@ It is worth noting that some degree of host-specific structure can be observed i
 ![
 The maximum-likelihood phylogeny depicting the global population structure of *[[Yersinia pestis\|Y. pestis]]* by host. The divisions of the four major sub-typing systems are provided.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5af901d/main/auspice/all/chromosome/full/filter5/divtree_host.png){#fig:divtree_host}
-
-#### Geography  {.page_break_before}
-
-The geographic distribution of *[[Yersinia pestis|Y. pestis]]* reflects a complex dispersal history (Figure @fig:fig_map_ibd_timeline .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clades [[0.ANT]] and [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) which shows a relatively small amount of genetic diversity over a tremendously large geographic range.
-
-An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline .A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
-
-![
-Spatiotemporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
-**A**: Geographic distribution,
-**B**: Isolation by distance as a function of geographic distance and genetic distance.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/152e6ac/main/iqtree/all/chromosome/full/filter5/filter-taxa/map_ibd.png){#fig:fig_map_ibd_timeline}
 
 ### [[Phylodynamics]] {.page_break_before}
 
