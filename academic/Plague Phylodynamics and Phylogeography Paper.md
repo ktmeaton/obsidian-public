@@ -38,7 +38,7 @@ filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
 tags: ⬜/🧨 
 status: priority
 title: 1000 Plagues in the Genomics Age
-subtitle: Population Structure, Phylodynamics, and Phylogeography
+subtitle: New insights from the global phylogeny of *[[Yersinia pestis|Y. pestis]]*
 type: 
   - [[Task]]
   - [[Note]]
@@ -58,7 +58,10 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%
 
 > - *[[Yersinia pestis|Y. pestis]]* exhibits greater temporal signal than previously thought.
 > - Clades associated with pandemics exhibit strict clock-like behavior.
-> - Sampling bias significantly impacts phylogeography reconstructions.
+> - The mean substitution rate is a drastic under-estimation, driven by lineages that do not have temporal signal.
+> - The idea of [[Yersinia pestis|Y. pestis]] having a slow rate may be a misnomer.
+> - Sampling bias significantly impacts phylogeography reconstructions
+> - The ancient lineages of [[Yersinia pestis|Y. pestis]] are not the only clades to have temporal signal.
 
 ## Introduction {.page_break_before}
 
@@ -95,8 +98,6 @@ While powerful in potential, this recent avalanche of data comes with new challe
 
 ### [[Population Structure]]
 
-#### [[Phylogeny]]
-
 A maximum-likelihood phylogeny was estimated from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). Following removal of the outgroup taxa, the alignment was composed of 10,249 variant positions with 3,844 sites shared by at least two genomes. 
 
 The global population structure of *[[Yersinia pestis|Y. pestis]]*  can be organized according to a vast array of historical, ecological, biochemical, and molecular characteristics. As a result, several sub-typing systems have emerged to differentiate lineages of plague [[[Qi 2016 Taxonomy Yersinia Pestis\|[@qi2016TaxonomyYersiniaPestis]]]. Unfortunately, these systems are not standardized across the field, with some authors in recent times developing their own approaches [[Li 2009 Genotyping Phylogenetic Analysis\|[@li2009GenotypingPhylogeneticAnalysis;]] [[Platonov 2013 Molecular Typing Yersinia\|@platonov2013MolecularTypingYersinia]]]. It has thus been argued that the nomenclature used to describe *[[Yersinia pestis|Y. pestis]]* populations is in need of revision and should be driven by the latest global phylogenetic analysis [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]].
@@ -107,6 +108,10 @@ In response, Figure @fig:divtree_branch-major provides an overview of how severa
 1. Biovar
 1. Subspecies
 1. Time Period
+
+![
+The maximum-likelihood phylogeny depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*. The divisions of the four major sub-typing systems are provided.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0542fd/main/auspice/all/chromosome/full/filter5/divtree_branch_major.png){#fig:divtree_branch-major}
 
 #### [[Major Phylogenetic Branch]]
 
@@ -126,15 +131,20 @@ The subspecies system distinguishes a main subspecies, *pestis*, from non-main s
 
 #### [[Time Period]]
 
-Structuring *[[Yersinia pestis|Y. pestis]]* populations according to historical time period is a relatively new introduction that arose out of interdisciplinary ancient DNA work. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* can be broadly grouped into four time periods (Figure @fig:timeline). In general, historical strains of plague isolated prior to the 20th century cluster into well-supported monophyletic clades. All known isolates from [[Late Aniquty]] derive from ```[[0.ANT]]``` (Figure @fig:timeline B) and the [[Medieval]]/[[Early Modern Period]] is exclusively represented by ```[[1.PRE]]``` (Figure @fig:timeline C). The exception to this temporal patterning is the [[LNBA|Late Neolithic Bronze Age]] which is comprised of clades ```[[0.PRE]]``` and a single isolate of ```[[0.PE]]``` (Figure @fig:timeline A). 
+Structuring *[[Yersinia pestis|Y. pestis]]* populations according to historical time period is a relatively new introduction that arose out of interdisciplinary ancient DNA work. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* can be broadly grouped into four time periods (Figure @fig:timeline). In general, historical strains of plague isolated prior to the 20th century cluster into well-supported monophyletic clades. All known isolates from [[Late Aniquty]] derive from ```[[0.ANT]]``` and the [[Medieval]]/[[Early Modern Period]] is exclusively represented by ```[[1.PRE]]```. The exception to this temporal patterning is the [[LNBA|Late Neolithic Bronze Age]] which is comprised of clades ```[[0.PRE]]``` and a single isolate of ```[[0.PE]]```. 
 
-This observed temporal structure is at odds with the expected diversity of plague given the phylogeny presented in Figure @fig:divtree_branch-major. By at least the [[Late Antiquity]], multiple lineages of plague had already diverged to form the ancestors of ```[[Branch 0]]``` clades, namely ```[[0.PE]]``` and ```[[0.ANT]]```. Similarly, the [[Medieval]] clade (```[[1.PRE]]```) post-dates the [[Big Bang Polytomy]] at which point ```Branches 2-4``` were emerging. If we suspect the true diversity of *[[Yersinia pestis|Y. pestis]]* populations in these time periods to be much greater, why does the sampled diversity not reflect this?
 
-One explanation may be that collection date, location, and host are all highly confounded in ancient DNA sampling strategies. Previous genomic work on historical *[[Yersinia pestis|Y. pestis]]* has preferentially targeted human remains from [[European]] archaeological sites [[(CITE)]]. Thus the limited diversity observed in Figure @fig:timeline may be a product of this sampling bias. The interpretation therefore would be that historical plague is not temporally patterned, but rather ecological structured by host and geography. Support for this hypothesis may be seen in the greater diversity of plague observed in the Modern period (Figure @fig:timeline D), which is the product of intensive global sampling from a wide variety of mammalian hosts.
+![
+The temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all.png){#fig:timeline}
+
+This observed temporal structure is at odds with the expected diversity of plague given the phylogeny presented in Figure @fig:divtree_branch-major. By at least the [[Late Antiquity]], multiple lineages of plague had already diverged to form the ancestors of ```[[Branch 0]]``` clades, namely ```[[0.PE]]``` and ```[[0.ANT]]```. Similarly, the [[Medieval]] clade ```[[1.PRE]]``` post-dates the [[Big Bang Polytomy]] at which point ```Branches 2-4``` were emerging. If we suspect the true diversity of *[[Yersinia pestis|Y. pestis]]* populations in these time periods to be much greater, why does the sampled diversity not reflect this?
+
+One explanation may be that collection date, location, and host are all highly confounded in ancient DNA sampling strategies. Previous genomic work on historical *[[Yersinia pestis|Y. pestis]]* has preferentially targeted human remains from [[European]] archaeological sites [[(CITE)]]. Thus the limited diversity observed in Figure @fig:timeline may be a product of this sampling bias. The interpretation therefore would be that historical plague is not temporally patterned, but rather ecological structured by host and geography. Support for this hypothesis may be seen in the greater diversity of plague observed in the Modern period (Figure @fig:timeline), which is the product of intensive global sampling from a wide variety of mammalian hosts.
 
 An alternative, or perhaps complementary, viewpoint is that the structured diversity of ancient *[[Yersinia pestis|Y. pestis]]* is a product of past pandemics. In this line of reasoning, pandemic lineages of *[[Yersinia pestis|Y. pestis]]* became prominent during their respective time period, and thus are disproportionately sampled. 
 
-There are at least three known pandemics of plague which appear in the historical record. The [[First Pandemic]] (6th - 8th century CE) began with the [[Plague of Justinian]] and proceeded to devastate the Byzantine Empire of the Mediterranean world ([[CITE]]). The [[Late Antiquity]] clade found within ```[[Branch 0]]``` (```[[0.ANT4]]```) is thought to derive from this pandemic given spatiotemporal overlap of the skeletal remains from which this lineage was retrieved [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague;]] [[Keller 2019 Ancient Yersinia Pestis\|@keller2019AncientYersiniaPestis]]].  Similarly, the [[Medieval]]/[[Early Modern]] clade [[1.PRE]] from ```[[Branch 1]]``` is thought to have been the causative agent of the [[Second Pandemic]]. This well-documented pandemic began with the infamous [[Black Death]] and swept across most of Eurasia from the 14th to 19th centuries ([[CITE]]). The third documented pandemic of plague, alias the *Modern Pandemic*, spread globally from the end of the [[18th Century]] and until the mid-[[20th Century]]. There is little dispute that a new lineage of plague emerging from [[Branch 1]] as biovar *orientalis* (```1.ORI```) was the causative agent of this pandemic. While the World Health Organization (WHO) declared the third pandemic over in 1950 ([[CITE)]]), this lineage continues to re-emerge to cause recent epidemics such as the [[2010 plague in Peru]] and the [[Madagascar Outbreaks of 2017]].
+There are at least three known pandemics of plague which appear in the historical record. The [[First Pandemic]] (6th - 8th century CE) began with the [[Plague of Justinian]] and proceeded to devastate the Byzantine Empire of the Mediterranean world ([[CITE]]). The [[Late Antiquity]] clade found within ```[[Branch 0]]``` (```[[0.ANT4]]```) is thought to derive from this pandemic given spatiotemporal overlap of the skeletal remains from which this lineage was retrieved [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague;]] [[Keller 2019 Ancient Yersinia Pestis\|@keller2019AncientYersiniaPestis]]].  Similarly, the [[Medieval]] clade [[1.PRE]] from ```[[Branch 1]]``` is thought to have been the causative agent of the [[Second Pandemic]]. This well-documented pandemic began with the infamous [[Black Death]] and swept across most of Eurasia from the 14th to 19th centuries ([[CITE]]). The third documented pandemic of plague, alias the *Modern Pandemic*, spread globally from the end of the [[18th Century]] and until the mid-[[20th Century]]. There is little dispute that a new lineage of plague emerging from [[Branch 1]] as biovar *orientalis* (```1.ORI```) was the causative agent of this pandemic. While the World Health Organization (WHO) declared the third pandemic over in 1950 ([[CITE)]]), this lineage continues to re-emerge to cause recent epidemics such as the [[2010 plague in Peru]] and the [[Madagascar Outbreaks of 2017]].
 
 A significant weakness to this hypothesis is that the [[Third Pandemic]] clade ```[[1.ORI]]``` is not sampled to a higher degree in the Modern period (Figure @fig:timeline D).
 
@@ -144,81 +154,112 @@ While the pandemic clade nomenclature provides an excellent foundation for histo
 
 Another limitation of the pandemic nomenclature is the complete disconnection of ```[[Branch 2]]``` to any pandemic-related events. This is surprising given that several criteria of a pandemic pathogen are fulfilled by ```[[Branch 2]]``` lineages, namely extensive spread and virulence. ```[[Branch 2]]``` genomes of *[[Yersinia pestis|Y. pestis]]* have been collected from all throughout [[Eurasia]], stretching from at least the [[Caucasus]], to [[India]], and to eastern [[China]] (Figure @fig:map_branch2). Furthermore, lineages of ```[[Branch 2]]``` have been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]] and were observed to have the highest spread velocity of any *[[Yersinia pestis|Y. pestis]]* clade [[Xu et al. 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. As historical plague scholarship extends beyond the bounds of [[Western Europe]], it will be important to consider the role these lineages played.
 
-#### [[Geography]]
+![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
 
-The geographic distribution of *[[Yersinia pestis|Y. pestis]]* reflects a complex dispersal history (Figure @fig:map_ibd .B). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clades [[0.ANT]] and [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) which shows a relatively small amount of genetic diversity over a tremendously large geographic range.
+#### [[Geography]]  {.page_break_before}
 
-An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:fig_map_ibd_timeline A) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
+The geographic distribution of *[[Yersinia pestis|Y. pestis]]* reflects a complex dispersal history (Figure @fig:map_all_branch-major). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (Clade [[0.PE]]). Alternatively, this diversity may occur over multiple centuries through distinct re-introductions and extinctions, as seen in the historical epidemics of Europe (Clades [[0.ANT]] and [[1.PRE]]). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (Clade [[1.ORI]]) which shows a relatively small amount of genetic diversity over a tremendously large geographic range.
+
+
+![
+The geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch-major}
+
+![
+Geographic distance vs. genetic distance. Statistical results come from a mantel test at α <= 0.05.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_all.png){#fig:mantel_all_branch-major}
+
+An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:map_all_branch-major) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
 
 The global phylogeny of *[[Yersinia pestis|Y. pestis]]* exhibits varying degrees of geographic structure (Table @tbl:mantel). 
 
-#### [[Host]]
+| Clade  | N   | Coefficient | P      |
+| ------ | --- | ----------- | ------ |
+| All    | 601 | -0.04       | 0.402  |
+| 0.PRE  | 8   | -0.07       | 0.544  |
+| 0.ANT4 | 12  | 0.81        | 0.224  |
+| 0.PE   | 83  | 0.71        | 0.013* |
+| 0.ANT  | 103 | 0.58        | 0.013* |
+| 1.PRE  | 40  | 0.23        | 0.063  |
+| 1.ANT  | 4   | 0.46        | 0.224  |
+| 1.IN   | 39  | 0.28        | 0.063  |
+| 1.ORI  | 117 | 0.59        | 0.013* |
+| 2.ANT  | 54  | 0.46        | 0.027* |
+| 2.MED  | 116 | 0.06        | 0.544  |
+| 3.ANT  | 11  | 0.56        | 0.027* |
+| 4.ANT  | 11  | 0.46        | 0.02*  |
 
-While some pathogens show high specificity for particular hosts, *[[Yersinia pestis|Y. pestis]]* is capable of infecting virtually all mammals ([[CITE]]). As a result, the global phylogeny of plague is overall not structured by host (Figure @fig:divtree_host). While the ancient clades of [[Yersinia pestis|Y. pestis]] ([[LNBA|Late Neolithic Bronze Age\|Bronze Age]], [[First Pandemic]], [[Second Pandemic]]) are exclusively associated with humans, this is more likely due to the sampling biases discusses previously. In archaeological investigations of *[[Yersinia pestis|Y. pestis]]*, human skeletal remains have been prioritized over zooarchaeological remains either due to abundance and/or availability.
+Table:  [[Mantel Test]] statistics. {#tbl:mantel}
 
-It is worth noting that some degree of host-specific structure can be observed in the *pestoides* (```[[0.PE]]```) clade.
 
 ### [[Phylodynamics]] {.page_break_before}
 
-> How has the known diversity of plague changed over time?
+#### Temporal Signal
 
-#### Temporal Signal {#sec:temporal_signal}
+Previous work has documented substantial rate variation both between and within clades of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. A [[Root to Tip Regression|root-to-tip regression]] on sampling date for the *full* dataset (N=601) reproduces this finding as the [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>) is extremely low at 0.09 (Figure @fig:rtt_all_branch-major). Furthermore, a [[Bayesian Evaluation of Temporal Signal]] (BETS) on the *reduced* dataset (N=191) was congruent, as the  [[Coefficient of Variation\|coefficient of variation]] was consistently estimated to be greater than 1. This suggests that a [[Clock Model#Relaxed Clock|relaxed clock]] model is favored in order to account for the high degree of rate variation. 
 
-The [[Bayesian Evaluation of Temporal Signal]] (BETS) exhibited poor sampling of the clock model parameters. However the [[Coefficient of Variation]] was consistently sampled >1, suggesting very substantial rate heterogeneity among lineages. To reduce uncertainty associated with the model, a fixed topology was used which did not recover... .This finding is congruent with previous work that documented substantial rate variation both between and within clades of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. Previous studies reported convergent MCMC chains. We posit that the dataset composition used in this study, which is markedly larger and more diverse than used previously, is the culprit. Thus finding new approaches to modelling temporal signal is crucial if we want to incorporate more diverse datasets.
+![ [[Root to Tip Regression\|Root-to-tip regression]]. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:rtt_all_branch-major}
 
-Visual inspection of a [[Root to Tip Regression]] led to the hypothesis that *[[Yersinia pestis|Y. pestis]]* has clade-specific molecular clocks (Figure @fig:rtt).
-
-When the multiple alignments were separated by clade as described in Section @sec:TBD... stable estimates could be obtained for all but one clade (```[[2.MED]]```). Furthermore, temporal signal was detected in 7/12 clades. While several clades did appear to exhibit strict clock-like behavior according to the [[Root to Tip Regression]] (Figure @fig:rtt_clades), the relaxed clock model had greater support in [[BETS]] in all cases (Table @tbl:temporal_signal). This suggests too important findings.
-
-1. Fitting a single clock model to all global populations of *[[Yersinia pestis|Y. pestis]]* is inappropriate and unstable.
-1. Clades of *[[Yersinia pestis|Y. pestis]]* have more temporal signal than previously thought.
-1. A [[Root to Tip Regression]] is a poor indicator of temporal signal for *[[Yersinia pestis|Y. pestis]]*. While the R<sup>2</sup> and p-value may indicate a linear model (ie. strict clock) is a good fit, it does not mean this is the most appropriate model to use.
-
- Intriguingly, clades that have been associated with historically documented pandemics are well-modeled by a strict clock including the [[First Pandemic]] clade ```[[0.ANT4]]```, the [[Second Pandemic]] clade ```[[1.PRE]] ``` and the [[Third Pandemic]] clade ```[[1.OR1]]```. The final clade which demonstrates strict clock behavior is the [[LNBA|Late Neolithic Bronze Age]] group ```[[0.PRE]]```. As this time period pre-dates historical records, there is little opportunity to estimate mortality rates. However, this similarity may lend support to the hypothesis that an early pandemic of plague was occurring at that time [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]. It may be a useful avenue of research to investigate to what extent rate variation is a useful predictor for 'pandemic potential'.
-
-While a [[Root to Tip Regression]] can be useful tool to explore temporal signal, it has several known limitations. Namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters both of these limitations, and is overall more sensitive given that multiple clock models can be tested. The superior performance of the [[Bayesian Evaluation of Temporal Signal|BETS]] test can be seen in (Table @tbl:table_temporal_signal). The [[Root to Tip Regression]] detects temporal signal in 5/12 clades while [[Bayesian Evaluation of Temporal Signal|BETS]] detects signal in 7/12 clades. Furthermore, in all cases the [[Clock Model|relaxed clock]] proves to have stronger support, even when the regression [[Coefficient of Determination]] is high. The conclusion is that a root-to-tip regression is a relatively poor measure of [[Clock Model|temporal signal]] in *[[Yersinia pestis|Y. pestis]]*.
-
-> Wait for an update on [[0.PRE]] to confirm this.
+However, the [[Bayesian Evaluation of Temporal Signal|BETS]] analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology (Figure @fig:mean_rate_trace_kde). This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with the analysis by [[Wagner 2014 Yersinia Pestis Plague\|@wagner2014YersiniaPestisPlague]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. However, [[Duchene 2016 Genomescale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]] found that *[[Yersinia pestis|Y. pestis]]* displayed mixed temporal signal and argued that the variation observed is a product of dataset composition more so than a true species effect.
 
 
+![MCMC parameter estimation of the mean substitution rate for the reduced dataset (N=191). Left: Poor mixing of the MCMC Chain, Right: The resulting multimodal estimate of the rate.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c12ba4b/main/beast/all/chromosome/prune/filter5/mean_rate_trace_kde.png){#fig:mean_rate_trace_kde}
 
+To identify patterns in rate variation that may improve the clock model, we first performed visual inspection of the [[Root to Tip Regression\|root-to-tip regression]] residuals (Figure @fig:rtt_all_branch-major). 3/12 clades appeared to have temporal signal according to a lineage model, namely the ancient clades isolated from human skeletal remains: ```[[0.PRE]]``` (Bronze Age),  ```[[0.ANT4]]``` (Late Antiquity), and ```[[1.PRE]]``` (Medieval/Early Modern). Indeed, when the [[Root to Tip Regression|root-to-tip regression]] was performed on clades in isolation, these three clades demonstrated strong evidence of strict-clock behavior (Table @tbl:rtt_statistics). This has been previously used to argue that the only lineages of *[[Yersinia pestis|Y. pestis]]* that have temporal signal are the ancient clades ([[CITE]]).
 
-> So what about Branch 2, since I was so adamant that it could be an undocumented historical pandemic?
+| Clade  | N   | Coefficient | p          |
+| ------ | --- | -----------:| ---------- |
+| All    | 601 |        0.09 | 4.959e-13* |
+| 1.ORI  | 117 |        0.04 | 1.184e-01  |
+| 1.IN   | 39  |        -0.0 | 1.0        |
+| 1.ANT  | 4   |        0.45 | 1.0        |
+| 1.PRE  | 40  |        0.76 | 2.022e-12* |
+| 2.MED  | 116 |        0.01 | 1.0        |
+| 2.ANT  | 54  |        0.05 | 4.764e-01  |
+| 4.ANT  | 11  |       -0.11 | 1.0        |
+| 3.ANT  | 11  |       -0.04 | 1.0        |
+| 0.ANT  | 103 |       -0.01 | 1.0        |
+| 0.ANT4 | 12  |        0.66 | 7.842e-03* |
+| 0.PE   | 83  |        0.01 | 1.0        |
+| 0.PRE  | 8   |        0.91 | 1.678e-03* |
 
+Table:  [[Root to Tip Regression\|Root-to-tip regression]] statistics. {#tbl:rtt_statistics}
 
+However, a [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by clade proved far more sensitive than the regression analysis, as temporal signal was detected in 7/12 clades (Table @tbl:bets_statistics). In addition, the [[Clock Model|relaxed clock]] model had higher support than the strict clock for all clades with temporal signal, even those identified as appearing to have strict-clock behavior in the regression.
 
-#### Clock Model
+|   Clade    | N   | Strict Clock Bayes Factor | Relaxed Clock Bayes Factor | Substitution Rate | Coefficient of Variation |
+|:----------:| --- | -------------------------:| --------------------------:| ----------------- | ------------------------ |
+|    All     | 191 |                        -- |                         -- | 1.59E-8           | 1.66                     | 
+| [[1.ORI]]  | 117 |                     29.6* |                      35.7* | 1.29E-7           | 1.38                     |
+|  [[1.IN]]  | 39  |                      -3.9 |                      -10.2 | --                | --                       |
+| [[1.ANT]]  | 4   |                      8.9* |                      12.6* | 6.48E-8           | 0.48                     |
+| [[1.PRE]]  | 40  |                     10.1* |                      44.1* | 4.77E-8           | 2.06                     |
+| [[2.MED]]  | 116 |                        -- |                         -- | --                | --                       |
+| [[2.ANT]]  | 54  |                     -20.8 |                      -13.7 | --                | --                       |
+| [[4.ANT]]  | 11  |                      -2.9 |                       3.7* | 9.38E-8           | 2.27                     |
+| [[3.ANT]]  | 11  |                      -9.6 |                      -11.4 | --                | --                       |
+| [[0.ANT]]  | 103 |                      -2.3 |                       -6.5 | --                | --                       |
+| [[0.ANT4]] | 12  |                      5.3* |                       5.9* | 3.51E-8           | 2.49                     |
+|  [[0.PE]]  | 83  |                     -82.1 |                      12.4* | 6.10E-7           | 2.24                     |
+| [[0.PRE]]  | 8   |                     83.0* |                       -2.9 | 5.23E-8           | 1.78                     |
 
-- [[Clock Model#Relaxed Clock|Relaxed clock]] [[MCMC]] runs produce a high [[Coefficient of Variation]] indicating a relaxed model is favored over a strict model (Figure @fig:fig_coefficient_variation). However, these runs do not converge, suggesting there is too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate]] or [[MRCA|tMRCA]].
+Table:  [[Bayesian Evaluation of Temporal Signal]] (BETS) statistics. {#tbl:bets_statistics}
 
-- When estimating a [[Substitution Rate]] for all of *[[Yersinia pestis|Y. pestis]]*, a [[Clock Model|strict clock]] and [[Clock Model|relaxed clock]] produce different estimates. This is observed in a Bayesian framework, where the strict clock underestimates the mean and the relaxed clock is multi-modal (Figure @fig:fig_sub_rate_compare). Also in a maximum likelihood framework (strict: 7.86E-09, relaxed: 1.63E-08)
-	
-- There doesn't appear to be clustering of rates. Branches with high rates are next to those with low rates  (Figure @fig:fig_timetree_color_rate).
+Several important findings can be drawn from the results:
 
-#### Mean Substitution Rate
+>1. **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. <br> This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. <br>
+>1. ***[[Yersinia pestis|Y. pestis]]* has much more temporal signal than previously thought.**<br>   
+> Separating the genomic dataset by clade recovers robust temporal signal for the majority of clades.<br> 
+>1. **The true substitution rates of *[[Yersinia pestis|Y. pestis]]* are much higher than previously thought.**<br> 
+> The mean substitution rate of all global populations (1.59E-8) is a drastic underestimate compared to the rates observed by clade which range from 3.51E-8 to 1.29E-7. The clades without temporal signal are pulling down the mean estimate. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the lowest observed substitution rates, on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]]. This study instead reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher, and comparable to *[[Mycobacterium tuberulcosis]]*.<br>
+>1. **[[Root to Tip Regression|Root-to-tip regression]] is a poor statistical test of temporal signal compared to [[Bayesian Evaluation of Temporal Signal|BETS]]**.<br> 
+> The [[Root to Tip Regression|root-to-tip regression]] has several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters these statistical violates, and is overall more sensitive given that multiple clock models can be tested.  In this study, [[root-to-tip regression]] indicated temporal signal in 3/12 lineages while the [[BETS]] analysis detected signal in 7/12 lineages.<br>
 
-> **TLDR;**
->
-> - The mean substitution rate of *[[Yersinia pestis|Y. pestis]]* is of little interpretive value given substantial rate variation and the time-dependency on sampling date.
+#### Time Tree
 
-*[[Yersinia pestis|Y. pestis]]* has one of the slowest substitution rates observed in a bacterial pathogen (Table @tbl:table_bacterial_rate_comparison). Given the tremendous variation observed in modern plague ecology, it is surprising that the evolutionary rate does not reflect this need to rapidly adapt to changing environments. However, this slow rate makes perfect sense when viewed in the context of rate *[[Time-Dependency\|time-dependency]]*, wherein the observed [[Substitution Rate\|substitution rate]] decreases as the sampling time frame increases. Furthermore, given that the full dataset shows no temporal signal, likely due to the lineage-specific variation showed in Figure @fig:fig_rate_boxplot_all, the mean substitution rate is of little interpretive value. 
+We begin by interpreting the results of the ```[[1.ORI]]``` time-scale, given that spatial temporal patterns are well documented from epidemiological work ([[[CITE]]]).
 
-> The time-dependency does not hold in the clade datasets! (Figure @fig:fig_time-dependency_clades)
-
-| Organism                         | Disease      | Substitution Rate (subs/site year<sup>-1</sup>) | Sampling Time (years) | Study                                                                                        |
-| -------------------------------- | ------------ | ----------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
-| *[[Mycobacterium leprae]]*       | Leprosy      | 1.56 x 10<sup>-8</sup>                          | 1993                  | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
-| *[[Yersinia pestis]]*            | Plague       | 1.63 x 10<sup>-8</sup>                          | 4687                  | This Study                                                                                 
-| *[[Mycobacterium tuberulcosis]]* | Tuberculosis | 5.39 x 10<sup>-8</sup>                          | 895                   | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
-| *[[Neisseria meningitis]]*       | Meningitis   | 6.05 x 10<sup>-8</sup>                          | 59                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
-| *[[Salmonella enterica]]*        | Typhoid      | 7.60  x 10<sup>-8</sup>                         | 84                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
-| *[[Pseudomonas aeruginosa]]*     | Pneumonia    | 3.36 x 10<sup>-7</sup>                          | 35                    | [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] |
-
-Table: Substitution rates of bacterial pathogens.
-{#tbl:table_bacterial_rate_comparison}
-
-
-> The [[Big Bang Polytomy]] is surrounded by clades with varying degrees of [[Clock Model|temporal signal]]. The branches surrounded the Big Bang Polytomy [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]] show some of the most dramatic rate acceleration to accomodate.
+- There is great interest in dating the [[Big Bang Polytomy]]. However, the majority of clades that surround this polytomy do not have temporal signal.
 
 ### [[Phylogeography]]   {.page_break_before}
 
@@ -262,7 +303,7 @@ A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] 
 
 To investigate the influence of between-clade variation in substitution rates, the multiple alignment was separated into the major clades of *[[Yersinia pestis\|Y. pestis]]*, which will be referred to as the *Clade* dataset. The partitioning of data by clade is a relatively new approach in [[Yersinia]] research and has been implemented used to... study epidemics of interest [[Williamson2016GenomicInsightsSustained\|[@williamson2016GenomicInsightsSustained;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]].
 
-Clade and subclade labeling was derived from the five-branch population structure accompanied by a biovar abbreviation ([[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. Only one modification was made, in that the subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness. In total, 12 clades were considered and are described in Table @tbl:table_temporal_signal.
+Clade and subclade labeling was derived from the five-branch population structure accompanied by a biovar abbreviation ([[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. Only one modification was made, in that the subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness. In total, 12 clades were considered and are described in Table @tbl:TBD.
 
 To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed and will be referred to as the *Reduced* dataset. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of uniquely derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 200 representative samples.
 
@@ -272,15 +313,18 @@ Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+
 
 ### Phylodynamics
 
-To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date. This linear model is a simple approach to explore whether the data follows a [[Clock Model|strict clock]] model. Uncertainty in the model parameters, namely the [[Substitution Rate\|mean substitution rate]] and [[tMRCA]], were estimated using 1000 iterations of the non-parametric bootstrap on the residuals.
+To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date using the python package ```statsmodels``` [[Seabold 2010 Statsmodels Econometric Statistical\|[@seabold2010StatsmodelsEconometricStatistical]]]. This linear model is a simple approach to explore whether the data follows a [[Clock Model|strict clock]] model. Uncertainty in the model parameters, namely the [[Substitution Rate\|mean substitution rate]] and the time to the most recent common ancestor [[tMRCA]], were estimated using 1000 iterations of the non-parametric bootstrap on the residuals.
 
-While RTT is a practical approach, it has two main limitations: 1) No rate variation is accounted for, and 2) The data are not independent observations due to shared internal branch lengths. Therefore to complement this approach, a [[Bayesian Evaluation of Temporal Signal|bayesian evaluation of temporal signal (BETS)]] was performed.
+While RTT is a practical approach, it has two main limitations: 
+1. No rate variation is accounted for.
+2. The data are not independent observations due to shared internal branch lengths. 
 
-A [[Bayesian\|bayesian]] [[Timetree|timetree]] was estimated using ... as implemented in [[BEAST]].
+Therefore to complement this approach, a [[Bayesian Evaluation of Temporal Signal|bayesian evaluation of temporal signal (BETS)]] was performed. To test for temporal signal in the *reduced* dataset (N=191), 
+- Tree prior ...
+- Strict and relaxed clocks (UCLN)
+- Proper priors were specified on ...
 
-A  [[Maximum-likelihood|maximum-likelihood]] [[Timetree|timetree]] was estimated using a [[Least Square Dating\|least-squares approach]] as implemented in [[LSD2]] [[To 2016 Fast Dating Using\|[@to2016FastDatingUsing]]]. Rate variation was modeled using a [[Lognormal\|lognormal]] [[Clock Model|relaxed clock]] with default parameters for the mean (1.0) and the standard deviation (0.2). The outgroup *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* was used to root the tree and then subsequently removed.
-
-> Note: I'm still pondering the best choice of parameters for the LSD2 relaxed clock.
+*"We chose the exponential-growth coalescent tree prior, instead of the birth–death tree prior, because it is conditioned on the samples instead of assuming a sampling process; this ensures that the marginal likelihoods for isochronous and heterochronous trees are comparable." [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]*
 
 ### Phylogeography
 
@@ -297,140 +341,49 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6d9ab2e/main/report/workflow.png){#fig:fig_workflow}
 
-### [[Population Structure]]
+#### [[Host]]  {.page_break_before}
 
-#### Phylogeny
+While some pathogens show high specificity for particular hosts, *[[Yersinia pestis|Y. pestis]]* is capable of infecting virtually all mammals ([[CITE]]). As a result, the global phylogeny of plague is overall not structured by host (Figure @fig:divtree_host). While the ancient clades of [[Yersinia pestis|Y. pestis]] ([[LNBA|Late Neolithic Bronze Age\|Bronze Age]], [[First Pandemic]], [[Second Pandemic]]) are exclusively associated with humans, this is more likely due to the sampling biases discusses previously. In archaeological investigations of *[[Yersinia pestis|Y. pestis]]*, human skeletal remains have been prioritized over zooarchaeological remains either due to abundance and/or availability.
 
-![
-The maximum-likelihood phylogeny depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*. The divisions of the four major sub-typing systems are provided.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0542fd/main/auspice/all/chromosome/full/filter5/divtree_branch_major.png){#fig:divtree_branch-major}
-
-#### [[Time Period]]
-
-![
-The temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0542fd/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all_annotate.png){#fig:timeline}
-
-#### [[The Three Pandemic Problem]]
-
-![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
-
-#### [[Host]]
+It is worth noting that some degree of host-specific structure can be observed in the *pestoides* (```[[0.PE]]```) clade.
 
 ![
 The maximum-likelihood phylogeny depicting the global population structure of *[[Yersinia pestis\|Y. pestis]]* by host. The divisions of the four major sub-typing systems are provided.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5af901d/main/auspice/all/chromosome/full/filter5/divtree_host.png){#fig:divtree_host}
 
-#### [[tMRCA]]
-
-![ Time to Most Recent Common Ancestory (tMRCA) by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/tmrca_boxplot_all.png){#fig:fig_tmrca_boxplot_all}
-
 ### [[Phylodynamics]]
 
 #### [[Root to Tip Regression]]
 
-![Root To Tip Regression. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:rtt_all_branch-major}
-
 ![Root To Tip Regression by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_clades.png){#fig:rtt_clades}
-
-
-| Clade  | N   | Coefficient | p          | Substitution Rate | Rate 95% CI Low | Rate 95% CI High | tMRCA | tMRCA 95% CI Low | tMRCA 95% CI High | 
-| ------ | --- | -----------:| ---------- | ----------------- | --------------- | ---------------- | ----- | ---------------- | ----------------- |
-| All    | 601 |        0.09 | 4.959e-13* | 7.54e-09          | 5.68e-09        | 8.95e-09         | -7310 | -10276           | -5858             |
-| 0.PRE  | 8   |        0.91 | 1.678e-03* | 7.17e-08          | 5.98e-08        | 8.48e-08         | -2895 | -3026            | -2799             |
-| 0.ANT4 | 12  |        0.66 | 7.842e-03* | 2.54e-08          | 1.65e-08        | 3.35e-08         | -113  | -483             | 39                |
-| 0.PE   | 83  |        0.01 | 1.000e+00  | 1.75e-07          | -6.05e-08       | 4.18e-07         | 1542  | -360             | 3654              |
-| 0.ANT  | 103 |       -0.01 | 1.000e+00  | -1.21e-08         | -7.36e-08       | 4.12e-08         | 3073  | -711             | 6226              |
-| 1.PRE  | 40  |        0.76 | 2.022e-12* | 6.45e-08          | 5.52e-08        | 7.36e-08         | 1352  | 1316             | 1378              |
-| 1.ANT  | 4   |        0.45 | 1.000e+00  | 5.95e-08          | 2.15e-08        | 9.97e-08         | 1750  | 1319             | 1841              |
-| 1.IN   | 39  |        -0.0 | 1.000e+00  | 4.34e-08          | -2.91e-08       | 1.18e-07         | 1878  | 1597             | 2360              |
-| 1.ORI  | 117 |        0.04 | 1.184e-01  | 2.57e-08          | 7.80e-09        | 4.07e-08         | 1766  | 1347             | 1854              |
-| 2.ANT  | 54  |        0.05 | 4.764e-01  | -1.20e-07         | -2.35e-07       | -3.41e-08        | 2047  | 2019             | 2204              |
-| 2.MED  | 116 |        0.01 | 1.000e+00  | -6.96e-08         | -1.57e-07       | 1.33e-08         | 2181  | 1472             | 2900              |
-| 3.ANT  | 11  |       -0.04 | 1.000e+00  | 3.53e-08          | -2.53e-08       | 9.94e-08         | 1817  | 1189             | 3191              |
-| 4.ANT  | 11  |       -0.11 | 1.000e+00  | -6.84e-09         | -6.99e-08       | 6.11e-08         | 2839  | 1106             | 3493              |
-
-Table:  [[Root to Tip Regression]] statistics. {#tbl:rtt_statistics}
 
 ![Mean substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip regression]].](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
 
-#### [[BETS]]
-
-
-| Branch |   Clade    | Strict Clock Bayes Factor | UCLN Bayes Factor | 
-|:------:|:----------:| -------------------------:| -----------------:|
-|   1    | [[1.ORI]]  |                     29.6* |             35.7* |
-|   1    |  [[1.IN]]  |                      -3.9 |             -10.2 |
-|   1    | [[1.ANT]]  |                      8.9* |             12.6* |
-|   1    | [[1.PRE]]  |                     10.1* |             44.1* |
-|   2    | [[2.MED]]  |                        -- |                -- |
-|   2    | [[2.ANT]]  |                     -20.8 |             -13.7 |
-|   4    | [[4.ANT]]  |                      -2.9 |              3.7* |
-|   3    | [[3.ANT]]  |                      -9.6 |             -11.4 |
-|   0    | [[0.ANT]]  |                      -2.3 |              -6.5 |
-|   0    | [[0.ANT4]] |                      5.3* |              5.9* |
-|   0    |  [[0.PE]]  |                     -82.1 |             12.4* |
-|   0    | [[0.PRE]]  |                     83.0* |              -2.9 |
-
-![Coefficient of variation.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Coefficient%20of%20Variation.png){#fig:fig_coefficient_variation width="100%"}
-
-![Substitution rate comparison (green: strict clock, orange: relaxed clock.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Substitution%20Rate%20Comparison.png){#fig:fig_sub_rate_compare width="100%"}
-
-
-![Time tree colored by rate.](https://raw.githubusercontent.com/ktmeaton/obsidian-public/4f0256a5ba01b5e32025339865e1f35243c13188/academic/Time%20Tree%20Colored%20by%20Rate.png){#fig:fig_timetree_color_rate width="100%"}
-
 ### [[Phylogeography]]
-
-
-![
-The geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch-major}
-
-![
-Geographic distance vs. genetic distance. Statistical results come from a mantel test at α <= 0.05.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_all.png){#fig:mantel_all_branch-major}
 
 ![
 Geographic distance vs. genetic distance by clade. Statistical results come from a mantel test.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_clades.png){#fig:mantel_clades_branch-major}
 
 
-| Clade  | N   | Coefficient | P      |
-| ------ | --- | ----------- | ------ |
-| All    | 601 | -0.04       | 0.402  |
-| 0.PRE  | 8   | -0.07       | 0.544  |
-| 0.ANT4 | 12  | 0.81        | 0.224  |
-| 0.PE   | 83  | 0.71        | 0.013* |
-| 0.ANT  | 103 | 0.58        | 0.013* |
-| 1.PRE  | 40  | 0.23        | 0.063  |
-| 1.ANT  | 4   | 0.46        | 0.224  |
-| 1.IN   | 39  | 0.28        | 0.063  |
-| 1.ORI  | 117 | 0.59        | 0.013* |
-| 2.ANT  | 54  | 0.46        | 0.027* |
-| 2.MED  | 116 | 0.06        | 0.544  |
-| 3.ANT  | 11  | 0.56        | 0.027* |
-| 4.ANT  | 11  | 0.46        | 0.02*  |
-
-Table:  [[Mantel Test]] statistics. {#tbl:mantel}
-
 ![ Discrete state phylogeography confidence. High confidence branches (>=0.95) are colored black, low confidence branches are colored light grey.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/69cbfd3/main/auspice/all/chromosome/full/filter5/divtree_mugration_confidence.png){#fig:fig_phylogeography_confidence}
 
 
-| Clade  | Internal Nodes | High Confidence (Nodes) | High Confidence (Percent) |
-| ------ | --------------:| -----------------------:| -------------------------:|
-| All    |            600 |                     202 |                     33.67 |
-| 1.ORI  |            116 |                      29 |                     25.00 |
-| 1.IN   |             39 |                      17 |                     43.59 |
-| 1.ANT  |              3 |                       0 |                      0.00 |
-| 1.PRE  |             40 |                      13 |                     32.50 |
-| 2.MED  |            115 |                      34 |                     29.57 |
-| 2.ANT  |             53 |                      23 |                     43.40 |
-| 4.ANT  |             10 |                       3 |                     30.00 |
-| 3.ANT  |             10 |                       6 |                     60.00 |
-| 0.ANT  |            104 |                      26 |                     25.00 |
-| 0.ANT4 |             11 |                       4 |                     36.36 |
-| 0.PE   |             85 |                      43 |                     50.59 |
-| 0.PRE  |              7 |                       3 |                     42.86 |
+| Clade      | Internal Nodes | High Confidence (Nodes) | High Confidence (Percent) |
+| ---------- | --------------:| -----------------------:| -------------------------:|
+| All        |            600 |                     202 |                     33.67 |
+| [[1.ORI]]  |            116 |                      29 |                     25.00 |
+| [[1.IN]]   |             39 |                      17 |                     43.59 |
+| [[1.ANT]]  |              3 |                       0 |                      0.00 |
+| [[1.PRE]]  |             40 |                      13 |                     32.50 |
+| [[2.MED]]  |            115 |                      34 |                     29.57 |
+| [[2.ANT]]  |             53 |                      23 |                     43.40 |
+| [[4.ANT]]  |             10 |                       3 |                     30.00 |
+| [[3.ANT]]  |             10 |                       6 |                     60.00 |
+| [[0.ANT]]  |            104 |                      26 |                     25.00 |
+| [[0.ANT4]] |             11 |                       4 |                     36.36 |
+| [[0.PE]]   |             85 |                      43 |                     50.59 |
+| [[0.PRE]]  |              7 |                       3 |                     42.86 |
 
 Table: Discrete state phylogeography confidence.
 {#tbl:table_discrete_phylogeography_confidence}
