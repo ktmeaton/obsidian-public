@@ -15,6 +15,30 @@ time: "18:00"
 
 # Meet With Australia
 
+## [[2021-06-03]]
+
+- Geography rates for 0.ANT4, all very similar, but good mixing in the traces.
+- Migration events / unit of time
+- Migration events / lineage / unit of time
+- Plot vs sample size
+- Test of topology and discrete states correlated to tree
+- "Consistency of Inferences"
+- Model Summary
+- "Consistency Index"
+- Branching Events
+- Comparing sampling times
+- Phenotype Flow Rate (Or Human/Rodent Rate)
+- Using host to explain the regressions/
+- Is there a BETS equivalent
+- Geographic Rate to be tackled later, just have jump rate rather than nuc model
+
+TBD
+
+- Rerun 1.PRE
+
+
+- Take all tips that are in the same state, and plot their geographic distance
+
 ## [[2021-05-13]] 1800 EST / 0800 AEST
 
 [Meeting Link](https://us02web.zoom.us/j/88245943522?pwd=V2FHbitaOE1MTCtDM2hsMHUyR1Fjdz09)
