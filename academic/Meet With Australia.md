@@ -209,7 +209,7 @@ What does not make sense:
 
 ### Tasks
 - [x] [[Send Starting Tree to Australia]]
-- [x] [[Datasets by Clade]]
+- [x] [[Clade Datasets]]
 - [x] [[Send IBD Plots]]
 - Dating by clade (BETS analysis).
 - Relative branch rates (genetic distance, 

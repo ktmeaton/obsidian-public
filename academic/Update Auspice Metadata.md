@@ -29,3 +29,28 @@ do
   cp $file /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/auspice/$PREFIX$file;
 done
 ```
+
+## ML
+
+```bash
+cd auspice/all/chromosome/full/filter5
+```
+
+## BEAST
+
+```bash
+cd beast/all/chromosome/clade/summary_trees_noHyperPrior/relaxed_clock
+
+PREFIX="plague-phylogeography-projects_main_ml_"
+for file in `ls *.json`;
+do
+  if [[ "$file" != *"augur"* ]]; then
+    echo $file;
+	cp $file /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/auspice/$PREFIX$file;
+  fi;
+done
+  
+  
+  cp $file /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/auspice/$PREFIX$file;
+done
+```
