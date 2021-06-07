@@ -44,8 +44,9 @@ $endfor$
   <div class="reveal">
     <div class="slides">
 
+
 $if(title)$
-<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
   <h1 class="title">$title$</h1>
 $if(subtitle)$
   <p class="subtitle">$subtitle$</p>
@@ -60,8 +61,15 @@ $endif$
 $if(date)$
   <p class="date">$date$</p>
 $endif$
+
+$if(title-img)$
+        <img height=200px src=$title-img$>
+$endif$
+
 </section>
 $endif$
+
+
 $if(toc)$
 <section id="$idprefix$TOC">
 $table-of-contents$

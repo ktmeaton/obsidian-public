@@ -1,8 +1,9 @@
 ---
 title: 1000 Plagues in the Genomics Age
 subtitle: New insights from the global phylogeny of *[[Yersinia pestis]]*
+title-img: "https://rawcdn.githack.com/ktmeaton/plague-phylogeography/e74d7b0d732023d109e1abbefde3305eae589ebd/docs/images/thumbnail_DHSI2020.png"
 author: 
-  - [[Katherine Eaton]]
+  - [[Katherine Eaton]], [[Hendrik Poinar]], [[Sebastian Duchene]], [[Leo Featherstone]]
 authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
@@ -34,7 +35,7 @@ compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input 
 
 ![
 Phylogeographic relationships of American mastodons [[Karpinski 2020 American Mastodon Mitochondrial\|[@karpinski2020AmericanMastodonMitochondrial]]]
-](C:\Users\ktmea\Projects\obsidian\academic\karpinski2020AmericanMastodonMitochondrial_fig1.png){#fig:phylogeography_mastodon height=400px}
+](https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d9/academic/karpinski2020AmericanMastodonMitochondrial_fig1.png){#fig:phylogeography_mastodon height=400px}
 
 
 ### Does plague have temporal signal?
@@ -75,7 +76,7 @@ It's highly debated whether plague (*[[Yersinia pestis]]*) has detectable tempor
 
 |                                                                                                                                        |                                                                                                                                     |
 |:--------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|
-| ![[[Sebastian Duchene]].](C:\Users\ktmea\Projects\obsidian\academic\Sebastian_Duchene_Picture.png){#fig:sebastian_duchene width=150px} | ![[[Leo Featherstone]].](C:\Users\ktmea\Projects\obsidian\academic\Leo_Featherstone_Picture.png){#fig:leo_featherstone width=150px} |
+| ![[[Sebastian Duchene]].](https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d90/academic/Sebastian_Duchene_Picture.png){#fig:sebastian_duchene width=150px} | ![[[Leo Featherstone]].](https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d90/academic/Leo_Featherstone_Picture.png){#fig:leo_featherstone width=150px} |
 |                                                         [[Sebastian Duchene]]                                                          |                                                        [[Leo Featherstone]]                                                         |
 
 ### Global Phylogeny
@@ -84,7 +85,7 @@ It's highly debated whether plague (*[[Yersinia pestis]]*) has detectable tempor
 
 ![
 The maximum-likelihood phylogeny depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*.
-](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\auspice\all\chromosome\full\filter5\divtree_branch_major.svg){#fig:divtree_branch-major width=800px}
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/auspice/all/chromosome/full/filter5/divtree.svg){#fig:divtree_branch-major width=800px}
 
 ### Phylodynamics
 
@@ -147,7 +148,7 @@ The time-scaled phylogeny of the modern pandemic clade [[1.ORI]].
 
 ![
 [[Root to Tip Regression|Root-to-tip regression]] on sampling date.
-](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\iqtree\all\chromosome\full\filter5\filter-taxa\rtt_all_plain.svg){#fig:rtt_all_plain width=800px}
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d1ee21c4cccd22860aa2156741c1e3a8d1/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_plain.svg){#fig:rtt_all_plain width=800px}
 
 ### What To Do?  {data-transition="none" }
 
@@ -159,7 +160,7 @@ The time-scaled phylogeny of the modern pandemic clade [[1.ORI]].
 
 ![
 [[Root to Tip Regression|Root-to-tip regression]] on sampling date by clade.
-](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\iqtree\all\chromosome\full\filter5\filter-taxa\rtt_all_branch_major.svg){#fig:rtt_all_branch_major width=800px}
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.svg){#fig:rtt_all_branch_major width=800px}
 
 ### Joint (N=600, split by clade)
 
@@ -192,13 +193,7 @@ Table:  [[Bayesian Evaluation of Temporal Signal]] (BETS) statistics. {#tbl:bets
 
 <hr> 
 
-![Left: Sequential method (ML) timetree using a single model. Right: Joint method (Bayesian) timetree using clade-specific models](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\auspice\all\chromosome\full\filter5\1.ORI_timetree_ml_beast_outline.svg){#fig:beast_vs_ml width=900px}
-
-### What's the pattern?
-
-![
-The maximum-likelihood phylogeny showing clades with temporal signal.
-](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\auspice\all\chromosome\full\filter5\divtree_temporal_signal.svg){#fig:divtree_temporal_signal width=800px}
+![Left: Sequential method (ML) timetree using a single model. Right: Joint method (Bayesian) timetree using clade-specific models](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d1/main/auspice/all/chromosome/full/filter5/1.ORI_timetree_ml_beast.svg){#fig:beast_vs_ml width=900px}
 
 ### Conclusions
 
@@ -220,18 +215,18 @@ The maximum-likelihood phylogeny showing clades with temporal signal.
 
 ### Don't Trust the RTT
 
-Even in clades with seemingly good strict-clock like behavior
-
-![[1.PRE RTT.png]]
+Even in clades with seemingly good strict-clock like behavior!
 
 ![
-The maximum-likelihood phylogeny showing clades with temporal signal.
-](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\auspice\all\chromosome\full\filter5\1.PRE RTT.png){#fig:divtree_temporal_signal width=800px}
+[[Root to Tip Regression|Root-to-tip regression]] for clade [[1.PRE]].
+](https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d9/academic/1.PRE%20RTT.png){#fig:rtt_PRE height=400px}
 
 
 ### What's Next
 
-- Phylogeography!
+![
+The maximum-likelihood phylogeny showing clades with temporal signal.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/auspice/all/chromosome/full/filter5/divtree_temporal_signal.svg){#fig:divtree_temporal_signal width=800px}
 
 ## References
 
