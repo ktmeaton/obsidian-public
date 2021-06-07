@@ -1,5 +1,13 @@
 # Katherine Eaton's Academic Obsidian Vault
 
+## Slides
+
+- (https://ktmeaton.github.io/obsidian-public/blob/master/academic/2021-06-08%20Poinar%20Lab%20Meeting.html)
+
+## Papers
+
+- [[[Plague Phylodynamics and Phylogeography Paper]]](https://ktmeaton.github.io//obsidian-public/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html)
+
 ## Note Hierarchy
 
 ```mermaid
