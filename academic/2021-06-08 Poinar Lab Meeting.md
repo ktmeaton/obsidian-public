@@ -20,7 +20,7 @@ status: priority
 type: [[Slides]]
 due: 2021-06-08
 time: 11:00
-date: 08 June 2021
+date: 2021-06-08
 toc: false
 compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input '2021-06-08 Poinar Lab Meeting.md' --output '2021-06-08 Poinar Lab Meeting_convert.md' && pandoc --standalone -o '2021-06-08 Poinar Lab Meeting.html' -t revealjs --slide-level 3 --template pandoc/templates/revealjs-obsidian/template.html --css pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa.csl '2021-06-08 Poinar Lab Meeting_convert.md' && rm '2021-06-08 Poinar Lab Meeting_convert.md';" 
 ---
@@ -127,7 +127,7 @@ The time-scaled phylogeny of the modern pandemic clade [[1.ORI]].
 ](C:\Users\ktmea\Projects\plague-phylogeography-projects\main\auspice\all\chromosome\full\filter5\1.ORI_timetree_ml.svg){#fig:1.ORI_tree_ml height=400px}
 
 
-### Sequential (N=191)
+### Joint (N=191)
 
 <hr> 
 
@@ -227,6 +227,8 @@ Even in clades with seemingly good strict-clock like behavior!
 ![
 The maximum-likelihood phylogeny showing clades with temporal signal.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/auspice/all/chromosome/full/filter5/divtree_temporal_signal.svg){#fig:divtree_temporal_signal width=800px}
+
+## Thank You!
 
 ## References
 

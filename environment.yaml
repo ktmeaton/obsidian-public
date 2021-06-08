@@ -1,0 +1,9 @@
+name: jekyll-site
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - gxx_linux-64>=7.3.0
+  - make>=4.2.1
+  - ruby=2.6.6
+  - libxml2>=2.9.10
