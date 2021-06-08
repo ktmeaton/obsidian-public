@@ -4,11 +4,6 @@ subtitle: New insights from the global phylogeny of *[[Yersinia pestis]]*
 title-img: "https://rawcdn.githack.com/ktmeaton/plague-phylogeography/e74d7b0d732023d109e1abbefde3305eae589ebd/docs/images/thumbnail_DHSI2020.png"
 author: 
   - [[Katherine Eaton]], [[Hendrik Poinar]], [[Sebastian Duchene]], [[Leo Featherstone]]
-authors:
-  - name: [[Katherine Eaton]]
-    github: ktmeaton
-    orcid: 0000-0001-6862-7756
-    affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
 venue: "Poinar Lab Meeting"
 progress: true
 slideNumber: true
