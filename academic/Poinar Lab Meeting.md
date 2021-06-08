@@ -20,6 +20,10 @@ time: 09:00
 	- Hendrik
 	- Kat
 	- Sina
+	
+### Notes
+
+- Variables to explain temporal structure: epidemics, host, genetic pairwise distances, how the data was divided
 
 
 ## 2021-05-25
