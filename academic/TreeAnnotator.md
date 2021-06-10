@@ -16,6 +16,12 @@ treeannotator -burnin 10 -hpd2D 0.95 beast.timetree.trees beast_mcc_hpd95.nex
 treeannotator -burnin 10 -hpd2D 0.95 beast.trees beast_mcc_hpd95.nex
 ```
 
+```bash
+for file in `ls *.trees`;
+do
+  echo $file;
+done
+```
 ---
 
 tags: [[Tool]], #📝/🌱

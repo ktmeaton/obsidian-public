@@ -28,6 +28,12 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 - [[BEAST]]
 - [[spreaD3]]
 
+## Ideas
+
+What are some applications of [[Discrete|discrete]] [[Phylogeography|phylogeography]] in [[Plague Phylodynamics and Phylogeography]]>
+
+- Transition rates within and between [[Foci|ecological zones]]. 
+
 ## Literature
 
 - [[Genome]]-based models of [[Yersinia pestis]] have not been grounded with [[Geospatial|geospatial]] [[Statistics]]. An example from [[Guellil 2020 Genomic Historical Synthesis]]:

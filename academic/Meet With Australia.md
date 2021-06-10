@@ -9,11 +9,13 @@ tags:
   - ⬜/🧨
 status: priority
 type: [[Meeting]]
-due: 2021-06-03
+due: 2021-06-15
 time: "18:00"
 ---
 
 # Meet With Australia
+
+## [[2021-06-15]]
 
 ## [[2021-06-03]]
 

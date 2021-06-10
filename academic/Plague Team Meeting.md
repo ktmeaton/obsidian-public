@@ -3,9 +3,9 @@ title:
   - Plague Team Meeting
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨   
 status:
-  - priority  
+  - done  
 type: [[Meeting]]
 due: 2021-06-07
 time: 09:30

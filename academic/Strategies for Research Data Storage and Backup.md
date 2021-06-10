@@ -3,9 +3,9 @@ title:
   - Strategies for Research Data Storage and Backup
 people:
 tags:
-  - ⬜/🧨  
+  - ⬜/✨
 status:
-  - priority  
+  - done 
 type: [[Meeting]]
 due: 2021-06-03
 time: 15:00
