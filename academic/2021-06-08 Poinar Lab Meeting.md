@@ -3,7 +3,10 @@ title: 1000 Plagues in the Genomics Age
 subtitle: New insights from the global phylogeny of *[[Yersinia pestis]]*
 title-img: "https://rawcdn.githack.com/ktmeaton/plague-phylogeography/e74d7b0d732023d109e1abbefde3305eae589ebd/docs/images/thumbnail_DHSI2020.png"
 author: 
-  - [[Katherine Eaton]], [[Hendrik Poinar]], [[Sebastian Duchene]], [[Leo Featherstone]]
+  - [[Katherine Eaton]]
+  - [[Hendrik Poinar]]
+  - [[Sebastian Duchene]]
+  - [[Leo Featherstone]]
 venue: "Poinar Lab Meeting"
 progress: true
 slideNumber: true
@@ -18,6 +21,7 @@ time: 11:00
 date: 2021-06-08
 toc: false
 compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input '2021-06-08 Poinar Lab Meeting.md' --output '2021-06-08 Poinar Lab Meeting_convert.md' && pandoc --standalone -o '2021-06-08 Poinar Lab Meeting.html' -t revealjs --slide-level 3 --template pandoc/templates/revealjs-obsidian/template.html --css pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa.csl '2021-06-08 Poinar Lab Meeting_convert.md' && rm '2021-06-08 Poinar Lab Meeting_convert.md';" 
+---
 ---
 
 ### Molecular Clock Models

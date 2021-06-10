@@ -5,7 +5,14 @@ aliases:
   - Kalamazoo 2021 Presentation
   - "1000 Plagues in the Genomics Era"
   - "Exhibiting Biographies of Bacteria"
-author: [[Katherine Eaton]], [[Ann Carmichael]], [[Edward Holmes]], [[Brian Golding]], [[Sebastian Duchene]], [[Leo Featherstone]], [[Hendrik Poinar]]
+author: 
+  - [[Katherine Eaton]]
+  - [[Ann Carmichael]]
+  - [[Edward Holmes]]
+  - [[Brian Golding]]
+  - [[Sebastian Duchene]]
+  - [[Leo Featherstone]]
+  - [[Hendrik Poinar]]
 venue: "Curating Medieval Plague and Pestilence"
 progress: true
 slideNumber: true

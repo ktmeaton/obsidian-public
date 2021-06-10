@@ -4,11 +4,10 @@ title:
 people:
 tags:
   - ⬜/✨   
-status:
-  - done 
+status: done 
 type: [[Meeting]]
 due: 2021-05-25
-time: 09:00
+time: "09:00"
 ---
 
 # Poinar Lab Meeting
