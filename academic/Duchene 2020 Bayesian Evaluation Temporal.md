@@ -38,12 +38,12 @@ project: [[plague-phylogeography]]
 - [[Bayes Factor]] is used to evaluate these competing models. In essence, it is the ratio of the [[Marginal Likelihood]] of the models.
 - There are numerous ways to estimate the [[Marginal Likelihood]].
 
-## Figures
+## Seldon Summary
 
-|          Fig X           |     |
-|:------------------------:| --- |
-| ![[duchene2020BayesianEvaluationTemporal\_figX.jpg]] |     |
-|     Figure caption.      |     |
-|   [[Duchene 2020 Bayesian Evaluation Temporal\|Alias]]   |     |
-
-## Notes
+> - We considered three configurations for sampling times: birth–death sampling times, which are correct for the heterochronous data but not for the isochronous data; identical sampling times, which is correct for isochronous data but not for the heterochronous data; and permuted birth–death sampling times, which are incorrect for both heterochronous and isochronous data.
+> - Receiver operating characteristic (ROC) curves for data simulated with high evolutionary rate and wide sampling window (i), low evolutionary rate and wide sampling window (ii), high evolutionary rate and narrow sampling window (iii), and low evolutionary rate and narrow sampling window (iv).
+> - Although both log marginal-likelihood estimators detected temporal signal, NS supported the relaxed clock over the strict clock for three heterochronous data sets simulated without among-lineage rate variation (r ¼ 0.0) and for six data sets simulated with low among-lineage rate variation (r ¼ 0.1).
+> - The approach involves quantifying statistical support for two competing models: a model in which the data are accompanied by the actual sampling times (i.e., the data are treated as heterochronous) and a model in which the sampling times are contemporaneous (i.e., the data are treated as isochronous).
+> - Estimates of log marginal likelihoods with GSS and NS were very similar among models, with mean log Bayes factors among data sets of <1 for the two models with highest log marginal likelihoods for GSS (supplementary fig. S6, Supplementary Material online).
+> - Differentiating between the strict clock and relaxed clock appeared somewhat more difficult, particularly for NS, where the relaxed clock with correct sampling times yielded log marginal likelihoods very similar to those for the strict clock for data with low among-lineage rate variation (r of 0.0 or 0.1).
+> - Phylogenetic methods can use the sampling times of molecular sequence data to calibrate the molecular clock, enabling the estimation of evolutionary rates and timescales for rapidly evolving pathogens and data sets containing ancient DNA samples.

@@ -46,3 +46,13 @@ Workflow steps:
 tags: #📥/📰, #📝/🌱
 
 dellicour2020PhylodynamicWorkflowRapidly
+
+## Seldon Summary
+
+> - We generated a [[Timetree\|time-scaled phylogenetic tree]] using a rapid [[Maximum-likelihood|maximum-likelihood]] approach ([[Sagulenko et al. 2018 TreeTime Maximum-Likelihood Phylodynamic|Sagulenko et al. 2018]]) and subsequently ran a preliminary [[Discrete|discrete]] [[Phylogeography\|phylogeographic]] analysis along this tree to identify internal nodes and descending clades that likely correspond to distinct introductions into the [[Belgium\|Belgian]] territory (fig. 1, supplementary fig. S2, Supplementary Material online).
+> - Although we acknowledge that a fully integrated analysis (i.e., an analysis where the phylogenetic tree and ancestral locations are jointly inferred) would be preferable, fixing an empirical [[Timetree\|time-scaled phylogenetic tree]] represents a good compromise to rapidly gain insights into the dispersal history and dynamics of [[SARS-CoV-2]] [[Clade|lineages]].
+> - Our spatially explicit [[Phylogeography\|phylogeographic]] analyses uncover the [[Spatiotemporal\|spatiotemporal]] distribution of [[Belgium\|Belgian]] [[SARS-CoV-2]] clusters, indicating a relatively low impact of the lockdown on both the [[Dispersal Velocity\|dispersal velocity]] of [[Virus\|viral]] lineages and on the frequency of long-distance [[Spread|dispersal]] events.
+> - Importance of Introduction Events into the Country. On June 10, 2020, we downloaded all [[Belgium\|Belgian]] [[SARS-CoV-2]] sequences (N=740) available on [[GISAID]], as well as all non-Belgian sequences used in [[Nextstrain]] to represent the overall [[Spread|dispersal history]] of the [[SARS-CoV-2\|virus]] (N=4,309) with 126 different countries of origin).
+> - We then compared the inferred number of [[Introduction Event\|introduction events]] into the [[Belgium\|Belgian]]  territory as well as the lineage [[Dispersal Velocity\|dispersal velocity]] estimates obtained when running the pipeline on each starting tree (supplementary table S1).
+> - Besides the tree, we also report the distribution of cluster sizes (number of sampled sequences in each cluster) as well as the number of sequences sampled through time.
+> - On the tree, lineages circulating in [[Belgium\|Belgian]]  are highlighted in green, and green nodes correspond to the most ancestral node of each [[Belgium\|Belgian]]  cluster (see also supplementary fig. S1, Supplementary Material online for a noncircular visualization of the same tree).

@@ -25,7 +25,7 @@ aliases:
 ## Dialogue
 
 - [[Spyrou 2016 Historical Pestis Genomes|Spyrou et al. (2016)]] discusses the analysis of [[Cui 2013 Historical Variations Mutation|Cui et al. (2013)]] and [[Morelli et al. 2010 Yersinia Pestis Genome|Morelli et al. (2010)]] with regards to the [[Geographic Origin|geographic origins]] of plague being in [[China]]. The authors argue that those findings may be influenced by a strong [[East Asia|East Asian]] [[Sampling Bias]]. To additionally support their claim, they point to [[Cui 2013 Historical Variations Mutation|Cui et al. (2013) own findings]] that the most basally [[Divergence|diverging]] [[Clade|clades]] of [[Plague]] are found in the [[Former Soviet Union]], ie. the [[Caucasus]].
-- This paper integrates [[Caucasus]] [[Yersinia pestis|Y. pestis]] strains from [[Zhgenti et al. 2015 Genome Assemblies 11|Zhgenti et al. (2015)]], 
+- This paper integrates [[Caucasus]] [[Yersinia pestis|Y. pestis]] strains from [[Zhgenti 2015 Genome Assemblies 11|Zhgenti et al. (2015)]], 
 
 ## Figures
 

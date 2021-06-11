@@ -62,7 +62,7 @@ To estimate the phylogeny root, two genomes from the outgroup [[Yersinia pseudot
 |    ![[map_comparison.png]]                                                            |
 |                                                                                                                     |
 
-The ancient samples are primarily collected from [[Europe]], with a few unique samples drawn from [[Central Asia]]. In contrast, the modern samples are primarily drawn from [[East Asia|East]] and [[Central Asia]]. Contrast this with the known geographic distribution of modern plague ([[Xu et al. 2019 Historical Genomic Data|Xu et al. 2019]]).
+The ancient samples are primarily collected from [[Europe]], with a few unique samples drawn from [[Central Asia]]. In contrast, the modern samples are primarily drawn from [[East Asia|East]] and [[Central Asia]]. Contrast this with the known geographic distribution of modern plague ([[Xu 2019 Historical Genomic Data|Xu et al. 2019]]).
 
 
 #### Code

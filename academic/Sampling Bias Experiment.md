@@ -16,7 +16,7 @@ The [[Geographic Origin|geographic origin]] and [[Spread|spread]] of pathogen
 
 However, there remains a central tension in the field of [[phylogeography]] over the appropriate use of this analytical technique. On one hand, [[phylogeography]] is frequently employed as a *discovery* technique to test hypotheses about organisms or events for which there is little prior information.  This framework is typical of [[Ancient DNA|ancient DNA]] studies, where a [[phylogeny]] is constructed from rare ancient specimens. This technique has been used to estimate when and where bacterial diseases first emerged such as plague, syphilis, and tuberculosis ([[Rascovan et al. 2019 Emergence Spread Basal|Rascovan et al. 2019]]; [[Majander et al. 2020 Ancient Bacterial Genomes|Majander et al. 2020]]; [[Sabin 2020 Seventeenth-Century Mycobacterium Tuberculosis|Sabin et al. 2020]]). In these examples, the purpose of [[Phylogeography|phylogeography]] is to generate novel insight where other forms of evidence, such as historical documents, are limited.
 
-On the other side of this tension, is the argument that [[phylogeography]] is a *complementary* technique which requires robust prior knowledge and context. [[Faria et al. 2018 Genomic Epidemiological Monitoring|Faria et al. (2018)]] demonstrated the analytical and interpretive risks associated with using only [[Phylogenetic|phylogenetic]] data to reconstruct the spread of a [[Yellow Fever Virus|Yellow Fever Virus]] outbreak. These risks derived from significant [[Sampling Bias|sampling bias]], specifically [[Under-represented|undersampling]] of [[non-human]] hosts. Similarly, [[Kalkauskas et al. 2021 Sampling Bias Model|Kalkauskas et al. (2021)]] tested through simulation how [[Under-represented|undersampling]] key geographic regions could significantly shift the geographic origin of [[West Nile Virus]] in the [[United Statest of America|USA]]. Intriguingly, the authors found that including [[Sequence-Free|sequence-free]] samples alleviated the effects of severe [[Sampling Bias|sampling bias]]. This novel approach integrates samples with date and location but no genetic information, such as outbreak case-occurrences records ([[Duchene et al. 2019 Inferring Infectious Disease|Duchene et al. 2019]]).
+On the other side of this tension, is the argument that [[phylogeography]] is a *complementary* technique which requires robust prior knowledge and context. [[Faria et al. 2018 Genomic Epidemiological Monitoring|Faria et al. (2018)]] demonstrated the analytical and interpretive risks associated with using only [[Phylogenetic|phylogenetic]] data to reconstruct the spread of a [[Yellow Fever Virus|Yellow Fever Virus]] outbreak. These risks derived from significant [[Sampling Bias|sampling bias]], specifically [[Under-represented|undersampling]] of [[non-human]] hosts. Similarly, [[Kalkauskas et al. 2021 Sampling Bias Model|Kalkauskas et al. (2021)]] tested through simulation how [[Under-represented|undersampling]] key geographic regions could significantly shift the geographic origin of [[West Nile Virus]] in the [[United Statest of America|USA]]. Intriguingly, the authors found that including [[Sequence-Free|sequence-free]] samples alleviated the effects of severe [[Sampling Bias|sampling bias]]. This novel approach integrates samples with date and location but no genetic information, such as outbreak case-occurrences records ([[Duchêne 2019 Inferring Infectious Disease|Duchene et al. 2019]]).
 
 What does this mean for [[Ancient DNA|ancient DNA]] research and the appropriate use of [[phylogeography]]? These findings are exciting for two reasons:
 
@@ -36,7 +36,7 @@ Incorporating [[Sequence-Free|sequence-free]] datasets is a relatively recent me
 The event and organism of inquiry in this study is the [[Third Pandemic]] of [[Plague|plague]], caused by the bacterium [[Yersinia pestis]]. The rationale for this selection was:
 
 >1. There is significant [[Sampling Bias|sampling biases]] in genomic sequences, namely the [[Over-Represented|oversampling]] of East Asia and the [[Under-represented|undersampling]] of Africa ([[Spyrou 2016 Historical Pestis Genomes|Spyrou et al. 2016]]).
->2. An extensive database of case records was recently assembled by [[Xu et al. 2019 Historical Genomic Data|Xu et al. (2019)]].
+>2. An extensive database of case records was recently assembled by [[Xu 2019 Historical Genomic Data|Xu et al. (2019)]].
 >3. [[Yersinia pestis|Y. pestis]] is the most intensively sequenced ancient pathogen, and thus the results of this study are expected to contribute to a great number of research projects.
 
 ---
@@ -58,7 +58,7 @@ style 2 fill:#1f77b4,stroke:#333,stroke-width:1px,fill-opacity:0.25;
 style 3 fill:#1f77b4,stroke:#333,stroke-width:1px,fill-opacity:0.25;
 ```
 
-4,552 records of human plague cases dating from 1776 - 2008 were selected to be the case records dataset ([[Xu et al. 2019 Historical Genomic Data|Xu et al. 2019]]). The number of records was randomly subsampled down to 455 (10%).
+4,552 records of human plague cases dating from 1776 - 2008 were selected to be the case records dataset ([[Xu 2019 Historical Genomic Data|Xu et al. 2019]]). The number of records was randomly subsampled down to 455 (10%).
 
 558 [[Yersinia pestis|Y. pestis]] genomic assembles were identified from the NCBI databases using [[NCBImeta_Paper]]. Collection date and location were curated by cross-referencing the original publications. Of the initial 558 genomes, 367 genomes were collected between 1776 - 2008 and are associated with clades causing infection in humans. [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
 
@@ -291,7 +291,7 @@ style 11 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:0.25
 
 ### Data Collection
 
-|  Geographic and temporal distribution of plague case records ([[Xu et al. 2019 Historical Genomic Data\|Xu et al. 2019]]).                                               |
+|  Geographic and temporal distribution of plague case records ([[Xu 2019 Historical Genomic Data\|Xu et al. 2019]]).                                               |
 | ----------------------------------------------- |
 | ![[xu2019HistoricalGenomicData_plotly-map.png]] |
 | ![[xu2019HistoricalGenomicData_timeline.jpg]]                                                |

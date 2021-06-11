@@ -1,5 +1,7 @@
 ---
-aliases:
+title: 'Historical And Genomic Data Reveal The Influencing Factors On Global Transmission Velocity Of Plague During The Third Pandemic'
+author: Xu
+year: 2019
   - Xu et al. 2019
   - Xu et al. (2019)
   - '@xu2019HistoricalGenomicData'
@@ -8,7 +10,7 @@ tags:
   - 📝/🌱 
 ---
 
-# Xu et al. 2019 Historical Genomic Data
+# Xu 2019 Historical And Genomic Data Reveal The Influencing Factors On Global Transmission Velocity Of Plague During The Third Pandemic
 
 | Field   | Value                                                                             |
 | ------- | --------------------------------------------------------------------------------- |
@@ -39,7 +41,7 @@ tags:
 |:----------------------------------------------------------------------------------------------------------:| --- |
 |                                 ![[xu2019HistoricalGenomicData_fig1.jpg]]                                  |     |
 | The [[Geographic\|geographic]] distribution of [[Human\|human]] [[Plague\|plague]] during the [[Third Pandemic]] (1776-2008) |     |
-|                         [[Xu et al. 2019 Historical Genomic Data\|Xu et al. (2019)]]                         |     |
+|                         [[Xu 2019 Historical Genomic Data\|Xu et al. (2019)]]                         |     |
 
 ### Plotly Map
 
@@ -51,4 +53,14 @@ tags:
 |:----------------------------------------------------------------------------------------------------------:| --- |
 |                                 ![[xu2019HistoricalGenomicData_timeline.jpg]]                                  |     |
 | The [[Temporal\|temporal]] distribution of [[Human\|human]] [[Plague\|plague]] during the [[Third Pandemic]] (1776-2008) |     |
-|                         [[Xu et al. 2019 Historical Genomic Data\|Xu et al. (2019)]]                         |     |
+|                         [[Xu 2019 Historical Genomic Data\|Xu et al. (2019)]]                         |     |
+
+## Seldon Summary
+
+> - We estimated the worldwide spreading velocity of plague during the Third Pandemic, using more than 200 years of extensive human plague case records and genomic data, and analyzed the association of spatiotemporal environmental factors with spreading velocity.
+> - For the majority of plague genotypes, we found that the spread velocity of plague tended to decrease in time due to a decrease in spread distance and an increase in the interval between spreading events (Fig. 3).
+> - The observed higher spread velocity of plague in Europe, North Africa, and eastern South America (Fig. 2H) was likely related to the more advanced road or water transportation systems in these regions, compared with the lower spread velocity in south and Southeast Asia (Fig. 2H).
+> - Our results suggest that global warming may accelerate plague spread in warm, tropical regions and that the projected increased precipitation in the Northern Hemisphere may increase plague spread in relevant regions.
+> - Identification of Influencing Factors on Spread Velocity The GAM with the best combination of high out-of-sample predictive power and low model complexity (model 19, SI Appendix, Table S1) revealed that population density showed a significant negative association with spread velocity (Fig. 2B).
+> - We analyzed the spread velocity data using generalized additive models (GAMs; see Material and Methods) (19) that statistically accounted for spatiotemporal environmental influences, and found that 2.MED and 1.ORI3 spread significantly faster than the other genotypes, while 1.ORI2 spread significantly slower than others (Fig. 2G).
+> - The g-NNA method assumed that plague spread only within locations of the same Y. pestis genotype (i.e., the genotype of human plague was the same at locations i and j).

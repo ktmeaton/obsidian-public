@@ -5,7 +5,7 @@ aliases:
   - '@zhgenti2015GenomeAssemblies11'
 ---
 
-# Zhgenti et al. 2015 Genome Assemblies 11
+# Zhgenti 2015 Genome Assemblies 11
 
 | Field   | Value                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------- |
@@ -33,10 +33,20 @@ aliases:
 |:---------------------------------------------------------------------------------------------------------------------:| --- |
 |                                     ![[zhgenti2015GenomeAssemblies11_table1.jpg]]                                     |     |
 | [[Genomic\|genomic]] metadata for the [[Yersinia pestis\|Y. pestis]] strains [[Sequencing\|sequenced]] in this study. |     |
-[[Zhgenti et al. 2015 Genome Assemblies 11\|Zhgenti et al. (2015)]] | 	|	
+[[Zhgenti 2015 Genome Assemblies 11\|Zhgenti et al. (2015)]] | 	|	
 
 ## Notes
 
 ---
 
 tags: #📥/📰
+
+## Seldon Summary
+
+> - The strains sequenced in this effort were selected from a historic collection of Y. pestis isolates from the Caucasus region preserved in the repository of the National Center for Disease Control and Public Health of Georgia.
+> - Here, we present the improved draft or finished assembled genomes from 11 strains isolated in the nation of Georgia and surrounding countries.
+> - Genome assemblies for 11 Yersinia pestis strains isolated in the Caucasus region.
+> - Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data.
+> - Characterisation of Yersinia pestis isolates from natural foci of plague in the Republic of Georgia, and their relationship to Y. pestis isolates from other countries.
+> - The raw Illumina reads were assembled in Velvet, and the Velvet consensus sequences were computationally shredded into 1.5-Kbp overlapping shreds (8).
+> - High-quality genomic DNA was extracted from purified isolates of each strain and draft sequence data generated using a combination of Illumina and 454 technologies (5, 6).
