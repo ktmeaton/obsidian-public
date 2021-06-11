@@ -174,21 +174,21 @@ Table:  [[Root to Tip Regression\|Root-to-tip regression]] statistics. {#tbl:rtt
 
 However, a [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by clade proved far more sensitive than the regression analysis, as temporal signal was detected in 7/12 clades (Table @tbl:bets_statistics). In addition, the [[Clock Model|relaxed clock]] model had higher support than the strict clock for all clades with temporal signal, even those identified as appearing to have strict-clock behavior in the regression.
 
-|   Clade    | N   | Strict Clock Bayes Factor | Relaxed Clock Bayes Factor | Substitution Rate | Coefficient of Variation |
-|:----------:| --- | -------------------------:| --------------------------:| ----------------- | ------------------------ |
-|    All     | 191 |                        -- |                         -- | 1.59E-8           | 1.66                     | 
-| [[1.ORI]]  | 117 |                     29.6* |                      35.7* | 1.29E-7           | 1.38                     |
-|  [[1.IN]]  | 39  |                      -3.9 |                      -10.2 | --                | --                       |
-| [[1.ANT]]  | 4   |                      8.9* |                      12.6* | 6.48E-8           | 0.48                     |
-| [[1.PRE]]  | 40  |                     10.1* |                      44.1* | 4.77E-8           | 2.06                     |
-| [[2.MED]]  | 116 |                        -- |                         -- | --                | --                       |
-| [[2.ANT]]  | 54  |                     -20.8 |                      -13.7 | --                | --                       |
-| [[4.ANT]]  | 11  |                      -2.9 |                       3.7* | 9.38E-8           | 2.27                     |
-| [[3.ANT]]  | 11  |                      -9.6 |                      -11.4 | --                | --                       |
-| [[0.ANT]]  | 103 |                      -2.3 |                       -6.5 | --                | --                       |
-| [[0.ANT4]] | 12  |                      5.3* |                       5.9* | 3.51E-8           | 2.49                     |
-|  [[0.PE]]  | 83  |                     -82.1 |                      12.4* | 6.10E-7           | 2.24                     |
-| [[0.PRE]]  | 8   |                     83.0* |                       -2.9 | 5.23E-8           | 1.78                     |
+|   Clade    | N   | Strict Clock Bayes Factor | Relaxed Clock Bayes Factor | Substitution Rate | Coefficient of Variation | tMRCA |
+|:----------:| --- | -------------------------:| --------------------------:| -----------------:| ------------------------:| -----:|
+|    All     | 191 |                        -- |                         -- |           1.59E-8 |                     1.66 | -4973 |
+| [[1.ORI]]  | 117 |                     29.6* |                      35.7* |           1.29E-7 |                     1.38 |  1867 |
+|  [[1.IN]]  | 39  |                      -3.9 |                      -10.2 |                -- |                       -- |    -- |
+| [[1.ANT]]  | 4   |                      8.9* |                      12.6* |           6.48E-8 |                     0.48 |  1759 |
+| [[1.PRE]]  | 40  |                     10.1* |                      44.1* |           4.77E-8 |                     2.06 |  1278 |
+| [[2.MED]]  | 116 |                        -- |                         -- |           2.49E-7 |                     2.85 |  1736 |
+| [[2.ANT]]  | 54  |                     -20.8 |                      -13.7 |                -- |                       -- |    -- |
+| [[4.ANT]]  | 11  |                      -2.9 |                       3.7* |           9.38E-8 |                     2.27 |  1927 |
+| [[3.ANT]]  | 11  |                      -9.6 |                      -11.4 |                -- |                       -- |    -- |
+| [[0.ANT]]  | 103 |                      -2.3 |                       -6.5 |                -- |                       -- |    -- |
+| [[0.ANT4]] | 12  |                      5.3* |                       5.9* |           3.51E-8 |                     2.49 |   173 |
+|  [[0.PE]]  | 83  |                     -82.1 |                      12.4* |           6.10E-7 |                     2.24 |  1764 |
+| [[0.PRE]]  | 8   |                     83.0* |                       -2.9 |           5.23E-8 |                     1.78 | -2881 |
 
 Table:  [[Bayesian Evaluation of Temporal Signal]] (BETS) statistics. {#tbl:bets_statistics}
 
@@ -289,26 +289,9 @@ Geographic location was modeled as a discrete state with transitions following a
 
 ![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6d9ab2e/main/report/workflow.png){#fig:fig_workflow}
 
-### Population structure ramblings
 
-
-An alternative, or perhaps complementary, viewpoint is that the structured diversity of ancient *[[Yersinia pestis|Y. pestis]]* is a product of past pandemics. In this line of reasoning, pandemic lineages of *[[Yersinia pestis|Y. pestis]]* became prominent during their respective time period, and thus are disproportionately sampled. 
-
-There are at least three known pandemics of plague which appear in the historical record. The [[First Pandemic]] (6th - 8th century CE) began with the [[Plague of Justinian]] and proceeded to devastate the Byzantine Empire of the Mediterranean world ([[CITE]]). The [[Late Antiquity]] clade found within ```[[Branch 0]]``` (```[[0.ANT4]]```) is thought to derive from this pandemic given spatiotemporal overlap of the skeletal remains from which this lineage was retrieved [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague;]] [[Keller 2019 Ancient Yersinia Pestis\|@keller2019AncientYersiniaPestis]]].  Similarly, the [[Medieval]] clade [[1.PRE]] from ```[[Branch 1]]``` is thought to have been the causative agent of the [[Second Pandemic]]. This well-documented pandemic began with the infamous [[Black Death]] and swept across most of Eurasia from the 14th to 19th centuries ([[CITE]]). The third documented pandemic of plague, alias the *Modern Pandemic*, spread globally from the end of the [[18th Century]] and until the mid-[[20th Century]]. There is little dispute that a new lineage of plague emerging from [[Branch 1]] as biovar *orientalis* (```1.ORI```) was the causative agent of this pandemic. While the World Health Organization (WHO) declared the third pandemic over in 1950 ([[CITE)]]), this lineage continues to re-emerge to cause recent epidemics such as the [[2010 plague in Peru]] and the [[Madagascar Outbreaks of 2017]].
-
-A significant weakness to this hypothesis is that the [[Third Pandemic]] clade ```[[1.ORI]]``` is not sampled to a higher degree in the Modern period (Figure @fig:timeline D).
-
-
-#### [[The Three Pandemic Problem]]
-
-While the pandemic clade nomenclature provides an excellent foundation for historical discussion, there are several problems with this system. First is the growing awareness of the spatiotemporal overlap of the [[Second Pandemic\|Second]] and the [[Third Pandemic]] ([[CITE]]). Previously, the temporal extents of these events were mutually exclusive, dating from the 14th-18th century, and the 19th-20th century respectively. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague ([[CITE Nukhet]]). The [[Second Pandemic]] is now known to have extended into the [[19th Century]] in parts of the [[Ottoman Empire]], with the latest epidemics dating to 1819 ([[CITE]]). Similarly, the [[Third Pandemic]] is now hypothesized to have began as early as 1772 in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. It remains unclear where to draw the distinction, if it even exists, between the [[Second Pandemic\|Second]] and [[Third Pandemic]].
-
-Another limitation of the pandemic nomenclature is the complete disconnection of ```[[Branch 2]]``` to any pandemic-related events. This is surprising given that several criteria of a pandemic pathogen are fulfilled by ```[[Branch 2]]``` lineages, namely extensive spread and virulence. ```[[Branch 2]]``` genomes of *[[Yersinia pestis|Y. pestis]]* have been collected from all throughout [[Eurasia]], stretching from at least the [[Caucasus]], to [[India]], and to eastern [[China]] (Figure @fig:map_branch2). Furthermore, lineages of ```[[Branch 2]]``` have been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]] and were observed to have the highest spread velocity of any *[[Yersinia pestis|Y. pestis]]* clade [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. As historical plague scholarship extends beyond the bounds of [[Western Europe]], it will be important to consider the role these lineages played.
-
-![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
 
 #### [[Geography]]  {.page_break_before}
-
 
 
 An important consideration is that the geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:map_all_branch-major) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]], let alone historical pandemics. Nor does it adequately characterize the most heavily affected regions of the world, namely [[Madagascar]] and the [[Democratic Republic of the Congo]] [[WHO 2017 Plague\|[@who2017Plague]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]].
@@ -333,9 +316,6 @@ The global phylogeny of *[[Yersinia pestis|Y. pestis]]* exhibits varying degrees
 
 Table:  [[Mantel Test]] statistics. {#tbl:mantel}
 
-#### [[Host]]  {.page_break_before}
-
-
 
 ### [[Phylodynamics]]
 
@@ -344,32 +324,3 @@ Table:  [[Mantel Test]] statistics. {#tbl:mantel}
 ![Root To Tip Regression by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_clades.png){#fig:rtt_clades}
 
 ![Mean substitition rate uncertainty by clade based on a non-parametric bootstrap of the [[Root to Tip Regression\|root-to-tip regression]].](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rate_boxplot_all.png){#fig:fig_rate_boxplot_all}
-
-### [[Phylogeography]]
-
-![
-Geographic distance vs. genetic distance by clade. Statistical results come from a mantel test.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_clades.png){#fig:mantel_clades_branch-major}
-
-
-![ Discrete state phylogeography confidence. High confidence branches (>=0.95) are colored black, low confidence branches are colored light grey.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/69cbfd3/main/auspice/all/chromosome/full/filter5/divtree_mugration_confidence.png){#fig:fig_phylogeography_confidence}
-
-
-| Clade      | Internal Nodes | High Confidence (Nodes) | High Confidence (Percent) |
-| ---------- | --------------:| -----------------------:| -------------------------:|
-| All        |            600 |                     202 |                     33.67 |
-| [[1.ORI]]  |            116 |                      29 |                     25.00 |
-| [[1.IN]]   |             39 |                      17 |                     43.59 |
-| [[1.ANT]]  |              3 |                       0 |                      0.00 |
-| [[1.PRE]]  |             40 |                      13 |                     32.50 |
-| [[2.MED]]  |            115 |                      34 |                     29.57 |
-| [[2.ANT]]  |             53 |                      23 |                     43.40 |
-| [[4.ANT]]  |             10 |                       3 |                     30.00 |
-| [[3.ANT]]  |             10 |                       6 |                     60.00 |
-| [[0.ANT]]  |            104 |                      26 |                     25.00 |
-| [[0.ANT4]] |             11 |                       4 |                     36.36 |
-| [[0.PE]]   |             85 |                      43 |                     50.59 |
-| [[0.PRE]]  |              7 |                       3 |                     42.86 |
-
-Table: Discrete state phylogeography confidence.
-{#tbl:table_discrete_phylogeography_confidence}
