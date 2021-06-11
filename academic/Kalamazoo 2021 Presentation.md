@@ -6,13 +6,12 @@ aliases:
   - "1000 Plagues in the Genomics Era"
   - "Exhibiting Biographies of Bacteria"
 author: 
-  - [[Katherine Eaton]]
-  - [[Ann Carmichael]]
-  - [[Edward Holmes]]
-  - [[Brian Golding]]
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-  - [[Hendrik Poinar]]
+  - [[Katherine Eaton]], [[Ann Carmichael]], [[Edward Holmes]], [[Brian Golding]], [[Sebastian Duchene]], [[Leo Featherstone]], [[Hendrik Poinar]]
+authors:
+  - name: [[Katherine Eaton]]
+    github: ktmeaton
+    orcid: 0000-0001-6862-7756
+    affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
 venue: "Curating Medieval Plague and Pestilence"
 progress: true
 slideNumber: true

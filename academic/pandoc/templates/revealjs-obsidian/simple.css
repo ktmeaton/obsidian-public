@@ -19,8 +19,6 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --main-font-size: 0.80em;
   --code-font-size: 0.60em;
   --list-font-size: 0.80em;
-  --caption-font-size: 0.50em;  
-  --footnote-font-size: 0.50em;
   --main-color: #000;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
@@ -32,8 +30,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading-text-shadow: none;
   --heading-font-weight: normal;
   --heading1-text-shadow: none;
-  --heading1-size: 1.60em;
-  --heading2-size: 2.00em;
+  --heading1-size: 3.77em;
+  --heading2-size: 2.11em;
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
@@ -86,52 +84,30 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   text-shadow: none;
   word-wrap: break-word; }
 
-/*********************************************
-* FONT SIZES
-*********************************************/
-
 .reveal h1 {
-  font-size: var(--heading1-size);
+  font-size: 1.60em; 
   font-weight: bold;  
   text-transform: uppercase;  
-  text-shadow: none; 
 }
 
 .reveal h2 {
-  font-size: var(--heading2-size); 
+  font-size: 2.00em; 
   font-weight: bold; 
   text-transform: uppercase;
 }
 
 .reveal h3 {
-  font-size: var(--heading3-size); 
+  font-size: 1.55em; 
   font-weight: bold;
   text-transform: uppercase;  
 }
 
 .reveal h4 {
   font-weight: bold;   
-  font-size: var(--heading4-size); }
+  font-size: 1em; }
 
-.reveal figcaption {
-  font-size: var(--caption-font-size); 
-}
-
-.reveal caption {
-  font-size: var(--caption-font-size); 
-}
-
-.reveal .footnotes ol{
-  font-size: var(--footnote-font-size); 
-  line-height: 0px;
-}
-
-.reveal .slides .slide-footer {
-  font-size: 16px;
-  position: fixed;
-  bottom: 0;
-  left:0;
-}
+.reveal h1 {
+  text-shadow: none; }
 
 /*********************************************
  * OTHER
@@ -203,10 +179,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   width: 70%;
   margin: 20px auto;
   padding: 5px;
-  font-style: normal;
+  font-style: italic;
   /* background: rgba(255, 255, 255, 0.05); */
-  /*background: rgba(0, 0, 0, 0.2); */
-  background: #c2e1ff;
+  background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); 
 }
 
@@ -248,12 +223,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   border-spacing: 0; }
 
 .reveal table th {
-  line-height: 2em;
   font-weight: bold; }
 
 .reveal table th,
 .reveal table td {
-  font-size: var(--caption-font-size);  
   text-align: left;
   padding: 0.2em 0.5em 0.2em 0.5em;
   border-bottom: 1px solid; }
@@ -289,22 +262,6 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal img {
   margin: 20px 0; }
-
-/*********************************************
-* Page Layout
-*********************************************/
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /*********************************************
  * LINKS

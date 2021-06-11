@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Katherine Eaton, Hendrik Poinar, Sebastian Duchene, Leo Featherstone">
+  <meta name="author" content="Katherine Eaton">
   <meta name="dcterms.date" content="2021-06-08">
   <title>1000 Plagues in the Genomics Age</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,25 +19,6 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-    }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
   <link rel="stylesheet" href="pandoc/templates/revealjs-obsidian/simple.css"/>
@@ -47,366 +28,33 @@
   <div class="reveal">
     <div class="slides">
 
-
-  <section id="title-slide">
+<section id="title-slide">
   <h1 class="title">1000 Plagues in the Genomics Age</h1>
   <p class="subtitle">New insights from the global phylogeny of <em>Yersinia pestis</em></p>
-  <p class="author"><small>Katherine Eaton, Hendrik Poinar, Sebastian Duchene, Leo Featherstone</small></p>
+  <p class="author"><small>Katherine Eaton</small></p>
   <p>Poinar Lab Meeting</p>
 
-  <p class="date">2021-06-08</p>
-
-        <img height=200px src=https://rawcdn.githack.com/ktmeaton/plague-phylogeography/e74d7b0d732023d109e1abbefde3305eae589ebd/docs/images/thumbnail_DHSI2020.png>
-
+  <p class="date">08 June 2021</p>
 </section>
 
-
-
-<section id="molecular-clock-models" class="slide level3">
-<h3>Molecular Clock Models</h3>
+<section>
+<section id="introduction" class="title-slide slide level2">
+<h2>Introduction</h2>
+<aside class="notes" style="visibility: hidden">
+Notes about the introduction section.
+</aside>
+</section>
+<section id="what-is-ancient-dna" class="slide level3">
+<h3>What is Ancient DNA?</h3>
 <hr>
 <ul>
-<li><em>“When did a past evolutionary event happen?”</em></li>
-<li>A molecular clock model estimates the rate at which DNA sequences change.</li>
-<li>Rate estimate + Phylogeny = Node Dating</li>
+<li>DNA retrieved from skeletal remains (+soil and artifacts!)</li>
+<li>Genetic evidence offers a window into past disease experience.</li>
+<li>Can be used to study infectious diseases, like medieval plague.</li>
 </ul>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d9/academic/karpinski2020AmericanMastodonMitochondrial_fig1.png" id="fig:phylogeography_mastodon" height="400" alt="Figure 1: Phylogeographic relationships of American mastodons (Karpinski et al., 2020)" /><figcaption aria-hidden="true">Figure 1: Phylogeographic relationships of American mastodons <span class="citation" data-cites="karpinski2020AmericanMastodonMitochondrial">(Karpinski et al., 2020)</span></figcaption>
-</figure>
-</section>
-<section id="does-plague-have-temporal-signal" class="slide level3">
-<h3>Does plague have temporal signal?</h3>
-<hr>
-<p>It’s highly debated whether plague (<em>Yersinia pestis</em>) has detectable temporal signal.</p>
-<blockquote>
-<p><em>“It’s complicated.”</em> - <span class="citation" data-cites="cui2013HistoricalVariationsMutation">Cui et al. (2013)</span></p>
-</blockquote>
-<blockquote>
-<p><em>“Hard No.”</em> - <span class="citation" data-cites="wagner2014YersiniaPestisPlague">Wagner et al. (2014)</span></p>
-</blockquote>
-<blockquote>
-<p><em>“Sometimes?”</em> - <span class="citation" data-cites="duchene2016GenomescaleRatesEvolutionary">(Duchêne et al., 2016)</span></p>
-</blockquote>
-<blockquote>
-<p><em>“Maybe the Second Pandemic does?”</em> - <span class="citation" data-cites="spyrou2019PhylogeographySecondPlague">Spyrou et al. (2019)</span></p>
-</blockquote>
-</section>
-<section id="lets-revive-the-debate" class="slide level3">
-<h3>Let’s Revive the Debate!</h3>
-<hr>
-<h4 id="data-collection">Data Collection</h4>
-<ol type="1">
-<li>Downloaded metadata for 1657 <em>Y. pestis</em> genome sequencing projects.</li>
-<li>Reviewed the original publications to curate collection <u>location</u>, <u>date</u> and <u>host</u>.</li>
-<li>Downloaded the curated sequence data for <u>600 genomes</u>.</li>
-</ol>
-<hr>
-<h4 id="phylogeny">Phylogeny</h4>
-<ol type="1">
-<li>Constructed a multiple sequence alignment of the <em>Y. pestis</em> chromosome (~4 MB).</li>
-<li>Estimated a maximum likelihood phylogeny.</li>
-<li>Test for temporal signal, using a variety of methods.</li>
-</ol>
-<table>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><img data-src="https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d90/academic/Sebastian_Duchene_Picture.png" id="fig:sebastian_duchene" width="150" alt="Sebastian Duchene." /></td>
-<td style="text-align: center;"><img data-src="https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d90/academic/Leo_Featherstone_Picture.png" id="fig:leo_featherstone" width="150" alt="Leo Featherstone." /></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Sebastian Duchene</td>
-<td style="text-align: center;">Leo Featherstone</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="global-phylogeny" class="slide level3">
-<h3>Global Phylogeny</h3>
-<hr>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/auspice/all/chromosome/full/filter5/divtree.svg" id="fig:divtree_branch-major" width="800" alt="Figure 2: The maximum-likelihood phylogeny depicts the global population structure of Y. pestis." /><figcaption aria-hidden="true">Figure 2: The maximum-likelihood phylogeny depicts the global population structure of <em>Y. pestis</em>.</figcaption>
-</figure>
-</section>
-<section id="phylodynamics" class="slide level3">
-<h3>Phylodynamics</h3>
-<hr>
-<p>What’s the best method to estimate a molecular clock model?</p>
-<blockquote>
-<h4 id="sequential-dellicour2020phylodynamicworkflowrapidly">1. Sequential <span class="citation" data-cites="dellicour2020PhylodynamicWorkflowRapidly">(Dellicour et al., 2020)</span><br></h4>
-<ul>
-<li>First estimate a phylogeny then the clock model.</li>
-<li>IQTREE, TreeTime, LSD2</li>
-</ul>
-</blockquote>
-<table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Handles large datasets</td>
-<td>Dependent on phylogeny being ‘correct’</td>
-</tr>
-<tr class="even">
-<td>Super fast</td>
-<td>Struggles with relaxed clock models</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<h4 id="joint-duchene2020bayesianevaluationtemporal">2. Joint <span class="citation" data-cites="duchene2020BayesianEvaluationTemporal">(Duchene et al., 2020)</span><br></h4>
-<ul>
-<li>Estimate a phylogeny and clock model simultaneously.</li>
-<li>BEAST, specifically, BETS.</li>
-</ul>
-</blockquote>
-<table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Wide variety of models available</td>
-<td>Can’t handle large datasets</td>
-</tr>
-<tr class="even">
-<td>Not dependent on input tree</td>
-<td>Slow</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="sequential-n600" class="slide level3">
-<h3>Sequential (N=600)</h3>
-<hr>
-<ul>
-<li>All terminal branches are long.</li>
-<li>Large number of polytomies.</li>
-<li>Divergences are <u><em>older</em></u> than expected.</li>
-</ul>
-<hr>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d1/main/auspice/all/chromosome/full/filter5/1.ORI_timetree_ml.svg" id="fig:1.ORI_tree_ml" height="400" alt="Figure 3: The time-scaled phylogeny of the modern pandemic clade 1.ORI." /><figcaption aria-hidden="true">Figure 3: The time-scaled phylogeny of the modern pandemic clade 1.ORI.</figcaption>
-</figure>
-</section>
-<section id="joint-n191" class="slide level3">
-<h3>Joint (N=191)</h3>
-<hr>
-<ul>
-<li>The MCMC analysis does not converge when estimating parameters of the clock model.</li>
-<li>The MCMC trace shows poor mixing throughout the run.</li>
-</ul>
-<hr>
-<figure>
-<img data-src="https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c12ba4b/main/beast/all/chromosome/prune/filter5/mean_rate_trace_kde.png" id="fig:mean_rate_trace_kde" alt="Figure 4: MCMC parameter estimation of the mean substitution rate. Left: Poor chain mixing, Right: Multimodal distribution of the rate." /><figcaption aria-hidden="true">Figure 4: MCMC parameter estimation of the mean substitution rate. Left: Poor chain mixing, Right: Multimodal distribution of the rate.</figcaption>
-</figure>
-</section>
-<section id="what-to-do" class="slide level3" data-transition="none">
-<h3 data-transition="none">What To Do?</h3>
-<hr>
-<ul>
-<li>Visually inspected the root-to-tip regression to look for patterns.</li>
-</ul>
-<hr>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d1ee21c4cccd22860aa2156741c1e3a8d1/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_plain.svg" id="fig:rtt_all_plain" width="800" alt="Figure 5: Root-to-tip regression on sampling date." /><figcaption aria-hidden="true">Figure 5: Root-to-tip regression on sampling date.</figcaption>
-</figure>
-</section>
-<section id="what-to-do-1" class="slide level3" data-transition="none">
-<h3 data-transition="none">What To Do?</h3>
-<hr>
-<ul>
-<li>Several clades appear to have their own linear models.</li>
-</ul>
-<hr>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.svg" id="fig:rtt_all_branch_major" width="800" alt="Figure 6: Root-to-tip regression on sampling date by clade." /><figcaption aria-hidden="true">Figure 6: Root-to-tip regression on sampling date by clade.</figcaption>
-</figure>
-</section>
-<section id="joint-n600-split-by-clade" class="slide level3">
-<h3>Joint (N=600, split by clade)</h3>
-<hr>
-<ul>
-<li><u><em>7 out of 12 clades</em></u> (46% of samples) have temporal signal using a relaxed clock.</li>
-<li>The remaining clades have no detectable temporal signal.</li>
-</ul>
-<hr>
-<div id="tbl:bets_statistics">
-<table>
-<caption>Table 1: Bayesian Evaluation of Temporal Signal (BETS) statistics.</caption>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Clade</th>
-<th><em>N</em></th>
-<th style="text-align: center;">Bayes Factor</th>
-<th style="text-align: right;">Temporal Signal</th>
-<th>Substitution Rate</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1.ORI</td>
-<td>117</td>
-<td style="text-align: center;">35.7</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>1.29 x 10<sup>-7</sup></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1.IN</td>
-<td>39</td>
-<td style="text-align: center;">-10.2</td>
-<td style="text-align: right;"><font color="red">No</font></td>
-<td>–</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">1.ANT</td>
-<td>4</td>
-<td style="text-align: center;">12.6</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>6.48 x 10<sup>-8</sup></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1.PRE</td>
-<td>40</td>
-<td style="text-align: center;">44.1</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>4.77 x 10<sup>-8</sup></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2.MED</td>
-<td>116</td>
-<td style="text-align: center;">–</td>
-<td style="text-align: right;"><font color="red">No</font></td>
-<td>–</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2.ANT</td>
-<td>54</td>
-<td style="text-align: center;">-13.7</td>
-<td style="text-align: right;"><font color="red">No</font></td>
-<td>–</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4.ANT</td>
-<td>11</td>
-<td style="text-align: center;">3.7</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>9.38 x 10<sup>-8</sup></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">3.ANT</td>
-<td>11</td>
-<td style="text-align: center;">-11.4</td>
-<td style="text-align: right;"><font color="red">No</font></td>
-<td>–</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">0.ANT</td>
-<td>103</td>
-<td style="text-align: center;">-6.5</td>
-<td style="text-align: right;"><font color="red">No</font></td>
-<td>–</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">0.ANT4</td>
-<td>12</td>
-<td style="text-align: center;">5.9</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>3.51 x 10<sup>-8</sup></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">0.PE</td>
-<td>83</td>
-<td style="text-align: center;">12.4</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>6.10 x 10<sup>-7</sup></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">0.PRE</td>
-<td>8</td>
-<td style="text-align: center;">83.0</td>
-<td style="text-align: right;"><font color="green"><strong>Yes</strong></font></td>
-<td>5.23 x 10<sup>-8</sup></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="sequential-vs.-joint" class="slide level3">
-<h3>Sequential vs. Joint</h3>
-<hr>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d1/main/auspice/all/chromosome/full/filter5/1.ORI_timetree_ml_beast.svg" id="fig:beast_vs_ml" width="900" alt="Figure 7: Left: Sequential method (ML) timetree using a single model. Right: Joint method (Bayesian) timetree using clade-specific models" /><figcaption aria-hidden="true">Figure 7: Left: Sequential method (ML) timetree using a single model. Right: Joint method (Bayesian) timetree using clade-specific models</figcaption>
-</figure>
-</section>
-<section id="conclusions" class="slide level3">
-<h3>Conclusions</h3>
-<blockquote>
-<h4 id="fitting-a-single-clock-model-to-all-of-y.-pestis-is-not-statistically-supported.">1. Fitting a single clock model to all of <em>Y. pestis</em> is not statistically supported.</h4>
-</blockquote>
-<p><small>The MCMC analyses are relatively unstable and fail to converge in parameter space.</small></p>
-<blockquote>
-<h4 id="y.-pestis-has-much-more-temporal-signal-than-previously-thought.">2. <em>Y. pestis</em> has much more temporal signal than previously thought.</h4>
-</blockquote>
-<p><small>Separating alignments by clade recovers robust temporal signal.</small></p>
-<blockquote>
-<h4 id="the-true-substitution-rate-of-y.-pestis-is-much-higher-than-previously-thought.">3. The true substitution rate of <em>Y. pestis</em> is much higher than previously thought.</h4>
-</blockquote>
-<p><small> Prior rate estimates were 2 x 10<sup>-8</sup>. This study finds it ranges from 3 x 10<sup>-8</sup> to 6 x 10<sup>-7</sup>.</small></p>
-<blockquote>
-<h4 id="root-to-tip-regression-is-a-poor-statistical-test-of-temporal-signal.">4. Root-to-tip regression is a poor statistical test of temporal signal.</h4>
-</blockquote>
-</section>
-<section id="dont-trust-the-rtt" class="slide level3">
-<h3>Don’t Trust the RTT</h3>
-<p>Even in clades with seemingly good strict-clock like behavior!</p>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/obsidian-public/f2b616d9/academic/1.PRE%20RTT.png" id="fig:rtt_PRE" height="400" alt="Figure 8: Root-to-tip regression for clade 1.PRE." /><figcaption aria-hidden="true">Figure 8: Root-to-tip regression for clade 1.PRE.</figcaption>
-</figure>
-</section>
-<section id="whats-next" class="slide level3">
-<h3>What’s Next</h3>
-<figure>
-<img data-src="https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a6bac2d/main/auspice/all/chromosome/full/filter5/divtree_temporal_signal.svg" id="fig:divtree_temporal_signal" width="800" alt="Figure 9: The maximum-likelihood phylogeny showing clades with temporal signal." /><figcaption aria-hidden="true">Figure 9: The maximum-likelihood phylogeny showing clades with temporal signal.</figcaption>
-</figure>
-</section>
-<section id="thank-you" class="title-slide slide level2">
-<h2>Thank You!</h2>
-
-</section>
-
-<section id="references" class="title-slide slide level2 unnumbered">
-<h2 class="unnumbered">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
-<div id="ref-cui2013HistoricalVariationsMutation" class="csl-entry" role="doc-biblioentry">
-Cui, Y., Yu, C., Yan, Y., Li, D., Li, Y., Jombart, T., Weinert, L. A., Wang, Z., Guo, Z., Xu, L., Zhang, Y., Zheng, H., Qin, N., Xiao, X., Wu, M., Wang, X., Zhou, D., Qi, Z., Du, Z., … Yang, R. (2013). Historical variations in mutation rate in an epidemic pathogen, <span><em>Yersinia</em></span><span> <em>Pestis</em></span>. <em>Proceedings of the National Academy of Sciences</em>, <em>110</em>(2), 577–582. <a href="https://doi.org/10.1073/pnas.1205750110">https://doi.org/10.1073/pnas.1205750110</a>
-</div>
-<div id="ref-dellicour2020PhylodynamicWorkflowRapidly" class="csl-entry" role="doc-biblioentry">
-Dellicour, S., Durkin, K., Hong, S. L., Vanmechelen, B., Martí-Carreras, J., Gill, M. S., Meex, C., Bontems, S., André, E., Gilbert, M., Walker, C., De Maio, N., Faria, N. R., Hadfield, J., Hayette, M.-P., Bours, V., Wawina-Bokalanga, T., Artesi, M., Baele, G., &amp; Maes, P. (2020). A <span>Phylodynamic Workflow</span> to <span>Rapidly Gain Insights</span> into the <span>Dispersal History</span> and <span>Dynamics</span> of <span>SARS</span>-<span>CoV</span>-2 <span>Lineages</span>. <em>Molecular Biology and Evolution</em>, <em>msaa284</em>. <a href="https://doi.org/10.1093/molbev/msaa284">https://doi.org/10.1093/molbev/msaa284</a>
-</div>
-<div id="ref-duchene2020BayesianEvaluationTemporal" class="csl-entry" role="doc-biblioentry">
-Duchene, S., Lemey, P., Stadler, T., Ho, S. Y. W., Duchene, D. A., Dhanasekaran, V., &amp; Baele, G. (2020). Bayesian <span>Evaluation</span> of <span>Temporal Signal</span> in <span>Measurably Evolving Populations</span>. <em>Molecular Biology and Evolution</em>, <em>37</em>(11), 3363–3379. <a href="https://doi.org/10.1093/molbev/msaa163">https://doi.org/10.1093/molbev/msaa163</a>
-</div>
-<div id="ref-duchene2016GenomescaleRatesEvolutionary" class="csl-entry" role="doc-biblioentry">
-Duchêne, S., Holt, K. E., Weill, F.-X., Le Hello, S., Hawkey, J., Edwards, D. J., Fourment, M., &amp; Holmes, E. C. (2016). Genome-scale rates of evolutionary change in bacteria. <em>Microbial Genomics</em>, <em>2</em>(11). <a href="https://doi.org/10.1099/mgen.0.000094">https://doi.org/10.1099/mgen.0.000094</a>
-</div>
-<div id="ref-karpinski2020AmericanMastodonMitochondrial" class="csl-entry" role="doc-biblioentry">
-Karpinski, E., Hackenberger, D., Zazula, G., Widga, C., Duggan, A. T., Golding, G. B., Kuch, M., Klunk, J., Jass, C. N., Groves, P., Druckenmiller, P., Schubert, B. W., Arroyo-Cabrales, J., Simpson, W. F., Hoganson, J. W., Fisher, D. C., Ho, S. Y. W., MacPhee, R. D. E., &amp; Poinar, H. N. (2020). American mastodon mitochondrial genomes suggest multiple dispersal events in response to <span>Pleistocene</span> climate oscillations. <em>Nature Communications</em>, <em>11</em>(1), 4048. <a href="https://doi.org/10.1038/s41467-020-17893-z">https://doi.org/10.1038/s41467-020-17893-z</a>
-</div>
-<div id="ref-spyrou2019PhylogeographySecondPlague" class="csl-entry" role="doc-biblioentry">
-Spyrou, M. A., Keller, M., Tukhbatova, R. I., Scheib, C. L., Nelson, E. A., Andrades Valtueña, A., Neumann, G. U., Walker, D., Alterauge, A., Carty, N., Cessford, C., Fetz, H., Gourvennec, M., Hartle, R., Henderson, M., von Heyking, K., Inskip, S. A., Kacki, S., Key, F. M., … Krause, J. (2019). Phylogeography of the second plague pandemic revealed through analysis of historical <span>Yersinia</span> pestis genomes. <em>Nature Communications</em>, <em>10</em>(1), 4470. <a href="https://doi.org/10.1038/s41467-019-12154-0">https://doi.org/10.1038/s41467-019-12154-0</a>
-</div>
-<div id="ref-wagner2014YersiniaPestisPlague" class="csl-entry" role="doc-biblioentry">
-Wagner, D. M., Klunk, J., Harbeck, M., Devault, A., Waglechner, N., Sahl, J. W., Enk, J., Birdsell, D. N., Kuch, M., Lumibao, C., Poinar, D., Pearson, T., Fourment, M., Golding, B., Riehm, J. M., Earn, D. J. D., DeWitte, S., Rouillard, J.-M., Grupe, G., … Poinar, H. (2014). <span><em>Yersinia Pestis</em></span> and the <span>Plague</span> of <span>Justinian</span> 541 <span>AD</span>: A genomic analysis. <em>The Lancet Infectious Diseases</em>, <em>14</em>(4), 319–326. <a href="https://doi.org/10.1016/S1473-3099(13)70323-2">https://doi.org/10.1016/S1473-3099(13)70323-2</a>
-</div>
-</div>
-</section>
+<p><img src="https://newhumanist.org.uk/images/rowson-DNA.jpg" width="40%" /></p>
+<p><small><em>Illustration by Martin Rowson</em></small></p>
+</section></section>
     </div>
   </div>
 

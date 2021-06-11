@@ -8,7 +8,5 @@ type: [[People]]
 
 | Field       | Information | Role |
 | ----------- | ----------- | ---- |
-| Institution |             |      |
+| Institution |             |      | 
 | Projects    |             |      |
-
-![[Leo_Featherstone_Picture.png]]

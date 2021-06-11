@@ -1,3 +1,2 @@
 theme: jekyll-theme-minimal
 exclude: [academic/pandoc/]
-exclude: [academic/templates/]
