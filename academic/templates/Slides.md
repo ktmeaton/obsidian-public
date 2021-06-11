@@ -3,11 +3,6 @@ title: {{title}}
 subtitle: subtitle
 author: 
   - [[Katherine Eaton]]
-authors:
-  - name: [[Katherine Eaton]]
-    github: ktmeaton
-    orcid: 0000-0001-6862-7756
-    affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
 venue: Venue
 progress: true
 slideNumber: true
