@@ -115,15 +115,33 @@ Based on the [[Chromosome Resequencing Experiment#Genome Coverage and SNPs|Genom
 
 | Category | Sample | Description                          | Action     |
 | -------- | ------ | ------------------------------------ | ---------- |
-| Medium   | D62    | Still has an upward trajectory.      | Resequence |
-| Medium   | D72    | Starting to plateau.                 | Resequence |
+| Medium   | D62    | Starting to plateau.                 | Resequence |
+| Medium   | D72    | Still has an upward trajectory.      | Resequence |
 | Medium   | P187   | Plateaued with few unique molecules. | None       |
 | Medium   | P212   | Plateaued with few unique molecules. | None       |
 | Low      | P384   | Plateaued with few unique molecules. | None       |
 | Low      | P387   | Plateaued with few unique molecules. | None       |
-| Low      | R21    | Similar to D72.                      | Resequence |
+| Low      | R21    | Still has an upward trajectory.      | Resequence |
 | Low      | D24    | Marginally worse than D72.           | Resequence |
 	
+	
+### Resequencing
+
+```yaml
+- D24:  
+	- before: 33.35%
+	- after:  42.0%	
+- D62: 	
+    - before: 55.23%
+	- after:: 55.5%
+- D72: 
+    - before: 67.86%
+	- after:  70.6%
+- R21: 
+    - before: 32.12%
+	- after:  35.4%
+```
+
 ---
 
 ## Methods

@@ -21,6 +21,34 @@ Multiple Quality Control.
 	
 1. The report can be found at ```multiqc/report.html```.
 
+
+## [[Snippy]] Module
+
+1. Clone fork:
+```bash
+git clone https://github.com/ktmeaton/MultiQC.git
+git checkout snippy
+```
+2. Download test data
+```bash
+git clone https://github.com/ewels/MultiQC_TestData.git test_data
+```
+3. Test Minimal
+```bash
+multiqc test_data/data --ignore test_data/data/modules/
+
+  /// MultiQC 🔍 | v1.11.dev0
+
+| multiqc     | Search path : /mnt/c/Users/ktmea/Programs/MultiQC/test_data/data                         |
+| ----------- | ---------------------------------------------------------------------------------------- |
+| ⠦ searching | ━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━   |
+|             |                                                                                          |
+```
+4. Test Full
+```bash
+time multiqc --lint test_data/data/modules/ --filename full_report.html
+```
+
 ---
 
 tags: [[Tool]]
