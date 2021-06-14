@@ -19,8 +19,8 @@ slideNumber: true
 slideLevel: 3
 tags:
   - 📝/🌱
-  - ⬜/🧨 
-status: priority
+  - ⬜/✨ 
+status: done
 type: [[Slides]]
 due: 2021-05-15
 time: 12:30

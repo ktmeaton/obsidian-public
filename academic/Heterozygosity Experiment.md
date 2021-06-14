@@ -3,10 +3,10 @@ title: [[Heterozygosity Experiment]]
 project: [[Plague Denmark]]
 aliases:
   - Heterozygosity Experiment
-date: 2021-06-12
-due: 2021-06-14
-tags: ⬜/🧨 
-status: priority
+date: June 14, 2021
+due: June 14, 2021
+tags: ⬜/✨
+status: done
 type: 
   - [[Task]]
   - [[Experiment]]
@@ -17,9 +17,10 @@ type:
 | Field   | Value              |
 | ------- | ------------------ |
 | Project | [[Plague Denmark]] |
-| Date    | [[2021-06-12]]     | 
+| Date    | [[2021-06-14]]     | 
 
 ---
+
 ## Objectives
 
 > **1. Why do Denmark samples have high counts of heterozygosity?**
@@ -33,136 +34,90 @@ type:
 > **2. How does this compare to other [[Second Pandemic]] samples?**
 > 
 > Conclusions:
-> - The number of heterozygous sites in Danish samples is comparable, or less than, other Second Pandemic samples.
-> - The distribution of homozygous and heterozygous is similar on a per sample basis.
+> - All [[Denmark\|Danish]] samples have more homozygous sites than heterozygous sites
+> - The number of heterozygous sites in Danish samples is equal to or less than other Second Pandemic samples.
 
-
----
-## Outline
-
-```mermaid
-graph LR;
-
-1 --> 2;
-1 --> 3b;
-2 --> 3a;
-3a --> 4;
-
-1[Snippy Pairwise];
-2[Snippy Multi];
-3a[Sites Summary];
-3b[Sites Investigation];
-4[Plot Distributions];
-
-
-style 1 fill:#1f77b4,stroke:#333,stroke-width:1px,color:white,fill-opacity:1.0;
-style 2 fill:#ff7f0e,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 3a fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 3b fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 4 fill:#9467bd,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-```
-
-
+<div style="page-break-after: always;"></div>
 ---
 ## Results
 
 Two characteristics are being investigated:
 
-1. Are there more homozygous sites than heterozygous sites?
-2. Are the distributions of depth similar between homozygous and heterozygous sites? (ie. peak and spread)
+1. Are there more [[Heterozygous]] variants than [[Homozygous]] variants?
+	- A [[Haploid\|haploid]] organism (ie. plague) is expected to have more [[Homozygous]] variants.
+	- More [[Heterozygous]] variants may indicate molecules from multiple strains/species.
+2. Are the distributions of depth similar between homozygous and heterozygous sites? (peak and spread)
+	- A similar distribution depth may indicate the molecules derive from a singular source.
 
 ### Baseline
 
-| Sample           | Status | Graph                                                                                                                                                                   |
-| ---------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Black Death 8291 | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/SAMN00715800.homo_het.jpg)  |
-| STN021.A         | Bad    | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/SAMEA5818830.homo_het.jpg) |
+A selection of samples from the [[Second Pandemic]].
 
+- The number of [[Heterozygous]] sites reported by Snippy (in this table) is erroneous. This number includes low quality variants which should not be considered 'true' [[Heterozygous\|heterozygosity]].
+- Note that the number of [[Heterozygous]] SNPs is not proportional to the mean coverage (put a pin in this thought).
+
+![[MultiQC Heterozygosity Second Pandemic.png]]
+
+- Because, the [[Heterozygous\|heterozygosity]] counts in the previous table are uninformative, [[Homozygous]] and [[Heterozygous]] sites were extracted directly from the [[snippy]] pairwise alignments.
+- Two samples are visualized here to show the true number of homo/het sites is very small (ie. not in the 1000s).
+- Black Death 8291 is an example of a GOOD sample.
+- STN021.A is an example of a SUSPICIOUS sample.
+
+<div style="page-break-after: always;"></div>
+
+| Sample           | Homo | Het | Homo/Het | Graph                                                                                                                                                                  |
+| ---------------- | ---- | --- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Black Death 8291 | 105  | 64  | 1.64     | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/68ec667/denmark/heterozygosity/SAMN00715800.homo_het.png) |
+| STN021.A         | 159  | 247 | 0.64     | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/SAMEA5818830.homo_het.png) |
+
+<div style="page-break-after: always;"></div>
 
 ### [[Denmark]] Samples
 
-| Sample | Status | Graph                                                                                                                                                          |
-| ------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| D51    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/D51.homo_het.jpg)  |
-| D62    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/D62.homo_het.jpg)  |
-| D71    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/D71.homo_het.jpg)  |
-| D72    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/D72.homo_het.jpg)  |
-| D75    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/D75.homo_het.jpg)  |
-| P187   | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/P187.homo_het.jpg) |
-| P212   | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/P212.homo_het.jpg) |
-| P387   | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/P387.homo_het.jpg) |
-| R36    | Good   | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/eb0c2caee55d9270e0f8f2fa9f9efc01beedd379/denmark/heterozygosity/R36.homo_het.jpg)  |
+- Note that the number of [[Heterozygous]] SNPs (ie. low quality variants) is proportional to the mean coverage in [[Denmark\|Danish]] samples. It is unclear why.
 
+![[MultiQC Heterozygosity Denmark.png]]
 
+- All the [[Denmark]] samples have higher counts of homozygous sites and similar distributions to the heterozygous sites.
+- All samples are categorized as GOOD.
+
+| Sample | Homo | Het | Graph                                                                                                                                                          |
+| ------ | ---- | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D51    | 132  | 32  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/D51.homo_het.jpg)  |
+| D62    | 59   | 15  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/D62.homo_het.jpg)  |
+| D71    | 119  | 39  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/D71.homo_het.jpg)  |
+| D72    | 121  | 17  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/D72.homo_het.jpg)  |
+| D75    | 158  | 31  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/D75.homo_het.jpg)  |
+| P187   | 112  | 31  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/P187.homo_het.jpg) |
+| P212   | 112  | 35  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/P212.homo_het.jpg) |
+| P387   | 110  | 36  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/P387.homo_het.jpg) |
+| R36    | 115  | 45  | ![\|400](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a3edd35/denmark/heterozygosity/R36.homo_het.jpg)  |
+
+<div style="page-break-after: always;"></div>
 
 ---
 ## Methods
 
-### Variant Calling
-
-> Should snippy_multi be added to multiqc inputs?
+### Variant Calling (Pairwise)
 
 ```bash
-snakemake snippy_multi_filter_all -np --profile profiles/infoserv
-snakemake multiqc_all -np --profile profiles/infoserv
+snippy \
+  --prefix SAMPLE \
+  --reference GCA_000009065.1_ASM906v1_genomic.fna \
+  --outdir SAMPLE \
+  --bam SAMPLE.bam \
+  --mapqual 30 \
+  --mincov 3 \
+  --minfrac 0.9 \
+  --basequal 20 \
+  --force \
+  --cpus 10 \
+  --report 2> SAMPLE.log; \
 ```
 
-### Sites Summary
+- Multiqc was run on the output directories of [[Snippy]] for all samples.
 
-```bash
-
-awk -F "\t" '{
-if (NR==1){print $0"\tALIGNED_PERC\tVARIANT_PERC\tHET_PERC"} 
-else{
-  len=$2;
-  aln=$3; 
-  var=$5;  
-  het=$6;
-  aln_perc = (aln / len) * 100;
-  var_perc = (var / len) * 100;
-  het_perc = (het / len) * 100;
-  print $0"\t"aln_perc"\t"var_perc"\t"het_perc}}' main/snippy_multi/all/snippy-multi.txt | column -t | less -S
-```
-
-
-```bash
-awk -F "\t" '{
-if (NR==1){print $0"\tALIGNED_PERC\tVARIANT_PERC\tHET_PERC"} 
-else{
-  len=$2;
-  aln=$3; 
-  var=$5;  
-  het=$6;
-  aln_perc = (aln / len) * 100;
-  var_perc = (var / len) * 100;
-  het_perc = (het / len) * 100;
-  print $0"\t"aln_perc"\t"var_perc"\t"het_perc}}' snippy/snippy_multi/All_Samples_2021_0526/raw.txt | column -t | less -S
-```
-
-###  Extract Sites
-
-How many SNPs in 8291 (SAMN00715800)? 
-
-```bash
-bcftools query -i 'TYPE="snp"' -f '%CHROM\t%POS\t%REF\t%ALT\t%QUAL\t%DP\t%AO\t[%GT]\n' SAMN00715800.raw.vcf | wc -l
-1687
-```
-
-How many high quality homozygous SNPs?
-
-```bash
-bcftools query -i 'TYPE="snp" & GT="1/1" & QUAL>=100' -f '%CHROM\t%POS\t%REF\t%ALT\t%QUAL\t%DP\t%AO\t[%GT]\n' SAMN00715800.raw.vcf | wc -l
-105
-```
-
-How many high quality heterozygous SNPs?
-
-```bash
-bcftools query -i 'TYPE="snp" & GT="0/1" & QUAL>=100' -f '%CHROM\t%POS\t%REF\t%ALT\t%QUAL\t%DP\t%AO\t[%GT]\n' SAMN00715800.raw.vcf | wc -l
-64
-```
-
-### Summarize and Plot
+### Plot Site Distributions
 
 ```bash
 head -n `awk 'END{print NR - 1}' results/snippy_multi/all/snippy-multi.txt` results/snippy_multi/all/snippy-multi.txt  | tail -n+2  | cut -f 1 | while read sample; 
@@ -179,15 +134,5 @@ do
 done
 
 mkdir results/heterozygosity
-mv results/snippy_pairwise/{sra,local}/*/*.jpg results/heterozygosity/
+mv results/snippy_pairwise/{local,sra}/*/*.png results/heterozygosity/
 ```
-
-
----
-## Conclusions
-
-
-
----
-
-tags: [[Experiment]], #📝/🌱
