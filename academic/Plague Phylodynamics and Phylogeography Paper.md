@@ -198,51 +198,120 @@ A significant caveat to interpreting the population structure of *[[Yersinia pes
 
 ### [[Phylodynamics]] {.page_break_before}
 
-#### Temporal Signal
+#### Detecting Temporal Signal
 
 Previous work has documented substantial rate variation both between and within clades of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. A [[Root to Tip Regression|root-to-tip regression]] on sampling date for the *full* dataset (N=601) reproduces this finding as the [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>) is extremely low at 0.09 (Figure @fig:rtt_all_branch-major). A  [[Bayesian Evaluation of Temporal Signal]] (BETS) also indicates poor support for a strict clock as the [[Coefficient of Variation\|coefficient of variation]] was consistently estimated to be greater than 1. Taken together, the [[Root to Tip Regression|root-to-tip regression]] and [[BETS]] analysis suggest that alternative clock models, such as the uncorrelated relaxed log normal (UCLN) model, should be preferred when accounting for the high degree of rate variation. 
 
 ![ [[Root to Tip Regression\|Root-to-tip regression]]. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:rtt_all_branch-major}
 
-However, the [[Bayesian Evaluation of Temporal Signal|BETS]] analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology (Figure @fig:mean_rate_trace_kde). This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. However, other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]] and thus we investigated alternative approaches.
+Table:  [[Root to Tip Regression\|Root-to-tip regression]] statistics. {#tbl:rtt_statistics}
+
+However, the [[Bayesian Evaluation of Temporal Signal|BETS]] analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology (Figure @fig:mean_rate_trace_kde). This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. At the same time, other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]] and thus we investigated alternative approaches.
 
 ![MCMC parameter estimation of the mean substitution rate for the reduced dataset (N=191). Left: Poor mixing of the MCMC Chain, Right: The resulting multimodal estimate of the rate.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c12ba4b/main/beast/all/chromosome/prune/filter5/mean_rate_trace_kde.png){#fig:mean_rate_trace_kde}
 
-To identify patterns in rate variation that may improve the clock model, we first performed visual inspection of the [[Root to Tip Regression\|root-to-tip regression]] residuals (Figure @fig:rtt_all_branch-major). 3/12 clades appeared to have temporal signal according to a linear model, namely the ancient clades isolated from human skeletal remains: ```[[0.PRE]]``` (Bronze Age),  ```[[0.ANT4]]``` (Late Antiquity), and ```[[1.PRE]]``` (Medieval/Early Modern). Indeed, when the [[Root to Tip Regression|root-to-tip regression]] was performed on clades in isolation, these three clades demonstrated strong evidence of strict-clock behavior (Table @tbl:rtt_statistics, Figure @fig:rtt_clades). A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by clade proved even more sensitive as temporal signal was detected in 7/12 clades (Table @tbl:bets_statistics). This drastic improvement in model performance reveals four intriguing aspects about the evolution of *[[Yersinia pestis|Y. pestis]]*.
+To identify patterns in rate variation that may improve the clock model, we first performed visual inspection of the [[Root to Tip Regression\|root-to-tip regression]] residuals (Figure @fig:rtt_all_branch-major). 3/12 clades appeared to have temporal signal according to a linear model, namely the ancient clades isolated from human skeletal remains: ```[[0.PRE]]``` (Bronze Age),  ```[[0.ANT4]]``` (Late Antiquity), and ```[[1.PRE]]``` (Medieval/Early Modern). Indeed, when the [[Root to Tip Regression|root-to-tip regression]] was performed on clades in isolation, these three clades demonstrated strong evidence of strict-clock behavior (Table @tbl:rtt_statistics, Figure @fig:rtt_clades). A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by clade proved even more sensitive as temporal signal was detected in 7/12 clades (Table @tbl:bets_temporal_signal). Furthermore, **for all clades with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock**. 
+
+The ubiquitous support for a relaxed clock model was initially surprising, as the [[Root to Tip Regression\|root-to-tip regression]] suggested strict clock-like behavior in several clades. However, this disparity can largely be explained by the known statistical limitations of a [[Root to Tip Regression\|root-to-tip regression]] [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]] which assumes either 1) no temporal structure, or 2) temporal structure following a linear model. Thus, a [[Root to Tip Regression\|root-to-tip regression]] is strictly a test of the linear model, and will give no indication that other models are a better fit to the data, ie. a relaxed lognormal model. From this finding, we conclude that a [[Root to Tip Regression\|root-to-tip regression]] is a poor statistical test of temporal signal in *[[Yersinia pestis|Y. pestis]]*, and great caution should be taken in interpreting the associated statistics.
+
+
+| Clade  |  N  | Coefficient |     p      | Mean RTT Distance | 
+|:------:|:---:|:-----------:|:----------:| ----------------- |
+|  All   | 601 |    0.09     | 4.959e-13* |                   |
+| 1.ORI  | 117 |    0.04     | 1.184e-01  |                   |
+|  1.IN  | 39  |    -0.0     |    1.0     |                   |
+| 1.ANT  |  4  |    0.45     |    1.0     |                   |
+| 1.PRE  | 40  |    0.76     | 2.022e-12* |                   |
+| 2.MED  | 116 |    0.01     |    1.0     |                   |
+| 2.ANT  | 54  |    0.05     | 4.764e-01  |                   |
+| 4.ANT  | 11  |    -0.11    |    1.0     |                   |
+| 3.ANT  | 11  |    -0.04    |    1.0     |                   |
+| 0.ANT  | 103 |    -0.01    |    1.0     |                   |
+| 0.ANT4 | 12  |    0.66     | 7.842e-03* |                   |
+|  0.PE  | 83  |    0.01     |    1.0     |                   |
+| 0.PRE  |  8  |    0.91     | 1.678e-03* |                   |
 
 > **Kat's Notes:**<br>
 > 1. Could I get finalized Bayes Factors for the full dataset and clades?<br>
 > 2. Could I get log files for all clades, even those without temporal signal?
 
-|   Clade    |  N  | SC Bayes Factor | UCLN Bayes Factor |  Rate   | CoV  | tMRCA 95% CI  |
-|:----------:|:---:|:---------------:|:-----------------:|:-------:|:----:|:-------------:|
-|    All     | 191 |       --        |        --         | 1.59E-8 | 1.66 | -7400 : -3289 |
-| [[1.ORI]]  | 117 |      29.6*      |       35.7*       | 1.29E-7 | 1.38 |  1802 : 1907  |
-|  [[1.IN]]  | 39  |      -3.9       |       -10.2       |   --    |  --  |      --       |
-| [[1.ANT]]  |  4  |      8.9*       |       12.6*       | 6.48E-8 | 0.48 |  1645 : 1889  |
-| [[1.PRE]]  | 40  |      10.1*      |       44.1*       | 4.77E-8 | 2.06 |  995 : 1324   |
-| [[2.MED]]  | 116 |       --        |        --         | 2.49E-7 | 2.85 |  1547 : 1867  |
-| [[2.ANT]]  | 54  |      -20.8      |       -13.7       |   --    |  --  |      --       |
-| [[4.ANT]]  | 11  |      -2.9       |       3.7*        | 9.38E-8 | 2.27 |  1847 : 1975  |
-| [[3.ANT]]  | 11  |      -9.6       |       -11.4       |   --    |  --  |      --       |
-| [[0.ANT]]  | 103 |      -2.3       |       -6.5        |   --    |  --  |      --       |
-| [[0.ANT4]] | 12  |      5.3*       |       5.9*        | 3.51E-8 | 2.49 |   39 : 237    |
-|  [[0.PE]]  | 83  |      -82.1      |       12.4*       | 6.10E-7 | 2.24 |  1565 : 1892  |
-| [[0.PRE]]  |  8  |      83.0*      |       -2.9        | 5.23E-8 | 1.78 | -3070 : -2776 |
+|   Clade    |  N  | SC Bayes Factor | UCLN Bayes Factor | Clock Model |
+|:----------:|:---:|:---------------:|:-----------------:|:-----------:|
+| [[1.ORI]]  | 117 |      29.6*      |       35.7*       |    UCLN     |
+|  [[1.IN]]  | 39  |      -3.9       |       -10.2       |    UCLN     |
+| [[1.ANT]]  |  4  |      8.9*       |       12.6*       |    UCLN     |
+| [[1.PRE]]  | 40  |      10.1*      |       44.1*       |    UCLN     |
+| [[2.MED]]  | 116 |       TBD       |        TBD        |     TBD     |
+| [[2.ANT]]  | 54  |      -20.8      |       -13.7       |    UCLN     |
+| [[4.ANT]]  | 11  |      -2.9       |       3.7*        |    UCLN     |
+| [[3.ANT]]  | 11  |      -9.6       |       -11.4       |    UCLN     |
+| [[0.ANT]]  | 103 |      -2.3       |       -6.5        |    UCLN     |
+| [[0.ANT4]] | 12  |      5.3*       |       5.9*        |    UCLN     |
+|  [[0.PE]]  | 83  |      -82.1      |       12.4*       |    UCLN     |
+| [[0.PRE]]  |  8  |       TBD       |        TBD        |     TBD     | 
 
-Table:  [[Bayesian Evaluation of Temporal Signal]] (BETS) statistics. Cov: Coefficient of Variation {#tbl:bets_statistics}
+Table:  Temporal signal detection and clock model selection with [[Bayesian Evaluation of Temporal Signal]] (BETS) {#tbl:bets_temporal_signal}
+
+#### Rate Variation
+
+Our approach of fitting nuanced models segregated by clade reveals that **the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought.** Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1-2 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data, which was highly unstable, fell within this published range with a 95% HPD between 1.1582 x10<sup>-8</sup> and 1.9491 x 10<sup>-8</sup>. However, this global rate is a considerable underestimate, as clades with detectable temporal signal ranged from 2.33 x 10<sup>-8</sup> to 7.70 x 10<sup>-7</sup> (Table @tbl:bets_rate_cov_tmrca, Figure @fig:substitution_rate_boxplot). In particular, clades  
+
+> **Kat's Notes:**<br>
+> - [[0.PE]] appears to be an outlier, but wait for finalized logs.<br>
+> - No differences with regards to rate/variation between pandemic and non-pandemic clades.<br>
+>- I really want to see [[1.IN]], is there a progressive increase in rate along Branch 1?
+
+It is interesting to note that several clades have distinctly different substitution rates (ie.non-overlapping estimates of the mean substitution rate in Figure @fig:substitution_rate_boxplot) and yet the relative amount of rate variation within a clade is similar (ie. overlapping coefficients of variation in Figure @fig:coefficient_of_variation_boxplot).
+
+We hypothesize that outlier clades which are challenging to model (ex. [[2.MED]]) have artificially decreased estimates of the mean substitution rate in past studies. This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]*.
+
+|   Clade    |  N  |                 Substitution Rate                 | Coefficient of Variation |     tMRCA     |
+|:----------:|:---:|:-------------------------------------------------:|:------------------------:|:-------------:|
+|    All     | 191 |  1.16 x 10<sup>-8</sup> : 1.95 x 10<sup>-8</sup>  |       1.35 : 2.10        | -7400 : -3289 |
+| [[1.ORI]]  | 117 |  1.04 x 10<sup>-7</sup> : 1.53 x 10<sup>-7</sup>  |       1.02 :  1.87       |  1802 : 1907  |
+|  [[1.IN]]  | 39  |                        --                         |            --            |      --       |
+| [[1.ANT]]  |  4  |  3.61 x 10<sup>-8</sup> : 9.63 x 10<sup>-8</sup>  |       0.00 : 2.12        |  1645 : 1889  |
+| [[1.PRE]]  | 40  |  3.69 x 10<sup>-8</sup> : 5.90 x 10<sup>-8</sup>  |       1.22 : 3.24        |  995 : 1324   |
+| [[2.MED]]  | 116 |  1.91 x 10<sup>-7</sup>, 3.01 x 10<sup>-7</sup>   |       2.23 : 3.50        |  1547 : 1867  |
+| [[2.ANT]]  | 54  |                        --                         |            --            |      --       |
+| [[4.ANT]]  | 11  |  3.59 x 10<sup>-8</sup> :  1.57 x 10<sup>-7</sup>  |       1.22 : 3.59        |  1847 : 1975  |
+| [[3.ANT]]  | 11  |                        --                         |            --            |      --       |
+| [[0.ANT]]  | 103 |                        --                         |            --            |      --       |
+| [[0.ANT4]] | 12  |  2.33 x 10<sup>-8</sup> : 4.68 x 10<sup>-8</sup>  |       1.40 : 3.94        |   39 : 237    |
+|  [[0.PE]]  | 83  | 4.32 x 10<sup>-7</sup> :   7.70 x 10<sup>-7</sup> |       1.70 : 2.78        |  1565 : 1892  |
+| [[0.PRE]]  |  8  | 3.95 x 10<sup>-8</sup> : 6.48  x 10<sup>-8</sup>  |       0.84 : 3.13        | -3070 : -2776 |
+
+Table:  Estimate variation on the rate and tMRCA based on the 95% HPD. {#tbl:bets_rate_cov_tmrca}
+
+![95% HPD of substitution rate, coefficient of variation, and tMRCA by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4a67df7c718b/main/beast/all/chromosome/clade/logs_noHyperPrior/substitution_rate.png){#fig:substitution_rate_boxplot}
+
+![Coefficient of variation by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4a67df7c718b/main/beast/all/chromosome/clade/logs_noHyperPrior/coefficient_of_variation.png){#fig:coefficient_of_variation_boxplot}
+
+#### Node Dating
+
+To evaluate the dates associated with ancestral events, we annotated the maximum likelihood phylogeny with the estimate tMRCAs for clades with signal (Figure @fig:divtree_node_dating). When re-contextualized into the global phylogeny, the node dates are topologically non-conflicting, meaning that parent nodes correctly pre-date child nodes. The sole exception is the estimated divergence of modern [[0.PE]] which conflicts with the dates associated with the [[First Pandemic\|First]] and [[Second Pandemic]] clades. This conflict can be explained by several observations:
+
+1. Clade [[0.PE]] has the largest amount of uncertainty concerning the substitution rate.
+1. [[0.PE]] has the longest 
+
+The dates associated with [[0.PE]] are thus considered unreliable given the because: 1) it had the largest amount of uncertainty on the rate, and 2) 
+
+Overall, the node dates are non-conflicting 
+
+>1. The single ancient sample of [[0.PE]] was excluded from the BEAST analysis! This was partly by mistake, as for other clades, I separated out the ancient and modern samples based on their drastically different sampling periods. But for [[0.PE]], there's only one ancient sample and it got dropped.
 
 > **Kat's Notes:**<br>
 > 1. Overall the node dates are non-conflicting when re-integrated into the global phylogeny.
 > 2. [[0.PE]] is an exception, perhaps because it is the least monophyletic and has some of the most rate variation.
 
-![The maximum likelihood phylogeny annotated with the 95% HPD on clade root date.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/206f481/main/auspice/all/chromosome/full/filter5/divtree_node-dating.png){#fig:divtree_node-dating}
+![The maximum likelihood phylogeny annotated with the 95% HPD on clade root date.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/206f481/main/auspice/all/chromosome/full/filter5/divtree_node-dating.png){#fig:divtree_node_dating}
+
+
+This drastic improvement in model performance reveals four intriguing aspects about the evolution of *[[Yersinia pestis|Y. pestis]]*.
+
 
 The first aspect is that **fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. In contrast, successfully fitting models on a clade-by-clade basis reveals that **<i>[[Yersinia pestis|Y. pestis]]</i> has more temporal signal than previously thought.** The observation that different populations have evolved at drastically different rates may explain the previous finding that the apparent structure in *[[Yersinia pestis\|Y. pestis]]* is dependent on dataset composition [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]. 
 
-The second observation is that **for all clades with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock**. This was initially surprising, as the [[Root to Tip Regression\|root-to-tip regression]] suggested strict clock-like behavior in several clades. However, this disparity can largely be explained by the known statistical limitations of a [[Root to Tip Regression\|root-to-tip regression]] [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Root to Tip Regression|root-to-tip regression]] assumes either 1) no temporal structure, or 2) temporal structure following a linear model, and thus gives no indication that the data could be better modeled with a different assumption, ie. rate variation following a lognormal distribution. From this finding, we conclude that a [[Root to Tip Regression\|root-to-tip regression]] is a poor statistical test of temporal signal in *[[Yersinia pestis|Y. pestis]]*, and great caution should be taken in interpreting the associated statistics.
-
-A third intriguing characteristic is that **the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought.** Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1-2 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. Indeed, a [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data estimated the substitution rate to be between 1.1582 x10<sup>-8</sup> and  1.9491 x 10<sup>-8</sup> based on the 95% HPD. However, this global rate is a considerable underestimate, as clades with detectable temporal signal ranged from 3.51x10<sup>-8</sup> to 1.29 x10x10<sup>-7</sup> (Table @tbl:bets_statistics). This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]*. We hypothesize that outlier clades which are challenging to model (ex. [[2.MED]]) have artificially decreased estimates of the mean substitution rate in past studies. 
 
 The final finding from constructing nuanced models concerns the outlier clades for which no detectable signal could be found, namely [[0.ANT]], [[2.ANT]], [[3.ANT]], [[2.MED]], and [[1.IN]]. The reason for this lack of signal is unclear, but one explanation may be that **these *[[Yersinia pestis|Y. pestis]]* populations are inappropriately separated based on the ```major branch``` and ```biovar``` systems**. We hypothesis that alternative strategies to subdivide these populations will yield greater insight, based on the methodological improvements demonstrated in this study.
 
@@ -279,27 +348,9 @@ An important consideration is that the geographic sampling strategy of *[[Yersin
 
 <div style="page-break-after: always;"></div>
 
-| Clade  |  N  | Coefficient |     p      |
-|:------:|:---:|:-----------:|:----------:|
-|  All   | 601 |    0.09     | 4.959e-13* |
-| 1.ORI  | 117 |    0.04     | 1.184e-01  | 
-|  1.IN  | 39  |    -0.0     |    1.0     |
-| 1.ANT  |  4  |    0.45     |    1.0     |
-| 1.PRE  | 40  |    0.76     | 2.022e-12* |
-| 2.MED  | 116 |    0.01     |    1.0     |
-| 2.ANT  | 54  |    0.05     | 4.764e-01  |
-| 4.ANT  | 11  |    -0.11    |    1.0     |
-| 3.ANT  | 11  |    -0.04    |    1.0     |
-| 0.ANT  | 103 |    -0.01    |    1.0     |
-| 0.ANT4 | 12  |    0.66     | 7.842e-03* |
-|  0.PE  | 83  |    0.01     |    1.0     |
-| 0.PRE  |  8  |    0.91     | 1.678e-03* |
-
-Table:  [[Root to Tip Regression\|Root-to-tip regression]] statistics. {#tbl:rtt_statistics}
-
 ![Root To Tip Regression by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_clades.png){#fig:rtt_clades}
 
 ### Misc Note
 
->1. The single ancient sample of [[0.PE]] was excluded from the BEAST analysis! This was partly by mistake, as for other clades, I separated out the ancient and modern samples based on their drastically different sampling periods. But for [[0.PE]], there's only one ancient sample and it got dropped.
+
 >1. Update tables with finalized logs and trees. Specifically Bayes Factors and rates.
