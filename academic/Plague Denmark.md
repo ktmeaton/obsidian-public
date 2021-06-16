@@ -14,3 +14,7 @@ type: [[Project]]
 
 ## Ideas
 We're going to expand on [[Phylogeography]] and show how it relates to [[Virulence]].
+
+## Experiments
+
+- [[Plague Denmark Phylogeography Experiment]]

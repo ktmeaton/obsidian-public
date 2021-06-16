@@ -9,6 +9,12 @@ aliases:
 
 ## BEAST1
 
+### Install
+
+```bash
+mamba create -n beast1 -c bioconda beast=1.10.4
+```
+
 ### Inputs
 
 #### Tree

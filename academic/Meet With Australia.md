@@ -15,7 +15,22 @@ time: "18:00"
 
 # Meet With Australia
 
-## [[2021-06-15]]
+## [[2021-06-17]]
+
+1. What happened at generation 50,000,000? This spike is present in all independent analyses, so I'm guess it has something to do with the run setup?
+
+![[MCMC Troubleshooting 1.png]]
+
+If this is an artifact (ie. forcing the chain to run longer?), would I be justified in removing this state, or is that analytically dubious? While it shouldn't affect the 95% HPD estimates, the distributions and means are all affected by this outlier state.
+
+2. Of the 5 trees you sent me, there seems to be differences in the node attributes. Clades 0.PRE, 1.PRE, and 2.MED are missing the attributes that report the geographic state and probabilities (although they have the geographic rate attributes). Specifically, these trees are missing:
+	- state
+	- state.prob
+	- state.set
+	- state.set.prob
+
+Only have rate parameters
+
 
 ## [[2021-06-03]]
 
