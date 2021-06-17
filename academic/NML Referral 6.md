@@ -146,6 +146,13 @@ If you have any questions, comments or concerns please contact Andrea Nowosad at
 > - [INSDC](http://www.insdc.org/)
 
 > **Knowledge of “omics” data collection and data management practices including the assessment of data quality, data processing, and developing or maintaining data quality standards.**
+> - Genomics, specialty in bacterial pathogens, plague, tuberculosis.
+> - Mostly, plague, but also tuberculosis, and some human mitochondrial work.
+> - Data Collection takes two forms
+> - Primary data: In which I'm in the lab processing samples
+> - Secondary data: Downloading sequences from public repositories.
+> - Extraordinary care in sequencing DNA from tissues, aDNA degraded
+> - Data quality
 
 > **Knowledge of the mission, mandate, and objectives of the Public Health Agency of Canada as they pertain to the federal role in health, emerging health issues and outbreak response**
 > - **Mission**: To promote and protect the health of Canadians through leadership, partnership, innovation and action in public health.
@@ -159,12 +166,80 @@ If you have any questions, comments or concerns please contact Andrea Nowosad at
 >	- Strengthen intergovernmental collaboration on public health and facilitate national approaches to public health policy and planning.
 
 > **Ability to analyse and interpret complex biological data or information.**
+> - Complex biological data really excites me, I see tremendous value in it.
+> - I think it's really important for the next generation.
+> - Plague phylo project, analyzing and contextualizing all public available genomes.
+> - Reconstruct the timing and spread of this disease.
 
 > **Ability to communicate effectively within a multi-disciplinary environment, and to audiences including non-expert stakeholders.**
-> Multi-disciplinary 
+> - **Good communication starts with good listening skills.**
+> - Perspective and what people are interested in/care about.
+> - Archaeologists, historians, geneticists, computational biologists, ecologists
+> - Presenting research findings in meetings, draw connections to the disciplines.
+> - Writing project reports, adjust both content and language, based on what they care most about.
+> - Listening to expert advice, knowing what ar
 
 > **Ability to work under pressure and to manage competing priorities with tight deadlines.**
+> - Research agenda, teaching, facility and personnel management.
+> - Deadlines: tight schedule for manuscript submission as I come to the end of my PhD.
+> - **Prepare: no surprises**. Regular and frequent communication. Know youself and workload.
+> - More work needs to be done than human hours available.
+> - P**rioritization and communicate.**
 
 > **Leadership**
+> - Transforming training in our lab. Sink or Swim --> Prepared (resources) , opportunities (practice), safe.
 
 *Complex: analysis of a variety of data sources, being able to relate information into a data model or understand system technical specifications.*
+
+### Questions
+
+- * Day-to-day responsibilities*
+- dynamic env,shift, tight deadlines, network of labs, national, with prov/terr, core service, 
+- support external partners
+- genomic surveillance, visualizations, research, data dissemination, genomic reports, training,
+- previously, self-directed training program
+- pivoted to covid-related training, recorded and then online, quizzes
+- on-the-fly training
+- knowledge translation
+- Explaining
+- IRIDA + Galaxy
+
+
+- Is this a new position? 
+- * Who is the immediate supervisor? Management style?
+	- Natalie Knox (tailored to the person), 3 comp bios, 2 juniors, co-op students
+	- Weekly group meetings, distribute workload
+	- One-on-ones scaled back
+	- No hierarchical, more mentorship
+	
+- * How does success in this role look like? And measured?
+	- Client support, and pubic health partnerships, information providing to advise senior officials
+	- Empowering and support people, knowledge translation
+	- Creative solutions
+
+- * What challenges have you seen for people in this role or the team?
+- Who does this role/team work with most frequently?
+
+Supporting COVID surveillance genomics,
+- Data analysis pipelines
+- Data visualization
+- Scripts automation
+- Providing leadership to clients
+- Guidance on analytics
+- Generating genomic reports
+- Staying current
+- Training
+
+6 other co-workers in comp bio group
+March 31 2023, possibility of extension
+September 2021, pending security clearance
+- Working remotely, initially telework position until advised otherwise
+- Discussion on relocation or teleworking
+Secret Level 2 security, long application process
+- Travel outside of the country
+- Addresses and employment (past 10 years), and immediate family members
+
+- May get early request for security clearance, read instructions carefully
+- 6-8 weeks
+
+
