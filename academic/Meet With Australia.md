@@ -15,6 +15,19 @@ time: "18:00"
 
 # Meet With Australia
 
+- Dismantling narratives about movement
+- Why do we care?
+- Nature Ecology and Evolution, Nature Microbioly
+
+- Issue of identical strains with drastic geographic distance and time
+- Elusive search for origins
+
+- What it says, why it's probleatic, why it cares?
+
+- Every pandemic experience is anchored to history of plague
+
+- Email John again
+
 ## [[2021-06-17]]
 
 1. What happened at generation 50,000,000? This spike is present in all independent analyses, so I'm guess it has something to do with the run setup?
