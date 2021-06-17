@@ -31,6 +31,14 @@ If this is an artifact (ie. forcing the chain to run longer?), would I be justif
 
 Only have rate parameters
 
+- [ ] Setup repository
+- [ ] Switch to violin plots
+- [ ] Make outgroup more explicit
+- [ ] How should phylogeography fit in?
+- [ ] MBE, 
+- [ ] Keep signal congruent
+- [ ] Look at variance
+- [ ] Send the alignment of one clade
 
 ## [[2021-06-03]]
 

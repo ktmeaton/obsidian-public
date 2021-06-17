@@ -138,3 +138,33 @@ If you have any questions, comments or concerns please contact Andrea Nowosad at
 >  
 > Sincerely,
 > Katherine Eaton
+## Interview
+
+> **Knowledge of bioinformatics databases.**
+> - NCBI
+> - ENA
+> - [INSDC](http://www.insdc.org/)
+
+> **Knowledge of “omics” data collection and data management practices including the assessment of data quality, data processing, and developing or maintaining data quality standards.**
+
+> **Knowledge of the mission, mandate, and objectives of the Public Health Agency of Canada as they pertain to the federal role in health, emerging health issues and outbreak response**
+> - **Mission**: To promote and protect the health of Canadians through leadership, partnership, innovation and action in public health.
+> - **Mandate**: The role of the Public Health Agency of Canada is to:
+>	- Promote health;
+>	- Prevent and control chronic diseases and injuries;
+>	- Prevent and control infectious diseases;
+>	- Prepare for and respond to public health emergencies;
+>	- Serve as a central point for sharing Canada's expertise with the rest of the world;
+>	- Apply international research and development to Canada's public health programs; and
+>	- Strengthen intergovernmental collaboration on public health and facilitate national approaches to public health policy and planning.
+
+> **Ability to analyse and interpret complex biological data or information.**
+
+> **Ability to communicate effectively within a multi-disciplinary environment, and to audiences including non-expert stakeholders.**
+> Multi-disciplinary 
+
+> **Ability to work under pressure and to manage competing priorities with tight deadlines.**
+
+> **Leadership**
+
+*Complex: analysis of a variety of data sources, being able to relate information into a data model or understand system technical specifications.*
