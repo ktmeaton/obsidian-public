@@ -127,7 +127,9 @@ snakemake iqtree_filter_all --profile profiles/infoserv
 ```
 
 ---
-### [[Clock Model]] and [[Phylogeography]]
+### [[Clock Model]]
+
+####  BEAST1
 
 A clock model and geographic model were estimated simultaneously with BEAST 1.10.4
 
@@ -168,16 +170,102 @@ A clock model and geographic model were estimated simultaneously with BEAST 1.10
 	```
 3. Run the strict clock (~3 minutes/million states)
 	```bash
-	beast -seed 543545 -threads 10 -beagle_SSE -beagle_double beast_strict_clock.xml | tee beast_strict_clock_screen.log
+	beast -seed 1624027818829 -threads 10 -beagle_SSE -beagle_double beast_strict_clock.xml | tee beast_strict_clock_screen.log
 	
 	# Estimated Runtime: 10 hours
 	```
 
 4. Run the relaxed clock (~3 minutes/million states)
 	```bash
-	beast -seed 643543 -threads 10 -beagle_SSE -beagle_double beast_relaxed_clock.xml | tee beast_relaxed_clock_screen.log
+	beast -seed 1624028259090 -threads 10 -beagle_SSE -beagle_double beast_relaxed_clock.xml | tee beast_relaxed_clock_screen.log
 	# Estimated Runtime: 10 hours
 	```
+
+5. MCC Trees
+
+	```bash
+	treeannotator -burninTrees 1000 beast_strict_clock.trees beast_strict_clock_mcc_hpd95.nex
+	treeannotator -burninTrees 1000 beast_relaxed_clock.trees beast_relaxed_clock_mcc_hpd95.nex
+	```
+
+Reconfigure date priors
+
+```yaml
+# 3 samples groups in the black death area:
+- samples:
+  - D71
+  - R36
+  - D62
+- date: 621
+- uncertainty: 100 (1300-1500)
+```
+
+```yaml
+D51:
+	- orig-date: 691.0 (1330)
+	- orig-uncertainty: 230.0 (1100 - 1560)
+	- SAMEA5818803:
+		- date: 388.0 (1633)
+		- uncertainty: 15.0 (1618 - 1648)
+	- SAMEA5818818:
+		- date: 461.0 (1560)
+		- uncertainty: 75.0 (1485 - 1635)		
+	- final-date: 571 (1450)
+	- final-uncertainty: 250 (1200 - 1700)
+D62:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+D71:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+D72:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+D75:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+P187:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+P212:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+P387:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+R36:
+	- date: 691.0 (1330)
+	- uncertainty: 230.0 (1100 - 1560)
+SAMEA5818817:
+	- date: 496.0
+	- uncertainty: 105.0
+```
+
+
+#### BEAST2
+
+```bash
+/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
+  -m metadata.tsv \
+  -a ../filter-sites/snippy-multi.snps.aln \
+  --nex ../../../../../../beast/all/chromosome/full/filter30/beast.nex \
+  --nwk iqtree.treefile
+```
+
+3. Run the strict clock (~3 minutes/million states)
+	```bash
+	beast -seed 1624027818829 -threads 2 -beagle_SSE -beagle_double beast_strict_clock.xml
+	
+	# Estimated Runtime: 10 hours
+	```
+
+### Phylogeography
+
+> *"...the Cauchy RRW model and by specifying that Bivariate trait represents latitude and longitude (fig. 2D). The latter option allows estimating diffusion statistics that are specific for bivariate spatial traits (with latitude and longitude in that order). “Cauchy” refers to the name of the probability distribution that is here used to accommodate dispersal velocity variation among phylogeny branches. We also select the option Add random jitter to tips, which adds noise to sampling coordinates. With this option, the noise is drawn uniformly at random from a particular Jitter window size to duplicated (location) traits. Here, we set the jitter window size to 0.01, which will add a small noise that will avoid a poor performance of the RRW model when not all sequences are associated with unique sampling coordinates. The choice of the jitter value is arbitrary, but it should remain sufficiently small to avoid alternating too much the actual geographic origin of each sample (see also our discussion below about alternatives to the jitter option)."*
+
+```bash
+beast -overwrite -seed 6543242 -threads 2 -beagle_SSE -beagle_double beast_geo.xml | tee beast_geo_screen.log
+```
 
 ## Results
 

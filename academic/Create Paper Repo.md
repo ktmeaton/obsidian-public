@@ -20,4 +20,10 @@ git remote add upstream https://github.com/manubot/rootstock.git
 git push origin
 ```
 
+```bash
+mamba env create -f build/environment.yml
+conda activate manubot
+build/build.sh
+```
+
 - [ ] Create Zenodo library
