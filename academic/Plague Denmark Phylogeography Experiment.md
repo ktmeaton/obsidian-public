@@ -129,9 +129,79 @@ snakemake iqtree_filter_all --profile profiles/infoserv
 ---
 ### [[Clock Model]]
 
-####  BEAST1
+#### Inputs
 
-A clock model and geographic model were estimated simultaneously with BEAST 1.10.4
+Create nexus and newick files.
+```bash
+cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/denmark
+
+/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
+  -m iqtree/all/chromosome/full/filter30/filter-taxa/metadata.tsv \
+  -a iqtree/all/chromosome/full/filter30/filter-sites/snippy-multi.snps.aln \
+  --nwk iqtree/all/chromosome/full/filter30/filter-taxa/iqtree.treefile \
+  --nex beast/all/chromosome/full/filter30/beast.nex  
+  
+cp iqtree/all/chromosome/full/filter30/filter-taxa/iqtree.treefile beast/all/chromosome/full/filter30/beast.nwk
+```
+
+#### Strict Clock
+
+** Dates **:
+
+1. Import alignment -> ```beast.nex```
+2. Rename partitions to ```dna```.
+3. Save As -> ```beast_strict_clock_dates.xml```
+	- Inspect the xml, to make sure the tip dating priors were setup correctly and logged.
+4. Site Model --> ```GTR```
+5. Clock Model: Strict
+6. Tree Prior: Coalescent Constant Population
+7. Chain Length:
+	- 100,000,000, sampled every 10,000 states.
+8. Add constant sites
+
+```xml
+# Change
+<data id="dna" spec="Alignment" name="alignment">
+	
+#To
+<data id="original-dna" spec="Alignment" name="original-dna">	
+	
+# Add
+<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>	
+```
+
+```bash
+beast \
+  -overwrite \
+  -seed 1624027818829 \
+  -threads 10 \
+  -beagle_SSE \
+  -beagle_double \
+  beast_strict_clock_dates.xml | tee beast_strict_clock_dates_screen.xml
+```
+
+```bash
+beast \
+  -overwrite \
+  -seed 64135435525 \
+  -threads 10 \
+  -beagle_SSE \
+  -beagle_double \
+  beast_relaxed_clock_dates.xml | tee beast_relaxed_clock_dates_screen.xml
+```
+
+```bash
+beast \
+  -overwrite \
+  -seed 541958134091 \
+  -threads 10 \
+  -beagle_SSE \
+  -beagle_double \
+  beast_relaxed_clock_geo.xml | tee beast_relaxed_clock_geo_screen.xml
+```
+
+```bash
+``
 
 1. Navigate to beast directory:
 	```bash
