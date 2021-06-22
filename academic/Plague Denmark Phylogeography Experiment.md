@@ -23,26 +23,52 @@ aliases:
 graph LR;
 1-->2;
 2-->3;
-3-->6;
+2-->6;
+3-->5;
 6-->4;
-6-->5;
 
 1[Data Collection];
 2[Alignment];
 3[Maximum Likelihood Tree];
+6[Bayesian Tree];
 4[Continuous Phylogeography];
 5[Discrete Phylogeography]
-6[Time Tree]
 
 style 1 fill:#1f77b4,stroke:#333,stroke-width:1px,color:white,fill-opacity:1.0;
 style 2 fill:#ff7f0e,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 style 3 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 4 fill:#9467bd,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 5 fill:#9467bd,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
-style 6 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
+style 4 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
+style 5 fill:#d62728,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
+style 6 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 ```
 
 ---
+
+## Results
+
+### Phylogeny Structure
+
+### Dating
+
+(1797.5 )
+
+| Lab ID | Arch ID | Date (Mean) | Date (95% HPD) |
+| ------ | ------- | ----------- | -------------- |
+| D51    |         |             |                | 
+| D62    |         |             |                |
+| D71    |         |             |                |
+| R36    |         |             |                |
+| P387   |         |             |                |
+| P187   |         |             |                |
+| P212   |         |             |                |
+| D51    |         |             |                |
+| D72    |         |             |                |
+| D75    |         |             |                |
+
+---
+
+## Conclusions
+
 ## Methods
 
 ### Data Collection
@@ -391,25 +417,6 @@ treeannotator -burnin 10 beast.trees beast_mcc.nex
 	  beast.xml | tee beast_screen.log
 	```
 
-## Results
-
-(1797.5 )
-
-| Lab ID | Arch ID | Date (Mean) | Date (95% HPD) |
-| ------ | ------- | ----------- | -------------- |
-| D51    |         |             |                | 
-| D62    |         |             |                |
-| D71    |         |             |                |
-| R36    |         |             |                |
-| P387   |         |             |                |
-| P187   |         |             |                |
-| P212   |         |             |                |
-| D51    |         |             |                |
-| D72    |         |             |                |
-| D75    |         |             |                |
-
----
-## Conclusions
 
 ## References
 
