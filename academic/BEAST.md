@@ -146,10 +146,11 @@ beast -beagle_info
 
 ### Packages
 
-The package manager is GUI, so we need an [[X11 Server]]. I run [[MobaXTerm]] in a WSL2 instance.
+The package manager is GUI, so we need an [[X11 Server]]. 
 
-```bash
-```
+1. Startup [[MobaXTerm]] 
+2. Switch to WSL2 terminal.
+3. Start beast from wsl2 (```beauti```) to launch gui.
 
 ## Speed
 

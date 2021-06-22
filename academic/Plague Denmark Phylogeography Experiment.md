@@ -14,6 +14,7 @@ aliases:
 ## Objectives
 
 1. Estimate a [[Maximum-likelihood\|maximum-likelihood]] [[Phylogenetic\|phylogeny]] of [[Second Pandemic]] [[Plague]] genomes.
+1. Estimate a clock model and geographic model using [[BEAST]].
 
 ---
 ## Outline
@@ -129,9 +130,57 @@ snakemake iqtree_filter_all --profile profiles/infoserv
 ---
 ### [[Clock Model]]
 
+#### Models Overview
+
+| Model          | Dates | Run Type      |
+| -------------- | ----- | ------------- |
+| Strict (SC)    | Yes   | Regular       |
+|                |       | Path-Sampling |
+|                | No    | Regular       | 
+|                |       | Path-Sampling |
+|                |       |               |
+| Relaxed (UCLN) | Yes   | Regular       |
+|                |       | Path-Sampling |
+|                | No    | Regular       |
+|                |       | Path-Sampling |
+
+#### Directory Structure
+
+```yaml
+strict_clock:
+  - dates:
+  	- run
+	- model_test
+  - no_dates:
+  	- run
+	- model_test
+relaxed_clock:
+  - dates:
+  	- run
+	- model_test  
+  - no_dates:
+  	- run
+	- model_test  
+  
+```
+
+```bash
+mkdir -p strict_clock/dates/run/ ;
+mkdir -p strict_clock/dates/model_test/ ;
+
+mkdir -p strict_clock/no_dates/run/ ;
+mkdir -p strict_clock/no_dates/model_test/ ;
+
+mkdir -p relaxed_clock/dates/run/ ;
+mkdir -p relaxed_clock/dates/model_test/ ;
+
+mkdir -p relaxed_clock/no_dates/run/ ;
+mkdir -p relaxed_clock/no_dates/model_test/ ;
+```
+
 #### Inputs
 
-Create nexus and newick files.
+Nexus and newick files:
 ```bash
 cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/denmark
 
@@ -140,209 +189,243 @@ cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/denmark
   -a iqtree/all/chromosome/full/filter30/filter-sites/snippy-multi.snps.aln \
   --nwk iqtree/all/chromosome/full/filter30/filter-taxa/iqtree.treefile \
   --nex beast/all/chromosome/full/filter30/beast.nex  
-  
+
 cp iqtree/all/chromosome/full/filter30/filter-taxa/iqtree.treefile beast/all/chromosome/full/filter30/beast.nwk
 ```
 
-#### Strict Clock
+#### Beauti
 
-** Dates **:
+1. Import alignment (```beast.nex```).
+1. Rename partitions (```dna```).
+1. Site Model (```GTR```).
+1. Tree Prior: (```Coalescent Constant Population```).
+1. Add MRCA Prior (```Ingroup```)
+	- Excludes the outgroup taxon ```SAMEA5818806```.
+	- None distribution
+	- Is monophyletic.
+1. Chain Length (100,000,000)
+2. Chain samples (10,000).
+3. Screen log (100,000).
+4. Save As -> ```beast.xml```
+5. Inspect the XML, to make sure the tip dating priors were setup correctly and logged. 
 
-1. Import alignment -> ```beast.nex```
-2. Rename partitions to ```dna```.
-3. Save As -> ```beast_strict_clock_dates.xml```
-	- Inspect the xml, to make sure the tip dating priors were setup correctly and logged.
-4. Site Model --> ```GTR```
-5. Clock Model: Strict
-6. Tree Prior: Coalescent Constant Population
-7. Chain Length:
-	- 100,000,000, sampled every 10,000 states.
-8. Add constant sites
 
-```xml
-# Change
-<data id="dna" spec="Alignment" name="alignment">
-	
-#To
-<data id="original-dna" spec="Alignment" name="original-dna">	
-	
-# Add
-<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>	
-```
+#### XML Edit
 
-```bash
-beast \
-  -overwrite \
-  -seed 1624027818829 \
-  -threads 10 \
-  -beagle_SSE \
-  -beagle_double \
-  beast_strict_clock_dates.xml | tee beast_strict_clock_dates_screen.xml
-```
-
-```bash
-beast \
-  -overwrite \
-  -seed 64135435525 \
-  -threads 10 \
-  -beagle_SSE \
-  -beagle_double \
-  beast_relaxed_clock_dates.xml | tee beast_relaxed_clock_dates_screen.xml
-```
-
-```bash
-beast \
-  -overwrite \
-  -seed 541958134091 \
-  -threads 10 \
-  -beagle_SSE \
-  -beagle_double \
-  beast_relaxed_clock_geo.xml | tee beast_relaxed_clock_geo_screen.xml
-```
-
-```bash
-``
-
-1. Navigate to beast directory:
-	```bash
-	cd denmark/beast/all/chromosome/full/filter30
-	```
-2. Run parameters in beauti.
-	```yaml
-	alignment: beast.fasta
-	substitution-model: GTR
-	base-frequencies: estimated
-	site-heterogeneity-model: None
-	clocks:
-		- strict clock
-		- uncorrelated relaxed clock
-	tree-prior: coalescent constant size
-	chain-length: 100,000,000
-	sample-every: 10,000
-	mle: path-sampling
-	path-steps: 100
-	chain-length: 1,000,000
-	```
-3. Add Constant Sites
+1. Add constant sites
 	```xml
-	<mergePatterns id="patterns">
-		<patterns from="1" every="1">
-			<alignment idref="alignment"/>
-		</patterns>
-
-		<constantPatterns>
-			<alignment idref="alignment"/>
-			<counts>
-				<parameter value="1126849 1014112 1025137 1123712"/>
-			</counts>
-		</constantPatterns>
-	</mergePatterns>
-	```
-3. Run the strict clock (~3 minutes/million states)
-	```bash
-	beast -seed 1624027818829 -threads 10 -beagle_SSE -beagle_double beast_strict_clock.xml | tee beast_strict_clock_screen.log
-	
-	# Estimated Runtime: 10 hours
+	# Change
+	<data id="dna" spec="Alignment" name="alignment">
+	#To
+	<data id="original-dna" spec="Alignment" name="original-dna">	
+	# Add
+	<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>	
 	```
 
-4. Run the relaxed clock (~3 minutes/million states)
-	```bash
-	beast -seed 1624028259090 -threads 10 -beagle_SSE -beagle_double beast_relaxed_clock.xml | tee beast_relaxed_clock_screen.log
-	# Estimated Runtime: 10 hours
-	```
+#### Model Testing
 
-5. MCC Trees
+https://groups.google.com/g/beast-users/c/nGivwwqKRgM
 
-	```bash
-	treeannotator -burninTrees 1000 beast_strict_clock.trees beast_strict_clock_mcc_hpd95.nex
-	treeannotator -burninTrees 1000 beast_relaxed_clock.trees beast_relaxed_clock_mcc_hpd95.nex
-	```
+> *"The "path sampling" available in BEAST2's MODEL_SELECTION is actually stepping-stone sampling. It is a straightforward implementation of the stepping-stone method described in Xie et al. Path sampling and stepping-stone sampling are similar - stepping-stone is slightly more efficient, but given enough steps either should be very accurate."*
 
-Reconfigure date priors
+>*"If set up the analysis and left alpha to 0.3 (which is the default value), you actually calculated the stepping stone estimate with the (confusingly named) PathSampleAnalyser."*
 
-```yaml
-# 3 samples groups in the black death area:
-- samples:
-  - D71
-  - R36
-  - D62
-- date: 621
-- uncertainty: 100 (1300-1500)
-```
+https://beast.community/model_selection_1
 
-```yaml
-D51:
-	- orig-date: 691.0 (1330)
-	- orig-uncertainty: 230.0 (1100 - 1560)
-	- SAMEA5818803:
-		- date: 388.0 (1633)
-		- uncertainty: 15.0 (1618 - 1648)
-	- SAMEA5818818:
-		- date: 461.0 (1560)
-		- uncertainty: 75.0 (1485 - 1635)		
-	- final-date: 571 (1450)
-	- final-uncertainty: 250 (1200 - 1700)
-D62:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-D71:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-D72:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-D75:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-P187:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-P212:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-P387:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-R36:
-	- date: 691.0 (1330)
-	- uncertainty: 230.0 (1100 - 1560)
-SAMEA5818817:
-	- date: 496.0
-	- uncertainty: 105.0
-```
-
-
-#### BEAST2
+> *"We suggest to specify a number of path steps of either 50 or 100, with the lenght of each chain being at least 250.000 iterations. In general, it’s probably a good idea to run a total amount of iterations (i.e. number of path steps times chain length) equal to the length of the standard BEAST analysis performed to estimate the various parameters. Given that the Beta(0.3; 1.0) distribution to determine the power posteriors has been shown to deliver adequate performance (Xie et al., 2011), we currently only allow this distribution to be used. Through XML specification (see below), other options for this distribution can be specified."*
 
 ```bash
-/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
-  -m metadata.tsv \
-  -a ../filter-sites/snippy-multi.snps.aln \
-  --nex ../../../../../../beast/all/chromosome/full/filter30/beast.nex \
-  --nwk iqtree.treefile
+cp strict_clock/dates/run/beast.xml strict_clock/dates/model_test/beast.xml;
+cp strict_clock/no_dates/run/beast.xml strict_clock/no_dates/model_test/beast.xml;
+cp relaxed_clock/dates/run/beast.xml relaxed_clock/dates/model_test/beast.xml;
+cp relaxed_clock/no_dates/run/beast.xml relaxed_clock/no_dates/model_test/beast.xml;
 ```
 
-3. Run the strict clock (~3 minutes/million states)
-	```bash
-	beast -seed 1624027818829 -threads 2 -beagle_SSE -beagle_double beast_strict_clock.xml
-	
-	# Estimated Runtime: 10 hours
+1. Change ```<run>``` element to ```mcmc```.
+1. Add a new ```<run>``` element before the mcmc.
+	```xml
+	<run spec="beast.inference.PathSampler"
+		chainLength="1000000"
+		alpha="0.3"
+		rootdir="/2/scratch/keaton/plague-phylogeography-projects/denmark/beast/all/chromosome/full/filter30/....."
+		burnInPercentage="0"
+		preBurnin="100000"
+		deleteOldLogs="true"
+		nrOfSteps="100">
+    	cd $(dir)
+    	java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml		
 	```
+
+|  Clock  |  Dates   | Marginal Likelihood | Bayes Factor (Dates) | Bayes Factor (Clock) |
+|:-------:|:--------:|:-------------------:|:--------------------:|:--------------------:|
+| Strict  |  Dates   | -5948088.362111656  |        748.87        |          --          |
+| Strict  | No Dates | -5948837.229225709  |          --          |          --          |
+| Relaxed |  Dates   | -5947948.032380212  |        715.37        |        140.33        | 
+| Relaxed | No Dates | -5948663.405502648  |          --          |        173.82        |
+
+- Decisive support for temporal signal using both strict clock and relaxed clock.
+- Decisive support for the relaxed clock over a strict clock.
+
+#### Checklist
+
+- [x] Beauti XMLs
+	- [x] Strict clock
+		- [x] Dates
+		- [x] No Dates
+	- [x] Relaxed Clock
+		- [x] Dates
+		- [x] No Dates
+- [x] Constant sites
+	- [x] Strict clock
+		- [x] Dates
+		- [x] No Dates
+	- [x] Relaxed Clock
+		- [x] Dates
+		- [x] No Dates
+- [x] Model Test
+	- [x] Strict clock
+		- [x] Dates
+		- [x] No Dates
+	- [x] Relaxed Clock
+		- [x] Dates
+		- [x] No Dates
+
+#### Run
+Activate conda environment:
+```bash
+conda activate beast2
+```
+
+1. Strict clock with dates
+	```bash
+	cd strict_clock/dates/run;
+	beast \
+	  -seed 4141239047 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log
+	  
+	cd ../model_test/;
+	beast \
+	  -seed 4141239047 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log	
+	```
+2. Strict clock without dates
+	```bash
+	cd strict_clock/no_dates/run;
+	beast \
+	  -seed 75273452 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log
+	  
+	cd ../model_test/;
+	beast \
+	  -seed 75273452 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+3. Relaxed clock with dates
+	```bash
+	cd relaxed_clock/dates/run;
+	beast \
+	  -seed 1259807514 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log
+	  
+	cd ../model_test/;
+	beast \
+	  -seed 1259807514 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+4. Relaxed clock without dates
+	```bash
+	cd relaxed_clock/no_dates/run;
+	beast \
+	  -seed 5435425542 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log
+	  
+	cd ../model_test/;
+	beast \
+	  -seed 5435425542 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+	
+#### MCC Trees
+
+```bash
+treeannotator -burnin 10 beast.trees beast_mcc.nex
+```
 
 ### Phylogeography
 
 > *"...the Cauchy RRW model and by specifying that Bivariate trait represents latitude and longitude (fig. 2D). The latter option allows estimating diffusion statistics that are specific for bivariate spatial traits (with latitude and longitude in that order). “Cauchy” refers to the name of the probability distribution that is here used to accommodate dispersal velocity variation among phylogeny branches. We also select the option Add random jitter to tips, which adds noise to sampling coordinates. With this option, the noise is drawn uniformly at random from a particular Jitter window size to duplicated (location) traits. Here, we set the jitter window size to 0.01, which will add a small noise that will avoid a poor performance of the RRW model when not all sequences are associated with unique sampling coordinates. The choice of the jitter value is arbitrary, but it should remain sufficiently small to avoid alternating too much the actual geographic origin of each sample (see also our discussion below about alternatives to the jitter option)."*
 
-```bash
-beast -overwrite -seed 6543242 -threads 2 -beagle_SSE -beagle_double beast_geo.xml | tee beast_geo_screen.log
-```
+- I will use a relaxed clock model with dates for continuous phylogeography.
+
+	```bash
+	cd relaxed_clock/dates/geo;
+	beast \
+	  -seed 435541709 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log
+	```
 
 ## Results
+
+(1797.5 )
+
+| Lab ID | Arch ID | Date (Mean) | Date (95% HPD) |
+| ------ | ------- | ----------- | -------------- |
+| D51    |         |             |                | 
+| D62    |         |             |                |
+| D71    |         |             |                |
+| R36    |         |             |                |
+| P387   |         |             |                |
+| P187   |         |             |                |
+| P212   |         |             |                |
+| D51    |         |             |                |
+| D72    |         |             |                |
+| D75    |         |             |                |
 
 ---
 ## Conclusions
 
+## References
 
+
+Bouckaert, Remco, Timothy G. Vaughan, Joëlle Barido-Sottani, Sebastián Duchêne, Mathieu Fourment,
+Alexandra Gavryushkina, Joseph Heled, Graham Jones, Denise Kühnert, Nicola De Maio, Michael Matschiner,
+Fábio K. Mendes, Nicola F. Müller, Huw A. Ogilvie, Louis du Plessis, Alex Popinga, Andrew Rambaut,
+David Rasmussen, Igor Siveroni, Marc A. Suchard, Chieh-Hsi Wu, Dong Xie, Chi Zhang, Tanja Stadler,
+Alexei J. Drummond
+  BEAST 2.5: An advanced software platform for Bayesian evolutionary analysis.
+  PLoS computational biology 15, no. 4 (2019): e1006650.
+
+Drummond AJ, Ho SYW, Phillips MJ, Rambaut A (2006) Relaxed Phylogenetics and
+  Dating with Confidence. PLoS Biol 4(5): e88
+
+Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406
 
 ---
 
