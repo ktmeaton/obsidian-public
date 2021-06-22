@@ -65,31 +65,6 @@ style 6 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:1.0,color:white
 
 ---
 
-## Results
-
-### Phylogeny Structure
-
-### Dating
-
-(1797.5 )
-
-| Lab ID | Arch ID | Date (Mean) | Date (95% HPD) |
-| ------ | ------- | ----------- | -------------- |
-| D51    |         |             |                | 
-| D62    |         |             |                |
-| D71    |         |             |                |
-| R36    |         |             |                |
-| P387   |         |             |                |
-| P187   |         |             |                |
-| P212   |         |             |                |
-| D51    |         |             |                |
-| D72    |         |             |                |
-| D75    |         |             |                |
-
----
-
-## Conclusions
-
 ## Methods
 
 ### Data Collection
@@ -439,6 +414,31 @@ treeannotator -burnin 10 beast.trees beast_mcc.nex
 	```
 
 
+
+## Results
+
+### Phylogeny Structure
+
+### Dating
+
+(1797.5 )
+
+| Lab ID | Arch ID | Date (Mean) | Date (95% HPD) |
+| ------ | ------- | ----------- | -------------- |
+| D51    |         |             |                | 
+| D62    |         |             |                |
+| D71    |         |             |                |
+| R36    |         |             |                |
+| P387   |         |             |                |
+| P187   |         |             |                |
+| P212   |         |             |                |
+| D51    |         |             |                |
+| D72    |         |             |                |
+| D75    |         |             |                |
+
+---
+
+## Conclusions
 ## References
 
 
