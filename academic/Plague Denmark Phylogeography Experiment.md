@@ -11,6 +11,27 @@ aliases:
 | Date    | [[2021-06-16]]      | 
 
 ---
+## Questions
+
+1. How are plague epidemics in Denmark related to the rest of Europe?
+
+- Why do we care about the timing and spread of plague in medieval Europe?
+- Why do we care about endemic/epidemic patterning in medieval Europe?
+- Why do we care about reservoir locations?
+- How is the Danish dataset useful? 
+
+Part 1. Danish plague
+Part 2. 
+
+- Scan the genome (plasmid) for changes occurring within the 2nd pandemic?
+- Challenging narratives of import vs. export
+
+- Broad sampling strategy (in terms of geography and time)
+- All detectable plague from Denmark in this study, post-dates the Black Death
+	- We could interpret this as evidence to suggest this is a novel introduction to the region
+
+
+---
 ## Objectives
 
 1. Estimate a [[Maximum-likelihood\|maximum-likelihood]] [[Phylogenetic\|phylogeny]] of [[Second Pandemic]] [[Plague]] genomes.
@@ -20,7 +41,7 @@ aliases:
 ## Outline
 
 ```mermaid
-graph LR;
+graph TD;
 1-->2;
 2-->3;
 2-->6;
