@@ -402,6 +402,8 @@ treeannotator -burnin 10 beast.trees beast_mcc.nex
 > *"...the Cauchy RRW model and by specifying that Bivariate trait represents latitude and longitude (fig. 2D). The latter option allows estimating diffusion statistics that are specific for bivariate spatial traits (with latitude and longitude in that order). “Cauchy” refers to the name of the probability distribution that is here used to accommodate dispersal velocity variation among phylogeny branches. We also select the option Add random jitter to tips, which adds noise to sampling coordinates. With this option, the noise is drawn uniformly at random from a particular Jitter window size to duplicated (location) traits. Here, we set the jitter window size to 0.01, which will add a small noise that will avoid a poor performance of the RRW model when not all sequences are associated with unique sampling coordinates. The choice of the jitter value is arbitrary, but it should remain sufficiently small to avoid alternating too much the actual geographic origin of each sample (see also our discussion below about alternatives to the jitter option)."*
 
 - I will use a relaxed clock model with dates for continuous phylogeography.
+- I ran this for 250M generations accidentally (25k states). I will take the last 10k states
+- Burn in is therefore 60%
 
 	```bash
 	cd relaxed_clock/dates/geo;
@@ -413,6 +415,36 @@ treeannotator -burnin 10 beast.trees beast_mcc.nex
 	  beast.xml | tee beast_screen.log
 	```
 
+	```bash
+	treeannotator -burnin 60 -hpd2D 0.95 beast.trees beast_mcc.nex
+	
+	Processing 10001 trees from file after ignoring first 60% = 15000 trees.
+	Annotating target tree...
+	Warning: a node has a disjoint 95.0% HPD region.  This may be an artifact!
+	Try decreasing the enclosed mass or increasing the number of samples.
+	Warning: a node has a disjoint 95.0% HPD region.  This may be an artifact!
+	Try decreasing the enclosed mass or increasing the number of samples.
+	Warning: a node has a disjoint 95.0% HPD region.  This may be an artifact!
+	Try decreasing the enclosed mass or increasing the number of samples.
+	Warning: a node has a disjoint 95.0% HPD region.  This may be an artifact!
+	Try decreasing the enclosed mass or increasing the number of samples.
+	Warning: a node has a disjoint 95.0% HPD region.  This may be an artifact!
+	Try decreasing the enclosed mass or increasing the number of samples.
+	Setting node heights...
+	```
+
+#### SpreaD3
+
+- Most recent sampling date (1822) from MCC tree.
+
+```bash
+mv spreaD3/renderers/d3/d3renderer/* . ;
+rm -rf spreaD3;
+/mnt/c/Users/ktmea/Projects/BEAST2-Phylogeography/convert-spread3/convert-spread3.sh ;
+mv index-new.html index.html;
+mv main-new.js main.js;
+sed -i 's/main-new/main/g' index.html
+```
 
 
 ## Results
