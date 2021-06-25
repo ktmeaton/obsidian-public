@@ -304,23 +304,35 @@ The final finding from constructing nuanced models concerns the outlier clades f
 
 #### The [[Third Pandemic]]: [[1.ORI]]
 
-The geographic history of the [[Third Pandemic]] is characterized by successive bursts of radial expansion both between and within continents.  Several divergence events, including a multifurcation, are estimated to have occurred around the beginning of the 20th century, which is consistent with epidemiological reports on the global dispersal of modern plague. The geographic patterns, or lack thereof, also reflects the cyclic spread of plague with multiple independent introductions into South America and Africa.
+The geographic history of the [[Third Pandemic]] is characterized by radial expansions both between and within continents.  Several divergence events, including a multifurcation, are estimated to have occurred around the beginning of the 20th century, which is consistent with epidemiological reports on the global dispersal of modern plague. These early divergences are estimated to begin with a burst radiation of lineages dispersing out of China. Several of these migrations are widely supported in the literature, such as the single entry of *[[Yersinia pestis|Y. pestis]]* into North America in the early 20th Century.
 
-> **Kat's Notes**:
->- The root is a little bit "off". The purple clade (Asia) is the basal branch in the ML tree.
->- The bottom mixed clade (Asia + Europe + Africa) is a vaccine clade.
->- No inter-continental migrations could be reconstructed with high confidence.
->- Three intra-continental migrations could be reconstructed.
-
-![Bayesian phylogeography of the Third Pandemic (1.ORI). Colored branches indicate high state probability and an asterisk (\*) marks splits with high posterior support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/009ac19/main/auspice/all/chromosome/full/filter5/beast/1.ORI_timetree_continent.png){#fig:1.ORI_timetree_continent}
-
-![Bayesian phylogeography of the Third Pandemic (1.ORI). High confidence migrations.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/009ac19/main/auspice/all/chromosome/full/filter5/beast/1.ORI_map_continent.jpg){#fig:1.ORI_map_continent}
+![[1.ORI Bayesian Phylogeography.png]]{#fig:1.ORI_timetree_continent}
 
 #### [[Medievalis]]: [[2.MED]]
+
+##### Country Resolution
+
+![[2.MED Bayesian Phylogeography.png]]
+
+##### Province Resolution
+
+![[2.MED Distribution and Tree.png]]
 
 > *"In the late 19th and early 20th centuries, there were outbreaks of plague with high mortality rates in the Caspian Sea region"* (2) [[@eroshenko2021EvolutionCirculationYersinia]]
 > Last epizootics recorded in 1940-1950s
 > *"At the beginning of the second half of the 20th century, in 1963–1979, plague epizootics began to reoccur"*
+
+### [[Second Pandemic]]: [[1.PRE]]
+
+![[1.PRE Bayesian Phylogeography.png]]
+
+### [[First Pandemic]]: [[0.ANT4]]
+
+![[0.ANT4 Bayesian Phylogeography.png]]
+
+### [[Bronze Age]]: [[0.PRE]]
+
+![[0.PRE Bayesian Phylogeography.png]]
 
 ## Conclusion {.page_break_before}
 
