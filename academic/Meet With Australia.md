@@ -9,24 +9,21 @@ tags:
   - ⬜/🧨
 status: priority
 type: [[Meeting]]
-due: 2021-06-24
-time: "18:00"
+due: 2021-06-29
+time: 1800
 ---
 
 # Meet With Australia
 
-- Dismantling narratives about movement
-- Why do we care?
-- Nature Ecology and Evolution, Nature Microbioly
+## [[2021-06-30]]
 
-- Issue of identical strains with drastic geographic distance and time
-- Elusive search for origins
-
-- What it says, why it's probleatic, why it cares?
-
-- Every pandemic experience is anchored to history of plague
-
-- Email John again
+- Phylogeography:
+	- Root position:
+		- [[0.PRE]]: Good
+		- [[0.ANT4]]: Good
+		- [[1.PRE]]: Slightly off
+		- [[1.ORI]]: Slightly off
+		- [[2.MED]]: Slightly off
 
 ## [[2021-06-17]]
 

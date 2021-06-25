@@ -13,6 +13,50 @@ time: 11:00
 
 # Meet with Hendrik
 
+## [[2021-06-24]]
+
+[Meeting Link](https://us02web.zoom.us/j/81199389961?pwd=L2lPSGNSaUtwaGxCa3BLaldVZ0dtZz09)
+
+Phylogeography Questions:
+	- What kind of migration events are high confidence?
+	- Intercontinental vs. subtle movements
+	Cases: agreement, uncertainty, conflict (history vs. genetics)
+	- multiple introductions,
+	
+Geographic structure cryptic 
+
+Frame the past in the context
+
+- Do the genetics agree with any historical narratives?
+
+- what sigma for radiocarbon
+
+3 part:
+	- Which parts are robust?
+	- Why agree?
+	COVID comparison
+
+- Meeting with Rav, Kat
+	
+Plot timeline?
+- what we can and cannot say about the past
+- more epidemiological states
+
+	
+	
+5 Clades:
+	- [[1.PRE]], [[0.ANT4]], [[1.ORI]]
+	- [[0.PRE]], [[2.MED]]
+	
+- Dismantling narratives about movement
+- Why do we care?
+- Nature Ecology and Evolution, Nature Microbioly
+- Issue of identical strains with drastic geographic distance and time
+- Elusive search for origins
+- What it says, why it's probleatic, why it cares?
+- Every pandemic experience is anchored to history of plague
+- Email John again
+
 ## [[2021-06-01]]
 
 [Meeting Link](https://us02web.zoom.us/j/82186947563?pwd=c0Z4eGdqK2VYZUpRdmE3NEE1NUVSUT09)

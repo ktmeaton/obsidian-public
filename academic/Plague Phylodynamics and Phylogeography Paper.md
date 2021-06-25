@@ -293,6 +293,22 @@ The first aspect is that **fitting a single clock model to the global phylogeny 
 
 The final finding from constructing nuanced models concerns the outlier clades for which no detectable signal could be found, namely [[0.ANT]], [[2.ANT]], [[3.ANT]], [[2.MED]], and [[1.IN]]. The reason for this lack of signal is unclear, but one explanation may be that **these *[[Yersinia pestis|Y. pestis]]* populations are inappropriately separated based on the ```major branch``` and ```biovar``` systems**. We hypothesis that alternative strategies to subdivide these populations will yield greater insight, based on the methodological improvements demonstrated in this study.
 
+### [[Phylogeography]] 
+
+#### The [[Third Pandemic]]: [[1.ORI]]
+
+- The root is a little bit off.
+- There is a small amount of geographic structure at the continent level.
+- North American strains all cluster together.
+- Two separate introductions into South America
+- The bottom mixed clade (Asia + Europe + Africa) is a vaccine clade.
+- No inter-continental migrations could be reconstructed with high confidence.
+- Three intra-continental migrations could be reconstructed.
+
+![Bayesian phylogeography of the Third Pandemic (1.ORI). Colored branches indicate high state probability and an asterisk (\*) marks splits with high posterior support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/009ac19/main/auspice/all/chromosome/full/filter5/beast/1.ORI_timetree_continent.png){#fig:1.ORI_timetree_continent}
+
+![Bayesian phylogeography of the Third Pandemic (1.ORI). High confidence migrations.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/009ac19/main/auspice/all/chromosome/full/filter5/beast/1.ORI_map_continent.jpg){#fig:1.ORI_map_continent}
+
 ## Conclusion {.page_break_before}
 
 >1. **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. <br> This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. <br>

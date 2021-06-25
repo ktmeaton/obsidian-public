@@ -1,6 +1,6 @@
 ---
-project:
-due: 2021-06-23
+project: [[Plague Denmark]]
+due: 2021-06-28
 people:
 tags: ⬜/🧨 
 status: priority
