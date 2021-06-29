@@ -13,6 +13,8 @@ status: priority
 
 ## [[2021-06-29]]
 
+[Meeting Link]https://us02web.zoom.us/j/86423071912?pwd=ZHJhclJlck5NbklNYUxGQmdVODFwZz09
+
 ## Old
 
 - [x] Mention the ```keep-singletons``` filtering script change.
