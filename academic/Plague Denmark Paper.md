@@ -35,9 +35,9 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Pape
 
 326 individuals were sampled across 8 municipalities from 14 archaeological sites with occupation dates spanning from 900 to 1600 CE (Table @tbl:site_summary). The most heavily represented periods are the Danish early medieval period (1050–1225) and the Danish medieval period (1225–1536) [[@dangvardpedersen2020MillenniumPopulationChange]].
 
-> **Kat's Notes**:
-> - Positivity rate (all sites): 4.6% (15/326)
-> - Positivity rate (excluding negative sites): 9.4% (15/159)
+> **Kat's Notes**:<br>
+> - Positivity rate (all sites): 4.6% (15/326)<br>
+> - Positivity rate (excluding negative sites): 9.4% (15/159)<br>
 
 | Municipality |            Site Name             |   Site Code   |  Site Date  | Sampled | Plague Positive |
 |:------------:|:--------------------------------:|:-------------:|:-----------:|:-------:|:---------------:|
@@ -62,15 +62,15 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Pape
 Table: Site summary.  {#tbl:site_summary}
 
 
-![[Map Denmark Sites.png]]
+![Map Denmark Sites (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/obsidian-public/8af43fc/academic/Map%20Denmark%20Sites.png){#fig:map_sites}
 
 ### Plague Detection {.page_break_before}
 
-15 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis]]* whole genome (Table @tbl:plague_positive_summary). 9 individuals had coverage levels sufficient for phylogenetic analysis as determined by having 50% of the chromosome covered by at least 3X (Table @tbl:si_cov).
+15 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis]]* whole genome (Table @tbl:pcr_shotgun_summary and @tbl:enrichment_summary). 9 individuals had coverage levels sufficient for phylogenetic analysis as determined by having 50% of the chromosome covered by at least 3X (Table @tbl:si_cov).
 
-> **Kat's Notes**:
-> - *[[Yersinia pestis|Y. pestis]]* is only detected in the Medieval Period (1225–1536).
-> 
+> **Kat's Notes**:<br>
+> - Full genomes can only be retrieved from samples with 6/6 positive PCR replicates.<br>
+> - *[[Yersinia pestis|Y. pestis]]* is only detected during the Danish medieval period (1225–1536).<br>
 
 |  Arch ID   | Project ID | Site Code | PCR | Human (%) | Plague (%) |
 |:----------:|:----------:|:---------:|:---:|:---------:|:----------:|
@@ -112,10 +112,6 @@ Table: Plague PCR and shotgun summary. {#tbl:pcr_shotgun_summary}
 
 Table:  Enrichment summary. Replicon statistics represent the mean fold coverage. {#tbl:enrichment_summary}
 
-![Map Denmark Sites (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/obsidian-public/c233139/academic/Map%20Denmark%20Sites.png){#fig:map_sites width=50%}
-
-
-
 ### Dating {.page_break_before}
 
 To estimate dates for the plague-positive individuals, a [[Bayesian Evaluation of Temporal Signal]] (BETS) was first performed. Briefly, each candidate model was tested using the correct collection dates of all samples and then compared to the same model with all collection dates assumed to be contemporaneous. Bayes factors (BF) were calculated by comparing the marginal likelihoods of each model, as estimated with a generalized stepping stone (GSS) computation across 100 chains each sampled over 1,000,000 generations.
@@ -151,12 +147,25 @@ Table: Tip-dating summary. {#tbl:tip_dating_summary}
 
 ### Phylogeny {.page_break_before}
 
-The time-scaled phylogeny reveals geographic and temporal structure during the [[Second Pandemic]] (Figure @fig:1.PRE_timetree). This study recapitulates the finding that *[[Yersinia pestis|Y. pestis]]* genomes sampled from the 14th century all cluster together. The branching pattern of samples dating to the first half of the 14th century are poorly resolved, due to extremely similar genetic content. However, this 
-- Large geographic spread, Italy -> Norway, Spain -> Eastern Russia.
+The time-scaled phylogeny reveals geographic and temporal structure during the [[Second Pandemic]] (Figure @fig:1.PRE_timetree). 
 
 ![Bayesian time-scaled phylogeny.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/137befa/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
 
-### Geography
+
+> **Phase 1: 1300-1450**<br>
+> - All *[[Yersinia pestis|Y. pestis]]* genomes from the 14th century cluster together.<br>
+> - Samples from the early-mid 1300s are widely dispersed across Europe (Figure @fig:map_phase_1), and have highly similar genetic content resulting poorly resolved branching order. This suggests rapid, epidemic spread, thought to be associated with the Black Death.<br>
+> - Samples from the late 1300s also cluster together, and are linked to the *pestis segunda* series of epidemics in Europe.<br>
+> - The only Danish samples in Phase I are from Ribe, and fall within both the Black Death and *pestis segunda* groups.
+> - These are primarily coastal sites, Germany and Russia as the exception.
+
+> **Phase 2: 1450-1600**<br>
+- A very curious branching pattern, lots of 'independent' emergences rather than monophyletic clades.<br>
+- All Danish samples from the Horsens region fall here, and although they have temporal overlap with each other, the lineages of plague are distinct.<br>
+- ...<br>
+
+> **Phase 3: 1600-1800**<br>
+- ...
 
 ![Phase 1: 1300 - 1450](https://rawcdn.githack.com/ktmeaton/obsidian-public/c233139/academic/Map%20Black%20Death%20and%20pestis%20segunda.png){#fig:map_phase_1 width=50%}
 
