@@ -15,6 +15,12 @@ status: priority
 
 [Meeting Link]https://us02web.zoom.us/j/86423071912?pwd=ZHJhclJlck5NbklNYUxGQmdVODFwZz09
 
+### Tasks
+
+- [ ] [[Fix Missing Samples and Labels]]
+- [ ] [[Contact Jen About Mito Dating]]
+- [ ] [[Compare Tree to Spyrou et al. 2019]]
+
 ## Old
 
 - [x] Mention the ```keep-singletons``` filtering script change.
