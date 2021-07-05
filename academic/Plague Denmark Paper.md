@@ -31,38 +31,50 @@ compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague Denmark Pa
 url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Paper.html
 ---
 
-## Data Collection {.page_break_before}
+## Introduction
 
-326 individuals were sampled across 8 municipalities from 14 archaeological sites with occupation dates spanning from 900 to 1600 CE (Table @tbl:site_summary). The most heavily represented periods are the Danish early medieval period (1050–1225) and the Danish medieval period (1225–1536) [[@dangvardpedersen2020MillenniumPopulationChange]].
+1. When and where does [[Plague|plague]] (*[[Yersinia pestis|Y. pestis]]*) appear in [[Denmark]]?
+2. How are [[Denmark\|Danish]] outbreaks of plague connected to the global [[Second Pandemic]]?
 
-> **Kat's Notes**:<br>
-> - Positivity rate (all sites): 4.6% (15/326)<br>
-> - Positivity rate (excluding negative sites): 9.4% (15/159)<br>
 
-| Municipality |            Site Name             |   Site Code   |  Site Date  | Sampled | Plague Positive |
-|:------------:|:--------------------------------:|:-------------:|:-----------:|:-------:|:---------------:|
-|     Ribe     |          Ribe Gräbrødre          |   ASR 1015    | 1200 : 1560 |   53    |        6        |
-|              |    Ribe Lindegården (Vikings)    |  ASR 13/13II  | 900 : 1000  |   15    |        0        |
-|              | Ribe Lindegården (City Cemetery) |   ASR 13II    | 1200 : 1560 |   28    |        1        |
-|              |         Ribe Lindegärden         |   ASR 2391    | 900 : 1000  |    5    |        0        |
-|    Nordby    |              Nordby              |   FHM 3970    | 1050 : 1250 |   36    |        0        |
-|   Horsens    |         Monastery Church         |   HOM 1272    | 1600 : 1800 |   50    |        0        |
-|              |          Ole Wormsgade           |   HOM 1649    | 1100 : 1500 |   17    |        2        |
-|              |              Sejet               |   HOM 1046    | 1150 : 1574 |   25    |        1        |
-|              |              Tirup               |   VKH 1201    | 1150 : 1350 |   12    |        1        |
-|   Hågerup    |             Hågerup              |   ØHM 1247    | 1100 : 1555 |    7    |        1        |
-|   Refshale   |             Refshale             |   Refshale    | 1100 : 1350 |   19    |        0        |
-|    Viborg    |           Sct. Michael           |   JAH 1-77    | 1000 : 1529 |    4    |        0        |
-|              |       The Catholic Church        |   VSM 09264   | 1100 : 1529 |    6    |        0        |
-|              |           Sct. Mathias           | VSM 855F/906F | 1100 : 1529 |   23    |        0        |
-|              |           Sct. Drotten           |   VSM 902F    | 1100 : 1529 |    8    |        0        |
-|              |             Faldborg             |    VSM 29F    | 1100 : 1600 |   17    |        2        |
-|  **Total**   |                                  |               |             |   326   |       15        |
+## Materials and Methods {.page_break_before}
+
+### Sample Composition
+
+326 individuals were sampled across 8 regions from 14 archaeological sites (Table @tbl:site_summary). The site occupation dates span from the 10th to 18th centuries which encompasses the Viking Age (8th - 10th century), the Medieval Period (11th - 16th century) and the Early Modern Period (16th - 19th century) [[@dangvardpedersen2020MillenniumPopulationChange]].
+
+|  Region   |            Site Name             |   Site Code   |  Site Date  | Sampled | Plague Positive |
+|:---------:|:--------------------------------:|:-------------:|:-----------:|:-------:|:---------------:|
+|   Ribe    |          Ribe Gräbrødre          |   ASR 1015    | 1200 : 1560 |   53    |        6        |
+|           |    Ribe Lindegården (Vikings)    |  ASR 13/13II  | 900 : 1000  |   15    |        0        |
+|           | Ribe Lindegården (City Cemetery) |   ASR 13II    | 1200 : 1560 |   28    |        1        |
+|           |         Ribe Lindegärden         |   ASR 2391    | 900 : 1000  |    5    |        0        |
+|  Nordby   |              Nordby              |   FHM 3970    | 1050 : 1250 |   36    |        0        |
+|  Horsens  |         Monastery Church         |   HOM 1272    | 1600 : 1800 |   50    |        0        |
+|           |          Ole Wormsgade           |   HOM 1649    | 1100 : 1500 |   17    |        2        |
+|           |              Sejet               |   HOM 1046    | 1150 : 1574 |   25    |        1        |
+|           |              Tirup               |   VKH 1201    | 1150 : 1350 |   12    |        1        |
+|  Hågerup  |             Hågerup              |   ØHM 1247    | 1100 : 1555 |    7    |        1        |
+| Refshale  |             Refshale             |   Refshale    | 1100 : 1350 |   19    |        0        |
+|  Viborg   |           Sct. Michael           |   JAH 1-77    | 1000 : 1529 |    4    |        0        |
+|           |       The Catholic Church        |   VSM 09264   | 1100 : 1529 |    6    |        0        |
+|           |           Sct. Mathias           | VSM 855F/906F | 1100 : 1529 |   23    |        0        |
+|           |           Sct. Drotten           |   VSM 902F    | 1100 : 1529 |    8    |        0        |
+|           |             Faldborg             |    VSM 29F    | 1100 : 1600 |   17    |        2        |
+| **Total** |                                  |               |             |   326   |       15        |
 
 Table: Site summary.  {#tbl:site_summary}
 
 
 ![Map Denmark Sites (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/obsidian-public/8af43fc/academic/Map%20Denmark%20Sites.png){#fig:map_sites}
+
+## Results {.page_break_before}
+
+> **Kat's Notes**:<br>
+> - Positivity rate (all sites): 4.6% (15/326)<br>
+> - Positivity rate (excluding negative sites): 9.4% (15/159)<br>
+
+
 
 ### Plague Detection {.page_break_before}
 
