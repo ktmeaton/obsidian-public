@@ -299,8 +299,8 @@ The final finding from constructing nuanced models concerns the outlier clades f
 > 1. The root/basal clade is a bit "off" for [[1.ORI]], [[2.MED]], and [[1.PRE]]. This could be because: 
 > - There is little temporal signal (ex. [[2.MED]]) or, 
 > - The first divergence "should" be a multifurcation.
-> 2.  Given the caveat of root placement, the tMRCAs are in the right range based on what we know from historical data. Bayesian Dating (BEAST) > Maximum-Likelihood Dating (LSD2).
-> 3. 
+> 2.  Given the caveat of root placement, the tMRCAs are in the right range based on what we know from historical data.
+
 
 #### The [[Third Pandemic]]: [[1.ORI]]
 

@@ -14,6 +14,26 @@ authors:
       "[[McMaster Ancient DNA Center]]", 
       "[[Department of Biology]], [[McMaster University]]"
     ]
+  - name: [[Julia Gamble]]
+    orcid: 0000-0001-7486-757X
+    affiliations: [
+      "[[University of Manitoba]]"
+    ]	
+  - name: [[Jesper Boldsen]]
+    orcid: 0000-0002-2850-0934
+    affiliations: [
+      "[[University of Southern Denmark]]", 
+      "[[ADBOU]]"
+    ]		
+  - name: [[Ann Carmichael]]
+    affiliations: [
+      "[[Indian University Bloomington]]", 
+    ]
+  - name: [[Nükhet Varlık]]
+    orcid: 0000-0001-6870-5945
+    affiliations: [
+      "[[University of South Carolina]]", 
+    ]			
   - name: [[Hendrik Poinar]]
     orcid: 0000-0002-0314-4160
     affiliations: [
@@ -31,15 +51,27 @@ compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague Denmark Pa
 url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Paper.html
 ---
 
-## Introduction
+## Abstract {.page_break_before}
 
-1. When and where does [[Plague|plague]] (*[[Yersinia pestis|Y. pestis]]*) appear in [[Denmark]]?
-2. How are [[Denmark\|Danish]] outbreaks of plague connected to the global [[Second Pandemic]]?
+### Background
 
+The sequencing of ancient pathogen genomes has resulted in vast advancements to our understanding of the second plague pandemic. However, due to limited sample availability, debate remains about the Plague’s origins, routes of dissemination, genomic diversity, and persistence. Specifically, Scandinavia has a unique history with regards to plague persistence as it is home to the oldest known strain of plague to date and has been ravaged by historic epidemics, only for the plague to have disappeared from this region in the modern era.
 
-## Data Collection {.page_break_before}
+### Problem
 
-326 individuals were sampled across 6 regions from 14 archaeological sites (Table @tbl:site_summary). The site occupation dates span from the 10th to 18th centuries which encompasses the Viking Age (8th - 10th century), the Medieval Period (11th - 16th century) and the Early Modern Period (16th - 19th century).
+It is unknown to what extent local plague reservoirs fed the recurring epidemics in Scandinavia as compared to the continual introduction of globally circulated strains. Previously studied historical records primarily derive from large commercial centres such as London, which are contrasted by countries such as Denmark where the archives have retained limited information about the spread of the plague and its impact on society.
+
+### Objectives
+
+To confidently identify and sequence ancient *[[Yersinia pestis]]* from Danish archaeological sites across a wide geographic and temporal range. With the aim of performing genomic analyses to estimate the timing, spread, and evolutionary changes occurring within Danish plague strains as compared to neighboring regions.
+
+### Significance
+
+First, there have been relatively few studies that explore the genetics of plague in Scandinavia across time and geography, particularly in Denmark. Second, this paper contributes to a larger body of epidemiological literature that considers the patterns and mechanisms by which diseases emerge, propagate, and go extinct.
+
+## Sites and Samples {.page_break_before}
+
+326 individuals were sampled across 6 regions from 14 archaeological sites (Table @tbl:site_summary). The site occupation dates span from the 10th to 18th centuries which encompasses the Viking Age (8th - 10th century), the Medieval Period (11th - 16th century) and the Early Modern Period (16th - 19th century) in Denmark.
 
 |  Region   |      Site Name      |   Site Code   | Site Occupation | Samples |
 |:---------:|:-------------------:|:-------------:|:---------------:|:-------:|
@@ -47,7 +79,7 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Pape
 |           |  Ribe Lindegärden   |   ASR 2391    |   900 - 1000    |    5    |
 |           |                     |  ASR 13/13II  |   900 - 1000    |   15    |
 |           |                     |   ASR 13II    |   1200 - 1560   |   28    |
-|  Nordby   |       Nordby        |   FHM 3970    |   1050 - 1250   |   36    |
+|   Viby    |       Nordby        |   FHM 3970    |   1050 - 1250   |   36    |
 |  Horsens  |  Monastery Church   |   HOM 1272    |   1600 - 1800   |   50    |
 |           |    Ole Wormsgade    |   HOM 1649    |   1100 - 1500   |   17    |
 |           |        Sejet        |   HOM 1046    |   1150 - 1574   |   25    |
@@ -64,19 +96,18 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Pape
 Table: Summary of archaeological sites sampled in this study.  {#tbl:site_summary}
 
 
-![Geographic map of archaeological sites by region.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e6877b0/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/site_map.png){#fig:map_sites width=75%}
+![Geographic map of archaeological sites by region.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e6877b0/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/site_map.png){#fig:map_sites}
 
 ## Plague Detection  {.page_break_before}
 
-13 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis\|Y. pestis]]* whole genome (Tables @tbl:plague_positive_high_coverage and @tbl:plague_positive_low_coverage). Of the 13 individuals, 9 had chromosomal coverage sufficient for phylogenetic analyses (3X mean coverage).
+13 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis\|Y. pestis]]* whole genome (Tables @tbl:plague_positive_high_coverage and @tbl:plague_positive_low_coverage). Of the 13 individuals, 9 had chromosomal coverage sufficient for phylogenetic analyses.
 
-The positivity rate for plague was 4% of all individuals, or 8.2% when excluding plague-negative archaeological sites. 
+Overall, plague was detected in 4% of all individuals in this study. When excluding plague-negative archaeological sites, this estimate rises to 8.2% of individuals. *[[Yersinia pestis|Y. pestis]]* was observed exclusively in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden or the Early Modern cemetery at Horsens. 
 
-*[[Yersinia pestis|Y. pestis]]* was observed exclusively in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden (N=20) or the Early Modern cemetery at Horsens (N=50). However, the absence of evidence for plague in these periods may be a false-negative, given that these time periods are sparsely sampled.
- 
-> **Kat's Notes**:<br>
+> - Absence of plague in Viking/Early Modern could easily be a false negative.<br>
+> - These periods are sparsely sampled, with fewer sites and individuals sampled.<br>
 > - Are G25A and G25B two individuals from the same grave?<br>
-
+ 
 |   Arch ID   | Project ID |       Site       | PCR | Human (%) | Plague (%) |  CHROM  | pCD1 | pMT1 | pPCP1 |
 |:-----------:|:----------:|:----------------:|:---:|:---------:|:----------:|:-------:|:----:|:----:|:-----:|
 |     G16     |    D71     |  Ribe Gräbrødre  | 6/6 |   5.95    |    0.18    |  22.6   | 39.4 | 14.7 |  4.6  |
@@ -101,43 +132,64 @@ Table: Plague positive summary of high coverage genomes. {#tbl:plague_positive_h
 Table: Plague positive summary of low coverage genomes. {#tbl:plague_positive_low_coverage}
 
  
-## Skeletal Dating   {.page_break_before}
+## Skeletal and Molecular Dating {.page_break_before}
  
-*"The dating of individual skeletons is a fundamental problem in historical studies like this, and even the period of usage of each cemetery raises some serious problems. However, most cemeteries have at least some documentary sources broadly framing them in time. The most intensely studied skeletal samples, Tirup and Westerhus, are really the only exceptions in being dated solely on archaeological evidence (Kieffer-Olsen et al. 1986, Sivěn 2005)."* [[Boldsen 2009 Leprosy Medieval Denmark\|[@boldsen2009LeprosyMedievalDenmark]]].
-Aspects of dating of cemetery samples has been discussed for Nordby (Skov 2002), Refshale (Snedker 1973), St. Mikkel (Vellev 1979).
+ I'm relying heavily on the discussion in Boldsen (2009) [[Boldsen 2009 Leprosy Medieval Denmark\|[@boldsen2009LeprosyMedievalDenmark]]], as quoted here:
+ 
+*"The dating of individual skeletons is a fundamental problem in historical studies like this, and even the period of usage of each cemetery raises some serious problems. However, most cemeteries have at least some documentary sources broadly framing them in time. The most intensely studied skeletal samples, Tirup and Westerhus, are really the only exceptions in being dated solely on archaeological evidence (Kieffer-Olsen et al. 1986, Sivěn 2005)."*
 
-*"In medieval graves the position of the arms in relation to the rest of the skeleton in the grave is the only feature that systematically indicates dating of the burial within the temporal frame provided by the period of usage of the cemetery. Arm position dating is primarily based on work by Redin (1976) and Kieffer-Olsen (1993). The successive stages of arm position from A (the arms besides the body) over B (hand joint over the lower part of the abdomen and usually found in the pelvis) and C (the forearms over the upper part of the abdomen and the elbows flexed in an approximately right angle) to D (the hands placed on the shoulders, forearms often crossed over the chest) have primarily been described by Kieffer-Olsen (1993) but Jantzen et al. (1994) have slightly modified the transition dates between the various stages."* [[Boldsen 2009 Leprosy Medieval Denmark\|[@boldsen2009LeprosyMedievalDenmark]]].
+*"In medieval graves the position of the arms in relation to the rest of the skeleton in the grave is the only feature that systematically indicates dating of the burial within the temporal frame provided by the period of usage of the cemetery. Arm position dating is primarily based on work by Redin (1976) and Kieffer-Olsen (1993). The successive stages of arm position from A (the arms besides the body) over B (hand joint over the lower part of the abdomen and usually found in the pelvis) and C (the forearms over the upper part of the abdomen and the elbows flexed in an approximately right angle) to D (the hands placed on the shoulders, forearms often crossed over the chest) have primarily been described by Kieffer-Olsen (1993) but Jantzen et al. (1994) have slightly modified the transition dates between the various stages."*.
 
-## Molecular Dating  {.page_break_before}
+![Arm position dating.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cb2039e/denmark/metadata/all/arm_position_dating.png){#fig:dating_arm_position width=75%}
 
-The molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary. All molecular dates had overlap with the expected range of site occupation dates, with the exception of individual G371 from the site of Tirup. To investigate this disparity, we performed 14C radiocarbon dating on this sample (Figure @fig:radiocarbon_g371). The radiocarbon estimate largely agrees with the site occupation date, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). The 2 sigma distribution of the radiocarbon date extends to 1430 CE which does overlap with the molecular date.
+The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almost all molecular dates had overlap with the archaeological dates as determined by site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. To investigate this disparity, we performed 14C radiocarbon dating on this sample (Figure @fig:radiocarbon_g371). 
 
-|     ID      |      Site      | Site Occupation |  Tip Date   |
-|:-----------:|:--------------:|:---------------:|:-----------:|
-|     G16     | Ribe Gräbrødre |   1200 - 1560   | 1310 - 1388 |
-| G861 x1035  | Ribe Gräbrødre |   1200 - 1560   | 1489 - 1567 |
-|  G25B x98   | Ribe Gräbrødre |   1200 - 1560   | 1327 - 1414 |
-|    G25A     | Ribe Gräbrødre |   1200 - 1560   | 1295 - 1375 |
-|    G207     | Ribe Gräbrødre |   1200 - 1560   | 1477 - 1551 |
-| A146 x3011  |     Sejet      |   1150 - 1574   | 1397 - 1470 |
-| A1480 x1480 | Ole Wormsgade  |   1100 - 1500   | 1384 - 1473 |
-|    G371     |     Tirup      |   1150 - 1350   | 1419 - 1490 |
-|  Gr GC 15   |    Faldborg    |   1100 - 1600   | 1539 - 1655 | 
+The radiocarbon estimate largely agrees with archaeological dates, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). Thus there is robust evidence that the individual lived and died sometime between the late 12th and early 14th century
 
-Table: Summary of the *[[Yersinia pestis|Y. pestis]]* molecular date. The estimated tip date reflects the 95% highest posterior density. {#tbl:tip_dating_summary}
+However, the associated *[[Yersinia pestis|Y. pestis]]* genome is dated to the 15th century. While the 2 sigma distribution of the radiocarbon date does extends into the 15th century, there remains the substantial conflict with the known site occupation dates.
 
+> - How can a pathogen appear to have lived 100 years after its associated host?
+
+|     ID      | Region  |      Site      | Site Occupation | Arm Position | Skeletal Date |  Tip Date   |
+|:-----------:|:-------:|:--------------:|:---------------:|:------------:|:-------------:|:-----------:|
+|     G16     |  Ribe   | Ribe Gräbrødre |   1200 - 1560   |      C       |  1350 - 1550  | 1310 - 1388 |
+| G861 x1035  |  Ribe   | Ribe Gräbrødre |   1200 - 1560   |      C       |  1350 - 1550  | 1489 - 1567 |
+|  G25B x98   |  Ribe   | Ribe Gräbrødre |   1200 - 1560   |      C       |  1350 - 1550  | 1327 - 1414 |
+|    G25A     |  Ribe   | Ribe Gräbrødre |   1200 - 1560   |      C       |  1350 - 1550  | 1295 - 1375 |
+|    G207     |  Ribe   | Ribe Gräbrødre |   1200 - 1560   |      C       |  1350 - 1550  | 1477 - 1551 |
+| A146 x3011  | Horsens |     Sejet      |   1150 - 1574   |      B       |  1250 - 1425  | 1397 - 1470 |
+| A1480 x1480 | Horsens | Ole Wormsgade  |   1100 - 1500   |      ?       |       ?       | 1384 - 1473 |
+|    G371     | Horsens |     Tirup      |   1150 - 1350   |      B       |  1250 - 1425  | 1419 - 1490 |
+|  Gr GC 15   | Viborg  |    Faldborg    |   1100 - 1600   |      C       |  1350 - 1550  | 1539 - 1655 |
+
+Table: Summary of the *[[Yersinia pestis|Y. pestis]]* molecular dates. The estimated tip date reflects the 95% highest posterior density. {#tbl:tip_dating_summary}
 
 ![Radiocarbon dating of G371.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/7be6a02/denmark/metadata/all/radiocarbon_G371.png){#fig:radiocarbon_g371 width=50%}
 
 ![Timeline of archaeological sites and plague-positive individuals. The shaded range spans the highest probability period from the oldest to the youngest sample.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e6877b0/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/site_timeline.png){#fig:timeline_sites}
 
+## Phylogeny  {.page_break_before}
 
-### Phylogeny {.page_break_before}
+An examination the time-scaled phylogeny of the [[Second Pandemic]] (Figure @fig:1.PRE_timetree) adds greater nuance to the molecular dating. 
 
-The time-scaled phylogeny reveals geographic and temporal structure during the [[Second Pandemic]] (Figure @fig:1.PRE_timetree). 
+![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support. Grey bars indicate the 95% HPD interval on the internal node dates](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/137befa/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
 
-![Bayesian time-scaled phylogeny.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/137befa/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
+### Denmark and the Black Death   {.page_break_before}
 
+Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]], as the genomes are nearly identical and have been isolated from all across Europe, thus indicating rapid geographic dispersal. Given the high degree of genetic similarity, the branching order and thus migration patterns, of this epidemic clade cannot be resolved. Our understanding of this event is therefore that of a "burst" radiation, with possibly multiple waves of *[[Yersinia pestis|Y. pestis]]* that are migrating faster than the mutation rate.
+
+### The Ancestors of the Third Pandemic
+
+Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 from Ribe (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from this region. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to the [[Third Pandemic]] of plague. This clade was previously hypothesized to reflect a backward migration of plague from Northern Europe back into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia.
+
+### Regional Variation
+
+In contrast to the genetic homogeneity observed across Europe during the Black Death period, later isolates of *[[Yersinia pestis|Y. pestis]]* show strong intra- and inter-regional variation. 
+Plague genomes collected from sites near the city of Horsens are closely related to one another but form independent lineages.
+
+diverges in Ole Wormsgade (A1480x1480), the cemetery of the port city of Horsens. Following this divergence, distinct lineages are observed in the rural settlements of Sejet (A146x3011) and then Tirup (G371).
+
+---
 
 > **Phase 1: 1300-1450**<br>
 > - All *[[Yersinia pestis|Y. pestis]]* genomes from the 14th century cluster together.<br>
