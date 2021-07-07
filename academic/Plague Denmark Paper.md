@@ -132,7 +132,9 @@ Table: Plague positive summary of high coverage genomes. {#tbl:plague_positive_h
 Table: Plague positive summary of low coverage genomes. {#tbl:plague_positive_low_coverage}
 
  
-## Skeletal and Molecular Dating {.page_break_before}
+## Dating {.page_break_before}
+
+### Archaeology
  
  I'm relying heavily on the discussion in Boldsen (2009) [[Boldsen 2009 Leprosy Medieval Denmark\|[@boldsen2009LeprosyMedievalDenmark]]], as quoted here:
  
@@ -142,13 +144,9 @@ Table: Plague positive summary of low coverage genomes. {#tbl:plague_positive_lo
 
 ![Arm position dating.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cb2039e/denmark/metadata/all/arm_position_dating.png){#fig:dating_arm_position width=75%}
 
-The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almost all molecular dates had overlap with the archaeological dates as determined by site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. To investigate this disparity, we performed 14C radiocarbon dating on this sample (Figure @fig:radiocarbon_g371). 
+### Molecular {.page_break_before}
 
-The radiocarbon estimate largely agrees with archaeological dates, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). Thus there is robust evidence that the individual lived and died sometime between the late 12th and early 14th century
-
-However, the associated *[[Yersinia pestis|Y. pestis]]* genome is dated to the 15th century. While the 2 sigma distribution of the radiocarbon date does extends into the 15th century, there remains the substantial conflict with the known site occupation dates.
-
-> - How can a pathogen appear to have lived 100 years after its associated host?
+The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almost all molecular dates had overlap with the archaeological dates as determined by the site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. 
 
 |     ID      | Region  |      Site      | Site Occupation | Arm Position | Skeletal Date |  Tip Date   |
 |:-----------:|:-------:|:--------------:|:---------------:|:------------:|:-------------:|:-----------:|
@@ -164,53 +162,49 @@ However, the associated *[[Yersinia pestis|Y. pestis]]* genome is dated to the 1
 
 Table: Summary of the *[[Yersinia pestis|Y. pestis]]* molecular dates. The estimated tip date reflects the 95% highest posterior density. {#tbl:tip_dating_summary}
 
-![Radiocarbon dating of G371.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/7be6a02/denmark/metadata/all/radiocarbon_G371.png){#fig:radiocarbon_g371 width=50%}
+### Radiocarbon
+
+To investigate the dating disparity for G371, we performed 14C radiocarbon dating (Figure @fig:radiocarbon_g371). The radiocarbon estimate largely agrees with the archaeological dates, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). Thus there is robust evidence that the individual lived and died sometime between the late 12th and early 14th century
+
+However, the associated *[[Yersinia pestis|Y. pestis]]* genome is dated to the 15th century. While the 2 sigma distribution of the radiocarbon date does extends into the 15th century, there remains a substantial conflict between the date of the host and the associated pathogen.
+
+![Radiocarbon dating of G371.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/7be6a02/denmark/metadata/all/radiocarbon_G371.png){#fig:radiocarbon_g371 width=40%}
 
 ![Timeline of archaeological sites and plague-positive individuals. The shaded range spans the highest probability period from the oldest to the youngest sample.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e6877b0/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/site_timeline.png){#fig:timeline_sites}
 
 ## Phylogeny  {.page_break_before}
 
-An examination the time-scaled phylogeny of the [[Second Pandemic]] (Figure @fig:1.PRE_timetree) adds greater nuance to the molecular dating. 
+![A timeline phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support along the main branch.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8cdeab8/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/1.PRE_timeline.png){#fig:1.PRE_timeline}
 
-![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support. Grey bars indicate the 95% HPD interval on the internal node dates](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/137befa/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
+### Denmark and the Black Death
 
-### Denmark and the Black Death   {.page_break_before}
-
-Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]], as the genomes are nearly identical and have been isolated from all across Europe, thus indicating rapid geographic dispersal. Given the high degree of genetic similarity, the branching order and thus migration patterns, of this epidemic clade cannot be resolved. Our understanding of this event is therefore that of a "burst" radiation, with possibly multiple waves of *[[Yersinia pestis|Y. pestis]]* that are migrating faster than the mutation rate.
+Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]], as the genomes are nearly identical and have been isolated from all across Europe, including France, Spain, England, Germany, and Norway. *[[Yersinia pestis|Y. pestis]]* in this cluster is nearly indistinguishable, thus indicating rapid geographic dispersal faster than mutations could accrue. Given this high degree of genetic similarity, the branching order and thus migration patterns of this epidemic clade cannot be resolved. Our understanding of this event is therefore that of a "burst" radiation and it is challenging to identify whether there is a single wave or multiple lineages dispersing in this period.
 
 ### The Ancestors of the Third Pandemic
 
-Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 from Ribe (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from this region. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to the [[Third Pandemic]] of plague. This clade was previously hypothesized to reflect a backward migration of plague from Northern Europe back into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia.
+Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 from Ribe (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from this region. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to the [[Third Pandemic]] of plague. This clade was previously hypothesized to reflect a backward migration of plague from Northern Europe into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia. 
 
-### Regional Variation
+> - The resolution of this clade was not reproduced in the divergence-scaled phylogeny (Figure @fig:1.PRE_divtree).
 
-In contrast to the genetic homogeneity observed across Europe during the Black Death period, later isolates of *[[Yersinia pestis|Y. pestis]]* show strong intra- and inter-regional variation. 
-Plague genomes collected from sites near the city of Horsens are closely related to one another but form independent lineages.
+### Medieval Plague
 
-diverges in Ole Wormsgade (A1480x1480), the cemetery of the port city of Horsens. Following this divergence, distinct lineages are observed in the rural settlements of Sejet (A146x3011) and then Tirup (G371).
+In contrast to the genetic homogeneity observed across Europe during the Black Death period, later isolates of plague from the Medieval period are easily distinguished. *[[Yersinia pestis|Y. pestis]]* collected from sites near Horsens and Ribe form distinct lineages that are interspersed with plague collected from other countries. This intra-regional diversity has also been observed in Germany and England, as *[[Yersinia pestis|Y. pestis]]* from these countries can be found throughout the Second Pandemic phylogeny. Medieval plague therefore exhibits cryptic geographic structure as the 
 
----
+. Instead, lineages of plague typically cluster by time period up until the 16th century.
 
-> **Phase 1: 1300-1450**<br>
-> - All *[[Yersinia pestis|Y. pestis]]* genomes from the 14th century cluster together.<br>
-> - Samples from the early-mid 1300s are widely dispersed across Europe (Figure @fig:map_phase_1), and have highly similar genetic content resulting poorly resolved branching order. This suggests rapid, epidemic spread, thought to be associated with the Black Death.<br>
-> - Samples from the late 1300s also cluster together, and are linked to the *pestis segunda* series of epidemics in Europe.<br>
-> - The only Danish samples in Phase I are from Ribe, and fall within both the Black Death and *pestis segunda* groups.
-> - These are primarily coastal sites, Germany and Russia as the exception.
+The clustering patterns observed in the phylogeny are better explained by similar 
 
-> **Phase 2: 1450-1600**<br>
-- A very curious branching pattern, lots of 'independent' emergences rather than monophyletic clades.<br>
-- All Danish samples from the Horsens region fall here, and although they have temporal overlap with each other, the lineages of plague are distinct.<br>
-- ...<br>
+This suggests that outbreaks of plague in Denmark were not localized epidemics. Rather, they were connected to the rest of Europe. Interconnected network of disease dispersal.
 
-> **Phase 3: 1600-1800**<br>
-- ...
+### Early Modern Plague
 
-![Phase 1: 1300 - 1450](https://rawcdn.githack.com/ktmeaton/obsidian-public/c233139/academic/Map%20Black%20Death%20and%20pestis%20segunda.png){#fig:map_phase_1 width=50%}
+By the onset of the Early Modern Period (16th century), European plague splits into 2 distinct lineages. 
+1. The Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland)
+2. England, France, Russia
 
-![Phase 2: 1450 - 1600](https://rawcdn.githack.com/ktmeaton/obsidian-public/c233139/academic/Map%20Phase%202.png){#fig:map_phase_2 width=50%}
+### Cycles of Plague
 
-![Phase 3: 1600 - 1800](https://rawcdn.githack.com/ktmeaton/obsidian-public/c233139/academic/Map%20Phase%203.png){#fig:map_phase_3 width=50%}
+Reapparance/re-emergence of plague in Ribe
 
 ## References {.page_break_before}
 
@@ -218,7 +212,14 @@ diverges in Ole Wormsgade (A1480x1480), the cemetery of the port city of Horsens
 
 ## Appendix {.page_break_before}
 
-### Misc Notes
+### Phylogeny
+
+
+![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/3a3c1bd/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
+
+![A divergence-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8cdeab8/denmark/auspice/all/chromosome/full/filter30/ml/1.PRE_divtree.png){#fig:1.PRE_divtree}
+
+### Miscellaneous  {.page_break_before}
 
 |    Arch ID     | Project ID | Site Code | PCR | Human (%) | Plague (%) | Chrom | pCD1 | pMT1 | pPCP1 |
 |:--------------:|:----------:|:---------:|:---:|:---------:|:----------:| ----- | ---- | ---- | ----- |
@@ -230,6 +231,8 @@ diverges in Ole Wormsgade (A1480x1480), the cemetery of the port city of Horsens
 | G260 K539 x876 |    R27     | VSM 09264 | 3/6 |     ?     |     ?      | ?     | ?    | ?    | ?     |
 
 Table: Plague false positive summary. {#tbl:false_positive_summary}
+
+### Methods
 
 To estimate dates for the plague-positive individuals, a [[Bayesian Evaluation of Temporal Signal]] (BETS) was first performed. Briefly, each candidate model was tested using the correct collection dates of all samples and then compared to the same model with all collection dates assumed to be contemporaneous. Bayes factors (BF) were calculated by comparing the marginal likelihoods of each model, as estimated with a generalized stepping stone (GSS) computation across 100 chains each sampled over 1,000,000 generations.
 
