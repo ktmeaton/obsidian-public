@@ -102,7 +102,7 @@ Table: Summary of archaeological sites sampled in this study.  {#tbl:site_summar
 
 13 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis\|Y. pestis]]* whole genome (Tables @tbl:plague_positive_high_coverage and @tbl:plague_positive_low_coverage). Of the 13 individuals, 9 had chromosomal coverage sufficient for phylogenetic analyses.
 
-Overall, plague was detected in 4% of all individuals in this study. When excluding plague-negative archaeological sites, this estimate rises to 8.2% of individuals. *[[Yersinia pestis|Y. pestis]]* was observed exclusively in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden or the Early Modern cemetery at Horsens. 
+Overall, plague was detected in 4% of all individuals in this study. When excluding plague-negative archaeological sites, this estimate rises to 8.2% of individuals. *[[Yersinia pestis|Y. pestis]]* was observed primarily in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden or the Early Modern cemetery at Horsens. 
 
 > - Absence of plague in Viking/Early Modern could easily be a false negative.<br>
 > - These periods are sparsely sampled, with fewer sites and individuals sampled.<br>
@@ -174,37 +174,42 @@ However, the associated *[[Yersinia pestis|Y. pestis]]* genome is dated to the 1
 
 ## Phylogeny  {.page_break_before}
 
-![A timeline phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support along the main branch.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8cdeab8/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/1.PRE_timeline.png){#fig:1.PRE_timeline}
+![A timeline phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support along the main branch.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4550173/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/1.PRE_timeline.png){#fig:1.PRE_timeline}
 
-### Denmark and the Black Death
+> - The traditional phylogeny layout can be found in the Appendix in Figures @fig:1.PRE_timetree and @fig:1.PRE_divtree.
 
-Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]], as the genomes are nearly identical and have been isolated from all across Europe, including France, Spain, England, Germany, and Norway. *[[Yersinia pestis|Y. pestis]]* in this cluster is nearly indistinguishable, thus indicating rapid geographic dispersal faster than mutations could accrue. Given this high degree of genetic similarity, the branching order and thus migration patterns of this epidemic clade cannot be resolved. Our understanding of this event is therefore that of a "burst" radiation and it is challenging to identify whether there is a single wave or multiple lineages dispersing in this period.
+### The Black Death "Burst"
 
-### The Ancestors of the Third Pandemic
+Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]] (1346-1353), as the genomes are nearly identical and have been isolated from all across Europe, including France, Spain, England, Germany, and Norway. These genomes mark the first observation of *[[Yersinia pestis|Y. pestis]]* in Denmark and is congruent with historical records that document the arrival of the Black Death in Ribe in 1349 [[Lenz 2016 Black Death\|[@lenz2016BlackDeath]]]. 
 
-Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 from Ribe (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from this region. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to the [[Third Pandemic]] of plague. This clade was previously hypothesized to reflect a backward migration of plague from Northern Europe into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia. 
+Similar to the rest of Western Europe, *[[Yersinia pestis|Y. pestis]]* appears suddenly in Denmark in the 14th century. No evidence of *[[Yersinia pestis|Y. pestis]]* was found in Denmark during the preceding centuries, suggesting plague was a relatively new disease for medieval Danish populations. If true, this would imply an immunologically naive population and may have important implications for the study of health and immunity in both past and present Denmark.
 
-> - The resolution of this clade was not reproduced in the divergence-scaled phylogeny (Figure @fig:1.PRE_divtree).
+Unfortunately, the high degree of genetic similarity means that the branching patterns, and thus dispersal of *[[Yersinia pestis|Y. pestis]]*, cannot be resolved during this period. Our understanding of the Black Death clade is that of a "Burst" radiation, with limited genetic diversity spreading rapidly over a vast geographic area. This pattern is typical of epidemic spread, and has also been observed at the advent of the Third Plague Pandemic.
 
-### Medieval Plague
+### Ancestors of the Third Pandemic
 
-In contrast to the genetic homogeneity observed across Europe during the Black Death period, later isolates of plague from the Medieval period are easily distinguished. *[[Yersinia pestis|Y. pestis]]* collected from sites near Horsens and Ribe form distinct lineages that are interspersed with plague collected from other countries. This intra-regional diversity has also been observed in Germany and England, as *[[Yersinia pestis|Y. pestis]]* from these countries can be found throughout the Second Pandemic phylogeny. Medieval plague therefore exhibits cryptic geographic structure as the 
+Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from Ribe. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to Branch 1, which includes the [[Third Pandemic]] of plague. 
 
-. Instead, lineages of plague typically cluster by time period up until the 16th century.
+The phylogenetic position of samples within this clade has been hypothesized to reflect a "backward" migration of plague from Northern Europe into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports this hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia. However, directionality cannot be robustly inferred from four samples alone, particularly given the strong Western European sampling bias of Second Pandemic samples. It will be an important avenue of future research to further develop the relationship between Northern European plague and the only Second Pandemic lineage that is known to persist until the present.
 
-The clustering patterns observed in the phylogeny are better explained by similar 
+> - Note: The resolution of this clade was not reproduced in the genetic distance phylogeny (Figure @fig:1.PRE_divtree).
 
-This suggests that outbreaks of plague in Denmark were not localized epidemics. Rather, they were connected to the rest of Europe. Interconnected network of disease dispersal.
+### Post Black Death
+
+In contrast to the genetic homogeneity observed across Europe during the Black Death period,  
+isolates of plague in the post-Black Death period are easily distinguished. Three genomes collected from three different sites near Horsens derive from independent emergences, despite having temporal overlap. This has also been observed in Germany during this period, as samples collected in relatively close proximity are genetically distinct. This mechanism of evolution is the defining dynamic of plague during this period as all *[[Yersinia pestis|Y. pestis]]* collected after the Black Death, but prior to the Early Modern Period, are unique lineages. 
+
+Again, the geographic origins and dispersal of plague during this period are challenging to reconstruct, given that the number of genomes (N=7) is sparsely sampled relative to the minimum number of countries (N=4) that are implicated. However, this broad geographic dispersal may suggest that plague outbreaks in Denmark during this period were not locally derived, but instead shared transmission with neighboring European countries.
+
+> - Epidemiologically, I don't know the significance of this. But I think it's interesting!
 
 ### Early Modern Plague
 
-By the onset of the Early Modern Period (16th century), European plague splits into 2 distinct lineages. 
-1. The Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland)
-2. England, France, Russia
+Following the Medieval Period, the evolutionary dynamic of *[[Yersinia pestis|Y. pestis]]* changes yet again and a second "Burst" event occurs. Similar to the Black Death "Burst", this event begins with a series of divergences in quick succession, producing highly similar genomes in contemporaneous individuals from Germany, Lithuania, and Poland. Following these divergences, two major lineages emerge. 
 
-### Cycles of Plague
+The first lineage, termed the Baltic-Alps, has been been previously observed in the Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland). Three Danish genomes fall within the Baltic-Alps clade, including two samples from coastal Ribe and one sample from inland Viborg. The addition of these samples strengthens the geographic ties of this lineage to the Baltic Region. The epidemiological significance of this localization has been speculated to indicate the formation of a novel plague reservoir within Europe. 
 
-Reapparance/re-emergence of plague in Ribe
+The second lineage that emerges in this period gives rise to later epidemics of plague in Russia, England, and France, including the Great Plague of Marseille (1720-1721). No Danish plague in this study is associated with this lineage. As sampling efforts intensify, it will be interesting to see if these two lineages remain geographically distinct, and to investigate what might be obstructing the flow of pathogens between them.
 
 ## References {.page_break_before}
 
@@ -215,9 +220,9 @@ Reapparance/re-emergence of plague in Ribe
 ### Phylogeny
 
 
-![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/3a3c1bd/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
+![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/370570a/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
 
-![A divergence-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/8cdeab8/denmark/auspice/all/chromosome/full/filter30/ml/1.PRE_divtree.png){#fig:1.PRE_divtree}
+![A divergence-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/370570a/denmark/auspice/all/chromosome/full/filter30/ml/1.PRE_divtree.png){#fig:1.PRE_divtree}
 
 ### Miscellaneous  {.page_break_before}
 
