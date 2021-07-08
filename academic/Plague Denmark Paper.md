@@ -134,8 +134,6 @@ Table: Plague positive summary of low coverage genomes. {#tbl:plague_positive_lo
  
 ## Dating {.page_break_before}
 
-### Archaeology
- 
  I'm relying heavily on the discussion in Boldsen (2009) [[Boldsen 2009 Leprosy Medieval Denmark\|[@boldsen2009LeprosyMedievalDenmark]]], as quoted here:
  
 *"The dating of individual skeletons is a fundamental problem in historical studies like this, and even the period of usage of each cemetery raises some serious problems. However, most cemeteries have at least some documentary sources broadly framing them in time. The most intensely studied skeletal samples, Tirup and Westerhus, are really the only exceptions in being dated solely on archaeological evidence (Kieffer-Olsen et al. 1986, Sivěn 2005)."*
@@ -144,7 +142,7 @@ Table: Plague positive summary of low coverage genomes. {#tbl:plague_positive_lo
 
 ![Arm position dating.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cb2039e/denmark/metadata/all/arm_position_dating.png){#fig:dating_arm_position width=75%}
 
-### Molecular {.page_break_before}
+<div style="page-break-after: always;"></div>
 
 The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almost all molecular dates had overlap with the archaeological dates as determined by the site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. 
 
@@ -161,8 +159,6 @@ The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pe
 |  Gr GC 15   | Viborg  |    Faldborg    |   1100 - 1600   |      C       |  1350 - 1550  | 1539 - 1655 |
 
 Table: Summary of the *[[Yersinia pestis|Y. pestis]]* molecular dates. The estimated tip date reflects the 95% highest posterior density. {#tbl:tip_dating_summary}
-
-### Radiocarbon
 
 To investigate the dating disparity for G371, we performed 14C radiocarbon dating (Figure @fig:radiocarbon_g371). The radiocarbon estimate largely agrees with the archaeological dates, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). Thus there is robust evidence that the individual lived and died sometime between the late 12th and early 14th century
 
@@ -191,8 +187,6 @@ Unfortunately, the high degree of genetic similarity means that the branching pa
 Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from Ribe. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to Branch 1, which includes the [[Third Pandemic]] of plague. 
 
 The phylogenetic position of samples within this clade has been hypothesized to reflect a "backward" migration of plague from Northern Europe into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports this hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia. However, directionality cannot be robustly inferred from four samples alone, particularly given the strong Western European sampling bias of Second Pandemic samples. It will be an important avenue of future research to further develop the relationship between Northern European plague and the only Second Pandemic lineage that is known to persist until the present.
-
-> - Note: The resolution of this clade was not reproduced in the genetic distance phylogeny (Figure @fig:1.PRE_divtree).
 
 ### Post Black Death
 
