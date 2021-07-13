@@ -37,11 +37,6 @@ authors:
     affiliations: [
       "[[University of South Carolina]]", 
     ]	
-  - name: [[Edward Holmes]]
-    orcid: 0000-0001-9596-3552
-    affiliations: [
-      "[[Sydney Medical School]]", 
-    ]
   - name: [[Sebastian Duchene]]
     github: sebastianduchene
     orcid: 0000-0002-2863-0907
@@ -99,9 +94,20 @@ To confidently identify and sequence ancient *[[Yersinia pestis]]* from Danish a
 
 First, there have been relatively few studies that explore the genetics of plague in Scandinavia across time and geography, particularly in Denmark. Second, this paper contributes to a larger body of epidemiological literature that considers the patterns and mechanisms by which diseases emerge, propagate, and go extinct.
 
-## Introduction
+## Introduction  {.page_break_before}
 
-To Be Done post co-author discussion of results.
+1. When does plague (*[[Yersinia pestis]]*) appear in Denmark?
+	- aDNA studies have found that European *[[Yersinia pestis|Y. pestis]]* is primarily found in Pandemic periods.
+	- Examples are the First Pandemic and the Second Pandemic of the Medieval/Early Modern period.
+	- However, recent work has highlighted plague is also sporadically present during other periods.
+	- Example is the Bronze Age. One of the oldest lineages of plague is found in Sweden, so Northern Europe clearly has a long and interesting history with the disease.
+	- It is unknown to what extent our knowledge of the presence/absence of plague is determined by sampling bias.
+	- Preferentially targeting pandemic periods and epidemic cemeteries.
+2. How is plague in Northern/Western Europe connected to Modern plague. There's the theory of a back migration out of Europe (Netherlands --> Russia). If this is true, then Denmark may also be involved. At 'worst' we expand the relationship of European regions connected to this lineage. At 'best' we capture where that transition from the Black Death clonal lineage to the post-Black Death lineage emerges.
+
+3. Longitudinal study: The possibility to capture how plague affected the same people over time. (Highly regional, with 1 Danish strain?), or 
+
+4. Document the *pla* depletion/restoration events.
 
 ## Results  {.page_break_before}
 
@@ -114,7 +120,7 @@ To Be Done post co-author discussion of results.
 |   Ribe    |   Ribe Gräbrødre    |   ASR 1015    |   1200 - 1560   |   53    |        5        |
 |           |  Ribe Lindegärden   |   ASR 2391    |   900 - 1000    |    5    |        0        |
 |           |                     |  ASR 13/13II  |   900 - 1000    |   15    |        0        |
-|           |                     |   ASR 13II    |   1200 - 1560   |   28    |        1        | 
+|           |                     |   ASR 13II    |   1200 - 1560   |   28    |        1        |
 |   Viby    |       Nordby        |   FHM 3970    |   1050 - 1250   |   36    |        0        |
 |  Horsens  |  Monastery Church   |   HOM 1272    |   1600 - 1800   |   50    |        0        |
 |           |    Ole Wormsgade    |   HOM 1649    |   1100 - 1500   |   17    |        2        |
@@ -127,7 +133,7 @@ To Be Done post co-author discussion of results.
 |           |    Sct. Mathias     | VSM 855F/906F |   1100 - 1529   |   23    |        0        |
 |           |    Sct. Drotten     |   VSM 902F    |   1100 - 1529   |    8    |        0        |
 |           |      Faldborg       |    VSM 29F    |   1100 - 1600   |   17    |        2        |
-| **Total** |                     |               |                 |   326   |       13        |
+| **Total** |                     |               |                 |   325   |       13        |
 
 Table: Summary of archaeological sites sampled in this study.  {#tbl:site_summary}
 
@@ -138,7 +144,7 @@ Table: Summary of archaeological sites sampled in this study.  {#tbl:site_summar
 
 13 individuals were identified as plague-positive based on a combination of PCR assays, shotgun sequencing, and targeted enrichment for the *[[Yersinia pestis\|Y. pestis]]* whole genome (Tables @tbl:plague_positive_high_coverage and @tbl:plague_positive_low_coverage). Of the 13 individuals, 9 had chromosomal coverage sufficient for phylogenetic analyses.
 
-Overall, plague was detected in 4% (13/326) of all individuals in this study (Table @tbl:site_summary). When excluding plague-negative archaeological sites, this estimate rises to 8.2% (13/159) of individuals. *[[Yersinia pestis|Y. pestis]]* was observed primarily in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden or the Early Modern cemetery at Horsens. 
+Overall, plague was detected in 4% (13/325) of all individuals in this study (Table @tbl:site_summary). When excluding plague-negative archaeological sites, this estimate rises to 8.2% (13/159) of individuals. *[[Yersinia pestis|Y. pestis]]* was observed primarily in the Medieval Period, with no evidence of plague in the Viking Age settlements at Ribe Lindegärden or the Early Modern cemetery at Horsens. 
 
 > - Absence of plague in Viking/Early Modern could easily be a false negative.<br>
 > - These periods are sparsely sampled, with fewer sites and individuals sampled.<br>
@@ -187,7 +193,7 @@ Table: Plague positive summary of low coverage genomes. Human (%) and plague (%)
 
 <div style="page-break-after: always;"></div>
 
-The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almost all molecular dates had overlap with the archaeological dates as determined by the site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. 
+The skeletal and molecular dates of the 9 high coverage *[[Yersinia pestis|Y. pestis]]* genomes are presented in Table @tbl:tip_dating_summary and Figure @fig:timeline_sites. Almo	st all molecular dates had overlap with the archaeological dates as determined by the site occupation period and burial patterns. The exception to this pattern was individual G371 from the site of Tirup. 
 
 To investigate the dating disparity for G371, we performed 14C radiocarbon dating. The radiocarbon estimate largely agrees with the archaeological dates, with an estimated mean date of 1260 CE (+/- 75 yrs with 1 sigma). Thus there is robust evidence that the individual lived and died sometime between the late 12th and early 14th century
 
@@ -214,16 +220,20 @@ Table: Summary of the *[[Yersinia pestis|Y. pestis]]* molecular dates. The estim
 
 ### Phylodynamics  {.page_break_before}
 
-![A timeline phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support along the main branch. Colored bars indicate the 95% interval on internal node dates with a dashed line indicating the highest posterior date.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4550173/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/1.PRE_timeline.png){#fig:1.PRE_timeline}
 
-> - The traditional phylogeny layout can be found in the Appendix in Figures @fig:1.PRE_timetree and @fig:1.PRE_divtree.
+![A time-scaled phylogeny of the Second Plague Pandemic.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/994d5e7/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
 
-![Geographic distribution of Second Pandemic samples used in the *[[Yersinia pestis]]* phylogeny.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/2359f49/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map}
+![A timeline phylogeny of the Second Plague Pandemic.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/532a976/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/run/1.PRE_timeline.png){#fig:1.PRE_timeline}
+
+![Geographic distribution of Second Pandemic samples used in the *[[Yersinia pestis]]* phylogeny.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/532a976/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map}
 
 
 #### The Black Death {.page_break_before}
 
-Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]] (1346-1353), as the genomes are nearly identical and have been isolated from all across Europe, including France, Spain, England, Germany, and Norway. These genomes mark the first observation of *[[Yersinia pestis|Y. pestis]]* in Denmark and is congruent with historical records that document the arrival of the Black Death in Ribe in 1349 [[Lenz 2016 Black Death\|[@lenz2016BlackDeath]]]. 
+Two individuals from Ribe, G25A and G16, cluster with *[[Yersinia pestis|Y. pestis]]* strains dated to the 14th century. This cluster is thought to be associated with the [[Black Death]] (1346-1353), as the genomes are nearly identical and have been isolated from all across Europe, including France, Spain, England, Germany, and Norway. These genomes mark the first observation of *[[Yersinia pestis|Y. pestis]]* in Denmark and is congruent with historical records that document the arrival of the Black Death in Ribe in 1349 [[Lenz 2016 Black Death\|[@lenz2016BlackDeath]]]. However, the genome associated with G25A has the lowest sequencing depth, with a mean chromosomal depth of 3.8 molecules per nucleotide.
+
+> **Kat's Note**:<br>
+> - G25A has the lowest sequencing depth, with a mean chromosomal depth of 3.8 molecules per nucleotide. This might mean that diagnostic positions for the post-Black Death clade are missing as "false" negatives. This would make it seem earlier/less-derived if those mutations are 'missing'. I will investigate!
 
 Similar to the rest of Western Europe, *[[Yersinia pestis|Y. pestis]]* appears suddenly in Denmark in the 14th century. No evidence of *[[Yersinia pestis|Y. pestis]]* was found in Denmark during the preceding centuries, suggesting plague was a relatively new disease for medieval Danish populations. If true, this would imply an immunologically naive population and may have important implications for the study of health and immunity in both past and present Denmark.
 
@@ -231,26 +241,33 @@ Unfortunately, the high degree of genetic similarity means that the branching pa
 
 #### Ancestors of the Third Pandemic
 
-Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from Ribe. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to Branch 1, which includes the [[Third Pandemic]] of plague. 
+Interestingly, the *[[Yersinia pestis|Y. pestis]]* genome associated with individual G25Bx98 (who was found in the same grave as G25A?) is genetically distinct from the earlier strains from Ribe. This isolate falls within a clade of high epidemiological significance, which is the ancestral group giving rise to the [[Third Pandemic]] of plague and the rest of [[Branch 1]].
 
 The phylogenetic position of samples within this clade has been hypothesized to reflect a "backward" migration of plague from Northern Europe into Asia. The *[[Yersinia pestis|Y. pestis]]* genome retrieved from G25Bx98 tentatively supports this hypothesis, as it falls basal to the more derived strains from The Netherlands and Russia. However, directionality cannot be robustly inferred from four samples alone, particularly given the strong Western European sampling bias of Second Pandemic samples. It will be an important avenue of future research to further develop the relationship between Northern European plague and the only Second Pandemic lineage that is known to persist until the present.
 
 #### Post Black Death
 
-In contrast to the genetic homogeneity observed across Europe during the Black Death period,  
-isolates of plague in the post-Black Death period are easily distinguished. Three genomes collected from three different sites near Horsens derive from independent emergences, despite having temporal overlap. This has also been observed in Germany during this period, as samples collected in relatively close proximity are genetically distinct. This mechanism of evolution is the defining dynamic of plague during this period as all *[[Yersinia pestis|Y. pestis]]* collected after the Black Death, but prior to the Early Modern Period, are unique lineages. 
+In contrast to the genetic homogeneity observed across Europe during the Black Death period, isolates of plague in the post-Black Death period are easily distinguished. Three genomes collected from three different sites near Horsens derive from independent emergences, despite having temporal overlap. This has also been observed in Germany during this period, as samples collected in relatively close proximity are genetically distinct. A product of this increased genetic diversity means that branching patterns are well resolved in the post-Black Death period. Unfortunately, the geographic origins and dispersal of plague are still challenging to reconstruct, as the number of genomes (N=7) is sparsely sampled relative to the minimum number of countries (N=4) that are implicated.
 
-> - Epidemiologically, I don't know the significance of this. But I think it's interesting!
+The pattern of independent emergence is the defining dynamic of plague during this period as all *[[Yersinia pestis|Y. pestis]]* collected after the Black Death, but prior to the Early Modern Period, are unique lineages. The transition captured here, from little genetic diversity spread across a continent to significant diversity accumulating within a country, may indicate "boom-bust" dynamics [[Strayer 2017 Boom-bust Dynamics Biological\|[@strayer2017BoombustDynamicsBiological]]]. 
 
-Again, the geographic origins and dispersal of plague during this period are challenging to reconstruct, given that the number of genomes (N=7) is sparsely sampled relative to the minimum number of countries (N=4) that are implicated.
+> The epidemiological interpretation of this transition requires more thought.
+
+Another defining characteristic of the post-Black Death period is depletion of a key virulence factor,  the *plasminogen activator* (*pla*). Figure @fig:pla_ratio compares the sequencing depth of the *pla* gene to its corresponding plasmid pPCP1 across samples from the Second Pandemic. Two linear trends are observed separating samples with 'normal' gene-to-plasmid ratios from samples that have a 'depleted' gene-to-plasmid ratio. This event was previously observed [Susat 2020 Yersinia Pestis Strains\|[@susat2020YersiniaPestisStrains]]], and found in samples from as early as the 15th century. 
+
+The three Danish genomes from Horsens have temporal overlap with the 15th century and may potentially capture the transition from to a *pla*-depleted state. Unfortunately, the sequencing depth of the pPCP1 plasmid in these samples is insufficient for statistical analysis. The results of a targeted enrichment for the pPCP1 plasmid will be the subject of a forthcoming publication.
+
+> Ravneet has completed this experiment and has exciting results, stay tuned!
+
+![Depletion of the *pla* virulence factor. Left: The observed multimodal distribution of *pla*/pPCP1 ratios across the Second Pandemic. Middle:  Linear regressions of *pla* depth on pPCP1 depth. Right:  *pla* depletion events over time.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/994d5e7/denmark/locus_coverage_collect/all/pla_ratio.png){#fig:pla_ratio width=100%}
 
 #### Early Modern Plague
 
 Following the Medieval Period, the evolutionary dynamic of *[[Yersinia pestis|Y. pestis]]* changes yet again and a second "Burst" event occurs. Similar to the Black Death "Burst", this event begins with a series of divergences in quick succession, producing highly similar genomes in contemporaneous individuals from Germany, Lithuania, and Poland. Following these divergences, two major lineages emerge. 
 
-The first lineage, termed the Baltic-Alps, has been been previously observed in the Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland). Three Danish genomes fall within the Baltic-Alps clade, including two samples from coastal Ribe and one sample from inland Viborg. The addition of these samples strengthens the geographic ties of this lineage to the Baltic Region. The epidemiological significance of this localization has been speculated to indicate the formation of a novel plague reservoir within Europe. 
+The first lineage, termed the Baltic-Alps, has been previously observed in the Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland). Three Danish genomes fall within the Baltic-Alps clade, including two samples from coastal Ribe and one sample from inland Viborg. The addition of these samples strengthens the geographic ties of this lineage to the Baltic Region. The epidemiological significance of this localization has been speculated to indicate the formation of a novel plague reservoir within Europe. 
 
-The second lineage that emerges in this period gives rise to later epidemics of plague in Russia, England, and France, including the Great Plague of Marseille (1720-1721). No Danish plague in this study is associated with this lineage. As sampling efforts intensify, it will be interesting to see if these two lineages remain geographically distinct, and to investigate what might be obstructing the flow of pathogens between them.
+The second lineage that emerges in this period gives rise to later epidemics of plague in Russia, England, and France, including the Great Plague of Marseille (1720-1721). No Danish plague in this study is associated with this lineage. As sampling efforts intensify, it will be interesting to see if these two lineages remain geographically distinct, and to investigate what might be obstructing the flow of plague between them.
 
 ## Conclusion
 
@@ -285,7 +302,7 @@ Ancient unassembled genomes from the Second Plague Pandemic were identified usin
 
 ### Genomic Alignment
 
-Pre-processing and alignment to the reference genome was performed using the [[nf-core/eager]] pipeline, a reproducible workflow for ancient genome reconstruction [[Yates 2021 Reproducible Portable Efficient\|[@yates2021ReproduciblePortableEfficient]]]. A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] module of the [[Snippy]] pipeline [[Snippy 2020\|[@snippy2020]]]. The output alignment was filtered to only include chromosomal variants and to exclude sites that had more than 30% missing data. The value of 30% was selected as the most permissive threshold where parsimony-informative sites outnumber singleton sites (Figure @fig:aln_missing_data).
+Pre-processing and alignment to the reference genome was performed using the [[nf-core/eager]] pipeline, a reproducible workflow for ancient genome reconstruction [[Yates 2021 Reproducible Portable Efficient\|[@yates2021ReproduciblePortableEfficient]]]. A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] module of the [[Snippy]] pipeline [[Snippy 2020\|[@snippy2020]]]. The output alignment was filtered to only include chromosomal variants and to exclude sites that had no more than 30% missing data (ie. no more than 30% of samples having an ambiguous nucleotide) . The value of 30% was selected as the most permissive threshold where the number of shared, parsimony-informative sites (240) was still larger than the number of singleton sites (234) which are observed in a single genome (Figure @fig:aln_missing_data). Furthermore, a 30% threshold was selected as ambiguous nucleotides made up no more than 10% of the alignment (@fig:aln_ambig_sites).
 
 ![The number of variant positions used in the multiple alignment according to different missing data thresholds.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/a444cae/denmark/snippy_multi/all/chromosome/full/snippy-multi.snps.missing-data.png){#fig:aln_missing_data width=75%}
 
@@ -335,48 +352,48 @@ Table: Plague false positive summary. {#tbl:false_positive_summary}
 
 
 
-| Strain         | Date        | Branch | Country         | Accession       |
-| -------------- | ----------- | ------ | --------------- | --------------- |
-| STN021         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818830    |
-| STN020         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818829    |
-| STN019         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818828    |
-| STN014         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818826    |
-| STN013         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818825    |
-| STN008         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818822    |
-| STN007         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818821    |
-| STN002         | [1485:1635] | 1.PRE1 | Switzerland     | SAMEA5818818    |
-| STA001         | [1420:1630] | 1.PRE1 | Germany         | SAMEA5818817    |
-| NMS002         | [1475:1536] | 1.PRE1 | England         | SAMEA5818815    |
-| NAB003         | [1292:1392] | 1.PRE1 | Germany         | SAMEA5818811    |
-| MAN008         | [1283:1390] | 1.PRE1 | Germany         | SAMEA5818809    |
-| LBG002         | [1455:1632] | 1.PRE1 | Germany         | SAMEA5818808    |
-| LAI009         | [1300:1400] | 1.PRE0 | Russia          | SAMEA5818806    |
-| ELW098         | [1485:1627] | 1.PRE1 | Germany         | SAMEA5818805    |
-| BRA001         | [1618:1648] | 1.PRE1 | Germany         | SAMEA5818803    |
-| BED034         | [1560:1635] | 1.PRE1 | England         | SAMEA5818801    |
-| BED030         | [1560:1635] | 1.PRE1 | England         | SAMEA5818800    |
-| BED028         | [1560:1635] | 1.PRE1 | England         | SAMEA5818799    |
-| BED024         | [1560:1635] | 1.PRE1 | England         | SAMEA5818798    |
-| SLC1006        | [1279:1389] | 1.PRE1 | France          | SAMEA5054093    |
-| OSL1           | [1270:1390] | 1.PRE1 | Norway          | SAMEA5054092    |
-| Ber45          | [1300:1400] | 1.PRE2 | The Netherlands | SAMEA5054090    |
-| Ber37          | [1300:1400] | 1.PRE2 | The Netherlands | SAMEA5054089    |
-| BolgarCity2370 | [1362:1400] | 1.PRE3 | Russia          | SAMEA3937654    |
-| Barcelona3031  | [1300:1420] | 1.PRE1 | Spain           | SAMEA3937653    |
-| OBS137         | 1721.0      | 1.PRE1 | France          | SAMEA3713715    |
-| OBS124         | 1721.0      | 1.PRE1 | France          | SAMEA3713714    |
-| OBS116         | 1721.0      | 1.PRE1 | France          | SAMEA3713713    |
-| OBS110         | 1721.0      | 1.PRE1 | France          | SAMEA3713712    |
-| OBS107         | 1721.0      | 1.PRE1 | France          | SAMEA3713711    |
-| 8291           | 1349.0      | 1.PRE1 | England         | SAMN00715800    |
-| COL001         | [1300:1400] | 1.PRE1 | Italy           | SAMEA7293136    |
-| CHE1           | [1500:1800] | 1.PRE1 | Russia          | SAMEA7293135    |
-| Rostov2033     | [1762:1773] | 1.PRE1 | Russia          | SAMEA7313236_38 |
-| Azov38         | [1400:1700] | 1.PRE1 | Russia          | SAMEA7313243_45 |
-| Gdansk8        | [1400:1700] | 1.PRE1 | Poland          | SAMEA7313246_49 |
-| AGU010         | [1435:1477] | 1.PRE1 | Lithuania       | SAMEA6651390    |
-| AGU025         | [1441:1612] | 1.PRE1 | Lithuania       | SAMEA6637004    |
-| AGU007B        | [1463:1632] | 1.PRE1 | Lithuania       | SAMEA6637002    |
+|     Strain     |    Date     | Branch |     Country     |    Accession    |
+|:--------------:|:-----------:|:------:|:---------------:|:---------------:|
+|     STN021     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818830   |
+|     STN020     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818829   |
+|     STN019     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818828   |
+|     STN014     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818826   |
+|     STN013     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818825   |
+|     STN008     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818822   |
+|     STN007     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818821   |
+|     STN002     | 1485 - 1635 | 1.PRE1 |   Switzerland   |  SAMEA5818818   |
+|     STA001     | 1420 - 1630 | 1.PRE1 |     Germany     |  SAMEA5818817   |
+|     NMS002     | 1475 - 1536 | 1.PRE1 |     England     |  SAMEA5818815   |
+|     NAB003     | 1292 - 1392 | 1.PRE1 |     Germany     |  SAMEA5818811   |
+|     MAN008     | 1283 - 1390 | 1.PRE1 |     Germany     |  SAMEA5818809   |
+|     LBG002     | 1455 - 1632 | 1.PRE1 |     Germany     |  SAMEA5818808   |
+|     LAI009     | 1300 - 1400 | 1.PRE0 |     Russia      |  SAMEA5818806   |
+|     ELW098     | 1485 - 1627 | 1.PRE1 |     Germany     |  SAMEA5818805   |
+|     BRA001     | 1618 - 1648 | 1.PRE1 |     Germany     |  SAMEA5818803   |
+|     BED034     | 1560 - 1635 | 1.PRE1 |     England     |  SAMEA5818801   |
+|     BED030     | 1560 - 1635 | 1.PRE1 |     England     |  SAMEA5818800   |
+|     BED028     | 1560 - 1635 | 1.PRE1 |     England     |  SAMEA5818799   |
+|     BED024     | 1560 - 1635 | 1.PRE1 |     England     |  SAMEA5818798   |
+|    SLC1006     | 1279 - 1389 | 1.PRE1 |     France      |  SAMEA5054093   |
+|      OSL1      | 1270 - 1390 | 1.PRE1 |     Norway      |  SAMEA5054092   |
+|     Ber45      | 1300 - 1400 | 1.PRE2 | The Netherlands |  SAMEA5054090   |
+|     Ber37      | 1300 - 1400 | 1.PRE2 | The Netherlands |  SAMEA5054089   |
+| BolgarCity2370 | 1362 - 1400 | 1.PRE3 |     Russia      |  SAMEA3937654   |
+| Barcelona3031  | 1300 - 1420 | 1.PRE1 |      Spain      |  SAMEA3937653   |
+|     OBS137     | 1720 - 1720 | 1.PRE1 |     France      |  SAMEA3713715   |
+|     OBS124     | 1720 - 1720 | 1.PRE1 |     France      |  SAMEA3713714   |
+|     OBS116     | 1720 - 1720 | 1.PRE1 |     France      |  SAMEA3713713   |
+|     OBS110     | 1720 - 1720 | 1.PRE1 |     France      |  SAMEA3713712   |
+|     OBS107     | 1720 - 1720 | 1.PRE1 |     France      |  SAMEA3713711   |
+|      8291      |  1348-1350  | 1.PRE1 |     England     |  SAMN00715800   |
+|     COL001     | 1300 - 1400 | 1.PRE1 |      Italy      |  SAMEA7293136   |
+|      CHE1      | 1500 - 1800 | 1.PRE1 |     Russia      |  SAMEA7293135   |
+|   Rostov2033   | 1762 - 1773 | 1.PRE1 |     Russia      | SAMEA7313236_38 |
+|     Azov38     | 1400 - 1700 | 1.PRE1 |     Russia      | SAMEA7313243_45 |
+|    Gdansk8     | 1400 - 1700 | 1.PRE1 |     Poland      | SAMEA7313246_49 |
+|     AGU010     | 1435 - 1477 | 1.PRE1 |    Lithuania    |  SAMEA6651390   |
+|     AGU025     | 1441 - 1612 | 1.PRE1 |    Lithuania    |  SAMEA6637004   |
+|    AGU007B     | 1463 - 1632 | 1.PRE1 |    Lithuania    |  SAMEA6637002   |
 
 Table: Second Pandemic genomes metadata. {#tbl:genome_second_pandemic}
 
@@ -403,6 +420,5 @@ Table: Outgroup genomes metadata. {#tbl:genome_outgroup}
 
 ### Phylogeny
 
-![A time-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/370570a/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree}
 
 ![A divergence-scaled phylogeny of the Second Plague Pandemic. Asterisks indicate branches with strong statistical support.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/370570a/denmark/auspice/all/chromosome/full/filter30/ml/1.PRE_divtree.png){#fig:1.PRE_divtree}

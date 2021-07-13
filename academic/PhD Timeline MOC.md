@@ -3,33 +3,33 @@
 ---
 
 ## Kat
-| Date              | Task                             | Status |
-| ----------------- | -------------------------------- | ------ |
-| June 15           | [[Submit Chapter 2]]             | ⬜     |
-| July 04           | [[Submit Chapter 3]]             | ⬜     |
-| July 12           | [[Submit Dissertation]]          | ⬜     |
-| Aug 03            | [[Initiate Accelerated Defense]] | ⬜     |
-| Sept 01           | [[Defense]]                      | ⬜     |
-| Sept 02 - Sept 25 | [[Revisions]]                    | ⬜     |
-| Sept 26           | [[File with SGS]]                | ⬜     |
+|       Date       |               Task               | Status |
+|:----------------:|:--------------------------------:|:------:|
+|     July 16      |       [[Submit Chapter 3]]       |   ⬜   |
+|     July 30      |       [[Submit Chapter 2]]       |   ⬜   |
+|      Aug 13      |     [[Submit Dissertation]]      |   ⬜   |
+|      Aug 30      | [[Initiate Accelerated Defense]] |   ⬜   |
+|     Sept 24      |           [[Defense]]            |   ⬜   |
+| Sept 27 - Oct 14 |          [[Revisions]]           |   ⬜   |
+|      Oct 15      |        [[File with SGS]]         |   ⬜   |
 
 ## Hendrik
 
-| Date                | Task                              | Status |
-| ------------------- | --------------------------------- | ------ |
-| June 16 - June 30   | [[Review Chapter 2]]                  | ⬜     |
-| July 07 - July 20   | [[Review Chapter 3]]                  | ⬜     |
-| July 21 - August 03 | [[Review Thesis]]                     | ⬜     | 
-| Aug 04 - Aug 11     | [[Select External, Obtain Approvals]] | ⬜     |
-| Sept 01             | [[Defense]]                       | ⬜     |
+|       Date        |                 Task                  | Status |
+|:-----------------:|:-------------------------------------:|:------:|
+| July 19 - July 30 |         [[Review Chapter 3]]          |   ⬜   |
+|  Aug 02 - Aug 13  |         [[Review Chapter 2]]          |   ⬜   |
+|  Aug 16 - Aug 27  |           [[Review Thesis]]           |   ⬜   |
+| Aug 30 - Sept 03  | [[Select External, Obtain Approvals]] |   ⬜   |
+|      Sept 24      |              [[Defense]]              |   ⬜   |
 
 ## External (TBD)
 
-| Date            | Task              | Status |
-| --------------- | ----------------- | ------ |
-| Aug 11 - Aug 24 | [[Review Thesis]] | ⬜     | 
-| Aug 25          | [[Submit Report]] | ⬜     |
-| Sept 01         | [[Defense]]       | ⬜     |
+|        Date         |       Task        | Status |
+|:-------------------:|:-----------------:|:------:|
+| Sept, 06 - Sept, 17 | [[Review Thesis]] |   ⬜   |
+|       Sept 17       | [[Submit Report]] |   ⬜   |
+|       Sept 24       |    [[Defense]]    |   ⬜   |
 
 ![[PhD Timeline.png]]
 
