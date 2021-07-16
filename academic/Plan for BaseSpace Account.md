@@ -2,8 +2,8 @@
 project: [[Lab Admin]]
 due: 2021-05-21
 people:
-tags: ⬜/🧨
-status: priority
+tags: ⬜/✨
+status: done
 title: Plan for BaseSpace Account
 type: [[Task]]
 ---

@@ -2,8 +2,8 @@
 project:
 due: 2021-06-30
 people:
-tags: ⬜/🧨
-status: priority
+tags: ⬜/📋
+status: idea
 title: Contact Jen About Mito Dating
 type: [[Task]]
 ---

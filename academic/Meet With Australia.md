@@ -9,7 +9,7 @@ tags:
   - ⬜/🧨
 status: priority
 type: [[Meeting]]
-due: 2021-07-07
+due: 2021-07-25
 time: 1800
 ---
 

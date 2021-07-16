@@ -1,6 +1,7 @@
 ---
 project:
-due: 2021-07-04
+due: 2021-07-16
+time: 17:00
 people:
 tags: ⬜/🧨 
 status: priority
