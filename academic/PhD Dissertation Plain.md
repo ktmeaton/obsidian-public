@@ -21,13 +21,18 @@ status: idea
 lay-abstract: "A lay abstract of not more 150 words must be included explaining the key goals and contributions of the thesis in lay terms that is accessible to the general public."
 abstract: "Abstract here (no more than 300 words)."
 acknowledgments: "Acknowledgments go here."
-bibliography_ncbimeta: library.bib
-bibliography_plague-phylogeography: library.bib
+
+bibliography_ncbimeta: pandoc/bib/library.bib
+bibliography_denmark: pandoc/bib/library.bib
+suppress-bibliography: true
+
 numberSections: true
 sectionsDepth: 3
 reference-section-title: References
 compile-pandoc: conda activate pandoc && pandoc/convert_wikilinks.py --input 'PhD Dissertation Obsidian.md' --output 'PhD Dissertation Plain.md' && pandoc -s 'PhD Dissertation Plain.md' -o 'PhD Dissertation Plain.pdf' --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex --lua-filter pandoc/lua-filters/include-files/include-files.lua --lua-filter pandoc/lua-filters/multiple-bibliographies/multiple-bibliographies.lua --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa.csl
 compile-manubot: conda activate manubot && pandoc/manubot.sh 'PhD Dissertation Obsidian.md' pandoc/bib/library.json ../../rootstock
+tblPrefix: "Table"
+figPrefix: "Figure"
 ---
 
 # Introduction
@@ -58,7 +63,9 @@ NCBImeta_Paper.md
 
 ## References
 
-::: {#refs_chapter}
+TESTING !
+
+::: {#refs_ncbimeta}
 :::
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>

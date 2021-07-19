@@ -1,7 +1,7 @@
 
 ---
 title: 'NCBImeta: efficient and comprehensive metadata retrieval from NCBI databases.'
-project: [[NCBImeta]]
+project: NCBImeta
 tags:
   - Python
   - bioinformatics
@@ -10,7 +10,7 @@ tags:
   - NCBI
   - SRA
 authors:
-  - name: [[Katherine Eaton]]
+  - name: Katherine Eaton
     github: ktmeaton
     orcid: 0000-0001-6862-7756
 date: 29 November 2019
@@ -22,13 +22,13 @@ autoSectionLabels: True
 sectionsDepth: 3
 tblPrefix: Table
 figPrefix: Figure
-secPrefix: Section	
+secPrefix: Section
 ---
 
 <!--
     affiliations: [
-      "[[McMaster Ancient DNA Center]]", 
-      "[[Department of Anthropology]], [[McMaster University]]"
+      "McMaster Ancient DNA Center",
+      "Department of Anthropology, McMaster University"
     ]
 -->
 
@@ -44,13 +44,13 @@ An essential step in the data mining process is the efficient retrieval of compr
 
 1. Existing tools assume external programming language proficiency (ex. R, Python, SQL), thus reducing tool accessibility.
 2. Available software focuses on implementing access to singular NCBI databases in isolation, for example, the raw data repository the Sequence Read Archive (SRA). This does not empower researchers to incorporate evidence from multiple databases, as it fails to fully leverage the power of interconnected information within the relational database scheme of NCBI.
-3. Existing software provides only intermittent database updates, where users are dependent on developers releasing new snapshots to gain access to the latest information. This gives researchers less autonomy over what data they may incorporate as newer records are inaccessible, and may even introduce sampling bias depending on when the snapshots are generated.  
+3. Existing software provides only intermittent database updates, where users are dependent on developers releasing new snapshots to gain access to the latest information. This gives researchers less autonomy over what data they may incorporate as newer records are inaccessible, and may even introduce sampling bias depending on when the snapshots are generated.
 
 In response, ``NCBImeta`` aims to provide a more user-inclusive experience to metadata retrieval, that emphasizes real-time access and provides generalized frameworks for a wide variety of NCBI’s databases.
 
 # NCBImeta
 
-``NBCImeta`` is a command-line application that executes user queries and metadata retrieval from the NCBI suite of databases. The software is written in Python 3, using the ``BioPython`` module [@cock2009BiopythonFreelyAvailable] to connect to, search, and download XML records with NCBI’s E-Utilities [@kans2019EntrezDirectEutilities]. The ``lxml`` package is utilised to perform XPath queries to retrieve nodes containing biological metadata of interest. ``SQLite`` is employed as the database management system for storing fetched records, as implemented with the ``sqlite3`` python module. Accessory scripts are provided to supply external annotation files, to join tables within the local database so as to re-create the relational database structure, and finally to export the database as tabular text for downstream analyses. ``NCBImeta`` currently interfaces with the molecular and literature databases  [@2016EntrezHelp] described in @tbl:table_NCBI_databases.
+``NBCImeta`` is a command-line application that executes user queries and metadata retrieval from the NCBI suite of databases. The software is written in Python 3, using the ``BioPython`` module [@cock2009BiopythonFreelyAvailable] to connect to, search, and download XML records with NCBI’s E-Utilities [@kans2019EntrezDirectEutilities]. The ``lxml`` package is utilised to perform XPath queries to retrieve nodes containing biological metadata of interest. ``SQLite`` is employed as the database management system for storing fetched records, as implemented with the ``sqlite3`` python module. Accessory scripts are provided to supply external annotation files, to join tables within the local database so as to re-create the relational database structure, and finally to export the database as tabular text for downstream analyses. ``NCBImeta`` currently interfaces with the molecular and literature databases described in @tbl:table_NCBI_databases [@2016EntrezHelp] .
 
 Table: NCBI databases supported in NCBImeta. {#tbl:table_NCBI_databases}
 
@@ -59,15 +59,15 @@ Database          Description
 ----------------- --------------------------------------------------------------------------------------------------------------------------------------
 Assembly          Descriptions of the names and structure of genomic assemblies, statistical reports, and sequence data links.
 
-BioSample         Characteristics of the biological source materials used in experiments. 
+BioSample         Characteristics of the biological source materials used in experiments.
 
 BioProject        Goals and progress of the experimental initiatives, originating from an individual organization or a consortium.
 
-Nucleotide        Sequences collected from a variety of sources, including GenBank, RefSeq, TPA and PDB.  
+Nucleotide        Sequences collected from a variety of sources, including GenBank, RefSeq, TPA and PDB.
 
 PubMed            Bibliographic information and citations for biomedical literature from MEDLINE, life science journals, and other online publications.
 
-SRA               Composition of raw sequencing data and post-processed alignments generated via high-throughput sequencing platforms.                  
+SRA               Composition of raw sequencing data and post-processed alignments generated via high-throughput sequencing platforms.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -84,11 +84,11 @@ The following section demonstrates how ``NCBImeta`` can be used to obtain curren
 
 To identify publicly available *P. aeruginosa* genomes, ``NCBImeta`` is configured to search through the tables *Assembly* (assembled genomes) and *SRA* (raw data). For additional context, ``NCBImeta`` is used to retrieve metadata from the *Nucleotide* table for descriptive statistics of the genomic content, from the *BioProject* table to examine the research methodology of the initiative, from *Pubmed* to identify existing publications, and finally from the *Biosample* table to explore characteristics of the biological material. A small subset of the 100+ retrieved columns is shown in @fig:NCBImeta_aeruginos_db_subset, to provide a visual example of the output format and the metadata that is retrieved.
 
-![A subset of the 100+ metadata columns retrieved for *P. aeruginosa* sequencing projects.  Viewed with DB Browser for SQLite (https://sqlitebrowser.org/).](NCBImeta_aeruginosa_db_subset.png){#fig:NCBImeta_aeruginos_db_subset}
+![A subset of the 100+ metadata columns retrieved for *P. aeruginosa* sequencing projects. Viewed with DB Browser for SQLite (NCBImeta_aeruginosa_db_subset.png){#fig:NCBImeta_aeruginos_db_subset}
 
 Subsequently, the output of NCBImeta can be used for exploratory data visualization and analysis. The text file export function of NCBImeta ensures downstream compatibility with both  user-friendly online tools (ex. Google Sheets Charts)  as well as more advanced visualization packages [@wickham2016Ggplot2ElegantGraphics]. In @fig:NCBImeta_aeruginosa_geogene, the geospatial distribution of *P. aeruginosa* isolates are plotted alongside key aspects of genomic composition (ex. number of genes).
 
-![Metadata visualization of *P. aeruginosa* sequencing projects. A) The geographic distribution of samples in this region highlights a large number originating in Japan. Visualized with Palladio (https://hdlab.stanford.edu/palladio/). B) The number of genes per organism reveals a multi-modal distribution within the species.](NCBImeta_aeruginosa_geogene.png){#fig:NCBImeta_aeruginosa_geogene}
+![Metadata visualization of *P. aeruginosa* sequencing projects. A) The geographic distribution of samples in this region highlights a large number originating in Japan. Visualized with Palladio (https://hdlab.stanford.edu/palladio/). B) The number of genes per organism reveals a multi-modal distribution within the species. ](NCBImeta_aeruginosa_geogene.png){#fig:NCBImeta_aeruginosa_geogene}
 
 Finally, NCBImeta can be used to streamline the process of primary data acquisition following careful filtration. FTP links are provided as metadata fields for databases attached to an FTP server (ex. Assembly, SRA) which can be used to download biological data for downstream analysis.
 
