@@ -21,11 +21,8 @@ status: idea
 lay-abstract: "A lay abstract of not more 150 words must be included explaining the key goals and contributions of the thesis in lay terms that is accessible to the general public."
 abstract: "Abstract here (no more than 300 words)."
 acknowledgments: "Acknowledgments go here."
-
 bibliography_ncbimeta: pandoc/bib/library.bib
 bibliography_denmark: pandoc/bib/library.bib
-suppress-bibliography: true
-
 numberSections: true
 sectionsDepth: 3
 reference-section-title: References
