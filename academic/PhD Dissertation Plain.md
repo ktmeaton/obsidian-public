@@ -26,6 +26,8 @@ bibliography_plague-phylogeography: library.bib
 numberSections: true
 sectionsDepth: 3
 reference-section-title: References
+compile-pandoc: conda activate pandoc && pandoc/convert_wikilinks.py --input 'PhD Dissertation Obsidian.md' --output 'PhD Dissertation Plain.md' && pandoc -s 'PhD Dissertation Plain.md' -o 'PhD Dissertation Plain.pdf' --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex --lua-filter pandoc/lua-filters/include-files/include-files.lua --lua-filter pandoc/lua-filters/multiple-bibliographies/multiple-bibliographies.lua --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa.csl
+compile-manubot: conda activate manubot && pandoc/manubot.sh 'PhD Dissertation Obsidian.md' pandoc/bib/library.json ../../rootstock
 ---
 
 # Introduction
@@ -42,12 +44,9 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 Katherine Eaton<sup>1,2</sup>
 
-<sup>1</sup>McMaster Ancient DNA Centre, McMaster University
-<sup>2</sup>Department of Anthropology, McMaster University
+<sup>1</sup> McMaster Ancient DNA Centre, McMaster University
 
-## Thesis Preface
-
-Contextualize this publication within the dissertation.
+<sup>2</sup> Department of Anthropology, McMaster University
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -61,22 +60,5 @@ NCBImeta_Paper.md
 
 ::: {#refs_chapter}
 :::
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-# Plague Phylodynamics and Phylogeography
-
-This is the publication associated with the project Plague Phylodynamics and Phylogeography.
-
-## References
-
-::: {#refs_plague-phylogeography}
-:::
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-# Plague Denmark
-
-This is the publication associated with the project Plague Denmark.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>

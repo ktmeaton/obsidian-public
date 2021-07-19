@@ -11,4 +11,4 @@ type: [[Task]]
 
 # Submit Chapter 3
 
-- [[Plague Denmark Paper]]
+- [[Plague_Denmark_Paper]]

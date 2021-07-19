@@ -67,7 +67,7 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%
 
 Plague has an impressively long and expansive history as a human disease. The earliest evidence of the plague bacterium, *[[Yersinia pestis]]*, comes from [[Ancient DNA\|ancient DNA]] studies, dating its emergence to at least the Neolithic [[Andrades Valtuena et al. 2017 Stone Age Plague\|[@andradesvaltuena2017StoneAgePlague; ]] [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]]. Since then, *[[Yersinia pestis\|Y. pestis]]* has traveled extensively due to ever-expanding global trade networks  and the ability to infect a wide variety of mammalian hosts [[Yue 2017 Trade Routes Plague\|[@yue2017TradeRoutesPlague;]] [[Perry 1997 Yersinia Pestis Etiologic\|@perry1997YersiniaPestisEtiologic]]]. Few regions of the ancient and modern world remain untouched by this disease, as plague has an established presence on every continent except Oceania [[WHO 2017 Plague\|[@who2017Plague]]].
 
-Accompanying this prolific global presence is unnervingly high mortality. The infamous medieval Black Death is estimated to have killed more than half of Europe's population [[Benedictow 2004 Black Death 1346-1353\|[@benedictow2004BlackDeath13461353]]]. This virulence can still be observed in the post-antibiotic era, where case fatality rates range from 22-71% [@bertheratPlagueWorld2019]. As a result, plague maintains its status as a disease that is of vital importance to current public health initiatives.
+Accompanying this prolific global presence is unnervingly high mortality. The infamous medieval Black Death is estimated to have killed more than half of Europe's population [[Benedictow 2004 Black Death 1346-1353\|[@benedictow2004BlackDeath13461353]]]. This virulence can still be observed in the post-antibiotic era, where case fatality rates range from 22-71% [[@bertherat2019PlagueWorld]]. As a result, plague maintains its status as a disease that is of vital importance to current public health initiatives.
 
 This high priority disease status is unsurprising given that *[[Yersinia pestis\|Y. pestis]]* is a member of the [[Enterobacteriaceae]]  family. This family includes other notable [[Pathogen\|pathogens]] such as *[[Escherichia coli]]* and *[[Salmonella typhi]]* that are commonly transmitted by contaminated food and water. In comparison, the [[Plague\|plague]] bacterium is unique among this family due to a striking difference in [[Host\|host]] habitat and [[Transmission\|transmission]]. *[[Yersinia pestis\|Y. pestis]]* commonly resides in the blood of its mammalian hosts and can be transmitted to new hosts through an infectious [[Flea\|fleabite]] [[Gage 2006 Recent Trends Plague\|[@gage2006RecentTrendsPlague]]]. Furthermore, this unique mechanism evolved relatively recently, possibly around the 1st millennium BC [[Rasmussen 2015 Early Divergent Strains|[@rasmussen2015EarlyDivergentStrains]]], long after *[[Yersinia pestis|Y. pestis]]* emerged as a monomorphic clone of the enteric pathogen *[[Yersinia pseudotuberculosis]]* [[Achtman 1999 Yersinia Pestis Cause\|[@achtman1999YersiniaPestisCause]]]. 
 
@@ -88,60 +88,6 @@ In response to these debates and obstacles, this paper proposes a theoretical an
 4. Identify key areas of phylogenetic uncertainty to be expanded on in future research.
 
 Progress towards these key objectives is anticipated to benefit both prospective studies of plague, such as environmental surveillance and outbreak monitoring, and retrospective studies, which seek to date emergence and spread of past pandemics.
-
-## Materials and Methods {.page_break_before}
-
-A visual overview of the computational methods is provided in Figure @fig:workflow and is available as a [[Snakemake|snakemake]] pipeline (https://github.com/ktmeaton/plague-phylogeography/).
-
-![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6d9ab2e/main/report/workflow.png){#fig:workflow}
-
-### Data Collection  {.page_break_before}
-
-*[[Yersinia pestis|Y. pestis]]* genome sequencing projects were retrieved from the [[National Centre for Biotechnology Information|NCBI]] databases using NCBImeta [[Eaton 2019 NCBImeta\|[@eaton2019NCBImeta]]]. 1657 projects were identified and comprised three genomic types: 
-
-- 586 modern assembled
-- 184 ancient unassembled
-- 887 modern unassembled
-
-The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. Future work will investigate computationally efficient methods for integrating more diverse datasets.
-
-Collection location, collection date, and collection host metadata were curated by cross-referencing the original publications. Collection location was transformed to latitude and longitude coordinates using [[GeoPy]] [[Esmukov 2020 GeoPy Python Client\|[@esmukov2020GeoPyPythonClient]]]  and the [[Nominatim|Nominatim API]] [[Hoffman 2020 Nominatim Tool Search\|[@hoffman2020NominatimToolSearch]]] for [[OpenStreetMap]]  [[openstreetmapcontributors2017PlanetDumpRetrieved\|[@openstreetmapcontributors2017PlanetDumpRetrieved]]]. Coordinates were standardized at a sub-country resolution, taking the centroid of the parent province/state. Collection dates were standardized according to their year, and recording uncertainty arising from missing data and radiocarbon estimates. Collection host was the most diverse field with regards to precision, ranging from colloquial nomenclature (*"rat"*) to a genus species taxonomy (*"Meriones libycus"*). For the purposes of this study, collection host was recorded as *Human*, *Non-Human*, or *Not Available*, given the inability to differentiate non-human mammalian hosts.
-
-Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation.
-
-Two additional datasets were required for downstream analyses. First, *[[Yersinia pestis|Y. pestis]]* strain [[CO92]] (GCA_000009065.1) was used as the reference genome for sequence alignment and annotation. Second, *[[Yersinia pseudotuberculosis]]* strains [[NCTC10275]] (GCA_900637475.1) and [[IP32953]] (GCA_000834295.1) served as an outgroup to root the [[Maximum-likelihood\|maximum likelihood]] phylogeny.
-
-### Alignment
-
-Modern assembled genomes were aligned to the reference genome using [[Snippy]], a pipeline for core genome alignments [[Snippy 2020\|[@snippy2020]]]. Modern genomes were removed if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome.
-
-Ancient unassembled genomes were downloaded from the SRA database in [[FASTQ]] format using the [[SRA Toolkit]] [[NCBI 2021 SRA Toolkit\|[@NCBI2021SRAToolkit]]]. Pre-processing and alignment to the reference genome was performed using the [[nf-core/eager]] pipeline, a reproducible workflow for ancient genome reconstruction [[Yates 2021 Reproducible Portable Efficient\|[@yates2021ReproduciblePortableEfficient]]]. Ancient genomes were removed if the number of sites covered at a minimum depth of 3X was less than 70% of the reference genome. It is a typical approach to relax coverage thresholds for ancient genomes relative to their modern counterparts [@cite]. The threshold chosen here is commonly used, and aims to strike a balance between variant confidence and sample representation [@cite].
-
-A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] module of the [[Snippy]] pipeline [[Snippy 2020\|[@snippy2020]]]. The output alignment was filtered to only include chromosomal variants and to exclude sites that had more than 5% missing data.
-
-### Modified Datasets
-
-To investigate the influence of between-clade variation in substitution rates, the multiple alignment was separated into the major clades of *[[Yersinia pestis\|Y. pestis]]*, which is referred to as the *clade* dataset. Clade labeling was derived from the five-branch population structure accompanied by a biovar abbreviation [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. Only one modification was made, in that the subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness.
-
-To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed and is referred to as the *reduced* dataset. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of uniquely derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 191 representative samples.
-
-### Phylogenetics
-
-Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
-
-### Phylodynamics
-
-To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date using the python package ```statsmodels``` [[Seabold 2010 Statsmodels Econometric Statistical\|[@seabold2010StatsmodelsEconometricStatistical]]]. Given the relative simplicity of a regression model, the *full* dataset of 601 genomes was used. For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] was conducted. As the complexity of Bayesian modeling is computationally intensive, the *reduced* dataset (N=191) was used.
-
-> **Kat's Notes**:<br>
-> - I will need Sebastian and Leo's input here to write the BEAST methods section.
-
-### Public Resource
-
-The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Nextstrain]] visualization platform at https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main. All curated metadata is available for download via Nextstrain, Github, and Zenodo.
-
-> **Kat's Notes**:<br>
-> - I'll need to prepare stable and archived hosting links before submission.
 
 ## Results and Discussion  {.page_break_before}
 
@@ -208,11 +154,11 @@ The sampling strategy of ancient DNA also does not reflect the hypothesized dist
 
 Previous work has documented substantial rate variation both between and within clades of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. A [[Root to Tip Regression|root-to-tip regression]] on sampling date for the *full* dataset (N=601) reproduces this finding as the [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>) is extremely low at 0.09 (Figure @fig:rtt_all_branch-major). A  [[Bayesian Evaluation of Temporal Signal]] (BETS) also indicates poor support for a strict clock as the [[Coefficient of Variation\|coefficient of variation]] was consistently estimated to be greater than 1. Taken together, the [[Root to Tip Regression|root-to-tip regression]] and [[BETS]] analysis suggest that alternative clock models, such as the uncorrelated relaxed log normal (UCLN) model, should be preferred when accounting for the high degree of rate variation. 
 
-![ [[Root to Tip Regression\|Root-to-tip regression]]. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:rtt_all_branch-major}
+![ [[Root to Tip Regression\|Root-to-tip regression]]. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_all_branch_major.png){#fig:rtt_all_branch-major width=75%}
 
-However, the [[Bayesian Evaluation of Temporal Signal|BETS]] analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology (Figure @fig:mean_rate_trace_kde). This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. At the same time, other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]] and thus we investigated alternative approaches.
+However, the [[Bayesian Evaluation of Temporal Signal|BETS]] analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology (Figure @fig:mean_rate_trace_kde). This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. At the same time, other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] and thus we investigated alternative approaches.
 
-![MCMC parameter estimation of the mean substitution rate for the reduced dataset (N=191). Left: Poor mixing of the MCMC Chain, Right: The resulting multimodal estimate of the rate.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c12ba4b/main/beast/all/chromosome/prune/filter5/mean_rate_trace_kde.png){#fig:mean_rate_trace_kde}
+![MCMC parameter estimation of the mean substitution rate for the reduced dataset (N=191). Left: Poor mixing of the MCMC Chain, Right: The resulting multimodal estimate of the rate.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c12ba4b/main/beast/all/chromosome/prune/filter5/mean_rate_trace_kde.png){#fig:mean_rate_trace_kde width=75%}
 
 To identify patterns in rate variation that may improve the clock model, we first performed visual inspection of the [[Root to Tip Regression\|root-to-tip regression]] residuals (Figure @fig:rtt_all_branch-major). 3/12 clades appeared to have temporal signal according to a linear model, namely the ancient clades isolated from human skeletal remains: ```[[0.PRE]]``` (Bronze Age),  ```[[0.ANT4]]``` (Late Antiquity), and ```[[1.PRE]]``` (Medieval/Early Modern). Indeed, when the [[Root to Tip Regression|root-to-tip regression]] was performed on clades in isolation, these three clades demonstrated strong evidence of strict-clock behavior (Table @tbl:rtt_statistics, Figure @fig:rtt_clades). A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by clade proved even more sensitive as temporal signal was detected in 7/12 clades (Table @tbl:bets_temporal_signal). Furthermore, for all clades with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock. 
 
@@ -240,7 +186,7 @@ The ubiquitous support for a relaxed clock model was initially surprising, as th
 
 Table:  Temporal signal detection and clock model selection with [[Bayesian Evaluation of Temporal Signal]] (BETS) {#tbl:bets_temporal_signal}
 
-#### Rate Variation
+#### Rate Variation  {.page_break_before}
 
 Our approach of fitting nuanced models segregated by clade reveals that **the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought.** Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1-2 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data, which was highly unstable, fell within this published range with a 95% HPD between 1.16 x 10<sup>-8</sup> and 1.95 x 10<sup>-8</sup>. However, this global rate is a considerable underestimate, as clades with detectable temporal signal ranged from 2.33 x 10<sup>-8</sup> to 7.70 x 10<sup>-7</sup> (Table @tbl:bets_rate_cov_tmrca, Figure @fig:substitution_rate_boxplot).
 
@@ -337,14 +283,70 @@ The geographic history of the [[Third Pandemic]] is characterized by radial expa
 ## Conclusion {.page_break_before}
 
 >1. **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. <br> This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. <br>
+
 >1. ***[[Yersinia pestis|Y. pestis]]* has much more temporal signal than previously thought.**<br>   
 > Separating the genomic dataset by clade recovers robust temporal signal for the majority of clades.<br> 
+
 >1. **The true substitution rates of *[[Yersinia pestis|Y. pestis]]* are much higher than previously thought.**<br> 
 > The mean substitution rate of all global populations (1.59E-8) is a drastic underestimate compared to the rates observed by clade which range from 3.51E-8 to 1.29E-7. The clades without temporal signal are pulling down the mean estimate. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the lowest observed substitution rates, on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]]. This study instead reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher, and comparable to *[[Mycobacterium tuberulcosis]]*.<br>
+
 >1. **[[Root to Tip Regression|Root-to-tip regression]] is a poor statistical test of temporal signal compared to [[Bayesian Evaluation of Temporal Signal|BETS]]**.<br> 
 > The [[Root to Tip Regression|root-to-tip regression]] has several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters these statistical violates, and is overall more sensitive given that multiple clock models can be tested.  In this study, [[root-to-tip regression]] indicated temporal signal in 3/12 lineages while the [[BETS]] analysis detected signal in 7/12 lineages.<br>
 
 
+## Methods {.page_break_before}
+
+A visual overview of the computational methods is provided in Figure @fig:workflow and is available as a [[Snakemake|snakemake]] pipeline (https://github.com/ktmeaton/plague-phylogeography/).
+
+![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6d9ab2e/main/report/workflow.png){#fig:workflow}
+
+### Data Collection  {.page_break_before}
+
+*[[Yersinia pestis|Y. pestis]]* genome sequencing projects were retrieved from the [[National Centre for Biotechnology Information|NCBI]] databases using NCBImeta [[Eaton 2019 NCBImeta\|[@eaton2019NCBImeta]]]. 1657 projects were identified and comprised three genomic types: 
+
+- 586 modern assembled
+- 184 ancient unassembled
+- 887 modern unassembled
+
+The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. Future work will investigate computationally efficient methods for integrating more diverse datasets.
+
+Collection location, collection date, and collection host metadata were curated by cross-referencing the original publications. Collection location was transformed to latitude and longitude coordinates using [[GeoPy]] [[Esmukov 2020 GeoPy Python Client\|[@esmukov2020GeoPyPythonClient]]]  and the [[Nominatim|Nominatim API]] [[Hoffman 2020 Nominatim Tool Search\|[@hoffman2020NominatimToolSearch]]] for [[OpenStreetMap]]  [[openstreetmapcontributors2017PlanetDumpRetrieved\|[@openstreetmapcontributors2017PlanetDumpRetrieved]]]. Coordinates were standardized at a sub-country resolution, taking the centroid of the parent province/state. Collection dates were standardized according to their year, and recording uncertainty arising from missing data and radiocarbon estimates. Collection host was the most diverse field with regards to precision, ranging from colloquial nomenclature (*"rat"*) to a genus species taxonomy (*"Meriones libycus"*). For the purposes of this study, collection host was recorded as *Human*, *Non-Human*, or *Not Available*, given the inability to differentiate non-human mammalian hosts.
+
+Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation.
+
+Two additional datasets were required for downstream analyses. First, *[[Yersinia pestis|Y. pestis]]* strain [[CO92]] (GCA_000009065.1) was used as the reference genome for sequence alignment and annotation. Second, *[[Yersinia pseudotuberculosis]]* strains [[NCTC10275]] (GCA_900637475.1) and [[IP32953]] (GCA_000834295.1) served as an outgroup to root the [[Maximum-likelihood\|maximum likelihood]] phylogeny.
+
+### Alignment
+
+Modern assembled genomes were aligned to the reference genome using [[Snippy]], a pipeline for core genome alignments [[Snippy 2020\|[@snippy2020]]]. Modern genomes were removed if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome.
+
+Ancient unassembled genomes were downloaded from the SRA database in [[FASTQ]] format using the [[SRA Toolkit]] [[NCBI 2021 SRA Toolkit\|[@NCBI2021SRAToolkit]]]. Pre-processing and alignment to the reference genome was performed using the [[nf-core/eager]] pipeline, a reproducible workflow for ancient genome reconstruction [[Yates 2021 Reproducible Portable Efficient\|[@yates2021ReproduciblePortableEfficient]]]. Ancient genomes were removed if the number of sites covered at a minimum depth of 3X was less than 70% of the reference genome. It is a typical approach to relax coverage thresholds for ancient genomes relative to their modern counterparts [@cite]. The threshold chosen here is commonly used, and aims to strike a balance between variant confidence and sample representation [@cite].
+
+A multiple sequence alignment was constructed using the [[Snippy\|Snippy Core]] module of the [[Snippy]] pipeline [[Snippy 2020\|[@snippy2020]]]. The output alignment was filtered to only include chromosomal variants and to exclude sites that had more than 5% missing data.
+
+### Modified Datasets
+
+To investigate the influence of between-clade variation in substitution rates, the multiple alignment was separated into the major clades of *[[Yersinia pestis\|Y. pestis]]*, which is referred to as the *clade* dataset. Clade labeling was derived from the five-branch population structure accompanied by a biovar abbreviation [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. Only one modification was made, in that the subclade associated with the [[Plague of Justinian]] ([[0.ANT4]]) was considered to be a distinct clade from its parent ([[0.ANT]]) due to its geographic, temporal, and ecological uniqueness.
+
+To improve the performance and convergence of [[Bayesian]] analysis, a subsampled dataset was constructed and is referred to as the *reduced* dataset. Clades that contained multiple samples drawn from the same geographic location and the same time period were reduced to one representative sample. The sample with the shortest terminal branch length was prioritized, to diminish the influence of uniquely derived mutations on the estimated substitution rate. An interval of 25 years was identified as striking an optimal balance, resulting in 191 representative samples.
+
+### Phylogenetics
+
+Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
+
+### Phylodynamics
+
+To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date using the python package ```statsmodels``` [[Seabold 2010 Statsmodels Econometric Statistical\|[@seabold2010StatsmodelsEconometricStatistical]]]. Given the relative simplicity of a regression model, the *full* dataset of 601 genomes was used. For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] was conducted. As the complexity of Bayesian modeling is computationally intensive, the *reduced* dataset (N=191) was used.
+
+> **Kat's Notes**:<br>
+> - I will need Sebastian and Leo's input here to write the BEAST methods section.
+
+### Public Resource
+
+The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Nextstrain]] visualization platform at https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main. All curated metadata is available for download via Nextstrain, Github, and Zenodo.
+
+> **Kat's Notes**:<br>
+> - I'll need to prepare stable and archived hosting links before submission.
 
 ## References {.page_break_before}
 
