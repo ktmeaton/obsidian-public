@@ -1,49 +1,27 @@
 ---
 title: Multiple Bibliographies Demo
-bibliography_sources: pandoc/bib/primary.bib
-bibliography_recommended_reading: pandoc/bib/secondary.bib
-bibliography_ncbimeta: pandoc/bib/ncbimeta.bib
+bibliography_chapter1: pandoc/bib/library.bib
+bibliography_chapter2: pandoc/bib/ncbimeta.bib
 nocite: '@Knu86, @Bae'
 
 pandocomatic:
   pandoc:
+    pdf-engine: xelatex  
     from: markdown
-    to: pdf  
+    to: markdown
+    output: compile.md
     standalone: true  
     lua-filter:
       - pandoc/lua-filters/multiple-bibliographies/multiple-bibliographies.lua    
       - pandoc/lua-filters/include-files/include-files.lua
+    filter:
+      - pandoc-crossref
 ---
-
-@Nie72, @Bel, 
-
-
-```{.include shift-heading-level-by=1}
-primary.md
-```
-
-## Primary References
-
-::: {#refs_sources}
-:::
-
-```{.include shift-heading-level-by=1}
-secondary.md
-```
-
-# Secondary References
-
-::: {#refs_recommended_reading}
-:::
 
 # NCBImeta
 
 ```{.include shift-heading-level-by=1}
-NCBImeta_Paper_Compile.md
+NCBImeta_Paper_compile.md
 ```
 
-## References
-
-::: {#refs_ncbimeta}
-:::
-
+# Plague Denmark
