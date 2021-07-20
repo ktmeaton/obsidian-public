@@ -5,64 +5,39 @@ authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
     orcid: 0000-0001-6862-7756
-    affiliations: [
-      "[[McMaster University]]"
-    ]
+    affiliations: [[McMaster University]]
   - name: [[Ravneet Sidhu]]
-    affiliations: [
-      "[[McMaster University]]"
-    ]
+    affiliations: [[McMaster University]]
   - name: [[Jennifer Klunk]]
     orcid: 0000-0002-6521-8516
-    affiliations: [
-      "[[Daicel Arbor Biosciences]]"
-    ]	
+    affiliations: [[Daicel Arbor Biosciences]]
   - name: [[Julia Gamble]]
     orcid: 0000-0001-7486-757X
-    affiliations: [
-      "[[University of Manitoba]]"
-    ]	
+    affiliations: [[University of Manitoba]]
   - name: [[Jesper Boldsen]]
     orcid: 0000-0002-2850-0934
-    affiliations: [
-      "[[University of Southern Denmark]]", 
-      "[[ADBOU]]"
-    ]		
+    affiliations: [[University of Southern Denmark]]; [[ADBOU]]	
   - name: [[Ann Carmichael]]
-    affiliations: [
-      "[[Indian University Bloomington]]", 
-    ]
+    affiliations: [[Indian University Bloomington]]
   - name: [[Nükhet Varlık]]
     orcid: 0000-0001-6870-5945
-    affiliations: [
-      "[[University of South Carolina]]", 
-    ]	
+    affiliations: [[University of South Carolina]]
   - name: [[Sebastian Duchene]]
     github: sebastianduchene
     orcid: 0000-0002-2863-0907
-    affiliations: [
-      "[[University of Melbourne]]"
-    ]
+    affiliations: [[University of Melbourne]]
   - name: [[Leo Featherstone]]
     orcid: 0000-0002-8878-1758	
-    affiliations: [
-      "[[University of Melbourne]]"
-    ]	
+    affiliations: [[University of Melbourne]]
   - name: Vaughan Grimes	
     orcid: 0000-0002-2177-3147
-    affiliations: [
-      "[[Memorial University]]"
-    ]	
+    affiliations: [[Memorial University]]
   - name: [[G. Brian Golding]]
     orcid: 0000-0002-7575-0282	
-    affiliations: [
-      "[[McMaster University]]"
-    ]	
+    affiliations: [[McMaster University]]
   - name: [[Hendrik N. Poinar]]
     orcid: 0000-0002-0314-4160
-    affiliations: [ 
-      "[[McMaster University]]"
-    ]
+    affiliations: [[McMaster University]]
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: academic/[[Plague Denmark Paper]]
@@ -70,7 +45,7 @@ tags: ⬜/🧨
 status: priority
 title: A 900-year longitudinal study of *Yersinia pestis* in Denmark captures the rise and fall of a plague pandemic.
 type: [[Task]]
-compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague Denmark Paper.md' pandoc/bib/library.json ../../rootstock"
+compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague_Denmark_Paper.md' pandoc/bib/library.json ../../rootstock"
 url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Paper.html
 ---
 
