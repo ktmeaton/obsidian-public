@@ -1,11 +1,11 @@
 ---
 project: [[PhD Dissertation]]
-due: 2021-08-20
+due: 2021-08-30
 people:
 tags: ⬜/🧨
 status: priority
-title: Submit Dissertation
+title: Initiate Accelerated Defense
 type: [[Task]]
 ---
 
-# Submit Dissertation
+# Initiate Accelerated Defense

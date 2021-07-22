@@ -195,31 +195,27 @@ Our approach of fitting nuanced models segregated by clade reveals that **the 't
 > - No differences with regards to rate/variation between pandemic and non-pandemic clades.<br>
 >- I really want to see [[1.IN]], is there a progressive increase in rate along Branch 1?
 
-It is interesting to note that several clades have distinctly different substitution rates (ie.non-overlapping estimates of the mean substitution rate in Figure @fig:substitution_rate_boxplot) and yet the relative amount of rate variation within a clade is similar (ie. overlapping coefficients of variation in Figure @fig:coefficient_of_variation_boxplot).
-
 We hypothesize that outlier clades which are challenging to model (ex. [[2.MED]]) have artificially decreased estimates of the mean substitution rate in past studies. This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]*.
 
-|   Clade    |  N  |                 Substitution Rate                 | Coefficient of Variation |     tMRCA     |
-|:----------:|:---:|:-------------------------------------------------:|:------------------------:|:-------------:|
-|    All     | 191 |  1.16 x 10<sup>-8</sup> : 1.95 x 10<sup>-8</sup>  |       1.35 : 2.10        | -7400 : -3289 |
-| [[1.ORI]]  | 117 |  1.04 x 10<sup>-7</sup> : 1.53 x 10<sup>-7</sup>  |       1.02 :  1.87       |  1802 : 1907  |
-|  [[1.IN]]  | 39  |                        --                         |            --            |      --       |
-| [[1.ANT]]  |  4  |  3.61 x 10<sup>-8</sup> : 9.63 x 10<sup>-8</sup>  |       0.00 : 2.12        |  1645 : 1889  |
-| [[1.PRE]]  | 40  |  3.69 x 10<sup>-8</sup> : 5.90 x 10<sup>-8</sup>  |       1.22 : 3.24        |  995 : 1324   |
-| [[2.MED]]  | 116 |  1.91 x 10<sup>-7</sup>, 3.01 x 10<sup>-7</sup>   |       2.23 : 3.50        |  1547 : 1867  |
-| [[2.ANT]]  | 54  |                        --                         |            --            |      --       |
-| [[4.ANT]]  | 11  |  3.59 x 10<sup>-8</sup> :  1.57 x 10<sup>-7</sup>  |       1.22 : 3.59        |  1847 : 1975  |
-| [[3.ANT]]  | 11  |                        --                         |            --            |      --       |
-| [[0.ANT]]  | 103 |                        --                         |            --            |      --       |
-| [[0.ANT4]] | 12  |  2.33 x 10<sup>-8</sup> : 4.68 x 10<sup>-8</sup>  |       1.40 : 3.94        |   39 : 237    |
-|  [[0.PE]]  | 83  | 4.32 x 10<sup>-7</sup> :   7.70 x 10<sup>-7</sup> |       1.70 : 2.78        |  1565 : 1892  |
-| [[0.PRE]]  |  8  | 3.95 x 10<sup>-8</sup> : 6.48  x 10<sup>-8</sup>  |       0.84 : 3.13        | -3070 : -2776 |
+|   Clade    |  N  |                 Substitution Rate                 |     tMRCA     |
+|:----------:|:---:|:-------------------------------------------------:|:-------------:|
+|    All     | 191 |  1.16 x 10<sup>-8</sup> : 1.95 x 10<sup>-8</sup>  | -7400 : -3289 |
+| [[1.ORI]]  | 117 |  1.04 x 10<sup>-7</sup> : 1.53 x 10<sup>-7</sup>  |  1802 : 1907  |
+|  [[1.IN]]  | 39  |                        --                         |      --       |
+| [[1.ANT]]  |  4  |  3.61 x 10<sup>-8</sup> : 9.63 x 10<sup>-8</sup>  |  1645 : 1889  |
+| [[1.PRE]]  | 40  |  3.69 x 10<sup>-8</sup> : 5.90 x 10<sup>-8</sup>  |  995 : 1324   |
+| [[2.MED]]  | 116 |  1.91 x 10<sup>-7</sup> : 3.01 x 10<sup>-7</sup>   |  1547 : 1867  |
+| [[2.ANT]]  | 54  |                        --                         |      --       |
+| [[4.ANT]]  | 11  | 3.59 x 10<sup>-8</sup> :  1.57 x 10<sup>-7</sup>  |  1847 : 1975  |
+| [[3.ANT]]  | 11  |                        --                         |      --       |
+| [[0.ANT]]  | 103 |                        --                         |      --       |
+| [[0.ANT4]] | 12  |  2.33 x 10<sup>-8</sup> : 4.68 x 10<sup>-8</sup>  |   39 : 237    |
+|  [[0.PE]]  | 83  | 4.32 x 10<sup>-7</sup> :   7.70 x 10<sup>-7</sup> |  1565 : 1892  |
+| [[0.PRE]]  |  8  | 3.95 x 10<sup>-8</sup> : 6.48  x 10<sup>-8</sup>  | -3070 : -2776 |
 
 Table:  Estimate variation on the rate and tMRCA based on the 95% HPD. {#tbl:bets_rate_cov_tmrca}
 
 ![Mean substitution rate uncertainty by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4a67df7c718b/main/beast/all/chromosome/clade/logs_noHyperPrior/substitution_rate.png){#fig:substitution_rate_boxplot}
-
-![Coefficient of variation uncertainty by clade.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/4a67df7c718b/main/beast/all/chromosome/clade/logs_noHyperPrior/coefficient_of_variation.png){#fig:coefficient_of_variation_boxplot}
 
 #### Node Dating
 
@@ -282,17 +278,18 @@ The geographic history of the [[Third Pandemic]] is characterized by radial expa
 
 ## Conclusion {.page_break_before}
 
->1. **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. <br> This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. <br>
+### 1. We resolve the debate of whether *[[Yersinia pestis|Y. pestis]]* has temporal signal.
 
->1. ***[[Yersinia pestis|Y. pestis]]* has much more temporal signal than previously thought.**<br>   
-> Separating the genomic dataset by clade recovers robust temporal signal for the majority of clades.<br> 
+- **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space.
+- **Separating the genomic dataset by clade recovers robust temporal signal for the majority of clades**. But there are several clades where we were unable to model the temporal dynamics. This may because these populations should be divided differently than the branch nomenclature system dictates.
+- **[[Root to Tip Regression|Root-to-tip regression]] is a poor statistical test of temporal signal compared to [[Bayesian Evaluation of Temporal Signal|BETS]]**. The [[Root to Tip Regression|root-to-tip regression]] has several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters these statistical violates, and is overall more sensitive given that multiple clock models can be tested.  In this study, [[root-to-tip regression]] indicated temporal signal in 3/12 lineages while the [[BETS]] analysis detected signal in 7/12 lineages.
+
 
 >1. **The true substitution rates of *[[Yersinia pestis|Y. pestis]]* are much higher than previously thought.**<br> 
 > The mean substitution rate of all global populations (1.59E-8) is a drastic underestimate compared to the rates observed by clade which range from 3.51E-8 to 1.29E-7. The clades without temporal signal are pulling down the mean estimate. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the lowest observed substitution rates, on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]]. This study instead reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher, and comparable to *[[Mycobacterium tuberulcosis]]*.<br>
 
->1. **[[Root to Tip Regression|Root-to-tip regression]] is a poor statistical test of temporal signal compared to [[Bayesian Evaluation of Temporal Signal|BETS]]**.<br> 
-> The [[Root to Tip Regression|root-to-tip regression]] has several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters these statistical violates, and is overall more sensitive given that multiple clock models can be tested.  In this study, [[root-to-tip regression]] indicated temporal signal in 3/12 lineages while the [[BETS]] analysis detected signal in 7/12 lineages.<br>
 
+>1. **The dispersal patterns  of *[[Yersinia pestis|Y. pestis]]* is not accurately reconstructed using 
 
 ## Methods {.page_break_before}
 
@@ -340,6 +337,148 @@ To explore the degree of temporal signal present in the data, two categories of 
 
 > **Kat's Notes**:<br>
 > - I will need Sebastian and Leo's input here to write the BEAST methods section.
+
+#### Code
+
+
+##### Directory
+
+```bash
+mkdir -p strict_clock/dates/model_test/ ;
+mkdir -p strict_clock/no_dates/model_test/ ;
+mkdir -p relaxed_clock/dates/model_test/ ;
+mkdir -p relaxed_clock/no_dates/model_test/ ;
+```
+
+##### Inputs
+
+Nexus and newick files:
+```bash
+cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main
+
+/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
+  -m iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv \
+  -a iqtree/all/chromosome/full/filter5/filter-clades/1.ORI/1.ORI.fasta \
+  --nex beast/all/chromosome/clade/1.ORI/1.ORI.nex 
+```
+
+##### Beauti
+
+1. Import alignment (```beast.nex```).
+1. Rename partitions (```dna```).
+1. Site Model (```GTR```).
+1. Tree Prior: (```Coalescent Constant Population```).
+1. Chain Length (100,000,000)
+2. Chain samples (10,000).
+3. Screen log (100,000).
+4. Save As -> ```beast.xml```
+5. Inspect the XML, to make sure the tip dating priors were setup correctly and logged. 
+
+
+##### XML Edit
+
+```bash
+# Get list of clades
+clades=(`cut -f 1 iqtree/all/chromosome/full/filter5/filter-clades/clades.txt`)
+models=("strict_clock" "relaxed_clock")
+dates=("dates" "no_dates")
+dir="beast/all/chromosome/clade"
+constants=`tr "," " " < snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt`;
+rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/clade'
+
+for clade in ${clades[@]};
+do
+  for model in ${models[@]};
+  do
+    for date in ${dates[@]};
+	do
+	  if [[ -d $dir/$clade/$model/$date ]]; 
+	  then 
+	    file=$dir/$clade/$model/$date/model_test/beast.xml;
+	    echo $file
+		
+		# Create tmp file
+		cat $file | tr -d "\r" | tr "\n" "#" > $file.tmp
+
+		# Change the original alignment name and ID
+		IN='<data#id="dna"#spec="Alignment"#name="alignment">';
+		OUT='<data#id="original-dna"#spec="Alignment"#name="original-dna">';
+		sed -i "s|$IN|$OUT|g" $file.tmp;	
+		
+		# Add a data element with constant sites
+		IN='<\/data>'
+		OUT='<\/data>#\t\t<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="'$constants'"\/>';
+		sed -i "s|$IN|$OUT|g" $file.tmp
+		
+		# Change the ending run and mcmc elements
+		IN='<\/run>'
+		OUT='<\/mcmc>#<\/run>'
+		sed -i "s|$IN|$OUT|g" $file.tmp	
+		
+		# Changing the starting run and mcmc elements
+		IN='<run'
+		OUT='<run spec="beast.inference.PathSampler"#\tchainLength="1000000"#\talpha="0.3"#\trootdir="'$rootdir/$clade/$model/$date/model_test/'"#\tburnInPercentage="0"#\tpreBurnin="100000" deleteOldLogs="true"#\tnrOfSteps="100">#\tcd $(dir)#\tjava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml##<mcmc'
+		sed -i "s|$IN|$OUT|g" $file.tmp	
+		
+		echo "mv $file $file.bak";
+		echo "mv $file.tmp $file";
+		
+	  fi;
+	done
+  done
+done
+```
+
+##### Run
+Activate conda environment:
+```bash
+conda activate beast2
+```
+1. Strict clock with dates
+	```bash
+	beast \
+	  -seed 4141239047 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log	
+	```
+2. Strict clock without dates
+	```bash
+	beast \
+	  -seed 75273452 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+3. Relaxed clock with dates
+	```bash
+	beast \
+	  -seed 1259807514 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+4. Relaxed clock without dates
+	```bash
+	beast \
+	  -seed 5435425542 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+
+
+| Clades    |  Clock  |  Dates   | Marginal Likelihood | Dates vs. No Dates | Relaxed vs. Strict |
+| --------- |:-------:|:--------:|:-------------------:|:------------------:|:------------------:|
+| [[1.ORI]] | Strict  |  Dates   |                     |         --         |         --         |
+|           |         | No Dates |                     |         --         |         --         |
+|           | Relaxed |  Dates   |                     |         --         |         --         | 
+|           |         | No Dates |                     |         --         |         --         |
+
 
 ### Public Resource
 

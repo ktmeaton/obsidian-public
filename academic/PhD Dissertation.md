@@ -10,6 +10,25 @@ type: [[Project]]
 
 # PhD Dissertation
 
+## Roadmap
+
+```dataview
+table due, tags
+from ""
+where project=[[PhD Dissertation]] and status="done"
+sort due asc
+```
+
+```dataview
+table due, tags
+from ""
+where project=[[PhD Dissertation]] and status="priority"
+sort due asc
+```
+
+
+
+
 ## Projects
 
 1. [[NCBImeta]]

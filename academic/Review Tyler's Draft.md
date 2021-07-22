@@ -5,8 +5,8 @@ type: [[Task]]
 due: 2021-07-15
 time: 12:00
 people: [[Tyler Murchie]]
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨ 
+status: done
 ---
 
 # Review Tyler's Draft

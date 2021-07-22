@@ -5,8 +5,8 @@
 ## Kat
 |       Date       |               Task               | Status |
 |:----------------:|:--------------------------------:|:------:|
-|     July 16      |       [[Submit Chapter 3]]       |   ⬜   |
-|     July 30      |       [[Submit Chapter 2]]       |   ⬜   |
+|     July 16      |       [[Submit Chapter 3 Draft]]       |   ⬜   |
+|     July 30      |       [[Submit Chapter 2 Draft]]       |   ⬜   |
 |      Aug 13      |     [[Submit Dissertation]]      |   ⬜   |
 |      Aug 30      | [[Initiate Accelerated Defense]] |   ⬜   |
 |     Sept 24      |           [[Defense]]            |   ⬜   |
