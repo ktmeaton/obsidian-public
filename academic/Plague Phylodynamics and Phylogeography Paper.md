@@ -79,7 +79,7 @@ Unfortunately, this expansive knowledge is not without its limitations. Genomic 
 
 Another significant limitation is the cryptic clock of *[[Yersinia pestis|Y. pestis]]*. There is considerable debate concerning the accuracy of molecular clock methods, which seek to estimate crucial dates such as the time to most recent common ancestor (tMRCA) and past pandemics. It remains unresolved whether *[[Yersinia pestis|Y. pestis]]* has absolutely no temporal signal [[Wagner et al. 2014 Yersinia Pestis Plague|[@wagner2014YersiniaPestisPlague]]], or if sub-populations have such distinct rates that a species-wide signal is obscured [[Spyrou 2019 Phylogeography Second Plague|[@spyrou2019PhylogeographySecondPlague;]] [[Duchene 2016 Genome-scale Rates Evolutionary|@duchene2016GenomescaleRatesEvolutionary]]]. This uncertainty has produced radically different temporal models between studies, with divergence dates shifted by thousands of years [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Rasmussen 2015 Early Divergent Strains\|@rasmussen2015EarlyDivergentStrains]]]. Thus a comprehensive understanding of plague's molecular clock, or lack thereof, is necessary before we can untangle which human populations have been affected by this disease.
 
-One final obstacle that limits our ability to track the spread of *[[Yersinia pestis|Y. pestis]]* between populations, is the sporadic dispersal history of plague. *[[Yersinia pestis|Y. pestis]]* is remarkable for its "boom-bust" dynamics [[Strayer 2017 Boom-bust Dynamics Biological\|[@strayer2017BoombustDynamicsBiological]]], in which periods of slow, clonal diversification are repeatedly interrupted by sudden bursts of radial expansion [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation]]]. These bursts often produces cryptic geographic patterns, such as the case of the Black Death, in which the dispersal of *[[Yersinia pestis|Y. pestis]]* occurred so quickly that isolates from all across Europe are nearly indistinguishable [[Spyrou 2019 Phylogeography Second Plague|[@spyrou2019PhylogeographySecondPlague]]]. In contrast, tremendous diversity can accumulate within a relatively small area, as observed in neighboring foci of the Caucasus Mountains [@cite]. Just as was the case for molecular clock methods, this extreme variation in how genetic diversity is distributed across the globe is extremely challenging to model. Previous studies have extrapolated the migration history of plague from the available genomic evidence. [[Morelli et al. 2010 Yersinia Pestis Genome|[@morelli2010YersiniaPestisGenome;]]] [[namouchi2018IntegrativeApproachUsing\|@namouchi2018IntegrativeApproachUsing]]]. But, no study to date has statistically evaluated... 
+One final obstacle that limits our ability to track the spread of *[[Yersinia pestis|Y. pestis]]* between populations, is the sporadic dispersal history of plague. *[[Yersinia pestis|Y. pestis]]* is remarkable for its "boom-bust" dynamics [[Strayer 2017 Boom-bust Dynamics Biological\|[@strayer2017BoombustDynamicsBiological]]], in which periods of slow, clonal diversification are repeatedly interrupted by sudden bursts of radial expansion [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation]]]. These bursts often produces cryptic geographic patterns, such as the case of the Black Death, in which the dispersal of *[[Yersinia pestis|Y. pestis]]* occurred so quickly that isolates from all across Europe are nearly indistinguishable [[Spyrou 2019 Phylogeography Second Plague|[@spyrou2019PhylogeographySecondPlague]]]. In contrast, tremendous diversity can accumulate within a relatively small area, as observed in neighboring foci of the Caucasus Mountains [@cite]. Just as was the case for molecular clock methods, this extreme variation in how genetic diversity is distributed across the globe is extremely challenging to model. Previous studies have extrapolated the migration history of plague from the available genomic evidence. [[Morelli et al. 2010 Yersinia Pestis Genome|[@morelli2010YersiniaPestisGenome;]] [[namouchi2018IntegrativeApproachUsing\|@namouchi2018IntegrativeApproachUsing]]]. But, no study to date has statistically evaluated... 
 
 whether *[[Yersinia pestis|Y. pestis]]*, or any of its sub-populations, has sufficient geographic structure to robustly estimate 
 
@@ -345,25 +345,33 @@ To explore the degree of temporal signal present in the data, two categories of 
 #### Code
 
 
-##### Directory
+##### Directories and Inputs
 
 ```bash
-mkdir -p strict_clock/dates/model_test/ ;
-mkdir -p strict_clock/no_dates/model_test/ ;
-mkdir -p relaxed_clock/dates/model_test/ ;
-mkdir -p relaxed_clock/no_dates/model_test/ ;
-```
+clades=(`cut -f 1 iqtree/all/chromosome/full/filter5/filter-clades/clades.txt`)
+models=("strict_clock" "relaxed_clock")
+dates=("dates" "no_dates")
+dir="beast/all/chromosome/clade"
 
-##### Inputs
+cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main;
 
-Nexus and newick files:
-```bash
-cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main
+for clade in ${clades[@]};
+do
+  for model in ${models[@]};
+  do
+    for date in ${dates[@]};
+	do
+	  echo $dir/$clade/$model/$date;
+	  mkdir -p $dir/$clade/$model/$date/model_test/;
+	  mkdir -p $dir/$clade/$model/$date/run/;	 
 
-/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
-  -m iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv \
-  -a iqtree/all/chromosome/full/filter5/filter-clades/1.ORI/1.ORI.fasta \
-  --nex beast/all/chromosome/clade/1.ORI/1.ORI.nex 
+	  /mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
+	    -m iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv \
+		-a iqtree/all/chromosome/full/filter5/filter-clades/${clade}/${clade}.fasta \
+		--nex beast/all/chromosome/clade/${clade}/${clade}.nex 
+	done;
+  done;
+done;
 ```
 
 ##### Beauti
@@ -382,7 +390,6 @@ cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main
 ##### XML Edit
 
 ```bash
-# Get list of clades
 clades=(`cut -f 1 iqtree/all/chromosome/full/filter5/filter-clades/clades.txt`)
 models=("strict_clock" "relaxed_clock")
 dates=("dates" "no_dates")
@@ -396,14 +403,25 @@ do
   do
     for date in ${dates[@]};
 	do
-	  if [[ -d $dir/$clade/$model/$date ]]; 
+	  file=$dir/$clade/$model/$date/model_test/beast.xml;	 
+	  if [[ -f $file ]]; 
 	  then 
-	    file=$dir/$clade/$model/$date/model_test/beast.xml;
-	    echo $file
+	    # Restore the original backup file	 	  
+		bak_file=${file}.bak
+	    if [[ -f ${bak_file} ]]; 	
+		then
+		  echo "Restoring ${bak_file}"
+		  mv ${bak_file} $file;
+		fi;
 		
-		# Create tmp file
+		# Backup the original
+		echo "Backing up ${file}"		
+		cp $file $file.bak;
+		
+		# Create tmp file to edit
+		echo "Creating temp file $file.tmp"
 		cat $file | tr -d "\r" | tr "\n" "#" > $file.tmp
-
+		
 		# Change the original alignment name and ID
 		IN='<data#id="dna"#spec="Alignment"#name="alignment">';
 		OUT='<data#id="original-dna"#spec="Alignment"#name="original-dna">';
@@ -412,32 +430,37 @@ do
 		# Add a data element with constant sites
 		IN='<\/data>'
 		OUT='<\/data>#\t\t<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="'$constants'"\/>';
-		sed -i "s|$IN|$OUT|g" $file.tmp
+		sed -i "s|$IN|$OUT|g" $file.tmp;
 		
-		# Change the ending run and mcmc elements
+		# Save for the actual run
+		run_file=$dir/$clade/$model/$date/run/beast.xml;
+		cat $file.tmp | tr "#" "\n" > ${run_file};	
+		
+		# Change the ending run and mcmc elements for model testing
 		IN='<\/run>'
 		OUT='<\/mcmc>#<\/run>'
-		sed -i "s|$IN|$OUT|g" $file.tmp	
+		sed -i "s|$IN|$OUT|g" $file.tmp			
 		
 		# Changing the starting run and mcmc elements
 		IN='<run'
 		OUT='<run spec="beast.inference.PathSampler"#\tchainLength="1000000"#\talpha="0.3"#\trootdir="'$rootdir/$clade/$model/$date/model_test/'"#\tburnInPercentage="0"#\tpreBurnin="100000" deleteOldLogs="true"#\tnrOfSteps="100">#\tcd $(dir)#\tjava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml##<mcmc'
 		sed -i "s|$IN|$OUT|g" $file.tmp	
 		
-		echo "mv $file $file.bak";
-		echo "mv $file.tmp $file";
+		# Rename
+		cat $file.tmp | tr "#" "\n" > $file; 
+		rm -f $file.tmp;
 		
 	  fi;
-	done
-  done
-done
+	done;
+  done;
+done;
 ```
 
 ##### Run
-Activate conda environment:
-```bash
-conda activate beast2
-```
+1. Activate conda environment:
+	```bash
+	conda activate beast2
+	```
 1. Strict clock with dates
 	```bash
 	beast \
@@ -447,7 +470,7 @@ conda activate beast2
 	  -beagle_double \
 	  beast.xml | tee beast_screen.log	
 	```
-2. Strict clock without dates
+1. Strict clock without dates
 	```bash
 	beast \
 	  -seed 75273452 \
@@ -456,7 +479,7 @@ conda activate beast2
 	  -beagle_double \
 	  beast.xml | tee beast_screen.log		  
 	```
-3. Relaxed clock with dates
+1. Relaxed clock with dates
 	```bash
 	beast \
 	  -seed 1259807514 \
@@ -465,7 +488,7 @@ conda activate beast2
 	  -beagle_double \
 	  beast.xml | tee beast_screen.log		  
 	```
-4. Relaxed clock without dates
+1. Relaxed clock without dates
 	```bash
 	beast \
 	  -seed 5435425542 \
@@ -474,15 +497,15 @@ conda activate beast2
 	  -beagle_double \
 	  beast.xml | tee beast_screen.log		  
 	```
-
-
-| Clades    |  Clock  |  Dates   | Marginal Likelihood | Dates vs. No Dates | Relaxed vs. Strict |
-| --------- |:-------:|:--------:|:-------------------:|:------------------:|:------------------:|
-| [[1.ORI]] | Relaxed |  Dates   |         --          |         --         |         --         |
-|           |         | No Dates |      -5873746       |         --         |         1          | 
-|           | Strict  |  Dates   |      -5873078       |        669         |         --         |
-|           |         | No Dates |      -5873747       |         --         |         --         |
-
+1. Full Run
+	```bash
+	beast \
+	  -seed 45375043257 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
 
 ### Public Resource
 
@@ -520,3 +543,48 @@ The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Ne
 Table:  [[Root to Tip Regression\|Root-to-tip regression]] statistics. {#tbl:rtt_statistics}
 
 ![Root To Tip Regression by clade.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt_clades.png){#fig:rtt_clades}
+
+
+#### [[BETS]]
+
+##### Runs Overview
+
+- There are two major types of BEAST/MCMC analyses:
+	1. No hyperprior for the tree/population size (noHyperPrior).
+	2. An exponential(?) hyperprior for the tree/population size (epop).
+- Nested within these two analyses, we test two models of rate variation:
+	1. Strict clock (SC)
+	2. Relaxed clock (UCLN)
+- Further nested within these analyses, is a test of temporal signal (BETS):
+	1. No tip dates.
+	2. Tip dates.
+- This combination of parameters results in **8 separate models/MCMC runs**.
+- Finally, the marginal likelihood of each model/run is calculated using a Generalized Stepping Stone (GSS) approach.
+- First, we tested these models(?) on a dataset composed of 191 samples ("Prune"). The MCMC analysis was unstable, we suspect because there was too much rate variation.
+- We then tested these models(?) on an alignment separated into **12 clades**.
+- This produces a total of **96 MCMC runs** (12 clades x 8 models).
+
+> Indeed, this is the most comprehensive and thorough dating analysis of *[[Yersinia pestis]]*.
+
+
+##### Output Summary
+
+- In a previous email, we decided to use the results of the no hyper prior (noHyperPrior) for stats tables/figures in the manuscript... *"because they make fewer assumptions"*. If this is correct, what are the epop analyses for?
+- I've attached a spreadsheet that summarizes the files that are produced by these runs.
+- There are several clades (highlighted in red) that I don't have log files for.
+- From the most recent update, there are several clades (highlighted in red) that I have updated log files for, but not updated trees.
+- There are several clades (highlighted in orange) for which you sent me new log files. However, the chain length has not changed and no new trees were sent. Was this just a re-upload of old runs?
+
+
+| Clade |  N  | Dates | Marginal Likelihood | Bayes Factor |
+|:-----:|:---:|:-----:|:-------------------:|:------------:|
+|       |     |       |                     |              |
+
+
+Table:  Temporal signal detection using a strict clock with [[Bayesian Evaluation of Temporal Signal\|BETS]]. {#tbl:bets_temporal_signal_strict}
+
+| Clade |  N  | Dates | Marginal Likelihood | Bayes Factor |
+|:-----:|:---:|:-----:|:-------------------:|:------------:|
+|       |     |       |                     |              |
+
+Table:  Temporal signal detection using a relaxed clock with [[Bayesian Evaluation of Temporal Signal\|BETS]]. {#tbl:bets_temporal_signal_strict}
