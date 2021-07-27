@@ -47,7 +47,7 @@ filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
 tags: ⬜/🧨 
 status: priority
 title: Plagued by a cryptic clock
-subtitle: New insights from the global phylogeny of *[[Yersinia pestis|Y. pestis]]* 
+subtitle: New insight from the global phylogeny of *[[Yersinia pestis|Y. pestis]]* 
 type: 
   - [[Task]]
   - [[Note]]
@@ -95,62 +95,87 @@ Progress towards these key objectives is anticipated to benefit both prospective
 
 ## Results and Discussion  {.page_break_before}
 
-### Phylogeny
+### Population Structure
 
-A maximum-likelihood phylogeny was estimated from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). Following removal of the outgroup taxa, the alignment was composed of 10,249 variant positions with 3,844 sites shared by at least two genomes. In Figure @fig:divtree_branch-major, the maximum-likeilhood phylogeny is visualized alongside the four major taxonomic systems currently used to define the population structure of *[[Yersinia pestis|Y. pestis]]*. These include the major phylogenetic branches, biovars, subspecies, and historical time periods/pandemics.
+Population structure, or genetic structure, arises when a group of organisms subdivide and diversify in isolation. Identifying these sub-populations is a critical step in reconstructing the evolutionary history of a species, as misspecification can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. Phylogenetic analysis is a popular and powerful technique to explore this structure, as it directly models the genetic diversity and divergences that have occurred. The driving factors underlying this structure can then be interrogated using an assortment of contextual metadata including phenotype, collection date, and geography.
+
+To investigate the global population structure of *[[Yersinia pestis|Y. pestis]]*, we estimated a maximum-likelihood phylogeny from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). The genomic alignment was composed of 10249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3844 sites shared by at least two genomes. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine intra-species diversity. 
+
+In Figure @fig:divtree_branch_major, the maximum-likelihood phylogeny is visualized alongside the four major taxonomic systems currently used to define the population structure of *[[Yersinia pestis|Y. pestis]]*. These include the major phylogenetic branches, biovars, subspecies, and time periods.
 
 ![
 The maximum-likelihood phylogeny depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*. The divisions of the four major sub-typing systems are provided.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0542fd/main/auspice/all/chromosome/full/filter5/divtree_branch_major.png){#fig:divtree_branch-major}
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0542fd/main/auspice/all/chromosome/full/filter5/divtree_branch_major.png){#fig:divtree_branch_major}
 
-### Population Structure
+<div style="page-break-after: always;"></div>
 
-A comparison of sub-typing systems reveals great uncertainty with regards to *[[Yersinia pestis|Y. pestis]]* population structure. The global phylogeny of *[[Yersinia pestis|Y. pestis]]* can be divided into ```major branches``` according to the relative position of the [[Big Bang Polytomy\|"big bang" polytomy]] [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]``` and those emerging after are the monophyletic clades ```Branches 1-4```. Because the [[Big Bang Polytomy\|"big bang" polytomy]] plays such a central role in this system, there is growing interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, an inability to identify phenotypes distinguishing these ```major branches``` poses a significant challenge, and thus the exact epidemiological significance of the [[Big Bang Polytomy\|"big bang" polytomy]] remains unclear.
+#### Major Branch
 
-An example of this challenge can be seen in the population structure defined by the ```biovar``` system. *[[Yersinia pestis|Y. pestis]]* can be categorized using a suite of metabolic properties into the classical biovars: *antiqua* (```ANT```), *medievalis* (```MED```), *orientalis* (```ORI```), and *microtus*/*pestoides* (```PE```) [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics;]] [[Li 2009 Genotyping Phylogenetic Analysis\|@li2009GenotypingPhylogeneticAnalysis]]]. While these divisions don't fully contradict the ```major branches```, they do considerably shift the defining boundaries between *[[Yersinia pestis|Y. pestis]]* populations. 
+A comparison of sub-typing systems reveals great uncertainty with regards to  the population structure of *[[Yersinia pestis|Y. pestis]]*. One approach is to divide the global phylogeny of *[[Yersinia pestis|Y. pestis]]* into ```major branches``` according to the relative position of the [[Big Bang Polytomy\|"big bang" polytomy]] [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]``` and those emerging after are the monophyletic clades ```Branches 1-4```. Because the [[Big Bang Polytomy\|"big bang" polytomy]] plays such a central role in this system, there is growing interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, an inability to identify phenotypes distinguishing these ```major branches``` poses a significant challenge, and thus the exact epidemiological significance of the [[Big Bang Polytomy\|"big bang" polytomy]] remains unclear.
 
-To further complicate matters, researchers from the Commonwealth of Independent State (CIS) have observed biovar inconsistencies in plague foci surveillance [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. In response, the ```subspecies``` taxonomy was created to distinguish a main subspecies (*pestis*) that is highly virulent in humans with wide geographic spread, from five or more non-main subspecies that have limited geographic ranges and attenuated virulence in humans [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. The ```subspecies``` structure is highly convenient for laboratory diagnostics in the CIS, but struggles to differentiate the immense diversity represented by the larger *pestis* subspecies.
+#### Biovar
 
-The challenge of categorizing plague by metabolism is, unsurprisingly, also an obstacle when analyzing extinct lineages. Ancient DNA (aDNA) researchers have opted to either extrapolate an existing biovar designation [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or create a new one [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. However, it is more common in aDNA studies to define population structure by time period and associations with historically documented pandemics. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* thus far has been broadly grouped into four time periods and three pandemics (Figure @fig:timeline).
+An example of this phenotypic challenge can be seen in the population structure defined by the ```biovar``` system. *[[Yersinia pestis|Y. pestis]]* can be categorized using a suite of metabolic properties into the classical biovars: *antiqua* (```ANT```), *medievalis* (```MED```), *orientalis* (```ORI```), and *microtus*/*pestoides* (```PE```) [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics;]] [[Li 2009 Genotyping Phylogenetic Analysis\|@li2009GenotypingPhylogeneticAnalysis]]]. The *intermediate* biovar (```IN```) is also used to reflect an intermediate state during the transition from *antiqua* to *orientalis.* While these divisions don't fully contradict the ```major branches```, they do considerably shift the defining boundaries between *[[Yersinia pestis|Y. pestis]]* populations.
 
-![
-The temporal distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all.png){#fig:timeline}
+#### Subspecies
 
-The [[First Pandemic]] (6th - 8th century CE) began with the [[Plague of Justinian]] and proceeded to devastate the Byzantine Empire of the Mediterranean world [@cite]. The [[Late Antiquity]] clade found within ```[[Branch 0]]``` (```[[0.ANT4]]```) is associated with this pandemic given spatiotemporal overlap of the skeletal remains from which this lineage was retrieved [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague;]] [[Keller 2019 Ancient Yersinia Pestis\|@keller2019AncientYersiniaPestis]]].  Similarly, the [[Medieval\|medieval]] clade ```[[1.PRE]]``` from ```[[Branch 1]]``` is thought to derive from the [[Second Pandemic\|Second Pandemic of Plague]]. This well-documented pandemic began with the infamous [[Black Death]] and swept across most of Eurasia from the 14th to 19th centuries [@cite]. The third documented pandemic of plague, alias the *Modern Pandemic*, spread globally from the end of the [[18th Century]] and until the mid-[[20th Century]]. There is little dispute that a new lineage of plague emerging from [[Branch 1]] as biovar *orientalis* (```1.ORI```) was the causative agent of this pandemic. While the World Health Organization (WHO) declared the third pandemic over in 1950 [@cite], this lineage continues to re-emerge to cause localized epidemics such as the [[2010 plague in Peru]] [@cite] and the [[Madagascar Outbreaks of 2017]] [@cite].
+To further complicate matters, researchers from the Commonwealth of Independent State (CIS) have observed biovar inconsistencies in plague foci surveillance [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. In response, the ```subspecies``` taxonomy was created to distinguish a main subspecies (*pestis*) that is highly virulent in humans with wide geographic spread, from five or more non-main subspecies that have limited geographic ranges and attenuated virulence in humans [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. The ```subspecies``` structure is highly convenient for laboratory diagnostics in the CIS, but struggles to differentiate the immense diversity found outside these
+localized plague foci.
 
-While the pandemic clade nomenclature provides an excellent foundation for historical discussion, there are several emergent problems with this system. First is the growing awareness of the spatiotemporal overlap of the Second and the Third Pandemic [@cite]. Previously, the temporal extents of these events were mutually exclusive, dating from the 14th-18th century, and the 19th-20th century respectively. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague [@cite]. The Second Pandemic is now known to have extended into the 19th Century in parts of the Ottoman Empire, with the latest epidemics dating to 1819 [@cite]. Similarly, the Third Pandemic is now hypothesized to have began as early as 1772 in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. It remains unclear where to draw the distinction, if it even exists, between the Second and Third Pandemic.
+#### Time Period
 
-Another limitation of the pandemic nomenclature is the complete disconnection of ```Branch 2``` to any historical pandemics. This is surprising given that several criteria of a pandemic pathogen are fulfilled by ```Branch 2``` lineages, namely extensive spread and virulence. ```Branch 2``` genomes of *[[Yersinia pestis|Y. pestis]]* have been collected from all throughout Eurasia, stretching from at least the Caucasus, to India, and to eastern China (Figure @fig:map_branch2). Furthermore, lineages of ```Branch 2``` have been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]] and were observed to have the highest spread velocity of any *[[Yersinia pestis|Y. pestis]]* clade [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]] As historical plague scholarship extends beyond the bounds of Western Europe, it will be important to consider the role these lineages played, and adjust nomenclature accordingly.
+The challenge of categorizing plague by metabolism is, unsurprisingly, also an obstacle when analyzing extinct lineages. Ancient DNA (aDNA) researchers have opted to either extrapolate an existing biovar designation [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or create a new one [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. However, it is more common in aDNA studies to define population structure by time period and associations with historically documented pandemics. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* can therefore be further sub-divided into four periods: the [[LNBA|Bronze Age]] (3rd - 1st millenium BCE), the [[First Pandemic]], (6th - 8th century), the [[Second Pandemic]] (14th - 20th century), and the [[Third Pandemic]] (20th century).
 
-![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
+In light of this uncertainty, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. Unfortunately, the curated phylogenetic analysis presented here reveals even greater uncertainty. 
 
-However, a significant obstacle to understanding the global spread and virulence of past plagues lies in *[[Yersinia pestis|Y. pestis]]*'s weak host associations and a lack of geographic structure. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [@cite]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic (Figure @fig:divtree_host). Most clades are isolated from both humans and non-human animals, although the ancient lineages ```[[0.PRE]]```, ([[LNBA\|Bronze Age]]), ```[[0.ANT4]]``` (Late Antiquty) and ```[[1.PRE]]``` (Medieval/Early Modern) are exclusively associated with humans. However, this particular exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains [@cite].
+<div style="page-break-after: always;"></div>
+
+#### Weak Host Associations
+
+To some extent, the lack of obvious population structure can be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [@cite]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic. For example, most of the sub-populations defined by the ```major branches``` have been isolated from both humans and non-human animals, although the ancient lineages are exclusively associated with humans (Figure @fig:divtree_host). However, this particular exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains [@cite]. Overall, *[[Yersinia pestis|Y. pestis]]* can move relatively easily between mammalian populations [@cite], and thus it is challenging to identify any consistent ecological barriers to gene flow.
 
 ![
 The maximum-likelihood phylogeny of *[[Yersinia pestis\|Y. pestis]]* according to isolation host.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5af901d/main/auspice/all/chromosome/full/filter5/divtree_host.png){#fig:divtree_host}
 
 
-In addition to a cryptic host structure, the geographic patterning of *[[Yersinia pestis|Y. pestis]]*, or lack thereof, reflects a complex dispersal history (Figure @fig:map_all_branch-major). Many regions have been colonized by diverse strains of *[[Yersinia pestis|Y. pestis]]*. This diversity can be contemporaneous, such as endemic foci in the [[Caucausus]] and [[Western China]] (```[[0.PE]]```). Alternatively, this diversity may accrue over multiple centuries through distinct re-introductions and extinctions, as seen through historical clades in Europe (```[[0.ANT]]```, ```[[1.PRE]]```). In these examples, a relatively large amount of genetic diversity appears in a small geographic range (Figure @fig:mantel_all_branch-major). In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (```[[1.ORI]]```) which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
+#### Complex Dispersal Histories
 
-This geographic complexity is unsurprising given that *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*, the parent species of plague, also does not exhibit strong geographic structure. Outbreak strains of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* are particularly challenging to cluster, with non-outbreak lineages showing only slightly more geographic signal [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. In this line of reasoning, the patterning observed in Figure @fig:map_all_branch-major and @fig:mantel_all_branch-major likely reflects the complex ecology of plague which cycles between endemic reservoirs and epidemic periods.
+In addition to a cryptic host structure, the geographic patterning of *[[Yersinia pestis|Y. pestis]]*, or lack thereof, reflects a complex dispersal history. There is no obvious correlation between geographic distance and genetic distance, although to some extent this is due to different sub-populations of *[[Yersinia pestis|Y. pestis]]* having distinct dispersal histories (Figure @fig:mantel_all_branch_major). For example, many regions in close geographic proximity have been colonized by diverse populations of *[[Yersinia pestis|Y. pestis]]* (Figure @fig:map_all_branch_major). This diversity can be contemporaneous, such as the endemic foci in the [[Caucausus]] and [[Western China]] (```[[0.PE]]```). Alternatively, this diversity may accrue over multiple centuries through distinct re-introductions and extinctions, as seen in the historical populations of Europe (```[[0.ANT]]```, ```[[1.PRE]]```). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (```[[1.ORI]]```) which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
+
+
+In light of plague's evolutionary history, this geographic complexity is unsurprising as *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*, the parent species of *[[Yersinia pestis|Y. pestis]]*, also does not exhibit strong geographic structure. Outbreak strains of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* are particularly challenging to cluster, with non-outbreak lineages showing only slightly more geographic signal [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. In this line of reasoning, the patterns observed here like reflects the similarly complex ecology of plague, which cycles between endemic reservoirs and epidemic periods.
 
 ![
-The geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. 
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch-major}
+Geographic distance vs. genetic distance. Statistical results come from a mantel test at α <= 0.05. KAT. Reverse these plots and clean up.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_all.png){#fig:mantel_all_branch_major}
 
 ![
-Geographic distance vs. genetic distance. Statistical results come from a mantel test at α <= 0.05.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_all.png){#fig:mantel_all_branch-major}
+The geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes. KAT! Vertically flip clade legend!
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch_major}
 
+<div style="page-break-after: always;"></div>
 
-However, it would be amiss to not acknowledge one of the largest caveats in genomic analyses, which is the issue of sampling bias. The geographic sampling strategy of *[[Yersinia pestis|Y. pestis]]* genomes (Figure @fig:map_all_branch-major) does not reflect the known distribution of modern plague [[Xu 2019 Historical Genomic Data\|[@xu2019HistoricalGenomicData]]]. The [[Over-Represented|over-sampling]] of [[East Asia]] has been previously described by [[Spyrou 2016 Historical Pestis Genomes|@spyrou2016HistoricalPestisGenomes]] and considerably drives the hypothesis that *[[Yersinia pestis\|Y. pestis]]* originated in [[China]] [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. This once established hypothesis is now in contention, as the most basal strains of *[[Yersinia pestis|Y. pestis]]* (Clades 0.PRE and 0.PE) have been isolated from all across [[Eurasia]]. 
+#### The Three Pandemic Problem
 
-The sampling strategy of ancient DNA also does not reflect the hypothesized distribution of ancient plague. Historical genomes of *[[Yersinia pestis\|Y. pestis]]* have primarily been collected from European archaeological sites, with the most heavily sampled region being Western Europe (See Figure @map_all_branch-major, [[1.PRE]]).
+The complex geographic dispersal history of plague also reveals an important confounding factor: time. Pre-modern isolates of *[[Yersinia pestis|Y. pestis]]*  have strong temporal structure, as they form mostly distinct sub-populations according to collection date (Figure @fig:timeline). This temporal structure, which aligns with several historically documented pandemics, drives the hypothesis of these populations as pandemic lineages. While the pandemic clade nomenclature provides an excellent foundation for historical discussion, there are several emergent problems with this system. 
 
-> **Kat's Notes:**<br>
-> - This section lacks an explicit conclusion and a transition to the next section.
+![
+The temporal distribution of *Y. pestis* genomes.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/cd898b3/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all.png){#fig:timeline}
+
+The first issue concerns the misleading nature of Figure @fig:timeline, which implies a sudden burst of diversity appearing in the Modern period. In reality, this diversity had become established centuries before, if not millennia, but is genetically underrepresented. One example of this bias is the *pestoides* biovar from Asia ([[0.PE]]), which was first found during the Bronze Age and then is only detected again 4000 years later in the Modern period. The long, unsampled history of this clade highlights the sampling biases present in ancient DNA studies, which have primarily targeted human populations from Western Europe [@cite]. 
+
+An even more intriguing example are the populations deriving from ```Branch 2```, which fulfill many of the criteria of pandemic lineages, and yet do not play a role in the three pandemic narrative. ```Branch 2``` emerges at the same time as, but separate from, the Second Pandemic clade, as part of the Big Bang Polytomy (Figure @fig:divtree_branch_major). Isolates of ```Branch 2``` have been collected from all throughout Eurasia, stretching from at least the Caucasus, to India, and to eastern China (Figure @fig:map_branch2). Furthermore, the *medievalis* sub-populations (```[[2.MED]]```) have been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]] and were observed to have the fastest spread velocity of any *[[Yersinia pestis|Y. pestis]]* clade [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. Given this epidemiological significance, it is surprising that these sub-populations have been largely overlooked in the pandemic taxonomy of *[[Yersinia pestis|Y. pestis]]*. As ancient DNA sampling strategies expand out of Europe, it will be important to consider how to adapt and expand the three pandemic nomenclature to encompass this new diversity.
+
+![The geographic distribution of *[[Yersinia pestis|Y. pestis]]* ```[[Branch 2]]```. (PLACEHOLDER)](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e0d84a1/main/auspice/all/chromosome/full/filter5/2_map.PNG){#fig:map_branch2 style="border:1px solid black"}
+
+The second major issue also concerns sampling biases, and involves the growing awareness of the spatiotemporal overlap of the Second and the Third Pandemic [@cite], clades [[1.PRE]] and [[1.ORI]] respectively. Previously, the temporal extents of these events were mutually exclusive, dating from the 14th-18th century, and the 19th-20th century respectively. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague [@cite]. The Second Pandemic is now known to have extended into the 19th Century in parts of the Ottoman Empire, with the latest epidemics dating to 1819 [@cite]. Similarly, the Third Pandemic is now hypothesized to have began as early as 1772 in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]].  Unfortunately, this crucial transition period remains unsampled, as no genomic evidence has been found between 1772 and 1912.  Thus it remains unclear where exactly to draw a genetic distinction, if it even exists, between the Second and Third Pandemic.
+
+---
+ 
+- Transition to phylodynamics and phylogeography.
+
 
 ### [[Phylodynamics]] {.page_break_before}
 
@@ -395,7 +420,7 @@ models=("strict_clock" "relaxed_clock")
 dates=("dates" "no_dates")
 dir="beast/all/chromosome/clade"
 constants=`tr "," " " < snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt`;
-rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/clade'
+rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/clade';
 
 for clade in ${clades[@]};
 do
@@ -507,6 +532,23 @@ done;
 	  beast.xml | tee beast_screen.log		  
 	```
 
+##### Checklist
+
+|   Clade    | Model Test | Run | Time End |
+|:----------:|:----------:|:---:|:--------:|
+| [[1.ORI]]  |     ✅     | ✅  |          |
+|  [[1.IN]]  |     ✅     | 🔸  |  ~18:00  | 
+| [[1.ANT]]  |     ⬜     | ⬜  |          |
+| [[1.PRE]]  |     ⬜     | ⬜  |          |
+| [[2.MED]]  |     ⬜     | ⬜  |          |
+| [[2.ANT]]  |     🔸     | ⬜  |  ~18:00  |
+| [[4.ANT]]  |     ⬜     | ⬜  |          |
+| [[3.ANT]]  |     ⬜     | ⬜  |          |
+| [[0.ANT]]  |     ⬜     | ⬜  |          |
+| [[0.ANT4]] |     ⬜     | ⬜  |          |
+|  [[0.PE]]  |     ⬜     | ⬜  |          |
+| [[0.PRE]]  |     ⬜     | ⬜  |          |
+
 ### Public Resource
 
 The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Nextstrain]] visualization platform at https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main. All curated metadata is available for download via Nextstrain, Github, and Zenodo.
@@ -519,6 +561,8 @@ The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Ne
 <div id="refs"></div>
 
 ## Appendix
+
+### [[Population Structure]]
 
 ### [[Phylodynamics]]
 
@@ -588,3 +632,8 @@ Table:  Temporal signal detection using a strict clock with [[Bayesian Evaluatio
 |       |     |       |                     |              |
 
 Table:  Temporal signal detection using a relaxed clock with [[Bayesian Evaluation of Temporal Signal\|BETS]]. {#tbl:bets_temporal_signal_strict}
+
+
+### Misc
+
+- Genomic research frequently combines the ```major branch``` and ```biovar``` taxonomy to create clade designations, such as ```[[2.ANT]]``` to represent the *antiqua* biovar found on branch 2.
