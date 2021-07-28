@@ -217,13 +217,13 @@ Table:  Temporal signal detection and clock model selection with [[Bayesian Eval
 Our approach of fitting nuanced models segregated by clade reveals that **the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought.** Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1-2 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data, which was highly unstable, fell within this published range with a 95% HPD between 1.16 x 10<sup>-8</sup> and 1.95 x 10<sup>-8</sup>. However, this global rate is a considerable underestimate, as clades with detectable temporal signal ranged from 2.33 x 10<sup>-8</sup> to 7.70 x 10<sup>-7</sup> (Table @tbl:bets_rate_cov_tmrca, Figure @fig:substitution_rate_boxplot).
 
 > **Kat's Notes:**<br>
-> - [[0.PE]] appears to be an outlier.<br>
-> - No differences with regards to rate/variation between pandemic and non-pandemic clades.<br>
->- I really want to see [[1.IN]], is there a progressive increase in rate along Branch 1?
+> - Absolute differences in substitution rate, 0.PE and 2.MED higher
+> - Relative variation is very similar and overlapping
+>- Progressive increase in rate along Branch 1.
 - This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]*.
 
 
-![Rate variation from BEAST. PLACEHOLDER.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/02b34cd17/main/beast/all/chromosome/clade/rate_coefficient_of_variation_tmrca.png){#fig:substitution_rate_boxplot}
+![Rate variation from BEAST. PLACEHOLDER.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/02b34cd17/main/beast/all/chromosome/clade/rate_coefficient_of_variation.png){#fig:substitution_rate_boxplot}
 
 #### Node Dating
 
