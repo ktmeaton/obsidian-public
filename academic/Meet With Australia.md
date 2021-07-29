@@ -5,15 +5,18 @@ people:
   - [[Sebastian Duchene]]
   - [[Leo Featherstone]]
   - [[Hendrik Poinar]]
-tags:
-  - ⬜/🧨
-status: priority
+tags: ⬜/✨
+status: done
 type: [[Meeting]]
-due: 2021-07-25
-time: 1800
+due: 2021-08-04
+time: 18:00
 ---
 
 # Meet With Australia
+
+## [[2021-08-04]]
+
+- [Meeting Link]
 
 ## [[2021-07-07]]
 

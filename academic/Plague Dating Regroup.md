@@ -1,9 +1,10 @@
 ---
 project:
-due: 2021-07-26
+due: 2021-08-04
+time: 18:00
 people:
-tags: ⬜/🧨 
-status: priority
+tags: ⬜/✨
+status: done
 title: Plague Dating Regroup
 type: [[Task]]
 ---
