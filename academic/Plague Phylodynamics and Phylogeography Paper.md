@@ -107,7 +107,9 @@ The maximum-likelihood phylogeny depicts the global population structure of *[[Y
 
 #### Major Branch
 
-A comparison of sub-typing systems reveals great uncertainty with regards to  the population structure of *[[Yersinia pestis|Y. pestis]]*. One approach is to divide the global phylogeny of *[[Yersinia pestis|Y. pestis]]* into ```major branches``` according to the relative position of the [[Big Bang Polytomy\|"big bang" polytomy]] [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]``` and those emerging after are the monophyletic clades ```Branches 1-4```. Because the [[Big Bang Polytomy\|"big bang" polytomy]] plays such a central role in this system, there is growing interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, an inability to identify phenotypes distinguishing these ```major branches``` poses a significant challenge, and thus the exact epidemiological significance of the [[Big Bang Polytomy\|"big bang" polytomy]] remains unclear.
+A comparison of sub-typing systems reveals great uncertainty with regards to  the population structure of *[[Yersinia pestis|Y. pestis]]*. One approach is to divide the global phylogeny of *[[Yersinia pestis|Y. pestis]]* into ```major branches``` according to the relative position of the [[Big Bang Polytomy\|"big bang" polytomy]] [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]``` and those emerging after are the monophyletic clades ```Branches 1-4```. Higher resolution can be achieved by further sub-dividing these clades into numerous `minor branches`.
+
+Because the [[Big Bang Polytomy\|"big bang" polytomy]] plays such a central role in this system, there is growing interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, an inability to identify phenotypes distinguishing these ```major branches``` poses a significant challenge, and thus the exact epidemiological significance of the [[Big Bang Polytomy\|"big bang" polytomy]] remains unclear.
 
 #### Biovar
 
@@ -120,85 +122,102 @@ localized plague foci.
 
 #### Time Period
 
-The challenge of categorizing plague by metabolism is, unsurprisingly, also an obstacle when analyzing extinct lineages. Ancient DNA (aDNA) researchers have opted to either extrapolate an existing biovar designation [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or create a new one [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. However, it is more common in aDNA studies to define population structure by time period and associations with historically documented pandemics. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* is frequently sub-divided into four periods: the [[LNBA|Bronze Age]] (3rd - 1st millenium BCE), the [[First Pandemic]], (6th - 8th century), the [[Second Pandemic]] (14th - 20th century), and the [[Third Pandemic]] (20th century).
-
-#### Which system is "correct"?
-
-In light of this uncertainty and apparent contradictions, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. Unfortunately, the curated phylogenetic analysis presented here reveals even greater uncertainty. This uncertainty is explored in the following sections in the context of host associations, geographic dispersal, and epidemiological events.
+The challenge of categorizing plague by metabolism is, unsurprisingly, also an obstacle when analyzing extinct lineages. Ancient DNA (aDNA) researchers have opted to either extrapolate an existing biovar designation (`[[ANT]]`) [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or create a new one (`[[PRE]]`) [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. However, it is more common in aDNA studies to define population structure by time period and associations with historically documented pandemics. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* is frequently sub-divided into four periods: the [[LNBA|Bronze Age]] (3rd - 1st millenium BCE), the [[First Pandemic]], (6th - 8th century), the [[Second Pandemic]] (14th - 20th century), and the [[Third Pandemic]] (20th century).
 
 <div style="page-break-after: always;"></div>
 
+#### Structural Uncertainty
+
+In light of this uncertainty and apparent contradictions, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. In the following sections, we explore the newly curated phylogeny and metadata to identify phylogenetic patterns in host associations, geographic dispersal, and epidemiological events.  For statistical analysis, we combine three taxonomic systems (`major branch`, `biovar`, `time period`) to delineate 12 sub-populations. This approach was selected as it:
+
+1. Is commonly used in comparative genomics of *[[Yersinia pestis|Y. pestis]]* on a global scale [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]].
+2. Maintains adequate samples sizes  for statistical analysis.
+3. Has a number of categories that remains visually distinctive.
+	
+> Why didn't we also use the subspecies taxonomy to help divide up [[0.PE]]? Because Kat didn't know/understand it until now! Since [[0.PE]] is such a strong outlier in the phylodynamic analysis, breaking it up might help...
+
 #### Weak Host Associations
 
-To some extent, the lack of obvious population structure can be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [[Perry 1997 Yersinia Pestis Etiologic\|[@perry1997YersiniaPestisEtiologic]]]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic. For example, most of the sub-populations defined by the ```major branches``` have been isolated from both humans and non-human animals, although the ancient lineages are exclusively associated with humans (Figure @fig:divtree_host). However, this particular exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains [@cite]. Overall, *[[Yersinia pestis|Y. pestis]]* can move relatively easily between mammalian populations [@cite], and thus it is challenging to identify any consistent ecological barriers to gene flow.
+To some extent, the lack of obvious population structure can be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [[Perry 1997 Yersinia Pestis Etiologic\|[@perry1997YersiniaPestisEtiologic]]]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic. For example, most of the sub-populations examined in this study have been isolated from both humans and non-human animals (Figure @fig:divtree_host). 
+
+The major exception to this pattern are the ancient lineages which are exclusively associated with humans from the Bronze Age (`[[0.PRE]]`), the [[First Pandemic]] (`[[0.ANT4]]`), and the [[Second Pandemic]] (`[[1.PRE]]`). This exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains. It is only very recently that ancient *[[Yersinia pestis|Y. pestis]]* was first identified in rodent remains [[Morozova 2020 New Ancient Eastern\|[@morozova2020NewAncientEastern]]]. Overall, *[[Yersinia pestis|Y. pestis]]* appears to move relatively easily between mammalian populations, and thus it is challenging to identify consistent ecological barriers that obstruct gene flow between populations.
 
 ![
-The maximum-likelihood phylogeny of *[[Yersinia pestis\|Y. pestis]]* according to isolation host.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5af901d/main/auspice/all/chromosome/full/filter5/divtree_host.png){#fig:divtree_host}
+*Y. pestis* host associations, according to the proportion of genomes by population (left) and the host distribution across the maximum-likelihood phylogeny (right). Asterisks indicate populations for which there is a statistically significant relationship between genetic distance and geographic distance.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5f384dc/main/iqtree/all/chromosome/full/filter5/filter-taxa/host_proportion_tree.png){#fig:divtree_host width=90%}
 
 
 #### Complex Dispersal Histories
 
-In addition to a cryptic host structure, the geographic patterning of *[[Yersinia pestis|Y. pestis]]*, or lack thereof, reflects complex dispersal histories. To explore how genetic diversity is distributed over the landscape, we perform a Mantel test [[Mantel 1970 Technique Non-parametric Multivariate\|[@mantel1970TechniqueNonparametricMultivariate]]] to assess the relationship between genetic distance and geographic distance (Figure @fig:mantel_all). No universal relationship was observed and a closer examination of the geographic distribution reveals why (Figure @fig:map_all_branch_major). 
+In addition to a cryptic host structure, the geographic patterning of *[[Yersinia pestis|Y. pestis]]*, or lack thereof, reflects complex dispersal histories. To explore how genetic diversity is distributed over the landscape, we first plotted the geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes across the globe (Figure @fig:map_all_branch_major). We then performed a Mantel test [[Mantel 1970 Technique Non-parametric Multivariate\|[@mantel1970TechniqueNonparametricMultivariate]]] to assess the relationship between genetic distance and geographic distance (Figure @fig:mantel_all). No species-wide relationship was statistically detected and a closer examination of the geographic distribution reveals why.
 
-When divided by ```major branch``` and ```biovar```, sub-populations of *[[Yersinia pestis|Y. pestis]]* appear to have visually distinct dispersal histories. For example, many regions in close geographic proximity have been colonized by diverse populations of *[[Yersinia pestis|Y. pestis]]* (Figure @fig:map_all_branch_major). This diversity can be contemporaneous, such as the endemic foci in the [[Caucausus]] and [[Western China]] (```[[0.PE]]```). Alternatively, this diversity may accrue over multiple centuries through distinct re-introductions and extinctions, as seen in the historical populations of Europe (```[[0.ANT]]```, ```[[1.PRE]]```). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (```[[1.ORI]]```) which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
-
-Statistical confirmation of these population-specific trends can be seen in Figure @fig:mantel_clades. When the Mantel test is performed again, this time on each population in isolation, a statistically significant relationship is observed for 50% (6/12) of the groups. A driving factor of this division appears to be humans as hosts, given that all populations that have been exclusively isolated from humans (`[[0.PRE]]`, `[[0.ANT]]`,  `[[1.PRE]]`, and `[[1.ANT]]`) have no significant relationship. Whereas populations that are frequently found in non-human animals ([[0.PE]], [[0.ANT, ]])
-
-In particular, populations that have been exclusively isolated in humans show no clear relationship between genetic distance and geographic 
-
-- Sig relationship: [[0.PE]], [[0.ANT]], [[1.ORI]], [[2.ANT]], [[3.ANT]], [[4.ANT]]
-- No relationship: [[0.PRE]], [[0.ANT4]], [[1.PRE]], [[1.ANT]], [[1.IN]], [[2.MED]]
-
-|   Clade    |  N  | Coefficient |         P Value         | % Human | % Non-Human | % NA |
-|:----------:|:---:|:-----------:|:-----------------------:|:-------:| ----------- | ---- |
-| [[1.ORI]]  | 117 |    0.59     | 1.30 x 10<sup>-2</sup>* |  25.6   | 64.1        |      |
-|  [[1.IN]]  | 39  |    0.28     | 6.30 x 10<sup>-2</sup>  |  15.4   | 84.6        |      |
-| [[1.ANT]]  |  4  |    0.46     | 2.15 x 10<sup>-1</sup>  |   50    | 0.0         |      |
-| [[1.PRE]]  | 40  |    0.23     | 6.30 x 10<sup>-2</sup>  |   100   | 0.0         |      |
-| [[2.MED]]  | 116 |    0.06     | 5.46 x 10<sup>-2</sup>  |  14.7   | 82.8        |      |
-| [[2.ANT]]  | 54  |    0.46     | 2.70 x 10<sup>-2</sup>* |  31.5   | 66.7        |      |
-| [[4.ANT]]  | 11  |    0.46     | 2.00 x 10<sup>-2</sup>* |   9.1   | 81.8        |      |
-| [[3.ANT]]  | 11  |    0.56     | 2.70 x 10<sup>-2</sup>* |   9.1   | 90.9        |      |
-| [[0.ANT]]  | 103 |    0.58     | 1.30 x 10<sup>-2</sup>* |  10.4   | 87.8        |      |
-| [[0.ANT4]] | 12  |    0.81     | 2.15 x 10<sup>-1</sup>  |   100   | 0.0         |      |
-|  [[0.PE]]  | 83  |    0.71     | 1.30 x 10<sup>-2</sup>* |   7.0   | 64.0        |      |
-| [[0.PRE]]  |  8  |    -0.07    | 5.46 x 10<sup>-1</sup>  |   100   | 0.0         |      |
-|    All     | 601 |    -0.04    |  4.35 x 0<sup>-1</sup>  |  25.3   | 69.1        |      |
-
-Table: Statistical results of a Mantel test.
-
-```bash
-for clade in $clades; 
-do 
-  samples=`grep -w "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | wc -l`;
-  human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Human"`;
-  echo "$human" | awk -v clade=$clade -v samples=$samples '{print clade"\t"$0"\t"samples"\t"$0/samples}';
-done
-
-for clade in $clades; 
-do 
-  samples=`grep -w "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | wc -l`;
-  human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Non-Human"`;
-  echo "$human" | awk -v clade=$clade -v samples=$samples '{print clade"\t"$0"\t"samples"\t"$0/samples}';
-done
-
-
-```
-
-In light of plague's evolutionary history, this geographic complexity is unsurprising as *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*, the parent species of *[[Yersinia pestis|Y. pestis]]*, also does not exhibit strong geographic structure. Outbreak strains of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* are particularly challenging to cluster, with non-outbreak lineages showing only slightly more geographic signal [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. In this line of reasoning, the patterns observed here like reflects the similarly complex ecology of plague, which cycles between endemic reservoirs and epidemic periods.
-
-![
-The relationship between genetic distance and geographic distance, as evaluated using a Mantel test.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/2ab338e/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel.png){#fig:mantel_all width=50%}
+Sub-populations of *[[Yersinia pestis|Y. pestis]]* appear to have visually distinct dispersal histories. For example, many regions in close geographic proximity have been colonized by diverse populations of *[[Yersinia pestis|Y. pestis]]* (Figure @fig:map_all_branch_major). This diversity can be contemporaneous, such as the endemic foci in the [[Caucausus]] and [[Western China]] (```[[0.PE]]```). Alternatively, this diversity may accrue over multiple centuries through distinct re-introductions and extinctions, as seen in the historical populations of Europe (```[[0.ANT]]```, ```[[1.PRE]]```). In these examples, a relatively large amount of genetic diversity appears in a small geographic range. In contrast, regions such as the Americas have been colonized by a single strain of *[[Yersinia pestis|Y. pestis]]* (```[[1.ORI]]```) which shows a relatively small amount of genetic diversity over a tremendously large geographic range. 
 
 ![
 The geographic distribution of *[[Yersinia pestis\|Y. pestis]]* genomes.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/b0897c6/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch_major}
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/b0897c6/main/augur/all/chromosome/full/filter5/map_all.png){#fig:map_all_branch_major width=80%}
 
 ![
-Clades Mantel.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5f46213d28/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_clades.png){#fig:mantel_clades}
+The relationship between genetic distance and geographic distance for all of *[[Yersinia pestis\|Y. pestis]]*.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/2ab338e/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel.png){#fig:mantel_all width=40%}
+
+In light of plague's evolutionary history, this geographic complexity is unsurprising as *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*, the parent species of *[[Yersinia pestis|Y. pestis]]*, also does not exhibit strong geographic structure. Outbreak strains of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* are particularly challenging to cluster, with non-outbreak lineages showing only slightly more geographic signal [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. In this line of reasoning, the population-specific patterns observed here like reflects the similarly complex ecology of plague, which cycles between endemic reservoirs and epidemic periods. Statistical confirmation of these visual trends can be seen in Figure @fig:mantel_clades. When the Mantel test is performed again, this time on each sub-population in isolation, a statistically significant relationship is observed for 50% (6/12) of the clades. 
+
+![
+The relationship between genetic distance and geographic distance for *[[Yersinia pestis\|Y. pestis]]* sub-populations.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5f46213d28/main/iqtree/all/chromosome/full/filter5/filter-taxa/mantel_clades.png){#fig:mantel_clades width=80%}
+
+> Shall I also put these statistics in a table, and move one of them to the Appendix?
+
+<div style="page-break-after: always;"></div>
+
+A driving factor of this division appears to be the role of humans as hosts. All populations that have been exclusively isolated from humans (`[[0.PRE]]`, `[[0.ANT]]`,  `[[1.PRE]]`, and `[[1.ANT]]`) have no significant relationship between genetic distance and geographic distance (Figure @fig:divtree_host). This is consistent with the relatively higher mobility of human populations, which can severely disrupt the pattern of slow, endemic spread across the landscape. Interestingly, this pattern extends to as early as the Bronze Age, where the `[[0.PRE]]` sub-population has been found in human settlements across Eurasia.
+
+Evidence for the disruptive role of humans is inversely seen in *[[Yersinia pestis|Y. pestis]]* populations sampled from non-human animals. Populations such as `[[0.PE]]`, `[[0.ANT]]`, `[[2.ANT]]`, `[[3.ANT]]`, `[[4.ANT]]`, and `[[1.ORI]]` have a statistically significant relationship between genetic and geographic distances. In general, this supports the hypothesis that non-human plague follows a continuous model of endemic spread and reflects the strong geographic structure that is often present in small mammals [[[@searle2009CelticFringeBritain;]] [[@querejeta2016GenomicDiversityGeographical]]].  However this explanation is not perfect, as `[[1.IN]]` and `[[2.MED]]` both show no evidence of a relationship between genetic and geographic distance. 
+
+We suspect the reason for these exceptions are limited resolution in geocoding and sub-population definitions. Our standardized approach to geocoding involved taking the centroid location of each province/state sampled. This is likely the problem for `[[1.IN]]`, which is exclusively found in 4 neighboring plague foci in Yunnan, Qinghai, Xinjiang, and Tibet. In the case of highly localized plague comparisons, the geographic distances between provinces are an inaccurate measure of the true distance between samples. In contrast, `[[2.MED]]` represents the opposite extreme, in that it is the most geographic and genetically diverse sub-population of *[[Yersinia pestis|Y. pestis]]*. This population has been sampled all across Asia, with a continuous distribution from the Caucasus Mountain in the West, to the coast of China in the East (Figure @fig:TBD). The distribution of  distances for `[[2.MED]]` (Figure @fig:mantel_clades) is very similar to the plotted distances of all populations combined (Figure @fig:mantel_all). We therefore propose that any phylogenetic modeling of `[[2.MED]]` requires further subdivision to avoid false aggregation of distinct spread events.
+
+> Put the figure contrasting the geographic distributions of 1.IN and 2.MED?
+
+The finding of such complex dispersal histories has important implications for phylogeographic analysis. 
+
+- Lots of people are interested in estimating the spread of pandemics.
+- Let's compare two pandemic populations: Second Pandemic [[1.PRE]] and Third Pandemic [[1.ORI]].
+
+Clade [[1.ORI]] represents 117 genomes sampled across 14 countries. However, more than 80% of the samples (94/117) come from three countries: Peru, the United States of America, and China. Thus the global diversity is extremely uneven and sparsely sampled.
+
+
+| Continent     | Country                  | N   |
+| ------------- | ------------------------ | --- |
+| Africa        | Madagascar               | 3   |
+|               | Algeria                  | 1   |
+|               | Zimbabwe                 | 1   |
+| South America | Peru                     | 65  |
+|               | Bolivia                  | 1   |
+|               | Brazil                   | 1   |
+| North America | United States of America | 18  |
+|               | Canada                   | 1   |
+| Asia          | China                    | 11  |
+|               | Vietnam                  | 5   |
+|               | India                    | 4   |
+|               | Indonesia                | 3   |
+|               | Russia                   | 2   |
+|               | Myanmar                  | 1   |
+
+- [[1.ORI2]]: Dispersal out of China to Myanmar and Vietnam
+- [[1.ORI3]]
+- 
+
+
+```bash
+countries=`grep -w "1.ORI" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 5 | sort`
+uniq_countries=(`echo $countries | sort | uniq`);
+for country in $uniq_countries; 
+do 
+  count=`echo $countries | grep -c $country`;
+  echo "|$country|$count|"; 
+done
+```
 
 <div style="page-break-after: always;"></div>
 
@@ -384,6 +403,26 @@ To improve the performance and convergence of [[Bayesian]] analysis, a subsample
 ### Phylogenetics
 
 Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
+
+#### Code
+
+```bash
+clades=("1.ORI" "1.IN" "1.ANT" "1.PRE" "2.MED" "2.ANT" "4.ANT" "3.ANT" "0.ANT" "0.ANT4" "0.PE" "0.PRE")
+outfile=main/iqtree/all/chromosome/full/filter5/filter-taxa/host_proportion.txt
+echo -e "clade\tsamples\thuman\tnon-human\tna" > $outfile
+
+for clade in $clades; 
+do 
+  samples=`grep -w "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | wc -l`;
+  human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Human"`;
+  non_human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Non-Human"`;
+  na=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^NA"`;
+  echo "$samples" | awk -v clade=$clade -v human=$human -v non_human=$non_human -v na=$na \
+  '{samples=$0;print clade"\t"samples"\t"(human/samples)*100"\t"(non_human/samples)*100"\t"(na/samples)*100}';
+done >> $outfile
+
+
+```
 
 ### Phylodynamics
 
@@ -662,3 +701,23 @@ Table:  Temporal signal detection using a relaxed clock with [[Bayesian Evaluati
 ### Misc
 
 - Genomic research frequently combines the ```major branch``` and ```biovar``` taxonomy to create clade designations, such as ```[[2.ANT]]``` to represent the *antiqua* biovar found on branch 2.
+
+
+
+|   Clade    |  N  | Origin  | Coefficient |         P Value         | % Human | % Non-Human | % NA |
+|:----------:|:---:|:-------:|:-----------:|:-----------------------:|:-------:|:-----------:|:----:|
+| [[1.ORI]]  | 117 | Modern  |    0.59     | 1.30 x 10<sup>-2</sup>* |   26    |     64      |  10  |
+|  [[1.IN]]  | 39  | Modern  |    0.28     | 6.30 x 10<sup>-2</sup>  |   15    |     85      |  0   |
+| [[1.ANT]]  |  4  | Modern  |    0.46     | 2.15 x 10<sup>-1</sup>  |   50    |      0      |  50  |
+| [[1.PRE]]  | 40  | Ancient |    0.23     | 6.30 x 10<sup>-2</sup>  |   100   |      0      |  0   |
+| [[2.MED]]  | 116 | Modern  |    0.06     | 5.46 x 10<sup>-2</sup>  |   15    |     83      |  3   |
+| [[2.ANT]]  | 54  | Modern  |    0.46     | 2.70 x 10<sup>-2</sup>* |   31    |     67      |  2   |
+| [[4.ANT]]  | 11  | Modern  |    0.46     | 2.00 x 10<sup>-2</sup>* |    9    |     82      |  9   |
+| [[3.ANT]]  | 11  | Modern  |    0.56     | 2.70 x 10<sup>-2</sup>* |    9    |     91      |  0   |
+| [[0.ANT]]  | 103 | Modern  |    0.58     | 1.30 x 10<sup>-2</sup>* |   10    |     88      |  2   |
+| [[0.ANT4]] | 12  | Ancient |    0.81     | 2.15 x 10<sup>-1</sup>  |   100   |      0      |  0   |
+|  [[0.PE]]  | 83  | Modern  |    0.71     | 1.30 x 10<sup>-2</sup>* |    7    |     64      |  29  |
+| [[0.PRE]]  |  8  | Ancient |    -0.07    | 5.46 x 10<sup>-1</sup>  |   100   |      0      |  0   |
+|    All     | 601 |         |    -0.04    |  4.35 x 0<sup>-1</sup>  |   25    |     69      |      |
+
+Table: Statistical results of a Mantel test.
