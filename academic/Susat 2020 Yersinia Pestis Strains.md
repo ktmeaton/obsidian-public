@@ -1,8 +1,10 @@
-
 ---
 tags: 
   - 📥/📰 
   - 📝/🌱 
+aliases:
+  - Susat et al. (2020)
+  - Susat et al. 2020
 ---
 
 # Susat 2020 Yersinia Pestis Strains

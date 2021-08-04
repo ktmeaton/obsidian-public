@@ -13,6 +13,10 @@ time: 11:00
 
 # Meet with Hendrik
 
+## [[2021-08-03]]
+
+- [Meeting Link](https://us02web.zoom.us/j/89913089336?pwd=WHNkeWNrM3o1TW9nY3hpL2F5T0ZHUT09)
+
 ## [[2021-06-24]]
 
 [Meeting Link](https://us02web.zoom.us/j/81199389961?pwd=L2lPSGNSaUtwaGxCa3BLaldVZ0dtZz09)

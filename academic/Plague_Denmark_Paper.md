@@ -55,7 +55,7 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Pape
 
 This curious dynamic of long-term epidemic cycling, followed by centuries of inactivity, is a distinctive feature of plague in Europe, where plague has been identified in both pandemic and pre-pandemic periods. As one of the oldest known strains of plague was discovered in Scandinavia [[Rascovan 2019 Emergence Spread Basal\|[@rascovan2019EmergenceSpreadBasal]]], there is great potential for an intensive examination of *[[Yersinia pestis|Y. pestis]]* in this region to reveal novel insight into the long-term epidemiology of plague.
 
-Despite the recent boom in ancient *[[Yersinia pestis\|Y. pestis]]* sequencing, Scandinavia is currently represented by only two genomes from Sweden (~5000 YBP) and Norway (~700 YBP). Due to this limited data, it is currently unknown to what extent plague was a local, endemic disease in this region as compared to novel epidemics with successive re-introduction. In addition, the identification of plague in pre-pandemic Scandinavia suggests the potential for *[[Yersinia pestis|Y. pestis]]* to have been present in this region outside of historically documented pandemics. Furthermore, the available historical documentation primarily derives from large commercial centres whereas Scandinavia archives, such as those in the Denmark, have retained limited information about the plague and its impact on society [[Christensen 2003 These Perilous Times\|[@christensen2003ThesePerilousTimes]]].
+Despite the recent boom in ancient *[[Yersinia pestis\|Y. pestis]]* sequencing, Scandinavia is currently represented by only two genomes from Sweden (~5000 YBP) and Norway (~700 YBP). Due to this limited data, it is currently unknown to what extent plague was a local, endemic disease in this region as compared to novel epidemics with successive re-introduction. In addition, the identification of plague in pre-pandemic Scandinavia suggests the potential for *[[Yersinia pestis|Y. pestis]]* to have been present in this region outside of historically documented pandemics. Furthermore, the available historical documentation primarily derives from large commercial centres whereas Scandinavian archives, such as those in the Denmark, have retained limited information about the plague and its impact on society [[Christensen 2003 These Perilous Times\|[@christensen2003ThesePerilousTimes]]].
 
 In response to this region's historical importance and lack of genomic representation, this study samples and screens skeletal remains from Danish archaeological sites occupied over 900 years, to detect the presence of *[[Yersinia pestis|Y. pestis]]*. Following genomic capture of *[[Yersinia pestis|Y. pestis]]* from plague-positive individuals, we examine the temporal and geographic structure of Danish plague within a global context.
 
@@ -165,14 +165,14 @@ Table: Plague positive summary of low coverage genomes. Human (%) and plague (%)
 
 ### Molecular Dating
 
-A [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] revealed decisive support for temporal signal during the [[Second Pandemic]], with the relaxed clock model having the highest likelihood (Table @tbl:bets_summary). After running the Monte Carlo Markov Chain (MCMC) analysis for a total of 150,000,000 generations, the estimated sample size (ESS) scores were sufficiently high (>200) for all parameters except for the tip-date of Russian strain Azov38, which could not be refined beyond a 95% highest posterior density (HPD) interval of 1553 to 1686 (Figure @fig:SAMEA7313243_45_date).
+A [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] revealed decisive support for temporal signal during the [[Second Pandemic]], with the relaxed clock model having the highest log marginal likelihood (Table @tbl:bets_summary). After running the Monte Carlo Markov Chain (MCMC) analysis for a total of 150,000,000 generations, the estimated sample size (ESS) scores were sufficiently high (>200) for all parameters except for the tip-date of Russian strain Azov38, which could not be refined beyond a 95% highest posterior density (HPD) interval of 1553 to 1686 (Figure @fig:SAMEA7313243_45_date).
 
-|     Model     | Dates |  Likelihood  | Dates vs. No Dates | Relaxed Clock vs. Strict Clock |
-|:-------------:|:-----:|:------------:|:------------------:|:------------------------------:|
-| Relaxed Clock |  Yes  | **-5947948** |        715         |              140               |
-|               |  No   |   -5948663   |         --         |              174               |
-| Strict Clock  |  Yes  |   -5948088   |        749         |               --               | 
-|               |  No   |   -5948837   |         --         |               --               |
+|     Model     | Dates | Log Marginal Likelihood | Dates vs. No Dates | Relaxed Clock vs. Strict Clock |
+|:-------------:|:-----:|:-----------------------:|:------------------:|:------------------------------:|
+| Relaxed Clock |  Yes  |      **-5947948**       |        715         |              140               |
+|               |  No   |        -5948663         |         --         |              174               |
+| Strict Clock  |  Yes  |        -5948088         |        749         |               --               |
+|               |  No   |        -5948837         |         --         |               --               |
 
 Table: Summary of clock model comparisons using a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] analysis. {#tbl:bets_summary}
 
@@ -255,7 +255,7 @@ Following the medieval Period, the evolutionary dynamic of *[[Yersinia pestis|Y.
 
 The first lineage, termed the Baltic-Alps, has been previously observed in the Baltic countries (Lithuania, Poland, Germany) and the Alps (Switzerland). Two Danish genomes from coastal Ribe (G207, G861x1035) and one sample from inland Viborg (Gr GC 15) fall within the Baltic-Alps clade. This localization of genetic diversity is highly congruent with historical documentation noting that the frequency of plague in 15th century Denmark was similar to the rest of Europe north of the Alps [[christensen2003ThesePerilousTimes\|[@christensen2003ThesePerilousTimes p. 417]]. Furthermore, from the 16th century onward, historical sources often explicitly state that plague came to Denmark from northern Germany and the Baltic region. 
 
-The second lineage that emerges in this period gives rise to later epidemics of plague in England, Russia, and France. These isolates have been hypothesized to derived from well-documented plague epidemics, Great Northern War Outbreak (1711-1721) and the Great Plague of Marseille (1720-1722). No Danish plague in this study is associated with this lineage.
+The second lineage that emerges in this period gives rise to later epidemics of plague in England, Russia, and France. These isolates have been hypothesized to have derived from well-documented plague epidemics, Great Northern War Outbreak (1711-1721) and the Great Plague of Marseille (1720-1722). No Danish plague in this study is associated with this lineage.
 
 The last appearance of Danish *[[Yersinia pestis\|Y. pestis]]* in this study dates to between 1539 and 1655 (Table @tbl:dates_baltic_alps). No evidence of *[[Yersinia pestis\|Y. pestis]]* was found after the mid-17th century. This is in agreement with the last documented plague outbreak on the mainland (Jutland) which occurred from 1654 to 1657 [[christensen2003ThesePerilousTimes\|[@christensen2003ThesePerilousTimes p. 441;]] [[frandsen2010LastPlagueBaltic\|@frandsen2010LastPlagueBaltic]]]. While plague would later return to Denmark in 1711 during the Great Northern War Outbreak, this final outbreak was restricted to the island of Zealand.
 
@@ -503,3 +503,12 @@ Table: Estimated tip-dates for the England-France-Russia clade. OBS strains were
 ### *pla* Depletion
 
 ![Relative Depletion of the plasminogen activator (*pla*) virulence factor on the Second Pandemic phylogeny.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/5b069f4/denmark/locus_coverage_collect/all/depletion_tree_pla.png){#fig:pla_ratio width=100%}
+## Reviews {.page_break_before}
+
+### July 2021
+- Substitute Gottfried reference for Kay Peter Jankrift (2020) *In the Face of “Pestilence”: Epidemics in Westphalian and Rhenish cities (1349-1600)*, Chapter 3, *Epidemiological factors: a comparison of urban areas of activity between the Lower Rhine and Weser*.  An authoritative geography of the Baltic-Alpine axis of plague dissemination.
+- Add the priors used for BETS.
+- A little more on the rationale behind choosing the 40 other samples to nest the new samples in phylogenetically.
+- How many informative sites overall did you have in your alignment? How many are included in your newer samples? How many sites corresponds to 'high coverage' too? I see >=3x mean depth, but what are the error bars?
+- When discussing clustering patterns, refer to how strong the support is.
+- Clades are monophyletic by definition! So use a different word for non-monophyletic "groups" or populations.
