@@ -123,7 +123,7 @@ The challenge of categorizing plague by metabolism is, unsurprisingly, also an o
 
 #### Uncertainty
 
-In light of this uncertainty and apparent contradictions, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. In the following sections, we explore the newly curated phylogeny and metadata to identify phylogenetic patterns in host associations, geographic dispersal, and epidemiological events.  For statistical analysis, we combine three taxonomic systems (`major branch`, `biovar`, `time period`) to delineate 12 sub-populations. This approach was selected as it:
+In light of this uncertainty and apparent contradictions, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. In the following sections, we explore the newly curated phylogeny and metadata to identify phylogenetic patterns in host associations, geographic dispersal, and epidemiological events.  For statistical analysis, we combine all three taxonomic systems (`major branch`, `biovar`, `time period`) to delineate 12 sub-populations. This approach was selected as it:
 
 1. Is commonly used in comparative genomics of *[[Yersinia pestis|Y. pestis]]* on a global scale [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]].
 2. Maintains adequate samples sizes  for statistical analysis.
@@ -181,14 +181,11 @@ A comparison of geographic distributions for outlier populations. Left: the high
 
 The finding of such complex dispersal histories has important implications for phylogeographic analysis. 
 
-- Lots of people are interested in estimating the spread of pandemics.
-- Let's compare three pandemic populations: Second Pandemic [[1.PRE]] and Third Pandemic [[1.ORI]].
+> **Kat's Notes:** I still need to write all of the context for the following figure...
 
 ![
 Phylogeography of the First, Second, and Third Plague Pandemics. 
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/f4367dd/main/auspice/all/chromosome/full/filter5/phylogeography_1.ORI_1.PRE_0.ANT4.png){#fig:phylogeography_pandemics}
-
-<div style="page-break-after: always;"></div>
 
 ### Phylodynamics  {.page_break_before}
 
@@ -198,13 +195,11 @@ The complex geographic dispersal history of plague also reveals an important con
 The temporal distribution of *Y. pestis* genomes.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/7c39160/main/iqtree/all/chromosome/full/filter5/filter-taxa/timeline_all.png){#fig:timeline}
 
-The first issue concerns the misleading nature of Figure @fig:timeline, which implies a sudden burst of diversity appearing in the Modern period. In reality, this diversity had become established centuries before, if not millennia, but is genetically underrepresented. One example of this bias is the *pestoides* biovar from Asia (`[[0.PE]]`), which was first found during the Bronze Age and then is only detected again 4000 years later in the Modern period. The long, unsampled history of this population highlights the sampling biases present in ancient DNA studies, which have primarily targeted human populations from Western Europe [[Wagner et al. 2014 Yersinia Pestis Plague|[@wagner2014YersiniaPestisPlague;]] [[Bos et al. 2016 Eighteenth Century Yersinia|@bos2016EighteenthCenturyYersinia;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]].
+The first issue concerns the misleading nature of Figure @fig:timeline, which implies a sudden burst of diversity appearing in the Modern period. In reality, this diversity had become established centuries before but is genetically underrepresented. One example of this bias is the *pestoides* biovar from Asia (`[[0.PE]]`), which was first found during the Bronze Age and then is only detected again 4000 years later in the Modern period. The long, unsampled history of this population highlights the sampling biases present in ancient DNA studies, which have primarily targeted human populations from Western Europe [[Wagner et al. 2014 Yersinia Pestis Plague|[@wagner2014YersiniaPestisPlague;]] [[Bos et al. 2016 Eighteenth Century Yersinia|@bos2016EighteenthCenturyYersinia;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]].
 
 An even more intriguing example of unsampled diversity, are the populations deriving from ```Branch 2```. Lineages from this `major branch` fulfill many of the criteria of pandemic lineages, and yet do not play a role in the three pandemic narrative. ```Branch 2``` emerges at the same time as, but separate from, the known [[Second Pandemic]] lineages, as part of the "big bang polytomy" (Figure @fig:divtree_branch_major). Furthermore, the *medievalis* population (```[[2.MED]]```) has been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]] and was observed to have the fastest spread velocity of any *[[Yersinia pestis|Y. pestis]]* lineage [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. Given this epidemiological significance, it is surprising that these sub-populations have been largely overlooked in the pandemic taxonomy of *[[Yersinia pestis|Y. pestis]]*. As ancient DNA sampling strategies expand out of Europe, it will be important to consider how to adapt and expand the three pandemic nomenclature to encompass this new diversity.
 
-The second major issue also concerns sampling biases, and involves the growing awareness of the temporal overlap of the Second and the Third Pandemic, represented by populations `[[1.PRE]]` and `[[1.ORI]]` respectively. Previously, the temporal extents of these events were mutually exclusive, dating from the 14th to 18th century, and the late 19th to mid-20th century respectively [[Gage 2005 Natural History of Plague\|@gage2005NaturalHistoryPlague]]. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague [[Varlik 2014 New Science Old\|[@varlik2014NewScienceOld]]]. The Second Pandemic is now recognized to have extended into at least the 19th Century in the Ottoman Empire [[Bolanos 2019 Ottomans Global Crises\|[@bolanos2019OttomansGlobalCrises;]] [[Varlik 2020 Plague That Never\|@varlik2020PlagueThatNever]]. Similarly, the Third Pandemic is now hypothesized to have began as early as the 18th century in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]].  Unfortunately, this crucial transition period remains unsampled, as no genomic evidence has been found between 1772 and 1912.  Thus it remains unclear where exactly to draw a genetic distinction, if it even exists, between the Second and Third Pandemic.
-
-> TRANSITION!
+The second major issue also concerns the growing awareness of the temporal overlap of the Second and the Third Pandemic, represented by populations `[[1.PRE]]` and `[[1.ORI]]` respectively. Previously, the temporal extents of these events were mutually exclusive, dating from the 14th to 18th century, and the late 19th to mid-20th century respectively [[Gage 2005 Natural History of Plague\|@gage2005NaturalHistoryPlague]]. Recent historical scholarship has contested this claim, and demonstrated that these constraints are a product of a Eurocentric view of plague [[Varlik 2014 New Science Old\|[@varlik2014NewScienceOld]]]. The Second Pandemic is now recognized to have extended into at least the 19th Century in the Ottoman Empire [[Bolanos 2019 Ottomans Global Crises\|[@bolanos2019OttomansGlobalCrises;]] [[Varlik 2020 Plague That Never\|@varlik2020PlagueThatNever]]. Similarly, the Third Pandemic is now hypothesized to have began as early as the 18th century in southern China [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]].  Unfortunately, this crucial transition period remains unsampled, as no genomic evidence has been found between 1772 and 1912.  Thus it remains unclear where exactly to draw a genetic distinction, if it even exists, between the Second and Third Pandemic.
 
 #### Temporal Signal
 
@@ -218,59 +213,41 @@ However, the Bayesian analysis exhibited poor sampling of the relaxed clock mode
 
 To identify patterns in rate variation that may improve the clock model, we first performed visual inspection of the [[Root to Tip Regression\|root-to-tip regression]] residuals (Figure @fig:rtt_all_branch-major). Three out of twelve populations appeared to have temporal signal according to a linear model, namely the ancient lineages isolated from human skeletal remains: ```[[0.PRE]]``` (Bronze Age),  ```[[0.ANT4]]``` (Late Antiquity), and ```[[1.PRE]]``` (Medieval/Early Modern). Indeed, when the [[Root to Tip Regression|root-to-tip regression]] was performed on populations in isolation, these three groups demonstrated strong evidence of strict-clock behavior (Table @tbl:rtt_statistics, Figure @fig:rtt_clades). A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by population proved even more sensitive, as temporal signal was detected in all populations with three exceptions: [[1.IN]], [[2.ANT]], and [[3.ANT]] (Table @tbl:bets_temporal_signal). Furthermore, for all populations with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock (SC). 
 
-> **Kat's Note:** I still don't understand what's going on with [[0.PRE]] having strict clock signal but no relaxed clock signal.
+> **Kat's Note:** Doing some more testing about the mysterious clock of [[0.PRE]]...
 
 The ubiquitous support for a relaxed clock model was initially surprising, as the [[Root to Tip Regression\|root-to-tip regression]] suggested strict clock-like behavior in several populations. However, this disparity can largely be explained by the known statistical limitations of a [[Root to Tip Regression\|root-to-tip regression]] [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]] which assumes either 1) no temporal structure, or 2) temporal structure following a linear model. Thus, a [[Root to Tip Regression\|root-to-tip regression]] is strictly a test of the linear model, and will give no indication that other models are a better fit to the data. From this finding, we conclude that a [[Root to Tip Regression\|root-to-tip regression]] is a poor statistical test of temporal signal in *[[Yersinia pestis|Y. pestis]]*, and great caution should be taken in interpreting the regression statistics.
 
 #### Rate Variation
 
-Our approach of fitting nuanced models segregated by population revealed that the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data, which was highly unstable, fell within this published range with a 95% HPD between 1.16 x 10<sup>-8</sup> and 1.95 x 10<sup>-8</sup>. However, this global rate is a considerable underestimate, as populations with detectable temporal signal ranged from 2.33 x 10<sup>-8</sup> to 7.70 x 10<sup>-7</sup> (Table @tbl:bets_rate_cov_tmrca, Figure @fig:rate_coefficient). This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]* [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]].
+Our approach of fitting nuanced models segregated by population revealed that the 'true' substitution rates of *[[Yersinia pestis|Y. pestis]]* may be much higher than previously thought. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the slowest observed substitution rates, around  1 x 10<sup>-8</sup>, which is on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary;]] [[Cui 2013 Historical Variations Mutation|@cui2013HistoricalVariationsMutation]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. The [[Bayesian Evaluation of Temporal Signal|BETS]] analysis on the non-segregated data, which was highly unstable, fell within this published range with an estimated rate of 1.55 x 10<sup>-8</sup> (Figure @fig:rate_coefficient). However, this global rate is a considerable underestimate, as the substitution rate ranged from 3.63 x 10<sup>-8</sup> in the First Pandemic population (`[[0.ANT4]]`) to 6.16 x 10<sup>-7</sup> in the *pestoides* biovar (`[[0.PE]]`). This study therefore reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher than previously thought and more comparable to bacteria such as *[[Mycobacterium tuberulcosis]]* [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]].
 
-- This has consequences for doing node dating.
+Once again, a driving factor behind the rate variation in *[[Yersinia pestis|Y. pestis]]* appears to be the role of humans as hosts. The populations with the slowest substitution rates were isolated exclusively from humans, and include `[[0.PRE]]` from the Bronze Age, `[[0.ANT4]]` from the First Pandemic, and `[[1.PRE]]` from the Second Pandemic. Similarly, the *pestoides* biovar `[[0.PE]]` is composed of the smallest proportion of human samples, and has the fastest substitution rate. 
 
-> **Kat's Notes:**<br>
-> - Absolute differences in substitution rate, 0.PE and 2.MED higher
-> - Relative variation is very similar and overlapping
->- Progressive increase in rate along Branch 1.
-- 
+> **Kat's Notes:** What is the significance of this finding?
 
-![The mean substitution rate and coefficient of variation by population.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/b9eb3ee/main/beast/all/chromosome/clade/log/meanRate_coefficientOfVariation.png){#fig:rate_coefficient width=75%}
+![The mean substitution rate (left) and coefficient of rate variation (right) by population. Each distribution is annotated with the peak value. ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/ee37554/main/beast/all/chromosome/clade/log/rate_coeff.png){#fig:rate_coefficient width=60%}
 
-![Age of the root.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/b9eb3ee/main/beast/all/chromosome/clade/log/age_root.png){#fig:rate_coefficient width=50%}
+<div style="page-break-after: always;"></div>
 
-![Age of roots by clades.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/f6a5489/main/beast/all/chromosome/clade/log/age_root_clades.png){#fig:rate_coefficient}
+#### Node Dating  {.page_break_before}
 
-#### Node Dating
+The discovery that the global substitution rate of *[[Yersinia pestis|Y. pestis]]* is a considerable underestimate has important ramifications for node-dating. In Figure @fig:age_root_tree, we compare the estimate tMRCA's by population to the divergence order observed in the maximum-likelihood phylogeny. The non-segregated analysis (`All`) produces a much older date on the root with greater uncertainty (7326 - 3547 BCE) as compared to the tMRCA of the most basal clade `[[0.PRE]]` (3098 - 2786 BCE).
 
-To evaluate the dates associated with ancestral events, we annotated the maximum likelihood phylogeny with the estimated tMRCAs for populations with temporal signal (Figure @fig:divtree_node_dating). When re-contextualized into the global phylogeny, the node dates are topologically non-conflicting, meaning that parent nodes correctly pre-date child nodes. The sole exception is the estimated divergence of modern [[0.PE]] which conflicts with the dates associated with the [[First Pandemic\|First]] and [[Second Pandemic]]. This conflict can be explained by several observations:
+ All populations, except two, have topologically-congruent dates as parent nodes correctly pre-date descendant nodes. The two exceptions to this are the *pestoides* and *antiqua* biovars from Branch 0, `[[0.PE]]` and `[[0.ANT]]`.
 
-1. [[0.PE]] has the largest amount of uncertainty concerning the substitution rate.
-1. [[0.PE]] has the greatest pairwise genetic distances, and longest root-to-tip distances to their MRCA.
+> **Kat's Note:** I'm still thinking/working on these results and interpretation.
 
->1. The single ancient sample of [[0.PE]] was excluded from the BEAST analysis! This was partly by mistake, as for other clades, I separated out the ancient and modern samples based on their drastically different sampling periods. But for [[0.PE]], there's only one ancient sample and it got dropped.
+![The time to most recent common ancestor (tMRCA) by population. The maximum-likelihood phylogeny is overlaid, where all extant diversity has been collapsed into the ancestral node at the MRCA.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/c302d0e/main/beast/all/chromosome/clade/log/tMRCA_tree.png){#fig:age_root_tree width=80%}
 
-![The maximum likelihood phylogeny annotated with the 95% HPD on clade root date.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/206f481/main/auspice/all/chromosome/full/filter5/divtree_node-dating.png){#fig:divtree_node_dating}
-
-This drastic improvement in model performance reveals four intriguing aspects about the evolution of *[[Yersinia pestis|Y. pestis]]*.
-
-The first aspect is that **fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space. In contrast, successfully fitting models on a clade-by-clade basis reveals that **<i>[[Yersinia pestis|Y. pestis]]</i> has more temporal signal than previously thought.** The observation that different populations have evolved at drastically different rates may explain the previous finding that the apparent structure in *[[Yersinia pestis\|Y. pestis]]* is dependent on dataset composition [[Duchene 2016 Genome-scale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]]. 
-
-The final finding from constructing nuanced models concerns the outlier populations for which no detectable signal could be found, namely [[0.ANT]], [[2.ANT]], [[3.ANT]], [[2.MED]], and [[1.IN]]. The reason for this lack of signal is unclear, but one explanation may be that **these *[[Yersinia pestis|Y. pestis]]* populations are inappropriately separated based on the ```major branch``` and ```biovar``` systems**. We hypothesis that alternative strategies to subdivide these populations will yield greater insight, based on the methodological improvements demonstrated in this study.
 
 ## Conclusion {.page_break_before}
 
-### 1. We resolve the debate of whether *[[Yersinia pestis|Y. pestis]]* has temporal signal.
+1.  **Fitting a single spatiotemporal model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**.  This can be seen in the distinct dispersal patterns of plague populations, which oscillate between endemic spread and radial bursts. This can also be observed in the relative instability of the molecular clock analysis which fails to converge in parameter space.
 
-- **Fitting a single clock model to the global phylogeny of *[[Yersinia pestis|Y. pestis]]* is not statistically supported**. This can be observed in the relative instability of the [[MCMC]] analyses on the *reduced*  dataset, which fails to converge in parameter space.
-- **Separating the genomic dataset by clade recovers robust temporal signal for the majority of clades**. But there are several clades where we were unable to model the temporal dynamics. This may because these populations should be divided differently than the branch nomenclature system dictates.
-- **[[Root to Tip Regression|Root-to-tip regression]] is a poor statistical test of temporal signal compared to [[Bayesian Evaluation of Temporal Signal|BETS]]**. The [[Root to Tip Regression|root-to-tip regression]] has several known limitations, namely the underlying assumption of strict clock-behavior and the non-independence of data points [[Duchene 2020 Bayesian Evaluation Temporal|[@duchene2020BayesianEvaluationTemporal]]]. A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis counters these statistical violates, and is overall more sensitive given that multiple clock models can be tested.  In this study, [[root-to-tip regression]] indicated temporal signal in 3/12 lineages while the [[BETS]] analysis detected signal in 7/12 lineages.
+2. **Separating the genomic dataset by clade recovers robust geographic and temporal signal**. We observe a significant relationship between geographic distance and genetic distance in 50% (6/12) of populations examined in this study. We also find evidence of robust temporal signal in 75% (9/12) of populations.
 
+3. **Host associations are a driving factor in the variation observed between *[[Yersinia pestis|Y. pestis]]* populations.** Plague populations isolated from humans have poor geographic structure and relatively slower substitutions rates. One result is greater uncertainty in phylogeographic reconstructions for these populations.
 
->1. **The true substitution rates of *[[Yersinia pestis|Y. pestis]]* are much higher than previously thought.**<br> 
-> The mean substitution rate of all global populations (1.59E-8) is a drastic underestimate compared to the rates observed by clade which range from 3.51E-8 to 1.29E-7. The clades without temporal signal are pulling down the mean estimate. Previous work estimated that *[[Yersinia pestis|Y. pestis]]* has one of the lowest observed substitution rates, on par with the exceptionally slow-evolving *[[Mycobacterium leprae]]* [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]]. This study instead reports the substitution rate of *[[Yersinia pestis|Y. pestis]]* to be much higher, and comparable to *[[Mycobacterium tuberulcosis]]*.<br>
-
-
->1. **The dispersal patterns  of *[[Yersinia pestis|Y. pestis]]* is not accurately reconstructed using 
 
 ## Methods {.page_break_before}
 
@@ -312,227 +289,15 @@ To improve the performance and convergence of [[Bayesian]] analysis, a subsample
 
 Model selection was performed using [[Modelfinder]] which identified the K3Pu+F+I model as the optimal choice based on the [[Bayesian Information Criterion\|Bayesian Information Criterion (BIC)]] [[Kalyaanamoorthy 2017 ModelFinder Fast Model\|[@kalyaanamoorthy2017ModelFinderFastModel]]]. A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE]] [[Minh 2020 IQTREE New Models\|[@minh2020IQTREENewModels]]]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]], with a threshold of 95% required for strong support [[Hoang 2018 UFBoot2 Improving Ultrafast\|[@hoang2018UFBoot2ImprovingUltrafast]]].
 
-#### Code
-
-```bash
-clades=("1.ORI" "1.IN" "1.ANT" "1.PRE" "2.MED" "2.ANT" "4.ANT" "3.ANT" "0.ANT" "0.ANT4" "0.PE" "0.PRE")
-outfile=main/iqtree/all/chromosome/full/filter5/filter-taxa/host_proportion.txt
-echo -e "clade\tsamples\thuman\tnon-human\tna" > $outfile
-
-for clade in $clades; 
-do 
-  samples=`grep -w "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | wc -l`;
-  human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Human"`;
-  non_human=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^Non-Human"`;
-  na=`grep "$clade" main/iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv | cut -f 23 | grep -c "^NA"`;
-  echo "$samples" | awk -v clade=$clade -v human=$human -v non_human=$non_human -v na=$na \
-  '{samples=$0;print clade"\t"samples"\t"(human/samples)*100"\t"(non_human/samples)*100"\t"(na/samples)*100}';
-done >> $outfile
-
-
-```
-
 ### Phylodynamics
 
 To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date using the python package ```statsmodels``` [[Seabold 2010 Statsmodels Econometric Statistical\|[@seabold2010StatsmodelsEconometricStatistical]]]. Given the relative simplicity of a regression model, the *full* dataset of 601 genomes was used. For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] was conducted. As the complexity of Bayesian modeling is computationally intensive, the *reduced* dataset (N=191) was used.
-
-> **Kat's Notes**:<br>
-> - I will need Sebastian and Leo's input here to write the BEAST methods section.
-
-#### Code
-
-
-##### Directories and Inputs
-
-```bash
-clades=(`cut -f 1 iqtree/all/chromosome/full/filter5/filter-clades/clades.txt`)
-models=("strict_clock" "relaxed_clock")
-dates=("dates" "no_dates")
-dir="beast/all/chromosome/clade"
-
-cd /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main;
-
-for clade in ${clades[@]};
-do
-  for model in ${models[@]};
-  do
-    for date in ${dates[@]};
-	do
-	  echo $dir/$clade/$model/$date;
-	  mkdir -p $dir/$clade/$model/$date/model_test/;
-	  mkdir -p $dir/$clade/$model/$date/run/;	 
-
-	  /mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
-	    -m iqtree/all/chromosome/full/filter5/filter-taxa/metadata.tsv \
-		-a iqtree/all/chromosome/full/filter5/filter-clades/${clade}/${clade}.fasta \
-		--nex beast/all/chromosome/clade/${clade}/${clade}.nex 
-	done;
-  done;
-done;
-```
-
-##### Beauti
-
-1. Import alignment (```beast.nex```).
-1. Rename partitions (```dna```).
-1. Site Model (```GTR```).
-1. Tree Prior: (```Coalescent Constant Population```).
-1. Chain Length (100,000,000)
-2. Chain samples (10,000).
-3. Screen log (100,000).
-4. Save As -> ```beast.xml```
-5. Inspect the XML, to make sure the tip dating priors were setup correctly and logged. 
-
-
-##### XML Edit
-
-```bash
-clades=(`cut -f 1 iqtree/all/chromosome/full/filter5/filter-clades/clades.txt`)
-models=("strict_clock" "relaxed_clock")
-dates=("dates" "no_dates")
-dir="beast/all/chromosome/clade"
-constants=`tr "," " " < snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt`;
-rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/clade';
-
-for clade in ${clades[@]};
-do
-  for model in ${models[@]};
-  do
-    for date in ${dates[@]};
-	do
-	  file=$dir/$clade/$model/$date/model_test/beast.xml;	 
-	  if [[ -f $file ]]; 
-	  then 
-	    # Restore the original backup file	 	  
-		bak_file=${file}.bak
-	    if [[ -f ${bak_file} ]]; 	
-		then
-		  echo "Restoring ${bak_file}"
-		  mv ${bak_file} $file;
-		fi;
-		
-		# Backup the original
-		echo "Backing up ${file}"		
-		cp $file $file.bak;
-		
-		# Create tmp file to edit
-		echo "Creating temp file $file.tmp"
-		cat $file | tr -d "\r" | tr "\n" "#" > $file.tmp
-		
-		# Change the original alignment name and ID
-		IN='<data#id="dna"#spec="Alignment"#name="alignment">';
-		OUT='<data#id="original-dna"#spec="Alignment"#name="original-dna">';
-		sed -i "s|$IN|$OUT|g" $file.tmp;	
-		
-		# Add a data element with constant sites
-		IN='<\/data>'
-		OUT='<\/data>#\t\t<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="'$constants'"\/>';
-		sed -i "s|$IN|$OUT|g" $file.tmp;
-		
-		# Save for the actual run
-		run_file=$dir/$clade/$model/$date/run/beast.xml;
-		cat $file.tmp | tr "#" "\n" > ${run_file};	
-		
-		# Change the ending run and mcmc elements for model testing
-		IN='<\/run>'
-		OUT='<\/mcmc>#<\/run>'
-		sed -i "s|$IN|$OUT|g" $file.tmp			
-		
-		# Changing the starting run and mcmc elements
-		IN='<run'
-		OUT='<run spec="beast.inference.PathSampler"#\tchainLength="1000000"#\talpha="0.3"#\trootdir="'$rootdir/$clade/$model/$date/model_test/'"#\tburnInPercentage="0"#\tpreBurnin="100000" deleteOldLogs="true"#\tnrOfSteps="100">#\tcd $(dir)#\tjava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml##<mcmc'
-		sed -i "s|$IN|$OUT|g" $file.tmp	
-		
-		# Rename
-		cat $file.tmp | tr "#" "\n" > $file; 
-		rm -f $file.tmp;
-		
-	  fi;
-	done;
-  done;
-done;
-```
-
-##### Run
-1. Activate conda environment:
-	```bash
-	conda activate beast2
-	```
-1. Strict clock with dates
-	```bash
-	beast \
-	  -seed 4141239047 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log	
-	```
-1. Strict clock without dates
-	```bash
-	beast \
-	  -seed 75273452 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-1. Relaxed clock with dates
-	```bash
-	beast \
-	  -seed 1259807514 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-1. Relaxed clock without dates
-	```bash
-	beast \
-	  -seed 5435425542 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-1. Full Run
-	```bash
-	beast \
-	  -seed 45375043257 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-
-##### Checklist
-
-|   Clade    | Model Test | Run | Time End |
-|:----------:|:----------:|:---:|:--------:|
-| [[1.ORI]]  |     ✅     | ✅  |          |
-|  [[1.IN]]  |     ✅     | 🔸  |  ~18:00  | 
-| [[1.ANT]]  |     ⬜     | ⬜  |          |
-| [[1.PRE]]  |     ⬜     | ⬜  |          |
-| [[2.MED]]  |     ⬜     | ⬜  |          |
-| [[2.ANT]]  |     🔸     | ⬜  |  ~18:00  |
-| [[4.ANT]]  |     ⬜     | ⬜  |          |
-| [[3.ANT]]  |     ⬜     | ⬜  |          |
-| [[0.ANT]]  |     ⬜     | ⬜  |          |
-| [[0.ANT4]] |     ⬜     | ⬜  |          |
-|  [[0.PE]]  |     ⬜     | ⬜  |          |
-| [[0.PRE]]  |     ⬜     | ⬜  |          |
-
-### Public Resource
-
-The maximum likelihood and Bayesian phylogenetic trees were uploaded to the [[Nextstrain]] visualization platform at https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main. All curated metadata is available for download via Nextstrain, Github, and Zenodo.
-
-> **Kat's Notes**:<br>
-> - I'll need to prepare stable and archived hosting links before submission.
 
 ## References {.page_break_before}
 
 <div id="refs"></div>
 
-## Appendix
+## Appendix  {.page_break_before}
 
 ### [[Phylodynamics]]
 
