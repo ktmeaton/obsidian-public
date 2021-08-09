@@ -93,13 +93,13 @@ Progress towards these key objectives is anticipated to benefit both prospective
 
 ## Results and Discussion  {.page_break_before}
 
-### Population Structure
+### Population Structure of *[[Yersinia pestis]]*
 
-Population structure, or genetic structure, arises when a group of organisms subdivide and diversify in relative isolation. Identifying these sub-populations is a critical step in reconstructing the evolutionary history of a species, as misspecification can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. Phylogenetic analysis is a popular and powerful technique to explore this structure [[Volz 2020 Identification Hidden Population\|[@volz2020IdentificationHiddenPopulation]]], as it directly models the genetic diversity and divergences that have occurred. The driving factors underlying this structure can then be interrogated using an assortment of contextual metadata including phenotype, collection date, and geography.
+Population or genetic structure, arises when a group of organisms subdivide and diversify in relative isolation. Identifying these populations is a critical step in reconstructing the evolutionary history of an organism, as misspecification can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. Phylogenetic analysis is a technique used to explore this structure [[Volz 2020 Identification Hidden Population\|[@volz2020IdentificationHiddenPopulation]]], as it attempts to model the existing genetic diversity and divergences that have occurred. The factors driving the structure can then be interrogated using an assortment of contextual metadata including phenotype, collection date, and geography.
 
-To investigate the global population structure of *[[Yersinia pestis|Y. pestis]]*, we estimated a maximum-likelihood phylogeny from 603 genomes (600 *[[Yersinia pestis|Y. pestis]]* isolates,  1 *[[Yersinia pestis|Y. pestis]]* reference, and 2 *[[Y. pseudotuberculosis]]* outgroup taxa). The genomic alignment was composed of 10249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3844 sites shared by at least two genomes. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine intra-species diversity. 
+To investigate the global population structure of *[[Yersinia pestis|Y. pestis]]*, we estimated a maximum-likelihood phylogeny from 601 genomes, including 540 modern (89.9%) and 61 ancient (10.1%) strains. In addition,  two genomes of the outgroup taxa *[[Yersinia pseudotuberculosis]]* were included to root the tree. The alignment consisted of 10,249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine intra-strain diversity.
 
-In Figure @fig:divtree_branch_major, the maximum-likelihood phylogeny is visualized alongside the four major taxonomic systems currently used to define the population structure of *[[Yersinia pestis|Y. pestis]]*. These include the major phylogenetic branches, biovars, and time periods.
+In Figure @fig:divtree_branch_major, we contextualize the maximum-likelihood phylogeny using three nomenclature systems: the `major branches`, `biovars`, and `time periods`.  In the following section, we compare how each system defines the population structure of *[[Yersinia pestis|Y. pestis]]*, and the uncertainty surrounding these incongruent divisions.
 
 ![
 The maximum-likelihood phylogeny depicts the global population structure of *[[Yersinia pestis\|Y. pestis]]*. The divisions of three taxonomic systems are provided for context.
@@ -107,19 +107,28 @@ The maximum-likelihood phylogeny depicts the global population structure of *[[Y
 
 <div style="page-break-after: always;"></div>
 
+### Population Structure Nomenclature
+
 #### Major Branch
 
-A comparison of sub-typing systems reveals great uncertainty with regards to  the population structure of *[[Yersinia pestis|Y. pestis]]*. One approach is to divide the global phylogeny of *[[Yersinia pestis|Y. pestis]]* into ```major branches``` according to the relative position of the [[Big Bang Polytomy\|"big bang" polytomy]] [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this multifurcation are grouped into ```[[Branch 0]]``` and those emerging after are the monophyletic clades ```Branches 1-4```. Higher resolution can be achieved by further sub-dividing these lineages into numerous `minor branches`.
-
-Because the [[Big Bang Polytomy\|"big bang" polytomy]] plays such a central role in this system, there is growing interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, an inability to identify phenotypes distinguishing these ```major branches``` poses a significant challenge, and thus the exact epidemiological significance of the [[Big Bang Polytomy\|"big bang" polytomy]] remains unclear.
+The `major branch` system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to the “big bang” polytomy  [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this polytomy are grouped into `Branch 0` and those diverging after form `Branches 1-4`. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, the epidemiological significance of the “big bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. The simplicity of this system, in which populations are defined by a singular event, is therefore offset by the considerable diversity that is collapsed into each `major branch`.
 
 #### Biovar
 
-An example of this phenotypic challenge can be seen in the population structure defined by the ```biovar``` system. *[[Yersinia pestis|Y. pestis]]* can be categorized using a suite of metabolic properties into the classical biovars: *antiqua* (```ANT```), *medievalis* (```MED```), *orientalis* (```ORI```), and *microtus*/*pestoides* (```PE```) [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics;]] [[Li 2009 Genotyping Phylogenetic Analysis\|@li2009GenotypingPhylogeneticAnalysis]]]. The *intermediate* biovar (```IN```) is also used to reflect an intermediate state during the transition from *antiqua* to *orientalis.* While these divisions don't fully contradict the ```major branches```, they do considerably shift the defining boundaries between *[[Yersinia pestis|Y. pestis]]* populations.
+
+The oldest system to date is the `biovar` nomenclature, which uses phenotypic differences to define population structure. *[[Yersinia pestis|Y. pestis]]* can be categorized into four classical biovars, *antiqua* (ANT), *medievalis* (MED), *orientalis* (ORI), and *microtus*/*pestoides* (PE), according to the ability to ferment glycerol and reduce nitrate [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics]]] Non-classical biovars have also been introduced, such as the *intermedium* biovar (IN), which reflects a transitional state from *antiqua* to *orientalis* [[Li 2009 Genotyping Phylogenetic Analysis\|[@li2009GenotypingPhylogeneticAnalysis]]]. 
+
+While these phenotypes don’t fully contradict the `major branches`, the `biovar` nomenclature considerably shifts the defining boundaries between *[[Yersinia pestis|Y. pestis]]* populations. This uncertainty is exacerbated by the discovery of 'extinct' *[[Yersinia pestis|Y. pestis]]*, for which metabolic sub-typing is impossible [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]]. Some researchers have responded by extrapolating an existing biovar designation (`[[ANT]]`) [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or creating a new one (`[[PRE]]`) [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. 
+
+As a result of these , the `biovar` nomenclature 
+
 
 #### Time Period
 
-The challenge of categorizing plague by metabolism is, unsurprisingly, also an obstacle when analyzing extinct lineages. Ancient DNA (aDNA) researchers have opted to either extrapolate an existing biovar designation (`[[ANT]]`) [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or create a new one (`[[PRE]]`) [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. However, it is more common in aDNA studies to define population structure by time period and associations with historically documented pandemics. The known genetic diversity of *[[Yersinia pestis|Y. pestis]]* is frequently sub-divided into four periods: the [[LNBA|Bronze Age]] (3rd - 1st millenium BCE), the [[First Pandemic]], (6th - 8th century CE), the [[Second Pandemic]] (14th - 19th century CE), and the [[Third Pandemic]] (18th - 20th century CE) [@cite].
+Instead of wrestling 
+Others still, forgo metabolic classifications in favor of defining population structure according to historical according time periods.
+Here, the known genetic diversity of Y. pestis is sub-divided into four time periods: the Bronze Age (3rd - 1st millenium BCE), the First Pandemic, (6th - 8th century CE), the Second Pandemic (14th - 19th century CE), and the Third (or modern) Pandemic (18th - 20th century CE) [???].
+
 
 #### Uncertainty
 
@@ -129,11 +138,15 @@ In light of this uncertainty and apparent contradictions, a recent study [[Kutyr
 2. Maintains adequate samples sizes  for statistical analysis.
 3. Has a number of categories that remains visually distinctive.
 
+> Ecotyping is one response to this, which adds additional metabolic traits, geogrpahic ranges, reservoir species, and ecological zones.
+
 ### Host Associations
 
 To some extent, the lack of obvious population structure can be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [[Perry 1997 Yersinia Pestis Etiologic\|[@perry1997YersiniaPestisEtiologic]]]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic. For example, most of the sub-populations examined in this study have been isolated from both humans and non-human animals (Figure @fig:divtree_host). 
 
 The major exception to this pattern are the ancient lineages which are exclusively associated with humans from the Bronze Age (`[[0.PRE]]`), the [[First Pandemic]] (`[[0.ANT4]]`), and the [[Second Pandemic]] (`[[1.PRE]]`). This exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains. It is only very recently that ancient *[[Yersinia pestis|Y. pestis]]* was first identified in rodent remains [[Morozova 2020 New Ancient Eastern\|[@morozova2020NewAncientEastern]]]. Overall, *[[Yersinia pestis|Y. pestis]]* appears to move relatively easily between mammalian populations, and thus it is challenging to identify consistent ecological barriers that obstruct gene flow between populations.
+
+> In [[Yersinia pseudotuberculosis|Y. pseudotuberculosis]], you can actually identify WHICH species 'caused' the spillover into humans.
 
 ![
 *Y. pestis* host associations, according to the distribution across the maximum-likelihood phylogeny (left) and the proportion of genomes by population (right). Asterisks indicate populations for which there is a statistically significant relationship between genetic distance and geographic distance.
