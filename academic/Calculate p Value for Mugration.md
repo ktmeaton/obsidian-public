@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-03
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Calculate p Value for Mugration
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Calculate p Value for Mugration

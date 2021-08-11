@@ -1,6 +1,6 @@
 ---
-project: [[Obsidian]]
-tags: ⬜/✨  
+project: [ [ Obsidian ] ]
+tags: ✨
 status: done
 ---
 

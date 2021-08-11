@@ -1,12 +1,12 @@
 ---
-project:
+project: null
 due: 2021-05-19
 time: 13:00
-people:
-tags: ⬜/🚂
+people: null
+tags: 🚂
 status: backlog
 title: NCBImeta Release v0.8.1
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # NCBImeta Release v0.8.1

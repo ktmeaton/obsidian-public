@@ -1,13 +1,13 @@
 ---
-project:
+project: null
 due: 2021-04-19
 time: 16:00
 people:
-  - [[Hendrik Poinar]]
-  - [[Brian Golding]]
-  - [[Tracy Prowse]]
-  - [[Nukhet Varlik]]
-tags: ⬜/🚂 
+  - [ [ Hendrik Poinar ] ]
+  - [ [ Brian Golding ] ]
+  - [ [ Tracy Prowse ] ]
+  - [ [ Nukhet Varlik ] ]
+tags: 🚂
 status: backlog
 ---
 

@@ -1,9 +1,9 @@
 ---
-project: [[Obsidian]]
-tags: ⬜/✨
+project: [ [ Obsidian ] ]
+tags: ✨
 status: done
 title: Separate Obsidian Repositories
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Separate Obsidian Repositories

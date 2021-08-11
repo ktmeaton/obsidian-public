@@ -1,9 +1,10 @@
 ---
 aliases:
-  - Re-Evaluating Historical Yersinia Pestis Genomes from the Second Plague Pandemic
+  - Re-Evaluating Historical Yersinia Pestis Genomes from the Second Plague
+    Pandemic
 tags:
   - 📝/🌱
-  - ⬜/✨
+  - ✨
 status: done
 due: 2021-05-14
 time: 23:59

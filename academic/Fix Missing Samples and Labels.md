@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-06-30
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Fix Missing Samples and Labels
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Fix Missing Samples and Labels

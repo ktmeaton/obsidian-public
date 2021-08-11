@@ -1,8 +1,8 @@
 ---
-project:
-due:
-people:
-tags: ⬜/📋  
+project: null
+due: null
+people: null
+tags: 📋
 status: idea
 ---
 

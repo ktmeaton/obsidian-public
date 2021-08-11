@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-21
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Generate Snakemake Diagram
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Generate Snakemake Diagram

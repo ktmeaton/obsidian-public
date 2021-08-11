@@ -1,13 +1,13 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-27
 people:
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-tags: ⬜/✨  
+  - [ [ Sebastian Duchene ] ]
+  - [ [ Leo Featherstone ] ]
+tags: ✨
 status: done
 title: Send Starting Tree to Australia
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Send Starting Tree to Australia

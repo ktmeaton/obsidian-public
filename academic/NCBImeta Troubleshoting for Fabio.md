@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-18
-people: [[Fabio]]
-tags: ⬜/✨
+people: [ [ Fabio ] ]
+tags: ✨
 status: done
 title: NCBImeta Troubleshoting for Fabio
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # NCBImeta Troubleshoting for Fabio

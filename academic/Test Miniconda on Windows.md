@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-01
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Test Miniconda on Windows
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Test Miniconda on Windows

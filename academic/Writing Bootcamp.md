@@ -1,10 +1,10 @@
 ---
-project: [[writing my thesis]]
+project: [ [ writing my thesis ] ]
 due: 2021-08-18
 people:
-  - [[Jessica Hider]]
-  - [[Marie-Helene B Hardy]]
-tags: ⬜/🧨    
+  - [ [ Jessica Hider ] ]
+  - [ [ Marie-Helene B Hardy ] ]
+tags: 🧨
 status: priority
 aliases:
   - Winter 2021 Writing Bootcamp

@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-02
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Calculate Geographic Rate
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Calculate Geographic Rate

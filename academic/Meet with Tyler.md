@@ -1,12 +1,12 @@
 ---
 title:
   - Meet with Tyler
-people:
+people: null
 tags:
-  - ⬜/✨  
+  - ✨
 status:
-  - done 
-type: [[Meeting]]
+  - done
+type: [ [ Meeting ] ]
 due: 2021-06-01
 time: 09:00
 ---

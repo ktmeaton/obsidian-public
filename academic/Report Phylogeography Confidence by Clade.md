@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-29
-people:
-tags: ⬜/✨  
+people: null
+tags: ✨
 status: done
 title: Report Phylogeography Confidence by Clade
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Report Phylogeography Confidence by Clade

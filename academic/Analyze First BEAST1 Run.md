@@ -1,10 +1,10 @@
 ---
-project:
+project: null
 due: 2021-04-18
-people:
-tags: ⬜/✨  
+people: null
+tags: ✨
 status: done
-type: [[Task]]
+type: [ [ Task ] ]
 aliases:
   - Analyze First BEAST1 Run
 ---

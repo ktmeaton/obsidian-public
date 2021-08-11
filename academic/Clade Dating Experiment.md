@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-30
-people:
-tags: ⬜/✨   
+people: null
+tags: ✨
 status: done
 title: Clade Dating Experiment
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Clade Dating Experiment

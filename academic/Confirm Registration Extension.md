@@ -1,12 +1,12 @@
 ---
-project:
+project: null
 due: 2021-07-15
 time: 10:00
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Confirm Registration Extension
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Confirm Registration Extension

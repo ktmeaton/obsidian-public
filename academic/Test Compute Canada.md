@@ -1,7 +1,7 @@
 ---
-project:
+project: null
 due: 2021-04-16
-tags: ⬜/✨ 
+tags: ✨
 status: done
 ---
 

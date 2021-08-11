@@ -1,7 +1,7 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-16
-tags: ⬜/✨
+tags: ✨
 status: done
 ---
 

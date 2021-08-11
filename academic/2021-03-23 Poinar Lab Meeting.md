@@ -3,9 +3,9 @@ title: 2021-03-23 Poinar Lab Meeting
 authors: Katherine Eaton
 due: 2021-03-23
 tags:
-  - ⬜/✨
+  - ✨
 status:
-  -  done
+  - done
 ---
 
 # Plague-Phylogeography 

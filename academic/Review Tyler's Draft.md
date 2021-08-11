@@ -1,11 +1,11 @@
 ---
 aliases:
   - Review Tyler's Draft
-type: [[Task]]
+type: [ [ Task ] ]
 due: 2021-07-15
 time: 12:00
-people: [[Tyler Murchie]]
-tags: ⬜/✨ 
+people: [ [ Tyler Murchie ] ]
+tags: ✨
 status: done
 ---
 

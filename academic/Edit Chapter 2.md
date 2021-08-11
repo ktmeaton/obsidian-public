@@ -1,11 +1,11 @@
 ---
-project: [[PhD Dissertation]]
+project: [ [ PhD Dissertation ] ]
 due: 2021-08-13
-people:
-tags: ⬜/🧨
+people: null
+tags: 🧨
 status: priority
 title: Edit Chapter 2
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Edit Chapter 2

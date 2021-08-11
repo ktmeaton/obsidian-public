@@ -1,11 +1,11 @@
 ---
-project: [[Plague Denmark]]
+project: [ [ Plague Denmark ] ]
 due: 2021-06-29
 time: 1000
-people: 
- - [[Ravneet Sidhu]]
- - [[Hendrik Poinar]]
-tags: ⬜/✨
+people:
+  - [ [ Ravneet Sidhu ] ]
+  - [ [ Hendrik Poinar ] ]
+tags: ✨
 status: done
 ---
 

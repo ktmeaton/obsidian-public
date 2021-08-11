@@ -4,7 +4,7 @@ aliases:
   - wkhtmltopdf
 tags:
   - 📝/🌱
-  - ⬜/📋 
+  - 📋
 status: idea
 due: 2021-05-07
 ---

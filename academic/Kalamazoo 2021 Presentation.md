@@ -5,28 +5,36 @@ aliases:
   - Kalamazoo 2021 Presentation
   - "1000 Plagues in the Genomics Era"
   - "Exhibiting Biographies of Bacteria"
-author: 
-  - [[Katherine Eaton]]
-  - [[Ann Carmichael]]
-  - [[Edward Holmes]]
-  - [[Brian Golding]]
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-  - [[Hendrik Poinar]]
+author:
+  - [ [ Katherine Eaton ] ]
+  - [ [ Ann Carmichael ] ]
+  - [ [ Edward Holmes ] ]
+  - [ [ Brian Golding ] ]
+  - [ [ Sebastian Duchene ] ]
+  - [ [ Leo Featherstone ] ]
+  - [ [ Hendrik Poinar ] ]
 venue: "Curating Medieval Plague and Pestilence"
 progress: true
 slideNumber: true
 slideLevel: 3
 tags:
   - 📝/🌱
-  - ⬜/✨ 
+  - ✨
 status: done
-type: [[Slides]]
+type: [ [ Slides ] ]
 due: 2021-05-15
 time: 12:30
 date: 15 May 2021
 toc: false
-compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input 'Kalamazoo 2021 Presentation.md' --output 'Kalamazoo 2021 Presentation_convert.md' && pandoc --standalone -o 'Kalamazoo 2021 Presentation.html' -t revealjs --slide-level 3 --template pandoc/templates/revealjs-obsidian/template.html --css pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref --citeproc --bibliography pandoc/bib/library.bib --csl pandoc/csl/apa-numeric-superscript.csl 'Kalamazoo 2021 Presentation_convert.md' && rm 'Kalamazoo 2021 Presentation_convert.md';" 
+compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input
+  'Kalamazoo 2021 Presentation.md' --output 'Kalamazoo 2021
+  Presentation_convert.md' && pandoc --standalone -o 'Kalamazoo 2021
+  Presentation.html' -t revealjs --slide-level 3 --template
+  pandoc/templates/revealjs-obsidian/template.html --css
+  pandoc/templates/revealjs-obsidian/simple.css --filter pandoc-crossref
+  --citeproc --bibliography pandoc/bib/library.bib --csl
+  pandoc/csl/apa-numeric-superscript.csl 'Kalamazoo 2021
+  Presentation_convert.md' && rm 'Kalamazoo 2021 Presentation_convert.md';"
 ---
 
 ## Introduction

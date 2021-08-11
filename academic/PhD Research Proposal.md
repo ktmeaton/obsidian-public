@@ -1,19 +1,25 @@
 ---
 title: "PhD Research Proposal"
-authors: 
+authors:
   - name: Katherine Eaton
     github: ktmeaton
     orcid: 0000-0001-6862-7756
-    affiliations: [[[McMaster Ancient DNA Center]], [[McMaster University]], [[Department of Anthropology]], [[McMaster University]]]
+    affiliations:
+      [
+        [ [ McMaster Ancient DNA Center ] ],
+        [ [ McMaster University ] ],
+        [ [ Department of Anthropology ] ],
+        [ [ McMaster University ] ]
+      ]
 aliases:
   - Pathogen Detection in Paleomicrobiology
   - Comprehensive Exam 2
 tags:
   - 📝/🌱
-  - ⬜/📋 
+  - 📋
 due: 2021-05
 status: idea
-type: [[Paper]]
+type: [ [ Paper ] ]
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: academic/[[PhD Research Proposal]]

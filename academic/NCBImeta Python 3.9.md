@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-18
-people:
-tags: ⬜/🧨 
+people: null
+tags: 🧨
 status: done
 title: NCBImeta Python 3.9
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # NCBImeta Python 3.9

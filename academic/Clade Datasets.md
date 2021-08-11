@@ -1,14 +1,14 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-13
 time: 11:00
 people:
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-tags: ⬜/✨ 
+  - [ [ Sebastian Duchene ] ]
+  - [ [ Leo Featherstone ] ]
+tags: ✨
 status: done
 title: Datasets by Clade
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Clade Datasets

@@ -1,8 +1,8 @@
 ---
-project:
+project: null
 due: 2021-04-19
-people:
-tags: ⬜/📋 
+people: null
+tags: 📋
 status: idea
 aliases:
   - Test Seraphim Package

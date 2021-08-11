@@ -1,19 +1,20 @@
 ---
-title: "Assessing the origins of the European Plagues following the Black Death: a synthesis of genomic, historical and ecological information."
+title: "Assessing the origins of the European Plagues following the Black Death:
+  a synthesis of genomic, historical and ecological information."
 aliases:
   - '@bramanti2021AssessingOriginsEuropean'
   - Bramanti et al. 2021
   - Bramanti et al. (2021)
   - Bramanti et al. (2021) Assessing Origins European
 type:
-  - [[Literature]]
+  - [ [ Literature ] ]
 tags:
- - 📥/📰
- - 📝/🌿
- - ⬜/✨ 
+  - 📥/📰
+  - 📝/🌿
+  - ✨
 due: 2021-05-08
 status: done
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 ---
 
 # Bramanti 2021 Assessing Origins European

@@ -1,8 +1,8 @@
 ---
-project: [[Obsidian]]
-tags: ⬜/📋 
+project: [ [ Obsidian ] ]
+tags: 📋
 status: idea
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # PDF export with Manubot

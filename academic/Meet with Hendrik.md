@@ -1,12 +1,12 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 title:
   - Meet with Hendrik
-people:
+people: null
 tags:
-  - ⬜/✨
+  - ✨
 status: done
-type: [[Meeting]]
+type: [ [ Meeting ] ]
 due: 2021-06-01
 time: 11:00
 ---

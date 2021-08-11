@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-27
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Create Prune Tree and Alignment
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Create Prune Tree and Alignment

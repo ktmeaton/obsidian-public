@@ -1,11 +1,11 @@
 ---
-project: [[Lab Admin]]
+project: [ [ Lab Admin ] ]
 due: 2021-05-21
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Plan for BaseSpace Account
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Plan for BaseSpace Account

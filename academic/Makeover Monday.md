@@ -3,7 +3,7 @@ aliases:
   - Makeover Monday
 tags:
   - 📝/🌱
-  - ⬜/📋 
+  - 📋
 status:
   - idea
 ---

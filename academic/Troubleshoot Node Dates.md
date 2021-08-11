@@ -1,8 +1,8 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-19
-people: [[Richard Neher]]
-tags: ⬜/🚂 
+people: [ [ Richard Neher ] ]
+tags: 🚂
 status: backlog
 ---
 

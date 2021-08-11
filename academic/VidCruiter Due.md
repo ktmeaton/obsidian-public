@@ -1,12 +1,12 @@
 ---
-project:
+project: null
 due: 2021-06-30
 time: 1700
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: VidCruiter Interview
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # VidCruiter Interview

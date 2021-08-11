@@ -1,10 +1,10 @@
 ---
-project:
+project: null
 due: 2021-04-20
-people:
-tags: ⬜/🚂 
+people: null
+tags: 🚂
 status: backlog
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Call the NSLSC

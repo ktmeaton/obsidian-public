@@ -35,6 +35,9 @@ authors:
   - name: [[G. Brian Golding]]
     orcid: 0000-0002-7575-0282	
     affiliations: [[McMaster University]]
+  - name: [[Sharon DeWitte]]
+    orcid: 0000-0003-0754-8485	
+    affiliations: [[University of South Carolina]]
   - name: [[Hendrik N. Poinar]]
     orcid: 0000-0002-0314-4160
     affiliations: [[McMaster University]]

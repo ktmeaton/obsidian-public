@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-21
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Fix Biopython Nexus Branch Lengths
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Fix Biopython Nexus Branch Lengths

@@ -1,9 +1,9 @@
 ---
-project: [[Obsidian]]
-tags: ⬜/✨
+project: [ [ Obsidian ] ]
+tags: ✨
 status: done
 title: notenote.link
-type: [[Tool]]
+type: [ [ Tool ] ]
 ---
 
 # notenote.link

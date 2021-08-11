@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-29
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Execute Snakemake Rule Without Upstream
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Execute Snakemake Rule Without Upstream

@@ -1,15 +1,15 @@
 ---
-title: [[Heterozygosity Experiment]]
-project: [[Plague Denmark]]
+title: [ [ Heterozygosity Experiment ] ]
+project: [ [ Plague Denmark ] ]
 aliases:
   - Heterozygosity Experiment
 date: June 14, 2021
 due: June 14, 2021
-tags: ⬜/✨
+tags: ✨
 status: done
-type: 
-  - [[Task]]
-  - [[Experiment]]
+type:
+  - [ [ Task ] ]
+  - [ [ Experiment ] ]
 ---
 
 # Heterozygosity Experiment

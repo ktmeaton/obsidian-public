@@ -2,13 +2,13 @@
 title:
   - Building A Data Management Plan
 project:
-  - [[Lab Admin]]
-people:
+  - [ [ Lab Admin ] ]
+people: null
 tags:
-  - ⬜/✨ 
+  - ✨
 status:
-  - done  
-type: [[Workshop]]
+  - done
+type: [ [ Workshop ] ]
 due: 2021-05-06
 time: 14:00
 ---

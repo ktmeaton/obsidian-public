@@ -1,9 +1,9 @@
 ---
-project: [[Obsidian]]
-tags: ⬜/📋 
+project: [ [ Obsidian ] ]
+tags: 📋
 status: idea
 title: Thesis Export LaTeX
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Thesis Export LaTeX

@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-21
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Test Outlier Parameter in LSD
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Test Outlier Parameter in LSD

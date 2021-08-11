@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-01
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Update Auspice Metadata
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Update Auspice Metadata

@@ -1,13 +1,13 @@
 ---
 title: Meet With Australia
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 people:
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-  - [[Hendrik Poinar]]
-tags: ⬜/✨
+  - [ [ Sebastian Duchene ] ]
+  - [ [ Leo Featherstone ] ]
+  - [ [ Hendrik Poinar ] ]
+tags: ✨
 status: done
-type: [[Meeting]]
+type: [ [ Meeting ] ]
 due: 2021-08-04
 time: 18:00
 ---

@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-07
-people:
-tags: ⬜/✨  
+people: null
+tags: ✨
 status: done
 title: Review Kalamazoo Schedule
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Review Kalamazoo Schedule

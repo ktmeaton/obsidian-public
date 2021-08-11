@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-10-15
-people:
-tags: ⬜/🧨 
+people: null
+tags: 🧨
 status: priority
 title: File with SGS
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # File with SGS

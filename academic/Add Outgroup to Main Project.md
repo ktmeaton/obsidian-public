@@ -1,8 +1,8 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-18
-people:
-tags: ⬜/✨  
+people: null
+tags: ✨
 status: done
 ---
 

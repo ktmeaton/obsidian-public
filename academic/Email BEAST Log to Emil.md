@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-20
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Email BEAST Log to Emil
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Email BEAST Log to Emil

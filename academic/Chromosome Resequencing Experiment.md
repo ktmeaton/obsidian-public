@@ -1,14 +1,14 @@
 ---
 aliases:
   - Chromosome Resequencing
-project: [[Plague Denmark]]
+project: [ [ Plague Denmark ] ]
 people:
-  - [[Ravneet Sidhu]]
+  - [ [ Ravneet Sidhu ] ]
 type:
-  - [[Experiment]]
-tags: 
-  - ⬜/🚂  
-  - 📝/🌿 
+  - [ [ Experiment ] ]
+tags:
+  - 🚂
+  - 📝/🌿
 status:
   - priority
 ---

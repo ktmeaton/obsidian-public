@@ -1,13 +1,13 @@
 ---
 title:
   - Kalamazoo 2021 Conference
-people:
-project: [[plague-phylogeography]]
+people: null
+project: [ [ plague-phylogeography ] ]
 tags:
-  - ⬜/✨  
-status: done 
-type: 
-  - [[Conference]]
+  - ✨
+status: done
+type:
+  - [ [ Conference ] ]
 due: 2021-05-15
 time: 13:00
 ---

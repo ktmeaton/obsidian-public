@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-07-29
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Locus Coverage for Danish Samples
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # *[[Yersinia pestis]]* Locus Coverage for Danish Samples

@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-28
-people:
-tags: ⬜/✨   
+people: null
+tags: ✨
 status: done
 title: Run TreeTime Mugration
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Run TreeTime Mugration

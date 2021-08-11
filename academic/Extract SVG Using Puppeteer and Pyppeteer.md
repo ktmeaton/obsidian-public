@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-01
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Extract SVG Using Puppeteer
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Extract SVG Using Puppeteer and Pyppeteer

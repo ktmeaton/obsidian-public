@@ -2,7 +2,7 @@
 project:
 due: {{date}}
 people:
-tags: ⬜/📋 
+tags: 📋
 status: idea
 title: {{title}}
 type: [[Task]]

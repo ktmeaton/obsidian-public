@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-29
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Integrate plague-phylogeography-paper as Submodule
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Integrate plague-phylogeography-paper as Submodule

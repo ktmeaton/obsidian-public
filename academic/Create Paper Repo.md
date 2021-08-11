@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-06-17
-people:
-tags: ⬜/📋 
+people: null
+tags: 📋
 status: idea
 title: Create Paper Repo
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Create Paper Repo

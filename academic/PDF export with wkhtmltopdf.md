@@ -1,11 +1,11 @@
 ---
-project: [[Obsidian]]
+project: [ [ Obsidian ] ]
 due: 2021-05-07
-people:
-tags: ⬜/📋  
+people: null
+tags: 📋
 status: idea
 title: PDF export with wkhtmltopdf
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # [[PDF]] export with [[wkhtmltopdf]]

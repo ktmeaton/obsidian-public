@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-05-26
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Email Migration
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Email Migration

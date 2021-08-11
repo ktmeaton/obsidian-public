@@ -40,10 +40,10 @@ graph TD;
 
 | Tag    | Status      |
 |:------:|:--------:|
-| #⬜/📋 | Idea     |
-| #⬜/🚂 | Backlog  |
-| #⬜/🧨 | Priority |
-| #⬜/✨ | Done     |
+| #📋 | Idea     |
+| #🚂 | Backlog  |
+| #🧨 | Priority |
+| #✨ | Done     |
 
 ### Note Types
 

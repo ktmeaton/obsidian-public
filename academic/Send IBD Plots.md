@@ -1,13 +1,13 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-04-28
 people:
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
-tags: ⬜/✨ 
+  - [ [ Sebastian Duchene ] ]
+  - [ [ Leo Featherstone ] ]
+tags: ✨
 status: done
 title: Send IBD Plots
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Send IBD Plots

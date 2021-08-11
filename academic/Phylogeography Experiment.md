@@ -4,7 +4,7 @@ aliases:
 title:
   - Phylogeography Experiment
 tags:
-  - ⬜/🧨 
+  - 🧨
 status:
   - priority
 ---

@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-04-20
-people:
-tags: ⬜/✨  
+people: null
+tags: ✨
 status: done
 title: Test Multiple MCMC Chains
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Test Multiple MCMC Chains

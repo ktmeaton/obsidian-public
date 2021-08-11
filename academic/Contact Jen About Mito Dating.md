@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-06-30
-people:
-tags: ⬜/📋
+people: null
+tags: 📋
 status: idea
 title: Contact Jen About Mito Dating
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Contact Jen About Mito Dating

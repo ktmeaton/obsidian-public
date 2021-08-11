@@ -1,11 +1,11 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-08-09
-people:
-tags: ⬜/🧨 
+people: null
+tags: 🧨
 status: priority
 title: Transfer Plague Database to Poinarlab
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Transfer Plague Database to Poinarlab

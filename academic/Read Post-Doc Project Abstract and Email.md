@@ -1,11 +1,11 @@
 ---
-project:
+project: null
 due: 2021-07-02
-people:
-tags: ⬜/✨
+people: null
+tags: ✨
 status: done
 title: Read Post-Doc Project Abstract and Email
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Read Post-Doc Project Abstract and Email

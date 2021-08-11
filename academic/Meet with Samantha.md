@@ -1,12 +1,12 @@
 ---
 title:
   - Meet with Samantha
-people:
+people: null
 tags:
-  - ⬜/✨   
+  - ✨
 status:
-  - done  
-type: [[Meeting]]
+  - done
+type: [ [ Meeting ] ]
 due: 2021-05-27
 time: 13:00
 ---

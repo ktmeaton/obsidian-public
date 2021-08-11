@@ -1,13 +1,13 @@
 ---
-project:
+project: null
 due: 2021-07-16
-people: 
- - [[Hendrik Poinar]]
- - [[Emil Karpinski]]
-tags: ⬜/🧨
-status: priority
+people:
+  - [ [ Hendrik Poinar ] ]
+  - [ [ Emil Karpinski ] ]
+tags: 🚂
+status: backlog
 title: Diversity Across The Tree
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Diversity Across The Tree

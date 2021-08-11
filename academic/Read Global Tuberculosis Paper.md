@@ -1,10 +1,10 @@
 ---
-project: [[plague-phylogeography]]
+project: [ [ plague-phylogeography ] ]
 due: 2021-05-07
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Read Global Tuberculosis Paper

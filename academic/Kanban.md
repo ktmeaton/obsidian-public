@@ -38,6 +38,7 @@ where due and contains(status,"priority") and due>date(today) and !contains(file
 sort due asc
 ```
 
+<!--
 ## Backlog
 
 ```dataview
@@ -48,3 +49,6 @@ where (contains(status,"idea") or contains(status,"backlog"))
 	  and type and type!=[[Note]]
 sort file.mtime desc
 ```
+-->
+
+![[Prize Store]]

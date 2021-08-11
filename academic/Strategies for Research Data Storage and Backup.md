@@ -1,12 +1,12 @@
 ---
 title:
   - Strategies for Research Data Storage and Backup
-people:
+people: null
 tags:
-  - ⬜/✨
+  - ✨
 status:
-  - done 
-type: [[Meeting]]
+  - done
+type: [ [ Meeting ] ]
 due: 2021-06-03
 time: 15:00
 ---

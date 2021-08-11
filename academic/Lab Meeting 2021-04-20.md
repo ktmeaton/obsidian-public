@@ -2,12 +2,12 @@
 title:
   - Lab Meeting 2021-04-20
 tags:
-  - ⬜/✨ 
+  - ✨
 status:
   - done
 due: 2021-04-20
 time: 11:00
-type: [[Meeting]]
+type: [ [ Meeting ] ]
 ---
 
 # Lab Meeting 2021-04-20

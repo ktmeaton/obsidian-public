@@ -1,12 +1,12 @@
 ---
-project:
+project: null
 due: 2021-06-25
 time: 1700
-people:
-tags: ⬜/✨ 
+people: null
+tags: ✨
 status: done
 title: Security Clearance
-type: [[Task]]
+type: [ [ Task ] ]
 ---
 
 # Security Clearance
