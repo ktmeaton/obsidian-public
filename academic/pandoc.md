@@ -121,9 +121,8 @@ The styling looks 'okay', but the aesthetics can be drastically improved with te
 	```bash
 	pandoc --print-default-data-file default.docx > templates/default.docx
 	```
-Customize the formatting, for example, change the title to font size 50.
-	```
-	bash
+- Customize the formatting, for example, change the title to font size 50.
+	```bash
 	pandoc --reference-doc templates/default.docx -o pandoc-example_custom.docx pandoc-example.md
 	```
 - IEEE Template:

@@ -1,10 +1,12 @@
 ---
 aliases:
   - Metadata Update
-tags:
-  - 📝/🌱
-status: idea
-
+tags: 
+ - 📝/🌱 
+ - 🧨 
+status: priority
+type: [[Task]]
+due: 2021-08-12
 ---
 
 # Metadata Update

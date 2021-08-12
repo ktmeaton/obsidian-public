@@ -1,14 +1,14 @@
 ---
-project: [ [ plague-phylogeography ] ]
+project: [[plague-phylogeography]]
 due: June 15, 2021
 time: 18:00
 people:
-  - [ [ Katherine Eaton ] ]
-  - [ [ Hendrik Poinar ] ]
-  - [ [ Sebastian Duchene ] ]
-  - [ [ Leo Featherstone ] ]
+  - [[Katherine Eaton]]
+  - [[Hendrik Poinar]]
+  - [[Sebastian Duchene]]
+  - [[Leo Featherstone]]
 authors:
-  - name: [ [ Katherine Eaton ] ]
+  - name: [[Katherine Eaton]]
     github: ktmeaton
     orcid: 0000-0001-6862-7756
     affiliations:
@@ -16,14 +16,14 @@ authors:
         "[[McMaster Ancient DNA Center]]",
         "[[Department of Anthropology]], [[McMaster University]]"
       ]
-  - name: [ [ Leo Featherstone ] ]
+  - name: [[Leo Featherstone]]
     orcid: 0000-0002-8878-1758
     affiliations:
       [
         "[[The Peter Doherty Institute For Infection and Immunity ]],
           [[University of Melbourne]]"
       ]
-  - name: [ [ Sebastian Duchene ] ]
+  - name: [[Sebastian Duchene]]
     github: sebastianduchene
     orcid: 0000-0002-2863-0907
     affiliations:
@@ -31,12 +31,12 @@ authors:
         "[[The Peter Doherty Institute For Infection and Immunity ]],
           [[University of Melbourne]]"
       ]
-  - name: [ [ Ann Carmichael ] ]
+  - name: [[Ann Carmichael]]
     affiliations: [ "[[Indiana University Bloomington]]" ]
-  - name: [ [ Nükhet Varlık ] ]
+  - name: [[Nükhet Varlık]]
     orcid: 0000-0001-6870-5945
     affiliations: [ "[[University of South Carolina]]" ]
-  - name: [ [ Hendrik Poinar ] ]
+  - name: [[Hendrik Poinar]]
     orcid: 0000-0002-0314-4160
     affiliations:
       [
@@ -51,9 +51,9 @@ status: priority
 title: Plagued by a cryptic clock
 subtitle: New insight from the global phylogeny of *[[Yersinia pestis|Y. pestis]]*
 type:
-  - [ [ Task ] ]
-  - [ [ Note ] ]
-  - [ [ Paper ] ]
+  - [[Task]]
+  - [[Note]]
+  - [[Paper]]
 numberSections: False
 autoSectionLabels: True
 sectionsDepth: 3
@@ -101,9 +101,10 @@ Progress towards these key objectives is anticipated to benefit both prospective
 
 ### Population Structure of *[[Yersinia pestis]]*
 
-Population or genetic structure, arises when a group of organisms subdivide and diversify in relative isolation. Identifying these populations is a critical step in reconstructing the evolutionary history of an organism, as misspecification can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. Phylogenetic analysis is a technique used to explore this structure [[Volz 2020 Identification Hidden Population\|[@volz2020IdentificationHiddenPopulation]]], as it attempts to model the existing genetic diversity and divergences that have occurred. The factors driving the structure can then be interrogated using an assortment of contextual metadata including phenotype, collection date, and geography.
+A critical step in reconstructing the evolutionary history of an organism is exploring the degree of population or genetic structure. Knowledge of how populations subdivide and diversify in isolation can add nuanced to spatiotemporal analyses, by creating population-specific models [[Williamson 2016 Genomic Insights Sustained\|@williamson2016GenomicInsightsSustained]]. On the other hand, failing to account for how population subdivide and diversify in isolation can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. 
 
-To investigate the global population structure of *[[Yersinia pestis|Y. pestis]]*, we estimated a maximum-likelihood phylogeny from 601 genomes, including 540 modern (89.9%) and 61 ancient (10.1%) strains. In addition,  two genomes of the outgroup taxa *[[Yersinia pseudotuberculosis]]* were included to root the tree. The alignment consisted of 10,249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine intra-strain diversity.
+
+To explore the global population structure of *[[Yersinia pestis|Y. pestis]]*, we first estimated a maximum-likelihood phylogeny from 601 genomes, including 540 modern (89.9%) and 61 ancient (10.1%) strains. In addition,  two genomes of the outgroup taxa *[[Yersinia pseudotuberculosis\|Yersinia pseudotuberculosis]]* were included to root the tree. The alignment consisted of 10,249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine the genetic diversity of *[[Yersinia pestis|Y. pestis]]*.
 
 In Figure @fig:divtree_branch_major, we contextualize the maximum-likelihood phylogeny using three nomenclature systems: the `major branches`, `biovars`, and `time periods`.  In the following section, we compare how each system defines the population structure of *[[Yersinia pestis|Y. pestis]]*, and the uncertainty surrounding these incongruent divisions.
 
@@ -115,40 +116,43 @@ The maximum-likelihood phylogeny depicts the global population structure of *[[Y
 
 ### Population Structure Nomenclature
 
-#### Major Branch
-
-The `major branch` system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to the “big bang” polytomy  [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this polytomy are grouped into `Branch 0` and those diverging after form `Branches 1-4`. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, the epidemiological significance of the “big bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. The simplicity of this system, in which populations are defined by a singular event, is therefore offset by the considerable diversity that is collapsed into each `major branch`.
-
 #### Biovar
 
+The oldest system to date is the `biovar` nomenclature, which uses phenotypic differences to define population structure. *[[Yersinia pestis|Y. pestis]]* can be categorized into four classical biovars, *antiqua* (ANT), *medievalis* (MED), *orientalis* (ORI), and *microtus*/*pestoides* (PE) [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics]]] Non-classical biovars have also been introduced, such as the *intermedium* biovar (IN), which reflects a transitional state from *antiqua* to *orientalis* [[Li 2009 Genotyping Phylogenetic Analysis\|[@li2009GenotypingPhylogeneticAnalysis]]]. 
 
-The oldest system to date is the `biovar` nomenclature, which uses phenotypic differences to define population structure. *[[Yersinia pestis|Y. pestis]]* can be categorized into four classical biovars, *antiqua* (ANT), *medievalis* (MED), *orientalis* (ORI), and *microtus*/*pestoides* (PE), according to the ability to ferment glycerol and reduce nitrate [[Devignat 1951 Varietes Espece Pasteurella\|[@devignat1951VarietesEspecePasteurella;]] [[Zhou 2004 Comparative Evolutionary Genomics\|@zhou2004ComparativeEvolutionaryGenomics]]] Non-classical biovars have also been introduced, such as the *intermedium* biovar (IN), which reflects a transitional state from *antiqua* to *orientalis* [[Li 2009 Genotyping Phylogenetic Analysis\|[@li2009GenotypingPhylogeneticAnalysis]]]. 
+The `biovar` system is simple and compressible as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]], which weakens its broader applicability. This issue of consistency has been exacerbated by the sequencing of non-viable, ‘extinct’ *Y. pestis*, for which metabolic sub-typing is impossible [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]]. Researchers have responded to this uncertainty in a variety of ways, by attempting to create new biovars [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]] or extrapolate existing ones [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]]. Other still have foregone the *biovar* nomenclature altogether in favor of locally-developed taxonomies [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. Despite extensive research, it remains unclear which traits, if any, can be used to classify *[[Yersinia pestis|Y. pestis]]* into distinct populations at a global scale.
 
-While these phenotypes don’t fully contradict the `major branches`, the `biovar` nomenclature considerably shifts the defining boundaries between *[[Yersinia pestis|Y. pestis]]* populations. This uncertainty is exacerbated by the discovery of 'extinct' *[[Yersinia pestis|Y. pestis]]*, for which metabolic sub-typing is impossible [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]]. Some researchers have responded by extrapolating an existing biovar designation (`[[ANT]]`) [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] or creating a new one (`[[PRE]]`) [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]]. 
 
-As a result of these , the `biovar` nomenclature 
+#### Major Branch
 
+In contrast to the `biovar` nomenclature which emphasizes phenotypes, the `major branch` nomenclature focuses on the evolutionary relationships between strains. This system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to the “big bang” polytomy  [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this polytomy are grouped into `Branch 0` and those diverging after form `Branches 1-4`. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, the epidemiological significance of the “big bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. While the `major branch` system excels at reconstructing the evolutionary relationships between candidate populations, it struggles to connect these relationships to meaningful biological changes.
 
 #### Time Period
 
-Instead of wrestling 
-Others still, forgo metabolic classifications in favor of defining population structure according to historical according time periods.
-Here, the known genetic diversity of Y. pestis is sub-divided into four time periods: the Bronze Age (3rd - 1st millenium BCE), the First Pandemic, (6th - 8th century CE), the Second Pandemic (14th - 19th century CE), and the Third (or modern) Pandemic (18th - 20th century CE) [???].
-
+As previously mentioned, the sequencing of ancient *[[Y. pestis]]* poses a problem for classification, as direct metabolic testing is impossible for these non-viable samples. Ancient DNA researchers thus use an alternative strategy, by incorporating contextual evidence such as the associated time and or historical period. The known genetic diversity of *[[Y. pestis]]* has been most commonly divided into four time periods: the Bronze Age (3rd - 1st millenium BCE), the First Pandemic, (6th - 8th century CE), the Second Pandemic (14th - 19th century CE), and the Third (or modern) Pandemic (18th - 20th century CE) [???]. The key strength of this nomenclature is that it provides an excellent foundation for interdisciplinary discourse. However, this system also runs the risk of grouping unrelated lineages, as contemporaneous strains have been observed to have distinct evolutionary histories [[Spyrou 2018 Analysis 3800-year-old Yersinia\|[@spyrou2018Analysis3800yearoldYersinia]]].
 
 #### Uncertainty
 
-In light of this uncertainty and apparent contradictions, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. In the following sections, we explore the newly curated phylogeny and metadata to identify phylogenetic patterns in host associations, geographic dispersal, and epidemiological events.  For statistical analysis, we combine all three taxonomic systems (`major branch`, `biovar`, `time period`) to delineate 12 sub-populations. This approach was selected as it:
+None of the existing classifications systems capture the entire population structure of *[[Yersinia pestis|Y. pestis]]*. In light of this uncertainty and inconsistencies, a recent study [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]] proposed that the taxonomy of *[[Yersinia pestis|Y. pestis]]* should be revised according to an updated global phylogeny. Here, we explore the largest curated global phylogeny with the available metadata in order to identify phylogenetic patterns in host associations, geographic dispersal, and epidemiological events. For statistical analysis, we combine all three taxonomic systems (`major branch`, `biovar`, `time period`) to define 12 populations, as this approach has been previously used in large comparative studies *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. In the following sections, we highlight the novel insight that comes from explicitly incorporating this population structure, and the key areas of uncertainty that remain. 
 
-1. Is commonly used in comparative genomics of *[[Yersinia pestis|Y. pestis]]* on a global scale [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]].
-2. Maintains adequate samples sizes  for statistical analysis.
-3. Has a number of categories that remains visually distinctive.
-
-> Ecotyping is one response to this, which adds additional metabolic traits, geogrpahic ranges, reservoir species, and ecological zones.
 
 ### Host Associations
 
-To some extent, the lack of obvious population structure can be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* is capable of infecting a wide variety of mammalian hosts [[Perry 1997 Yersinia Pestis Etiologic\|[@perry1997YersiniaPestisEtiologic]]]. But while isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host group [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host structure of *[[Yersinia pestis|Y. pestis]]* is cryptic. For example, most of the sub-populations examined in this study have been isolated from both humans and non-human animals (Figure @fig:divtree_host). 
+The lack of obvious population structure can likely be attributed to *[[Yersinia pestis|Y. pestis]]*'s weak host associations. In our new phylogeny, 415 (69%) strains of *[[Yersinia pestis|Y. pestis]]* were isolated from a non-human host, 140 (23%) from a human host, and 46 samples (7%) did not have host metadata.
+
+Similar to its parent species, *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]*  [[Laukkanen-Ninios 2011 Population Structure Yersinia\|[@laukkanen-ninios2011PopulationStructureYersinia]]], *[[Yersinia pestis|Y. pestis]]* can infect many mammalian hosts [[Perry 1997 Yersinia Pestis Etiologic\|[@perry1997YersiniaPestisEtiologic]]]. But whereas isolates of *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* cluster by host [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]], the host-patterning of *[[Yersinia pestis|Y. pestis]]* is obscure. 8 of the 12 populations examined in this study have been isolated from both humans and non-human animals (Figure @fig:divtree_host). 
+
+The major exception to this pattern are strains reconstructed from ancient DNA which are exclusively derived from humans remains, from the Bronze Age (`0.PRE`), the First Pandemic (`0.ANT4`), and the Second Pandemic (`1.PRE`). This is largely due to taphonomic and sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal ones. Only recently has ancient  *[[Yersinia pestis|Y. pestis]]* been identified in rodent remains [[Morozova 2020 New Ancient Eastern\|[@morozova2020NewAncientEastern]]].  
+
+The combination of 
+
+As *[[Yersinia pestis|Y. pestis]]* appears to move relatively easily between mammalian populations, it is challenging to identify the reservoir species from the genomic evidence alone.
+
+to identify consistent ecological barriers which could help better contextualize the second pandemic.
+
+
+
+---
 
 The major exception to this pattern are the ancient lineages which are exclusively associated with humans from the Bronze Age (`[[0.PRE]]`), the [[First Pandemic]] (`[[0.ANT4]]`), and the [[Second Pandemic]] (`[[1.PRE]]`). This exception is largely due to sampling biases, as paleogenomic investigations have historically prioritized human skeletal remains over faunal remains. It is only very recently that ancient *[[Yersinia pestis|Y. pestis]]* was first identified in rodent remains [[Morozova 2020 New Ancient Eastern\|[@morozova2020NewAncientEastern]]]. Overall, *[[Yersinia pestis|Y. pestis]]* appears to move relatively easily between mammalian populations, and thus it is challenging to identify consistent ecological barriers that obstruct gene flow between populations.
 

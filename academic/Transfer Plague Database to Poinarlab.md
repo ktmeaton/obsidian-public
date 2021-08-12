@@ -5,7 +5,7 @@ people: null
 tags: 🧨
 status: priority
 title: Transfer Plague Database to Poinarlab
-type: [ [ Task ] ]
+type: [[Task]]
 ---
 
 # Transfer Plague Database to Poinarlab
