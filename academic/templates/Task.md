@@ -2,8 +2,8 @@
 project:
 due: {{date}}
 people:
-tags: 📋
-status: idea
+tags: 🧨
+status: priority
 title: {{title}}
 type: [[Task]]
 ---

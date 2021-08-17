@@ -1,15 +1,17 @@
 ---
 project: [ [ Plague Denmark ] ]
-due: 2021-06-29
-time: 1000
+due: 2021-08-13
+time: 0930
 people:
   - [ [ Ravneet Sidhu ] ]
   - [ [ Hendrik Poinar ] ]
-tags: ✨
+tags: #✨
 status: done
 ---
 
 # Meet With Ravneet
+
+## [[2021-08-13]]
 
 ## [[2021-06-29]]
 

@@ -3,8 +3,8 @@ project: [ [ plague-phylogeography ] ]
 title:
   - Meet with Hendrik
 people: [[Hendrik Poinar]]
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-08-12
 time: 10:30
@@ -14,12 +14,39 @@ time: 10:30
 
 ## [[2021-08-12]]
 
-- [Meeting Link]()
+- [Meeting Link](https://us02web.zoom.us/j/84752568718?pwd=a3NhVzhpZDlHSzRMNmg4ZmJZQ0s5UT09)
 
 ### Notes
 
-- Journal Target for Paper 2 (PNAS, Nature)
-- 
+
+1. Journal Targets:
+	- Nature Microbiology > Communications > Ecology and Evolution > PNAS, 
+	- Pre-submission inquiry for Paper 2 and Paper 3
+2. Deadlines (Paper 2, Paper 3, Dissertation)
+- Rethinking the Host section, rather than binary I can do at the level of order (Rodents, Hares/Rabbits, Carnivores, Ticks, Fleas)
+3. Narrative:
+	- Great uncertainty about *Y. pestis* (rates, dates, geocode, typing, )
+	- Great success in population-specific modelling (ecotyping)
+	- Great variation in hosts, ancient studies are skewed
+	- Multi Level Figure > Everything -> show extremes -> bring back together as host
+- Theme! Reproduce! Everything is a mess -> Break apart to get insight -> Put back together to explain
+4. IN vs. MED, need to have it on the same scale!
+- Mantel Figure (Combinatorial)
+- Co-
+5. Dan Sakeld, Brian, Eddie
+- Missing connections 
+- To understand it, take it apart,
+6. Take the 3rd pandemic as a model
+	- Phylogeography
+- Put the pieces back together
+- The phylogeogrpahy map needs to be more clear
+- How do the values change
+- Axis below that has the average change
+7. Trying to date the Big Bang Polytomy?
+8. Thinking about figure overlay
+- What does this mean?
+9. Big Bang Polytomy significance? 
+- Dave Wagner
 
 ## [[2021-08-03]]
 

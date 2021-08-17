@@ -1,11 +1,11 @@
 ---
 project: null
-due: 2021-08-11
+due: 2021-08-16
 people: null
 tags: ✨
 status: done
 title: Email Hendrik
-type: [ [ Task ] ]
+type: [[Task]]
 ---
 
-# Email Hendrik 1
+# Email Hendrik
