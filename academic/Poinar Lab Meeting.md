@@ -2,15 +2,19 @@
 title:
   - Poinar Lab Meeting
 people: null
-tags:
-  - ✨
+tags: ✨
 status: done
 type: [ [ Meeting ] ]
-due: 2021-05-25
-time: "09:00"
+due: 2021-08-17
+time: 11:00
 ---
 
 # Poinar Lab Meeting
+
+## 2021-08-17
+
+- Upload proof of vaccination soon.
+- In-person meetings resume September 14, possible in Wilson Buildling.
 
 ## 2021-06-08
 
