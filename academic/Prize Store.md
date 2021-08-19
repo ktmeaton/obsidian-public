@@ -20,11 +20,12 @@ status: idea
 
 ### [[XXXX-XX-XX]] | 0 | $0.00
 
-|     Status     | Tasks  |
-|:--------------:|:------:|
-| Previous Value | $2.90  |
-| Today's Tasks  |   0    |
-|  Total Value   | $2.90 | 
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value |       |
+| Today's Tasks  |       |
+| Today's Value  |       |
+|  Total Value   |       | 
 
 ```dataview
 table tags
@@ -32,13 +33,29 @@ from ""
 where due=date(XXXX-XX-XX) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-17]] | 0 | $0.00
+
+### [[2021-08-18]] | 0 | $6.90
+
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value | $5.40 |
+| Today's Tasks  |   5   | 
+| Today's Value  | $2.50 |
+|  Total Value   | $7.90 |
+
+```dataview
+table tags
+from ""
+where due=date(2021-08-18) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+### [[2021-08-17]] | 1 | $5.40
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
 | Previous Value | $4.90 |
-| Today's Tasks  |   0   |
-|  Total Value   | $4.90 | 
+| Today's Tasks  |   1   |
+|  Total Value   | $5.40 | 
 
 ```dataview
 table tags

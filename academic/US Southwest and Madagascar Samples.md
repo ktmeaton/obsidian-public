@@ -1,6 +1,6 @@
 ---
 project:
-due: 2021-08-16
+due: 2021-08-18
 people:
 tags: ✨
 status: done
@@ -9,3 +9,5 @@ type: [[Task]]
 ---
 
 # US Southwest and Madagascar Samples
+
+- Exclude SAMN01991268 for being low coverage
