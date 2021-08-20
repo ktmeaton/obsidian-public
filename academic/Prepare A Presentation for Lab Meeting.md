@@ -2,8 +2,8 @@
 project:
 due: 2021-08-15
 people:
-tags: 🧨
-status: priority
+tags: 🚂 
+status: backlog
 title: Prepare A Presentation for Lab Meeting
 type: [[Task]]
 ---

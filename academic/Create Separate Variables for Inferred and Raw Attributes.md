@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-08-15
+due: 2021-08-20
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Create Separate Variables for Inferred and Raw Attributes
 type: [[Task]]
 ---

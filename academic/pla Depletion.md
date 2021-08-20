@@ -1,5 +1,15 @@
 
-# pla Depletion
+---
+type: [[Project]]
+title: [[pla Depletion]]
+tags: 🧨 
+status: priority
+people:
+  - [[Ravneet Sidhu]]
+  - [[Hendrik Poinar]]
+---
+
+# *pla* Depletion
 
 A defining characteristic of plague in the post-Black Death period is the depletion of a key virulence factor,  the *plasminogen activator* (*pla*) on the pPCP1 plasmid. Previous work has identified the presence of *pla*+ and *pla*- plasmids co-existing in post-Black Death samples ([[Susat 2020 Yersinia Pestis Strains|Susat et al. 2020]]). A re-analysis of publicly available genomes reiterates these results, and reveals two clusters that can be easily distinguished when the sequencing depth of the *pla* gene is compared to the sequencing depth of the *pst* gene, which is also found on the pPCP1 plasmid (Figure 1). This depletion event is first observed in strain STA0001 from Germany (1390 - 1476) and is perpetuated in all subsequent strains, with the exception of Gdansk8 from Poland (1461 - 1523) and Rostov2033 from Russia (1762 - 1773). In these two outlier genomes, the *pla*+ plasmid is possibly restored as the dominant variant or the *pla*- plasmid is lost. 
 
@@ -14,3 +24,10 @@ Sebbane, F., Jarrett, C. O., Gardner, D., Long, D., & Hinnebusch, B. J. (2006). 
 
 Susat, J., Bonczarowska, J. H., Pētersone-Gordina, E., Immel, A., Nebel, A., Gerhards, G., & Krause-Kyora, B. (2020). _Yersinia pestis_ strains from Latvia show depletion of the pla virulence gene at the end of the second plague pandemic. _Scientific Reports_, _10_(1), 14628. [https://doi.org/10.1038/s41598-020-71530-9](https://doi.org/10.1038/s41598-020-71530-9)
 
+## Tasks
+
+```dataview
+table tags
+from ""
+where project=[[pla Depletion]]
+```

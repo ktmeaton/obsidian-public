@@ -5,11 +5,45 @@ time: 1000
 people:
   - [ [ Ravneet Sidhu ] ]
   - [ [ Hendrik Poinar ] ]
-tags: 🧨 
-status: priority
+tags: ✨  
+status: done
 ---
 
 # Meet With Ravneet
+
+## [[2021-08-20]]
+
+- [[How much adapters in US and Madagascar]]
+- [[Contact Jen about pla PCR Standards]]
+- Transfer data, check adapters, send email to Ravneet about where data is
+- First and Second pandemic samples.
+- Separate folders for US, Madagascar, First, Second
+- Script 
+- NO Regular (whole genome with plasmid (pPC1)), 
+- YES whole genome with both plasmids (+ and -), compare depth of coverage in that region.
+- YES assembled
+- Migrate Vietnam samples?
+
+1. ✅ Rav | Create a project folder in poinarlab (Projects/Plague/?), send path to Kat.
+1. ⬜ Rav | Migrate Vietnam mapping output to the new folder.
+1. ✅ Kat | [[Migrate all of the sequence data to the poinarlab account]]
+	- The "real" files are located at `/2/scratch/poinarlab/plague-phylogeography/results/data/sra/`.
+	- We shouldn't need to access these files directly.
+1. ✅ Kat | [[Create symlinks to this data in the new project folder]].  Separate into 4 folders: US, Madagascar, First Pandemic, Second Pandemic.
+	- I made separate folders under `/home/poinarlab/Projects/Plague/PlaDepletion`.
+	- These are symlinks to the "real" files so that they have the proper names for the pipeline.
+1. ⬜ Rav | Map PE data (everything except US) to *pla*+/*pla*- combined reference.
+1. ✅ Kat | [[Check which adapters are present in the SE data (US) and how much.]]
+	- The adapters used are our regular/default ones (AGATCGGAAGAG...)
+	- Adapters are present in 5-10% of reads, so it's probably a good idea to use Trimmomatic for the SE/US data.
+1. ⬜ Rav | Map SE data (US).
+1. ⬜ Rav | Send coordinates for region of interest, for both the *pla*+ and *pla*- reference.
+1. ⬜ Kat | [[Extract the depth of coverage for this region]]. Make a scatterplot comparing the *pla*+ to *pla*- coverage.
+
+- Same breakpoint for First, Second, Vietnam, ooh!
+
+
+
 
 ## [[2021-08-13]]
 

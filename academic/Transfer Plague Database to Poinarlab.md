@@ -1,6 +1,6 @@
 ---
 project: [ [ plague-phylogeography ] ]
-due: 2021-08-13
+due: 2021-09-01
 people: null
 tags: 🧨
 status: priority
@@ -57,6 +57,8 @@ type: [[Task]]
 
 ## [[Kat]] | Transfer Data
 
+### Test
+
 ```bash
 samples=(`grep "1.PRE" results/metadata/all/metadata.tsv | cut -f 1`);
 for sample in ${samples[@]};
@@ -105,9 +107,22 @@ done
 	ln -s /2/scratch/poinarlab/plague-phylogeography/results/data/sra/SAMN00715800 Sample_SAMN00715800
 	```
 
+### US and Madagascar
+
+```bash
+input_dir="/2/scratch/keaton/plague-phylogeography/results/data/sra/";
+output_dir="/2/scratch/poinarlab/plague-phylogeography/results/data/sra/";
+
+tail -n+2 /2/scratch/keaton/plague-phylogeography-projects/pla/metadata/all/metadata.tsv | grep -v "Reference" | cut -f 1 | while read sample;
+do
+  echo $sample;
+  ls -l ${input_dir}/$sample;
+  echo 
+  break
+done;
+```
+
 ## [[All]] | Mapping
-
-
 
 1. Navigate to the mapping pipeline output directory.
 	```bash

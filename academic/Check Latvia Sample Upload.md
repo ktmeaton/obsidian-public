@@ -2,8 +2,8 @@
 project:
 due: 2021-08-16
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Check Latvia Sample Upload
 type: [[Task]]
 ---

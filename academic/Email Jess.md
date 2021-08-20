@@ -1,8 +1,8 @@
 ---
 project:
-due: 2021-08-13
+due: 2021-08-20
 people:
-tags: ✨ 
+tags: ✨   
 status: done
 title: Email Jess
 type: [[Task]]
