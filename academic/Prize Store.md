@@ -33,14 +33,31 @@ from ""
 where due=date(XXXX-XX-XX) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-20]] | 0 | $0.00
+### [[2021-08-23]] | 0 | $0.00
+
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value | $0.41 |
+| Today's Tasks  |   1   |
+| Today's Value  | $0.50 | 
+|  Total Value   |       |
+
+```dataview
+table tags
+from ""
+where due=date(2021-08-23) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+
+### [[2021-08-20]] | 9 | $0.41
 
 |     Status     | Tasks  |
 |:--------------:|:------:|
 | Previous Value | $9.90  |
 | Today's Tasks  |   9    |
 | Today's Value  | $4.50  |
-|  Total Value   | $14.40 | 
+|    Redeemed    | $13.99 | 
+|  Total Value   | $0.41 |
 
 ```dataview
 table tags

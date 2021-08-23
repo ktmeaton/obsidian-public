@@ -83,3 +83,15 @@ Filters: -path:pandoc -path:templates
 ```yaml
 Filters: ([[Project]] OR [[PEOPLE]] OR [[Institution]])
 ```
+## Git
+
+Search history for content.
+
+```bash
+file='Plague Phylodynamics and Phylogeography Paper.md'
+ls -l $file;
+latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
+git log -S "xml" --follow -p $file;
+
+git checkout 13512b8 -- $file;
+```
