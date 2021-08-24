@@ -57,4 +57,4 @@ instantaneous mutation rate to the long-term substitution rate
 
 ## Results
 
-![ [[Root to Tip Regression\|Root-to-tip regression]]. The solid line represents the linear model for the entire dataset. The dashed lines present linear models for clades with significant p values.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/04b8102/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt.png){#fig:rtt width=100%}
+![ [[Root to Tip Regression\|Root-to-tip regression]]](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fab9783/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt.png){#fig:rtt width=100%}
