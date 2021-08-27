@@ -58,3 +58,12 @@ instantaneous mutation rate to the long-term substitution rate
 ## Results
 
 ![ [[Root to Tip Regression\|Root-to-tip regression]]](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fab9783/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt.png){#fig:rtt width=100%}
+
+## Notes
+
+The substitution rate can be *overestimated* due to the presence of:
+	- "True" biological variation. ex. mutations that would not be passed on/would be purified.
+	- "Artifacts": ex. sequencing error
+	
+The substitution rate can be *underestimated* due to:
+	- Saturation. Multiple substitutions at the same site.

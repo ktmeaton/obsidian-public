@@ -21,7 +21,9 @@ type: [[Task]]
 	  "Madagascar" \
 	  /2/scratch/keaton/plague-phylogeography/results/data/ \
 	  /2/scratch/poinarlab/plague-phylogeography/results/data/ \
-	  /home/poinarlab/Projects/Plague/PlaDepletion/data/Madagascar/
+	  /home/poinarlab/Projects/Plague/PlaDepletion/data/Madagascar/ \
+	  false \
+	  true
 	```
 2. US
 	```bash
@@ -30,7 +32,9 @@ type: [[Task]]
 	  "United" \
 	  /2/scratch/keaton/plague-phylogeography/results/data/ \
 	  /2/scratch/poinarlab/plague-phylogeography/results/data/ \
-	  /home/poinarlab/Projects/Plague/PlaDepletion/data/USA/
+	  /home/poinarlab/Projects/Plague/PlaDepletion/data/USA/ \
+	  false \
+	  true
 	```
 3. First Pandemic
 	```bash
@@ -39,7 +43,9 @@ type: [[Task]]
 	  "0.ANT4" \
 	  /2/scratch/keaton/plague-phylogeography/results/data/ \
 	  /2/scratch/poinarlab/plague-phylogeography/results/data/ \
-	  /home/poinarlab/Projects/Plague/PlaDepletion/data/FirstPandemic/
+	  /home/poinarlab/Projects/Plague/PlaDepletion/data/FirstPandemic/ \
+	  false \
+	  true
 	```
 4. Second Pandemic
 	```bash
@@ -48,6 +54,8 @@ type: [[Task]]
 	  "1.PRE" \
 	  /2/scratch/keaton/plague-phylogeography/results/data/ \
 	  /2/scratch/poinarlab/plague-phylogeography/results/data/ \
-	  /home/poinarlab/Projects/Plague/PlaDepletion/data/SecondPandemic/
+	  /home/poinarlab/Projects/Plague/PlaDepletion/data/SecondPandemic/ \
+	  false \
+	  true
 	```
 ---

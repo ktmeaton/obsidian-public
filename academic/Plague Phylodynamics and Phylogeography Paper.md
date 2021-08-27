@@ -49,7 +49,7 @@ filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
 tags: 🧨
 status: priority
 title: Plagued by a cryptic clock
-subtitle: New insight from the global phylogeny of *[[Yersinia pestis|Y. pestis]]*
+subtitle: Uncovering hidden temporal signal in _[[Yersinia pestis|Y. pestis]]_.
 type:
   - [[Task]]
   - [[Note]]
