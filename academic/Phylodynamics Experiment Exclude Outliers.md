@@ -58,7 +58,9 @@ mkdir -p relaxed_clock/dates/run/;
 ```bash
 models=("strict_clock" "relaxed_clock")
 dates=("dates" "no_dates")
-constants_file="/mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main/snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt";
+#run_dir="run"
+run_dir="skyline"
+constants_file="/mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main_filter/snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt";
 constants=`tr "," " " < $constants_file`;
 rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/no_outliers/filter5';
 
@@ -66,7 +68,8 @@ for model in ${models[@]};
   do
     for date in ${dates[@]};
 	do
-	  file=$model/$date/model_test/beast.xml;	 
+	  file=$model/$date/model_test/beast.xml;
+	  
 	  if [[ -f $file ]]; 
 	  then 
 	    # Restore the original backup file	 	  
@@ -96,7 +99,8 @@ for model in ${models[@]};
 		sed -i "s|$IN|$OUT|g" $file.tmp;
 		
 		# Save for the actual run
-		run_file=$model/$date/run/beast.xml;
+		run_file=$model/$date/${run_dir}/beast.xml;
+		
 		cat $file.tmp | tr "#" "\n" > ${run_file};	
 		
 		# Change the ending run and mcmc elements for model testing
@@ -137,7 +141,16 @@ done;
 	  -beagle_double \
 	  beast.xml | tee beast_screen.log		  
 	```
-1. Inspect
+1. Skyline
+	```bash
+	beast \
+	  -seed 8964223457 \
+	  -threads 5 \
+	  -beagle_SSE \
+	  -beagle_double \
+	  beast.xml | tee beast_screen.log		  
+	```
+3. Inspect
 	```bash
 	grep -v "#" full/filter5/relaxed_clock/dates/run/beast.log | awk '{print $1"\t"$6"\t"$(NF-4)}' | less -S
 	grep -v "#" no_outliers/filter5/relaxed_clock/dates/run/beast.log | awk '{print $1"\t"$6"\t"$(NF-2)}' | less -S
