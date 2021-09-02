@@ -15,235 +15,81 @@ Previous work has documented substantial rate variation both between and within 
 
 Given this expanded diversity, it is unsurprising that a [[Root to Tip Regression|root-to-tip regression]] on collection date reproduces the finding that substitution rates in *[[Yersinia pestis|Y. pestis]]* are poorly represented by a simple linear model (ie. strict clock) (Figure @fig:rtt). While there is a statistically significant positive relationship between date and genetic distance (P-value=4.959 x 10<sup>-13</sup>), an extremely low [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>=0.09) indicates there is tremendous variation that is not accounted for. 
 
-The rate variation observed in _[[Yersinia pestis]]_ (Figure @fig:rtt) presents a curious case of the [[Time Dependency of Molecular Rate Estimates|time dependency of molecular rates]] [[Ho 2005 Time Dependency Molecular\|[@ho2005TimeDependencyMolecular]]]. Rate variation correlates with the sampling time frame, in which populations sampled over several millennia (`[[0.PRE]]`), have less variation than those sampled over centuries (`[[1.PRE]]`), or only a few decades (`[[2.MED]]`). 
+The rate variation observed in _Y. pestis_ (Figure @fig:rtt) presents a curious case of the [[Time Dependency of Molecular Rate Estimates|time dependency of molecular rates]] [[Ho 2005 Time Dependency Molecular\|[@ho2005TimeDependencyMolecular]]]. Rate variation correlates with the sampling time frame, in which populations sampled over several millennia (`[[0.PRE]]`), have less variation than those sampled over centuries (`[[1.PRE]]`), or only a few decades (`[[2.MED]]`). We identify four inter-related mechanisms that drive the observed patterns of rate variation in _[[Yersinia pestis|Y. pestis]]_:
 
-We propose two processes that drive the observed patterns of rate varation in _[[Yersinia pestis|Y. pestis]]_:
-1. Methodological artifacts, caused by an exceptionally slow [[Substitution Rate|substitution rate]] in the long-term combined with a high, short-term [[mutation rate]].
-2. True "biological" rate variation between populations.
+1. A slow, long-term [[Substitution Rate|substitution rate]].
+2. A high, short-term [[mutation rate]].
+3. Methodological artifacts.
+7. Population-specific rate variation.
 
-![ Rate variation in _Yersinia pestis_ using root-to-tip regression.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c997bec/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt.png){#fig:rtt width=80%}
+## Mechanisms of Rate Variation
 
-## Methodological Artifacts
-
-### Substitution Rate {.page_break_before}
+### Slow, Long-Term [[Substitution Rate|Substitution Rate]]
 
 The [[substitution rate]] of _[[Yersinia pestis|Y. pestis]]_ has previously been estimated to range from 1 x 10<sup>-8</sup> to 2 x 10<sup>-8</sup> subs/site/year, [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]] or 1 substitution every 10-25 years. Amongst bacterial pathogens, this is one of the slowest rates observed [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]] and means that  _[[Y. pestis]]_ lineages often cannot be differentiated until several decades have passed. This question of how much time must pass before sufficient molecular change occurs is referred to as the [[phylodynamic threshold]] [[Duchene 2020 Temporal Signal Phylodynamic\|[@duchene2020TemporalSignalPhylodynamic]]]. 
 
-In application, we can see this in the finding that _[[Yersinia pestis|Y. pestis]]_ isolates dated to the medieval [[Black Death]] (1348-1353) are indistinguishable clones, whereas those from subsequent centuries are phylogenetically distinct (Figure @fig:rtt "Moderate Variation" ). This highlights a significant limitation of _[[Yersinia pestis|Y. pestis]]_ phylogenetics, as comparisons over short time scale (<10 years) have limited resolution and can be easily biased by noisy [[mutations]].
+In application, we can see this in the finding that isolates from population `[[1.PRE]]` dated to the medieval [[Black Death]] (1348-1353) are indistinguishable clones, whereas those from subsequent centuries are phylogenetically distinct (Figure @fig:rtt). This highlights a significant limitation of _[[Yersinia pestis|Y. pestis]]_ phylogenetics, as comparisons over short time scale (<10 years) have limited resolution and can be easily biased by noisy [[mutations]].
 
-## Mutation Rate
+![ Rate variation in _Yersinia pestis_ using root-to-tip regression.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/c997bec/main/iqtree/all/chromosome/full/filter5/filter-taxa/rtt.png){#fig:rtt width=100%}
 
-Since it can take decades for a [[substitution]] to become fixed in _[[Yersinia pestis|Y. pestis]]_ populations, rate estimates are highly susceptible to the influence of transient [[mutations]]. In whole-genome sequencing, it is common to capture both fixed [[substitutions]] in the population and transient [[mutations]] found in a single isolate. These transient mutations may arise from "true" biological variation in a wild isolate, or from methodological "artifacts" due to errors in sequencing and genome assembly.
+### High, Short-Term Mutation Rate  {.page_break_before}
 
-> Long branches can also occur "biologically", when population sizes are large and sampling is proportionately sparse. Ex. exponential growth.
+Since it can take decades for a [[substitution]] to become fixed in _[[Yersinia pestis|Y. pestis]]_ populations, rate estimates are highly susceptible to the influence of transient [[mutations]]. In whole-genome sequencing, it is common to capture both fixed [[substitutions]] in the population and transient [[mutations]] found in a single isolate. These singleton mutations manifest as long external branches, and may arise from "true" biological variation, particularly when a population is experiencing exponential growth and is sparsely sampled, or from methodological "artifacts" due to sequencing error. 
 
-The global phylogeny of _[[Yersinia pestis|Y. pestis]]_ is heavily impacted by these transient mutations, which manifest as long external branches (Figure @fig:rtt).  These branches constitute 12% of the entire phylogeny (75 / 601 genomes), with the most strongly affected populations being *orientalis* ([[1.ORI]]), *pestoides* ([[0.PE]]),  *medievalis* ([[2.MED]]), and *intermedius* ([[1.IN]]).
-
-*medievalis* ([[2.MED]]), *pestoides* ([[0.PE]]), and *orientalis* ([[1.ORI]]). Fortunately, samples associated with these long branches have a distinct genomic signature and can be consistently identified based on the ratio of transitions to transversions (TsTv) (Figure @fig:tstv). We hypothesize that these skewed ratios may derive from sequencing/assembly error (low TsTv) and laboratory adaptation (high TsTv). As we cannot be confident that these outlier samples do not reflect analytical artifacts, we next investigated the impact of their removal.
-
-> High TsTv = Laboratory Mods: (high end = 3.9)
-	- Harbin35 (4.2)
-	- Nicholisk (3.9)
-	- Next is PY-09 at 3.182. Probably fine.
-> Low TsTv = Long Branch/errors
-	- At what value are there more short branches than long branches?
-	- 1.3
-
-> Low ns/ss is not really associated with long branches
-
+The global phylogeny of _[[Yersinia pestis|Y. pestis]]_ is heavily impacted by these transient mutations or long external branches. While these outliers are found ubiquitously throughout the phylogeny, several populations are disproportionately affected including *orientalis* (`[[1.ORI]]`), *pestoides* (`[[0.PE]]`),  *medievalis* (`[[2.MED]]`), and *intermedius* (`[[1.IN]]`) (Table @tbl:outliers). Given the extensive presence of these apparent outliers, inclusion or exclusion of these samples may have profound impacts on the models used to estimate population sizes, molecular clocks, and migration events.
 
 | Population | Samples | Outliers | % Outliers |
 |:----------:|:-------:|:--------:|:----------:|
 |   1.ORI    |   116   |    37    |     32     |
-|    0.PE    |   86    |    20    |     23     |
-|   2.MED    |   116   |    11    |     9      |
 |    1.IN    |   39    |    3     |     8      |
-|   2.ANT    |   54    |    3     |     6      |
-|   0.ANT    |   103   |    1     |     1      |
-|            |         |          |            |
 |   1.ANT    |    4    |    0     |     0      |
 |   1.PRE    |   40    |    0     |     0      |
+|   2.MED    |   116   |    11    |     9      |
+|   2.ANT    |   54    |    3     |     6      |
 |   4.ANT    |   11    |    0     |     0      |
 |   3.ANT    |   11    |    0     |     0      |
 |   0.ANT4   |   12    |    0     |     0      |
+|   0.ANT    |   103   |    1     |     1      |
+|    0.PE    |   86    |    20    |     23     |
 |   0.PRE    |    8    |    0     |     0      |
 
-Table: TsTv outliers by population.
+Table: Long branch outliers across _Y. pestis_ populations. {#tbl:outliers width=50%}
 
-![The mean substitution rate (left) and coefficient of rate variation (right) by population. Each distribution is annotated with the peak value. ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/ee37554/main/beast/all/chromosome/clade/log/rate_coeff.png){#fig:rate_coefficient width=60%}
+### Methodological Artifacts {.page_break_before}
 
-## Filtering the Phylogeny
+One way to separate out these conflicting signals is by identifying deviant mutation patterns. Notably, we observe a correlation between branch length and extreme values of the transition to transversion ratio (TsTv) (Figure @fig:tstv). As low TsTv ratios have previously been associated with false positive variants [[Indap 2013 Variant Discovery Targeted\|[@indap2013VariantDiscoveryTargeted]]], we hypothesize these outliers represent methodological artifacts.
 
-The removal of samples associated with long, external branches has profound effects on the phylogenetic analyses and subsequent interpretations.
+![ Long external branches in the global _[[Yersinia pestis|Y. pestis]]_ phylogeny are associated with extreme TsTv ratios.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/0739ac9/main/auspice/all/chromosome/full/filter5/ml/divtree_tstv.png){#fig:tstv width=60%}
 
-### Phylogeography
+### Population-Specific Rate Variation
 
-One measure of signal
+To Be Done!
 
-![ [[Isolation by distance]] ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cb45811/main_filter/iqtree_stats/all/chromosome/full/filter5/mantel_comparison_2.MED.png){#fig:mantel_comparison width=100%}
+## Consequences  {.page_break_before}
 
+> 1. **A species-wide molecular clock analysis is highly unstable. **
+> - The MCMC shows poor mixing and fails to converge at an estimate for key model parameters such as the mean substitution rate.
+> - Eliminating tip-date uncertainty and fixing the tree topology do not improve the model.
 
-### Phylodynamics
+> 2. **Analyzing populations in isolation stabilizes the molecular clock analysis.** 
+> - Temporal signal detected in 9/12 populations.
+> - Good mixing and convergence.
 
-Stablizing the chain.
+> 3. **Populations with long branch outliers have higher mean substitution rates.**
+> - The rates of `[[0.PE]]`, `[[2.MED]]`, `[[1.ORI]]`, and `[[1.IN]]` are "artificially" inflated by samples with false-positive variants. tMRCA estimates for these populations will be too young!
+> - Populations without false positive samples have overlapping estimates of the mean substitution rate and standard deviation.
+> - Mean substitution rate ranges from 3 x 10<sup>-8</sup> to 8 x 10<sup>-8</sup>.
 
-## Methods
+![ Mean substitution rate and standard deviation.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/bd0b9da/main/beast/all/chromosome/clade/log/meanRate_stdev.png){#fig:tstv width=60%}
 
-### All
+> 4. **The mean substitution rate of _Y. pestis_ has been considerably under-estimated.** 
+> - Previously thought to be 1x10<sup>-8</sup>. No population is observed to have a rate that slow.
+> - tMRCA estimates based on this rate will be too old!
 
-#### Nexus Priors
+> 5. **Removing long branch outliers drastically changes phylogeography patterns. ** 
+> - Filtering out long branches recovers a statistically significant pattern of isolation-by-distance (IBD) for almost all populations!
 
-```bash
-beast_dir=/mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main/beast/all/chromosome/full/filter5;
-metadata="/mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main/metadata/all/metadata.tsv";
-cd $beast_dir;
-
-/mnt/c/Users/ktmea/Projects/plague-phylogeography/workflow/scripts/beast_nexus.py \
-  -m ${metadata} \
-  -a beast.fasta \
-  --nex beast.nex;
-  
-mkdir -p relaxed_clock/dates/run/;
-```
-
-#### Beauti
-
-1. Import alignment (`beast.nex`).
-1. Rename partitions (`dna`).
-1. Site Model (`GTR`).
-1. Clock Model (`Strict or UCLN`)
-3. Tree Prior: (`Coalescent Constant Population or Skyline`).
-4. Chain Length (100,000,000)
-5. Chain samples (10,000).
-6. Screen log (100,000).
-7. Save As -> `beast.xml`
-8. Inspect the XML, to make sure the tip dating priors were setup correctly and logged. 
-
-#### XML Edit
-
-```bash
-models=("strict_clock" "relaxed_clock")
-dates=("dates" "no_dates")
-#run_dir="run"
-run_dir="skyline"
-constants_file="/mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main_filter/snippy_multi/all/chromosome/full/snippy-multi.constant_sites.txt";
-constants=`tr "," " " < $constants_file`;
-rootdir='/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/no_outliers/filter5';
-
-for model in ${models[@]};
-  do
-    for date in ${dates[@]};
-	do
-	  file=$model/$date/model_test/beast.xml;
-	  
-	  if [[ -f $file ]]; 
-	  then 
-	    # Restore the original backup file	 	  
-		bak_file=${file}.bak
-	    if [[ -f ${bak_file} ]]; 	
-		then
-		  echo "Restoring ${bak_file}"
-		  mv ${bak_file} $file;
-		fi;
-		
-		# Backup the original
-		echo "Backing up ${file}"		
-		cp $file $file.bak;
-		
-		# Create tmp file to edit
-		echo "Creating temp file $file.tmp"
-		cat $file | tr -d "\r" | tr "\n" "#" > $file.tmp
-		
-		# Change the original alignment name and ID
-		IN='<data#id="dna"#spec="Alignment"#name="alignment">';
-		OUT='<data#id="original-dna"#spec="Alignment"#name="original-dna">';
-		sed -i "s|$IN|$OUT|g" $file.tmp;	
-		
-		# Add a data element with constant sites
-		IN='<\/data>'
-		OUT='<\/data>#\t\t<data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="'$constants'"\/>';
-		sed -i "s|$IN|$OUT|g" $file.tmp;
-		
-		# Save for the actual run
-		run_file=$model/$date/${run_dir}/beast.xml;
-		
-		cat $file.tmp | tr "#" "\n" > ${run_file};	
-		
-		# Change the ending run and mcmc elements for model testing
-		IN='<\/run>'
-		OUT='<\/mcmc>#<\/run>'
-		sed -i "s|$IN|$OUT|g" $file.tmp			
-		
-		# Changing the starting run and mcmc elements
-		IN='<run'
-		OUT='<run spec="beast.inference.PathSampler"#\tchainLength="1000000"#\talpha="0.3"#\trootdir="'$rootdir/$model/$date/model_test/'"#\tburnInPercentage="0"#\tpreBurnin="100000" deleteOldLogs="true"#\tnrOfSteps="100">#\tcd $(dir)#\tjava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml##<mcmc'
-		sed -i "s|$IN|$OUT|g" $file.tmp	
-		
-		# Rename
-		cat $file.tmp | tr "#" "\n" > $file; 
-		rm -f $file.tmp;
-		
-	  fi;
-	done;
-done;
-```
-
-#### Run
-1. Activate conda environment:
-	```bash
-	conda activate beast2
-	cd beast/all/chromosome/full/filter5/
-	```
-1. Increase [[BEAST]] memory.
-	```bash
-	sed -i 's/Xmx8g/Xmx24g/g' ~/miniconda3/envs/beast2/bin/beast
-	```  
-1. Full Run
-	```bash
-	beast \
-	  -seed 908762525 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-1. Skyline
-	```bash
-	beast \
-	  -seed 8964223457 \
-	  -threads 5 \
-	  -beagle_SSE \
-	  -beagle_double \
-	  beast.xml | tee beast_screen.log		  
-	```
-3. Inspect
-	```bash
-	grep -v "#" full/filter5/relaxed_clock/dates/run/beast.log | awk '{print $1"\t"$6"\t"$(NF-4)}' | less -S
-	grep -v "#" no_outliers/filter5/relaxed_clock/dates/run/beast.log | awk '{print $1"\t"$6"\t"$(NF-2)}' | less -S
-	```
-
-Runtime: 
-	- 1 Million Samples = 20 minutes
-	- 10 Million Samples = 3.33 hours
-	- 100 Million Samples = 33.3 hours
-	
-- Preview the MCC tree.
-```bash
-treeannotator -burnin 20 beast.trees beast_mcc.nex
-```
+![ Isolation by distance of `[[2.MED]]` before and after long-branch filtering.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/b15235e4b4f09d83959e2cdb7f2d2bfa329633a3/main_filter/iqtree_stats/all/chromosome/full/filter5/mantel_comparison_2.MED.png){#fig:tstv width=60%}
 
 
-
-
----
-
-## Notes
-
-1. Global phylogeny
-	- Populations
-	- 
-
-## SI
-
-![ Long external branches in the global _[[Yersinia pestis|Y. pestis]]_ phylogeny are associated with extreme values of the transition/transversion ratios (TsTv).](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/0739ac9/main/auspice/all/chromosome/full/filter5/ml/divtree_tstv.png){#fig:tstv width=100%}
-
+## References  {.page_break_before}
