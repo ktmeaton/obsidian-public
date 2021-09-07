@@ -1,7 +1,7 @@
 ---
 project: null
-due: 2021-08-11
-people: null
+due: 2021-09-07
+people: [[Hendrik Poinar]]
 tags: ✨
 status: done
 title: Email Hendrik

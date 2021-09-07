@@ -2,15 +2,21 @@
 project: [ [ plague-phylogeography ] ]
 title:
   - Meet with Hendrik
-people: [[Hendrik Poinar]]
-tags: ✨
-status: done
+people: 
+- [[Hendrik Poinar]]
+
+tags: 🧨 
+status: priority
 type: [[Meeting]]
-due: 2021-08-12
+due: 2021-09-13
 time: 10:30
 ---
 
 # Meet with Hendrik
+
+## [[2021-09-10]]
+
+- [Meeting Link]()
 
 ## [[2021-08-12]]
 

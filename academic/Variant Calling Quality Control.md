@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-08-24
+due: 2021-09-07
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Variant Calling Quality Control
 type: [[Task]]
 ---

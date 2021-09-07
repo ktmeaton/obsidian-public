@@ -38,6 +38,9 @@ authors:
   - name: [[Sharon DeWitte]]
     orcid: 0000-0003-0754-8485	
     affiliations: [[University of South Carolina]]
+  - name: [[Michelle Ziegler]]
+    orcid: 0000-0001-5762-2327
+    affiliations: [[Southern Illinois University Edwardsville]]	
   - name: [[Hendrik N. Poinar]]
     orcid: 0000-0002-0314-4160
     affiliations: [[McMaster University]]

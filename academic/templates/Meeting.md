@@ -1,13 +1,10 @@
 ---
-title:
-  - { ? { title } }
-people: null
-tags:
-  - 🧨
-status:
-  - priority
-type: [ [ Meeting ] ]
-due: { ? { date } }
+title: {{title}}
+people:
+tags: 🧨
+status: priority
+type: [[Meeting]]
+due: {{date}}
 time: 09:00
 ---
 

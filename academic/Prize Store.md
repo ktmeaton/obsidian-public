@@ -13,12 +13,12 @@ status: idea
 
 | Prize  |  Cost  | Tasks |
 |:------:|:------:|:-----:|
-| Welkin | $7.10  |  14   |
+| Welkin | $6.99  |  14   | 
 |   BP   | $13.99 |  28   |
 
 ## History
 
-### [[XXXX-XX-XX]] | 0 | $0.00
+#### [[XXXX-XX-XX]] | 0 | $0.00
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -33,14 +33,49 @@ from ""
 where due=date(XXXX-XX-XX) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-23]] | 0 | $0.00
+### 2021-September
+
+#### [[2021-09-07]] | 11 | $8.91
+
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value | $3.41 |
+| Today's Tasks  |   11   |
+| Today's Value  | $5.50 |
+|  Total Value   | $8.91 | 
+
+```dataview
+table tags
+from ""
+where due=date(2021-09-07) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+#### [[2021-09-03]] | 5 | $3.41
+
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value | $0.91 |
+| Today's Tasks  |   5   |
+| Today's Value  | $2.50 |
+|  Total Value   | $3.41| 
+
+```dataview
+table tags
+from ""
+where due=date(2021-09-02) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+
+### 2021-August
+
+#### [[2021-08-23]] | 1 | $0.91
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
 | Previous Value | $0.41 |
 | Today's Tasks  |   1   |
-| Today's Value  | $0.50 | 
-|  Total Value   |       |
+| Today's Value  | $0.50 |
+|  Total Value   | $0.91 | 
 
 ```dataview
 table tags
@@ -49,7 +84,7 @@ where due=date(2021-08-23) and contains(status,"done")and !contains(file.path, "
 ```
 
 
-### [[2021-08-20]] | 9 | $0.41
+#### [[2021-08-20]] | 9 | $0.41
 
 |     Status     | Tasks  |
 |:--------------:|:------:|
@@ -65,7 +100,7 @@ from ""
 where due=date(2021-08-20) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-19]] | 3 | $9.90
+#### [[2021-08-19]] | 3 | $9.90
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -80,7 +115,7 @@ from ""
 where due=date(2021-08-19) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-18]] | 6 | $8.40
+#### [[2021-08-18]] | 6 | $8.40
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -95,7 +130,7 @@ from ""
 where due=date(2021-08-18) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-17]] | 1 | $5.40
+#### [[2021-08-17]] | 1 | $5.40
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -109,7 +144,7 @@ from ""
 where due=date(2021-08-17) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-16]] | 2 | $4.90
+#### [[2021-08-16]] | 2 | $4.90
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -124,7 +159,7 @@ from ""
 where due=date(2021-08-16) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-15]] | 0 | $2.90	
+#### [[2021-08-15]] | 0 | $2.90	
 
 |     Status     | Tasks  |
 |:--------------:|:------:|
@@ -138,7 +173,7 @@ from ""
 where due=date(2021-08-15) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-14]] | 0 | $2.90
+#### [[2021-08-14]] | 0 | $2.90
 
 |     Status     | Tasks  |
 |:--------------:|:------:|
@@ -156,7 +191,7 @@ where due=date(2021-08-14) and contains(status,"done")and !contains(file.path, "
 ```
 
 
-### [[2021-08-13]] | 20 | $10.00
+#### [[2021-08-13]] | 20 | $10.00
 
 |     Status     | Tasks |
 |:--------------:|:-----:|
@@ -171,7 +206,7 @@ where due=date(2021-08-13) and contains(status,"done")and !contains(file.path, "
 ```
 
 
-### [[2021-08-12]] | 16 | $8.00
+#### [[2021-08-12]] | 16 | $8.00
 
 |     Status     | Tasks | 
 |:--------------:|:-----:|
@@ -186,7 +221,7 @@ from ""
 where due=date(2021-08-12) and contains(status,"done")and !contains(file.path, "templates")
 ```
 
-### [[2021-08-11]] | 11 | $5.50
+#### [[2021-08-11]] | 11 | $5.50
 
 |     Status     | Redeemed |
 |:--------------:|:--------:|

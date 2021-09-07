@@ -1,11 +1,11 @@
 ---
 project: null
-due: 2021-08-11
-people: null
+due: 2021-09-07
+people: [[Sebastian Duchene]]
 tags: ✨
 status: done
 title: Email Sebastian
-type: [ [ Task ] ]
+type: [[Task]]
 ---
 
 # Email Sebastian

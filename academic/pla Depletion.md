@@ -2,8 +2,8 @@
 ---
 type: [[Project]]
 title: [[pla Depletion]]
-tags: 🧨 
-status: priority
+tags: ✨  
+status: done
 people:
   - [[Ravneet Sidhu]]
   - [[Hendrik Poinar]]
@@ -31,3 +31,43 @@ table tags
 from ""
 where project=[[pla Depletion]]
 ```
+
+## Genotyping 
+
+Hi Hendrik,
+
+Thanks for sharing these exciting results with me! I had a few thoughts about steps 2 and 3:
+
+2. **Genotyping the wild type depletion using a coverage threshold (>5x).**
+- This seems to be a (overly?) sensitive approach, as ~900 genomes have the depletion.
+- Possibly because mapping millions of reads to a <300bp target could yield false-positive alignments?
+- The PCA does convincingly show distinct clusters! But PCA seems a strange choice for visualization here. The variance explained by axis 1 (64.9%) and axis 2 (35.1%) add up to 100%. This is 'perfect', which suggests to me that only two variables were used, and in that case they might as well just plot the variables themselves on the X and Y (no PCA transformation). Or alternatively, build the "explanatory" variables of time period and host into the PCA to test those hypotheses.
+3. **Heterozygosity of the wild type depletion.**
+- The heterozygosity/pla depletion ratio is similar to what I've been doing, so I've got a better grasp on it. From this analysis, the modern samples mostly look like they have "normal", non-depleted pla.
+
+I was intrigued that the Vietnamese and Brazilian genomes are potentially the only modern genomes that have a strong pla-depletion signature. I did a similar analysis on my global plague datasets, and also found that only the ancient samples are pla-depleted. Interestingly, the only modern samples that had a slight pla-depletion were the avirulent vaccine and laboratory strains: Nicholisk 41 from Harbin (China), the EV vaccine series (madagascar,russia,china), and Soemedang, the Javanese vaccine strain. Curious!
+
+![[pla Depletion Global.png]]
+
+My analysis pipeline has 4 steps.
+
+1. **Alignment**: `nf-core/eager`, `snippy`
+	- Align fastq reads to reference, CO92 whole genome.
+	- Align fasta assemblies to reference, CO92 whole genome.
+2. **Coverage**:  `bedtools`
+	- Calculate mean sequencing depth for each genomic feature.
+	- Calculate mean breadth of coverage of each genomic feature.
+3. **Compare**: `python`
+	- Extract depth of the target feature: *pla*.
+	- Extract depth of a baseline feature: *pst*.
+4. **Visualize**: `python`
+	- Linear regression of the target feature depth (*pla*) on the baseline feature depth (*pst*).
+	- Distribution of the observed pla depletion ratios/heterozygosity.
+	- Scatterplot of the depletion ratio over time.
+
+
+
+
+
+
+ 
