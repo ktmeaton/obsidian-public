@@ -4,7 +4,7 @@ people: [[Jennifer Klunk]]
 tags: 🧨
 status: priority
 type: [[Meeting]]
-due: 2021-09-14
+due: 2021-09-15
 time: 19:00
 ---
 

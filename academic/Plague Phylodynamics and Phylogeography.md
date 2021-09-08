@@ -23,5 +23,15 @@ title: Plague Phylodynamics and Phylogeography
 
 ![[Plague Phylodynamics and Phylogeography Paper]]
 
+## Figures
+
+1. Phylogenetic and spatiotemporal overview of Yersinia pestis.
+	- Maximum-likelihood tree
+	- Timeline
+	- Map
+
+
+2. Time 
+
 
 

@@ -19,6 +19,12 @@ status: idea
 
 - Maybe remove the Viking-age samples?
 
+## Visuals
+
+1. Site and Plague Timeline
+2. Map of Second Pandemic and Denmark Samples
+3. Time Tree
+
 ## Conclusions
 
 > 1. **The presence of _[[Yersinia pestis]]_ in Denmark aligns with historical documentation of the Second Plague Pandemic. (Confirmation) ** <br>
