@@ -9,7 +9,7 @@
 |     July 30      |       [[Submit Chapter 2 Draft]]       |   ⬜   |
 |      Aug 13      |     [[Submit Dissertation]]      |   ⬜   |
 |      Aug 30      | [[Initiate Accelerated Defense]] |   ⬜   |
-|     Sept 24      |           [[Defense]]            |   ⬜   |
+|     Sept 24      |           [[Iniate PhD Defense]]            |   ⬜   |
 | Sept 27 - Oct 14 |          [[Revisions]]           |   ⬜   |
 |      Oct 15      |        [[File with SGS]]         |   ⬜   |
 
@@ -21,7 +21,7 @@
 |  Aug 02 - Aug 13  |         [[Review Chapter 2]]          |   ⬜   |
 |  Aug 16 - Aug 27  |           [[Review Thesis]]           |   ⬜   |
 | Aug 30 - Sept 03  | [[Select External, Obtain Approvals]] |   ⬜   |
-|      Sept 24      |              [[Defense]]              |   ⬜   |
+|      Sept 24      |              [[Iniate PhD Defense]]              |   ⬜   |
 
 ## External (TBD)
 
@@ -29,7 +29,7 @@
 |:-------------------:|:-----------------:|:------:|
 | Sept, 06 - Sept, 17 | [[Review Thesis]] |   ⬜   |
 |       Sept 17       | [[Submit Report]] |   ⬜   |
-|       Sept 24       |    [[Defense]]    |   ⬜   |
+|       Sept 24       |    [[Iniate PhD Defense]]    |   ⬜   |
 
 ![[PhD Timeline.png]]
 

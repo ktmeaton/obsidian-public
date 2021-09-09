@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-09-07
+due: 2021-09-09
 people:
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: MacCheck
 type: [[Task]]
 ---

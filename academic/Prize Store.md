@@ -1,4 +1,4 @@
-/*how fast*---
+---
 aliases:
   - Prize Store
 tags:
@@ -34,6 +34,37 @@ where due=date(XXXX-XX-XX) and contains(status,"done")and !contains(file.path, "
 ```
 
 ### 2021-September
+
+#### [[2021-09-08]] | 3 | $10.41
+
+|     Status     | Tasks  |
+|:--------------:|:------:|
+| Previous Value | $10.41 |
+| Today's Tasks  |   4    |
+| Today's Value  | $2.00  |
+|  Total Value   | $12.41 | 
+
+```dataview
+table tags
+from ""
+where due=date(2021-09-09) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+#### [[2021-09-08]] | 3 | $10.41
+
+|     Status     | Tasks  |
+|:--------------:|:------:|
+| Previous Value | $8.91  |
+| Today's Tasks  |   3    |
+| Today's Value  | $1.50  |
+|  Total Value   | $10.41 | 
+
+```dataview
+table tags
+from ""
+where due=date(2021-09-08) and contains(status,"done")and !contains(file.path, "templates")
+```
+
 
 #### [[2021-09-07]] | 11 | $8.91
 

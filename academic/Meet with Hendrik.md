@@ -5,18 +5,49 @@ title:
 people: 
 - [[Hendrik Poinar]]
 
-tags: 🧨 
-status: priority
+tags: ✨ 
+status: done
 type: [[Meeting]]
-due: 2021-09-13
+due: 2021-09-09
 time: 10:30
 ---
 
 # Meet with Hendrik
 
-## [[2021-09-10]]
+## [[2021-09-09]]
 
 - [Meeting Link]()
+
+- Defense Blackout Dates (Dec 14 - Jan 8)
+- ie. Last Day is Dec 10
+- Ready to submit by October 15
+
+- What has to happen before that?
+	- Submitted Paper #2 (Global Phylogeny)
+	- Manuscript draft of Paper #3
+	- Compile into dissertation, write intro and conclusion.
+
+- What is left for these papers?
+	- Paper #2. Cut phylogeography.
+	- Paper #3. Cut pla, viking samples.
+
+Paper #2 = Submission-ready draft Sept 15
+	- Add Eddie Holmes, Dan Sakeld (if mentioning host and ecology)
+	- Prep it in Nature Microbiology, Nature Ecol and Evol
+	- 
+
+September 15 - Paper #2 Circulated To All Authors
+September 24 - Check-in With Author
+September 30
+
+Beginning of October - Putting it into Diserration
+Mid-October =
+Check-ins Every Friday.
+
+- Send Hendrik the Bill
+- 
+
+
 
 ## [[2021-08-12]]
 

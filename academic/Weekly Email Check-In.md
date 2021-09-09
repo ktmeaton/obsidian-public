@@ -1,11 +1,11 @@
 ---
 project:
-due: 2021-10-15
+due: 2021-09-10
 people:
 tags: 🧨
 status: priority
-title: Add LSD2 Binary to CI
+title: Weekly Email Check-In
 type: [[Task]]
 ---
 
-# Add LSD2 Binary to CI
+# Weekly Email Check-In

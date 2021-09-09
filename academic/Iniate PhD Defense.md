@@ -1,11 +1,11 @@
 ---
-project:
+project: [[PhD Dissertation]]
 due: 2021-10-15
 people:
 tags: 🧨
 status: priority
-title: Add LSD2 Binary to CI
+title: Defense
 type: [[Task]]
 ---
 
-# Add LSD2 Binary to CI
+# Defense

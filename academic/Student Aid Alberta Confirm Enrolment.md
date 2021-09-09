@@ -2,8 +2,8 @@
 project: null
 due: 2021-08-10
 people: null
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: Student Aid Alberta Confirm Enrolment
 type: [ [ Task ] ]
 ---

@@ -1,11 +1,11 @@
 ---
 project:
-due: 2021-10-15
+due: 2021-09-13
 people:
 tags: 🧨
 status: priority
-title: Add LSD2 Binary to CI
+title: 3 of 5  - Conclusion
 type: [[Task]]
 ---
 
-# Add LSD2 Binary to CI
+# 3 of 5  - Conclusion

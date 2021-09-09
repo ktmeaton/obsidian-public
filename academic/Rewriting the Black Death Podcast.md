@@ -1,6 +1,6 @@
 ---
 project:
-due: 2021-09-07
+due: 2021-10-15
 people:
 tags: 🧨
 status: priority

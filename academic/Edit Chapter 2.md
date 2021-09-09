@@ -2,8 +2,8 @@
 project: [ [ PhD Dissertation ] ]
 due: 2021-08-13
 people: null
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: Edit Chapter 2
 type: [ [ Task ] ]
 ---
