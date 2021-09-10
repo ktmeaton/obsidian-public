@@ -1,6 +1,6 @@
 ---
 project: [[plague-phylogeography]]
-due: June 15, 2021
+due: Sept 15, 2021
 time: 18:00
 people:
   - [[Katherine Eaton]]
@@ -40,6 +40,12 @@ authors:
       [
         "[[Department of Biology]], [[McMaster University]]"
       ]	
+  - name: [[Eddie Holmes]]
+    orcid: 0000-0001-9596-3552
+    affiliations:
+      [
+        "[[University of Sydney]]",
+      ]	  
   - name: [[Hendrik Poinar]]
     orcid: 0000-0002-0314-4160
     affiliations:
@@ -53,7 +59,7 @@ filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
 tags: 🧨
 status: priority
 title: Plagued by a cryptic clock
-subtitle: Uncovering hidden temporal signal in _[[Yersinia pestis|Y. pestis]]_.
+subtitle: Insight and issues from the global phylogeny of _[[Yersinia pestis|Y. pestis]]_.
 type:
   - [[Task]]
   - [[Note]]
@@ -73,15 +79,28 @@ compile-pandoc: "conda activate pandoc && pandoc/convert_wikilinks.py --input
 url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html
 ---
 
+## Introduction {.page_break_before}
+
+- Plague has a powerful and lasting legacy. Tremendous societal change.
+- Humanity has been visited by many waves of plague pandemics
+- Bronze Age to current epidemics, has visited every continent, and remains endemic in x of those.
+
 ## Results and Discussion {.page_break_before}
 
 ### Population Structure 
 
-A critical step in reconstructing the evolutionary history of an organism is exploring the degree of population or genetic structure. Knowledge of how populations subdivide and diversify in isolation can add nuance to spatiotemporal analyses, by creating population-specific models [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. On the other hand, failing to account for how population subdivide and diversify in isolation can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]].
+A critical step in reconstructing the evolutionary history of an organism is exploring the degree of population or genetic structure. When populations subdivide and diversify in isolation, the 
+
+can add nuance to spatiotemporal analyses, particularly when populations
+
+through population-specific models [[Williamson 2016 Genomic Insights Sustained\|[@williamson2016GenomicInsightsSustained]]]. For example...
+On the other hand, failing to account for how population subdivide and diversify in isolation can result in fundamentally different interpretations [[Scerri 2018 Did Our Species\|[@scerri2018DidOurSpecies]]]. Such as... . We therefore began by examining how existing classification systems...
 
 To explore the global population structure of _Y. pestis_, we estimated a maximum-likelihood phylogeny from 601 genomes, including 540 modern (89.9%) and 61 ancient (10.1%) strains. In addition,  two genomes of the outgroup taxa *[[Yersinia pseudotuberculosis\|Yersinia pseudotuberculosis]]* were included to root the tree. The alignment consisted of 10,249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa *[[Yersinia pseudotuberculosis|Y. pseudotuberculosis]]* from the tree to more closely examine the genetic diversity of *[[Yersinia pestis|Y. pestis]]*.
 
 In Figure @fig:divtree_map_timeline, we contextualize the maximum-likelihood phylogeny using three nomenclature systems: the major branches, biovars, and time periods.  In the following section, we compare how each system defines the population structure of *[[Yersinia pestis|Y. pestis]]*, and the uncertainty surrounding these incongruent divisions.
+
+--> Brief critique of the strengths and weaknesses of each.
 
 #### Biovar
 
@@ -103,33 +122,51 @@ In addition, some populations are curiously excluded from the time period/pandem
 
 In light of this uncertainty and inconsistencies, no classification system comprehensively represents  the global population structure of *[[Yersinia pestis|Y. pestis]]*. However, a combined approach has been previously used in large comparative studies of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. We therefore take the intersection of the three taxonomic systems discussed previously, to define 12 populations for statistical analysis (Figure @fig:divtree_map_timeline). In the following sections, we highlight the novel insight that comes from explicitly incorporating this population structure, and the key areas of uncertainty that remain.
 
-### Phylodynamics {.page_break_before}
+### Molecular Clock {.page_break_before}
 
-> **Section Significance**:<br>Why do we care about node-dating, rate variation, and population sizes?
+A long-standing line of inquiry in plague phylogenetics has been estimating evolutionary rates in order to date internal nodes. Key areas of the phylogeny that have been intensively researched are the first emergence of _[[Yersinia pestis|Y. pestis]]_ in human populations [@rasmussen2015EarlyDivergentStrains], the "Big Bang" polytomy [@green2020HowMicrobeBecomes], and the onset of past pandemics [@bos2011DraftGenomeYersinia; @cui2013HistoricalVariationsMutation; @wagner2014YersiniaPestisPlague]. 
+Recent technological advancements, such as ancient DNA sequencing and new molecular clock methods, have enabled researchers to reach further back in time with increasingly complex models. But despite this intensive interest and methodological advancement,  _[[Yersinia pestis\|Y. pestis]]_ remains notoriously difficult to model using a molecular clock approach. 
 
-Previous work has documented substantial rate variation both between and within populations of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]]. We therefore began by testing if this characteristic was still present in our updated genomic dataset, which is notably larger and more diverse than those used in previous studies. Given this expanded diversity, it is unsurprising that a [[Root to Tip Regression|root-to-tip regression]] on collection date reproduces the finding that substitution rates in *[[Yersinia pestis|Y. pestis]]* are poorly represented by a simple linear model (ie. strict clock) (Figure @fig:rtt). While there is a statistically significant relationship between date and genetic distance (P-value=4.959 x 10<sup>-13</sup>), an extremely low [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>=0.09) indicates there is tremendous variation that is not accounted for. 
+This difficulty can largely be attributed to the substantial rate variation that has been documented across the phylogeny of *[[Yersinia pestis\|Y. pestis]]* [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague]. As a result, considerable debate has emerged over whether *[[Yersinia pestis|Y. pestis]]* has absolutely no temporal signal [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]], or if populations have such distinct rates that a species-wide signal is obscured [[Spyrou 2019 Phylogeography Second Plague\|[@spyrou2019PhylogeographySecondPlague;]] [[Duchene 2016 Genome-scale Rates Evolutionary\|@duchene2016GenomescaleRatesEvolutionary]]]. This uncertainty has produced radically different temporal models between studies, with node dates shifted by as much as several millennia [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Rasmussen 2015 Early Divergent Strains\|@rasmussen2015EarlyDivergentStrains]]]. Thus a comprehensive understanding of plague's molecular clock, or lack thereof, is necessary before we can begin to untangle when and where this disease appeared in the past.
 
-The rate variation observed in _Y. pestis_ presents a curious case of the [[Time Dependency of Molecular Rate Estimates|time dependency of molecular rates]] [[Ho 2005 Time Dependency Molecular\|[@ho2005TimeDependencyMolecular]]]. Rate variation correlates with the sampling time frame, in which populations sampled over several millennia ([[0.PRE]]), have less variation than those sampled over centuries ([[1.PRE]]), or only a few decades ([[2.MED]]) (Figure @fig:rtt). We propose three inter-related mechanisms that drive the observed patterns of rate variation in _[[Yersinia pestis|Y. pestis]]_: 1) a slow, long-term [[Substitution Rate|substitution rate]], 2) a high, short-term [[mutation rate]], and 3) population-specific rate variation.
+#### Rate Variation
 
-#### Slow, Long-Term [[Substitution Rate|Substitution Rate]]
+In light of this evolutionary debate, we began by exploring the extent of rate variation present in our updated genomic dataset, which is notably larger and more diverse than those used in previous studies [@spyrou2019PhylogeographySecondPlague]. Given this expanded diversity, it is unsurprising that a root-to-tip regression on collection date reproduces the finding that substitution rates in *[[Yersinia pestis|Y. pestis]]* are poorly represented by a simple linear model or "strict clock" (Figure @fig:rtt). While there is a statistically significant relationship between date and genetic distance (P-value=4.959 x 10<sup>-13</sup>), an extremely low [[Coefficient of Determination\|coefficient of determination]] (R<sup>2</sup>=0.09) indicates there is tremendous variation that is not accounted for. 
 
-The [[substitution rate]] of _[[Yersinia pestis|Y. pestis]]_ has previously been estimated to range from 1 x 10<sup>-8</sup> to 2 x 10<sup>-8</sup> subs/site/year, [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]] or 1 substitution every 10-25 years. Amongst bacterial pathogens, this is one of the slowest rates observed [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]] and means that  _[[Y. pestis]]_ lineages often cannot be differentiated until several decades have passed. In application, we see this in the finding that isolates from the Second Pandemic ([[1.PRE]]) dated to the medieval [[Black Death]] (1348-1353) are indistinguishable clones, whereas those from subsequent centuries are phylogenetically distinct (Figure @fig:rtt). This highlights a significant limitation of _[[Yersinia pestis|Y. pestis]]_ phylogenetics, as comparisons over short time scale (<10 years) may have limited resolution. Furthermore, the little phylogenetic signal (ie. substitutions) that accumulates in such a short time period may be obscured by transient mutations.
+Thus far, the hypotheses proposed to explain this variation have primarily focused on biological processes, such as the cycling between endemic and epidemic phases [@cite] and adaptations to new environments [@cite]. However, we argue that several methodological factors must first be taken into account, before investigating more complex ecological factors such as host and landscape. 
 
+#### Time Dependency
 
-### High, Short-Term Mutation Rate 
+One striking factor that is methodological in nature is the [[Time Dependency of Molecular Rate Estimates|time dependency of molecular rates]]. In Figure @fig:rtt, we show how rate variation in _Yersinia pestis_ correlates with the sampling time frame, in which populations sampled over several millennia (Bronze Age) have less variation than those sampled over multiple centuries (Second Pandemic) or decades (*medievalis*). This correlation is a well-known and widely-documented phenomenon in many organisms [[Ho 2005 Time Dependency Molecular\|[@ho2005TimeDependencyMolecular]]] and occurs due to two conflicting signals: a slower, long-term [[Substitution Rate|substitution rate]] combined with a higher, short-term [[mutation rate]]. 
 
-Since it can take decades for a [[substitution]] to become fixed in _[[Yersinia pestis|Y. pestis]]_ populations, rate estimates are highly susceptible to the influence of transient [[mutations]]. In whole-genome sequencing, it is common to capture both fixed [[substitutions]] in the population and transient [[mutations]] found in a single isolate. These singleton mutations manifest as long external branches, and may arise from "true" biological variation, particularly when a population is experiencing exponential growth and is sparsely sampled, or from methodological "artifacts" due to sequencing error. 
+Separating out these signals can be extremely challenging and failure to do so can have significant consequences when estimating and interpreting a molecular clock. Of particular concern for epidemiological investigations is the risk of artificially inflating the substitution rate due to transient mutations, which will lead to underestimating internal node dates. With regards to plague genomics, this may result in incorrect molecular dates linked to key historical events, such as the emergence of pandemic populations. Because of this risk, we first evaluate the presence of spurious mutations in our dataset before attempting to estimate a molecular clock model.
 
-The global phylogeny of _[[Yersinia pestis|Y. pestis]]_ is heavily impacted by these transient mutations or long external branches (Figure @fig:divtree_map_timeline). While these outliers are found ubiquitously throughout the phylogeny, several populations are disproportionately affected including *pestoides* ([[0.PE]]) and *medievalis* ([[2.MED]]), and to a lesser extent, *orientalis* ([[1.ORI]]), *intermedius* ([[1.IN]]) and *antiqua* ([[2.ANT]]) (Figure @fig:long_branches). Given the extensive presence of these apparent outliers, inclusion or exclusion of these samples may have profound impacts on the models used to estimate population sizes and molecular clocks.
+<div style="page-break-after: always;"></div>
 
-### Population-Specific Rate Variation
+![Rate variation in _Yersinia pestis_ as observed through a regression of root-to-tip distances on collection date. Top: A species-wide model using all genomes from the maximum-likelihood phylogeny. Middle: Population-specific models based on extracted subtrees from the phylogeny. Bottom: The time-dependency of population-specific rate variation on the sampling time frame. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5a924bf6/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=100%}
 
-The Bayesian analysis exhibited poor sampling of the relaxed clock model parameters, even when using a fixed topology. This suggests there may be too much [[rate variation]] to confidently estimate key parameters such as the mean [[Substitution Rate\|substitution rate]] and the time to the most recent common ancestor ([[MRCA|tMRCA]]). This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. At the same time, other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] and thus we investigated alternative approaches.
+<div style="page-break-after: always;"></div>
 
-A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by population proved even more sensitive, as temporal signal was detected in all populations with three exceptions: [[1.IN]], [[2.ANT]], and [[3.ANT]] (Table @tbl:bets_temporal_signal). Furthermore, for all populations with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock (SC).
+#### Slow, Long-Term Substitution Rate
 
+_[[Yersinia pestis\|Y. pestis]]_ is particularly susceptible to the time-dependency of molecular rates, as it has one of the slowest substitution rates observed among bacterial pathogens [[Duchene 2016 Genome-scale Rates Evolutionary|[@duchene2016GenomescaleRatesEvolutionary]]]. The substitution rate of _[[Yersinia pestis|Y. pestis]]_ has previously been estimated to range from 1 x 10<sup>-8</sup> to 2 x 10<sup>-8</sup> substitutions/site/year, [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]]] or 1 substitution every 10 - 25 years. In application, this means that  _[[Y. pestis]]_ lineages often cannot be differentiated until multiple decades have passed, a concept generally referred to as the phylodynamic threshold [@duchene2020TemporalSignalPhylodynamic].
 
-Figure @fig:rate_stdev
+A historical example of this can be seen during the Second Pandemic, where isolates dated to the medieval [[Black Death]] (1348-1353) are nearly indistinguishable clones (Figure @fig:rtt). A modern example is the *medievalis* population, where the youngest samples (2010s) have diverged little compared to those from a century prior (1910s). This highlights a significant limitation and cautionary note for _[[Yersinia pestis|Y. pestis]]_ phylogenetics, as comparisons over short time scales (10 to 100 years) may have limited resolving power.  
+
+#### High, Short Term Mutation Rate
+
+Furthermore, the little phylogenetic signal (ie. substitutions) that accumulates in the population may be easily obscured by spurious mutations in a single sample. The *medievalis* population is an extreme example of this, as several samples collected between 1970 and 1980 are exceptionally divergent. This short-term diversity is largely due to mutations observed in only a single-isolate, which manifests as long terminal branches in the maximum-likelihood phylogeny (Figure @fig:divtree_map_timeline). The presence of transient mutations, or long branches, is not isolated to the *medievalis* population and also strongly impacts the *pestoides* [[0.PE]], *intermedium* [[1.IN]], and *orientalis* ([[1.ORI]]) populations (Figure @fig:long_branches SI). Given the extensive presence of these apparent outliers, inclusion or exclusion of these samples may have profound impacts on the models used to estimate a molecular clock.
+
+> So what?
+
+#### Bayesian Clock Model
+
+To investigate the degree of temporal signal in the genomic data, we performed a Bayesian evaluation of temporal signal (BETS) test. In brief, this method compares the likelihoods of two different phylogenetic models, one where the true collection dates are used and the other where all collection dates are assumed to be contemporaneous. A comparison of the model likelihoods, or Bayes Factors, is then used to assess the degree of temporal signal in the dataset.
+
+Unfortunately, a BETS test was inconclusive when attempting to fit a clock model to all _Y. pestis_ populations combined. The Bayesian analysis exhibited poor sampling of the clock parameters, for both a strict and relaxed clock, even when attempting to reduce sources of variation such as down-sampling the number of genomes, using fixed tip dates, and fixing the tree topology to the maximum-likelihood phylogeny. This observation is consistent with previous analyses [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]] where robust estimates of model parameters could not be estimated, thus leading to the conclusion that *[[Yersinia pestis|Y. pestis]]* lacks temporal signal. However, as other studies have suggested data composition is a strong determinant of temporal signal [[Duchene 2016 Genomescale Rates Evolutionary\|[@duchene2016GenomescaleRatesEvolutionary]]] we then repeated the BETS test by modeling each of the 12 populations of _Y. pestis_ in isolation.
+
+A [[Bayesian Evaluation of Temporal Signal|BETS]] analysis by population proved even more sensitive, as temporal signal was detected in 9/12 populations. Furthermore, for all populations with temporal signal, the [[Clock Model\|relaxed clock]] model (UCLN) had higher support than the strict clock (SC).
+
 
 ### Phylogeography {.page_break_before}
 
@@ -142,14 +179,10 @@ Figure @fig:rate_stdev
 
 <div id="refs"></div>
 
-## Figures  {.page_break_before}
+## Figures and Tables  {.page_break_before}
 
-![The phylogenetic, temporal, and geographic structure of 601 _Yersinia pestis_ genomes. Top: The maximum-likelihood phylogeny. Middle: The timeline of collection dates. Bottom: The global geographic distribution.
-](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/7311597/main/auspice/all/chromosome/full/filter5/ml/divtree_map_timeline.png){#fig:divtree_map_timeline width=90%}
-
-<div style="page-break-after: always;"></div>
-
-![The time-dependency of rate variation in _Yersinia pestis_ using root-to-tip regression.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5a924bf/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=100%}
+![The phylogenetic, temporal, and geographic structure of _Yersinia pestis_. Top: The maximum-likelihood phylogeny. Middle: The timeline of collection dates. Bottom: The global geographic distribution.
+](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e54d891/main/auspice/all/chromosome/full/filter5/ml/divtree_map_timeline.png){#fig:divtree_map_timeline width=90%}
 
 <div style="page-break-after: always;"></div>
 
@@ -157,4 +190,21 @@ Figure @fig:rate_stdev
 
 ## Supplementary Information   {.page_break_before}
 
-![Long external branches.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5eafc0a/main/iqtree_stats/all/chromosome/full/filter5/long_branches.png){#fig:rtt width=100%}
+![The distribution of external branch length (left) and the prevalence of long external branches across _Y. pestis_ populations (right).](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5eafc0a/main/iqtree_stats/all/chromosome/full/filter5/long_branches.png){#fig:long_branches width=100%}
+
+
+
+| Population | SC Ultrametric | SC Dates                                          | UCLN Ultrametric | UCLN Dates   | BETS Model | Bayes Factor |
+| ---------- | -------------- | ------------------------------------------------- | ---------------- | ------------ | ---------- | ------------ |
+| 0.ANT4     | -5889525.703   | -5889520.445                                      | -5889501.725     | -5889495.805 | ULCN_dates |              |
+| 0.ANT      | -5896014.089   | -5896016.472	-5895879.702	-5882581.985	ULCN_dates |                  |              |            |              |
+0.PE	-5945602.843	-5945574.023	-5944626.698	-5944614.32	UCLN_dates
+0.PRE	-5892925.901	-5892842.899	-5892738.563	-5892741.377	ULCN_ultra
+1.ANT	-5882596.155	-5882586.874	-5882594.555	-5882581.864	ULCN_dates
+1.IN	-5891399.168	-5891402.697	-5891344.183	-5891354.514	ULCN_ultra
+1.ORI	-5899691.115	-5899661.493	-5899601.413	-5899565.743	UCLN_dates
+1.PRE	-5888139.985	-5888129.886	-5888082.134	-5888038.053	ULCN_dates
+2.ANT	-5892876.227	-5892894.924	-5892791.269	-5892804.654	ULCN_ultra
+2.MED	-5920837.35	-5920732.774	-5919662.038	-5919658.136	UCLN_dates
+3.ANT	-5887496.544	-5887506.036	-5887494.669	-5887505.841	ULCN_ultra
+4.ANT	-5886031.423	-5886034.116	-5886025.578	-5886021.969	ULCN_dates

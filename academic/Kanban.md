@@ -12,7 +12,7 @@ from ""
 where due and contains(status,"priority") and due<date(today) and !contains(file.path, "templates")
 ```
 
-## Due
+## Today
 
 ```dataview
 table project as Project,type as Type,due as Due, time as Time
@@ -20,35 +20,38 @@ from ""
 where due and contains(status,"priority") and due=date(today) and !contains(file.path, "templates")
 ```
 
-## Done
+## Tomorrow
 
 ```dataview
 table project as Project,type as Type,due as Due
 from ""
-where due and contains(status,"done") and due=date(today) and !contains(file.path, "templates")
+where due and contains(status,"priority") and due=date(today) + dur(1 day) and !contains(file.path, "templates")
 sort due asc
 ```
 
-## Upcoming
+## This Week
+
+```dataview
+table project as Project,type as Type,due as Due
+from ""
+where due and contains(status,"priority") and (due>date(today) + dur(1 day)) and (due<date(today) + dur(7 day))  and !contains(file.path, "templates")
+sort due asc
+```
+
+## This Month
+
+```dataview
+table project as Project,type as Type,due as Due
+from ""
+where due and contains(status,"priority") and (due>date(today) + dur(8 day)) and (due<date(today) + dur(30 day))  and !contains(file.path, "templates")
+sort due asc
+```
+
+## Long Term
 
 ```dataview
 table project as Project,type as Type,due as Due, time as Time
 from ""
-where due and contains(status,"priority") and due>date(today) and !contains(file.path, "templates")
+where due and contains(status,"priority") and due>date(today) + dur(30day) and !contains(file.path, "templates")
 sort due asc
 ```
-
-<!--
-## Backlog
-
-```dataview
-table project as Project,type as Type, tags as Tag
-from "" 
-where (contains(status,"idea") or contains(status,"backlog"))
-      and !contains(file.path, "templates")
-	  and type and type!=[[Note]]
-sort file.mtime desc
-```
--->
-
-![[Prize Store]]
