@@ -8,11 +8,16 @@ people:
 tags: ✨ 
 status: done
 type: [[Meeting]]
-due: 2021-09-09
+due: 2021-09-13
 time: 10:30
 ---
 
 # Meet with Hendrik
+
+- [[PNAS call for papers]]
+- [[Troubleshoot ancient sample]]
+-[[Modern pipeline SE]]
+- Write up pla depletion method
 
 ## [[2021-09-09]]
 
