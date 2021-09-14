@@ -11,6 +11,22 @@ time: 11:00
 
 # Poinar Lab Meeting
 
+## 2021-09-14
+
+### COVID Updates
+
+- Instructional work in the lab = multiple people allowed.
+- [[Excel checklist for Responsibilites]]
+- Pierre et al. 2020 (EJHG)
+
+### Lab Responsibilities
+
+1. Identify who will be _regularly_ working in the labs.
+2. Identify who will be _regularly_ working in the office.
+3. Identify who is willing to come into campus for responsibilities.
+4. Rapidly transition Emil out of his responsibilities (train new person).
+5. Slowly transition anyone who is graduating soon (ex. Kat) out of their responsibilities.
+
 ## 2021-08-17
 
 - Upload proof of vaccination soon.

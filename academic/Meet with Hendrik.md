@@ -249,5 +249,5 @@ File for Defense | Accelerated: 2 + 6 weeks before defense (June 19, 2020)
 
 ### Tasks
 
-- [[Plague Phylodynamics and Phylogeography Paper]]
+- [[Eaton et al. 2021 Plagued by a cryptic clock]]
 - "How does this shift dialogue?"
