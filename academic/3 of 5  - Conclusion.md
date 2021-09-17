@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-09-13
+due: 2021-09-15
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: 3 of 5  - Conclusion
 type: [[Task]]
 ---

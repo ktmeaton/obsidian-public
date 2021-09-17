@@ -35,6 +35,38 @@ where due=date(XXXX-XX-XX) and contains(status,"done")and !contains(file.path, "
 
 ### 2021-September
 
+#### [[2021-09-17]] | 3 | $10.52
+	
+|     Status     | Tasks  |
+|:--------------:|:------:|
+| Previous Value | $9.42  |
+| Today's Tasks  |   3    |
+| Today's Value  | $1.50  |
+|  Total Value   | $10.92 | 
+
+```dataview
+table tags
+from ""
+where due=date(2021-09-17) and contains(status,"done")and !contains(file.path, "templates")
+```
+
+#### [[2021-09-16]] | 7 | $9.92
+
+- This is a catch up from the previous 6 days.
+
+|     Status     | Tasks |
+|:--------------:|:-----:|
+| Previous Value | $6.42 |
+| Today's Tasks  |   7   |
+| Today's Value  | $3.50 |
+|  Total Value   | $9.92 | 
+
+```dataview
+table tags
+from ""
+where due>date(2021-09-10) and due<date(2021-09-17) and contains(status,"done")and !contains(file.path, "templates")
+```
+
 #### [[2021-09-10]] | 2 | $6.42
 
 |     Status     | Tasks |

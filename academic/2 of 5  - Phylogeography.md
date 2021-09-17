@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-09-12
+due: 2021-09-15
 people:
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: 2 of 5  - Phylogeography
 type: [[Task]]
 ---
