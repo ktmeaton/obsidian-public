@@ -5,10 +5,10 @@ title:
 people: 
 - [[Hendrik Poinar]]
 
-tags: ✨ 
-status: done
+tags: 🧨
+status: priority
 type: [[Meeting]]
-due: 2021-09-13
+due: 2021-09-21
 time: 10:30
 ---
 
@@ -18,6 +18,15 @@ time: 10:30
 - [[Troubleshoot ancient sample]]
 -[[Modern pipeline SE]]
 - Write up pla depletion method
+
+## [[2021-09-21]]
+
+- Refine the framework or hypotheses:
+	- Calibrations are critical for Yersinia pestis. We know this because of the ancient samples.
+	- Talk about all the variables I tested to explain the long branches
+	- Bring back the host tree for the SI!
+	- Go through ratio again
+	- Prune!
 
 ## [[2021-09-09]]
 
