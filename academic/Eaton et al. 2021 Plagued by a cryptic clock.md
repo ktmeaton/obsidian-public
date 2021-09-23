@@ -19,14 +19,21 @@ authors:
     orcid: 0000-0002-8878-1758
     affiliations:
       [
-        "[[The Peter Doherty Institute For Infection and Immunity ]],
+        "[[The Peter Doherty Institute for Infection and Immunity]],
           [[University of Melbourne]]"
       ]
+  - name: [[Sebastian Duchene]]
+    orcid: 0000-0002-2863-0907
+    affiliations:
+      [
+        "[[The Peter Doherty Institute for Infection and Immunity]],
+          [[University of Melbourne]]"
+      ]	  	  
   - name: [[Ann Carmichael]]o
     affiliations: [ "Department of History, [[Indiana University Bloomington]]" ]
   - name: [[Nükhet Varlık]]
     orcid: 0000-0001-6870-5945
-    affiliations: [ "Department of History, [[University of South Carolina]]" ]
+    affiliations: [ "Department of History, [[Rutgers University-Newark ]]" ]
   - name: [[Brian Golding]]
     orcid: 0000-0002-7575-0282
     affiliations:
@@ -38,13 +45,6 @@ authors:
     affiliations:
       [
         "Sydney Institute for Infectious Diseases, [[University of Sydney]]",
-      ]	  
-  - name: [[Sebastian Duchene]]
-    orcid: 0000-0002-2863-0907
-    affiliations:
-      [
-        "[[The Peter Doherty Institute For Infection and Immunity ]],
-          [[University of Melbourne]]"
       ]	  
   - name: [[Hendrik Poinar]]
     orcid: 0000-0002-0314-4160
@@ -91,9 +91,34 @@ url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%
 
 ## Introduction {.page_break_before}
 
-Plague has an impressively long and expansive history as a zoonosis of rodents. The earliest "fossil" evidence of the plague bacterium, *[[Yersinia pestis]]*, comes from [[Ancient DNA\|ancient DNA]] studies which date its first emergence in humans to the Neolithic [[Andrades Valtuena et al. 2017 Stone Age Plague\|[@andradesvaltuena2017StoneAgePlague; ]] [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]]. Since then, _Y. pestis_ has dispersed globally on numerous occasions, due to an ability to infect a variety of mammalian hosts  [@perry1997YersiniaPestisEtiologic] and ever-expanding trade networks [@yue2017TradeRoutesPlague]. Few regions of the ancient and modern world remain untouched by this disease, as plague has an established presence on every continent except Oceania [@who2017Plague].
+Plague has an impressively long and expansive history as a zoonosis of rodents. The earliest "fossil" evidence of the plague bacterium, *[[Yersinia pestis]]*, comes from [[Ancient DNA\|ancient DNA]] studies which date its first emergence in humans to the Late Neolithic Bronze Age [[Andrades Valtuena et al. 2017 Stone Age Plague\|[@andradesvaltuena2017StoneAgePlague; ]] [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]]. Over the last five thousand years, _Y. pestis_ has dispersed globally on numerous occasions, due to an ability to infect a variety of mammalian hosts  [@perry1997YersiniaPestisEtiologic] and ever-expanding trade networks [@yue2017TradeRoutesPlague]. Few regions of the ancient and modern world remain untouched by this disease, as plague has persisted until today on every continent except Australia and Antarctica [@who2017Plague].
 
-Accompanying this prolific global presence is unnervingly high mortality. There have been at least three historically-documented pandemics of plague, the First Pandemic (6<sup>th</sup> to 8<sup>th</sup> century CE) [@wagner2014YersiniaPestisPlague; @mordechai2019JustinianicPlagueInconsequential], the Second Pandemic (14<sup>th</sup> to 18<sup>th</sup> century CE) [@spyrou2019PhylogeographySecondPlague], and the Third Pandemic (19<sup>th</sup> to 20<sup>th</sup> century CE) [@cui2013HistoricalVariationsMutation]. The advent of each pandemic is marked by a devastating series of outbreaks, such as the medieval Black Death (1348-1353), which is estimated to have killed more than half of Europe's population  [[Benedictow 2004 Black Death 1346-1353\|[@benedictow2004BlackDeath13461353]]]. This tremendous demographic collapse then led to significant economic and environmental changes all across western Eurasia and North Africa [@varlik2015PlagueEmpireEarly; @campbell2016GreatTransitionClimate]. Furthermore, this virulence potential can still be observed in the post-antibiotic era, where case fatality rates range from 22 to 71% [[Bertherat 2019 Plague World 2019\|[@bertherat2019PlagueWorld2019]]]. There are few other pathogens that have had such a lasting impact on past and present human populations, and thus plague maintains its status as a disease that is of vital importance for public health research.
+Accompanying this prolific global presence is unnervingly high mortality. There have been at least three historically-documented pandemics of plague: the First Pandemic (6<sup>th</sup> to 8<sup>th</sup> century CE) [@wagner2014YersiniaPestisPlague; @mordechai2019JustinianicPlagueInconsequential], the Second Pandemic (14<sup>th</sup> to 18<sup>th</sup> century CE) [@varlik2014NewScienceOld], and the Third Pandemic (18<sup>th</sup> to 20<sup>th</sup> century CE) [@xu2014WetClimateTransportation]. The advent of each pandemic is marked by a devastating series of outbreaks, such as the medieval Black Death (1348-1353), which is estimated to have killed more than half of Europe's population  [@benedictow2021CompleteHistoryBlack].  This level of virulence is still observed today, as untreated pneumonic plague has a case fatality rate of nearly 100% [@prentice2007Plague; salam2020DeathsAssociatedPneumonic]. As a result, plague maintains its status as a disease that is of vital importance for public health research.
+
+There are few other pathogens that have had such a lasting impact on past and present human populations, and thus
+
+Despite, 
+
+Another ... due to its enigmatic epidemiology.
+
+Our knowledge of plague's epidemiology is far from complete, 
+
+The epidemiology of plague is quite 
+
+- Enigmatic epidemiology
+
+
+
+- Several aspects of plague's epidemiology remain enigmatic.
+- In particular, the emergence and spread of plague in pre
+- Particularly where 
+
+- There is still a lot we don't know.
+- Because of little surviving historical evidence.
+- Either pre-dates written history (Late Neolithic Bronze Age)
+- 
+
+---
 
 A long-standing line of inquiry in plague research has been estimating the timing and location of past events. The most intensively researched events have been: (1) the first appearance of _Y. pestis_ in human populations [@rasmussen2015EarlyDivergentStrains], (2) the onset and progression of the three pandemics [@bos2011DraftGenomeYersinia; @cui2013HistoricalVariationsMutation; @wagner2014YersiniaPestisPlague], and (3) the inter-pandemic or "quiescent" periods where _Y. pestis_ recedes into wild rodent populations and disappears from the historical record [@zeppelini2018OngoingQuiescenceBorborema; @green2020HowMicrobeBecomes]. Our knowledge of these events has considerably deepened in recent years, owing in part to technological advancements such as the retrieval and sequencing of ancient DNA alongside new molecular clock dating methods. These advancements have thus empowered researchers to test hypotheses about plague's epidemiology further back in time with increasingly complex models. Despite this intensive interest and methodological advancement, the rate and time scale of evolution in _Y. pestis_ remains notoriously difficult to estimate.
 
@@ -148,17 +173,17 @@ Progress towards these key objectives is anticipated to benefit both prospective
 
 ### Population Structure 
 
-We began our exploration of population structure by estimating a maximum-likelihood phylogeny, using 601 global isolates including 540 modern (89.9%) and 61 ancient (10.1%) strains. In addition, two genomes of the outgroup taxa *[[Yersinia pseudotuberculosis\|Yersinia pseudotuberculosis]]* were included to root the tree. The alignment consisted of 10,249 variant positions exclusive to *[[Yersinia pestis|Y. pestis]]*, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa from the tree to more closely examine the genetic diversity of *[[Yersinia pestis|Y. pestis]]*.
+To determine the of _Y. pestis_, we first estimated a maximum-likelihood phylogeny, using 601 global isolates including 540 modern (89.9%) and 61 ancient (10.1%) strains. We rooted the tree using two genomes of the outgroup taxa _Yersinia pseudotuberculosis_. The alignment consisted of 10,249 variant positions exclusive to _Y. pestis_, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa from the tree to more closely examine the genetic diversity of _Y. pestis_.
 
-In Figure @fig:divtree_map_timeline, we contextualize the global phylogeny using three widely-used nomenclature systems: the major branches, metabolic biovars, and historical time periods.  In the following section, we compare and critique each system, identify any incongruent divisions and uncertainty, and explore an integrative approach for spatiotemporal analysis.
+In Figure @fig:divtree_map_timeline, we contextualize the global phylogeny using three nomenclature systems: the major branches, metabolic biovars, and historical time periods.  In the following section, we compare and critique each system, identify any incongruent divisions and uncertainty, and explore an integrative approach for spatiotemporal analysis.
 
 #### Biovar
 
-The oldest system to date is the biovar nomenclature, which uses metabolic differences to define population structure. *[[Yersinia pestis|Y. pestis]]* can be categorized into four classical biovars: *antiqua* (`ANT`), *medievalis* (`MED`), *orientalis* (`ORI`), and *microtus*/*pestoides* (`PE`) [@devignat1951VarietesEspecePasteurella; @zhou2004ComparativeEvolutionaryGenomics]. Non-classical biovars have also been introduced, such as the *intermedium* biovar (`IN`), which reflects a transitional state from *antiqua* to *orientalis* [[Li 2009 Genotyping Phylogenetic Analysis\|[@li2009GenotypingPhylogeneticAnalysis]]]. The biovar system is simple in application, as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [[Zhou 2004 Comparative Evolutionary Genomics\|[@zhou2004ComparativeEvolutionaryGenomics]]]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]], which weakens its broader applicability. This is further exacerbated by the sequencing of non-viable, ‘extinct’ *Y. pestis*, for which metabolic sub-typing is impossible [[Bos 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]]. Researchers have responded to this uncertainty in a variety of ways, by creating pseudo-biovars (`PRE`) [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains]]] or extrapolating existing ones [[Wagner 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]]. Other still have foregone the *biovar* nomenclature altogether in favor of locally-developed taxonomies [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia]]]. Despite extensive research, it remains unclear which metabolic traits, if any, can be used to classify *[[Yersinia pestis|Y. pestis]]* into distinct populations at a global scale.
+The oldest system of _Y. pestis_ classification is the biovar nomenclature, which uses metabolic differences to define population structure. Accordingly, _Y. pestis_ can be categorized into four classical biovars: *antiqua* (ANT), *medievalis* (MED), *orientalis* (ORI), and *microtus*/*pestoides* (PE) [@devignat1951VarietesEspecePasteurella; @zhou2004ComparativeEvolutionaryGenomics]. Non-classical biovars have also been introduced, such as the *intermedium* biovar (`IN`), which reflects a transitional state from *antiqua* to *orientalis* [@li2009GenotypingPhylogeneticAnalysis]. The biovar system is simple in application, as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [@zhou2004ComparativeEvolutionaryGenomics]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [@kutyrev2018PhylogenyClassificationYersinia]. This is further exacerbated by the sequencing of non-viable, "extinct" *Y. pestis*, for which metabolic sub-typing is impossible [@bos2011DraftGenomeYersinia]. Researchers have responded to this uncertainty in a variety of ways, by extrapolating existing biovars [@wagner2014YersiniaPestisPlague] or creating new pseudo-biovars (PRE) [@rasmussen2015EarlyDivergentStrains]. Others have foregone the biovar nomenclature altogether in favor of locally-developed taxonomies [@kutyrev2018PhylogenyClassificationYersinia]. Despite extensive research, it remains unclear which metabolic traits, if any, can be used to classify _Y. pestis_ into distinct populations on a global scale.
 
 #### Major Branch
 
-In contrast to the biovar nomenclature which emphasizes phenotype, the major branch nomenclature focuses on the evolutionary relationships between strains. This system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to the “Big Bang” polytomy  [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation]]]. All lineages that diverged prior to this polytomy are grouped into Branch 0 and those diverging after form Branches 1-4. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [[Green 2020 How Microbe Becomes\|[@green2020HowMicrobeBecomes]]]. However, the epidemiological significance of the “Big Bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. While the major branch system excels at reconstructing the evolutionary relationships between candidate populations, it struggles to connect these relationships to other biological changes.
+In contrast to the biovar nomenclature which emphasizes phenotype, the major branch nomenclature focuses on phylogenetic relationships. This system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to a multifurcation called the “Big Bang” polytomy  [@cui2013HistoricalVariationsMutation]. All lineages that diverged prior to this polytomy are grouped into Branch 0 and those diverging after form Branches 1-4. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [@green2020HowMicrobeBecomes; @green2020FourBlackDeaths]. However, the epidemiological significance of the “Big Bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. 
 
 ![The phylogenetic, temporal, and geographic distribution of _Yersinia pestis_ genomes. Top: The maximum-likelihood phylogeny. Middle: The timeline of collection dates. Bottom: The global geographic distribution.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/15ded0c/main/auspice/all/chromosome/full/filter5/ml/divtree_map_timeline.png){#fig:divtree_map_timeline width=90%}

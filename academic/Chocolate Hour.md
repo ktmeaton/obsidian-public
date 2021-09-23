@@ -1,6 +1,6 @@
 ---
 project:
-due: 2021-09-17
+due: 2021-09-24
 time: 12:30
 people:
 tags: 🧨
