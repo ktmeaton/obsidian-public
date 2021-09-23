@@ -22,7 +22,7 @@ authors:
         "[[The Peter Doherty Institute For Infection and Immunity ]],
           [[University of Melbourne]]"
       ]
-  - name: [[Ann Carmichael]]
+  - name: [[Ann Carmichael]]o
     affiliations: [ "Department of History, [[Indiana University Bloomington]]" ]
   - name: [[Nükhet Varlık]]
     orcid: 0000-0001-6870-5945

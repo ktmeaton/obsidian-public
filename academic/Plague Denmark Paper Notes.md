@@ -9,6 +9,55 @@ status: idea
 
 # Plague Denmark Paper Notes
 
+## Feedback
+
+### [[Katherine Eaton]]
+
+- [ ] For anything about phylogeography/spread/directionarlity, create a geographic distribution summary.
+- Different levels of information:
+	- Full range of site (Viking -> Early Modern)
+	- Known occupation range of excavated site
+	- Arm position.
+
+### [[Brian Golding]]
+
+- [ ] Introduction: Before you get to methods and results, the types of methods to analyze spatial genetic models needs a short paragraph (helps to limit the methods that need be considered)
+- [ ] Map: Split the Ribe 101 number into the two time frames.
+- [ ] Phylogeny: Russia is long?
+- [ ] Explain the K3Pu+F+I model
+- [ ] Rerun the tip-dating just on priors
+
+### [[Hendrik Poinar]]
+
+- [ ] Add sharon dewitte and michelle ziegler
+- [ ] Add "total" row to the master summary table.
+- [ ] Revise the "positivity" calculation, specifically the "plague-negative" exclusion sites is problematic.
+- [ ] When interpreting plague negative, link to the historical documentation that supports it.
+- [ ] Is there a positive correlation between human and plague DNA?
+- [ ] Why are some of the plasmid coverages way higher?
+- [ ] Move clock model summary to SOM.
+- [ ] Cite Global plague paper when talking about dating.
+- [ ] For all DNA dates, include the 95% CI.
+- [ ] Summary Table of dates, differentiate skeletal vs dna vs site vs radiocarbon
+- [ ] Phylogeny: the interpretation of multiple waves is not strongly supported by the data.
+- [ ] Merge the Second Pandemic sample map with the Danish site distribution.
+- [ ] Rethink the pestis secunda interpretation.
+- [ ] Pick phase or period.
+
+### [[Sebastian Duchene]]
+
+- [ ] Re-examine dating section.
+- [ ] GSS not in BEAST2? [Discussion Forum](https://groups.google.com/g/beast-users/c/nGivwwqKRgM)
+- [ ] Read about stepping stone vs. path sampling
+
+### [[Jennifer Klunk]]
+
+- [ ] Introduction: What is the central question and hypothesis we're exploring?
+- [ ] Results: Short methods summary beforehand?
+- [ ] Introduce the publicly available samples, and why they were chosen.
+- [ ] Multiple strains of Yp in G371?
+- [ ] What is no skeletal date? For some individuals, I have an arm position from Julia. Some don't.
+
 ## Map
 
 1. Outgroup [[0.ANT3]] (China/Kyrgystan)
@@ -17,7 +66,10 @@ status: idea
 
 ## Notes
 
-- Maybe remove the Viking-age samples?
+- Remove the Viking-age samples.
+- Remove the timeline phylogeny.
+- There is no monophyletic Danish clade.
+- 
 
 ## Visuals
 
