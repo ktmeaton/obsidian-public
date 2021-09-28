@@ -31,7 +31,6 @@ compile-revealjs: "conda activate pandoc && pandoc/convert_wikilinks.py --input
   '2021-06-08 Poinar Lab Meeting_convert.md' && rm '2021-06-08 Poinar Lab
   Meeting_convert.md';"
 ---
----
 
 ### Molecular Clock Models
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Eaton, K., Featherstone, L., Duchene, S., Carmichael, A., Varlık, N., Golding, G. B., Holmes, E., Poinar, H. N.">
+  <title>Plagued by a cryptic clock</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="pandoc/templates/revealjs-obsidian/simple.css"/>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+  <section id="title-slide">
+  <h1 class="title">Plagued by a cryptic clock</h1>
+  <p class="subtitle">Insight and issues from the global phylogeny of <em>Yersinia pestis</em></p>
+  <p class="author"><small>Eaton, K., Featherstone, L., Duchene, S., Carmichael, A., Varlık, N., Golding, G. B., Holmes, E., Poinar, H. N.</small></p>
+  <p>BEAP</p>
+
+  <p class="date">2021 October 01</p>
+
+        <img height=200px src=https://rawcdn.githack.com/ktmeaton/plague-phylogeography/e74d7b0d732023d109e1abbefde3305eae589ebd/docs/images/thumbnail_DHSI2020.png>
+
+</section>
+
+
+
+<section>
+<section id="introduction" class="title-slide slide level2">
+<h2>Introduction</h2>
+
+</section>
+<section id="disease-exposure-and-disease-experience" class="slide level3">
+<h3>Disease Exposure and Disease Experience</h3>
+</section>
+<section id="zoonoses" class="slide level3">
+<h3>Zoonoses</h3>
+</section>
+<section id="plague" class="slide level3">
+<h3>Plague</h3>
+</section>
+<section id="major-events" class="slide level3">
+<h3>Major Events</h3>
+<p><img data-src="plague_timeline_blank.png" /></p>
+</section>
+<section id="objectives" class="slide level3">
+<h3>Objectives</h3>
+</section></section>
+<section>
+<section id="methods" class="title-slide slide level2">
+<h2>Methods</h2>
+
+</section>
+<section id="subsection" class="slide level3">
+<h3>Subsection</h3>
+</section></section>
+<section>
+<section id="results-and-discussion" class="title-slide slide level2">
+<h2>Results and Discussion</h2>
+
+</section>
+<section id="maximum-likelihood-phylogeny" class="slide level3">
+<h3>1. Maximum-Likelihood Phylogeny</h3>
+</section>
+<section id="no-global-molecular-clock" class="slide level3">
+<h3>1. No Global Molecular Clock</h3>
+<blockquote>
+<p>The global diversity of <em>Y. pestis</em> is poorly modeled by a single molecular clock.</p>
+</blockquote>
+<ul>
+<li>Bayesian (BEAST) analysis was inconclusive (strict or relaxed).</li>
+<li>Poor sampling, lack of convergence, low ESS.</li>
+<li>Why? Too much rate variation!</li>
+<li>Reducing the number of samples, reducing tip date uncertainty, fixing the tree topology.</li>
+<li>Rates and dates are not informative!</li>
+<li>Pictures of Sebastian and Leo.</li>
+</ul>
+</section>
+<section id="population-clocks-recover-temporal-signal" class="slide level3">
+<h3>2. Population Clocks Recover Temporal Signal</h3>
+<ul>
+<li>Good modeling performance!</li>
+</ul>
+</section>
+<section id="time-dependency-of-rate-variation" class="slide level3">
+<h3>3. Time Dependency of Rate Variation</h3>
+</section>
+<section id="third-pandemic" class="slide level3">
+<h3>4. Third Pandemic</h3>
+</section>
+<section id="second-pandemic" class="slide level3">
+<h3>5. Second Pandemic</h3>
+</section></section>
+<section id="conclusion" class="title-slide slide level2">
+<h2>Conclusion</h2>
+<ul>
+<li>Methodological and epidemiological findings.</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // remote reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  // local reveal.js plugins  
+  <script src="pandoc/plugins/reveal.js-menu/menu.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+      
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+          RevealMenu
+        ]
+      });
+    </script>
+    </body>
+</html>
