@@ -27,3 +27,37 @@ git submodule add https://github.com/denehyg/reveal.js-menu.git
 <script src="pandoc/plugins/reveal.js-menu/menu.js"></script>
 ```
 
+## Slide Transition
+
+-  None
+	```markdown
+	### History  {data-transition="none"}
+	```
+- Zoom
+	```markdown
+	### History  {data-transition="zoom"}
+	```
+	
+## Fragments
+
+```markdown
+:::{.element: class="fragment"}
+Fade in
+:::
+
+:::{.element: class="fragment fade-out"}
+Fade out
+:::
+
+:::{.element: class="fragment highlight-red"}
+Highlight red
+:::
+
+:::{.element: class="fragment fade-in-then-out"}
+Fade in, then out
+:::
+
+:::{.element: class="fragment fade-up"}
+Slide up while fading in
+:::
+```
