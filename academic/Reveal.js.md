@@ -61,3 +61,10 @@ Fade in, then out
 Slide up while fading in
 :::
 ```
+
+## Reveal Bullet Points Incremental
+
+```markdown
+> - Node density is highest close to the root.
+> - Sampling Time Frame: 54 years - 84 years
+```

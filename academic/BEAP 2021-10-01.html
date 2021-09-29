@@ -18,6 +18,25 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
   <link rel="stylesheet" href="pandoc/templates/revealjs-obsidian/simple.css"/>
@@ -93,58 +112,213 @@
 <h3>Objectives</h3>
 </section></section>
 <section>
-<section id="methods" class="title-slide slide level2">
-<h2>Methods</h2>
-
-</section>
-<section id="subsection" class="slide level3">
-<h3>Subsection</h3>
-</section></section>
-<section>
-<section id="results-and-discussion" class="title-slide slide level2">
-<h2>Results and Discussion</h2>
+<section id="y.-pestis-population-structure" class="title-slide slide level2">
+<h2><em>Y. pestis</em> Population Structure</h2>
 
 </section>
 <section id="population-structure" class="slide level3">
 <h3>Population Structure</h3>
+<hr>
 <figure>
 <img data-src="divtree.svg" id="fig:divtree" alt="Figure 5: The maximum-likelihood phylogeny of 601 Yersinia pestis genomes." /><figcaption aria-hidden="true">Figure 5: The maximum-likelihood phylogeny of 601 <em>Yersinia pestis</em> genomes.</figcaption>
 </figure>
 </section>
-<section id="no-global-molecular-clock" class="slide level3">
-<h3>1. No Global Molecular Clock</h3>
+<section id="global-molecular-clock" class="slide level3">
+<h3>Global Molecular Clock</h3>
+<hr>
+<aside class="notes">
+<ul>
+<li>Bayesian (BEAST) analysis was inconclusive (strict or relaxed).<br></li>
+<li>Poor sampling, lack of convergence, low ESS.<br></li>
+<li>Why? Too much rate variation!<br></li>
+<li>Reducing the number of samples, reducing tip date uncertainty, fixing the tree topology.<br></li>
+<li>Rates and dates are not informative!<br></li>
+<li>Pictures of Sebastian and Leo.<br></li>
+</ul>
+</aside>
 <blockquote>
 <p>The global diversity of <em>Y. pestis</em> is poorly modeled by a single molecular clock.</p>
 </blockquote>
+<figure>
+<img data-src="rtt.svg" id="fig:rtt" height="400" alt="Figure 6: Root-to-tip regression" /><figcaption aria-hidden="true">Figure 6: Root-to-tip regression</figcaption>
+</figure>
+</section>
+<section id="population-molecular-clocks" class="slide level3">
+<h3>Population Molecular Clocks</h3>
+<hr>
+<blockquote>
+<p>Population clocks recover temporal signal in 9 of 12 populations.<br></p>
+</blockquote>
 <ul>
-<li>Bayesian (BEAST) analysis was inconclusive (strict or relaxed).</li>
-<li>Poor sampling, lack of convergence, low ESS.</li>
-<li>Why? Too much rate variation!</li>
-<li>Reducing the number of samples, reducing tip date uncertainty, fixing the tree topology.</li>
-<li>Rates and dates are not informative!</li>
-<li>Pictures of Sebastian and Leo.</li>
+<li>Clock parameters: ESS scores &gt; 200</li>
+<li>Relaxed clock (Uncorrelated lognormal) outperforms strict clocks.</li>
 </ul>
+</section></section>
+<section>
+<section id="observation-1-temporal-signal-without-adna" class="title-slide slide level2">
+<h2>Observation 1:<br>Temporal Signal Without aDNA</h2>
+
 </section>
-<section id="population-clocks-recover-temporal-signal" class="slide level3">
-<h3>2. Population Clocks Recover Temporal Signal</h3>
+<section id="temporal-signal-without-adna" class="slide level3">
+<h3>Temporal Signal Without aDNA</h3>
+<hr>
 <ul>
-<li>Good modeling performance!</li>
+<li>Two populations had temporal signal, despite having no ancient DNA calibrations.</li>
+<li>The Third Pandemic (1.ORI)</li>
+<li><em>Medievalis</em> (2.MED), once thought to be the cause of the Black Death.</li>
 </ul>
+</section></section>
+<section>
+<section id="observation-no-temporal-signal" class="title-slide slide level2">
+<h2>Observation ?:<br> No Temporal Signal</h2>
+
 </section>
-<section id="time-dependency-of-rate-variation" class="slide level3">
-<h3>3. Time Dependency of Rate Variation</h3>
+<section id="observation-no-temporal-signal-1" class="slide level3">
+<h3>Observation ?: No Temporal Signal</h3>
+<hr>
+<aside class="notes">
+<ul>
+<li>3 populations had insufficient phylogenetic and temporal information.<br></li>
+</ul>
+</aside>
+<ul>
+<li>Three populations have no temporal signal (Figure  7).</li>
+<li>Shortest sampling time frames.</li>
+<li>Node density is highest close to the root.</li>
+</ul>
+<blockquote>
+<p>These populations have rates and dates that are <strong>non-informative</strong>.<br> The <strong>phylodynamic threshold</strong> of <em>Y. pestis</em> is greater than 50 years. <br> Comparisons over shorter time scales will have <strong>limited resolving power</strong>.</p>
+</blockquote>
+<figure>
+<img data-src="no_temporal_signal.svg" id="fig:no_temporal_signal" alt="Figure 7: No temporal signal" /><figcaption aria-hidden="true">Figure 7: No temporal signal</figcaption>
+</figure>
 </section>
-<section id="third-pandemic" class="slide level3">
-<h3>4. Third Pandemic</h3>
+<section id="epidemic-analysis" class="slide level3">
+<h3>Epidemic Analysis</h3>
+<hr>
+<aside class="notes">
+<blockquote>
+<p><strong>Solution:</strong> Other genetic markers?</p>
+</blockquote>
+</aside>
+<blockquote>
+<p>Intra-epidemic diversity is poorly resolved by a core genome SNP phylogeny.<br></p>
+</blockquote>
+<ul>
+<li>Black Death (1346 - 1353) <em>Y. pestis</em> isolates are indistinguishable clones.<span class="citation" data-cites="spyrou2016HistoricalPestisGenomes"><sup>[1]</sup></span></li>
+</ul>
+<figure>
+<img data-src="Map%20Black%20Death.png" id="fig:map_black_death" height="300" alt="Figure 8: Spread map of the Black Death" /><figcaption aria-hidden="true">Figure 8: Spread map of the Black Death</figcaption>
+</figure>
 </section>
-<section id="second-pandemic" class="slide level3">
-<h3>5. Second Pandemic</h3>
+<section id="the-third-pandemic" class="slide level3">
+<h3>The Third Pandemic</h3>
+<hr>
+<aside class="notes">
+<ul>
+<li><strong>Solution:</strong> Increased sampling of long internal branches.</li>
+</ul>
+</aside>
+<blockquote>
+<p>… of the Third Pandemic (1.ORI)…<br></p>
+</blockquote>
+<figure>
+<img data-src="divtree_1.IN_1.ORI.svg" id="fig:divtree_1.IN_1.ORI" height="350" alt="Figure 9: Third Pandemic Origins" /><figcaption aria-hidden="true">Figure 9: Third Pandemic Origins</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="observation-2-node-date-conflicts" class="title-slide slide level2">
+<h2>Observation 2:<br> Node Date Conflicts</h2>
+
+</section>
+<section id="observation-2-node-date-conflicts-1" class="slide level3">
+<h3>Observation 2: Node Date Conflicts</h3>
+<hr>
+<ul>
+<li>Several populations have conflicting dates for their tMRCA.</li>
+<li>These populations are not monophyletic.</li>
+<li>Ex. <em>Antiqua</em> (0.ANT) is ancestral to the First Pandemic (0.ANT4).</li>
+<li>The tMRCA of <em>Antiqua</em> (0.ANT) incorrectly post-dates the First Pandemic (0.ANT4).</li>
+</ul>
+<figure>
+<img data-src="date_conflict.svg" id="fig:date_conflict" height="400" alt="Figure 10: Date Conflict" /><figcaption aria-hidden="true">Figure 10: Date Conflict</figcaption>
+</figure>
+</section>
+<section id="observation-2-node-date-conflicts-2" class="slide level3">
+<h3>Observation 2: Node Date Conflicts</h3>
+<hr>
+<ul>
+<li>Node density is low close to the root.</li>
+<li>Node dates are underestimated (too young). Can be off by a 1000 years!</li>
+</ul>
+<blockquote>
+<p>Insufficient sample sizes (1.ANT).<br> Insufficient geographic sampling (0.ANT).<br> Extensive rate variation (0.PE) with no ancient DNA calibrations.</p>
+</blockquote>
+<figure>
+<img data-src="suspicious_dates.svg" id="fig:suspicious_dates" alt="Figure 11: Suspicious Dates" /><figcaption aria-hidden="true">Figure 11: Suspicious Dates</figcaption>
+</figure>
+</section>
+<section id="arrival-of-plague-in-africa" class="slide level3">
+<h3>Arrival of Plague in Africa</h3>
+<aside class="notes">
+<ul>
+<li>Plague in Africa is really important for public health research = high interest.</li>
+<li>But the genetic evidence is very flimsy for estimating a continental tMRCA.</li>
+</ul>
+</aside>
+<hr>
+<ul>
+<li>Africa accounts for more than 90% of all human plague cases<span class="citation" data-cites="munyenyiwa2019PlagueZimbabwe1974"><sup>[2]</sup></span> .</li>
+<li>But only 1.5% of <em>Y. pestis</em> genomes are from Africa.</li>
+<li>Heavily debated when plague first arrived in Central and East Africa (1.ANT):
+<ul>
+<li>4,964 BCE - 1322 CE (N=10)<span class="citation" data-cites="morelli2010YersiniaPestisGenome"><sup>[3]</sup></span></li>
+<li>1377 CE - 1650 CE (N=2)<span class="citation" data-cites="cui2013HistoricalVariationsMutation"><sup>[4]</sup></span></li>
+<li>1655 CE - 1835 CE (N=4)<sup>[This study]</sup></li>
+</ul></li>
+<li>None of these dates overlap!!</li>
+</ul>
+<blockquote>
+<p>Genetic dates for the tMRCA in Africa are non-informative!<br> They should not be used as a basis for historical or archaeological interpretation.<span class="citation" data-cites="green2018PuttingAfricaBlack"><sup>[5]</sup></span></p>
+</blockquote>
+</section></section>
+<section>
+<section id="observation-3" class="title-slide slide level2">
+<h2>Observation 3:<br>???</h2>
+
+</section>
+<section id="observation-3-1" class="slide level3">
+<h3>Observation 3: ??</h3>
+<blockquote>
+<p>Recently emerged populations can be calibrated with early 20<sup>th</sup> century isolates.</p>
+</blockquote>
 </section></section>
 <section id="conclusion" class="title-slide slide level2">
 <h2>Conclusion</h2>
 <ul>
 <li>Methodological and epidemiological findings.</li>
 </ul>
+</section>
+
+<section id="references" class="title-slide slide level2 unnumbered">
+<h2 class="unnumbered">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-spyrou2016HistoricalPestisGenomes" class="csl-entry" role="doc-biblioentry">
+1. Spyrou, M. A., Tukhbatova, R. I., Feldman, M., Drath, J., Kacki, S., Beltrán de Heredia, J., Arnold, S., Sitdikov, A. G., Castex, D., Wahl, J., Gazimzyanov, I. R., Nurgaliev, D. K., Herbig, A., Bos, K. I., &amp; Krause, J. (2016). Historical <span><em>Y</em></span><span><em>. Pestis</em></span> <span>Genomes Reveal</span> the <span>European Black Death</span> as the <span>Source</span> of <span>Ancient</span> and <span>Modern Plague Pandemics</span>. <em>Cell Host &amp; Microbe</em>, <em>19</em>(6), 874–881. <a href="https://doi.org/10.1016/j.chom.2016.05.012">https://doi.org/10.1016/j.chom.2016.05.012</a>
+</div>
+<div id="ref-munyenyiwa2019PlagueZimbabwe1974" class="csl-entry" role="doc-biblioentry">
+2. Munyenyiwa, A., Zimba, M., Nhiwatiwa, T., &amp; Barson, M. (2019). Plague in <span>Zimbabwe</span> from 1974 to 2018: <span>A</span> review article. <em>PLOS Neglected Tropical Diseases</em>, <em>13</em>(11), e0007761. <a href="https://doi.org/10.1371/journal.pntd.0007761">https://doi.org/10.1371/journal.pntd.0007761</a>
+</div>
+<div id="ref-morelli2010YersiniaPestisGenome" class="csl-entry" role="doc-biblioentry">
+3. Morelli, G., Song, Y., Mazzoni, C. J., Eppinger, M., Roumagnac, P., Wagner, D. M., Feldkamp, M., Kusecek, B., Vogler, A. J., Li, Y., Cui, Y., Thomson, N. R., Jombart, T., Leblois, R., Lichtner, P., Rahalison, L., Petersen, J. M., Balloux, F., Keim, P., … Achtman, M. (2010). <span><em>Yersinia Pestis</em></span> genome sequencing identifies patterns of global phylogenetic diversity. <em>Nature Genetics</em>, <em>42</em>(12), 1140–1143. <a href="https://doi.org/10.1038/ng.705">https://doi.org/10.1038/ng.705</a>
+</div>
+<div id="ref-cui2013HistoricalVariationsMutation" class="csl-entry" role="doc-biblioentry">
+4. Cui, Y., Yu, C., Yan, Y., Li, D., Li, Y., Jombart, T., Weinert, L. A., Wang, Z., Guo, Z., Xu, L., Zhang, Y., Zheng, H., Qin, N., Xiao, X., Wu, M., Wang, X., Zhou, D., Qi, Z., Du, Z., … Yang, R. (2013). Historical variations in mutation rate in an epidemic pathogen, <span><em>Yersinia</em></span><span> <em>Pestis</em></span>. <em>Proceedings of the National Academy of Sciences</em>, <em>110</em>(2), 577–582. <a href="https://doi.org/10.1073/pnas.1205750110">https://doi.org/10.1073/pnas.1205750110</a>
+</div>
+<div id="ref-green2018PuttingAfricaBlack" class="csl-entry" role="doc-biblioentry">
+5. Green, M. H. (2018). Putting <span>Africa</span> on the <span>Black Death</span> map: <span>Narratives</span> from genetics and history. <em>Afriques. Débats, Méthodes Et Terrains d’histoire</em>, <em>09</em>. <a href="https://doi.org/10.4000/afriques.2125">https://doi.org/10.4000/afriques.2125</a>
+</div>
+</div>
 </section>
     </div>
   </div>
