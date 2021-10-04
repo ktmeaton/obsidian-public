@@ -27,4 +27,6 @@ do
 	fi;
   fi; 
 done
+```
 
+- git diff-index might not be the way to go for untracked changes.
