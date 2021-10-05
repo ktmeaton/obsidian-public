@@ -10,6 +10,9 @@ status: idea
 # Check Git Projects
 
 ```bash
+commit_msg=`automated updated`;
+
+
 for project in `ls -d *`; 
 do 
   if [[ -e $project/.git ]]; then   
@@ -19,7 +22,7 @@ do
 	  echo "\nProject: $project";
 	  echo $git_diff;
 	  git add -A
-	  git commit -m "automated update"
+	  git commit -m "$commit_msg"
 	  git push;
 	  cd ..;
 	else;
