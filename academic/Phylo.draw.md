@@ -2,10 +2,10 @@
 project:
 due: 2021-09-17
 people:
-tags: 🧨
-status: priority
+tags: 📝/🌱
+status: idea
 title: Phylo.draw
-type: [[Task]]
+type: [[Note]]
 ---
 
 # Phylo.draw
