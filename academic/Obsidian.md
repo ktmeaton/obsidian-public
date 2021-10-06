@@ -95,3 +95,9 @@ git log -S "xml" --follow -p $file;
 
 git checkout 13512b8 -- $file;
 ```
+
+```bash
+file='Eaton et al. 2021 Plagued by a cryptic clock.md';
+latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
+git log -S "Bayes Factor" --follow -p $file;
+```
