@@ -55,7 +55,7 @@ authors:
       ]
 lang: en-US
 repo: ktmeaton/obsidian-public
-filepath: academic/[[Plague Phylodynamics and Phylogeography Paper]]
+filepath: 'academic/Eaton et al. 2021 Plagued by a cryptic clock'
 tags: 🧨
 status: priority
 title: Plagued by a cryptic clock
@@ -76,7 +76,7 @@ compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague
 compile-pandoc: "conda activate pandoc && pandoc/convert_wikilinks.py --input
   'Plague Phylodynamics and Phylogeography Paper.md' --output 'Plague
   Phylodynamics and Phylogeography Paper_convert.md';"
-url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Phylodynamics%20and%20Phylogeography%20Paper.html
+url: https://ktmeaton.github.io/obsidian-public/academic/Eaton%20et%20al.%202021%20Plagued%20by%20a%20cryptic%20clock.html
 ---
 
 
