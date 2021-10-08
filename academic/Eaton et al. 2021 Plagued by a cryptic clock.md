@@ -252,13 +252,14 @@ Despite being isolated over a period of 54 to 84 years, these three populations 
 While this concept has been rigorously explored in other pathogens [@duchene2020TemporalSignalPhylodynamic], it has not been explicitly tested in _Y. pestis_. However, researchers have anecdotally mentioned the challenges in reconstructing intra-epidemic diversity. For example, isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) were observed to be indistinguishable clones [@spyrou2016HistoricalPestisGenomes], thus extinguishing any hope of reconstructing the spread of this catastrophic event from genetic evidence. Our results develop this issue further by 
 demonstrating that non-informative dates were obtained from populations sampled over a period as long as 84 years. This highlights a significant limitation and cautionary note for plague research, as _Y. pestis_ phylogenetic may not be suitable for reconstructing short-term, epidemic events.
 
-
-
-Of the 9 populations with detectable temporal signal, we observed substantial dating conflicts among three of them. 
-
 <div style="page-break-after: always;"></div>
 
 #### (ii) Conflicting Dates
+
+We observed considerable node-dating conflicts between X populations.
+
+Of the 9 populations with detectable temporal signal, we observed substantial dating conflicts among three of them. 
+
 
 <div style="page-break-after: always;"></div>
 
