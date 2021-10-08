@@ -7,39 +7,46 @@ status: idea
 
 ---
 
-# BaseSpace CLI
+# BaseSpace Command-Line Interface (CLI)
 
 - A [[Comand Line Interface]] for the [[BaseSpace]] sequencing platform.
-- Automate BaseSpace project creation.
-- Automate FASTQ data download.
-- Automate FASTQ data upload.
+- Automate [[BaseSpace]] project creation.
+- Automate [[FASTQ]] data download and upload.
 - Documentation: https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-examples
 
 ## Terminology
 
-- Dataset: A collection of FASTQ files from one de-multiplexed library.
-- Biosample: A sample, can be linked to multiple datasets across multiple runs.
-- Project: A collection of biosamples and datasets.
+| Term              | Definition                                                         |
+| ----------------- | ------------------------------------------------------------------ |
+| Dataset           | A collection of FASTQ files from one de-multiplexed library        |
+| Biosample         | A sample, can be linked to multiple datasets across multiple runs. |
+| Project           | A collection of biosamples and datasets.                           |
 
-## Local Install
-
-> Note: If you are on the group account on info, the BaseSpace CLI is already installed.
+## Install
 
 1. Download the Linux executable.
 	```bash
 	wget https://launch.basespace.illumina.com/CLI/latest/amd64-linux/bs
 	chmod +x bs
 	```
-1. Move the executable to PATH.
-	```bash	
-	# Option 1: As local user
-	mkdir -p ~/bin/
-	mv bs ~/bin/
-	alias bs=~/bin/bs
-	
-	# Option 2: As superuser
-	sudo mv bs /usr/local/bin/
-	```
+2. Move executable into PATH.
+	- A. Super User
+		```bash
+		sudo mv bs /usr/local/bin/
+		```
+	- B. Local User\*
+		```bash	
+		mkdir -p $HOME/bin/
+		mv bs $HOME/bin/
+		export PATH=$PATH:$HOME/bin
+		```
+	- \* To permanently alias the BaseSpace CLI, run:
+		```bash
+		echo 'export PATH=$PATH:$HOME/bin' >> $HOME/.bashrc
+		source ~/.bashrc
+		```
+
+<div style="page-break-after: always;"></div>
 
 ## Authenticate
 
@@ -47,38 +54,63 @@ status: idea
 	```bash
 	bs auth
 	```
+1. To store and name multiple accounts (recommended):
+	```bash
+	bs auth -c primary
+	bs auth -c secondary
+	```
 1. Confirm authentication.
 	```bash
 	bs whoami
+	bs whoami -c primary
+	bs whoami -c secondary
 	```
 
-## 2. Download
+## File System Setup
 
-### Sample
+Create a directory for the tutorial.
 
-- List files associated with sample: `PLS7b`
+```bash
+mkdir $HOME/tutorial_bs_cli;
+mkdir $HOME/tutorial_bs_cli/data;
+mkdir $HOME/tutorial_bs_cli/mapping;
+
+cd $HOME/tutorial_bs_cli;
+```
+
+<div style="page-break-after: always;"></div>
+
+## Download Data from BaseSpace
+
+### FASTQ Data by Sample
+
+- List files associated with sample `PLS7b` on the `secondary`\* account.
 	```bash
-	bs list datasets --filter-field=Name --filter-term="PLS7b" 
+	bs list datasets \
+	  -c secondary \
+	  --filter-field=Name \
+	  --filter-term="PLS7b" 
 	```
-	
+
 	| Name  | Id                                  | Project.Name              | DatasetType.Id      |
 	| ----- | ----------------------------------- | ------------------------- | ------------------- |
 	| PLS7b | <p style="color:red">ds.a90547f9896f4264afae413677880458</p> | Poinar_KE_Plague_Shotgun3 | illumina.fastq.v1.8 |
 
+	\* Querying the `primary` account is very slow because there are 5000+ datasets.
 - Download FASTQ files.
 	```bash
-	bs download dataset -i ds.a90547f9896f4264afae413677880458 -o Sample_PLS7b
-	```
-- Remove dataset summary.
-	```bash
-	rm Sample_PLS7b/*.json
+	bs download dataset \
+	  -c secondary \
+	  -i ds.a90547f9896f4264afae413677880458 \
+	  -o $HOME/tutorial_bs_cli/data/PLS7b_ds.a90547f9896f4264afae413677880458/
 	```
 
-### Project
+
+### FASTQ Data by Project
 
 - List files associated with a shotgun project.
 	```bash
-	bs list projects --filter-term "Shotgun"
+	bs list projects -c secondary --filter-term "Shotgun"
 	```
 
 	| Name                      | Id        | TotalSize  |
@@ -88,164 +120,125 @@ status: idea
 
 - Download all samples from a project.
 	```bash
-	bs download project -i 252688437 -o Poinar_KE_Plague_Shotgun3
-	```
-- Rename BaseSpace folders for compatibility with the legacy pipeline.
-	```bash
-	
-	```
-## 2. Local File Structure
-
-- Directory structure:
-	```
-	📁 Project
-	 ├─ 📁 Analysis
-		  ├─ 📁 Sample 
-				  ├─ 📝 Fastq Data
-				  ├─ 📝 ...
-	```
-
-- Directory example:
-	```
-	📁 180802_Poinar_KE_Megapestis4-89755666
-	 ├─ 📁 BaseSpace_CLI_2018-08-07_23_48_09Z-114426315
-		  ├─ 📁 E100S6aM4-ds.ea9a9b54ea3b4174b64dba9f6dae308f 
-				  ├─ 📝 E100S6aM4_S55_L001_R1_001.fastq.gz
-				  ├─ 📝 E100S6aM4_S55_L001_R2_001.fastq.gz
-				  ├─ 📝 E100S6aM4_S55_L002_R1_001.fastq.gz
-				  ├─ 📝 E100S6aM4_S55_L002_R2_001.fastq.gz
+	bs download project -c secondary -i 252688437 -o $HOME/tutorial_bs_cli/data
 	```
 
 <div style="page-break-after: always;"></div>
 
+## Prepare Input for the Legacy Pipeline
 
-
-## 3. Create Project
-
-1. Create Project
-	```
-	bs create project Poinar_KE_Megapestis4
-	```
-1. Get the ID associated with the project
-	```bash
-	bs project list
-	
-	+----------------------------------+-----------+------------+
-	|               Name               |    Id     | TotalSize  |
-	+----------------------------------+-----------+------------+
-	| Poinar_KE_Megapestis4            | 282786510 | 0          |
-	+----------------------------------+-----------+------------+
-	```
-
-## 4. Upload FASTQ Files to Project
-
-1. Navigate to the local project directory.
-	```bash
-	cd 180802_Poinar_KE_Megapestis4-89755666
-	```
-1. Prep list of samples
-	```bash
-	samples=(
-	`ls -1 **/*.fastq.gz | sed 's#.*/##' | cut -d "_" -f 1 | sort | uniq`
-	);
-	```
-1. Inspect the list of samples.
-	```bash
-	echo $samples
-	E100S6aM4 E100S6bM4 E100S6cM4 E103S6aM4 E103S6bM4...
-	```
-1. Iterate through each sample, upload associated FASTQ files.
-	```bash
-	for sample in $samples;
-	do
-	  # Check if dataset already exists in BaseSpace for current sample
-	  exists=`bs dataset get --name $sample`;
-	  
-	  # If dataset exists, skip the rest of the loop, continue to next sample
-	  if [[ $exists ]]; then continue; fi;
-	  
-	  # If dataset doesn't exist, upload associated fastq files.
-	  echo "Uploading sample: $sample";
-	  bs dataset upload --project 282786510 **/*$sample*.fastq.gz;
-	done
-	```
-	
-	
-## Metadata Database
-
-```bash
-bs list datasets \
-  -F Name \
-  -F Project.Name \
-  -F Id \
-  -F Project.Id
-  -F TotalSize \
-  -F DataSetType.Id \
-  -F DateCreated \
-  -F DateModified
+Projects downloaded from BaseSpace are structured as follows.
+```
+📁 210521_Poinar-12_pPCP1_ENR_Pool
+ ├─ 📁 P187-S6e-pPCP1_ds.03e759e9727c45649707ef73049c211f
+     ├─ 📝 P187-S6e-pPCP1_S11_L001_R1_001.fastq.gz
+     ├─ 📝 P187-S6e-pPCP1_S11_L001_R2_001.fastq.gz
+	 ├─ 📝 P187-S6e-pPCP1_S11_L002_R1_001.fastq.gz
+	 ├─ 📝 P187-S6e-pPCP1_S11_L002_R2_001.fastq.gz
+  ...
 ```
 
-  "Id",
-  "Name",
-  "DateCreated",
-  "DateModified",
-  "AppSession.Id",
-  "AppSession.Name",
-  "AppSession.Application.AppFamilySlug",
-  "AppSession.Application.AppVersionSlug",
-  "AppSession.Application.Id",
-  "AppSession.Application.VersionNumber",
-  "AppSession.Application.HomepageUri",
-  "AppSession.Application.ShortDescription",
-  "AppSession.Application.LongDescription",
-  "AppSession.Application.Category",
-  "AppSession.Application.UserOwnedBy.Id",
-  "AppSession.Application.UserOwnedBy.Name",
-  "AppSession.Application.UserOwnedBy.GravatarURL",
-  "AppSession.Application.UserOwnedBy.DateLastActive",
-  "AppSession.Application.UserOwnedBy.DateCreated",
-  "AppSession.Application.Name",
-  "AppSession.Application.CompanyName",
-  "AppSession.ExecutionStatus",
-  "AppSession.QcStatus",
-  "AppSession.DeliveryStatus",
-  "AppSession.UserCreatedBy.Id",
-  "AppSession.UserCreatedBy.Name",
-  "AppSession.UserCreatedBy.GravatarURL",
-  "AppSession.UserCreatedBy.DateLastActive",
-  "AppSession.UserCreatedBy.DateCreated",
-  "AppSession.StatusSummary",
-  "AppSession.DateCreated",
-  "AppSession.DateModified",
-  "AppSession.DateCompleted",
-  "AppSession.TotalSize",
-  "AppSession.RunningDuration",
-  "AppSession.ComputeStatistics.Unit",
-  "AppSession.ComputeStatistics.Amount",
-  "Project.Name",
-  "Project.Id",
-  "Project.UserOwnedBy.Id",
-  "Project.UserOwnedBy.Name",
-  "Project.UserOwnedBy.GravatarURL",
-  "Project.UserOwnedBy.DateLastActive",
-  "Project.UserOwnedBy.DateCreated",
-  "Project.DateCreated",
-  "Project.DateModified",
-  "Project.Description",
-  "Project.TotalSize",
-  "UserOwnedBy.Id",
-  "UserOwnedBy.Name",
-  "UserOwnedBy.GravatarURL",
-  "UserOwnedBy.DateLastActive",
-  "UserOwnedBy.DateCreated",
-  "DataSetType.Id",
-  "DataSetType.Name",
-  "QcStatus",
-  "QcStatusSummary",
-  "UploadStatus",
-  "UploadStatusSummary",
-  "ValidationStatus",
-  "TotalSize",
-  "IsFileDataDeleted",
-  "IsArchived",
-  "V1pre3Id"
+The legacy pipeline requires files to be structured as follows. Specifically, the sample directories need to have the prefix "Sample_".
+```
+📁 210521_Poinar-12_pPCP1_ENR_Pool
+ ├─ 📁 Sample_P187-S6e-pPCP1
+     ├─ 📝 P187-S6e-pPCP1_S11_L001_R1_001.fastq.gz
+     ├─ 📝 P187-S6e-pPCP1_S11_L001_R2_001.fastq.gz
+	 ├─ 📝 P187-S6e-pPCP1_S11_L002_R1_001.fastq.gz
+	 ├─ 📝 P187-S6e-pPCP1_S11_L002_R2_001.fastq.gz
+  ...
+```
+
+### Data the User Downloaded
+
+- Rename sample folders.
+	```bash
+	DATA_DIR=$HOME/tutorial_bs_cli/data;
+
+	for old_dir in `ls -d $DATA_DIR/*`; do 
+	  if [[ ! -d $old_dir ]]; then continue; fi;
+	  sample_id=`basename $old_dir | cut -d "_" -f 1`; 
+	  new_dir="$DATA_DIR/Sample_$sample_id";
+	  mv $old_dir $new_dir;
+	done
+	```
+
+<div style="page-break-after: always;"></div>
+
+### Data from the Infoserv Database
+
+#### Entire Project
+
+1. Create renamed symlinks to data stored in the sequence database.
+	```bash
+	DB=/2/scratch/poinarlab/sequence_db;
+	PROJECT=210521_Poinar-12_Den_ReSeq_Pool/;
+	INDIR=$DB/$PROJECT;
+	OUTDIR=$HOME/tutorial_bs_cli/data/
+	
+	/home/poinarlab/pipeline/scripts/prep_legacy_input_project.sh $OUTDIR $INDIR;
+	```
+
+#### One Sample
+1. Let's add a different sample (`D24`)from a different project (`210521_Poinar-12_pPCP1_ENR_Pool/`) to our data directory.
+	```bash
+	DB=/2/scratch/poinarlab/sequence_db/;
+	PROJECT=210521_Poinar-12_pPCP1_ENR_Pool/;
+	SAMPLE=`ls -d $DB/$PROJECT/D24*`;
+	OUTDIR=$HOME/tutorial_bs_cli/data/;
+
+	/home/poinarlab/pipeline/scripts/prep_legacy_input_samples.sh $OUTDIR $SAMPLE;
+	```
+
+#### Multiple Samples
+
+1. Let's also add samples `D62` and `D72`.
+	```bash	
+	DB=/2/scratch/poinarlab/sequence_db/;
+	PROJECT=210521_Poinar-12_pPCP1_ENR_Pool/;
+	SAMPLES=`ls -d $DB/$PROJECT/{D62*,D72*}`;
+	OUTDIR=$HOME/tutorial_bs_cli/data/;
+
+	/home/poinarlab/pipeline/scripts/prep_legacy_input_samples.sh $OUTDIR $SAMPLES;
+	```
+
+<div style="page-break-after: always;"></div>
+
+### Configure the legacy pipeline.
+
+1. Create the pipeline instructions.
+	```bash
+	DATA_DIR=$HOME/tutorial_bs_cli/data/
+	MAP_DIR=$HOME/tutorial_bs_cli/mapping/
+	REF=/home/poinarlab/Reference_sequences/GCA_000009065.1_ASM906v1_genomic.fna;
+
+	/home/poinarlab/pipeline/legacy.pl $DATA_DIR $REF > $MAP_DIR/Makefile;
+	```
+1. Run the pipeline.
+	```bash
+	cd $MAP_DIR;
+	make
+	```
+
+## Troubleshooting
+
+- Error:
+	```bash
+	ERROR: *** could not parse config file: 
+	open /home/username/.basespace/default.cfg: no such file or directory ***
+	```
+- Solution:
+	1. Authenticate with `bs auth`. 
+	2. Or, specify your account config like `bs config -c primary`.
+
+## Create a Metadata Database
+
+```bash
+/home/poinarlab/pipeline/scripts/update_metadata_db.sh secondary > secondary.txt;
+less -S metadata_secondary.txt
+```
+
+```bash
+grep -v "\-\+\-" metadata_primary.txt > metadata_primary_sheet.txt
+```
+

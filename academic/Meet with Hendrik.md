@@ -258,5 +258,5 @@ File for Defense | Accelerated: 2 + 6 weeks before defense (June 19, 2020)
 
 ### Tasks
 
-- [[Eaton et al. 2021 Plagued by a cryptic clock]]
+- [[Eaton et al. 2021 Plagued by a cryptic clk]]
 - "How does this shift dialogue?"

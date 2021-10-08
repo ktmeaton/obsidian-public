@@ -70,12 +70,9 @@ sectionsDepth: 3
 tblPrefix: Table
 figPrefix: Figure
 secPrefix: Section
-compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Plague
-  Phylodynamics and Phylogeography Paper.md' pandoc/bib/library.json
-  ../../rootstock"
+compile-manubot: "conda activate manubot && pandoc/manubot.sh 'Eaton et al. 2021 Plagued by a cryptic clock.md' pandoc/bib/library.json ../../rootstock"
 compile-pandoc: "conda activate pandoc && pandoc/convert_wikilinks.py --input
-  'Plague Phylodynamics and Phylogeography Paper.md' --output 'Plague
-  Phylodynamics and Phylogeography Paper_convert.md';"
+  'Eaton et al. 2021 Plagued by a cryptic clock.md' --output 'Eaton et al. 2021 Plagued by a cryptic clock_convert.md';"
 url: https://ktmeaton.github.io/obsidian-public/academic/Eaton%20et%20al.%202021%20Plagued%20by%20a%20cryptic%20clock.html
 ---
 
@@ -179,7 +176,7 @@ In Figure @fig:divtree_map_timeline, we contextualize the global phylogeny using
 
 #### Biovars
 
-The oldest system of _Y. pestis_ classification is the biovar nomenclature, which uses metabolic differences to define population structure. Accordingly, _Y. pestis_ can be categorized into four classical biovars: *antiqua* (ANT), *medievalis* (MED), *orientalis* (ORI), and *microtus*/*pestoides* (PE) [@devignat1951VarietesEspecePasteurella; @zhou2004ComparativeEvolutionaryGenomics]. Non-classical biovars have also been introduced, such as the *intermedium* biovar (IN), which reflects a transitional state from *antiqua* to *orientalis* [@li2009GenotypingPhylogeneticAnalysis]. The biovar system is simple in application, as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [@zhou2004ComparativeEvolutionaryGenomics]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [@kutyrev2018PhylogenyClassificationYersinia]. This is further exacerbated by the sequencing of non-viable, "extinct" *Y. pestis* for which metabolic sub-typing is impossible [@bos2011DraftGenomeYersinia]. Researchers have responded to this uncertainty in a variety of ways, by extrapolating existing biovars [@wagner2014YersiniaPestisPlague] and creating new pseudo-biovars (PRE) [@rasmussen2015EarlyDivergentStrains]. Others have foregone the biovar nomenclature altogether in favor of locally-developed taxonomies [@kutyrev2018PhylogenyClassificationYersinia]. Despite extensive research, it remains unclear which metabolic traits, if any, can be used to classify _Y. pestis_ into distinct populations on a global scale.
+The oldest system of _Y. pestis_ classification is the biovar nomenclature, which uses metabolic differences to define population structure. Accordingly, _Y. pestis_ can be categorized into four classical biovars: *Antiqua* (ANT), *Medievalis* (MED), *Orientalis* (ORI), and *microtus*/*pestoides* (PE) [@devignat1951VarietesEspecePasteurella; @zhou2004ComparativeEvolutionaryGenomics]. Non-classical biovars have also been introduced, such as the *Intermedium* biovar (IN), which reflects a transitional state from *Antiqua* to *Orientalis* [@li2009GenotypingPhylogeneticAnalysis]. The biovar system is simple in application, as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [@zhou2004ComparativeEvolutionaryGenomics]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [@kutyrev2018PhylogenyClassificationYersinia]. This is further exacerbated by the sequencing of non-viable, "extinct" *Y. pestis* for which metabolic sub-typing is impossible [@bos2011DraftGenomeYersinia]. Researchers have responded to this uncertainty in a variety of ways, by extrapolating existing biovars [@wagner2014YersiniaPestisPlague] and creating new pseudo-biovars (PRE) [@rasmussen2015EarlyDivergentStrains]. Others have foregone the biovar nomenclature altogether in favor of locally-developed taxonomies [@kutyrev2018PhylogenyClassificationYersinia]. Despite extensive research, it remains unclear which metabolic traits, if any, can be used to classify _Y. pestis_ into distinct populations on a global scale.
 
 #### Major Branches
 
@@ -222,7 +219,7 @@ In light of this uncertainty and inconsistency, there exists no classification s
 |    0.PE    |            --             |  *Pestoides*  |      0       |   85    |      -1918\*\*       |          2014          | 1.ORI, 1.IN, 1.ANT,<br />2.MED, 2.ANT, 3.ANT,<br />4.ANT, 0.ANT4, 0.ANT |
 |   0.PRE    | Late Neolithic Bronze Age |    *Pre*\*    |      0       |    8    |      -2876\*\*       |       -1626\*\*        |                              --                               |
 
-Table:  _Yersinia pestis_ population definitions according to an integrative approach using the major branches, biovars, and associated time periodS. Populations are ordered based on the maximum-likelihood phylogeny, which was sorted by increasing node order. Four populations are paraphyletic (1.IN, 1.PRE, 0.ANT, 0.PE) and their descendant populations are listed. {#tbl:population}
+Table:  _Yersinia pestis_ population definitions according to an integrative approach using the major branches, biovars, and associated time periods. Populations are ordered based on the maximum-likelihood phylogeny, which was sorted by increasing node order. Four populations are paraphyletic (1.IN, 1.PRE, 0.ANT, 0.PE) and their descendant populations are listed. {#tbl:population}
 
 \**Pre* is not a metabolic biovar and refers to "extinct" populations where metabolic status is unknown.<br />\*\*The sampling dates of ancient genomes include the 2-sigma range of radiocarbon estimates. 
 
@@ -232,26 +229,50 @@ Table:  _Yersinia pestis_ population definitions according to an integrative app
 
 The extent of rate variation present in our updated genomic dataset is notably larger and more diverse than those used in previous studies [@spyrou2019PhylogeographySecondPlague; @pisarenko2021YersiniaPestisStrains]. A root-to-tip regression on sampling age reproduces the finding that substitution rates in *Y. pestis* are poorly represented by a simple linear model or "strict clock" (Figure @fig:rtt A). Indeed, we found a very low coefficient of determination (R<sup>2</sup>=0.09) which indicates a large degree of unaccounted variation. This finding suggests that evolutionary change in _Y. pestis_ may be more appropriately estimated using a "relaxed clock", where rate variation is explicitly modeled. To test this hypothesis, we performed a Bayesian Evaluation of Temporal Signal (BETS) [@duchene2020BayesianEvaluationTemporal].  In brief, this method tested four model configurations including: (1) a strict clock, (2) a relaxed clock, (3) the true sampling ages, and (4) no sampling ages (ie. all contemporaneous). A comparison of the model likelihoods, or Bayes factors, was then used to assess the degree of temporal signal. 
 
-The BETS test was inconclusive when attempting to fit a single clock to the updated global diversity of _Y. pestis_. The Bayesian analysis exhibited poor sampling (ESS < 200) of the clock parameters across all model configurations, even when we reduced sources of variation by removing tip date uncertainty, fixing the tree topology, and removing up to 70% of genomes. The poor performance of a single clock model is consistent with previous studies where low ESS scores were observed [@rasmussen2015EarlyDivergentStrains] and divergence dates could not be estimated [@wagner2014YersiniaPestisPlague]. 
-We therefore conclude that a single clock model is not currently a viable approach, as there is excessive rate variation across the global phylogeny of _Y. pestis_. We hypothesize that this model misspecification may help explain node-dating disparities between studies in the past [@morelli2010YersiniaPestisGenome, @cui2013HistoricalVariationsMutation; @rasmussen2015EarlyDivergentStrains].
+The BETS test was inconclusive when attempting to fit a single clock to the updated global diversity of _Y. pestis_. The Bayesian analysis exhibited poor sampling (ESS < 200) of the clock parameters across all model configurations, even when we reduced sources of variation by removing tip date uncertainty, fixing the tree topology, and removing up to 70% of genomes. The poor performance of a single clock model is consistent with previous studies where low ESS scores were observed [@rasmussen2015EarlyDivergentStrains] and divergence dates could not be estimated [@wagner2014YersiniaPestisPlague]. We therefore conclude that a single clock model is not currently a viable approach, as there is excessive rate variation across the global phylogeny of _Y. pestis_. We hypothesize that this model misspecification may help explain node-dating disparities between studies in the past [@morelli2010YersiniaPestisGenome, @cui2013HistoricalVariationsMutation; @rasmussen2015EarlyDivergentStrains].
 
-When the root-to-tip regression was repeated for each population in isolation, we observed that some populations appeared more clock-like than others (Figure @fig:rtt B, SI Figure @fig:rtt_population). For example, the observed rate variation was low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses, which demonstrated that the degree of temporal signal in _Y. pestis_ highly depends on which populations are included [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal]. Indeed, when the BETS test was repeated for each population in isolation, we recovered temporal signal in 9 out of 12 _Y. pestis_ populations.
+When the root-to-tip regression was repeated for each population in isolation, we observed that some populations appeared more clock-like than others (Figure @fig:rtt B, SI Figure @fig:rtt_population). For example, the observed rate variation was low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses, which demonstrated that the degree of temporal signal in _Y. pestis_ highly depends on which populations are included [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal].
 
-> Shall I remove the time dependency section?
+When the BETS test was repeated for each population in isolation, temporal signal was detected in 9 out of 12 _Y. pestis_ populations (SI Table @tbl:bets). Furthermore, all model parameters demonstrated convergence with ESS values well above 200. These improvements suggest that estimating population-specific rates is a more robust approach than using a single, species clock. In the following sections, we explore which _Y. pestis_ populations were associated with the most reliable rates and dates and how this shifts discourse...
+
+<div style="page-break-after: always;"></div>
+
+![Rate variation in _Yersinia pestis_ as observed through a regression of root-to-tip distances from the maximum-likelihood phylogeny on the mean sampling age. **A**: A linear model using all genomes from the maximum-likelihood phylogeny. **B**: Population-specific linear models. The distance to the population MRCA was calculated using subtrees extracted from the maximum-likelihood phylogeny. **C**: The time-dependency of rate variation on the sampling time frame. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/feadaa6/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=100%}
+
+<div style="page-break-after: always;"></div>
+
+#### (i) No Temporal Signal
+
+We found three _Y. pestis_ populations with no detectable temporal signal, which include the *Intermedius* biovar (1.IN) and the *Antiqua* biovar (2.ANT, 3.ANT). This trait can be identified in the maximum-likelihood phylogeny, as these populations have the highest density of nodes close to their roots (Figure @fig:no_temporal_signal). Specifically, the majority of nodes are found within 1 x 10<sup>-5</sup> substitutions per site away from the root, with sporadic long branches as outliers (Figure @fig:no_temporal_signal). Outlier branches were statistically identified according to the 90% confidence interval of external branch lengths from all populations (SI Figure @fig:long_branches).
+
+![Caption](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/631054b/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths_no_temporal_signal.png){#fig:no_temporal_signal width=100%}
+
+Despite being isolated over a period of 54 to 84 years, these three populations have not accumulated sufficient evolutionary change to be considered measurably-evolving. However, this should not be surprising given that _Y. pestis_ has one of the slowest substitution rates observed among bacterial pathogens [@duchene2016GenomescaleRatesEvolutionary]. Previously published studies have estimated the mean substitution rate to range from 1.0 - 3.0 x 10<sup>-8</sup> substitutions per site per year [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague], or 1 substitution every 8 to 25 years. In application, this means that  _[[Y. pestis]]_ lineages often cannot be differentiated until decades have passed, a concept generally referred to as the phylodynamic threshold.
+
+While this concept has been rigorously explored in other pathogens [@duchene2020TemporalSignalPhylodynamic], it has not been explicitly tested in _Y. pestis_. However, researchers have anecdotally mentioned the challenges in reconstructing intra-epidemic diversity. For example, isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) were observed to be indistinguishable clones [@spyrou2016HistoricalPestisGenomes], thus extinguishing any hope of reconstructing the spread of this catastrophic event from genetic evidence. Our results develop this issue further by 
+demonstrating that non-informative dates were obtained from populations sampled over a period as long as 84 years. This highlights a significant limitation and cautionary note for plague research, as _Y. pestis_ phylogenetic may not be suitable for reconstructing short-term, epidemic events.
+
+
+
+Of the 9 populations with detectable temporal signal, we observed substantial dating conflicts among three of them. 
+
+<div style="page-break-after: always;"></div>
+
+#### (ii) Conflicting Dates
+
+<div style="page-break-after: always;"></div>
+
+#### (iii) Informative Rates and Dates
+
+<div style="page-break-after: always;"></div>
 
 ### The Phylodynamic Threshold
 
 ---
-
 The hypotheses proposed to explain this variation have primarily focused on ecological processes, such as the cycling between endemic and epidemic phases [@cui2013HistoricalVariationsMutation], host diversity, and geographic expansions over large distances [Spyrou 2019 Phylogeography Second Plague|@spyrou2019PhylogeographySecondPlague]. However, we argue that methodological factors must first be considered, before investigating more complex ecological factors such as host and landscape. 
 
 One striking methodological factor is the time dependency of evolutionary rate estimates. In Figure @fig:rtt C, we show how rate variation in _Yersinia pestis_ correlates with the sampling time frame, as populations sampled over several millennia appear more "clock-like" than those sampled over multiple centuries or decades. This correlation is a well-known and widely-documented phenomenon in many organisms [@ho2005TimeDependencyMolecular] and occurs due to two conflicting signals: a slower, long-term [[Substitution Rate|substitution rate]] combined with a higher, short-term [[mutation rate]]. Separating out these signals can be extremely challenging and failure to do so has significant consequences when estimating and interpreting molecular clocks. Of particular concern for epidemiological investigations is the risk of artificially inflating the substitution rate due to transient, deleterious mutations which can lead to underestimation of node dates. With regards to plague genomics, this may result in incorrect molecular dates linked to key historical events, such as the emergence of pandemic populations. 
 
-<div style="page-break-after: always;"></div>
-
-![Rate variation in _Yersinia pestis_ as observed through a regression of root-to-tip distances from the maximum-likelihood phylogeny on the mean sampling age. **A**: A linear model using all genomes from the maximum-likelihood phylogeny. **B**: Population-specific linear models. The distance to the population MRCA was calculated using subtrees extracted from the maximum-likelihood phylogeny. **C**: The time-dependency of rate variation on the sampling time frame. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/975621a/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=80%}
-
-<div style="page-break-after: always;"></div>
 
 _Y. pestis_ is particularly susceptible to the time-dependency of molecular rates, as it has one of the slowest substitution rates observed among bacterial pathogens [@duchene2016GenomescaleRatesEvolutionary]. Previously published studies have estimated the mean substitution rate to range from 1.0 - 3.0 x 10<sup>-8</sup> substitutions per site per year [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague], or 1 substitution every 8 to 25 years. In application, this means that  _[[Y. pestis]]_ lineages often cannot be differentiated until decades have passed, a concept generally referred to as the phylodynamic threshold [@duchene2020TemporalSignalPhylodynamic]. For example, isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) were observed to be indistinguishable clones [@spyrou2016HistoricalPestisGenomes]. Similarly,the youngest strains (2010s) of the *medievalis* population have diverged little when compared to older strains from a century prior (1910s) (Figure @fig:rtt). This highlights a significant limitation and cautionary note for _Y. pestis_ phylogenetics, as comparisons over short time scales (10 to 100 years) have limited resolving power. 
 
