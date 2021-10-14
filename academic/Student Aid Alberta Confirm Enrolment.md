@@ -9,3 +9,5 @@ type: [ [ Task ] ]
 ---
 
 # Student Aid Alberta Confirm Enrolment
+
+Entering repayment on [[2021-11-01]]!!

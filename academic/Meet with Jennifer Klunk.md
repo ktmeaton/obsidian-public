@@ -1,8 +1,8 @@
 ---
 title: [[Meet with Jennifer Klunk]]
 people: [[Jennifer Klunk]]
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-09-22
 time: 19:00

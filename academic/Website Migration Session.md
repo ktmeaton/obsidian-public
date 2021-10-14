@@ -2,8 +2,8 @@
 project:
 due: 2021-10-05
 people:
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: Website Migration Session
 type: [[Task]]
 ---

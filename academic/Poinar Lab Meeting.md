@@ -65,7 +65,7 @@ time: 11:00
 ### COVID Updates
 
 - Instructional work in the lab = multiple people allowed.
-- [[Excel checklist for Responsibilites]]
+- [[Lab Responsibilities]]
 - Pierre et al. 2020 (EJHG)
 
 ### Lab Responsibilities

@@ -5,8 +5,8 @@ title:
 people: 
 - [[Hendrik Poinar]]
 
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-09-21
 time: 10:30
@@ -14,12 +14,27 @@ time: 10:30
 
 # Meet with Hendrik
 
+## [[2021-10-14]]
+
+[Meeting Link](https://us02web.zoom.us/j/88387946326?pwd=dEVyWlAvcG5ZZmgzeTQ2MkFzSW4xQT09)
+
+- What still needs to get done?
+	- [[2021-10-22]] | Paper #2 Round 2 Edits
+	- [[2021-11-05]] | Paper #3 Round 1 Edits
+	- Dissertation, Intro and Conclusion
+- Blackout dates for standard track ([[2021-12-13]] to [[2022-01-07]])
+
+What are my options?
+- Protective of time, say NO!
+- 
+
+
+## [[2021-09-21]]
+
 - [[PNAS call for papers]]
 - [[Troubleshoot ancient sample]]
 -[[Modern pipeline SE]]
 - Write up pla depletion method
-
-## [[2021-09-21]]
 
 - Refine the framework or hypotheses:
 	- Calibrations are critical for Yersinia pestis. We know this because of the ancient samples.

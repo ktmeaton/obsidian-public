@@ -3,8 +3,8 @@ project:
 due: 2021-09-24
 time: 12:30
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Chocolate Hour
 type: [[Task]]
 ---

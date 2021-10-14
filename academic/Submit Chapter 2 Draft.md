@@ -1,9 +1,10 @@
 ---
 project: [ [ PhD Dissertation ] ]
-due: 2021-09-15
+due: 2021-10-08
+time: "17:00"
 people:
-tags: ✨ 
-status: done
+tags: 🧨
+status: priority
 title: [[Submit Chapter 2]]
 type: [[Task]]
 ---

@@ -5,11 +5,15 @@ aliases:
 
 # Kanban Boards
 
-## Overdue
+## Overdue Tag
 ```dataview
 table project as Project,type as Type,due as Due, time as Time
 from ""
-where due and contains(status,"priority") and due<date(today) and !contains(file.path, "templates")
+where 
+  due 
+  and contains(status, "priority") 
+  and due<date(today) 
+  and !contains(file.path, "templates")
 ```
 
 ## Today

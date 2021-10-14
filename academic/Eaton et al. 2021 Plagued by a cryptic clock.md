@@ -204,66 +204,45 @@ In light of this uncertainty and inconsistency, there exists no classification s
 
 <div style="page-break-after: always;"></div>
 
-| Population |        Time Period        |    Biovar     | Major Branch | Genomes | Oldest Sampling Date | Youngest Sampling Date |                     Descendants                     |
-|:----------:|:-------------------------:|:-------------:|:------------:|:-------:|:--------------------:|:----------------------:|:-------------------------------------------------------------:|
-|   1.ORI    |      Third Pandemic       | *Orientalis*  |      1       |   117   |         1924         |          2016          |                              --                               |
-|    1.IN    |            --             | *Intermedium* |      1       |   39    |         1954         |          2008          |                             1.ORI                             |
-|   1.ANT    |            --             |   *Antiqua*   |      1       |    4    |         1954         |          2004          |                              --                               |
-|   1.PRE    |      Second Pandemic      |    *Pre*\*    |      1       |   40    |       1270\*\*       |        1800\*\*        |                      1.ORI, 1.IN, 1.ANT                       |
-|   2.MED    |            --             | *Medievalis*  |      2       |   116   |         1912         |          2018          |                              --                               |
-|   2.ANT    |            --             |   *Antiqua*   |      2       |   54    |         1924         |          2008          |                              --                               |
-|   4.ANT    |            --             |   *Antiqua*   |      4       |   11    |         1977         |          2015          |                              --                               |
-|   3.ANT    |            --             |   *Antiqua*   |      3       |   11    |         1961         |          2017          |                              --                               |
-|   0.ANT4   |      First Pandemic       |   *Antiqua*   |      0       |   12    |       214\*\*        |        880\*\*         |                              --                               |
-|   0.ANT    |            --             |   *Antiqua*   |      0       |   103   |         1947         |          2019          |    1.ORI, 1.IN, 1.ANT,<br />2.MED, 2.ANT, 3.ANT,<br />4.ANT, 0.ANT4     |
-|    0.PE    |            --             |  *Pestoides*  |      0       |   85    |      -1918\*\*       |          2014          | 1.ORI, 1.IN, 1.ANT,<br />2.MED, 2.ANT, 3.ANT,<br />4.ANT, 0.ANT4, 0.ANT |
-|   0.PRE    | Late Neolithic Bronze Age |    *Pre*\*    |      0       |    8    |      -2876\*\*       |       -1626\*\*        |                              --                               |
-
-Table:  _Yersinia pestis_ population definitions according to an integrative approach using the major branches, biovars, and associated time periods. Populations are ordered based on the maximum-likelihood phylogeny, which was sorted by increasing node order. Four populations are paraphyletic (1.IN, 1.PRE, 0.ANT, 0.PE) and their descendant populations are listed. {#tbl:population}
-
-\**Pre* is not a metabolic biovar and refers to "extinct" populations where metabolic status is unknown.<br />\*\*The sampling dates of ancient genomes include the 2-sigma range of radiocarbon estimates. 
-
-<div style="page-break-after: always;"></div>
-
 ### Estimating Rates of Evolutionary Change
 
-The extent of rate variation present in our updated genomic dataset is notably larger and more diverse than those used in previous studies [@spyrou2019PhylogeographySecondPlague; @pisarenko2021YersiniaPestisStrains]. A root-to-tip regression on sampling age reproduces the finding that substitution rates in *Y. pestis* are poorly represented by a simple linear model or "strict clock" (Figure @fig:rtt A). Indeed, we found a very low coefficient of determination (R<sup>2</sup>=0.09) which indicates a large degree of unaccounted variation. This finding suggests that evolutionary change in _Y. pestis_ may be more appropriately estimated using a "relaxed clock", where rate variation is explicitly modeled. To test this hypothesis, we performed a Bayesian Evaluation of Temporal Signal (BETS) [@duchene2020BayesianEvaluationTemporal].  In brief, this method tested four model configurations including: (1) a strict clock, (2) a relaxed clock, (3) the true sampling ages, and (4) no sampling ages (ie. all contemporaneous). A comparison of the model likelihoods, or Bayes factors, was then used to assess the degree of temporal signal. 
+The extent of rate variation present in our updated genomic dataset is notably larger and more diverse than those used in previous studies [@spyrou2019PhylogeographySecondPlague; @pisarenko2021YersiniaPestisStrains]. A root-to-tip regression on sampling age reproduces the finding that substitution rates in *Y. pestis* are poorly represented by a simple linear model or "strict clock" (Figure @fig:rtt A).We found a very low coefficient of determination (R<sup>2</sup>=0.09) which indicates a large degree of unaccounted variation. This finding suggests that evolutionary change in _Y. pestis_ may be more appropriately estimated using a "relaxed clock", where rate variation is explicitly modeled. 
 
-The BETS test was inconclusive when attempting to fit a single clock to the updated global diversity of _Y. pestis_. The Bayesian analysis exhibited poor sampling (ESS < 200) of the clock parameters across all model configurations, even when we reduced sources of variation by removing tip date uncertainty, fixing the tree topology, and removing up to 70% of genomes. The poor performance of a single clock model is consistent with previous studies where low ESS scores were observed [@rasmussen2015EarlyDivergentStrains] and divergence dates could not be estimated [@wagner2014YersiniaPestisPlague]. We therefore conclude that a single clock model is not currently a viable approach, as there is excessive rate variation across the global phylogeny of _Y. pestis_. We hypothesize that this model misspecification may help explain node-dating disparities between studies in the past [@morelli2010YersiniaPestisGenome, @cui2013HistoricalVariationsMutation; @rasmussen2015EarlyDivergentStrains].
+To test this hypothesis, we performed a Bayesian Evaluation of Temporal Signal (BETS) [@duchene2020BayesianEvaluationTemporal].  In brief, this method tested four model configurations including: (1) a strict clock, (2) a relaxed clock, (3) the true sampling ages, and (4) no sampling ages (ie. all contemporaneous). A comparison of the model likelihoods, or Bayes factors, was then used to assess the degree of temporal signal. However, the BETS test was inconclusive when attempting to fit a single clock to the updated global diversity of _Y. pestis_. The Bayesian analysis exhibited poor sampling (ESS < 200) of the clock parameters across all model configurations, even when we reduced sources of variation by removing tip date uncertainty, fixing the tree topology, and removing up to 70% of genomes. The poor performance of a single clock model is consistent with several other studies where low ESS scores were observed [@rasmussen2015EarlyDivergentStrains] and divergence dates could not be estimated [@wagner2014YersiniaPestisPlague]. We therefore conclude that a single clock model is not currently a viable approach, as there is excessive rate variation across the global phylogeny of _Y. pestis_. We hypothesize that this model misspecification may help explain node-dating disparities between studies in the past [@morelli2010YersiniaPestisGenome, @cui2013HistoricalVariationsMutation; @rasmussen2015EarlyDivergentStrains].
 
-When the root-to-tip regression was repeated for each population in isolation, we observed that some populations appeared more clock-like than others (Figure @fig:rtt B, SI Figure @fig:rtt_population). For example, the observed rate variation was low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses, which demonstrated that the degree of temporal signal in _Y. pestis_ highly depends on which populations are included [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal].
+In contrast to the single clock approach, we observed significant improvements when each population was assessed independently. All model parameters in our Bayesian analysis demonstrated convergence with ESS values well above 200 and we detected temporal signal in 9 out of 12 _Y. pestis_ populations (SI Table @tbl:bets). Certain populations appeared more clock-like than others, which was reproduced in both the root-to-tip regression and the Bayesian rate estimation. For example, the observed rate variation was low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal] which demonstrated that the degree of temporal signal in _Y. pestis_ varies according to which populations are included. Therefore, our results indicate that using population specific models is a more robust approach than using a single species clock. 
 
-When the BETS test was repeated for each population in isolation, temporal signal was detected in 9 out of 12 _Y. pestis_ populations (SI Table @tbl:bets). Furthermore, all model parameters demonstrated convergence with ESS values well above 200. These improvements suggest that estimating population-specific rates is a more robust approach than using a single, species clock. In the following sections, we explore which _Y. pestis_ populations were associated with the most reliable rates and dates and how this shifts discourse...
+In the following sections, we discuss... three outcomes. populations with no temporal signal. Populations with detectable temporal signal, but with node-dating conflicts... finally.
 
 <div style="page-break-after: always;"></div>
 
-![Rate variation in _Yersinia pestis_ as observed through a regression of root-to-tip distances from the maximum-likelihood phylogeny on the mean sampling age. **A**: A linear model using all genomes from the maximum-likelihood phylogeny. **B**: Population-specific linear models. The distance to the population MRCA was calculated using subtrees extracted from the maximum-likelihood phylogeny. **C**: The time-dependency of rate variation on the sampling time frame. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/feadaa6/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=100%}
+![Rate variation in _Yersinia pestis_ as observed through a regression of root-to-tip distances from the maximum-likelihood phylogeny on the mean sampling age. **A**: A linear model using all genomes from the maximum-likelihood phylogeny. **B**: Population-specific linear models with the distance to the population MRCA calculated from subtrees in the maximum-likelihood phylogeny. **C**: Substitution rates by population across branches of the maximum-clade credibility (MCC) trees. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cb00c8c/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=80%}
 
 <div style="page-break-after: always;"></div>
 
 #### (i) No Temporal Signal
 
-We found three _Y. pestis_ populations with no detectable temporal signal, which include the *Intermedius* biovar (1.IN) and the *Antiqua* biovar (2.ANT, 3.ANT). This trait can be identified in the maximum-likelihood phylogeny, as these populations have the highest density of nodes close to their roots (Figure @fig:no_temporal_signal). Specifically, the majority of nodes are found within 1 x 10<sup>-5</sup> substitutions per site away from the root, with sporadic long branches as outliers (Figure @fig:no_temporal_signal, SI Figure @fig:long_branches). As another *Antiqua* population (4.ANT) has a similar node distribution, with a smaller number of samples (N=12) collected over an even shorter time frame (38 years), we regard the rates and dates associated with 4.ANT to be non-informative out of caution.
- 
-![The subtrees extracted from the maximum-likelihood phylogeny for the _Yersinia pestis_ populations with no detectable temporal signal. Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/0f1785d/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths_no_temporal_signal.png){#fig:no_temporal_signal width=80%}
+We found three _Y. pestis_ populations with no detectable temporal signal which include the *Intermedius* biovar (1.IN) and the *Antiqua* biovar (2.ANT, 3.ANT). Despite being sampled over a period as long as 84 years, these populations have not accumulated sufficient evolutionary change to yield informative divergence dates. This limited diversity can be identified in the maximum-likelihood phylogeny, as these populations have the highest density of nodes close to their roots (Figure @fig:branch_lengths). As another *Antiqua* population (4.ANT) has a similar node distribution, with a smaller number of samples (N=12) collected over an even shorter time frame (38 years), we also regard the rates and dates associated with 4.ANT to be non-informative.
 
-Despite being isolated over a period of 54 to 84 years, these three populations have not accumulated sufficient evolutionary change to yield informative divergence dates. However, this should not be surprising given that _Y. pestis_ has one of the slowest substitution rates observed among bacterial pathogens [@duchene2016GenomescaleRatesEvolutionary]. Previously published studies have estimated the mean substitution rate to range from 1.0 - 3.0 x 10<sup>-8</sup> substitutions per site per year [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague], or 1 substitution every 8 to 25 years. In application, this means that  _[[Y. pestis]]_ lineages often cannot be differentiated until decades have passed, a concept generally referred to as the phylodynamic threshold.
+The lack of temporal signal in these populations suggests that _Y. pestis_ must be sampled over multiple decades, if not centuries, before robust temporal estimates can be obtained. This time frame is largely consistent with the finding that _Y. pestis_ has one of the slowest substitution rates observed among bacterial pathogens [@duchene2016GenomescaleRatesEvolutionary]. Previous studies have estimated the mean substitution rate to range from 1.0 - 3.0 x 10<sup>-8</sup> substitutions per site per year [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague], or 1 substitution every 8 to 25 years. In application, this means that  _[[Y. pestis]]_ lineages often cannot be differentiated until decades have passed, a concept generally referred to as the phylodynamic threshold.
 
-While this concept has been rigorously explored in other pathogens [@duchene2020TemporalSignalPhylodynamic], it has not been explicitly tested in _Y. pestis_. However, researchers have anecdotally mentioned the challenges in reconstructing intra-epidemic diversity. For example, isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) were observed to be indistinguishable clones [@spyrou2016HistoricalPestisGenomes], thus extinguishing any hope of reconstructing the spread of this catastrophic event from genetic evidence. Our results develop this issue further, by 
-demonstrating that non-informative dates were obtained from populations sampled over a period as long as 84 years. This highlights a significant limitation and cautionary note for plague research, as genetic evidence may not be suitable for reconstructing short-term, epidemic events.
+The phylodynamic threshold has been rigorously explored in other pathogens [@duchene2020TemporalSignalPhylodynamic], but not explicitly tested in _Y. pestis_. However, plague researchers have anecdotally mentioned the challenges in reconstructing intra-epidemic diversity. For example, isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) were observed to be indistinguishable clones [@spyrou2016HistoricalPestisGenomes], thus extinguishing any hope of reconstructing the spread of this catastrophic event from genetic evidence. Our results develop this issue further, by demonstrating that non-informative dates were obtained from populations sampled over a period as long as 84 years. This highlights a significant limitation and cautionary note for plague research, as genetic evidence may not be suitable for reconstructing short-term, epidemic events.
 
-Aside from the aforementioned Black Death, another short-term event that remains enigmatic is the re-emergence of plague during the Third Pandemic. Epidemiological analyses [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData] have documented highly localized plague cases appearing in Yunnan, China (1772-1800), followed by short-distance diffusion (1800-1880) and eventually inter-continental spread (1894). The available genomic evidence is consistent with this geographic narrative, as the Third Pandemic population (1.ORI) diverges from an *Intermedius* (1.IN) clade that is geographically restricted to Yunnan, China (Figure @fig:divtree_1.IN_1.ORI). Unfortunately, the genetic evidence does not advance our understanding of the initial re-emergence (1772-1800) as the 1.IN population has no detectable temporal signal. As a result, we currently can't identify which lineage was associated with the spillover of _Y. pestis_ into human populations, or why this event occurred.
+Aside from the aforementioned Black Death, another short-term event that remains enigmatic is the re-emergence of plague during the Third Pandemic. Epidemiological analyses [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData] have documented highly localized plague cases appearing in Yunnan, China (1772-1800), followed by short-distance diffusion (1800-1880) and eventually inter-continental spread (1894). The genomic evidence is consistent with this geographic narrative, as the Third Pandemic population (1.ORI) diverges from an *Intermedius* (1.IN) clade that is geographically restricted to Yunnan, China (Figure @fig:divtree_1.IN_1.ORI). Unfortunately, the available genetic evidence does not further advance our understanding of the timing of these precursor events, as the _Intermedius_ (1.IN) population has no detectable temporal signal. However, the long internal branch that connects 1.IN and 1.ORI suggests there is significant diversity that remains unsampled. Thus a key avenue for future research will be to locate and sample the _Y. pestis_ populations that pre-date this re-emergence, to better understand when and why this pandemic began.
 
-![The subtrees extracted from the maximum-likelihood phylogeny for the _Yersinia pestis_ populations 1.IN and 1.ORI. Branch lengths are scaled by genetic distance in substitutions per site. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/35b371f/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_1.ORI.png){#fig:divtree_1.IN_1.ORI width=100%}
+![The subtrees extracted from the maximum-likelihood phylogeny for the _Yersinia pestis_ populations _Intermedius_ (1.IN) and _Orientalis_ (1.ORI). Branch lengths are scaled by genetic distance in substitutions per site. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/35b371f/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_1.ORI.png){#fig:divtree_1.IN_1.ORI width=100%}
 
 <div style="page-break-after: always;"></div>
 
 #### (ii) Conflicting Dates
 
-We observed considerable node-dating conflicts between X populations.
+We observed two populations that were associated with significant node-dating conflicts, despite having detectable temporal signal. These populations include the *Pestoides* (0.PE) and *Antiqua* (0.ANT) biovars which are both non-monophyletic. Conflicts were identified by comparing their estimated time to the most recent common ancestor (tMRCA) to the tMRCAs of their descendant populations. For example, the First Pandemic ([[0.ANT4]]) is a descendant clade of the larger [[0.ANT]] population based on the maximum-likelihood phylogeny (Figure @fig:date_conflict_0.ANT). Thus, we would expect the tMRCA of the ancestral 0.ANT to pre-date the First Pandemic, for which ancient DNA calibrations are available. Instead, the tMRCA of 0.ANT is far too young (1357 - 1797 CE), and post-dates the tMRCA of 0.ANT4 (39 - 234 CE) by more than a millennia. 
 
-Of the 9 populations with detectable temporal signal, we observed substantial dating conflicts among three of them. 
+These node-dating conflicts illustrate a significant limitation ...
 
+ This limited diversity can be identified in the maximum-likelihood phylogeny, as these populations have the highest density of nodes close to their roots with sporadic long branches as outliers (Figure @fig:branch_lengths). As another *Antiqua* population (4.ANT) has a similar node distribution, with a smaller number of samples (N=12) collected over an even shorter time frame (38 years), we also regard the rates and dates associated with 4.ANT to be non-informative.
+
+![Caption](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e8b2cbb/main/iqtree_stats/all/chromosome/full/filter5/date_conflict_0.ANT.png){#fig:date_conflict_0.ANT width=100%}
 
 <div style="page-break-after: always;"></div>
 
@@ -368,10 +347,28 @@ Data visualization was performed using seaborn [@waskom2021SeabornStatisticalDat
 
 ## Supplementary Information   {.page_break_before}
 
+| Population |        Time Period        |    Biovar     | Major Branch | Genomes | Oldest Sampling Date | Youngest Sampling Date |                     Descendants                     |
+|:----------:|:-------------------------:|:-------------:|:------------:|:-------:|:--------------------:|:----------------------:|:-------------------------------------------------------------:|
+|   1.ORI    |      Third Pandemic       | *Orientalis*  |      1       |   117   |         1924         |          2016          |                              --                               |
+|    1.IN    |            --             | *Intermedium* |      1       |   39    |         1954         |          2008          |                             1.ORI                             |
+|   1.ANT    |            --             |   *Antiqua*   |      1       |    4    |         1954         |          2004          |                              --                               |
+|   1.PRE    |      Second Pandemic      |    *Pre*\*    |      1       |   40    |       1270\*\*       |        1800\*\*        |                      1.ORI, 1.IN, 1.ANT                       |
+|   2.MED    |            --             | *Medievalis*  |      2       |   116   |         1912         |          2018          |                              --                               |
+|   2.ANT    |            --             |   *Antiqua*   |      2       |   54    |         1924         |          2008          |                              --                               |
+|   4.ANT    |            --             |   *Antiqua*   |      4       |   11    |         1977         |          2015          |                              --                               |
+|   3.ANT    |            --             |   *Antiqua*   |      3       |   11    |         1961         |          2017          |                              --                               |
+|   0.ANT4   |      First Pandemic       |   *Antiqua*   |      0       |   12    |       214\*\*        |        880\*\*         |                              --                               |
+|   0.ANT    |            --             |   *Antiqua*   |      0       |   103   |         1947         |          2019          |    1.ORI, 1.IN, 1.ANT,<br />2.MED, 2.ANT, 3.ANT,<br />4.ANT, 0.ANT4     |
+|    0.PE    |            --             |  *Pestoides*  |      0       |   85    |      -1918\*\*       |          2014          | 1.ORI, 1.IN, 1.ANT,<br />2.MED, 2.ANT, 3.ANT,<br />4.ANT, 0.ANT4, 0.ANT |
+|   0.PRE    | Late Neolithic Bronze Age |    *Pre*\*    |      0       |    8    |      -2876\*\*       |       -1626\*\*        |                              --                               |
+
+Table:  _Yersinia pestis_ population definitions according to an integrative approach using the major branches, biovars, and associated time periods. Populations are ordered based on the maximum-likelihood phylogeny, which was sorted by increasing node order. Four populations are paraphyletic (1.IN, 1.PRE, 0.ANT, 0.PE) and their descendant populations are listed. {#tbl:population}
+
+\**Pre* is not a metabolic biovar and refers to "extinct" populations where metabolic status is unknown.<br />\*\*The sampling dates of ancient genomes include the 2-sigma range of radiocarbon estimates. 
+
+
 
 ![Population-specific rate variation in _Yersinia pestis_ as observed through regressions of root-to-tip distance on sampling age. The distance to the population MRCA was calculated using subtrees extracted from the maximum-likelihood phylogeny. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1f888baa3/main/iqtree_stats/all/chromosome/full/filter5/rtt_regression_population.png){#fig:rtt_population width=100%}
-
-<div style="page-break-after: always;"></div>
 
 <div style="page-break-after: always;"></div>
 
@@ -392,9 +389,53 @@ Data visualization was performed using seaborn [@waskom2021SeabornStatisticalDat
 
 Table: Model selection and log marginal likelihoods obtained from a Bayesian evaluation of temporal signal (BETS) test. \*0.PRE had temporal signal according to a strict clock, although the relaxed clock with no dates model had the highest likelihood. {#tbl:bets}
 
+<div style="page-break-after: always;"></div>
+
+![The subtrees extracted from the maximum-likelihood phylogeny for the _Yersinia pestis_ populations with (A) no detectable temporal signal, (B) ... Stars indicate the node representing the most recent common ancestor (MRCA). Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/f2aa4bd/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths.png){#fig:branch_lengths width=80%}
+
+<div style="page-break-after: always;"></div>
+
 ![The distribution of external branch lengths across the maximum-likelihood phylogeny. The threshold to be considered a long external branch is set at 1e-5 substitutions/site.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/281e59b/main/iqtree_stats/all/chromosome/full/filter5/long_branches.png){#fig:long_branches width=100%}
 
 <div style="page-break-after: always;"></div>
+
+| Population | Morelli et al. (2010) | Cui et al. (2013) | Pisarenko et al. 2021 |  This Study  |
+|:----------:|:---------------------:|:-----------------:|:---------------------:|:------------:|
+|   1.ORI    |      -326, 1793       |    1735, 1863     |      1744, 1842       |  1806, 1901  |
+|   1.IN*    |      -2388, 1606      |                   |      1791, 1897       |  1651, 1913  |
+|   1.ANT    |      -4909, 1377      |    1377, 1650     |      1483, 1704       |  1655, 1835  |
+|   1.PRE    |          --           |    1312, 1353     |          --           |  1214, 1315  |
+|   2.MED    |      -583, 1770       |                   |      1298, 1582       |  1560, 1845  |
+|   2.ANT*   |      -3994, 1460      |                   |      1373, 1628       |  1509, 1852  |
+|   4.ANT    |          --           |                   |      1611, 1816       |  1848, 1968  |
+|   3.ANT*   |          --           |                   |      1531, 1742       |  1769, 1947  |
+|   0.ANT4   |          --           |                   |          --           |   39, 234    |
+|   0.ANT    |      -6857, 1199      |                   |      1033, 1435       |  1357, 1797  |
+|    0.PE    |     -26641, -598      |    -4394, 510     |       -377, 499       |  1573, 1876  |
+|   0.PRE    |          --           |        --         |          --           | -3098, -2786 |
+
+Table: Bayesian parameter estimates across studies of the time to most recent common ancestor (tMRCA) by _Yersinia pestis_ population. {#tbl:beast_estimates_dates}
+
+| Population | Mean Rate              | Mean Rate (95% HPD)                            |
+| ---------- | ---------------------- | ---------------------------------------------- |
+| 1.ORI      | 1.27 x 10<sup>-7</sup> | 1.07 x 10<sup>-7</sup>, 1.49 x 10<sup>-7</sup> |
+| 1.IN       | 8.32 x 10<sup>-8</sup> | 5.81 x 10<sup>-8</sup>, 1.16 x 10<sup>-7</sup> |
+| 1.ANT      | 5.84 x 10<sup>-8</sup> | 4.15 x 10<sup>-8</sup>, 9.27 x 10<sup>-8</sup> |
+| 1.PRE      | 4.68 x 10<sup>-8</sup> | 3.88 x 10<sup>-8</sup>, 5.71 x 10<sup>-8</sup> |
+| 2.MED      | 2.41 x 10<sup>-7</sup> | 2.01 x 10<sup>-7</sup>, 2.89 x 10<sup>-7</sup> |
+| 2.ANT      | 8.18 x 10<sup>-8</sup> | 5.78 x 10<sup>-8</sup>, 1.05 x 10<sup>-7</sup> |
+| 4.ANT      | 7.99 x 10<sup>-8</sup> | 4.61 x 10<sup>-8</sup>, 1.52 x 10<sup>-7</sup> |
+| 3.ANT      | 6.25 x 10<sup>-8</sup> | 3.69 x 10<sup>-8</sup>, 1.05 x 10<sup>-7</sup> |
+| 0.ANT4     | 3.63 x 10<sup>-8</sup> | 2.51 x 10<sup>-8</sup>, 4.51 x 10<sup>-8</sup> |
+| 0.ANT      | 5.65 x 10<sup>-8</sup> | 4.28 x 10<sup>-8</sup>, 7.53 x 10<sup>-8</sup> |
+| 0.PE       | 6.16 x 10<sup>-7</sup> | 4.62 x 10<sup>-7</sup>, 7.68 x 10<sup>-7</sup> |
+| 0.PRE      | 5.56 x 10<sup>-8</sup> | 4.15 x 10<sup>-8</sup>, 6.33 x 10<sup>-8</sup> |
+
+
+Table: Bayesian parameter estimates of the mean substitution rate by _Yersinia pestis_ population. {#tbl:beast_estimates_rates}
+
+
+
 
 ![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6bea409/main/report/workflow.png){#fig:workflow}
 

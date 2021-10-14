@@ -1,8 +1,8 @@
 ---
 title: Meet With Nukhet
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-09-23
 time: 09:00
