@@ -1,8 +1,8 @@
 ---
 title: Meet with Adiya
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-10-13
 time: 09:00
