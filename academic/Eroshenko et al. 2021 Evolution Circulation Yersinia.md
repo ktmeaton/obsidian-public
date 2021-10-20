@@ -1,6 +1,7 @@
 ---
 aliases:
   - Eroshenko et al. 2021
+  - '@eroshenko2021EvolutionCirculationYersinia'
 tags: 
   - 📥/📰 
   - 📝/🌱     
