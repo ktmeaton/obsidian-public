@@ -276,9 +276,23 @@ Even less is known about the *Medievalis* population due its more ancient origin
 
 > What did we do?
 
+To reconstruct the spread of _Y. pestis_, we used the sampling location (ie. country) of each genome for a discrete trait analysis [@cite]. We specifically focused on the 5 
+
+
+we expanded our molecular clock model to include a discrete trait reconstruction. We used the country of origin
+
+Country of sample origin was chosen as the discrete trait of interest
+
+modeled the spread of _Y. pestis_ as a discrete trait (country) 
+
+explore underlying phylogeography, we conducted a discrete trait analysis in BEAST [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. 
+
 Model the spread of plague as a discrete state process (country). As this is a common approach among viral work [@cite] and plague phylogenetics [@cite] (morelli, susat).
 
 > What did we find?
+
+| Population | Internal Nodes | High Confidence Location | 
+| ---------- | -------------- | ------------------------ |
 
 A discrete state model (country) is associated with high levels of uncertainty.
 
