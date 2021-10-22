@@ -208,8 +208,8 @@ The BETS test was inconclusive when attempting to fit a single clock to the upda
 
 In contrast to the single clock approach, we observed significant improvements when each population was assessed independently. All model parameters in our Bayesian analysis demonstrated convergence with ESS values well above 200 and we detected temporal signal in 9 out of 12 _Y. pestis_ populations (SI Table 2). Several populations appeared more clock-like than others, which was observed  in both the root-to-tip regression and the Bayesian rate estimation. For example, we found rate variation to be low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal] which demonstrated that the degree of temporal signal in _Y. pestis_ varies according to which populations are included. Overall, our results indicate that using population specific models is a more robust approach than using a single species clock. 
 
-In the following sections, we critique this approach further and discuss the interpretive consequences of our estimated rates and dates. First, we examine _Y. pestis_ populations with no detectable temporal signal and the time frame over which they were sampled. These "negative" results serve a crucial purpose in informing us about the minimum sampling time frame, or **phylodynamic threshold**, for which robust temporal estimates can be obtained. Second, we identify populations that have temporal signal but are associated with unreliable dates when assessed using external calibrations. We explore how **sampling bias** drives this outcome, which has led to poor reproducibility between studies. Third, we identify which populations have the most reliable temporal estimates, for which **informative rates and dates** can be obtained. We discuss how these molecular dates have changed our understanding of .. "origin" stories, and complement historical scholarship that includes more diverse, non-European sources.
-... Finally, we discuss how these results inform **phylogeographic** analysis, in which the ancestral location and spread of _Y. pestis_ is estimated. ...
+In the following sections, we critique this approach further and discuss the interpretive consequences of our estimated rates and dates. First, we examine _Y. pestis_ populations with no detectable temporal signal and the time frame over which they were sampled. These "negative" results serve a crucial purpose in informing us about the minimum sampling time frame, or <u>phylodynamic threshold</u>, for which robust temporal estimates can be obtained. Second, we identify populations that have temporal signal but are associated with unreliable dates when assessed using external calibrations. We explore how <u>sampling bias</u> drives this outcome, which has led to poor reproducibility between studies. Third, we identify which populations have the most reliable temporal estimates, for which <u>informative rates and dates</u> can be obtained. We discuss how these molecular dates have changed our understanding of .. "origin" stories, and complement historical scholarship that includes more diverse, non-European sources.
+... Finally, we discuss how these results inform <u>phylogeographic</u> analysis, in which the ancestral location and spread of _Y. pestis_ is estimated. ...
 
 <div style="page-break-after: always;"></div>
 
@@ -270,18 +270,49 @@ We estimate that the Third Pandemic (1.ORI) population emerged around 1885 (95% 
 
 Even less is known about the *Medievalis* population due its more ancient origin. *Medievalis* strains were hypothesized to be responsible for plague outbreaks in the Caspian Sea region which reoccurred throughout the 19<sup>th</sup> and 20<sup>th</sup> centuries [@eroshenko2021EvolutionCirculationYersinia]. We estimate that the most recent common ancestor of _Medievalis_ (2.MED) emerged around 1796 (95% HPD: 1560 - 1845 CE) which overlaps with all previously published estimates (Table @tbl:comparison_dates). While this population was once thought to have emerged as early as 583 BCE, there is now growing consensus that the earliest possible emergence was in the 16<sup>th</sup> century CE. This raises an intriguing possibility, in which distinct _Y. pestis_ populations were co-circulating during the Second Pandemic. Specifically, the Caspian Sea region appears to be a nexus of plague as the only known area where the distributions of European and Asian _Y. pestis_ overlap (Figure @fig:map_caucasus). Thus an important avenue for future research will be to test this hypothesis further, to better understand if distinct populations of _Y. pestis_ were co-circulating during the Second Pandemic and how this affected disease exposure in nearby human populations.
 
-![The geographic distributions of the Second Pandemic (1.PRE), _Medievalis_ (2.MED), and _Pestoides_ (0.PE) overlap in the Caspian Sea region. The sampling location of each genome was standardized to the centroid of the associated province and/or state.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/346bd65/main/auspice/all/chromosome/full/filter5/ml/map_caucasus.png){#fig:map_caucasus width=100%}
+![The geographic distributions of the Second Pandemic (1.PRE), _Medievalis_ (2.MED), and _Pestoides_ (0.PE) populations. The sampling location of each genome was standardized to the centroid of the associated province and/or state.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/346bd65/main/auspice/all/chromosome/full/filter5/ml/map_caucasus.png){#fig:map_caucasus width=100%}
 
 ### Phylogeography
 
-- People are interested in phylogeogrpahy of _Y. pestis_. Susat, wagner, morelli,
-- But it's very challenging to get 
+> What did we do?
 
-Lots of challenges doing phylogeography in plague. The big problem is a slow evolutionary rate paired with rapid geographic spread. For example, the median substitution rate in 1.PRE is 1 substitution every 9.5 years. Plague strains across countries are often identical (ex. clonal black death).
+Model the spread of plague as a discrete state process (country). As this is a common approach among viral work [@cite] and plague phylogenetics [@cite] (morelli, susat).
 
-Phylogeographic reconstructions are poor in _Y. pestis_ 
+> What did we find?
 
-Lack of geographic structure, closely related strains are not necessarily in close geographic proximity.
+A discrete state model (country) is associated with high levels of uncertainty.
+
+- Other studies do phylogeography as a discrete state (country). Also very common in viral phylogeography.
+
+
+Phylogeographic analysis is very complicated in _Y. pestis_. For a couple of reasons. One, is that as a zoonoses, plague can spread throughout a variety of processes. The spread of plague is a mix of slow, continuous diffusion across the landscape (rodent reservoirs) and long-distance spread (human epidemics). 
+
+- Other studies do phylogeography as a discrete state (country). Also very common in viral phylogeography.
+
+A discrete state analysis using the modern definitions of countries. The spread of plague is a mix of slow, continuous diffusion across the landscape (rodent reservoirs) and long-distance spread (human epidemics). Modeling the spread of plague as a transition from one country to another is bad.
+
+More appropriate definitions of barriers to gene flow. Example, inter-continental comparisons during the Third Pandemic.
+
+For two reasons. The dispersal history of plague comes from both long-distance spread (human epidemics), and continuous 
+
+2. The modern definitions of countries are of limited use in _Y. pestis_. Particularly 
+
+- Varying degrees of geographic structure. Migration events between countries are poorly resolved.
+- 1. The migration rate is faster than the substitution rate. Example, the Second Pandemic (1 substitution every 9.5 years). But in this same time frame, _Y. pestis_ dispersed all throughout Eurasia. Again, we advise that short-term comparisons are fragile.
+- 2. The modern definitions of countries are of limited use
+
+- 2. Fluctuating patterns of persistence and reintroduction. With few barriers to gene flow.
+
+Also, short-distance comparisons are fragile.
+
+There are a couple of options.
+1. Modern
+1. Change defintion of location. A discrete state analysis using the modern boundaries of countries is of limited use in reconstrucing the evolutionary history of 
+1. Geographic structure can be recovered by broadening the scope (Countries --> Region --> Continent).
+2. 
+3. Broaden our geographic scope to regions. Ecological zones (ex. north and south caucasus)
+4. Migration events between countries are poorly resolved, but there is often strong geographic structure at the continent level. Ex. Third Pandemic.
+5. Interdisciplinary: Incorporate case occurrence data
 
 ![Phylogeography of the Second Plague Pandemic (1.PRE). Grey bars around internal nodes define dating uncertainty, and represent the 95% highest posterior density (HPD) interval. Asterisks indicate clade separations with posterior support greater than 0.95. Blue diamonds indicate nodes where the ancestral location was inferred to be in a single country with a probability greater than 0.95 .](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/27404bd/main/auspice/all/chromosome/full/filter5/beast/geo/1.PRE_timetree.png){#fig:1.PRE_timetree width=100%}
 
@@ -300,13 +331,7 @@ A visual overview of the computational methods is provided in Figure @fig:workfl
 
 ### Data Collection
 
-_Y. pestis_ genome sequencing projects were retrieved from the [[National Centre for Biotechnology Information|NCBI]] databases using NCBImeta [[Eaton 2019 NCBImeta\|[@eaton2019NCBImeta]]]. 1657 projects were identified and comprised three genomic types: 
-
-- 586 modern assembled
-- 184 ancient unassembled
-- 887 modern unassembled
-
-The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. 
+_Y. pestis_ genome sequencing projects were retrieved from the [[National Centre for Biotechnology Information|NCBI]] databases using NCBImeta [[Eaton 2019 NCBImeta\|[@eaton2019NCBImeta]]]. 1657 projects were identified and comprised three genomic types. 1473 projects came from modern isolates sampled during the 20<sup>th</sup> and 21<sup>st</sup> century. (i) 586 projects were available as assembled genomic contigs (FASTA), and (ii) 887 were only available as unassembled sequences (FASTQ). (iii) 184 projects came from ancient skeletal remains with sampling ages older than the 19<sup>th</sup> century. The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. 
 
 Collection location, collection date, and collection host metadata were curated by cross-referencing the original publications. Collection location was transformed to latitude and longitude coordinates using [[GeoPy]] [[Esmukov 2020 GeoPy Python Client\|[@esmukov2020GeoPyPythonClient]]]  and the [[Nominatim|Nominatim API]] [[Hoffman 2020 Nominatim Tool Search\|[@hoffman2020NominatimToolSearch]]] for [[OpenStreetMap]]  [[openstreetmapcontributors2017PlanetDumpRetrieved\|[@openstreetmapcontributors2017PlanetDumpRetrieved]]]. Coordinates were standardized at the level of country and province/state, using the centroid of each. Collection dates were standardized according to their year, and recording uncertainty arising from missing data and radiocarbon estimates. Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation.
 
@@ -332,19 +357,21 @@ Model selection was performed on the *full* dataset (N=601) using [[Modelfinder]
 
 A [[Maximum-likelihood\|maximum-likelihood]] phylogeny was then estimated across 10 independent runs of [[IQTREE2]] [@minh2020IQTREENewModels]. Branch support was evaluated using 1000 iterations of the [[UFboot\|ultrafast bootstrap approximation]] [@hoang2018UFBoot2ImprovingUltrafast], with a threshold of 95% required for strong support.
 
-### Molecular Clock
+### Estimating Rates of Evolutionary Change
 
-To explore the degree of temporal signal present in the data, two categories of tests were performed . The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on collection date using the python package ```statsmodels``` [[Seabold 2010 Statsmodels Econometric Statistical\|[@seabold2010StatsmodelsEconometricStatistical]]]. Given the relative simplicity of a regression model, the *full* dataset of 601 genomes was used. For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] was conducted.
+To explore the degree of temporal signal present in the data, two categories of tests were performed. The first was a [[Root to Tip Regression\|root-to-tip (RTT)]] regression on the mean sampling age using the python package `statsmodels` [@seabold2010StatsmodelsEconometricStatistical]. Given the relative simplicity of a regression model, the *full* dataset of 601 genomes was used. 
 
-> Placeholder for methods from Sebastian and Leo.
+For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Signal|Bayesian Evaluation of Temporal Signal (BETS)]] was conducted. Our analyses in BETS consisted of running four model configurations; either with or without sampling dates, and under a strict or uncorrelated lognormal relaxed clock models (strict and UCLN, respectively). We calculated the log marginal likelihood under each model configuration using stepping-stone sampling as implemented in BEAST v1.10 [@suchard2018BayesianPhylogeneticPhylodynamic]. To this end, we ran 200 path steps, each with a Markov chain Monte Carlo (MCMC) of length 10<sup>6</sup> steps. In addition to the clock model we used a constant-size coalescent tree prior, a GTR+Γ substitution model. 
+
+Importantly, the models involved priors that were proper for all parameters, which is essential for marginal likelihood calculations [@baele2013AccurateModelSelection]. In particular, the molecular clock rate (the mean of the UCLN clock model or the global rate of the strict) had a continuous time Markov chain reference prior [@ferreira2008BayesianAnalysisElapsed], the population size of the constant-size coalescent an exponential prior distribution with mean 10, and the standard deviation of the UCLN had an exponential prior with mean 0.33. Marginal likelihood estimation with stepping stone sampling does not require from the posterior distribution. To obtain the posterior distribution we used an MCMC of 10<sup>9</sup> steps, sampling every 10<sup>3</sup> steps. For situations where the effective sample size (ESS) of any parameters was below 200 we increased the chain length by 50% and reduced sampling frequency accordingly.
 
 ### Phylogeography
 
-> Placeholder for methods from Sebastian and Leo.
+To explore underlying phylogeography, we conducted a discrete trait analysis in BEAST [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. A coalescent constant population size tree prior was chosen with an exponential prior placed on the effective population size with mean 100000. We modeled evolutionary rate with an uncorrelated relaxed lognormal clock, with a CTMC scale prior on the mean  and exponential prior with mean 1/3 on the standard deviation of the underlying lognormal distribution (Drummond et al., 2006). A GTR+Gamma substitution model with estimated base frequencies for 1.ORI, 1.PRE, 0.ANT4, and 0.PRE. The same settings were used for 2.MED with the exception of swapping the GTR+Gamma model to an HKY+Gamma model. MCMC chains were run for 10<sup>7</sup> steps with sampling every 10<sup>3</sup> steps. We used logCombiner to combine between 3-5 replicate runs, with 10% burnin, for each clade to achieve ESS above 200 for each parameter and Maximun Clade Credibility (MCC) trees [@drummond2007BEASTBayesianEvolutionary].
 
 ### Visualization
 
-Data visualization was performed using seaborn [@waskom2021SeabornStatisticalData] and Auspice  [@hadfield2018NextstrainRealtimeTracking],  a component of the Nextstrain visualization suite.
+Data visualization was performed using the python package `seaborn` [@waskom2021SeabornStatisticalData] and Auspice  [@hadfield2018NextstrainRealtimeTracking],  a component of the Nextstrain visualization suite.
 
 ## References {.page_break_before}
 
