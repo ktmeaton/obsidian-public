@@ -76,94 +76,17 @@ compile-pandoc: "conda activate pandoc && pandoc/convert_wikilinks.py --input
 url: https://ktmeaton.github.io/obsidian-public/academic/Eaton%20et%20al.%202021%20Plagued%20by%20a%20cryptic%20clock.html
 ---
 
-
-## Abstract  {.page_break_before}
-
-**Background**: A popular objective in plague research is dating historical events using a molecular clock. But despite intensive interest and methodological advancement, _Yersinia pestis_ remains notoriously difficult to model. As a result, debate has emerged concerning the applicability and accuracy of spatiotemporal analysis in plague phylogenetics. In response, we test a variety of molecular clock and migration models on an updated and curated _Y. pestis_ phylogeny.
-
-**Results**: All iterations of a species-wide clock were analytically unstable. Partitioning the data by population improved modeling performance, but often resulted in divergence dates that were too young. This effect was most noticeable in populations with no ancient DNA calibrations, even when the sampling time frame was as long as 100 years. In addition, no migration events could be robustly inferred from a phylogeographic analysis of the Second Plague Pandemic.
-
-- Species-wide clock is unstable. Population-clock recovers temporal signal.
-- We identify 5 _Y. pestis_ populations with robust temporal signal and informative rates and dates. These include both ancient (Bronze Age, First Pandemic, Second Pandemic) and modern (Third Pandemic, _Medievalis_) populations with a minimum sampling time frame of 92 years. 
-- All populations sampled over a shorter period had either no temporal signal or significant node-dating conflicts. 
-- Without ancient DNA calibrations, the divergence dates of *Antiqua* (0.ANT, 1.ANT) and *Pestoides* (0.PE) were overly young by as much as 1000 years.
-- Modern _Y. pestis_ is younger than previously thought.
-- Ancient _Y. pestis_ is older.
-- All have pretty wide confidence intervals (50-100 years)
-
-**Conclusions**: The majority of _Y. pestis_ populations have detectable temporal signal. However, accurate node-dating presents a complex optimization problem, in which calibrating samples are maximized and rate variation is limited. Furthermore, the _Y. pestis_ genomic evidence in isolation is poorly suited to reconstructing point migrations between countries. Instead, the reconstruction of spread patterns may benefit tremendously from integrating higher-resolution evidence from interdisciplinary sources.
-
-
-- The most comprehensive phylodynamic analysis of _Y. pestis_. Identify methods that are bad (single, clock), provide alternatives, and identify room for improvements. 
-- 
-- Phylodynamic threshold, short-time comparisons are not appropriate.
-- This is the first evidence of detectable temporal signal in "modern" _Y. pestis_ populations without ancient DNA calibrations
-- Framework for critically examining 
-
-
-
-
 ## Introduction {.page_break_before}
 
-1. Plague has an impressively long and expansive history as a zoonosis of rodents.
-2. Accompanying this prolific global presence is unnervingly high mortality. 
-3. 
+Plague has an impressively long and expansive history as a zoonosis of rodents. The earliest "fossil" evidence of the plague bacterium, _Yersinia pestis_, comes from ancient DNA studies which date its first emergence in humans to the Late Neolithic Bronze Age (LNBA) [@andradesvaltuena2017StoneAgePlague; @rascovan2019EmergenceSpreadBasal]. Over the last five thousand years, _Y. pestis_ has dispersed globally on numerous occasions, due to an ability to infect a variety of mammalian hosts  [@perry1997YersiniaPestisEtiologic] and ever-expanding trade networks [@yue2017TradeRoutesPlague]. Few regions of the ancient and modern world remain untouched by this disease, as plague has persisted until today on every continent except Australia and Antarctica [@who2017Plague].
 
-Plague has an impressively long and expansive history as a zoonosis of rodents. The earliest "fossil" evidence of the plague bacterium, *[[Yersinia pestis]]*, comes from [[Ancient DNA\|ancient DNA]] studies which date its first emergence in humans to the Late Neolithic Bronze Age (LNBA) [[Andrades Valtuena et al. 2017 Stone Age Plague\|[@andradesvaltuena2017StoneAgePlague; ]] [[Rascovan et al. 2019 Emergence Spread Basal\|@rascovan2019EmergenceSpreadBasal]]]. Over the last five thousand years, _Y. pestis_ has dispersed globally on numerous occasions, due to an ability to infect a variety of mammalian hosts  [@perry1997YersiniaPestisEtiologic] and ever-expanding trade networks [@yue2017TradeRoutesPlague]. Few regions of the ancient and modern world remain untouched by this disease, as plague has persisted until today on every continent except Australia and Antarctica [@who2017Plague].
-
-Accompanying this prolific global presence is unnervingly high mortality. There have been at least three historically-documented pandemics of plague: the First Pandemic (6<sup>th</sup> to 8<sup>th</sup> century CE) [@wagner2014YersiniaPestisPlague; @mordechai2019JustinianicPlagueInconsequential], the Second Pandemic (14<sup>th</sup> to 19<sup>th</sup> century CE) [@varlik2014NewScienceOld], and the Third Pandemic (19<sup>th</sup> to 20<sup>th</sup> century CE) [@xu2014WetClimateTransportation]. The advent of each pandemic is marked by a devastating series of outbreaks, such as the medieval Black Death (1346-1353), which is estimated to have killed more than half of Europe's population  [@benedictow2021CompleteHistoryBlack].  This level of virulence is still observed today, as untreated pneumonic plague has a case fatality rate of nearly 100% [@prentice2007Plague; @salam2020DeathsAssociatedPneumonic]. As a result, plague maintains its status as a disease that is of vital importance for public health research.
-
-There are few other pathogens that have had such a lasting impact on past and present human populations, and thus
-
+Accompanying this prolific global presence is unnervingly high mortality. There have been at least three historically-documented pandemics of plague: the First Pandemic (6<sup>th</sup> to 8<sup>th</sup> century CE) [@wagner2014YersiniaPestisPlague; @mordechai2019JustinianicPlagueInconsequential], the Second Pandemic (14<sup>th</sup> to 19<sup>th</sup> century CE) [@varlik2014NewScienceOld], and the Third Pandemic (19<sup>th</sup> to 20<sup>th</sup> century CE) [@xu2014WetClimateTransportation]. The advent of each pandemic is marked by a devastating series of outbreaks, such as the medieval Black Death (1346 - 1353 CE), which is estimated to have killed more than half of Europe's population  [@benedictow2021CompleteHistoryBlack].  This level of virulence is still observed today, as untreated pneumonic plague has a case fatality rate of nearly 100% [@prentice2007Plague; @salam2020DeathsAssociatedPneumonic]. As a result, plague maintains its status as a disease that is of vital importance for public health research.
 
 A long-standing line of inquiry in plague research has been estimating the timing and location of past events. The most intensively researched events have been: (1) the first appearance of _Y. pestis_ in human populations [@rasmussen2015EarlyDivergentStrains], (2) the onset and progression of the three pandemics [@bos2011DraftGenomeYersinia; @cui2013HistoricalVariationsMutation; @wagner2014YersiniaPestisPlague], and (3) the inter-pandemic or "quiescent" periods where _Y. pestis_ recedes into wild rodent populations and disappears from the historical record [@zeppelini2018OngoingQuiescenceBorborema; @green2020HowMicrobeBecomes]. Our knowledge of these events has considerably deepened in recent years, owing in part to technological advancements such as the retrieval and sequencing of ancient DNA alongside new molecular clock dating methods. These advancements have thus empowered researchers to test hypotheses about plague's epidemiology further back in time with increasingly complex models. Despite this intensive interest and methodological advancement, the rate and time scale of evolution in _Y. pestis_ remains notoriously difficult to estimate.
 
-This can largely be attributed to the substantial rate variation that has been documented across the phylogeny of *[[Yersinia pestis\|Y. pestis]]* [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague]. As a result, considerable debate has emerged over whether *[[Yersinia pestis|Y. pestis]]* has no temporal signal [[Wagner et al. 2014 Yersinia Pestis Plague\|[@wagner2014YersiniaPestisPlague]]], thereby preventing any meaningful rate estimate,  or if some _Y. pestis_ populations have such distinct rates that a species-wide signal is obscured [@duchene2016GenomescaleRatesEvolutionary]. This uncertainty has resulted in radically different rate and date estimates between studies, with node dates shifting by several millennia [[Cui 2013 Historical Variations Mutation\|[@cui2013HistoricalVariationsMutation;]] [[Rasmussen 2015 Early Divergent Strains\|@rasmussen2015EarlyDivergentStrains]]].
+This can largely be attributed to the substantial rate variation that has been documented across the phylogeny of _Y. pestis_ [@cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague]. As a result, considerable debate has emerged over whether _Y. pestis_ has no temporal signal [@wagner2014YersiniaPestisPlague], thereby preventing any meaningful rate estimate,  or if some _Y. pestis_ populations have such distinct rates that a species-wide signal is obscured [@duchene2016GenomescaleRatesEvolutionary]. This uncertainty has resulted in radically different rate and date estimates between studies, with node dates shifting by several millennia [@cui2013HistoricalVariationsMutation; @rasmussen2015EarlyDivergentStrains].
 
-While there is little consensus concerning _Y. pestis_' absolute rates and dates, many studies agree that historical samples (ie. calibrations) strongly impact these estimates [@ho2009AccountingCalibrationUncertainty; @dornburg2012RelaxedClocksInferences]. Calibrating samples typically come from ancient DNA studies of archaeological populations, and help to account for sudden and extreme rate changes [@ho2009AccountingCalibrationUncertainty; @cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague]. Experimental removal of these calibrations has been shown to reduce temporal signal [@duchene2016GenomescaleRatesEvolutionary] and thus heterochronous sampling is crucial when estimating rates and dates.
-
-
-Fortunately, historical _Y. pestis_ samples have become abundant at an astonishing rate. The last decade has witnessed an explosion of ancient DNA studies, which have retrieved *[[Yersinia pestis|Y. pestis]]* from historical epidemics [[Bos et al. 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]] and underrepresented regions [[Susat 2020 Yersinia Pestis Strains\|[@susat2020YersiniaPestisStrains]]]. The study of modern *[[Yersinia pestis|Y. pestis]]* populations has accelerated in tandem [@zhou2020EnteroBaseUserGuide], with the sequencing of bacterial culture collections containing early to mid-20<sup>th</sup> century strains [@kutyrev2018PhylogenyClassificationYersinia]. 
-
-
-Unfortunately, this expansive knowledge is not without its limitations. Genomic representation of *[[Yersinia pestis|Y. pestis]]* has long been affected by sampling biases, such as the over-representation of [[East Asian\|East Asian]] samples [[Spyrou 2016 Historical Pestis Genomes|[@spyrou2016HistoricalPestisGenomes]]].
-
-Recent sequencing efforts have specifically aimed to combat this sampling bias, by deeply sampling underrepresented plague foci [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia;]] [[Vogler 2019 Single Introduction Yersinia\|@vogler2019SingleIntroductionYersinia]]].
-
-However, these new calibrations have not yet been comprehensively curated and contextualized for molecular clock analyses
-
-
-Our ability to estimate the location of past events is also hindered by the sporadic dispersal history of plague. *[[Yersinia pestis|Y. pestis]]* is remarkable for its "boom-bust" dynamics [[Strayer 2017 Boom-bust Dynamics Biological\|[@strayer2017BoombustDynamicsBiological]]], in which periods of slow, diversification are repeatedly interrupted by sudden bursts of clonal expansion [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation]]]. This extreme variation in how genetic diversity is apportioned across the phylogeny and globe again complicates analyses of _Y. pestis_ evolution. There have been many attempts to infer the migration history of plague using phylogeographic methods [@morelli2010YersiniaPestisGenome; @namouchi2018IntegrativeApproachUsing], however none have evaluated the statistical accuracy and uncertainty in such spatial analyses.
-
-
----
-
- A comprehensive understanding of plague's cryptic clock, or lack thereof, is necessary before we can begin to untangle when and where this disease appeared in the past.
-
-While there is little consensus concerning _Y. pestis_' absolute rates and dates, many studies agree that historical samples (ie. calibrations) strongly impact these estimates [@ho2009AccountingCalibrationUncertainty; @dornburg2012RelaxedClocksInferences]. Calibrating samples typically come from ancient DNA studies of archaeological populations, and help to account for sudden and extreme rate changes [@ho2009AccountingCalibrationUncertainty; @cui2013HistoricalVariationsMutation; @spyrou2019PhylogeographySecondPlague]. Experimental removal of these calibrations has been shown to reduce temporal signal [@duchene2016GenomescaleRatesEvolutionary] and thus heterochronous sampling is crucial when estimating rates and dates.
-
-is a renewed interested to mid-20<sup>th</sup> century _Y. pestis_ isolates, which provides 
-
-
-Phylogenetic analyses of these genomes have often revealed unexpected connections between past and present outbreaks of plague [[Bos et al. 2016 Eighteenth Century Yersinia|[@bos2016EighteenthCenturyYersinia]]], thus expanding our knowledge of the origins and epidemiology of *[[Yersinia pestis|Y. pestis]]*.
-
-Unfortunately, this expansive knowledge is not without its limitations. Genomic representation of *[[Yersinia pestis|Y. pestis]]* has long been affected by sampling biases, such as the over-representation of [[East Asian\|East Asian]] samples [[Spyrou 2016 Historical Pestis Genomes|[@spyrou2016HistoricalPestisGenomes]]]. An example of this bias, and subsequent critique, is that the once-established hypothesis that plague originated in China [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]] is now in contention [[Rascovan et al. 2019 Emergence Spread Basal\|[@rascovan2019EmergenceSpreadBasal]]]. Recent sequencing efforts have specifically aimed to combat this sampling bias, by deeply sampling underrepresented plague foci [[Kutyrev 2018 Phylogeny Classification Yersinia\|[@kutyrev2018PhylogenyClassificationYersinia;]] [[Vogler 2019 Single Introduction Yersinia\|@vogler2019SingleIntroductionYersinia]]]. However, this new data has not yet been contextualized within a global framework, which will be a decisive step towards updating our knowledge of plague's population structure.
-
----
-
-
-There has also been increasing momentum to sequence "modern" bacterial culture collections which contain _Y. pestis_ isolates collected during the early to mid-20<sup>th</sup> century [@kutyrev2018PhylogenyClassificationYersinia]. These sequenced
-
-A recent study estimated that there are now 1500+ _Y. pestis_ genomes [@zhou2020EnteroBaseUserGuide], although 
-
-
----
-
-Our ability to track and predict the spread of *[[Yersinia pestis|Y. pestis]]* is also hindered by the sporadic dispersal history of plague. *[[Yersinia pestis|Y. pestis]]* is remarkable for its "boom-bust" dynamics [[Strayer 2017 Boom-bust Dynamics Biological\|[@strayer2017BoombustDynamicsBiological]]], in which periods of slow, diversification are repeatedly interrupted by sudden bursts of clonal expansion [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation]]]. Just as was the case for molecular clock methods, this extreme variation in how genetic diversity is distributed across the globe is extremely challenging to model. Despite this difficulty, many studies have still attempted to infer the migration history of plague using phylogeographic methods [[Morelli et al. 2010 Yersinia Pestis Genome|[@morelli2010YersiniaPestisGenome;]][[namouchi2018IntegrativeApproachUsing\|@namouchi2018IntegrativeApproachUsing]]].  However, no study to date has statistically evaluated the accuracy and uncertainty involved in this spatial analysis.
-
-In response to these debates and obstacles, this paper proposes a theoretical and methodological shift in plague genomics. Rather than conceptualizing *[[Yersinia pestis\|Y. pestis]]* as a monolithic species, we highlight how novel insight emerges when nuanced models are constructed based on the underlying population structure. To accomplish this shift in discourse, we focus on four objectives, specifically to: (1) Curate and contextualize the most recent *[[Yersinia pestis\|Y. pestis]]* genomic metadata, (2) Review and critique our current understanding of *[[Yersinia pestis\|Y. pestis]]* population structure, (3) Conduct nuanced molecular clock analyses and phylogeographic reconstructions, and (4) Identify key areas of phylogenetic uncertainty to be expanded on in future research.
-
-Progress towards these key objectives is anticipated to benefit both prospective studies of plague, such as environmental surveillance and outbreak monitoring, and retrospective studies, which seek to date the emergence and spread of past pandemics.
+In response to these debates and obstacles, our objectives in this study were to: (1) Curate and contextualize the most recent _Y. pestis_ genomic evidence, (2) Review and critique our current understanding of plague's population structure, (3) Devise a new approach for recovering temporal signal in _Y. pestis_, (4) Critically assess the reliability of our temporal estimates, (5) Discuss the methodological and interpretive consequences of our divergence dates using informative historical examples. Progress towards these key objectives is anticipated to benefit both prospective studies of plague, such as environmental surveillance and outbreak monitoring, and retrospective studies, which seek to date the emergence and spread of past pandemics.
 
 ## Results and Discussion {.page_break_before}
 
@@ -208,8 +131,8 @@ The BETS test was inconclusive when attempting to fit a single clock to the upda
 
 In contrast to the single clock approach, we observed significant improvements when each population was assessed independently. All model parameters in our Bayesian analysis demonstrated convergence with ESS values well above 200 and we detected temporal signal in 9 out of 12 _Y. pestis_ populations (SI Table 2). Several populations appeared more clock-like than others, which was observed  in both the root-to-tip regression and the Bayesian rate estimation. For example, we found rate variation to be low in the Bronze Age (R<sup>2</sup>=0.92), moderate in the Second Pandemic (R<sup>2</sup>=0.76) and high in *Medievalis* (R<sup>2</sup>=0.02). These population-specific trends are consistent with recent analyses [@duchene2016GenomescaleRatesEvolutionary; @rascovan2019EmergenceSpreadBasal] which demonstrated that the degree of temporal signal in _Y. pestis_ varies according to which populations are included. Overall, our results indicate that using population specific models is a more robust approach than using a single species clock. 
 
-In the following sections, we critique this approach further and discuss the interpretive consequences of our estimated rates and dates. First, we examine _Y. pestis_ populations with no detectable temporal signal and the time frame over which they were sampled. These "negative" results serve a crucial purpose in informing us about the minimum sampling time frame, or <u>phylodynamic threshold</u>, for which robust temporal estimates can be obtained. Second, we identify populations that have temporal signal but are associated with unreliable dates when assessed using external calibrations. We explore how <u>sampling bias</u> drives this outcome, which has led to poor reproducibility between studies. Third, we identify which populations have the most reliable temporal estimates, for which <u>informative rates and dates</u> can be obtained. We discuss how these molecular dates have changed our understanding of .. "origin" stories, and complement historical scholarship that includes more diverse, non-European sources.
-... Finally, we discuss how these results inform <u>phylogeographic</u> analysis, in which the ancestral location and spread of _Y. pestis_ is estimated. ...
+In the following sections, we critique this approach further and discuss the interpretive consequences of our estimated rates and dates. First, we examine _Y. pestis_ populations with no detectable temporal signal and the time frame over which they were sampled. These "negative" results serve a crucial purpose in informing us about the minimum sampling time frame, or <u>phylodynamic threshold</u>, for which robust temporal estimates can be obtained. Second, we identify populations that have temporal signal but are associated with unreliable dates when assessed using external calibrations. We explore how <u>sampling bias</u> drives this outcome, which has led to poor reproducibility between studies. Third, we identify which populations have the most reliable temporal estimates, for which <u>informative rates and dates</u> can be obtained. We discuss how these molecular dates have changed our understanding of pandemic "origins" and complement historical scholarship that includes more diverse, non-European sources. Finally, we discuss how these results inform <u>phylogeographic</u> analysis, in which the ancestral location and spread of _Y. pestis_ is reconstructed....
+
 
 <div style="page-break-after: always;"></div>
 
@@ -264,7 +187,7 @@ Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) acr
 
 After excluding populations with no detectable signal and node-dating conflicts, we identified five populations with potentially informative rates and dates. These include the Bronze Age (0.PRE), *Medievalis* (2.MED), the First Pandemic (0.ANT4), the Second Pandemic (1.PRE), and the Third Pandemic (1.ORI). The Bronze Age marks the first known appearance of _Y. pestis_ in humans, and the three pandemics, along with _Medievalis_, are historically associated with high mortality and rapid spread [@xu2014WetClimateTransportation]. Due to this epidemiological significance, these five populations were sampled over the longest time frames, ranging from 92 years during the Third Pandemic (1.ORI) to 1250 years in the Bronze Age (1.PRE). This affirms the importance of long-term heterochronous sampling in _Y. pestis_, which has only been made possible through the specialized retrieval of ancient DNA [@bos2011DraftGenomeYersinia] and recent sequencing of early 20<sup>th</sup> century culture collections [@eroshenko2021EvolutionCirculationYersinia]. By curating and contextualizing this new heterochronous data, we were able to detect temporal signal in extant _Y. pestis_ populations without the use of ancient DNA calibrations for the first time. This suggests that temporal estimates may soon be possible for all _Y. pestis_ populations, as global sampling efforts intensify and diversify. 
 
-Our temporal estimates of ancient _Y. pestis_  share a common theme, in that the genetic origins of past pandemics pre-date the traditional historical narratives. For example, the earliest textual evidence of the Second Pandemic (1.PRE) comes from the Black Death (1346). However, we estimate the tMRCA of this population to be earlier, around 1300 CE (1214 - 1315 CE, 95% HPD). Similarly, the first recorded outbreaks of plague during the First Pandemic (0.ANT4) come from the Plague of Justinian (541 CE) [@little2007PlagueEndAntiquity]. Instead, we estimate that the strains of _Y. pestis_ associated with the First Pandemic shared a common ancestor around 399 CE (272 - 465 CE, 95% HPD).  We argue, as others have before, that these disparate timelines are largely due to geographic sampling biases, as western European sources dominate both the genetic and historical record. Recent historical scholarship has contested these Eurocentric timelines [@hashemishahraki2016PlagueIranIts; @varlik2020PlagueThatNever] by demonstrating that plague appeared much earlier and persisted for far longer, in western Asia. Genetic dating thus plays a critical role in supporting these historical critiques, by expanding the timelines of past pandemics and making space for more diverse historical narratives to be included.
+Our temporal estimates of ancient _Y. pestis_  share a common theme, in that the genetic origins of past pandemics pre-date the traditional historical narratives. For example, the earliest textual evidence of the Second Pandemic (1.PRE) comes from the Black Death (1346). However, we estimate the tMRCA of this population to be earlier, around 1300 CE (95% HPD: 1214 - 1315 CE). Similarly, the first recorded outbreaks of plague during the First Pandemic (0.ANT4) come from the Plague of Justinian (541 CE) [@little2007PlagueEndAntiquity]. Instead, we estimate that the strains of _Y. pestis_ associated with the First Pandemic shared a common ancestor around 399 CE (95% HPD: 272 - 465 CE).  We argue, as others have before, that these disparate timelines are largely due to geographic sampling biases, as western European sources dominate both the genetic and historical record. Recent historical scholarship has contested these Eurocentric timelines [@hashemishahraki2016PlagueIranIts; @varlik2020PlagueThatNever] by demonstrating that plague appeared much earlier and persisted for far longer, in western Asia. Genetic dating thus plays a critical role in supporting these historical critiques, by expanding the timelines of past pandemics and making space for more diverse historical narratives to be included.
 
 We estimate that the Third Pandemic (1.ORI) population emerged around 1885 (95% HPD: 1806 - 1901 CE) (Figure @fig:divtree_pandemics C). This interval aligns with the broad timeline of the Third Pandemic as reconstructed from epidemiological reports [@benedict1988BubonicPlagueNineteenthCentury; @xu2014WetClimateTransportation; @xu2019HistoricalGenomicData].  Highly localized plague cases began appearing in southern China (1772-1800), followed by short-distance diffusion (1800-1880), which then reached the southern coast (1880-1900) and spread internationally out of Hong Kong (1894). Our estimate also overlaps with the majority of previous studies, although is the youngest tMRCA thus far (Table @tbl:comparison_dates). This comparison not only demonstrates the reproducibility of our estimate, but also reveals how the "origin" story of the Third Pandemic is changing. The genetic root was once estimated to be as old as 326 BCE [@morelli2010YersiniaPestisGenome] but is now resolved to be much younger (19<sup>th</sup> century CE). This younger date is particularly intriguing, as the world experienced a major epidemiological transition in the 19<sup>th</sup> century with the emergence of the first pandemics of cholera [@ryan2011CholeraPandemicStill] and influenza [@brussow2021WhatWeCan]. Thus reconstructing the evolutionary history of the Third Plague Pandemic may not only inform us about the epidemiology of plague, but contribute to a broader understanding of re-emerging diseases in the modern era. 
 
@@ -274,69 +197,21 @@ Even less is known about the *Medievalis* population due its more ancient origin
 
 ### Phylogeography
 
-> What did we do?
+> Kat is still struggling with this...
 
-To reconstruct the spread of _Y. pestis_, we used the sampling location (ie. country) of each genome for a discrete trait analysis [@cite]. We specifically focused on the 5 
+## Conclusion
 
+We sought to contribute to four lines of discourse and debate concerning the evolutionary history of _Yersinia pestis_. The first, is whether _Y. pestis_ has sufficient temporal signal to accurately estimate rates and dates. We found that a species-wide clock model was methodologically unstable and did not lead to reproducible estimates. However, we observed significant improvements when each population was assessed independently. We therefore recommend this approach for future studies, as the full global diversity of _Y. pestis_ can be utilized without down-sampling.
 
-we expanded our molecular clock model to include a discrete trait reconstruction. We used the country of origin
+The second question we explored is the phylodynamic threshold, or the minimum sampling time frame for _Y. pestis_ that yields informative rates and dates. The lowest substitution rate was observed in _Antiqua_ (0.ANT) with a median rate of 1 substitution every 14.1 years. In application, this means that some _Y. pestis_ lineages cannot be differentiated until several decades have passed. In addition, we found no temporal signal in several populations (1.IN, 2.ANT, 3.ANT) which were sampled over a period as long as 84 years. We therefore interpret this as a cautionary note for plague research, as genetic evidence may not be suitable for reconstructing the timing of short-term, epidemic events.
 
-Country of sample origin was chosen as the discrete trait of interest
+The third issue we tackled was sampling bias and how this has led to node dating disparities between studies. In particular, we focused on the non-overlapping tMRCA estimates of the first appearance of _Y. pestis_ in Africa (1.ANT). Until sampling strategies diversify, we caution that the published divergence dates for this population, and several others (0.ANT, 0.PE) are of limited value for historical interpretation.
 
-modeled the spread of _Y. pestis_ as a discrete trait (country) 
+The fourth debate we engaged with was the timing of past pandemics. A common theme we observed was that the genetic dates (tMRCA) of pandemic _Y. pestis_ tended to pre-date the historical dates by decades or centuries. For example, we estimated that the tMRCA of the Second Pandemic was around 1300 CE (95% HPD: 1214 - 1315 CE) which pre-dates the Black Death (1346 - 1353 CE). Similarly, we estimated the tMRCA of the First Pandemic to be around 399 CE (95% HPD: 272 - 465 CE), which pre-dates the Plague of Justinian (531 CE). Genetic dating thus plays a critical role in expanding the timelines of past pandemics and making space for more diverse historical narratives to be included.
 
-explore underlying phylogeography, we conducted a discrete trait analysis in BEAST [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. 
+> This paragraph is from the previous draft:
 
-Model the spread of plague as a discrete state process (country). As this is a common approach among viral work [@cite] and plague phylogenetics [@cite] (morelli, susat).
-
-> What did we find?
-
-| Population | Internal Nodes | High Confidence Location | 
-| ---------- | -------------- | ------------------------ |
-
-A discrete state model (country) is associated with high levels of uncertainty.
-
-- Other studies do phylogeography as a discrete state (country). Also very common in viral phylogeography.
-
-
-Phylogeographic analysis is very complicated in _Y. pestis_. For a couple of reasons. One, is that as a zoonoses, plague can spread throughout a variety of processes. The spread of plague is a mix of slow, continuous diffusion across the landscape (rodent reservoirs) and long-distance spread (human epidemics). 
-
-- Other studies do phylogeography as a discrete state (country). Also very common in viral phylogeography.
-
-A discrete state analysis using the modern definitions of countries. The spread of plague is a mix of slow, continuous diffusion across the landscape (rodent reservoirs) and long-distance spread (human epidemics). Modeling the spread of plague as a transition from one country to another is bad.
-
-More appropriate definitions of barriers to gene flow. Example, inter-continental comparisons during the Third Pandemic.
-
-For two reasons. The dispersal history of plague comes from both long-distance spread (human epidemics), and continuous 
-
-2. The modern definitions of countries are of limited use in _Y. pestis_. Particularly 
-
-- Varying degrees of geographic structure. Migration events between countries are poorly resolved.
-- 1. The migration rate is faster than the substitution rate. Example, the Second Pandemic (1 substitution every 9.5 years). But in this same time frame, _Y. pestis_ dispersed all throughout Eurasia. Again, we advise that short-term comparisons are fragile.
-- 2. The modern definitions of countries are of limited use
-
-- 2. Fluctuating patterns of persistence and reintroduction. With few barriers to gene flow.
-
-Also, short-distance comparisons are fragile.
-
-There are a couple of options.
-1. Modern
-1. Change defintion of location. A discrete state analysis using the modern boundaries of countries is of limited use in reconstrucing the evolutionary history of 
-1. Geographic structure can be recovered by broadening the scope (Countries --> Region --> Continent).
-2. 
-3. Broaden our geographic scope to regions. Ecological zones (ex. north and south caucasus)
-4. Migration events between countries are poorly resolved, but there is often strong geographic structure at the continent level. Ex. Third Pandemic.
-5. Interdisciplinary: Incorporate case occurrence data
-
-![Phylogeography of the Second Plague Pandemic (1.PRE). Grey bars around internal nodes define dating uncertainty, and represent the 95% highest posterior density (HPD) interval. Asterisks indicate clade separations with posterior support greater than 0.95. Blue diamonds indicate nodes where the ancestral location was inferred to be in a single country with a probability greater than 0.95 .](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/27404bd/main/auspice/all/chromosome/full/filter5/beast/geo/1.PRE_timetree.png){#fig:1.PRE_timetree width=100%}
-
-## Conclusion {.page_break_before}
-
-In this study, we sought to contribute to two lines of discourse and debate. The first, is the question of whether _Y. pestis_ has sufficient temporal signal to accurately estimate rates and dates. On one hand, we found that a species-wide clock model was methodologically unstable and did not lead to robust and reproducible estimates. On the other hand, when we partitioned the data by population, we recovered measurable temporal signal in 9 out of 12 populations. 
-
-However, this recovery came with a significant trade-off, as many of these populations were then lacking the calibrating influence of ancient DNA samples. As a result, the accuracy of node-dating suffered and internal node dates were frequently estimated to be overly young. It was only in the pre-modern populations (Bronze Age, First Pandemic, Second Pandemic), with a minimum sampling time frame of 500 years, that rates and dates could be robustly estimated. It was somewhat surprising that no other population had a long enough sampling time frame to produce comparably robust results. For example, no temporal signal was detected in either of `1.IN` or `2.ANT`, despite these populations being sampled over a period of 54 and 110 years respectively. This may speak to the phylodynamic threshold of _Y. pestis_, as some populations may not be considered measurably-evolving until several centuries have passed. Overall, we find out results to be in agreement with previous studies [@duchene2016GenomescaleRatesEvolutionary] that suggest _Y. pestis_ does have temporal signal, but clock model estimates are highly dependent on dataset composition.
-
-The second debate we engaged with was the phylogeographic modeling of past pandemics, specifically the Second Plague Pandemic. Our spatiotemporal model revealed that no migrations could be confidently reconstructed during this event, as location could be inferred at very few internal nodes. We therefore caution that, in isolation, _Y. pestis_ genomic evidence may be unsuitable for inferring point migrations and the directionality of spread. Instead, a more statistically appropriate line of inquiry may be to summarize how the geographic diversity changes over time. Alternatively, new methods have recently been developed to incorporate non-genetic evidence, such as outbreak case-occurrence records [@duchene2019InferringInfectiousDisease], into phylogeography analysis. This presents an exciting avenue for interdisciplinary collaboration, as explicitly integrative models will complement the strengths of genetic and historical evidence, while mitigating their respective weaknesses.
+The final debate we engaged with was the phylogeographic modeling of past pandemics, specifically the Second Plague Pandemic. Our spatiotemporal model revealed that no migrations could be confidently reconstructed during this event, as location could be inferred at very few internal nodes. We therefore caution that, in isolation, _Y. pestis_ genomic evidence may be unsuitable for inferring point migrations and the directionality of spread. Instead, a more statistically appropriate line of inquiry may be to summarize how the geographic diversity changes over time. Alternatively, new methods have recently been developed to incorporate non-genetic evidence, such as outbreak case-occurrence records [@duchene2019InferringInfectiousDisease], into phylogeography analysis. This presents an exciting avenue for interdisciplinary collaboration, as explicitly integrative models will complement the strengths of genetic and historical evidence, while mitigating their respective weaknesses.
 
 
 ## Methods {.page_break_before}
