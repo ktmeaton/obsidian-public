@@ -2,8 +2,8 @@
 project:
 due: 2021-10-13
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Going Away Party Draft
 type: [[Task]]
 ---

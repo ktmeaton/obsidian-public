@@ -2,8 +2,8 @@
 project:
 due: 2021-10-16
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Lab Responsibilities
 type: [[Task]]
 ---

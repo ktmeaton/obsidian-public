@@ -4,8 +4,8 @@ title:
 people: null
 tags: 🧨 
 status: priority
-type: [ [ Meeting ] ]
-due: 2021-08-17
+type: [[Meeting]]
+due: 2021-11-02
 time: 11:00
 ---
 

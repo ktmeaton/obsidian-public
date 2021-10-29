@@ -197,7 +197,49 @@ Even less is known about the *Medievalis* population due its more ancient origin
 
 ### Phylogeography
 
-> Kat is still struggling with this...
+A central question of infectious disease epidemiology is where to epidemics come from? 
+And where do human outbreaks occur?
+In the case of a zoonoses like plague, this relates to the "spillover" events, in which plague switches hosts (from a non-human species). The originating population (rodents) are often invisible in the historical record. So genetics is particularly powerful here, as we can estimate these host-switching events in the past.
+
+The pre-requisite for this, is geographic structure. In which closely-related strains are from geographic...
+
+phylogenetic relateness is correlated with geographic related
+
+
+- The geographic origin of the Third Pandemic is Yunnan, China (99%).
+
+X case studies.
+
+#### Reservoir 'Spillover'
+
+We estimate that the geographic origin of the Third Pandemic is Yunnan, China (99%). This high confidence estimate is possible because of X reasons. First, the _Intermedium_ population has exceptional geographic structure among the **non-human** strains.
+
+
+
+#### Single Introduction: North America
+
+- We estimate that _Y. pestis_ in North America diverged from this ancestral population around 1903 (95% HPD: 1877-1922). 
+- The MRCA of North American _Y. pestis_ was estimated to be California, USA (99% confidence)
+- This aligns closely with the historical evidence, as plague was introduced to the US in San Francisco, California 1900 [@kugeler2015EpidemiologyHumanPlague].
+
+##### Multiple Introductions: South America
+
+- We observed two independent introductions of _Y. pestis_ to South America. The first, we estimate to have diverged around 1904 (95% HPD: 1882-1921), from an ancestral population in China ()
+
+South America:
+	- Two independent introductions
+	- 1) Diverged from an ancestor in Yunnan, China (99%) around 1904 (1882-1921)
+		- 
+	- 1) Pacific (China -> North America -> South America)
+	- Recent (1955 - 1996)
+
+- Geographic origin of the Third Pandemic is Yunnan, China (99%).
+- Burst radiation with migration events introducing plague to:
+	- North America, 1.ORI1. Origin is USA (99%), California (99%), subsequent spread to Canada (100%) and Peru (99%) and then India (100%).
+	- Continuation in Yunnan Province, 1.ORI2. Subsequent spread to Vietnam (100%) and Myanmar (Burma) (100%)
+	- Indonesia, Central Java (100%), 1.ORI
+	- Madagascar (1.ORI), 85%
+- Geographic origin of 
 
 ## Conclusion
 

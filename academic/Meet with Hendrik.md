@@ -5,14 +5,56 @@ title:
 people: 
 - [[Hendrik Poinar]]
 
-tags: ✨
-status: done
+tags: 🧨
+status: priority
 type: [[Meeting]]
-due: 2021-09-21
-time: 10:30
+due: 2021-10-28
+time: 15:00
 ---
 
 # Meet with Hendrik
+
+## [[2021-10-28]]
+
+### Notes
+
+- When you exclude human strains, excellent geographic structure! For all populations?
+- Important message, resolution of genetics and specificity.	
+- Important conflict, despite the specificity, hugely problematic given rate of evolution.
+- History has a level of precision, that genetics cannot approach.
+- 1.ORI as the test case
+- Contrasting the 1.ORI, 1.IN, and 1.PRE Second Pandemic
+- What does this mean? All human
+- Rodent / human thing
+- Switching between hosts, mixed
+- How to weave in the ecology? Rates, explained by host switching
+- geographical nodal reconstruction
+- what meaningfful reconstructions can we identify
+- pushed back in time
+
+1. Why are we inteterested in phylogeogeraphy? Origin stories, where do human epidemics come from?
+2. To what degree can we say that?
+3. Compare 1.OR1 and 1.IN
+
+
+- Compare and contrast third pandemic (enzootic) vs. (epidemic)
+
+1. **Mechanisms of Spread**
+	- Non-human (enzootic).	
+		- Geographically restricted areas.
+		- Ex: Pestoides (0.PE2) - South and North Caucasus
+		- Ex. Pestoides (0.PE4) - Russia, Kyrgyzstan, Tajikistan, China, Mongolia
+		- Ex. Antiqua (0.ANT) - China, Kyrgyzstan
+		- Ex. Intermedius (1.IN) - Chinese provinces
+		- Ex. Orientalis (1.ORI) - 	
+	- Human (epidemic):
+		- Inter-continental spread
+		
+2. **Phylogeographic threshold. **
+	- Migration rate (countries/year) is faster than rate of evolutionary change (substitutions / year).
+	- Evidence: Rapidly spreading lineages (Black Death), clonal across many countries.
+
+	- 
 
 ## [[2021-10-14]]
 

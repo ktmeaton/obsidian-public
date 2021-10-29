@@ -1,9 +1,9 @@
 ---
 project:
-due: 2021-10-16
+due: 2021-10-25
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Poinar Lab Sequencing Database
 type: [[Task]]
 ---
