@@ -197,49 +197,34 @@ Even less is known about the *Medievalis* population due its more ancient origin
 
 ### Phylogeography
 
-A central question of infectious disease epidemiology is where to epidemics come from? 
-And where do human outbreaks occur?
-In the case of a zoonoses like plague, this relates to the "spillover" events, in which plague switches hosts (from a non-human species). The originating population (rodents) are often invisible in the historical record. So genetics is particularly powerful here, as we can estimate these host-switching events in the past.
 
-The pre-requisite for this, is geographic structure. In which closely-related strains are from geographic...
+<div style="page-break-after: always;"></div>
 
-phylogenetic relateness is correlated with geographic related
+#### Case Study 1: _Y. pestis_ in North America during the Third Pandemic.
+
+- We estimate that _Y. pestis_ in North America diverged from an ancestral population in Yunnan, China (99% confidence) around 1903 (95% HPD: 1877-1922). 
+- The most likely point of introduction was in California, USA (99% confidence).
+- This genetic narratives aligns closely with the historical evidence, as the first plague cases in North America were in San Francisco, California (1900) and Los Angeles, California (1908) [@kugeler2015EpidemiologyHumanPlague].
+- Plague then spread progressively west across the south-western United States.
+- How did plague spread to Canada? Did it "jump" by a long-distance transmission? Or did it also spread progressively northwards, and we have not sampled the intermediate locations.
+- We identified two states with strong geographic structure: California and New Mexico. These are known plague foci that remain active in the present day. 
+- The genetic evidence failed to detect the two other main foci in North America, which are in Arizona and Colorado.  This is because they are (1) sparsely sampled and, (2) the topology is poorly resolved for these regions.
+
+#### Case Study 2:  _Y. pestis_ in Europe after the Black Death.
+
+- In contrast, phylogeography reconstructions of ancient _Y. pestis_ have greater uncertainty.
+- The ancestral location of _Y. pestis_ prior to the "Big Bang" polytomy was Xinjiang, China (100%)
+- But after this event, there are few internal nodes in which we can estimate ancestral location.
+- The only geographic structure apparent during the Second Pandemic comes from contemporaneous isolates, suspected to derive from the same epidemic (ex. France 1720).
+- There is very little we can say about spread, directionality, or the location of reservoirs.
+	1. **Sparse sampling**. In Figure @fig:divtree_north_america_europe, there are 30 samples from the Second Pandemic in Europe, representing 8 countries, collected over 500 years.
+	2. **Host bias**. Only human samples have been collected.
+	3. **Uncertain Sampling Ages**. The sampling age of aDNA samples are often unknown. Radiocarbon or mortuary estimates tend to be ~100 years. This means really wide confidence intervals at internal nodes (50-100 years).
 
 
-- The geographic origin of the Third Pandemic is Yunnan, China (99%).
+![A comparison of phylogeographic reconstructions performed on _Y. pestis_ samples collected during a modern pandemic (left) versus an ancient pandemic (right).](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5d2c8cd/main/auspice/all/chromosome/full/filter5/beast/geo/divtree_north_america_europe.png){#fig:divtree_north_america_europe width=90%}
 
-X case studies.
-
-#### Reservoir 'Spillover'
-
-We estimate that the geographic origin of the Third Pandemic is Yunnan, China (99%). This high confidence estimate is possible because of X reasons. First, the _Intermedium_ population has exceptional geographic structure among the **non-human** strains.
-
-
-
-#### Single Introduction: North America
-
-- We estimate that _Y. pestis_ in North America diverged from this ancestral population around 1903 (95% HPD: 1877-1922). 
-- The MRCA of North American _Y. pestis_ was estimated to be California, USA (99% confidence)
-- This aligns closely with the historical evidence, as plague was introduced to the US in San Francisco, California 1900 [@kugeler2015EpidemiologyHumanPlague].
-
-##### Multiple Introductions: South America
-
-- We observed two independent introductions of _Y. pestis_ to South America. The first, we estimate to have diverged around 1904 (95% HPD: 1882-1921), from an ancestral population in China ()
-
-South America:
-	- Two independent introductions
-	- 1) Diverged from an ancestor in Yunnan, China (99%) around 1904 (1882-1921)
-		- 
-	- 1) Pacific (China -> North America -> South America)
-	- Recent (1955 - 1996)
-
-- Geographic origin of the Third Pandemic is Yunnan, China (99%).
-- Burst radiation with migration events introducing plague to:
-	- North America, 1.ORI1. Origin is USA (99%), California (99%), subsequent spread to Canada (100%) and Peru (99%) and then India (100%).
-	- Continuation in Yunnan Province, 1.ORI2. Subsequent spread to Vietnam (100%) and Myanmar (Burma) (100%)
-	- Indonesia, Central Java (100%), 1.ORI
-	- Madagascar (1.ORI), 85%
-- Geographic origin of 
+<div style="page-break-after: always;"></div>
 
 ## Conclusion
 
