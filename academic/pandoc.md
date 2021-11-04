@@ -203,7 +203,7 @@ pandoc -s Chromosome\ Resequencing.md -o Chromosome\ Resequencing.html
 	  -o pandoc-example_convert_mvp.html
 	```
 
-- [[GitHub]] css from [@dashed](https://gist.github.com/dashed) (looks super good!)
+- [[Git]] css from [@dashed](https://gist.github.com/dashed) (looks super good!)
 	```bash
 	pandoc \
 	  -s pandoc-example-convert.md \

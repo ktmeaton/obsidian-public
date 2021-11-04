@@ -29,7 +29,7 @@ modified: 2021-03-26T21:39:11-04:00
 	
 ## Conclusions
 
-- [[bokeh]] style graphs are difficult to embed in [[Markdown]] because they are [[Javascript]]. This is also why this won't display on [[GitHub]], which scrubs all the [[Javascript]] out.
+- [[bokeh]] style graphs are difficult to embed in [[Markdown]] because they are [[Javascript]]. This is also why this won't display on [[Git]], which scrubs all the [[Javascript]] out.
 
 <iframe id="igraph" scrolling="no" seamless="seamless" src="https://ktmeaton.github.io/edi-tagging/edi-tagging-graph.html" width=600px height=400px ></iframe>
 </div>

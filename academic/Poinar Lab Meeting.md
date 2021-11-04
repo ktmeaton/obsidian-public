@@ -11,6 +11,27 @@ time: 11:00
 
 # Poinar Lab Meeting
 
+## [[2021-11-03]]
+
+![[2021-11-03_poinar_lab_meeting.png]]
+
+### Notes
+
+#### [[Adiyasuren Molor]]
+
+- Project: [[Mongolian Plague]]
+- History of the Mongol period, empires, and "baby empires"
+- Distribution of archaeological sites and samples.
+
+#### [[Ravneet Sidhu]]
+
+- Project: [[pla Depletion]]
+- lower pla coverage
+- Calculating ratios
+- SNP profiles to do phasing of the two plasmids
+
+#### [[Katherine Eaton]]
+
 ## [[2021-10-19]]
 
 ![[2021-10-19_poinar_lab_meeting.png]]
@@ -49,7 +70,7 @@ time: 11:00
 - Some more work on probe design in the CARD database enrichment. 
 - **Image**: Read mapping around the _a_ genes.
 
-### [[NextSeq Sequencing]]
+#### [[NextSeq Sequencing]]
 
 - Benefits: 
 	- [[HiSeq]] = deprecated

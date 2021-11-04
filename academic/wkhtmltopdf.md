@@ -46,7 +46,7 @@ pandoc -s wkhtmltopdf.md -o wkhtmltopdf_killercup.html -t html5 --css pandoc/tem
 pandoc -s wkhtmltopdf.md -o wkhtmltopdf_killercup.pdf -t html5 --css pandoc/templates/killercup/killercup.css
 ```
 
-6. Use [[GitHub]] [[CSS]]
+6. Use [[Git]] [[CSS]]
 
 ```bash
 pandoc -s wkhtmltopdf.md -o wkhtmltopdf_github.html -t html5 --css pandoc/templates/github/github.css
