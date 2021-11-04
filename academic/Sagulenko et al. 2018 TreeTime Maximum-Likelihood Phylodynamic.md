@@ -1,6 +1,7 @@
 ---
 aliases:
   - Sagulenko et al. 2018
+  - "@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic"
 tags: 
   - 📥/📰 
   - 📝/🌱 

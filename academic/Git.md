@@ -13,6 +13,12 @@ git remote add upstream <original:repo>
 git fetch upstream
 ```
 
+## Submodules
+
+```bash
+git submodule update --init --recursive
+```
+
 ## Auto Update
 
 
