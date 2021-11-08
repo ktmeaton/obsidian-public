@@ -46,3 +46,22 @@ done
 ```
 
 - git diff-index might not be the way to go for untracked changes.
+
+
+## Search Git history for content or string.
+
+```bash
+file='Plague Phylodynamics and Phylogeography Paper.md'
+ls -l $file;
+latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
+git log -S "xml" --follow -p $file;
+
+git checkout 13512b8 -- $file;
+```
+
+```bash
+file='Eaton et al. 2021 Plagued by a cryptic clock.md';
+string='Subtrees of the maximum-likelihood phylogeny'
+latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
+git log -S "$string" --follow -p $file;
+```
