@@ -152,54 +152,125 @@ Our results show that for robust temporal estimates to be obtained, _Y. pestis_ 
 The phylodynamic threshold has been rigorously explored in other pathogens [@duchene2020TemporalSignalPhylodynamic], but not explicitly in _Y. pestis_. Researchers have anecdotally mentioned the challenges in reconstructing intra-epidemic plague diversity. For example, several isolates from the Second Pandemic dated to the medieval [[Black Death]] (1346-1353) are indistinguishable clones [@spyrou2016HistoricalPestisGenomes], extinguishing any hope of reconstructing its spread from genetic evidence alone. Our median rate estimation for the Second Pandemic (1.PRE) of 1 substitution every 9.5 years (2.5  x 10<sup>-8</sup> subs/site/year) is congruent with this finding. The clonal nature of the Black Death is not an exceptional event, but rather the norm based on the sampling time frame. Our results highlight a significance limitation and cautionary note for plague research, as genetic evidence is not suitable for reconstructing the timing of short-term, episodic epidemics.
 
 
-#### (ii) Irreproducible Estimates
+#### (ii) Irreproducible Estimates {.page_break_before}
 
-We observed two populations with detectable temporal signal associated with significant node-dating conflicts. These populations include the *Pestoides* (0.PE) and *Antiqua* (0.ANT) biovars which are both paraphyletic. Conflicts were identified by comparing their estimated time to the most recent common ancestor (tMRCA) to that of their descendant populations. For example, the First Pandemic (0.ANT4) is a descendant clade of the larger *Antiqua* (0.ANT) population based on the maximum-likelihood phylogeny (Figure @fig:divtree_pandemics B). We would expect the tMRCA of the ancestral 0.ANT to pre-date the First Pandemic, for which ancient DNA calibrations are available. However, the tMRCA of 0.ANT is far too young (1357 - 1797 CE), and incorrectly post-dates the tMRCA of 0.ANT4 (39 - 234 CE) by more than a millennium. This outcome is somewhat paradoxical, as these populations have robust temporal signal and yet a critical examination of their divergence dates reveals they are unreliable. 
+We observed two populations with detectable temporal signal associated with significant node-dating conflicts. These populations include the *Pestoides* (0.PE) and *Antiqua* (0.ANT) biovars which are both paraphyletic. Conflicts were identified by comparing their estimated time to the most recent common ancestor (tMRCA) to that of their descendant populations. For example, the First Pandemic (0.ANT4) is a descendant clade of the larger *Antiqua* (0.ANT) population based on the maximum-likelihood phylogeny (Figure @fig:divtree_first_pandemics). We would expect the tMRCA of the ancestral 0.ANT to pre-date the First Pandemic, for which ancient DNA calibrations are available. However, the tMRCA of 0.ANT is far too young (1357 - 1797 CE), and incorrectly post-dates the tMRCA of 0.ANT4 (39 - 234 CE) by more than a millennium. This outcome is somewhat paradoxical, as these populations have robust temporal signal and yet a critical examination of their divergence dates reveals they are unreliable. 
 
-This conflicting pattern has been previously described and attributed to sampling bias [@duchene2019InferringInfectiousDisease; @kalkauskas2021SamplingBiasModel]. Specifically, the driving factor in _Y. pestis_ appears to be insufficient sampling of basal branches and the presence of extensive rate variation. Here, the two affected populations *Antiqua* (0.ANT) and *Pestoides* (0.PE), have a low density of nodes at their roots in the maximum-likelihood phylogeny (SI Figure @fig:branch_lengths). This pattern is also observed in another *Antiqua* population (1.ANT) which has a small sample size (N=4) and has previously been linked to rate acceleration events [@cui2013HistoricalVariationsMutation]. The dates associated with these three populations (0.PE, 0.ANT, 1.ANT) should be considered non-informative.
+This conflicting pattern has been previously described and attributed to sampling bias [@duchene2019InferringInfectiousDisease; @kalkauskas2021SamplingBiasModel]. Specifically, the driving factor in _Y. pestis_ appears to be insufficient sampling of basal branches and the presence of extensive rate variation. The two affected populations, *Antiqua* (0.ANT) and *Pestoides* (0.PE), have a low density of nodes at their roots in the maximum-likelihood phylogeny (SI Figure @fig:branch_lengths). This pattern is also observed in another _Antiqua_ population (1.ANT) which has a small sample size (N=4) and has previously been linked to rate acceleration events [@cui2013HistoricalVariationsMutation]. The dates associated with these three populations (0.PE, 0.ANT, 1.ANT) should be considered non-informative.
 
-These node-dating issues reveal a significant limitation in our approach of estimating population-specific clock models. Defining _Y. pestis_ population by time period can have deleterious effects, as ancient plague genomes serve as crucial calibration points for rate changes that are otherwise unsampled in modern populations. In populations with poorly sampled basal branches (0.PE, 0.ANT, 1.ANT) we expect an optimization approach to be more ideal, in which a few closely related populations are merged or select ancient DNA calibrations are introduced [@spyrou2018Analysis3800yearoldYersinia]. Otherwise, divergence dates in these populations tend to be overly young, sometimes by more than a 1000 years [@pisarenko2021YersiniaPestisStrains], and are rarely reproducible between studies (Table @tbl:comparison_dates).
+These node-dating issues reveal a significant limitation in our approach of estimating population-specific clock models. Defining _Y. pestis_ population by time period can have deleterious effects, as ancient plague genomes serve as crucial calibration points for rate changes that are otherwise unsampled in extant populations. In populations with poorly sampled basal branches (0.PE, 0.ANT, 1.ANT) we expect an optimization approach to be more ideal, in which a few closely related populations are merged or select ancient DNA calibrations are introduced [@spyrou2018Analysis3800yearoldYersinia]. Otherwise, divergence dates in these populations tend to be overly young, sometimes by more than a 1000 years [@pisarenko2021YersiniaPestisStrains], and are rarely reproducible between studies (Table @tbl:comparison_dates).
 
 Our inability to infer divergence dates due to sampling bias also has several historical implications. Perhaps the most significant concerns the emergence of plague in Africa, which makes up 90% of all modern plague cases [@munyenyiwa2019PlagueZimbabwe1974] yet for which there remains not a single ancient sequence. Alarmingly, little progress has been made in sampling extant Africa plague diversity as this region is represented by only 1.5% (9/601) of all genomes. Furthermore, the oldest genetic evidence of African plague comes from the 1.ANT population, which in itself has only 4 representative strains. Despite this sparse sampling, researchers have repeatedly attempted to use genomic evidence to date the first appearance of _Y. pestis_ in Africa [@morelli2010YersiniaPestisGenome; @cui2013HistoricalVariationsMutation; @pisarenko2021YersiniaPestisStrains]. The result is a complete lack of congruent dates for this event, as the majority of tMRCA estimates for 1.ANT do not overlap (Table @tbl:comparison_dates). These divergence dates are of limited value for historical interpretation [@green2018PuttingAfricaBlack; @nyirenda2018MolecularEpidemiologicalInvestigations; @pisarenko2021YersiniaPestisStrains] and should be treated with great skepticism.
 
 <div style="page-break-after: always;"></div>
 
-| Population | Morelli et al. (2010) | Cui et al. (2013) | Pisarenko et al. (2021) |  This Study  |
-|:----------:|:---------------------:|:-----------------:|:-----------------------:|:------------:|
-|   1.ORI    |      -326, 1793       |    1735, 1863     |       1744, 1842        |  1806, 1901  |
-|   1.IN*    |      -2388, 1606      |    1500, 1750‡    |       1791, 1897        |  1651, 1913  |
-|   1.ANT†   |      -4909, 1322      |    1377, 1650     |       1483, 1704        |  1655, 1835  |
-|   1.PRE    |          --           |    1312, 1353     |           --            |  1214, 1315  |
-|   2.MED    |      -583, 1770       |    1550, 1800‡    |       1413, 1653        |  1560, 1845  |
-|   2.ANT*   |      -3994, 1460      |    1550, 1800‡    |       1373, 1628        |  1509, 1852  |
-|   4.ANT*   |          --           |    1200, 1700‡    |       1611, 1816        |  1848, 1968  |
-|   3.ANT*   |          --           |    1450, 1850‡    |       1531, 1742        |  1769, 1947  |
-|   0.ANT4   |          --           |        --         |           --            |   39, 234    |
-|   0.ANT†   |      -6857, 1199      |     100, 1100     |       1033, 1435        |  1357, 1797  |
-|   0.PE†    |     -26641, -598      |    -4394, 510     |        -377, 499        |  1573, 1876  |
-|   0.PRE    |          --           |        --         |           --            | -3098, -2786 |
+![tMRCA conflicts between _Antiqua_ (0.ANT) and the First Pandemic (0.ANT4) according to ancestor-descendant relationships in the maximum-likelihood phylogeny. Node dates (95% HPD) were estimated from the Bayesian analysis, where each population was assessed independently. Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e605cc9/main/iqtree_stats/all/chromosome/full/filter5/divtree_first_pandemic.png){#fig:divtree_first_pandemic width=80%}
 
-Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies. Uncertainty surrounding the tMRCA is represented by the 95% highest posterior density (HPD) interval. A dash indicates the study did not incorporate genomes from the population. Morelli et al. (2010) fit a strict clock to 16 modern genomes. Cui et al. (2013) fit an uncorrelated lognormal (UCLN) relaxed clock to 1 ancient and 132 modern genomes. Pisarenko et al. (2021) fit a strict clock to 345 modern genomes. This study fit independent UCLN relaxed clocks to 540 modern and 61 ancient genomes, separated by population. {#tbl:comparison_dates}
+|      Category      | Population | Morelli et al. <br>2010 | Cui et al. <br>2013 | Pisarenko et al. <br>2021 |  This Study  |
+|:------------------:|:----------:|:-----------------------:|:-------------------:|:-------------------------:|:------------:|
+| No Temporal Signal |    1.IN    |       -2388, 1606       |    1500, 1750\*     |        1791, 1897         |  1651, 1913  |
+|                    |   2.ANT    |       -3994, 1460       |    1550, 1800\*     |        1373, 1628         |  1509, 1852  |
+|                    |   3.ANT    |           --            |    1450, 1850\*     |        1531, 1742         |  1769, 1947  |
+|                    |   4.ANT    |           --            |    1200, 1700\*     |        1611, 1816         |  1848, 196   |
+|   Sampling Bias    |   0.ANT    |       -6857, 1199       |     100, 1100\*     |        1033, 1435         |  1357, 1797  |
+|                    |   1.ANT    |       -4909, 1322       |     1377, 1650      |        1483, 1704         |  1655, 1835  |
+|                    |    0.PE    |      -26641, -598       |     -4394, 510      |         -377, 499         |  1573, 1876  |
+| Informative Dates  |   1.ORI    |       -326, 1793        |     1735, 1863      |        1744, 1842         |  1806, 1901  |
+|                    |   2.MED    |       -583, 1770        |    1550, 1800\*     |        1413, 1653         |  1560, 1845  |
+|                    |   1.PRE    |           --            |     1312, 1353      |            --             |  1214, 1315  |
+|                    |   0.ANT4   |           --            |         --          |            --             |   39, 234    |
+|                    |   0.PRE    |           --            |         --          |            --             | -3098, -2786 | 
 
-\* No detectable temporal signal.<br>
-† Dates considered non-informative in this study due to phylogenetic sampling bias.<br>
-‡ Visually estimated from the published time-scaled phylogeny.
+Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies. Uncertainty surrounding the tMRCA is represented by the 95% highest posterior density (HPD) interval. A dash indicates the study did not incorporate genomes from the population. {#tbl:comparison_dates}
 
-### (iii) Informative Rates and Dates
+\* Visually estimated from the published time-scaled phylogeny.
 
-After excluding populations with no detectable signal and node-dating conflicts, we identified five populations with potentially informative rates and dates. These include the Bronze Age (0.PRE), *Medievalis* (2.MED), the First Pandemic (0.ANT4), the Second Pandemic (1.PRE), and the Third Pandemic (1.ORI). The Bronze Age marks the first known appearance of _Y. pestis_ in humans, and the three pandemics, along with _Medievalis_, are historically associated with high mortality and rapid spread [@xu2014WetClimateTransportation]. Due to this epidemiological significance, these five populations have been sampled over the longest time frames, ranging from 92 years for the Third Pandemic (1.ORI) to 1250 years for the Bronze Age (1.PRE). Th affirms the importance of long-term heterochronous sampling for _Y. pestis_, which has only been made possible through the specialized retrieval of ancient DNA [@bos2011DraftGenomeYersinia] and recent sequencing of early 20<sup>th</sup> century culture collections [@eroshenko2021EvolutionCirculationYersinia]. By curating and contextualizing this new heterochronous data, we were able to detect temporal signal in extant _Y. pestis_ populations without the use of ancient DNA calibrations for the first time.
+#### (iii) Informative Rates and Dates
 
-Our estimates of the tMRCA for ancient pandemics share a common theme, in that the genetic origins pre-date the traditional historical narratives. For example, the earliest textual evidence of the Second Pandemic (1.PRE) comes from the Black Death (1346) [@cite]. However, we estimate the tMRCA of this population to be earlier, around 1300 CE (95% HPD: 1214 - 1315 CE). Similarly, the first recorded outbreaks of plague during the First Pandemic (0.ANT4) come from the Plague of Justinian (541 CE) [@little2007PlagueEndAntiquity]. Instead, we estimate that the strains of _Y. pestis_ associated with this pandemic shared a common ancestor around 399 CE (95% HPD: 272 - 465 CE). 
+Excluding populations with no detectable signal and node-dating conflicts, we identified five populations with potentially informative rates and dates. These include the Bronze Age (0.PRE), *Medievalis* (2.MED), the First Pandemic (0.ANT4), the Second Pandemic (1.PRE), and the Third Pandemic (1.ORI). The Bronze Age marks the first known appearance of _Y. pestis_ in humans, and the three pandemics, along with _Medievalis_, are historically associated with high mortality and rapid spread [@xu2014WetClimateTransportation]. Due to this epidemiological significance, these five populations have been sampled over the longest time frames, ranging from 92 years for the Third Pandemic (1.ORI) to 1250 years for the Bronze Age (1.PRE). This affirms the importance of long-term heterochronous sampling for _Y. pestis_, which has only been made possible through the specialized retrieval of ancient DNA [@bos2011DraftGenomeYersinia] and recent sequencing of early 20<sup>th</sup> century culture collections [@eroshenko2021EvolutionCirculationYersinia]. By curating and contextualizing this new heterochronous data, we were able to detect temporal signal in extant _Y. pestis_ populations without the use of ancient DNA calibrations for the first time.
 
-One explanation for these disparate timelines is sampling bias, as western European sources dominate both the genetic and historical record. Recent historical scholarship has contested these Eurocentric timelines [@hashemishahraki2016PlagueIranIts; @varlik2020PlagueThatNever] by demonstrating that plague appeared much earlier and persisted for far longer, in western Asia. Genetic dating appears to support these historical critiques, by expanding the timelines of past pandemics to make space for more diverse historical narratives. An alternative explanation is tip date uncertainty. The radiocarbon estimates for the majority of ancient _Y. pestis_ samples had confidence intervals of ±50 years or more. As we only used the mean sampling age to estimate substitution rates, it's possible that the 'true' tMRCA intervals are larger and do overlap with historical estimates. This presents an opportunity for future research to investigate how much uncertainty can be included in molecular clock models for _Y. pestis_, while still achieving convergence of parameter estimates.
+Our estimates of the tMRCA for ancient pandemics share a common theme, in that the genetic origins pre-date the traditional historical narratives. For example, the earliest textual evidence of the Second Pandemic (1.PRE) comes from the Black Death (1346) [@benedictow2021CompleteHistoryBlack]. However, we estimate the tMRCA of this population to be earlier, around 1300 CE (95% HPD: 1214 - 1315 CE). Similarly, the first recorded outbreaks of plague during the First Pandemic (0.ANT4) come from the Plague of Justinian (541 CE) [@little2007PlagueEndAntiquity]. Instead, we estimate that the strains of _Y. pestis_ associated with this pandemic shared a common ancestor around 399 CE (95% HPD: 272 - 465 CE). 
 
-We estimate that the isolates of the Third Pandemic (1.ORI) shareed a common ancestor around 1885 (95% HPD: 1806 - 1901 CE) (Figure @fig:divtree_pandemics C). This interval aligns with the broad timeline of the Third Pandemic as reconstructed from epidemiological reports [@benedict1988BubonicPlagueNineteenthCentury; @xu2014WetClimateTransportation; @xu2019HistoricalGenomicData].  Highly localized plague cases began appearing in southern China (1772-1800), followed by short-distance diffusion (1800-1880), which then reached the southern coast (1880-1900) and spread internationally out of Hong Kong (1894). Our estimate also overlaps with the majority of previous studies, although it is the youngest tMRCA thus far (Table @tbl:comparison_dates). This comparison not only demonstrates the reproducibility of our estimate, but also reveals how the "origin" story of the Third Pandemic is changing. The genetic root was once estimated to be as old as 326 BCE [@morelli2010YersiniaPestisGenome] but is now resolved to be much younger (19<sup>th</sup> century CE). This younger date is particularly intriguing, as the world experienced a major epidemiological transition in the 19<sup>th</sup> century with the emergence of the first pandemics of cholera [@ryan2011CholeraPandemicStill] and influenza [@brussow2021WhatWeCan]. Thus reconstructing the evolutionary history of the Third Plague Pandemic may not only inform us about the epidemiology of plague, but contribute to a broader understanding of re-emerging diseases in the modern era. 
+One explanation for these disparate timelines is sampling bias, as western European sources dominate both the genetic and historical record. Recent historical scholarship has contested these Eurocentric timelines [@hashemishahraki2016PlagueIranIts; @varlik2020PlagueThatNever] by demonstrating that plague appeared much earlier and persisted for far longer, in western Asia. Genetic dating appears to support these historical critiques, by expanding the timelines of past pandemics to make space for more diverse historical narratives. An alternative explanation for our earlier dates is tip date uncertainty. The radiocarbon estimates for the majority of ancient _Y. pestis_ samples had confidence intervals of ±50 years or more. As we only used the mean sampling age for molecular clock models, it's possible that the true tMRCA intervals are larger and do overlap with historical estimates. This presents an opportunity for future research to investigate how much uncertainty can be included in molecular clock models for _Y. pestis_, while still achieving convergence of parameter estimates.
+
+We estimate that isolates from the Third Pandemic (1.ORI) shared a common ancestor around 1885 (95% HPD: 1806 - 1901 CE) (Figure @fig:divtree_pandemics C). This interval aligns with the broad timeline of the Third Pandemic as reconstructed from epidemiological reports [@benedict1988BubonicPlagueNineteenthCentury; @xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. Highly localized plague cases began appearing in southern China (1772-1800), followed by short-distance diffusion (1800-1880), which then reached the southern coast (1880-1900) and spread internationally out of Hong Kong (1894). Our estimate also overlaps with the majority of previous studies, although it is the youngest tMRCA thus far (Table @tbl:comparison_dates). This comparison not only demonstrates the reproducibility of our estimate, but also reveals how the "origin" story of the Third Pandemic is changing. The genetic root was once estimated to be as old as 326 BCE [@morelli2010YersiniaPestisGenome] but is now resolved to be much younger (19<sup>th</sup> century CE). This younger date is particularly intriguing, as the world experienced a major epidemiological transition in the 19<sup>th</sup> century with the emergence of the first pandemics of cholera [@ryan2011CholeraPandemicStill] and influenza [@brussow2021WhatWeCan]. Thus reconstructing the evolutionary history of the Third Plague Pandemic may not only inform us about the epidemiology of plague, but contribute to a broader understanding of re-emerging diseases in the modern era. 
 
 Even less is known about the *Medievalis* population. *Medievalis* strains were hypothesized to be responsible for plague outbreaks in the Caspian Sea region which reoccurred throughout the 19<sup>th</sup> and 20<sup>th</sup> centuries [@eroshenko2021EvolutionCirculationYersinia]. We estimate that the tMRCA of _Medievalis_ (2.MED) was around 1796 (95% HPD: 1560 - 1845 CE) which overlaps with all previously published estimates (Table @tbl:comparison_dates). While this population was once thought to have emerged as early as 583 BCE, there is now growing consensus that the earliest possible emergence was in the 16<sup>th</sup> century CE. This raises an intriguing possibility, in which distinct _Y. pestis_ populations were co-circulating during the Second Pandemic. Interestingly, the Caspian Sea region appears to be a nexus of plague as the only known area where the distributions of both European and Asian _Y. pestis_ strains overlap (Figure @fig:map_caucasus). If ancient _Medievalis_ can be retrieved from this region, they may help elucidate if distinct populations of _Y. pestis_ were co-circulating during the Second Pandemic and how this affected disease exposure in nearby human populations.
 
+> Phylogeography transition
+
 ![The geographic distributions of the Second Pandemic (1.PRE), _Medievalis_ (2.MED), and _Pestoides_ (0.PE) populations. The sampling location of each genome was standardized to the centroid of the associated province and/or state.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/346bd65/main/auspice/all/chromosome/full/filter5/ml/map_caucasus.png){#fig:map_caucasus width=100%}
 
-### Phylogeography
+#### (iv) Ancestral Locations and Spread
+
+Just as molecular clock methods require _temporal_ signal, spread reconstructions require _geographic_ signal. To explore this assumption in _Y. pestis_, we first assessed whether phylogenetic relationships correlated with sampling locations. For every sample, we identified the closest genetic relative using the maximum-likelihood phylogeny. We then recorded whether these genomes were collected from the same location at three resolutions: (1) continent, (2) country, and (3) province. To statistically summarize geographic structure, we reported the percentage of samples with a closest relative sampled from the same location. Following this assessment, we estimated ancestral locations and migrations by fitting a discrete migration model to the maximum-likelihood phylogeny [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] .
+
+Geographic structure varied by population and, as expected, diminished at finer geographic resolutions. The majority of _Y. pestis_ populations (6/12) have not spread to multiple continents, while those that have ranged from the lowest in _Medievalis_ (2.MED), with 76% of genomes collected from the same location as their closest relative, to the highest in _Pestoides_ (0.PE) at 99% (SI Table 6). This reveals a high degree of geographic structure in _Y. pestis_ at the continental scale.
+
+
+
+Best structure (most localized), 
+
+in precursor pandemic populations.
+- 0.ANT (100%, 97%, 96%)
+- 1.IN (100%, 100%, 87%)
+
+- Country ranged from 38% in the Bronze Age (0.PRE) to 100% in _Antiqua_ (3.ANT). 
+
+
+- Province ranged from 34% in _Medievalis_ to 96% in _Antiqua_ (0.ANT).
+
+
+- 
+- We found that 
+
+be distributed along the borders  
+
+- Continent: 76 - 99%
+- Country: 38 - 100%
+- Province: 34 - 96%
+- 
+- and recorded whether the sampling locations were the same 
+- 
+
+- 
+- 
+- across the global phylogeny, 
+
+
+The cryptic clock of _Y. pestis_ is 
+
+- To reconstruct ancestral locations, we fit discrete migration models to the maximum-likelihood phylogeny [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] using the sampling locations at three geographical levels: (1) continent, (2) country, and (3) province/state.
+- The degree of geographic structure varies tremendously across the global phylogeny.
+
+| Population |  N  | Continent (%) | Country (%) | Province (%) |
+|:----------:|:---:|:-------------:|:-----------:|:------------:|
+|   1.ORI    | 117 |      89       |     85      |      58      |
+|    1.IN    | 39  |      100      |     100     |      87      |
+|   1.ANT    |  4  |      100      |     50      |      75      |
+|   1.PRE    | 40  |      100      |     55      |      55      |
+|   2.MED    | 116 |      76       |     60      |      36      |
+|   2.ANT    | 54  |      96       |     91      |      87      |
+|   4.ANT    | 11  |      82       |     82      |      82      |
+|   3.ANT    | 11  |      100      |     100     |      45      |
+|   0.ANT4   | 12  |      92       |     83      |      83      |
+|   0.ANT    | 103 |      100      |     97      |      95      |
+|    0.PE    | 86  |      99       |     90      |      73      |
+|   0.PRE    |  8  |      100      |     38      |      38      |
+
+
+- The degree of geographic structure varying 
+
+In addition to a cryptic host structure, the geographic patterning of Y. pestis, or lack thereof, reflects a
+complex dispersal history (Figure 6). Many regions have been colonized by diverse strains of Y. pestis.
+This diversity can be contemporaneous, such as endemic foci in the Caucausus and Western China (0.PE). Alternatively, this diversity may accrue over multiple centuries through distinct re-
+introductions and extinctions, as seen through historical clades in Europe ( 0.ANT , 1.PRE ). In these examples, a relatively large amount of genetic diversity appears in a small geographic range (Figure 7).
+In contrast, regions such as the Americas have been colonized by a single strain of Y. pestis ( 1.ORI )
+which shows a relatively small amount of genetic diversity over a tremendously large geographic
+range.
+
+
+We estimate that the Third Pandemic (1.ORI) diverged from an _Intermedium_ (1.IN) lineage located in Yunnan Province, China (Figure @fig:divtree_1.IN_province), which is congruent with the historical  narrative. Our geographic estimate is _an origin_ of the Third Pandemic, but not necessarily _the origin_, or the point from which _Y. pestis_ disperses globally. Yunnan Province is the _last sampled location_, and the absence of data from intermediate locations (ex. Hong Kong) cannot be interpreted as evidence of absence.
 
 Similar to the Second Pandemic, the timing of plague's re-emergence during the Third Pandemic remains enigmatic. Prior to the dispersal of plague out of Hong Kong in 1894, highly localized epidemics began appearing in Yunnan Province, China [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. Unfortunately, we were unable to estimate when the Third Pandemic (1.ORI) diverged from _Intermedium_ (1.IN), as the latter population had no temporal signal. A key avenue for future research will therefore be to expand the sampling time frame in order to test whether temporal signal can be recovered. If possible, this will contribute new lines of evidence to the discourse surrounding the epidemiology of the Third Pandemic [@benedict1988BubonicPlagueNineteenthCentury] and the driving factors behind this re-emergence.
 

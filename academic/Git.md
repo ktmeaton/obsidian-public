@@ -63,5 +63,5 @@ git checkout 13512b8 -- $file;
 file='Eaton et al. 2021 Plagued by a cryptic clock.md';
 string='Subtrees of the maximum-likelihood phylogeny'
 latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
-git log -S "$string" --follow -p $file;
+git log -S \"$string\" --follow -p $file;
 ```
