@@ -94,15 +94,15 @@ In response to these debates and obstacles, our objectives in this study were to
 
 To determine the population structure of _Y. pestis_, we first estimated a maximum-likelihood phylogeny using 601 global isolates including 540 modern (89.9%) and 61 ancient (10.1%) strains. We rooted the tree using two genomes of the outgroup taxa _Yersinia pseudotuberculosis_. The alignment consisted of 10,249 variant positions exclusive to _Y. pestis_, with 3,844 sites shared by at least two strains. Following phylogenetic estimation, we pruned the outgroup taxa from the tree to more closely examine the genetic diversity of _Y. pestis_. In Figure @fig:divtree_map_timeline A, we contextualize the global phylogeny using three nomenclature systems: the major branches, metabolic biovars, and historical time periods.  In the following section, we compare and critique each system, identify any incongruent divisions and uncertainty, and explore an integrative approach for molecular clock analysis.
 
-#### Biovars
+#### (i) Biovars
 
 The oldest system of _Y. pestis_ classification is the biovar nomenclature, which uses metabolic differences to define population structure. Accordingly, _Y. pestis_ can be categorized into four classical biovars: *Antiqua* (ANT), *Medievalis* (MED), *Orientalis* (ORI), and *microtus*/*pestoides* (PE) [@devignat1951VarietesEspecePasteurella; @zhou2004ComparativeEvolutionaryGenomics]. Non-classical biovars have also been introduced, such as the *Intermedium* biovar (IN), which reflects a transitional state from *Antiqua* to *Orientalis* [@li2009GenotypingPhylogeneticAnalysis]. The biovar system is simple in application, as it largely focuses on two traits: the ability to ferment glycerol and reduce nitrate [@zhou2004ComparativeEvolutionaryGenomics]. However, this simplicity is offset by the growing recognition of regional inconsistencies in metabolic profiles [@kutyrev2018PhylogenyClassificationYersinia]. This is further exacerbated by the sequencing of non-viable, "extinct" *Y. pestis* for which metabolic sub-typing is challenging [@bos2011DraftGenomeYersinia]. Researchers have responded to this uncertainty in a variety of ways, by extrapolating existing biovars [@wagner2014YersiniaPestisPlague] and creating new pseudo-biovars (PRE) [@rasmussen2015EarlyDivergentStrains]. Others have foregone the biovar nomenclature altogether in favor of locally-developed taxonomies [@kutyrev2018PhylogenyClassificationYersinia]. Despite extensive research, it remains unclear which metabolic traits, if any, can be used to classify _Y. pestis_ into distinct populations on a global scale.
 
-#### Major Branches
+#### (ii) Major Branches
 
 In contrast to the biovar nomenclature which emphasizes phenotype, the major branch nomenclature focuses on phylogenetic relationships. This system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to a multifurcation called the “Big Bang” polytomy  [@cui2013HistoricalVariationsMutation]. All lineages that diverged prior to this polytomy are grouped into Branch 0 and those diverging after form Branches 1 through 4. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [@green2020HowMicrobeBecomes; @green2020FourBlackDeaths]. However, the epidemiological significance of the “Big Bang” polytomy remains unclear, as no definitive phenotype has been identified that correlates with the observed branching pattern. 
 
-#### Time Period
+#### (iii) Time Period
 
 As ancient _Y. pestis_ genomes cannot be easily classified via direct metabolic testing, researchers use an alternative strategy that incorporates contextual evidence such as the sampling age, historical time period, and potential pandemic associations. In ancient DNA studies, the genetic diversity of _Y. pestis_ is commonly divided into four time periods: the Late Neolithic Bronze Age [@rasmussen2015EarlyDivergentStrains], the First Pandemic [@wagner2014YersiniaPestisPlague], the Second Pandemic [@spyrou2019PhylogeographySecondPlague], and the Third Pandemic [@cui2013HistoricalVariationsMutation] (Figure @fig:divtree_map_timeline B).
 
@@ -115,7 +115,7 @@ The second risk is artificially separating related populations. The Second and T
 
 A final limitation is that several populations are curiously excluded from the pandemic nomenclature altogether. For example, Branch 2 populations emerged at the same time as, but separate from, the Second Pandemic and have been associated with high mortality epidemics [[Eroshenko 2021 Evolution Circulation Yersinia\|[@eroshenko2021EvolutionCirculationYersinia]]]. In particular, the *Medievalis* population (2.MED) has spread throughout Asia (Figure @fig:divtree_map_timeline) with the fastest spread velocity of any _Y. pestis_ lineage [[Xu 2014 Wet Climate Transportation\|[@xu2014WetClimateTransportation]]]. Given its epidemiological significance, it is surprising that Branch 2 populations continue to be overlooked in the pandemic taxonomy of *[[Yersinia pestis|Y. pestis]]*. As ancient DNA sampling strategies expand in geographic scope, and as more non-European historical sources are brought to bear, it will be important to consider how best to refashion the historical period nomenclature to encompass this diversity.
 
-#### Integrative Approach
+#### (iv) Integrative Approach
 
 In light of this uncertainty and inconsistency, there exists no current classification system which comprehensively represents the global population structure of _Y. pestis_. Instead, integrative approaches have been previously used in large comparative studies of *[[Yersinia pestis|Y. pestis]]* [[Cui 2013 Historical Variations Mutation|[@cui2013HistoricalVariationsMutation;]] [[Morelli et al. 2010 Yersinia Pestis Genome|@morelli2010YersiniaPestisGenome]]]. We therefore take the intersection of the three taxonomic systems discussed previously and describe 12 populations for further statistical analysis (SI Table 1). In the following sections, we highlight the novel insight and issues that arise when this population structure is explicitly incorporated into molecular clocks models and phylogeographic reconstructions.
 
@@ -126,7 +126,50 @@ In light of this uncertainty and inconsistency, there exists no current classifi
 
 <div style="page-break-after: always;"></div>
 
-### Estimating Rates of Evolutionary Change
+### Ancestral Location and Spread
+
+To assess the extent of geographic signal in _Y. pestis_, we tested whether phylogenetic relationships correlate with sampling locations. For every genome, we identified the closest genetic relative in the maximum-likelihood phylogeny. We then recorded whether these genomes were collected from the same location at three resolutions: (1) continent, (2) country, and (3) province. As a statistical measure of geographic structure, we report the percentage of genomes that have a closest relative sampled from the same location. 
+
+The majority of _Y. pestis_ populations (6/12) were localized to a single continent (Figure @fig:geographic_structure_stats). Of those distributed over multiple continents, geographic structure ranged from 76% in _Medievalis_ (2.MED) to 99% in _Pestoides_ (0.PE). At the country level, the degree of geographic structure dropped drastically in some populations, such as to 38% in the Bronze Age (0.PRE), while remaining stable in others, including _Antiqua_ (3.ANT) which retained 100% structure. The inverse of this pattern appeared at the province level, where _Antiqua_ (3.ANT) dropped to 45% while geographic structure in the Bronze Age (0.PRE) was unchanged. Our results reveal that geographic structure diminishes at finer geographic resolutions, as would be expected, but the extent to which varies by population.
+
+![Geographic structure by population according to the percent of genomes sampled from the same location as their closest genetic relative. Internal bar labels indicate the number of locations sampled.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/73c18cc/main/mugration/all/chromosome/full/filter5/geographic_structure_stats.png){#fig:geographic_structure_stats width=100%}
+
+One explanation for these population-specific trends is host associations. We observed a correlation (R<sup>2</sup>=0.43) between the degree of geographic structure and the percentage of samples collected from a non-human host (Figure @fig:geo_structure_host). Populations that were primarily sampled from rodents and arthropod vectors had more geographic structure than those found exclusively in humans. This is epidemiologically consistent with the greater mobility of human populations, which can facilitate long-distance spread. Furthermore, this suggests that populations sampled primarily in humans, such as the ancient lineages, will have the highest uncertainty in terms of spread reconstruction.
+
+To test how these geographic trends impact our ability to estimate where _Y. pestis_ existed in the past, we performed ancestral state reconstruction. We independently fit three discrete mugration models [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] to the maximum-likelihood phylogeny using the sampling locations by: (1) continent, (2) country, and (3) province... Three case studies
+
+
+#### (iii) Third Pandemic (19th - 20th Century CE)
+
+We estimate that the Third Pandemic (1.ORI) diverged from an ancestral _Intermedium_ (1.IN) population located in Yunnan (100%), China (100%) (Figure @fig:divergence_stats). This is congruent with the historical evidence, which documents highly localized epidemics appearing in Yunnan, China prior to the 19<sup>th</sup> century CE [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. The Third Pandemic then diverged rapidly in an unresolved polytomy (Figure @fig:divtree_map_timeline A), which re-introduced plague into Europe and Africa, and was a novel introduction to North and South America.
+
+Notably, the specificity (province) and strength (100%) of this geographic estimate were only possible because non-human samples were available. There is less geographic structure among the human isolates of _Intermedium_ (1.IN), leading to lower likelihoods and greater uncertainty. Furthermore, Yunnan Province is solely represented by rodent samples and this reservoir would otherwise go undetected if only human isolates were used. Therefore, sampling strategies that account for the multi-host ecology of _Y. pestis_ are critical for robust phylogeographic inference.
+
+
+
+#### (ii) Second Pandemic (14th - 19th Century CE)
+
+We estimate that the Second Pandemic (1.PRE) diverged from an ancestral population in China (93%), Asia (91%) with the MRCA reconstructed to be in Russia (63%), Europe (98%)
+
+We estimate that the Second Pandemic
+
+#### (i) First Pandemic (6th - 8th Century CE)
+
+We estimate that the First Pandemic (0.ANT4) diverged from an ancestral population in China (57%), Asia (100%) (Figure @fig:mrca_stats). After this divergence, the most recent common ancestor (MRCA) of 0.ANT4 was reconstructed to be in Kyrgyzstan (69%), Asia (97%) which was then followed by a migration to England (47%), Europe (97%). These estimates reveal that for the First Pandemic, the only locations that can be confidently inferred from genetic evidence are at the continental scale. Even so, we are lacking representative samples from Africa, which is historically documented to have been affected by the Plague of Justinian [@little2007PlagueEndAntiquity]. We can infer little about the routes of spread, even between continents, as the absence of evidence from African cannot assumed to be evidence of absence.
+
+
+<div style="page-break-after: always;"></div>
+
+![Relationship between geographic structure and host.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/528883d/main/iqtree_stats/all/chromosome/full/filter5/geo_structure_host.png){#fig:geo_structure_host width=90%}
+
+![Geographic locations of the most recent common ancestors (MRCA) by population. Ancestral locations were estimated by fitting discrete mugration models to the maximum-likelihood phylogeny using sampling locations. Internal bar labels indicate the location with the highest confidence given the data.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/73c18cc/main/mugration/all/chromosome/full/filter5/mrca_stats.png){#fig:mrca_stats width=90%}
+
+![Geographic locations of the ancestral populations from which each population diverged. Ancestral locations were estimated by fitting discrete mugration models to the maximum-likelihood phylogeny using sampling locations. Internal bar labels indicate the location with the highest confidence given the data.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/73c18cc/main/mugration/all/chromosome/full/filter5/divergence_stats.png){#fig:divergence_stats width=90%}
+
+<div style="page-break-after: always;"></div>
+
+
+### Rates of Evolutionary Change {.page_break_before}
 
 The extent of rate variation present in our updated genomic dataset is notably larger and more diverse than those used in previous studies [@spyrou2019PhylogeographySecondPlague; @pisarenko2021YersiniaPestisStrains]. A root-to-tip regression on sampling age reproduces the finding that substitution rates in *Y. pestis* are poorly represented by a simple linear model or "strict clock" (Figure @fig:rtt A). We found a very low coefficient of determination (R<sup>2</sup>=0.09) which indicates a large degree of unaccounted variation. This finding suggests that evolutionary change in _Y. pestis_ may be more appropriately estimated using a "relaxed clock", where rate variation is explicitly modeled. To test this hypothesis, we performed a Bayesian Evaluation of Temporal Signal (BETS) [@duchene2020BayesianEvaluationTemporal].  In brief, this method tested four model configurations including: (1) a strict clock, (2) a relaxed clock, (3) the true sampling ages, and (4) no sampling ages. A comparison of the model likelihoods, or Bayes factors, was then used to assess the degree of temporal signal.
 
@@ -137,8 +180,6 @@ In contrast to the single clock approach, we observed significant improvements w
 <div style="page-break-after: always;"></div>
 
 ![Substitution rate variation in _Yersinia pestis_. **A**: A root-to-tip regression on mean sampling age using all genomes from the maximum-likelihood phylogeny. **B**: A root-to-tip regression on mean sampling age by population. The distance to the population MRCA was calculated using subtrees extracted from the maximum-likelihood phylogeny. **C**: Bayesian substitution rates by population across branches of the maximum-clade credibility (MCC) trees. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/cb00c8c/main/iqtree_stats/all/chromosome/full/filter5/rtt.png){#fig:rtt width=85%}
-
-### Application and Interpretation
 
 To demonstrate the application of our molecular clock method and the interpretive consequences, we explored three outcomes as case studies. First, as a control, we examined _Y. pestis_ populations that had <u>[[Eaton et al. 2021 Plagued by a cryptic clock#i No Temporal Signal\|no temporal signal]]</u>. These "negative" cases inform us about the minimum sampling time, or phylodynamic threshold, required to obtain robust temporal estimates in _Y. pestis_. Second, we examined populations with <u>[[Eaton et al. 2021 Plagued by a cryptic clock#ii Irreproducible Estimates\|irreproducible estimates]]</u> between studies, such as the time to most recent common ancestor (tMRCA). We discuss how sampling bias drives this outcome, and how it can be identified and corrected with ancient DNA calibrations. Finally, we identify the populations with the most <u>[[Eaton et al. 2021 Plagued by a cryptic clock#iii Informative Rates and Dates\|informative rates and dates]]</u>. We discuss how these molecular dates have changed our understanding of pandemic "origins" and complement historical scholarship.
 
@@ -201,150 +242,7 @@ Even less is known about the *Medievalis* population. *Medievalis* strains were 
 
 ![The geographic distributions of the Second Pandemic (1.PRE), _Medievalis_ (2.MED), and _Pestoides_ (0.PE) populations. The sampling location of each genome was standardized to the centroid of the associated province and/or state.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/346bd65/main/auspice/all/chromosome/full/filter5/ml/map_caucasus.png){#fig:map_caucasus width=100%}
 
-#### (iv) Ancestral Locations and Spread
 
-Just as molecular clock methods require _temporal_ signal, spread reconstructions require _geographic_ signal. To explore this assumption in _Y. pestis_, we first assessed whether phylogenetic relationships correlated with sampling locations. For every sample, we identified the closest genetic relative using the maximum-likelihood phylogeny. We then recorded whether these genomes were collected from the same location at three resolutions: (1) continent, (2) country, and (3) province. To statistically summarize geographic structure, we reported the percentage of samples with a closest relative sampled from the same location. Following this assessment, we estimated ancestral locations and migrations by fitting a discrete migration model to the maximum-likelihood phylogeny [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] .
-
-Geographic structure varied by population and, as expected, diminished at finer geographic resolutions. The majority of _Y. pestis_ populations (6/12) have not spread to multiple continents, while those that have ranged from the lowest in _Medievalis_ (2.MED), with 76% of genomes collected from the same location as their closest relative, to the highest in _Pestoides_ (0.PE) at 99% (SI Table 6). This reveals a high degree of geographic structure in _Y. pestis_ at the continental scale.
-
-
-
-Best structure (most localized), 
-
-in precursor pandemic populations.
-- 0.ANT (100%, 97%, 96%)
-- 1.IN (100%, 100%, 87%)
-
-- Country ranged from 38% in the Bronze Age (0.PRE) to 100% in _Antiqua_ (3.ANT). 
-
-
-- Province ranged from 34% in _Medievalis_ to 96% in _Antiqua_ (0.ANT).
-
-
-- 
-- We found that 
-
-be distributed along the borders  
-
-- Continent: 76 - 99%
-- Country: 38 - 100%
-- Province: 34 - 96%
-- 
-- and recorded whether the sampling locations were the same 
-- 
-
-- 
-- 
-- across the global phylogeny, 
-
-
-The cryptic clock of _Y. pestis_ is 
-
-- To reconstruct ancestral locations, we fit discrete migration models to the maximum-likelihood phylogeny [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] using the sampling locations at three geographical levels: (1) continent, (2) country, and (3) province/state.
-- The degree of geographic structure varies tremendously across the global phylogeny.
-
-| Population |  N  | Continent (%) | Country (%) | Province (%) |
-|:----------:|:---:|:-------------:|:-----------:|:------------:|
-|   1.ORI    | 117 |      89       |     85      |      58      |
-|    1.IN    | 39  |      100      |     100     |      87      |
-|   1.ANT    |  4  |      100      |     50      |      75      |
-|   1.PRE    | 40  |      100      |     55      |      55      |
-|   2.MED    | 116 |      76       |     60      |      36      |
-|   2.ANT    | 54  |      96       |     91      |      87      |
-|   4.ANT    | 11  |      82       |     82      |      82      |
-|   3.ANT    | 11  |      100      |     100     |      45      |
-|   0.ANT4   | 12  |      92       |     83      |      83      |
-|   0.ANT    | 103 |      100      |     97      |      95      |
-|    0.PE    | 86  |      99       |     90      |      73      |
-|   0.PRE    |  8  |      100      |     38      |      38      |
-
-
-- The degree of geographic structure varying 
-
-In addition to a cryptic host structure, the geographic patterning of Y. pestis, or lack thereof, reflects a
-complex dispersal history (Figure 6). Many regions have been colonized by diverse strains of Y. pestis.
-This diversity can be contemporaneous, such as endemic foci in the Caucausus and Western China (0.PE). Alternatively, this diversity may accrue over multiple centuries through distinct re-
-introductions and extinctions, as seen through historical clades in Europe ( 0.ANT , 1.PRE ). In these examples, a relatively large amount of genetic diversity appears in a small geographic range (Figure 7).
-In contrast, regions such as the Americas have been colonized by a single strain of Y. pestis ( 1.ORI )
-which shows a relatively small amount of genetic diversity over a tremendously large geographic
-range.
-
-
-We estimate that the Third Pandemic (1.ORI) diverged from an _Intermedium_ (1.IN) lineage located in Yunnan Province, China (Figure @fig:divtree_1.IN_province), which is congruent with the historical  narrative. Our geographic estimate is _an origin_ of the Third Pandemic, but not necessarily _the origin_, or the point from which _Y. pestis_ disperses globally. Yunnan Province is the _last sampled location_, and the absence of data from intermediate locations (ex. Hong Kong) cannot be interpreted as evidence of absence.
-
-Similar to the Second Pandemic, the timing of plague's re-emergence during the Third Pandemic remains enigmatic. Prior to the dispersal of plague out of Hong Kong in 1894, highly localized epidemics began appearing in Yunnan Province, China [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. Unfortunately, we were unable to estimate when the Third Pandemic (1.ORI) diverged from _Intermedium_ (1.IN), as the latter population had no temporal signal. A key avenue for future research will therefore be to expand the sampling time frame in order to test whether temporal signal can be recovered. If possible, this will contribute new lines of evidence to the discourse surrounding the epidemiology of the Third Pandemic [@benedict1988BubonicPlagueNineteenthCentury] and the driving factors behind this re-emergence.
-
-While we could not estimate _when_ the Third Pandemic emerged, we could estimate _where_ this divergence occurred, as _Intermedium_ (1.IN) has strong geographic structure. To reconstruct ancestral locations, we fit a discrete migration model to the maximum-likelihood phylogeny [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] using the sampling locations. We estimate that the Third Pandemic (1.ORI) diverged from an _Intermedium_ (1.IN) lineage located in Yunnan Province, China (Figure @fig:divtree_1.IN_province), which is congruent with the historical  narrative. Our geographic estimate is _an origin_ of the Third Pandemic, but not necessarily _the origin_, or the point from which _Y. pestis_ disperses globally. Yunnan Province is the _last sampled location_, and the absence of data from intermediate locations (ex. Hong Kong) cannot be interpreted as evidence of absence.
-
-The specificity (province) and strength (likelihood=1) of our geographic estimate were only possible because non-human samples were available. There is less geographic structure among the human isolates of _Intermedium_ (1.IN), leading to lower likelihoods and greater uncertainty. Furthermore, Yunnan Province is solely represented by rodent samples and this reservoir would otherwise go undetected if only human isolates were used. Therefore, sampling strategies that account for the multi-host ecology of _Y. pestis_ are critical for robust phylogeographic inference.
-
-> **Kat's Note**: This is the setup to compare and contrast with the Second Pandemic. Which is all human samples and no geographic structure...
-
-![Geographic structure of the _Intermedium_ (1.IN) population which is ancestral to the Third Pandemic (1.ORI). Branches are colored based on a discrete, ancestral state reconstruction using sampling location (province). Branch labels indicate the likelihood of the ancestral location given the data.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/2045cdb/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_province.png){#fig:divtree_1.IN_province width=90%}
-
-Recovering robust temporal signal in the Third Pandemic population 
-
-**Historical Background:**
-	- 1770-1870 | 100 years | Localized plague outbreaks in China
-	- 1894-1901 | 5 years | Global spread.
-
-
-|    Region     |   Appearance    | Status  | Genomes | Introductions |
-|:-------------:|:---------------:|:-------:|:-------:|:-------------:|
-|   Australia   | Novel Emergence | Extinct |    0    |       ?       |
-|    Europe     |  Re-Emergence   | Extinct |    0    |       ?       |
-|               |                 |         |         |               |
-| North America | Novel Emergence | Endemic |   19    |       ?        |
-| South America | Novel Emergence | Endemic |   67    |       ?       | 
-|    Africa     |  Re-emergence   | Endemic |    5    |       ?       |
-|     Asia      |  Re-emergence   | Endemic |   24    |       ?       |
- 
-1. **We know nothing about _Y. pestis_ in Europe and Australia!**
-	- How are we supposed to make inferences about the past?
-1. **North America is unique, in having only a single introduction.**
-2. **South America: Independent Introductions to same country!**
-3. **Asia and Africa: Reintroduced to different countries.**
-
-What can or cannot say about the Third Pandemic?
-1. Geographic origin: China (100%), Yunnan Province (99%)
-	- Why such confidence?
-	- Intensive sampling of non-human _Y. pestis_ 
-1. A single global radiation (polytomy)
-2. Single introduction (North America)
-	- Formation of new reservoirs (California, New Mexico)
-3. Multiple introductions (South America)
-	- Formation of new reservoirs
-	- Only known because of sampling non-human rodents.
-- Europe (no endemic reservoir, no cases after 1950)
-
-
-<div style="page-break-after: always;"></div>
-
-#### Case Study 1: _Y. pestis_ in North America during the Third Pandemic.
-
-- We estimate that _Y. pestis_ in North America diverged from an ancestral population in Yunnan, China (99% confidence) around 1903 (95% HPD: 1877-1922). 
-- The most likely point of introduction was in California, USA (99% confidence).
-- This genetic narratives aligns closely with the historical evidence, as the first plague cases in North America were in San Francisco, California (1900) and Los Angeles, California (1908) [@kugeler2015EpidemiologyHumanPlague].
-- Plague then spread progressively west across the south-western United States.
-- How did plague spread to Canada? Did it "jump" by a long-distance transmission? Or did it also spread progressively northwards, and we have not sampled the intermediate locations.
-- We identified two states with strong geographic structure: California and New Mexico. These are known plague foci that remain active in the present day. 
-- The genetic evidence failed to detect the two other main foci in North America, which are in Arizona and Colorado.  This is because they are (1) sparsely sampled and, (2) the topology is poorly resolved for these regions.
-
-#### Case Study 2:  _Y. pestis_ in Europe after the Black Death.
-
-- In contrast, phylogeography reconstructions of ancient _Y. pestis_ have greater uncertainty.
-- The ancestral location of _Y. pestis_ prior to the "Big Bang" polytomy was Xinjiang, China (100%)
-- But after this event, there are few internal nodes in which we can estimate ancestral location.
-- The only geographic structure apparent during the Second Pandemic comes from contemporaneous isolates, suspected to derive from the same epidemic (ex. France 1720).
-- There is very little we can say about spread, directionality, or the location of reservoirs.
-	1. **Sparse sampling**. In Figure @fig:divtree_north_america_europe, there are 30 samples from the Second Pandemic in Europe, representing 8 countries, collected over 500 years.
-	2. **Host bias**. Only human samples have been collected.
-	3. **Uncertain Sampling Ages**. The sampling age of aDNA samples are often unknown. Radiocarbon or mortuary estimates tend to be ~100 years. This means really wide confidence intervals at internal nodes (50-100 years).
-
-
-![A comparison of phylogeographic reconstructions performed on _Y. pestis_ samples collected during a modern pandemic (left) versus an ancient pandemic (right).](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/5d2c8cd/main/auspice/all/chromosome/full/filter5/beast/geo/divtree_north_america_europe.png){#fig:divtree_north_america_europe width=90%}
-
-<div style="page-break-after: always;"></div>
 
 ## Conclusion
 
@@ -402,6 +300,10 @@ For the second test of temporal signal, a [[Bayesian Evaluation of Temporal Sign
 Importantly, the models involved priors that were proper for all parameters, which is essential for marginal likelihood calculations [@baele2013AccurateModelSelection]. In particular, the molecular clock rate (the mean of the UCLN clock model or the global rate of the strict) had a continuous time Markov chain reference prior [@ferreira2008BayesianAnalysisElapsed], the population size of the constant-size coalescent an exponential prior distribution with mean 10, and the standard deviation of the UCLN had an exponential prior with mean 0.33. Marginal likelihood estimation with stepping stone sampling does not require from the posterior distribution. To obtain the posterior distribution we used an MCMC of 10<sup>9</sup> steps, sampling every 10<sup>3</sup> steps. For situations where the effective sample size (ESS) of any parameters was below 200 we increased the chain length by 50% and reduced sampling frequency accordingly.
 
 ### Phylogeography
+
+Continent defintions:
+- https://geojson-maps.ash.ms/
+- https://github.com/AshKyd/geojson-regions
 
 To explore underlying phylogeography, we conducted a discrete trait analysis in BEAST [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. A coalescent constant population size tree prior was chosen with an exponential prior placed on the effective population size with mean 100000. We modeled evolutionary rate with an uncorrelated relaxed lognormal clock, with a CTMC scale prior on the mean  and exponential prior with mean 1/3 on the standard deviation of the underlying lognormal distribution (Drummond et al., 2006). A GTR+Gamma substitution model with estimated base frequencies for 1.ORI, 1.PRE, 0.ANT4, and 0.PRE. The same settings were used for 2.MED with the exception of swapping the GTR+Gamma model to an HKY+Gamma model. MCMC chains were run for 10<sup>7</sup> steps with sampling every 10<sup>3</sup> steps. We used logCombiner to combine between 3-5 replicate runs, with 10% burnin, for each clade to achieve ESS above 200 for each parameter and Maximun Clade Credibility (MCC) trees [@drummond2007BEASTBayesianEvolutionary].
 
