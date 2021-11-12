@@ -62,6 +62,9 @@ style 3 fill:#1f77b4,stroke:#333,stroke-width:1px,fill-opacity:0.25;
 
 558 [[Yersinia pestis|Y. pestis]] genomic assembles were identified from the NCBI databases using [[NCBImeta_Paper]]. Collection date and location were curated by cross-referencing the original publications. Of the initial 558 genomes, 367 genomes were collected between 1776 - 2008 and are associated with clades causing infection in humans. [[Geocode|Geocoding]] was performed using [[GeoPy]] and the [[Nominatim|Nominatim API]] for [[OpenStreeMap]]. Latitude and longitude for each sample were standardized at the levels of country and state. 
 
+Genotyping from [[@morelli2010YersiniaPestisGenome]] = ? samples?
+
+
 #### Code
 
 - [[SQL]] statement:
