@@ -1,6 +1,6 @@
 ---
 project: [ [ PhD Dissertation ] ]
-due: 2021-11-05
+due: 2021-11-17
 time: 17:00
 people:
 tags: 🧨 

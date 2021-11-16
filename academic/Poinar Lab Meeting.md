@@ -5,11 +5,44 @@ people: null
 tags: 🧨 
 status: priority
 type: [[Meeting]]
-due: 2021-11-02
+due: 2021-11-16
 time: 11:00
 ---
 
 # Poinar Lab Meeting
+
+## [[2021-11-16]]
+
+### [[George Long|Sam Long]]
+
+- Genome reconstruction (27X) of [[Escherichia coli]] (16th century, Giovanni)
+- Identified two potential plasmids (20X) (IMAGE)
+- Possible horizontal gene transfer from [[Klebsiella aerogenes]].
+- His phylogeny visuals are really great!
+- Not likely a virulent strain, based on experiments.
+- [[Coronavirus]] detection in bats (alpha, beta)
+- Peaky coverage in two samples (genome mapping) candidates for enrichment.
+- New project, Butyrate Gene Diversity
+
+### [[Samantha Price]]
+
+- Compared dental calculus in different disciplines
+- Why is dental calculus designated a pathology in anthro?
+- Bacterial complexes and associations in dental plaque (IMAGE)
+- Yellow, red, orange, green, purple, blue
+- Case study: Tirup (12-14th century), ~500 individuals
+- Scored periodontal disease
+- More red complex bacteria != aggressive periodontal disease (IMAGE)
+- Highlights a cautionary note in oral microbiome inference. Bacterial DNA constitutes insufficient evidence for a diagnosis of periodontal disease.
+- How should it be classified?
+	- Pseudopathology
+	- Secondary biomaterial (biowaste), like paleofeces or gallstones
+- Comparison to modern oral microbiome studies
+
+### [[Zachery Dickson]]
+
+- HUBDesign
+
 
 ## [[2021-11-03]]
 

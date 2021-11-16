@@ -2,8 +2,8 @@
 project:
 due: 2021-12-15
 people:
-tags: 🧨
-status: priority
+tags: 🚂
+status: backlog
 title: Rewriting the Black Death Podcast
 type: [[Task]]
 ---
