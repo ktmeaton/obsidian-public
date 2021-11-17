@@ -153,17 +153,9 @@ The phylodynamic threshold has been rigorously explored in other pathogens [@duc
 
 #### (ii) Irreproducible Estimates {.page_break_before}
 
-We observed two populations with detectable temporal signal associated with significant node-dating conflicts. These populations include the *Pestoides* (0.PE) and *Antiqua* (0.ANT) biovars which are both paraphyletic. Conflicts were identified by comparing their estimated time to the most recent common ancestor (tMRCA) to that of their descendant populations. For example, the First Pandemic (0.ANT4) is a descendant clade of the larger *Antiqua* (0.ANT) population based on the maximum-likelihood phylogeny (Figure @fig:divtree_first_pandemic). We would expect the tMRCA of the ancestral 0.ANT to pre-date the First Pandemic, for which ancient DNA calibrations are available. However, the tMRCA of 0.ANT is far too young (95% HPD: 1357 - 1797 CE), and incorrectly post-dates the tMRCA of 0.ANT4 (95% HPD: 39 - 234 CE) by more than a millennium. Similarly, our estimate of the _Pestoides_ (0.PE) tMRCA (95% HPD: 1573-1876 CE) is overly young without the calibrating ancient sample...
-
-(2<sup> millenium BCE) [@spyrou2018Analysis3800yearoldYersinia]
-
-The overly young dates for _Antiqua_ (0.ANT) were also observed in a recent study [@pisarenko2021YersiniaPestisStrains] where no ancient genomes were used (Table @tbl)
-
-This outcome is somewhat paradoxical, as these populations have robust temporal signal and yet a critical examination of their divergence dates reveals they are unreliable. 
-
-comparison_dates
-
-This conflicting pattern has been previously described and attributed to sampling bias [@duchene2019InferringInfectiousDisease; @kalkauskas2021SamplingBiasModel]. Specifically, the driving factor in _Y. pestis_ appears to be insufficient sampling of basal branches and the presence of extensive rate variation. The two affected populations, *Antiqua* (0.ANT) and *Pestoides* (0.PE), have a low density of nodes at their roots in the maximum-likelihood phylogeny (SI Figure @fig:branch_lengths). This pattern is also observed in another _Antiqua_ population (1.ANT) which has a small sample size (N=4) and has previously been linked to rate acceleration events [@cui2013HistoricalVariationsMutation]. The dates associated with these three populations (0.PE, 0.ANT, 1.ANT) should be considered non-informative.
+We observed two populations with detectable temporal signal associated with significant node-dating conflicts. These populations include the *Pestoides* (0.PE) and *Antiqua* (0.ANT) biovars which are both paraphyletic. Conflicts were identified by comparing their estimated time to the most recent common ancestor (tMRCA) to that of their descendant populations. For example, the First Pandemic (0.ANT4) is a descendant clade of the larger *Antiqua* (0.ANT) population based on the maximum-likelihood phylogeny (Figure @fig:divtree_first_pandemic). We would expect the tMRCA of the ancestral 0.ANT to pre-date the First Pandemic, for which ancient DNA calibrations are available. However, the tMRCA of 0.ANT is far too young (95% HPD: 1357 - 1797 CE), and incorrectly post-dates the tMRCA of 0.ANT4 (95% HPD: 39 - 234 CE) by more than a millennium. This outcome is somewhat paradoxical, as these populations have robust temporal signal and yet a critical examination of their divergence dates reveals they are unreliable. 
+	
+This conflicting pattern has been previously described and attributed to sampling bias [@duchene2019InferringInfectiousDisease; @kalkauskas2021SamplingBiasModel]. Specifically, the driving factor in _Y. pestis_ appears to be insufficient sampling of basal branches and the presence of extensive rate variation. The two affected populations, _Antiqua_ (0.ANT) and _Pestoides_ (0.PE), have a low density of nodes at their roots in the maximum-likelihood phylogeny (SI Figure @fig:branch_lengths). This pattern is also observed in another _Antiqua_ population (1.ANT) which has a small sample size (N=4) and has previously been linked to rate acceleration events [@cui2013HistoricalVariationsMutation]. The dates associated with these three populations (0.PE, 0.ANT, 1.ANT) should be considered non-informative.
 
 These node-dating issues reveal a significant limitation in our approach of estimating population-specific clock models. Defining _Y. pestis_ population by time period can have deleterious effects, as ancient plague genomes serve as crucial calibration points for rate changes that are otherwise unsampled in extant populations. In populations with poorly sampled basal branches (0.PE, 0.ANT, 1.ANT) we expect an optimization approach to be more ideal, in which a few closely related populations are merged or select ancient DNA calibrations are introduced [@spyrou2018Analysis3800yearoldYersinia]. Otherwise, divergence dates in these populations tend to be overly young, sometimes by more than a 1000 years [@pisarenko2021YersiniaPestisStrains], and are rarely reproducible between studies (Table @tbl:comparison_dates).
 
@@ -173,6 +165,7 @@ Our inability to infer divergence dates due to sampling bias also has several hi
 
 ![Ancestor-descendant relationships in the maximum-likelihood phylogeny reveal tMRCA conflicts between _Antiqua_ (0.ANT) and the First Pandemic (0.ANT4). Node dates (95% HPD) were estimated from the Bayesian analysis, where each population was assessed independently. Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e605cc9/main/iqtree_stats/all/chromosome/full/filter5/divtree_first_pandemic.png){#fig:divtree_first_pandemic width=80%}
 
+	
 |      Category      | Population | Morelli et al. <br>2010 | Cui et al. <br>2013 | Pisarenko et al. <br>2021 |  This Study  |
 |:------------------:|:----------:|:-----------------------:|:-------------------:|:-------------------------:|:------------:|
 | No Temporal Signal |    1.IN    |       -2388, 1606       |    1500, 1750\*     |        1791, 1897         |  1651, 1913  |
@@ -186,7 +179,7 @@ Our inability to infer divergence dates due to sampling bias also has several hi
 |                    |   2.MED    |       -583, 1770        |    1550, 1800\*     |        1413, 1653         |  1560, 1845  |
 |                    |   1.PRE    |           --            |     1312, 1353      |            --             |  1214, 1315  |
 |                    |   0.ANT4   |           --            |         --          |            --             |   39, 234    |
-|                    |   0.PRE    |           --            |         --          |            --             | -3098, -2786 | 
+|                    |   0.PRE    |           --            |         --          |            --             | -3098, -2786 |
 
 Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies. Uncertainty surrounding the tMRCA is represented by the 95% highest posterior density (HPD) interval. A dash indicates the study did not incorporate genomes from the population. {#tbl:comparison_dates}
 
@@ -211,7 +204,7 @@ Even less is known about the *Medievalis* population. *Medievalis* strains were 
 
 
 
-### Estimating Ancestral Locations and Spread
+### Estimating Ancestral Locations and Spread {.page_break_before}
 
 Just as molecular clock approaches require _temporal signal_, phylogeographic inference strongly depends on the degree of _geographic signal_ . To assess this in _Y. pestis_, we tested whether phylogenetic relationships correlate with sampling locations. For every genome, we identified the closest genetic relative in the maximum-likelihood phylogeny. We then recorded whether these genomes were collected from the same location at three resolutions: (1) continent, (2) country, and (3) province. As a statistical measure of geographic structure, we report the percent of genomes that have a closest relative sampled from the same location. 
 
@@ -221,82 +214,23 @@ The majority of _Y. pestis_ populations (6/12) were localized to a single contin
 
 The factors governing these patterns are wide-ranging, but primarily concern mobility. One aspect is the difference in host composition between populations. We observed a correlation (R<sup>2</sup>=0.43) between the degree of geographic structure and the percentage of samples collected from a non-human host (Figure @fig:geo_structure_host). Populations that were primarily sampled from rodents and arthropod vectors had more geographic structure than those found exclusively in humans. This is epidemiologically consistent with the greater mobility of human populations, which disrupt geographic clustering via long-distance spread.
 
-![A linear regression of host-associations on the degree of geographic structure at the country level.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/ce6f2be/main/iqtree_stats/all/chromosome/full/filter5/geo_structure_host.png){#fig:geo_structure_host width=100%}
+![A linear regression of host-associations on the degree of geographic structure at the country level.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/ce6f2be/main/iqtree_stats/all/chromosome/full/filter5/geo_structure_host.png){#fig:geo_structure_host width=60%}
 
-Another factor is the disparity in location sizes across the globe. For example, the country of China is approximately the same size (0.94) as the entire continent of Europe [@MapFightChinaVs]. This would explain why, at the country level, plague populations in Asia are sampled over fewer locations and have stronger geographic structure. An informative comparison is _Antiqua_ (3.ANT) with 100% structure across China and Mongolia, and the Second Pandemic (1.PRE) with 55% structure across 11 European countries. Overall, smaller locations tend to have less geographic structure, which can lead to greater uncertainty in inferring past migrations. This is further confounded by differences in substitution rates relative to migration rates. In populations that spread faster (locations/year) than they evolve (substitutions/year), geographic structure will decrease as identical isolates are found in different locations. Pandemic lineages such as the Second Pandemic (1.PRE) exemplify this, as clonal isolates have been sampled across multiple countries [@cite], leading to uncertainty regarding the routes of spread.
+Another factor is the difference in substitution rates relative to migration rates. In populations that spread faster (locations/year) than they evolve (substitutions/year), geographic structure will decrease as identical isolates are found in different locations. Pandemic lineages such as the Second Pandemic (1.PRE) exemplify this, as clonal isolates have been sampled across multiple countries [@cite], leading to uncertainty regarding the routes of spread [@cite]. Related to this issue, is the disparity in location sizes across the globe. For example, the country of China is approximately the same size (0.94) as the entire continent of Europe [@MapFightChinaVs]. This would explain why, at the country level, plague populations in Asia are sampled over fewer locations and have stronger geographic structure. An informative comparison is _Antiqua_ (3.ANT) with 100% structure across China and Mongolia, and the Second Pandemic (1.PRE) with 55% structure across 11 European countries. Plague populations that are distributed over multiple, smaller locations tend to have less geographic structure which can lead to greater uncertainty when inferring past migrations.
 
-Taken together, these observations suggests that phylogeographic inference is best suited to populations that are slow-spreading and rapidly-evolving. This poses a significant problem, as _Y. pestis_ is notorious for being a rapidly-spreading [@cite] and slow-evolving [@cite] pathogen. To test this hypothesis, and how it impacts our ability to infer where _Y. pestis_ appeared in the past, we performed ancestral state reconstruction. We independently fit three discrete mugration models [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] to the maximum-likelihood phylogeny using the sampling locations by: (1) continent, (2) country, and (3) province. For each internal node, we extracted the ancestral location with the highest likelihood given the data. To explore whether genomic evidence can 
-
-We compare and contrast the geographic origins and spread of the Third Pandemic (19<sup>th</sup> - 20<sup>th</sup> Century CE) with the Second Pandemic (14<sup>th</sup> - 18th</sup>th</sup> Century CE).
+Taken together, these observations suggests that phylogeographic inference is best suited to populations that are slow-spreading and/or rapidly-evolving. This poses a significant problem, as _Y. pestis_ is notorious for being a rapidly-spreading [@cite] and slow-evolving [@cite] pathogen. To test this hypothesis, and how it impacts our ability to infer where _Y. pestis_ appeared in the past, we performed ancestral state reconstruction. We independently fit three discrete mugration models [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic] to the maximum-likelihood phylogeny using the sampling locations by: (1) continent, (2) country, and (3) province. For each internal node, we extracted the ancestral location with the highest likelihood given the data. To explore whether genomic evidence can provide meaningful estimates of geographic origins and spread, we compare and contrast to case studies: (i) the Third Pandemic, and (ii) the Second Pandemic
 
 #### (i) Third Pandemic {.page_break_before}
 
-The re-emergence of plague during the Third Pandemic (19<sup>th</sup> - 20<sup>th</sup> Century CE) was closely monitored by contemporary researchers [@cantlie1897SpreadPlague; @minakata1899PlagueChina]. As a result, the geographic origins are well-documented and firmly established. Highly localized plague cases first appeared in Yunnan, China (1772-1800) which later spread throughout the province (1800-1880) [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. Plague then traveled eastwards to the coast (1880-1900), where it dispersed out of Hong Kong (1894) and later appeared on all continents except Antarctica (1899-1900) [@cite]. The Third Pandemic thus serves as a control for our phylogeographic analysis, as the 'true' origins and patterns of spread are known. 
+The re-emergence of plague during the Third Pandemic (19<sup>th</sup> - 20<sup>th</sup> Century CE) was closely monitored by contemporary researchers [@cantlie1897SpreadPlague; @minakata1899PlagueChina]. As a result, the geographic origins are well-documented and firmly established. Highly localized plague cases first appeared in Yunnan, China (1772-1800) which later spread throughout the province (1800-1880) [@xu2014WetClimateTransportation; @xu2019HistoricalGenomicData]. Plague then traveled eastwards to the coast (1880-1900), where it dispersed globally (1894-1901) [@echenberg2002PestisReduxInitial]. The Third Pandemic thus serves as a control for our phylogeographic analysis, as the 'true' origins and patterns of spread are known. 
 
-We estimate that the Third Pandemic (1.ORI) diverged from an ancestral _Intermedium_ (1.IN) population located in Yunnan, China (likelihood: 1.00) (Figure @fig:map_third_pandemic). This population appeared to persist in place, as the MRCA was also estimated to be in Yunnan (likelihood: 0.99). Plague then dispersed globally via a polytomy, after which new lineages appeared in North America (likelihood: 0.99), South America (likelihood: 1.00), and Africa (likelihood: 1.00). However, we could not confidently infer any migrations during this initial dispersal, due to the unresolved branching structure. The few migrations that could be reconstructed after this event included endemic cycling in Southeast Asia (China, Myanmar) and North America (USA), which later led to a re-introduction of plague into Peru [@vogler2019SingleIntroductionYersinia]. 
+We estimate that the Third Pandemic (1.ORI) diverged from an ancestral population located in Yunnan, China (likelihood: 1.00) (SI Figure @fig:divergence_stats). This population appeared to persist in place, as we also estimate the MRCA of the Third Pandemic to be in Yunnan (likelihood: 0.99) (SI Figure @fig:mrca_stats). Plague then diversified rapidly via a polytomy, after which new lineages appeared in North America (likelihood: 0.99), South America (likelihood: 1.00), and Africa (likelihood: 1.00). However, we could not confidently infer any migrations during this initial dispersal, due to the unresolved branching structure. The few migrations that could be reconstructed all occurred after this radiation, and included endemic cycling in Southeast Asia (China, Myanmar), North America (USA), and a re-introduction of plague into South America (Peru) [@vogler2019SingleIntroductionYersinia]. 
 
-While the genetic evidence is generally consistent with the historical narrative, our phylogeographic reconstruction reveals several issues. The first is geographic sampling bias, in which the continent of Africa has only 5 representative genomes and Europe and Australia have none. 
+The strength and specificity of the estimated origin of the Third Pandemic (1.ORI) is remarkable, as the ancestral divergence could not be confidently located in any other population (SI FIgure @fig:divergence_stats). This may be because the Third Pandemic (1.ORI) is a direct descendant of the _Intermedium_ (1.IN) population, which has strong geographic structure at the province level (87%). In addition, isolates from Yunnan fall both basal to, and within, the known diversity of the Third Pandemic (1.ORI) (SI Figure @fig:divtree_1.IN_1.ORI_province). This combination results in unambiguous evidence of the geographic origin, which is congruent with the historical narrative. 
 
-
-
-during the Third Pandemic. The result is that we can't say much about the roles of persistence vs. reintroduction of plague in these regions... long-term history of plague. The second issue is host sampling bias. The estimated origin of the Third Pandemic, Yunnan, China, has only been sampled in rodent and arthopod vectors. If only human isolates were used, this reservoir would go undetected...
+We note that this precise geographic estimate was only possible because non-human hosts were sampled. Yunnan, China is solely represented by rodent and arthropod samples (N=18) and therefore this reservoir would be entirely invisible if only human isolates were used. We caution, as others have before [@bramanti2021AssessingOriginsEuropean], that the existence and location of rodent reservoirs should not be inferred from phylogenetic evidence alone. Instead, new modeling approaches have been developed [@duchene2019InferringInfectiousDisease; @kalkauskas2021SamplingBiasModel] that leverage multi-disciplinary sources to correct sampling biases present in genomic datasets.
 
 ![Geographic origins and spread of the Third Pandemic (1.ORI) and the _Intermedium_ (1.IN) population. Ancestral locations were estimated by fitting a discrete mugration model to the maximum-likelihood phylogeny using sampling locations by province. Arrows reflect inferred migrations from one location to another but do not represent routes of spread. Grey arrows indicate the migration was poorly supported by the data, with an ancestral likelihood less than 0.95 and/or a branch support bootstrap less than 95%.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fc9e7aa/main/auspice/all/chromosome/full/filter5/ml/map_third_pandemic.png){#fig:map_third_pandemic width=70%}
-
-However, this reservoir would go entirely undetected if only human isolates were used. Despite long-standing evidence of human plague in Yunnan [@shi2018ReemergenceHumanPlague], no genomic evidence from humans is available. 
-
-This issue of host-based sampling bias is documented in other zoonoses, incomplete sampling [@faria2018GenomicEpidemiologicalMonitoring], [@volz2013InferringSourceTransmission].
-
-The limitations of Leverage multi-disciplinary sources.
-Sampling bias can be corrected for, by incorporating other evidence.
-[@kalkauskas2021SamplingBiasModel; duchene2019InferringInfectiousDisease]
-Joint statistical analysis
-Rather than historical evidence only being incorporated during the final interpration.
-
-
-##### Origins
-
-
-- The strength and specificity of this estimate are remarkable, as the ancestral divergence could not be confidently located in any other population (SI FIgure @fig:divergence_stats). We attribute this to two factors. Firstly, Yunnan is a persistent reservoir, with active plague documented before, during, and after the Third Pandemic [@shi2018ReemergenceHumanPlague]. This stability
-- 
-- 
-- with active plague before, during, and after the Third Pandemic
-- 
--   uniqueness can largely be attributed to genomic surveillance in Yunnan, which is one the most intensively sampled rodent reservoirs (N=18) in this study. Furthermore 
-
-- Yunnan, China is a persistent plague foci, one of the most intensively sampled rodent reservoirs  (N=18).   
-- 
-- rodent reservoirs of plague, and has 
-- 
-- in, as we also estimate the MRCA of 1.ORI to be located in Yunnan (0.99).
-
-
-- We attribute this high likelihood to the strong geographic structure (87%) in the ancestral _Intermedium_ (1.IN) population. In particular, _Intermedium_ rodent samples form distinct monophyletic clades according to the province from which they were collected (SI Figure @fig:divtree_1.IN_province). In contrast, the human isolates disrupt this structure and are linked to nodes with lower likelihoods.
-
-This congruence suggests the possibility for phylogeographic inference to provide informative estimates in _Y. pestis_. However, it also reveals several issues concerning sampling bias, with regards to the locations and hosts sampled.
-
-- Multiple introductions into South America [@vogler2019SingleIntroductionYersinia]
-
-##### Spread
-
-
-However, it also reveals several issues concerning sampling bias, with regards to the locations and hosts sampled.
-
-
-[@kalkauskas2021SamplingBiasModel]
-
-Following this, _Y. pestis_ dispersed globally, although we were unable to reconstruct the "routes" of this initial spread due to an unresolved polytomy (Figure @fig:divtree_1.IN_1.ORI_province). Following this radiation, we estimate that plague arrived in a single introduction to North America while all other continents showed evidence of multiple, independent introductions. However, no genomic data was available from Europe or Australia and we were unable to estimate the relative contributions of persistence and re-introductions for these regions
-
-
-- Reveals sampling bias issue
-
-
-This congruence suggests the possibility for phylogeographic inference to provide informative estimates in _Y. pestis_. However, it also reveals several issues concerning sampling bias, with regards to the locations and hosts sampled.
-
-
-The second issue is geographic sampling bias. The geographic origin of the Third Pandemic (Yunnan) is solely represented by rodent samples and would otherwise go undetected. We found no evidence to suggest that the locations of rodent reservoirs could be accurately inferred from human samples alone.
-This has direct bearing on studies seeking to identify the locations of ancient pandemics [@bramanti2021AssessingOriginsEuropean]. In our study, we found no evidence to suggest that rodent reservoirs could be. Therefore, sampling strategies that account for the multi-host ecology of _Y. pestis_ are critical for robust phylogeographic inference.
-
 
 <div style="page-break-after: always;"></div>
 
@@ -305,7 +239,9 @@ This has direct bearing on studies seeking to identify the locations of ancient 
 
 ![Ancestral locations and spread of the Second Pandemic (1.PRE), the population (0.ANT) and the descedant population _Intermedium_ (1.IN). Colored arrows represent migration events inferred with high likelihoods (>=95%) while grey arrows represent migrations events with low likelihoods.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fc9e7aa/main/auspice/all/chromosome/full/filter5/ml/map_second_pandemic.png){#fig:map_second_pandemic width=90%}
 
-The origins and spread of plague during the Second Pandemic are heavily debated.
+Compared to the well-established Third Pandemic (1.ORI), the origins and spread of plague during the Second Pandemic are more heavily debated. Historians have identified early accounts of plague appearing in 1346 in the lands of the Golden Horde, encompassing Central Asia and Eastern Europe [@benedictow2004BlackDeath13461353].
+
+heavily debated.
 
 Rat-Flea model:
 	- Distant rodent reservoir in Central Asia [@schmid2015ClimatedrivenIntroductionBlack]
