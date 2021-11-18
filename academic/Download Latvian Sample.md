@@ -1,6 +1,6 @@
 ---
 project: [[pla Depletion]]
-due: 2021-12-15
+due: 2022-01-01
 people:
 tags: 🧨
 status: priority

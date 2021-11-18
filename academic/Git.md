@@ -47,8 +47,21 @@ done
 
 - git diff-index might not be the way to go for untracked changes.
 
+## Recover
 
-## Search Git history for content or string.
+```bash
+git checkout 4e178655430 -- *NML*
+```
+
+## Search Git history
+
+### File
+
+```bash
+git log --all --full-history -- "**/*NML*
+```
+
+### Content or String
 
 ```bash
 file='Plague Phylodynamics and Phylogeography Paper.md'
