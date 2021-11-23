@@ -13,6 +13,8 @@ time: 13:00
 
 ## 2021-11-22
 
+- Email Sam about [[Pipeline Update v0.1.2]]
+
 1. Install [[Aspera]]:
 
 	```bash

@@ -46,7 +46,7 @@ I have updated the legacy pipeline to a new version: v0.1.2. Please note that th
 
 1. **Publicly Available Source Code**:  The source code for the legacy pipeline is now available in a [Github 	Repository](https://github.com/ktmeaton/legacy-pipeline) with some preliminary documentation. If your scholarly writing, you can cite Ana like so:
 
-	> Duggan, A. T. (2021). The legacy pipeline for the McMaster Ancient DNA Centre. (v0.1.2) [Perl]. [https://github.com/ktmeaton/legacy-pipeline](https://github.com/ktmeaton/legacy-pipeline)
+	> Duggan, A. T., Grenaud, G. (2021). The legacy pipeline for the McMaster Ancient DNA Centre. (v0.1.2) [Perl]. [https://github.com/ktmeaton/legacy-pipeline](https://github.com/ktmeaton/legacy-pipeline)
 
 1. **User's Manual**:
 The GitHub repository also contains a draft of a [user's manual](https://github.com/ktmeaton/legacy-pipeline/blob/master/manual.pdf).
