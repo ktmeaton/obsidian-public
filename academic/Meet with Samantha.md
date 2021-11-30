@@ -2,8 +2,8 @@
 title:
   - Meet with Samantha
 people: null
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-11-22
 time: 13:00

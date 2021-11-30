@@ -25,7 +25,12 @@ tags:
 1. Create a [[conda]] environment.
 
 	```
-	mamba create -n pandoc -y python=3.7 pandoc nodejs click
+	mamba create -n pandoc -y -c conda-forge \
+	  python=3.7 \
+	  pandoc=2.16.1 \
+	  nodejs=17.1.0 \
+	  click=8.0.3 \
+	  pandoc-crossref=0.3.12.1
 	conda activate pandoc
 	```
 
@@ -50,13 +55,14 @@ mamba install -c conda-forge pandoc-crossref
 
 - First install [[Cabal]]:
 	```bash
-	sudo apt-get install -y cabal-install
-	cabal update
+	sudo apt install -y cabal-install
+	cabal new-update
 	sudo apt install zlibc zlib1g-dev
-	cabal install pandoc-include
+	cabal new-install --dry pandoc-include
 	```
 
-Before [[zlib]] is installed, it generates the error [[Failed to install digest-0.0.1.2]]. Installing [[pandoc-include]] downloads an extraordinary number of packages.
+- Before [[zlib]] is installed, it generates the error [[Failed to install digest-0.0.1.2]]. 
+- Installing [[pandoc-include]] downloads an extraordinary number of packages.
 
 ## Citations
 
@@ -64,7 +70,7 @@ Before [[zlib]] is installed, it generates the error [[Failed to install digest-
 npm install -g pandoc-doi2bib
 ```
 
-Using a bibliography as a relative path causes the error [[(node:1331) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined]]
+- Using a bibliography as a relative path causes the error [[(node:1331) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined]]
 
 ### [[Citation Style]]
 

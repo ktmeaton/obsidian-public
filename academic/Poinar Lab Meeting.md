@@ -2,8 +2,8 @@
 title:
   - Poinar Lab Meeting
 people: null
-tags: 🧨 
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-11-16
 time: 11:00

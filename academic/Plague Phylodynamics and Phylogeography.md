@@ -21,7 +21,7 @@ title: Plague Phylodynamics and Phylogeography
 
 ## Paper
 
-![[Eaton et al. 2021 Plagued by a cryptic clock]]
+![[Eaton_et_al._2021_Plagued_by_a_cryptic_clock]]
 
 ## Figures
 

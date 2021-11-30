@@ -2,8 +2,7 @@
 project:
 due: 2021-11-29
 people:
-tags: 🧨
-status: priority
+tags: ✨
 title: Web Design Job
 type: [[Task]]
 ---
