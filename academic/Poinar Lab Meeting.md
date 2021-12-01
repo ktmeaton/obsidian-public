@@ -11,6 +11,14 @@ time: 11:00
 
 # Poinar Lab Meeting
 
+## [[2021-11-30]]
+
+### [[Alisiya Petrushkevich]]
+
+### [[Marie-Helene B Hardy]]
+
+### [[Jessica Hider]]
+
 ## [[2021-11-16]]
 
 ### [[George Long|Sam Long]]

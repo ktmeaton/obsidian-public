@@ -14,6 +14,62 @@ authors:
         "[[Department of Anthropology]], [[McMaster University]]",
         "[[McMaster Ancient DNA Center]]",
       ]
+  - name: [[Jennifer Klunk]]
+    orcid: 0000-0002-6521-8516
+    affiliations: [
+      "[[Daicel Arbor Biosciences]]",
+      "[[McMaster Ancient DNA Center]]",
+    ]
+  - name: [[Julia Gamble]]
+    orcid: 0000-0001-7486-757X
+    affiliations: [
+      "[[University of Manitoba]]"
+    ]
+  - name: [[Jesper Boldsen]]
+    orcid: 0000-0002-2850-0934
+    affiliations: [
+      "[[University of Southern Denmark]], [[ADBOU]]"
+    ]
+  - name: [[Ann Carmichael]]
+    affiliations: [ "Department of History, [[Indiana University Bloomington]]" ]
+  - name: [[Nükhet Varlık]]
+    orcid: 0000-0001-6870-5945
+    affiliations: [ "Department of History, [[Rutgers University-Newark ]]" ]
+  - name: [[Sebastian Duchene]]
+    orcid: 0000-0002-2863-0907
+    affiliations:
+      [
+        "[[The Peter Doherty Institute for Infection and Immunity]], [[University of Melbourne]]"
+      ]
+  - name: [[Leo Featherstone]]
+    orcid: 0000-0002-8878-1758
+    affiliations:
+      [
+        "[[The Peter Doherty Institute for Infection and Immunity]], [[University of Melbourne]]"
+      ]
+  - name: Vaughan Grimes 
+    orcid: 0000-0002-2177-3147
+    affiliations: [
+      "[[Memorial University]]"
+    ]
+  - name: [[Brian Golding]]
+    orcid: 0000-0002-7575-0282
+    affiliations:
+      [
+        "[[Department of Biology]], [[McMaster University]]"
+      ]
+  - name: [[Sharon DeWitte]]
+    orcid: 0000-0003-0754-8485 
+    affiliations: [
+        [[University of South Carolina]]
+    ]
+  - name: [[Hendrik Poinar]]
+    orcid: 0000-0002-0314-4160
+    affiliations:
+      [
+        "[[McMaster Ancient DNA Center]]",
+        "[[Department of Anthropology]], [[McMaster University]]"
+      ]	  
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: academic/[[Plague Denmark Paper]]
@@ -23,10 +79,10 @@ title: Plague in Denmark (1000-1800)
 subtitle: A longitudinal study of _Yersinia pestis_
 type: [[Task]]
 compile-manubot: conda activate manubot && pandoc/manubot.sh Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md pandoc/bib/library.json ../../rootstock
-url: https://ktmeaton.github.io/obsidian-public/academic/Plague%20Denmark%20Paper.html
+url: https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plague_in_Denmark_1000-1800.html
 ---
 
-## Abstract
+## Abstract {.page_break_before}
 
 The epidemiology of plague in the past is highly controversial, owing to the scarcity and ambiguity of historical evidence. A frequent source of debate is the re-emergence and continuity of plague in Europe during the 14<sup>th</sup> to 18<sup>th</sup> centuries CE. Scandinavia is particularly underrepresented in the historical archives, despite having a uniquely long history of plague (5000 years) as revealed through ancient DNA analysis. To better understand the historical epidemiology of plague in this region, we performed in-depth (N=298), longitudinal screening (800 years) for the plague bacterium, _Yersinia pestis_, across 13 archaeological sites in Denmark. We captured the emergence and continuity of _Y. pestis_ in this region over a period of 400 years (14<sup>th</sup> - 17<sup>th</sup> century CE), for which the plague-positivity rate was 8.3% (3.3% - 14.3% by site). These results deepen the epidemiological link between the plague bacterium, _Y. pestis_, and the unknown _pestilence_ that afflicted medieval and early modern Europe. Furthermore, this study paves the way for the next generation of historical disease research, in which hypotheses concerning mortality can be tested using population-scale, genomic evidence from ancient pathogens.
 
@@ -41,9 +97,6 @@ To evaluate the possibility of undocumented plague persistence, we screened for 
 ## Results and Discussion
 
 We detected _Y. pestis_ in 7 archaeological sites using PCR assays and targeted sequencing (Figure 1A). Across the 7 sites, 8.3% of individuals (13/157) tested positive for _Y. pestis_, ranging from 3.3% at Ribe Lindegärden to 14.3% at Hågerup. This positivity rate could be considered an underestimate of the 'true' prevalence of _Y. pestis_ in Danish populations, due to variable DNA preservation. On the other hand, it may be an overestimate due to the osteological paradox [@wood1992OsteologicalParadoxProblems], in which mortality is selective and the deceased are not representative of the living population. While the exact extrapolation is unclear, our _Y. pestis_ positivity rate (3.3 - 14.3%) does align with mortality estimates (5 - 20%) during the later epidemics of the medieval and early modern period [@dewitte2017BlackDeathBodies; @slavin2021OutWestFormation].
-
-> Citation recommendations for plague mortality ranges?
-
 
 Of the 13 plague-positive individuals, 9 had sufficient sequencing depth (>3X) of the _Y. pestis_ chromosome for phylogenetic analysis (Figure 2C). To estimate a time-scaled phylogeny and dates for these 9 samples, we fit a relaxed molecular clock to an alignment of _Y. pestis_ genomes which included 40 other isolates (Figure 1B). We observed that all Danish strains clustered strongly (posterior: 1.0) within the known diversity of medieval and early modern _Y. pestis_ in Europe (Figure 3). We found no evidence to suggest that Neolithic lineages of _Y. pestis_ in Scandinavia (5000 YBP) [@rascovan2019EmergenceSpreadBasal] left descendants in medieval Danish populations. If long-term persistence of _Y. pestis_ did occur in this region, it fell outside the geographic and temporal scope of this study.
 
@@ -65,11 +118,22 @@ This study marks the first population-level analysis of ancient _Y. pestis_, whe
 detected _Y. pestis_ in 8.3% of Danish individuals. Our phylogenetic analysis was highly congruent with the sparse textual evidence of _pestilence_ in Denmark, with regards to the timing of outbreaks and geographic ties to the Baltic region. We also provide novel evidence of plague exposure among Danish populations, such as the site of Tirup, where there is no surviving historical evidence. These results are of importance for both researchers of plague and other infectious diseases, as they (1) illuminate undocumented pathogens in the historical record, (2) reveal new connections between our past and present experience of plague, (3) broaden our understanding of the epidemiology of re-emerging diseases.
 
 
-<div style="page-break-after: always;"></div>
+![Geographic distribution of 298 archaeological samples used in this study. **A**. Map of 6 municipalities sampled in Denmark encompassing 13 archaeological sites. Site labels indicate: Archaeological Site (Earliest Date Sampled - Latest Date Sampled) _Y. pestis_ positive individuals / total individuals. Plague positive sites are bolded. **B**. Map of 49 _Y. pestis_ genomes used for phylogenetic analysis. The sampling locations were standardized to the centroid of the associated province/state. Colors indicate the sampling dates as estimated from the Bayesian molecular clock analysis. Numbered labels indicate the number of genomes sampled from each location.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map width=90%}
 
-![](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/72ad0c6/denmark/auspice/all/chromosome/full/filter30/beast/timetree_map_timeline.png)
 
-<div style="page-break-after: always;"></div>
+::: columns
+
+<!--Left-->
+:::: column
+![Temporal distribution of archaeological samples used in this study. **A**. Distribution of skeletal date ranges for all individuals (N=298) using a bin width of 50 years. **B**. The distribution of _Y. pestis_ tip-dates for plague-positive individuals (N=9) according to the 95% highest posterior density (HPD) from the Bayesian molecular clock analysis. Asterisks indicate the phylogenetic placement had strong posterior support (>= 0.95). **C**. The mean sequencing depth of the _Y. pestis_ chromosome.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timeline.png){#fig:1.PRE_timeline width=70%}
+::::
+
+<!--Right-->
+:::: column
+![Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes. Asterisks indicate clades with strong posterior support (>=0.95). Colors indicate the mean sampling dates as estimated from the Bayesian molecular clock analysis. Bars indicate tip-dating uncertainty, as represented by the 95% highest posterior density (HPD) interval.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree width=80%}
+::::
+
+:::
 
 ## Materials and Methods {.page_break_before}
 

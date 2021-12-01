@@ -14,6 +14,10 @@ time: 15:00
 
 # Meet with Hendrik
 
+## [[2021-12-02]]
+
+- [[Complete SGS Petition]]
+
 ## [[2021-10-28]]
 
 ### Notes
