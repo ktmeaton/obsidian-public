@@ -73,8 +73,8 @@ git checkout 13512b8 -- $file;
 ```
 
 ```bash
-file='Eaton et al. 2021 Plagued by a cryptic clock.md';
-string='Subtrees of the maximum-likelihood phylogeny'
+file='Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md';
+string='position'
 latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
-git log -S \"$string\" --follow -p $file;
+git log --follow -S \"$string\" --follow -p $file;
 ```

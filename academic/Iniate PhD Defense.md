@@ -1,6 +1,6 @@
 ---
 project: [[PhD Dissertation]]
-due: 2021-12-01
+due: 2021-12-15
 people:
 tags: 🧨
 status: priority

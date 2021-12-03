@@ -5,6 +5,17 @@
 INPUT=$1
 BIB=$2
 ROOTSTOCK_DIR="${3:-rootstock}"
+CSL="${4:-${ROOTSTOCK_DIR}/build/assets/style.csl}"
+
+# Backup default rootstock csl
+DEFAULT_CSL=${ROOTSTOCK_DIR}/build/assets/style.csl
+cp $DEFAULT_CSL ${DEFAULT_CSL}.bak
+
+# Copy over custom csl
+if [[ $CSL != $DEFAULT_CSL ]]; then
+  cp $CSL $DEFAULT_CSL
+fi
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Convert Wikilinks
@@ -47,6 +58,9 @@ cd ${ROOTSTOCK_DIR};
 # Build manuscripts
 echo "Building manuscript..."
 build/build.sh
+
+# Restore default csl
+mv build/assets/style.csl.bak build/assets/style.csl
 
 #Cleanup
 cp -f output/manuscript.html ${cwd}/"${INPUT%.*}".html

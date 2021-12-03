@@ -16,7 +16,16 @@ time: 15:00
 
 ## [[2021-12-02]]
 
-- [[Complete SGS Petition]]
+1. [[Consolidate Paper 2 Edits\|Global plague edits]] | Dec 2
+	- _rat-flea_ and _human-human_ model intro
+	- Fig 2C confusion
+	- phylodynamic threshold
+	- HPD don't overlap with historical dates
+	- plague unrelated to influenza and cholera
+1. [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock_cover_letter.md\|Global plague cover letter]] | Dec 3	
+2. [[Submit SGS Petition\|SGS registration petition]] | Dec 3
+3. [[Submit PhD Dissertation]] | Dec 7
+
 
 ## [[2021-10-28]]
 

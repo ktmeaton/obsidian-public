@@ -7,7 +7,7 @@
 |:----------------:|:--------------------------------:|:------:|
 |     July 16      |       [[Submit Chapter 3 Draft]]       |   ⬜   |
 |     July 30      |       [[Submit Chapter 2 Draft]]       |   ⬜   |
-|      Aug 13      |     [[Submit Dissertation]]      |   ⬜   |
+|      Aug 13      |     [[Submit PhD Dissertation]]      |   ⬜   |
 |      Aug 30      | [[Initiate Accelerated Defense]] |   ⬜   |
 |     Sept 24      |           [[Iniate PhD Defense]]            |   ⬜   |
 | Sept 27 - Oct 14 |          [[Revisions]]           |   ⬜   |

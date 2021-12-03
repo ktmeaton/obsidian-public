@@ -30,8 +30,11 @@ tags:
 	  pandoc=2.16.1 \
 	  nodejs=17.1.0 \
 	  click=8.0.3 \
-	  pandoc-crossref=0.3.12.1
+	  pandoc-crossref=0.3.12.1 \
+	  weasyprint
 	conda activate pandoc
+	pip install pandoc-fignos pandoc-eqnos pandoc-tablenos
+	
 	```
 
 ## Links
