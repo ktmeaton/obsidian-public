@@ -1,6 +1,6 @@
 
 ---
-title: 'NCBImeta: efficient and comprehensive metadata retrieval from NCBI databases.'
+title: "NCBImeta: efficient and comprehensive metadata retrieval from NCBI databases."
 project: [[NCBImeta]]
 tags:
   - Python
@@ -9,16 +9,19 @@ tags:
   - metadata
   - NCBI
   - SRA
+date: 3 February 2020
 authors:
   - name: [[Katherine Eaton]]
     github: ktmeaton
     orcid: 0000-0001-6862-7756
     affiliations: [
-      "Department of Anthropology, [[McMaster University]]",
-      "[[McMaster Ancient DNA Center]]"
+      "Department of Anthropology, McMaster University"
     ]
-date: 3 February 2020
-compile-manubot: "conda activate manubot && pandoc/manubot.sh Eaton_2020_NCBImeta.md pandoc/bib/library.json ../../rootstock"
+compile-manubot: |
+  conda activate manubot \
+    && pandoc/manubot.sh Eaton_2020_NCBImeta.md \
+    pandoc/bib/library.json \
+    ../../rootstock
 lang: en-US
 repo: ktmeaton/obsidian-public
 numberSections: False
@@ -26,7 +29,7 @@ autoSectionLabels: True
 sectionsDepth: 3
 tblPrefix: Table
 figPrefix: Figure
-secPrefix: Section	
+secPrefix: Section
 ---
 
 # Summary
@@ -101,4 +104,6 @@ NCBImeta is a command-line application written in Python 3 that is supported on 
 I would like to thank Dr. Hendrik Poinar and Dr. Brian Golding for their guidance and support on this project, as well as for insightful conversations regarding biological metadata, the architecture of NCBI, and software deployment. Thank you to Dr. Andrea Zeffiro, Dr. John Fink, Dr. Matthew Davis, and Dr. Amanda Montague for valuable discussions regarding APIs, digital project management, and software publishing. Thank you to all past and present members of the McMaster Ancient DNA Centre and the Golding Lab.
 This work was supported by the MacDATA Institute (McMaster University, Canada) and the Social Sciences and Humanities Research Council of Canada (\#20008499).
 
-# References  {.page_break_before}
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# References

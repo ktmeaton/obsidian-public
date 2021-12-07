@@ -22,7 +22,7 @@ compile-pandoc: |
   --filter pandoc-crossref \
   --citeproc \
   && rm SI_Figure_Numbering_convert.md
-  
+bibliography: pandoc/bib/library.bib  
 ---
 
 ## [[Introduction]]
@@ -31,15 +31,12 @@ This is `<a>html</a>`{=html}
 
 In this paragraph I am discussing Figure @fig:fig1 and Figure @fig:fig2.
 
-Also let's cite myself [@eaton2020NCBImetaEfficientComprehensive].
+Also let's cite myself [@eaton2020NCBImetaEfficientComprehensive] and [@doi:10.1128/CMR.10.1.35].
 
 ![Caption](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e0fa46716/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_province.png){#fig:fig1 width=40%}
 
-## [[SI]]
-
-\renewcommand{\appendixname}{Supplementary Material}
-\renewcommand{\thefigure}{S\arabic{figure}} \setcounter{figure}{0}
-\renewcommand{\thetable}{S\arabic{table}} \setcounter{table}{0}
-
+## SI
 
 ![Caption](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e0fa46716/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_province.png){#fig:fig2 width=40% tag="S1"}
+
+## References
