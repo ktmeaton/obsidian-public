@@ -35,6 +35,7 @@ academic-declaration-list:
   - "Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself."
 bibliography: pandoc/bib/library.bib
 numberSections: true
+lof: true
 toc-depth: 3
 sectionsDepth: 4
 reference-section-title: References
@@ -50,6 +51,8 @@ compile-pandoc: |
     -o Eaton_2021_PhD_Dissertation.pdf \
     --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex \
     --lua-filter pandoc/lua-filters/include-files/include-files.lua \
+    --lua-filter pandoc/lua-filters/short-captions/short-captions.lua \
+    --lua-filter pandoc/lua-filters/table-short-captions/table-short-captions.lua \
     --filter pandoc-crossref \
     --citeproc \
     --csl pandoc/csl/apa.csl \
@@ -63,7 +66,7 @@ tblPrefix: "Table"
 figPrefix: "Figure"
 ---
 
-# Introduction {#introduction}
+# Introduction
 
 In 2011, I learned about a researcher named Dr. Hendrik Poinar. His team had just published a seminal paper, in which they identified the causative agent of the infamous Black Death [@bos2011DraftGenomeYersinia]. I discovered that this morbid term describes a pandemic that devastated the world in the 14^th^ century, with unprecedented mortality and spread. In less than 10 years (1346-1353) the Black Death swept across Afro-Eurasia, killing 50% of the population [@benedictow2004BlackDeath13461353]. Outbreaks of this new and mysterious disease, often referred to as _the Plague_, reoccurred every 10 years on average [@christensen2003ThesePerilousTimes]. This epidemic cycling continued for 500 long years in Europe, but in Western Asia, the disease never truly disappeared [@varlik2020PlagueThatNever]. The 10-year window of the Black Death alone has an estimated global mortality of 200 million people, making it the most fatal pandemic in human history [@sampath2021PandemicsThroughoutHistory], and also one of the most mysterious.
 
@@ -109,13 +112,11 @@ Katherine Eaton^1,2^  \
 
 \setlength{\parindent}{2em}
 
-<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ```{.include shift-heading-level-by=1}
 [[Eaton_2020_NCBImeta.md]]
 ```
--->
 
 # Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_
 
@@ -143,13 +144,11 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
-<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ```{.include}
 [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
 ```
--->
 
 # Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
@@ -160,31 +159,32 @@ _The Proceedings of the National Academy of Sciences_  \
 Licensed under a Creative Commons Attribution 4.0 International License  \
 &nbsp;  
 
-Katherine Eaton*^1,2^, Ravneet Sidhu*^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmichael^4^, Nükhet Varlık^5^, G. Brian Golding^6^, Hendrik N. Poinar^1,2,8,9,10^  \
+Katherine Eaton*^1,2^, Ravneet Sidhu*^1,2^, Jennifer Klunk^1,3^, Julia Gamble^4^, Jesper Boldsen^5^, Ann G. Carmichael^6^, Nükhet Varlık^7^,  Sebastian Duchene^8^, Leo Featherstone^8^, Vaughan Grimes^9^, G. Brian Golding^10^, Sharon DeWitte^11^, Hendrik N. Poinar^1,2,12,13,14^ \
 &nbsp;  
 
 \*Contributed equally.
 
 ^1^McMaster Ancient DNA Centre, McMaster University, Hamilton, Canada.  \
 ^2^Department of Anthropology, McMaster University, Hamilton, Canada.  \
-^3^The Peter Doherty Institute for Infection and Immunity, University of Melbourne, Melbourne, Australia.  \
-^4^Department of History, Indiana University Bloomington, Bloomington, USA.  \
-^5^Department of History, Rutgers University-Newark, Newark, USA.  \
-^6^Department of Biology, McMaster University, Hamilton, Canada.  \
-^8^Department of Biochemistry, McMaster University, Hamilton, Canada.  \
-^9^Michael G. DeGroote Institute of Infectious Disease Research, McMaster University, Hamilton, Canada.  \
-^10^Canadian Institute for Advanced Research, Toronto, Canada.  \
+^3^Daicel Arbor Biosciences, Ann Arbor, USA.  \
+^4^Department of Anthropology, University of Manitoba, Winnipeg, Canada. \
+^5^Department of Forensic Medicine, Unit of Anthropology (ADBOU), University of Southern Denmark, Odense, Denmark. \
+^6^Department of History, Indiana University Bloomington, Bloomington, USA.  \
+^7^Department of History, Rutgers University-Newark, Newark, USA.  \
+^8^The Peter Doherty Institute for Infection and Immunity, University of Melbourne, Melbourne, Australia.  \
+^9^Department of Archaeology, Memorial University of Newfoundland, St. Johns, Canada. \
+^10^Department of Biology, McMaster University, Hamilton, Canada.  \
+^11^Department of Anthropology, University of South Carolina, Columbia, USA. \
+^12^Department of Biochemistry, McMaster University, Hamilton, Canada.  \
+^13^Michael G. DeGroote Institute of Infectious Disease Research, McMaster University, Hamilton, Canada.  \
+^14^Canadian Institute for Advanced Research, Toronto, Canada.  \
 &nbsp;  
 
 \setlength{\parindent}{2em}
 
-<!--
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
 ```{.include}
 [[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
 ```
--->
 
 # Conclusion
 

@@ -108,8 +108,6 @@ The next period in which we identified _Y. pestis_ was in the latter half of the
 
 We observed a gap in the continuity of plague at Ribe, as no _Y. pestis_ was detected there between 1408 and 1484. This was surprising, as 86% of individuals (43/50) from this site were archaeologically dated to between 1400 and 1536. Instead, the distribution of _Y. pestis_ appeared to shift during this period from the eastern coast of Jutland to the western coast. We recovered 3 distinct, and possibly contemporaneous, isolates of _Y. pestis_ from 3 sites near Horsens dated to 1429 (1392-1467), 1433 (1403-1464) and 1457 (1427-1487). These genomes were most closely related to individuals sampled in Germany, Lithuania, Poland, and England (@fig:1.PRE_timetree). This geographic association parallels the historical record, in which outbreaks in Denmark coincided with those in the Baltic region [@slavin2021OutWestFormation]. However, recent studies have demonstrated that the directionality and spread of zoonotic diseases cannot be robustly inferred from genomic data alone [@kalkauskas2021SamplingBiasModel; @eaton2021PlaguedCrypticClock]. Instead, our results establish an epidemiological link between _Y. pestis_ and historical case records in Denmark, which could be jointly modeled with greater resolving power [@featherstone2021InfectiousDiseasePhylodynamics] in future work.
 
-> The missing citation is our other manuscript (in prep) on global plague phylogenetics.
-
 In the 16<sup>th</sup> century, we once again observed _Y. pestis_ at Ribe. We dated two _Y. pestis_ isolates from this region to 1513 (1484-1546) and 1525 (1494-1560).  Furthermore, we also found evidence of _Y. pestis_ in the northern site of Faldborg dated to 1594 (1550-1649). As an estimate of plague's disappearance (1649), this is congruent with the historical record which documents the last recorded outbreak of plague in Jutland to last from 1654-1657 [@benedictow2016BlackDeathLater]. We found no evidence of _Y. pestis_ in Denmark after this point, specifically between 1649 and 1800 CE.  However, no individuals definitively post-date 1649 CE, although this period could include a maximum of 70 individuals (@fig:1.PRE_timeline A).  We would therefore expect to detect _Y. pestis_ in 0 to 2 individuals (3.3%) from this time frame if it were present. Our results do not differ from this expectation, and are therefore not informative with regards to the disappearance of _Y. pestis_ in Denmark. To address this question, additional samples would be required from the 17<sup>th</sup> and 18<sup>th</sup> centuries.
 
 ## Conclusion
@@ -118,19 +116,19 @@ This study marks the first population-level analysis of ancient _Y. pestis_, whe
 detected _Y. pestis_ in 8.3% of Danish individuals. Our phylogenetic analysis was highly congruent with the sparse textual evidence of _pestilence_ in Denmark, with regards to the timing of outbreaks and geographic ties to the Baltic region. We also provide novel evidence of plague exposure among Danish populations, such as the site of Tirup, where there is no surviving historical evidence. These results are of importance for both researchers of plague and other infectious diseases, as they (1) illuminate undocumented pathogens in the historical record, (2) reveal new connections between our past and present experience of plague, (3) broaden our understanding of the epidemiology of re-emerging diseases.
 
 
-![Geographic distribution of 298 archaeological samples used in this study. **A**. Map of 6 municipalities sampled in Denmark encompassing 13 archaeological sites. Site labels indicate: Archaeological Site (Earliest Date Sampled - Latest Date Sampled) _Y. pestis_ positive individuals / total individuals. Plague positive sites are bolded. **B**. Map of 49 _Y. pestis_ genomes used for phylogenetic analysis. The sampling locations were standardized to the centroid of the associated province/state. Colors indicate the sampling dates as estimated from the Bayesian molecular clock analysis. Numbered labels indicate the number of genomes sampled from each location.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map width=90%}
+![Geographic distribution of 298 archaeological samples used in this study. **A**. Map of 6 municipalities sampled in Denmark encompassing 13 archaeological sites. Site labels indicate: Archaeological Site (Earliest Date Sampled - Latest Date Sampled) _Y. pestis_ positive individuals / total individuals. Plague positive sites are bolded. **B**. Map of 49 _Y. pestis_ genomes used for phylogenetic analysis. The sampling locations were standardized to the centroid of the associated province/state. Colors indicate the sampling dates as estimated from the Bayesian molecular clock analysis. Numbered labels indicate the number of genomes sampled from each location.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map width=90% short-caption="Geographic distribution of 298 archaeological samples used in this study."}
 
 
 ::: columns
 
 <!--Left-->
 :::: column
-![Temporal distribution of archaeological samples used in this study. **A**. Distribution of skeletal date ranges for all individuals (N=298) using a bin width of 50 years. **B**. The distribution of _Y. pestis_ tip-dates for plague-positive individuals (N=9) according to the 95% highest posterior density (HPD) from the Bayesian molecular clock analysis. Asterisks indicate the phylogenetic placement had strong posterior support (>= 0.95). **C**. The mean sequencing depth of the _Y. pestis_ chromosome.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timeline.png){#fig:1.PRE_timeline width=70%}
+![Temporal distribution of archaeological samples used in this study. **A**. Distribution of skeletal date ranges for all individuals (N=298) using a bin width of 50 years. **B**. The distribution of _Y. pestis_ tip-dates for plague-positive individuals (N=9) according to the 95% highest posterior density (HPD) from the Bayesian molecular clock analysis. Asterisks indicate the phylogenetic placement had strong posterior support (>= 0.95). **C**. The mean sequencing depth of the _Y. pestis_ chromosome.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timeline.png){#fig:1.PRE_timeline width=70% short-caption="Temporal distribution of archaeological samples used in this study."}
 ::::
 
 <!--Right-->
 :::: column
-![Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes. Asterisks indicate clades with strong posterior support (>=0.95). Colors indicate the mean sampling dates as estimated from the Bayesian molecular clock analysis. Bars indicate tip-dating uncertainty, as represented by the 95% highest posterior density (HPD) interval.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree width=80%}
+![Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes. Asterisks indicate clades with strong posterior support (>=0.95). Colors indicate the mean sampling dates as estimated from the Bayesian molecular clock analysis. Bars indicate tip-dating uncertainty, as represented by the 95% highest posterior density (HPD) interval.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/05811a4/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree width=80% short-caption="Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes."}
 ::::
 
 :::
@@ -145,17 +143,24 @@ Sequenced molecules were aligned to a reference genome using the _nf-core/eager_
 
 To tip-date each genome, we performed a Bayesian Evaluation of Temporal Signal (BETS) [@duchene2020BayesianEvaluationTemporal] with BEAST2 [@bouckaert2019BEASTAdvancedSoftware]. We assumed a constant population size and compared the use of a strict clock and an uncorrelated lognormal (UCLN) relaxed clock. Diffuse normal priors were constructed for all tip-dates, using the mean radiocarbon/mortuary date and half the uncertainty as the standard deviation. All Danish samples were assigned equivalent priors with a mean date of 1330 CE and a standard deviation of 115 years. Bayes factors were calculated by comparing the marginal likelihoods of each candidate model, as estimated with a generalized stepping stone (GSS) computation. The model with the highest marginal likelihood was then run for 100,000,000 generations to ensure the effective sample size (ESS) of all relevant parameters was greater than 200. 
 
-> Sebastian and Leo had important cautionary notes about my priors being improper. Could we meet to discuss?
-
 Data visualization was performed using the python package _seaborn_ and _auspice_, a component of the Nextstrain visualization suite [@hadfield2018NextstrainRealtimeTracking].
 
 ## Data Availability
 
 Raw sequence reads have been deposited in NCBI BioProject PRJNAXXXXX. Archaeological metadata is provided in the supplementary information (Dataset SI).
 
+
 ## Acknowledgments
 
-To Be Done, so many people to recognize and thank :)
+This work was supported by the Social Sciences and Humanities Research Council of Canada (#20008499) and the MacDATA Institute (McMaster University, Canada). This research was enabled in part by support provided by Compute Ontario (<https://www.computeontario.ca/>) and Compute Canada (<https://www.computecanada.ca>). We would like to thank Julianna Stangroom, Michael Klowak, Dr. Emil Karpinski, Dr. Matthew Emery, and Dr. Stephanie Marciniak for their assistance in laboratory procedures. We also thank Dr. Ana Duggan for her insight regarding Bayesian methods for phylogenetic analysis. We thank members of the Sherman Centre for Digital Scholarship, including Dr. Andrea Zeffiro, Dr. John Fink, Dr. Matthew Davis, and Dr. Amanda Montague, for their assistance in developing the underlying genomic database. Finally, we would like to thank all past and present members of the McMaster Ancient DNA Centre and the Golding Lab at McMaster University.
+
+## Author Contributions
+
+K.E, R.S, J.K, and H.N.P designed the study. J.G, J.B, and S.D provided access to archaeological sites and materials. V.G performed radiocarbon dating. K.E, R.S, and J.K performed laboratory analysis. A.G.C and N.V. provided historical sources and interpretation.  S.D and L.F critiqued and revised the computational methods and discussion. G.B.G provided access to computational resources and data storage. H.N.P and G.B.G  supervised the study. K.E wrote the manuscript with contributions from all co-authors.
+
+## Competing Interests Statement
+
+The authors declare no competing interests.
 
 <!-- Comment out for dissertation
 ## References 
