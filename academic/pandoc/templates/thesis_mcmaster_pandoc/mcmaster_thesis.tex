@@ -421,6 +421,7 @@ $endif$
 \setlength{\parindent}{2em} % Paragraph spacing
 \captionsetup[figure]{font=small} % Shrink caption font size
 \usepackage[nottoc,numbib]{tocbibind}
+\usepackage[nokeyprefix]{refstyle}
 
 
 
@@ -555,12 +556,40 @@ $acknowledgments$
 \label{NumPrefacePages}
 \newpage
 
+% -------------------------------------
+% List of abbreviations and symbols
+\chapter{List of Abbreviations and Symbols}
+$for(abbreviations)$
+  $abbreviations$\newline
+$endfor$
+\newpage
+
+% -------------------------------------
+% Declaration of Academic Achievement
+\chapter{Declaration of Academic Achievement}
+$academic-declaration$\newline
+
+\begin{itemize}
+$for(academic-declaration-list)$
+	\item $academic-declaration-list$
+$endfor$
+\end{itemize}
+\newpage
+
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Content Pages
 \hypersetup{pageanchor=true}
 \pagenumbering{arabic}
 %\doublespacing
-%\pagestyle{fancy}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhfoffset[L]{1cm} % left extra length
+\fancyhfoffset[R]{1cm} % right extra length
+\chead{Ph.D. Thesis - $author$; McMaster University - $department$.}
+%\rhead{\today}
+%\lhead{\bfseries My name}
+\rfoot{}
+
 
 
 $body$
