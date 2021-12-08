@@ -406,6 +406,11 @@ $endif$
 % Pandoc Default Ends
 % ------------------------------------------------------------
 
+\setlength{\parskip}{1em} % Paragraph indent
+\setlength{\parindent}{2em} % Paragraph spacing
+\captionsetup[figure]{font=small}
+
+
 
 % ------------------------------------------------------------
 % Packages
@@ -453,8 +458,8 @@ $if(has-frontmatter)$\frontmatter$endif$
 \end{center}\vskip.5in
 \vfill
 \begin{center}
-	\sc   a thesis\\
-		submitted to the department of $department$\\
+	\sc   a thesis submitted to\\
+		the $department$\\
 		and the school of graduate studies\\
 		of mcmaster university\\
 		in partial fulfilment of the requirements\\
