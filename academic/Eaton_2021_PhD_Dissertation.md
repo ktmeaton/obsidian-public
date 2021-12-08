@@ -21,11 +21,6 @@ lay-abstract: |
 abstract: "Abstract here (no more than 300 words)."
 acknowledgments: "Acknowledgments go here."
 bibliography: pandoc/bib/library.bib
-bibliography_introduction: pandoc/bib/introduction.bib
-bibliography_ncbimeta: pandoc/bib/ncbimeta.bib
-bibliography_denmark: pandoc/bib/plague_in_denmark.bib
-bibliography_plagued_by_a_cryptic_clock: pandoc/bib/plagued_by_a_cryptic_clock.bib
-bibliography_conclusion: pandoc/bib/conclusion.bib
 numberSections: true
 toc-depth: 3
 sectionsDepth: 4
@@ -40,12 +35,10 @@ compile-pandoc: |
   && pandoc \
     -s Eaton_2021_PhD_Dissertation_convert.md \
     -o Eaton_2021_PhD_Dissertation.pdf \
-    --pdf-engine xelatex \
     --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex \
     --lua-filter pandoc/lua-filters/include-files/include-files.lua \
     --filter pandoc-crossref \
     --citeproc \
-    --lua-filter pandoc/lua-filters/multiple-bibliographies/multiple-bibliographies.lua \
     --csl pandoc/csl/apa.csl \
     && rm Eaton_2021_PhD_Dissertation_convert.md
 compile-manubot: |
@@ -79,18 +72,6 @@ Previously, I referred to one of the ultimate questions in plague research: why 
 
 In 2019, my relationship with infectious diseases transformed from an intellectual curiosity to a lived experience. The emergence of the novel coronavirus (SARS-CoV-2) triggered a global pandemic, operating on a scale that had not been seen for a 100 years. For years, I had written grants to fund my plague research under the auspice of _we have to know the past to understand the present_ [@cite]. 
 
-
-- In 2019, pandemics changed from an intellectual passion to a live experience.
-- The novel coronavirus (SARS-CoV-2) pandemic.
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-## References 
-
-::: {#refs_introduction}
-:::
-
-
 # NCBImeta: Efficient and comprehensive metadata retrieval from NCBI databases
 
 \setlength{\parindent}{0em}
@@ -109,14 +90,13 @@ Katherine Eaton^1,2^  \
 
 \setlength{\parindent}{2em}
 
+<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ```{.include shift-heading-level-by=1}
 [[Eaton_2020_NCBImeta.md]]
 ```
-
-::: {#refs_ncbimeta}
-:::
+-->
 
 # Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_
 
@@ -144,14 +124,13 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
+<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ```{.include}
 [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
 ```
-
-::: {#refs_plagued_by_a_cryptic_clock}
-:::
+-->
 
 # Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
@@ -177,14 +156,13 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
+<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ```{.include}
 [[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
 ```
-
-::: {#refs_denmark}
-:::
+-->
 
 # Conclusion
 
@@ -194,11 +172,4 @@ The database software NCBImeta was recently used to support an environmental rec
 
 This tool was also recently used to curate sequence data in a case study of the zoonotic disease brucellosis in the 14^th^ century [@hiderInPrepExaminingPathogenDNA]. The pioneering work by Hider et al. demonstrates how pathogen DNA preserves differently throughout the body, ranging from being the dominant microorganism in several tissues while being completely absent in others. It raises an important cautionary note for ancient DNA analysis and the anthropology of disease, by empirically demonstrating how sampling strategies can bias our understanding of what diseases were present in past populations.
 
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-## References 
-
-::: {#refs_conclusion}
-:::
-
-<!-- References will auto dump here -->
+<!-- References Section will auto dump here -->

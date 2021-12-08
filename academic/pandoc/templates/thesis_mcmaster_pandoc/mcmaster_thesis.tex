@@ -366,12 +366,23 @@ $for(bibliography)$
 $endfor$
 $endif$
 $if(csl-refs)$
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newenvironment{CSLReferences}%
-	{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-	\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-	{\par}
+ \newlength{\cslhangindent}
+ \setlength{\cslhangindent}{1.5em}
+
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+  {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+}%
+{}
 $endif$
 
 $if(title)$
@@ -408,7 +419,8 @@ $endif$
 
 \setlength{\parskip}{1em} % Paragraph indent
 \setlength{\parindent}{2em} % Paragraph spacing
-\captionsetup[figure]{font=small}
+\captionsetup[figure]{font=small} % Shrink caption font size
+\usepackage[nottoc,numbib]{tocbibind}
 
 
 
@@ -557,6 +569,7 @@ $body$
 % Appendix
 \begin{appendix}
 \end{appendix}
+
 
 $if(biblatex)$
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
