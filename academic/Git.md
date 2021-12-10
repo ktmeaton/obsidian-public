@@ -19,6 +19,12 @@ git fetch upstream
 git submodule update --init --recursive
 ```
 
+## Update File Permissions
+
+```bash
+git update-index --chmod=+x 
+```
+
 ## Auto Update
 
 

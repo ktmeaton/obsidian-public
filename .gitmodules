@@ -13,3 +13,6 @@
 [submodule "academic/.obsidian"]
 	path = academic/.obsidian
 	url = https://github.com/ktmeaton/obsidian-settings
+[submodule "TheZetner/.obsidian"]
+	path = TheZetner/.obsidian
+	url = https://github.com/TheZetner/obsidian

@@ -159,21 +159,21 @@ _The Proceedings of the National Academy of Sciences_  \
 Licensed under a Creative Commons Attribution 4.0 International License  \
 &nbsp;  
 
-Katherine Eaton*^1,2^, Ravneet Sidhu*^1,2^, Jennifer Klunk^1,3^, Julia Gamble^4^, Jesper Boldsen^5^, Ann G. Carmichael^6^, Nükhet Varlık^7^,  Sebastian Duchene^8^, Leo Featherstone^8^, Vaughan Grimes^9^, G. Brian Golding^10^, Sharon DeWitte^11^, Hendrik N. Poinar^1,2,12,13,14^ \
+Katherine Eaton*^1,2^, Ravneet Sidhu*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^5^, Jesper Boldsen^6^, Ann G. Carmichael^7^, Nükhet Varlık^8^,  Sebastian Duchene^9^, Leo Featherstone^9^, Vaughan Grimes^10^, G. Brian Golding^3^, Sharon DeWitte^11^, Hendrik N. Poinar^1,2,12,13,14^ \
 &nbsp;  
 
 \*Contributed equally.
 
 ^1^McMaster Ancient DNA Centre, McMaster University, Hamilton, Canada.  \
 ^2^Department of Anthropology, McMaster University, Hamilton, Canada.  \
-^3^Daicel Arbor Biosciences, Ann Arbor, USA.  \
-^4^Department of Anthropology, University of Manitoba, Winnipeg, Canada. \
-^5^Department of Forensic Medicine, Unit of Anthropology (ADBOU), University of Southern Denmark, Odense, Denmark. \
-^6^Department of History, Indiana University Bloomington, Bloomington, USA.  \
-^7^Department of History, Rutgers University-Newark, Newark, USA.  \
-^8^The Peter Doherty Institute for Infection and Immunity, University of Melbourne, Melbourne, Australia.  \
-^9^Department of Archaeology, Memorial University of Newfoundland, St. Johns, Canada. \
-^10^Department of Biology, McMaster University, Hamilton, Canada.  \
+^3^Department of Biology, McMaster University, Hamilton, Canada.  \
+^4^Daicel Arbor Biosciences, Ann Arbor, USA.  \
+^5^Department of Anthropology, University of Manitoba, Winnipeg, Canada. \
+^6^Department of Forensic Medicine, Unit of Anthropology (ADBOU), University of Southern Denmark, Odense, Denmark. \
+^7^Department of History, Indiana University Bloomington, Bloomington, USA.  \
+^8^Department of History, Rutgers University-Newark, Newark, USA.  \
+^9^The Peter Doherty Institute for Infection and Immunity, University of Melbourne, Melbourne, Australia.  \
+^10^Department of Archaeology, Memorial University of Newfoundland, St. Johns, Canada. \
 ^11^Department of Anthropology, University of South Carolina, Columbia, USA. \
 ^12^Department of Biochemistry, McMaster University, Hamilton, Canada.  \
 ^13^Michael G. DeGroote Institute of Infectious Disease Research, McMaster University, Hamilton, Canada.  \
