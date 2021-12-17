@@ -1,8 +1,8 @@
 ---
 title: Meet with Sina
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 type: [[Meeting]]
 due: 2021-12-10
 time: 09:00

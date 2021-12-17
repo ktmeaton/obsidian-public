@@ -188,12 +188,20 @@ Katherine Eaton*^1,2^, Ravneet Sidhu*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^5^
 
 # Conclusion
 
-As a paper on software development, its contributions and significance to the field of anthropology are understandably unclear. I admittedly targeted this article exclusively towards computational biologists because, at the time, few anthropologists had expressed interested in the issue of collecting and curating sequence data from online repositories. However, since its publication, my software has been used to support several bodies of anthropological research. 
+## Main Findings and Contribution
 
-The database software NCBImeta was recently used to support an environmental reconstruction of Beringia [@murchieInPrepNoBonesIt], the former land-bridge that facilitated early human migrations into North America from northeast Asia. The study by Murchie et al. furthers our understanding of the peopling of the Americas, and the possible interactions between early human populations and large animals (ie. megafauna) before the Last Glacial Period (~12,000 years ago). 
+In Chapter X, 
+As a paper on software development, its contributions and significance to the field of anthropology are understandably unclear. I targeted this article exclusively towards computational biologists because, at the time, few anthropologists had expressed interested in the issue of collecting and curating sequence data from online repositories. 
 
-This tool was also recently used to curate sequence data in a case study of the zoonotic disease brucellosis in the 14^th^ century [@hiderInPrepExaminingPathogenDNA]. The pioneering work by Hider et al. demonstrates how pathogen DNA preserves differently throughout the body, ranging from being the dominant microorganism in several tissues while being completely absent in others. It raises an important cautionary note for ancient DNA analysis and the anthropology of disease, by empirically demonstrating how sampling strategies can bias our understanding of what diseases were present in past populations.
 
-In 2019, my relationship with infectious diseases transformed from an intellectual curiosity to a lived experience. The emergence of the novel coronavirus (SARS-CoV-2) triggered a global pandemic, operating on a scale that had not been seen for a 100 years. For years, I had written grants to fund my plague research u... _you have to know the past to understand the present_ [@sagan1980OneVoiceCosmic]. 
+
+However, since its publication, my software has been used to support several bodies of anthropological research. 
+
+The database software NCBImeta was recently used to support an environmental reconstruction of Beringia [@murchieInPrepNoBonesIt], the former land-bridge that facilitated early human migrations into North America from northeast Asia. The study by Murchie et al. furthers our understanding of the peopling of the Americas, and the possible interactions between early human populations and large animals (ie. megafauna) before the Last Glacial Period (~12,000 years ago). This tool was also recently used to curate sequence data in a case study of the zoonotic disease brucellosis in the 14^th^ century [@hiderInPrepExaminingPathogenDNA]. The pioneering work by Hider et al. demonstrates how pathogen DNA preserves differently throughout the body, ranging from being the dominant microorganism in several tissues while being completely absent in others. It raises an important cautionary note for ancient DNA analysis and the anthropology of disease, by empirically demonstrating how sampling strategies can bias our understanding of what diseases were present in past populations. 
+
+	
+(Matthew Gopez, Philip Mabon, *personal communication*, https://github.com/ktmeaton/NCBImeta/pull/9)
+
+## Future Directions
 
 <!-- References Section will auto dump here -->
