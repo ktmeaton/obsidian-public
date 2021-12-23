@@ -2,8 +2,8 @@
 project:
 due: 2021-12-03
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Consolidate Paper 3 Edits
 type: [[Task]]
 ---

@@ -1,9 +1,9 @@
 ---
 project: [[PhD Dissertation]]
-due: 2021-12-15
+due: 2021-12-21
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Defense
 type: [[Task]]
 ---

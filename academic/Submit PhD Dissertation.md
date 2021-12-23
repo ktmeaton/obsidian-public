@@ -1,9 +1,9 @@
 ---
 project: [[PhD Dissertation]]
-due: 2021-12-07
+due: 2021-12-17
 people: null
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: Submit Dissertation
 type: [[Task]]
 ---

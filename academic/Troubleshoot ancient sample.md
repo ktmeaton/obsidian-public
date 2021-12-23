@@ -1,5 +1,5 @@
 ---
-project:
+project: [[pla Depletion]]
 due: 2022-01-01
 people:
 tags: 🧨

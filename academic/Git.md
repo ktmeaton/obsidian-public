@@ -1,6 +1,8 @@
 ---
 aliases:
   - github
+  - git
+  - Git
 ---
 
 # Git
@@ -11,6 +13,21 @@ aliases:
 # Sync to remote
 git remote add upstream <original:repo>
 git fetch upstream
+```
+
+## Rebase
+
+### Undo
+
+```bash
+git reflog
+
+c0437c2 (HEAD -> dev, origin/dev) HEAD@{0}: rebase -i (finish): returning to refs/heads/dev
+c0437c2 (HEAD -> dev, origin/dev) HEAD@{1}: rebase -i (start): checkout refs/remotes/origin/dev
+c0437c2 (HEAD -> dev, origin/dev) HEAD@{2}: checkout: moving from main to dev
+30d3373 (origin/main, origin/HEAD, main) HEAD@{3}: clone: from git@gitlab.cscscience.ca:keaton/git-training-documentation.git
+
+git reset --hard HEAD@{2}
 ```
 
 ## Submodules
