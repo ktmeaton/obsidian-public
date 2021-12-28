@@ -12,11 +12,11 @@ Embedding the full INDEX page:
 ![](INDEX)
 ```
 
-![](README.md)
+![](obsidian-public/academic/README.md)
 
 ### Heading
 
-Embedding a specific heading like the [[README#Tag Taxonomy|Tag Taxonomy]].
+Embedding a specific heading like the [[obsidian-public/academic/README#Tag Taxonomy|Tag Taxonomy]].
 
 ```markdown
 ![](INDEX#Tag\ Taxonomy)
@@ -26,7 +26,7 @@ Embedding a specific heading like the [[README#Tag Taxonomy|Tag Taxonomy]].
 
 ### Subheading
 
-Embedding a specific subheading like the [[README#Tag Taxonomy#Inputs|Inputs]].
+Embedding a specific subheading like the [[obsidian-public/academic/README#Tag Taxonomy#Inputs|Inputs]].
 
 ```markdown
 ![](INDEX#Inputs)
@@ -36,7 +36,7 @@ OR
 ![](INDEX#Tag\ Taxonomy#Inputs)
 ```
 
-![](README.md#Inputs)
+![](obsidian-public/academic/README.md#Inputs)
 
 
 ---

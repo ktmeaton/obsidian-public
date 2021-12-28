@@ -52,18 +52,18 @@ commit_msg='automated updated';
 for project in `ls -d *`; 
 do 
   if [[ -e $project/.git ]]; then   
-	cd $project;
-	git_diff=`git diff-index HEAD -- | cut -d " " -f 5-`;
-	if [[ $git_diff ]]; then
+    cd $project;
+    git_diff=`git diff-index HEAD -- | cut -d " " -f 5-`;
+    if [[ $git_diff ]]; then 
 	  echo "\nProject: $project";
-	  echo $git_diff;
-	  git add -A
-	  git commit -m "$commit_msg"
-	  git push;
-	  cd ..;
-	else;
-	  cd ..;
-	fi;
+      echo $git_diff;
+      #git add -A
+      #git commit -m "$commit_msg"
+      #git push;
+      cd ..;
+    else;
+      cd ..;
+    fi;
   fi; 
 done
 ```

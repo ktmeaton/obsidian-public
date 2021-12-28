@@ -15,4 +15,13 @@ aliases:
 
 ---
 
-tags: [[People]]
+## Publications
+
+```dataview
+TABLE title as Title, date as Year, authors as Authors
+FROM ""
+WHERE
+  type=[[Literature]]
+  and contains(authors, [[Katherine Eaton]])
+SORT date desc
+```
