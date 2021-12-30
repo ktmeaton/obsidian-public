@@ -9,7 +9,7 @@ tags:
 
 ## Summary
 
-Exaclidraw is software that performs...
+Exaclidraw is a drawing software for which there is an [[Obsidian]] plugin.
 
 ## Links
 

@@ -2,7 +2,6 @@
 type:
   - Tool
   - MOC
-mindmap-plugin: basic 
 ---
 
 # Obsidian
@@ -13,10 +12,14 @@ Obsidian is software that performs...
 
 ## Plugins
 
-- [[Admonition]]
-- [[Meld Encrypt]]
-- [[Mind Map]]
-- [[Enhancing Mind Map]]
+- [x] [[Admonition]]
+- [x] [[Meld Encrypt]]
+- [x] [[Mind Map]]
+- [x] [[Enhancing Mind Map]]
+- [x] [[Excalidraw]]
+- [ ] [[Kanban]] (waiting for [[Dataview]] integration)
+- [ ] [[Macros]]
+- [ ] [[Map View]]
 
 ## [[HTML]]
 
