@@ -104,13 +104,16 @@ routes of spread... ^EMQvCTKW
 			"seed": 1087563110,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "",
 			"baseline": 18,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "",
+			"originalText": ""
 		},
 		{
 			"type": "rectangle",
@@ -133,7 +136,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 424764026,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "text",
@@ -156,13 +159,16 @@ routes of spread... ^EMQvCTKW
 			"seed": 705877498,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "Can we separate the two pPCP1 plasmids using SNP profiles?",
 			"baseline": 25,
 			"textAlign": "center",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Can we separate the two pPCP1 plasmids using SNP profiles?",
+			"originalText": "Can we separate the two pPCP1 plasmids using SNP profiles?"
 		},
 		{
 			"type": "text",
@@ -181,17 +187,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 294,
-			"height": 45,
+			"height": 46,
 			"seed": 348644282,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Mongolian Plague",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Mongolian Plague",
+			"originalText": "Mongolian Plague"
 		},
 		{
 			"type": "text",
@@ -210,17 +219,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 894,
-			"height": 36,
+			"height": 35,
 			"seed": 858201458,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "Can we detect Yersinia pestis in the Mongol Empire (1206-1368)?",
 			"baseline": 25,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Can we detect Yersinia pestis in the Mongol Empire (1206-1368)?",
+			"originalText": "Can we detect Yersinia pestis in the Mongol Empire (1206-1368)?"
 		},
 		{
 			"type": "text",
@@ -239,17 +251,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 652,
-			"height": 45,
+			"height": 46,
 			"seed": 55448494,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Plasminogen activator (pla) depletion",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Plasminogen activator (pla) depletion",
+			"originalText": "Plasminogen activator (pla) depletion"
 		},
 		{
 			"type": "rectangle",
@@ -272,7 +287,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1588855150,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "text",
@@ -291,17 +306,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 295,
-			"height": 45,
+			"height": 46,
 			"seed": 1242244270,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Adiyasuren Molor",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Adiyasuren Molor",
+			"originalText": "Adiyasuren Molor"
 		},
 		{
 			"type": "text",
@@ -320,17 +338,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
 			"width": 250,
-			"height": 45,
+			"height": 46,
 			"seed": 702470382,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Ravneet Sidhu",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Ravneet Sidhu",
+			"originalText": "Ravneet Sidhu"
 		},
 		{
 			"type": "text",
@@ -349,17 +370,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
 			"width": 287,
-			"height": 45,
+			"height": 46,
 			"seed": 881591534,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Katherine Eaton",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Katherine Eaton",
+			"originalText": "Katherine Eaton"
 		},
 		{
 			"type": "rectangle",
@@ -382,7 +406,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1096410606,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "text",
@@ -401,17 +425,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
 			"width": 389,
-			"height": 45,
+			"height": 46,
 			"seed": 231725490,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Plague Phylogeography",
 			"baseline": 32,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Plague Phylogeography",
+			"originalText": "Plague Phylogeography"
 		},
 		{
 			"type": "text",
@@ -430,17 +457,20 @@ routes of spread... ^EMQvCTKW
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
 			"width": 885,
-			"height": 36,
+			"height": 35,
 			"seed": 1619110194,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "Can genetic evidence reconstruct the spread of Yersinia pestis?",
 			"baseline": 25,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Can genetic evidence reconstruct the spread of Yersinia pestis?",
+			"originalText": "Can genetic evidence reconstruct the spread of Yersinia pestis?"
 		},
 		{
 			"id": "JOJ1nrINTvDn5LlC_LHV7",
@@ -463,7 +493,6 @@ routes of spread... ^EMQvCTKW
 			"version": 1260,
 			"versionNonce": 665895857,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6340,7 +6369,6 @@ routes of spread... ^EMQvCTKW
 			"version": 86,
 			"versionNonce": 248193055,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6407,7 +6435,6 @@ routes of spread... ^EMQvCTKW
 			"version": 85,
 			"versionNonce": 1863169361,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6469,7 +6496,6 @@ routes of spread... ^EMQvCTKW
 			"version": 82,
 			"versionNonce": 433046591,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6516,7 +6542,6 @@ routes of spread... ^EMQvCTKW
 			"version": 84,
 			"versionNonce": 2133648177,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6573,7 +6598,6 @@ routes of spread... ^EMQvCTKW
 			"version": 87,
 			"versionNonce": 15393887,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6645,7 +6669,6 @@ routes of spread... ^EMQvCTKW
 			"version": 85,
 			"versionNonce": 48977169,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6707,7 +6730,6 @@ routes of spread... ^EMQvCTKW
 			"version": 83,
 			"versionNonce": 1944911999,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6759,7 +6781,6 @@ routes of spread... ^EMQvCTKW
 			"version": 84,
 			"versionNonce": 1304464113,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6815,8 +6836,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1628269329,
 			"version": 448,
 			"versionNonce": 1419155615,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "XdYXAnm6ZnW1QIBBV6-Ea",
@@ -6839,7 +6859,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 501039793,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6878,7 +6897,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 731004127,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6917,7 +6935,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 996394129,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6956,7 +6973,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 1897220351,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -6995,7 +7011,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 1283394161,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -7034,7 +7049,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 111268127,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -7072,8 +7086,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1503419729,
 			"version": 297,
 			"versionNonce": 167154769,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"type": "ellipse",
@@ -7098,7 +7111,7 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7123,7 +7136,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7136,7 +7148,8 @@ routes of spread... ^EMQvCTKW
 					-3.4692796610169694,
 					78.89300847457628
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7161,7 +7174,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7174,7 +7186,8 @@ routes of spread... ^EMQvCTKW
 					31.230137711864415,
 					48.113082627118615
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7199,7 +7212,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7212,7 +7224,8 @@ routes of spread... ^EMQvCTKW
 					-26.721398305084733,
 					44.696769067796595
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7237,7 +7250,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7250,7 +7262,8 @@ routes of spread... ^EMQvCTKW
 					30.336334745762713,
 					29.118114406779682
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7275,7 +7288,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7288,7 +7300,8 @@ routes of spread... ^EMQvCTKW
 					43.71689618644069,
 					-24.65572033898303
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7313,7 +7326,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7334,7 +7346,8 @@ routes of spread... ^EMQvCTKW
 					-51.589466914007886,
 					25.183517906002518
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -7359,7 +7372,6 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -7392,7 +7404,8 @@ routes of spread... ^EMQvCTKW
 					0,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "rectangle",
@@ -7417,7 +7430,7 @@ routes of spread... ^EMQvCTKW
 				"HgrO-A0PI3EcjBs2xXR-8"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"id": "Uc8MyIFWSEa88EFYFD1HP",
@@ -7440,7 +7453,6 @@ routes of spread... ^EMQvCTKW
 			"version": 821,
 			"versionNonce": 149958111,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -11202,7 +11214,6 @@ routes of spread... ^EMQvCTKW
 			"version": 245,
 			"versionNonce": 787007857,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -12094,7 +12105,6 @@ routes of spread... ^EMQvCTKW
 			"version": 871,
 			"versionNonce": 670532127,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16118,7 +16128,7 @@ routes of spread... ^EMQvCTKW
 				"23W6v7cr-oYc6MwPaueaO"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -16143,7 +16153,6 @@ routes of spread... ^EMQvCTKW
 				"23W6v7cr-oYc6MwPaueaO"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -16166,7 +16175,8 @@ routes of spread... ^EMQvCTKW
 					0.32039210307138904,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -16191,7 +16201,6 @@ routes of spread... ^EMQvCTKW
 				"23W6v7cr-oYc6MwPaueaO"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -16210,7 +16219,8 @@ routes of spread... ^EMQvCTKW
 					20.461706184599095,
 					11.92481716078503
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"id": "8BT1o4cQ",
@@ -16218,7 +16228,7 @@ routes of spread... ^EMQvCTKW
 			"x": 108.39872847839229,
 			"y": 453.4145524399447,
 			"width": 224,
-			"height": 75,
+			"height": 74,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -16233,13 +16243,15 @@ routes of spread... ^EMQvCTKW
 			"version": 197,
 			"versionNonce": 1268159249,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "I identified 100+ \ncandidate samples in \narchaeological reports!",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 68
+			"baseline": 67,
+			"containerId": null,
+			"rawText": "I identified 100+ \ncandidate samples in \narchaeological reports!",
+			"originalText": "I identified 100+ \ncandidate samples in \narchaeological reports!"
 		},
 		{
 			"id": "NSOy01LV02CxfDEXi-y5l",
@@ -16262,7 +16274,6 @@ routes of spread... ^EMQvCTKW
 			"version": 79,
 			"versionNonce": 1594101841,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16392,8 +16403,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 2072070129,
 			"version": 188,
 			"versionNonce": 255891775,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "8I33c9IE33icUOOEsknyW",
@@ -16416,7 +16426,6 @@ routes of spread... ^EMQvCTKW
 			"version": 227,
 			"versionNonce": 1973411377,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16454,7 +16463,6 @@ routes of spread... ^EMQvCTKW
 			"version": 189,
 			"versionNonce": 460921183,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16492,7 +16500,6 @@ routes of spread... ^EMQvCTKW
 			"version": 173,
 			"versionNonce": 1195831313,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16530,7 +16537,6 @@ routes of spread... ^EMQvCTKW
 			"version": 187,
 			"versionNonce": 1760335231,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16568,7 +16574,6 @@ routes of spread... ^EMQvCTKW
 			"version": 178,
 			"versionNonce": 1508951537,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -16606,7 +16611,6 @@ routes of spread... ^EMQvCTKW
 			"version": 246,
 			"versionNonce": 1199742417,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -17163,7 +17167,6 @@ routes of spread... ^EMQvCTKW
 			"version": 229,
 			"versionNonce": 1574675391,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -17635,7 +17638,6 @@ routes of spread... ^EMQvCTKW
 			"version": 200,
 			"versionNonce": 972078001,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -17962,7 +17964,6 @@ routes of spread... ^EMQvCTKW
 			"version": 181,
 			"versionNonce": 659477471,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18194,7 +18195,6 @@ routes of spread... ^EMQvCTKW
 			"version": 155,
 			"versionNonce": 1486888337,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18296,7 +18296,6 @@ routes of spread... ^EMQvCTKW
 			"version": 152,
 			"versionNonce": 388431871,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18383,7 +18382,6 @@ routes of spread... ^EMQvCTKW
 			"version": 152,
 			"versionNonce": 315114353,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18470,7 +18468,6 @@ routes of spread... ^EMQvCTKW
 			"version": 151,
 			"versionNonce": 258254879,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18552,7 +18549,6 @@ routes of spread... ^EMQvCTKW
 			"version": 151,
 			"versionNonce": 78687569,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -18634,7 +18630,6 @@ routes of spread... ^EMQvCTKW
 			"version": 300,
 			"versionNonce": 1576553535,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -19461,7 +19456,6 @@ routes of spread... ^EMQvCTKW
 			"version": 225,
 			"versionNonce": 1437653809,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -19913,7 +19907,6 @@ routes of spread... ^EMQvCTKW
 			"version": 218,
 			"versionNonce": 1052929119,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -20330,7 +20323,6 @@ routes of spread... ^EMQvCTKW
 			"version": 236,
 			"versionNonce": 1446006033,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -20837,7 +20829,6 @@ routes of spread... ^EMQvCTKW
 			"version": 179,
 			"versionNonce": 496207999,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21059,7 +21050,6 @@ routes of spread... ^EMQvCTKW
 			"version": 167,
 			"versionNonce": 1571193585,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21221,7 +21211,6 @@ routes of spread... ^EMQvCTKW
 			"version": 171,
 			"versionNonce": 405545119,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21403,7 +21392,6 @@ routes of spread... ^EMQvCTKW
 			"version": 168,
 			"versionNonce": 1754987729,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21570,7 +21558,6 @@ routes of spread... ^EMQvCTKW
 			"version": 174,
 			"versionNonce": 1077720255,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21767,7 +21754,6 @@ routes of spread... ^EMQvCTKW
 			"version": 156,
 			"versionNonce": 1990539953,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -21874,7 +21860,6 @@ routes of spread... ^EMQvCTKW
 			"version": 202,
 			"versionNonce": 493208799,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22211,16 +22196,25 @@ routes of spread... ^EMQvCTKW
 			"version": 339,
 			"versionNonce": 678214801,
 			"isDeleted": false,
-			"boundElementIds": [
-				"nfGhUmipvgBAveCqFIqS5",
-				"lDmS22yh3AQAHNp0xhpX-"
-			],
 			"text": "ATGCAG  TGACGT",
 			"fontSize": 28,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25
+			"baseline": 25,
+			"boundElements": [
+				{
+					"type": "arrow",
+					"id": "nfGhUmipvgBAveCqFIqS5"
+				},
+				{
+					"type": "arrow",
+					"id": "lDmS22yh3AQAHNp0xhpX-"
+				}
+			],
+			"containerId": null,
+			"rawText": "ATGCAG  TGACGT",
+			"originalText": "ATGCAG  TGACGT"
 		},
 		{
 			"id": "9W-0xiypFuKLMrFDiu71C",
@@ -22243,7 +22237,6 @@ routes of spread... ^EMQvCTKW
 			"version": 345,
 			"versionNonce": 497615473,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22281,7 +22274,6 @@ routes of spread... ^EMQvCTKW
 			"version": 291,
 			"versionNonce": 791894303,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22319,7 +22311,6 @@ routes of spread... ^EMQvCTKW
 			"version": 306,
 			"versionNonce": 320965713,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22357,7 +22348,6 @@ routes of spread... ^EMQvCTKW
 			"version": 311,
 			"versionNonce": 1388895551,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22395,7 +22385,6 @@ routes of spread... ^EMQvCTKW
 			"version": 308,
 			"versionNonce": 1085135409,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22433,7 +22422,6 @@ routes of spread... ^EMQvCTKW
 			"version": 296,
 			"versionNonce": 1999989777,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22471,7 +22459,6 @@ routes of spread... ^EMQvCTKW
 			"version": 307,
 			"versionNonce": 1379129727,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22509,7 +22496,6 @@ routes of spread... ^EMQvCTKW
 			"version": 342,
 			"versionNonce": 2125447665,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22531,7 +22517,7 @@ routes of spread... ^EMQvCTKW
 			"type": "text",
 			"x": 164.61295481152933,
 			"y": 1109.2254643960546,
-			"width": 19,
+			"width": 18,
 			"height": 35,
 			"angle": 0,
 			"strokeColor": "#c92a2a",
@@ -22547,13 +22533,15 @@ routes of spread... ^EMQvCTKW
 			"version": 270,
 			"versionNonce": 1404880319,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "A",
 			"fontSize": 28,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25
+			"baseline": 25,
+			"containerId": null,
+			"rawText": "A",
+			"originalText": "A"
 		},
 		{
 			"id": "alSCl5b1",
@@ -22561,7 +22549,7 @@ routes of spread... ^EMQvCTKW
 			"x": 167.08827626335233,
 			"y": 1145.7687230630465,
 			"width": 18,
-			"height": 139,
+			"height": 141,
 			"angle": 0,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
@@ -22576,13 +22564,15 @@ routes of spread... ^EMQvCTKW
 			"version": 277,
 			"versionNonce": 1739241905,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "C\nC\nC\nC",
 			"fontSize": 28,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 129
+			"baseline": 131,
+			"containerId": null,
+			"rawText": "C\nC\nC\nC",
+			"originalText": "C\nC\nC\nC"
 		},
 		{
 			"id": "IO4eyBKu",
@@ -22605,16 +22595,25 @@ routes of spread... ^EMQvCTKW
 			"version": 280,
 			"versionNonce": 1220261343,
 			"isDeleted": false,
-			"boundElementIds": [
-				"nfGhUmipvgBAveCqFIqS5",
-				"lDmS22yh3AQAHNp0xhpX-"
-			],
 			"text": "Contig",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18
+			"baseline": 18,
+			"boundElements": [
+				{
+					"type": "arrow",
+					"id": "nfGhUmipvgBAveCqFIqS5"
+				},
+				{
+					"type": "arrow",
+					"id": "lDmS22yh3AQAHNp0xhpX-"
+				}
+			],
+			"containerId": null,
+			"rawText": "Contig",
+			"originalText": "Contig"
 		},
 		{
 			"id": "8sj7oywS",
@@ -22637,15 +22636,21 @@ routes of spread... ^EMQvCTKW
 			"version": 401,
 			"versionNonce": 2091360767,
 			"isDeleted": false,
-			"boundElementIds": [
-				"dhbOOktLGFiQcw3BJwwF3"
-			],
 			"text": "Reads",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18
+			"baseline": 18,
+			"boundElements": [
+				{
+					"type": "arrow",
+					"id": "dhbOOktLGFiQcw3BJwwF3"
+				}
+			],
+			"containerId": null,
+			"rawText": "Reads",
+			"originalText": "Reads"
 		},
 		{
 			"id": "lDmS22yh3AQAHNp0xhpX-",
@@ -22668,7 +22673,6 @@ routes of spread... ^EMQvCTKW
 			"version": 243,
 			"versionNonce": 193162065,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -22714,7 +22718,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 1948592383,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -22729,7 +22732,8 @@ routes of spread... ^EMQvCTKW
 					44.44439697265625,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "ellipse",
@@ -22754,7 +22758,7 @@ routes of spread... ^EMQvCTKW
 				"Ogw0S3P9CZ0TFlvU4dIgO"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -22779,7 +22783,6 @@ routes of spread... ^EMQvCTKW
 				"Ogw0S3P9CZ0TFlvU4dIgO"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -22802,7 +22805,8 @@ routes of spread... ^EMQvCTKW
 					0.9942292483406202,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -22827,7 +22831,6 @@ routes of spread... ^EMQvCTKW
 				"Ogw0S3P9CZ0TFlvU4dIgO"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -22846,7 +22849,8 @@ routes of spread... ^EMQvCTKW
 					21.795740305887726,
 					12.342701377473466
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"id": "jdmtfHCD",
@@ -22854,7 +22858,7 @@ routes of spread... ^EMQvCTKW
 			"x": -389.6641754857758,
 			"y": 1073.9199915835345,
 			"width": 240,
-			"height": 76,
+			"height": 74,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -22869,20 +22873,22 @@ routes of spread... ^EMQvCTKW
 			"version": 201,
 			"versionNonce": 347286143,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "SPADES does not have \n100% base accuracy \nduring assembly.",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 68
+			"baseline": 67,
+			"containerId": null,
+			"rawText": "SPADES does not have \n100% base accuracy \nduring assembly.",
+			"originalText": "SPADES does not have \n100% base accuracy \nduring assembly."
 		},
 		{
 			"id": "LAw28mnr",
 			"type": "text",
 			"x": -521.2800525794667,
 			"y": 748.6570680827797,
-			"width": 836,
+			"width": 835,
 			"height": 25,
 			"angle": 0,
 			"strokeColor": "#000000",
@@ -22898,13 +22904,15 @@ routes of spread... ^EMQvCTKW
 			"version": 192,
 			"versionNonce": 592052465,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "And gave an excellent overview of the various empires and their geographic extents.",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18
+			"baseline": 18,
+			"containerId": null,
+			"rawText": "And gave an excellent overview of the various empires and their geographic extents.",
+			"originalText": "And gave an excellent overview of the various empires and their geographic extents."
 		},
 		{
 			"id": "Mg6OQWyq",
@@ -22927,13 +22935,15 @@ routes of spread... ^EMQvCTKW
 			"version": 164,
 			"versionNonce": 252150431,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "I will need to find another way...",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "I will need to find another way...",
+			"originalText": "I will need to find another way..."
 		},
 		{
 			"type": "ellipse",
@@ -22956,7 +22966,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 228348831,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -22979,7 +22989,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 1740339665,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -22994,7 +23003,8 @@ routes of spread... ^EMQvCTKW
 					0,
 					118.51849365234375
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -23017,7 +23027,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 523143103,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -23032,7 +23041,8 @@ routes of spread... ^EMQvCTKW
 					-44.44439697265625,
 					44
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -23055,7 +23065,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 380508081,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -23070,7 +23079,8 @@ routes of spread... ^EMQvCTKW
 					48.88885498046875,
 					49
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -23093,7 +23103,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 77936607,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -23108,7 +23117,8 @@ routes of spread... ^EMQvCTKW
 					47.4073486328125,
 					-27
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -23131,7 +23141,6 @@ routes of spread... ^EMQvCTKW
 			"seed": 1834088849,
 			"groupIds": [],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -23146,7 +23155,8 @@ routes of spread... ^EMQvCTKW
 					-48.88885498046875,
 					-28
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"id": "rZ5tlY4_T5UPt0hXAsvyA",
@@ -23169,7 +23179,6 @@ routes of spread... ^EMQvCTKW
 			"version": 180,
 			"versionNonce": 1872113759,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -23801,7 +23810,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 543869201,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -24198,7 +24206,6 @@ routes of spread... ^EMQvCTKW
 			"version": 127,
 			"versionNonce": 122604671,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -24565,7 +24572,6 @@ routes of spread... ^EMQvCTKW
 			"version": 115,
 			"versionNonce": 1932623601,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -24872,7 +24878,6 @@ routes of spread... ^EMQvCTKW
 			"version": 90,
 			"versionNonce": 836691103,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -25054,7 +25059,6 @@ routes of spread... ^EMQvCTKW
 			"version": 82,
 			"versionNonce": 191264977,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -25196,7 +25200,6 @@ routes of spread... ^EMQvCTKW
 			"version": 74,
 			"versionNonce": 519502015,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -25298,7 +25301,6 @@ routes of spread... ^EMQvCTKW
 			"version": 70,
 			"versionNonce": 715208369,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -25380,7 +25382,6 @@ routes of spread... ^EMQvCTKW
 			"version": 376,
 			"versionNonce": 876054751,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -26992,7 +26993,6 @@ routes of spread... ^EMQvCTKW
 			"version": 145,
 			"versionNonce": 1938372753,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -27449,7 +27449,6 @@ routes of spread... ^EMQvCTKW
 			"version": 100,
 			"versionNonce": 1328616703,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -27681,7 +27680,6 @@ routes of spread... ^EMQvCTKW
 			"version": 78,
 			"versionNonce": 1205206641,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -27803,7 +27801,6 @@ routes of spread... ^EMQvCTKW
 			"version": 126,
 			"versionNonce": 1197743391,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -28165,7 +28162,6 @@ routes of spread... ^EMQvCTKW
 			"version": 95,
 			"versionNonce": 1716455505,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -28372,7 +28368,6 @@ routes of spread... ^EMQvCTKW
 			"version": 81,
 			"versionNonce": 809574719,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -28509,7 +28504,6 @@ routes of spread... ^EMQvCTKW
 			"version": 90,
 			"versionNonce": 1221318193,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -28691,7 +28685,6 @@ routes of spread... ^EMQvCTKW
 			"version": 107,
 			"versionNonce": 1529389407,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -28958,7 +28951,6 @@ routes of spread... ^EMQvCTKW
 			"version": 75,
 			"versionNonce": 1110698001,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29064,8 +29056,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1817851729,
 			"version": 55,
 			"versionNonce": 426450303,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "95TvPwjoafYebscEyxuTo",
@@ -29087,8 +29078,7 @@ routes of spread... ^EMQvCTKW
 			"seed": 1487076575,
 			"version": 177,
 			"versionNonce": 719985361,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "k2RGG6dC6ygqyeVNfiOvW",
@@ -29111,7 +29101,6 @@ routes of spread... ^EMQvCTKW
 			"version": 137,
 			"versionNonce": 1685485247,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29154,7 +29143,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 492869809,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29193,7 +29181,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 1494697695,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29232,7 +29219,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 1544313489,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29271,7 +29257,6 @@ routes of spread... ^EMQvCTKW
 			"version": 135,
 			"versionNonce": 2104038143,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29314,7 +29299,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 933552241,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29353,7 +29337,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 703355679,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29392,7 +29375,6 @@ routes of spread... ^EMQvCTKW
 			"version": 133,
 			"versionNonce": 2112989777,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29431,7 +29413,6 @@ routes of spread... ^EMQvCTKW
 			"version": 170,
 			"versionNonce": 1393663807,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29469,7 +29450,6 @@ routes of spread... ^EMQvCTKW
 			"version": 164,
 			"versionNonce": 1472870449,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29507,7 +29487,6 @@ routes of spread... ^EMQvCTKW
 			"version": 161,
 			"versionNonce": 188309343,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29545,7 +29524,6 @@ routes of spread... ^EMQvCTKW
 			"version": 216,
 			"versionNonce": 1729497617,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29583,7 +29561,6 @@ routes of spread... ^EMQvCTKW
 			"version": 225,
 			"versionNonce": 1152654207,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29621,7 +29598,6 @@ routes of spread... ^EMQvCTKW
 			"version": 148,
 			"versionNonce": 617390065,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29659,7 +29635,6 @@ routes of spread... ^EMQvCTKW
 			"version": 128,
 			"versionNonce": 1405244319,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29698,7 +29673,6 @@ routes of spread... ^EMQvCTKW
 			"version": 128,
 			"versionNonce": 2130016721,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29737,7 +29711,6 @@ routes of spread... ^EMQvCTKW
 			"version": 128,
 			"versionNonce": 815040447,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29776,7 +29749,6 @@ routes of spread... ^EMQvCTKW
 			"version": 131,
 			"versionNonce": 916985777,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29823,7 +29795,6 @@ routes of spread... ^EMQvCTKW
 			"version": 128,
 			"versionNonce": 2034972639,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29862,7 +29833,6 @@ routes of spread... ^EMQvCTKW
 			"version": 126,
 			"versionNonce": 2114714001,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29909,7 +29879,6 @@ routes of spread... ^EMQvCTKW
 			"version": 126,
 			"versionNonce": 871818239,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29956,7 +29925,6 @@ routes of spread... ^EMQvCTKW
 			"version": 125,
 			"versionNonce": 1448648561,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -29999,7 +29967,6 @@ routes of spread... ^EMQvCTKW
 			"version": 123,
 			"versionNonce": 1352141855,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30038,7 +30005,6 @@ routes of spread... ^EMQvCTKW
 			"version": 125,
 			"versionNonce": 768969041,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30081,7 +30047,6 @@ routes of spread... ^EMQvCTKW
 			"version": 123,
 			"versionNonce": 1797206079,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30120,7 +30085,6 @@ routes of spread... ^EMQvCTKW
 			"version": 123,
 			"versionNonce": 1037711153,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30159,7 +30123,6 @@ routes of spread... ^EMQvCTKW
 			"version": 123,
 			"versionNonce": 1298976863,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30198,7 +30161,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 684599569,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30237,7 +30199,6 @@ routes of spread... ^EMQvCTKW
 			"version": 149,
 			"versionNonce": 827419775,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30275,7 +30236,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1479073521,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30314,7 +30274,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1116570783,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30353,7 +30312,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 443668689,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30392,7 +30350,6 @@ routes of spread... ^EMQvCTKW
 			"version": 125,
 			"versionNonce": 1624348863,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30439,7 +30396,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 21010097,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30478,7 +30434,6 @@ routes of spread... ^EMQvCTKW
 			"version": 124,
 			"versionNonce": 566110431,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30521,7 +30476,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 2134677649,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30560,7 +30514,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 316912895,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30599,7 +30552,6 @@ routes of spread... ^EMQvCTKW
 			"version": 152,
 			"versionNonce": 1176329841,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30637,7 +30589,6 @@ routes of spread... ^EMQvCTKW
 			"version": 172,
 			"versionNonce": 1002618143,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30675,7 +30626,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1688889425,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30714,7 +30664,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1607188799,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30753,7 +30702,6 @@ routes of spread... ^EMQvCTKW
 			"version": 124,
 			"versionNonce": 616248881,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30796,7 +30744,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 6242655,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30835,7 +30782,6 @@ routes of spread... ^EMQvCTKW
 			"version": 126,
 			"versionNonce": 691488785,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30886,7 +30832,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 516799871,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30925,7 +30870,6 @@ routes of spread... ^EMQvCTKW
 			"version": 124,
 			"versionNonce": 1276517873,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -30968,7 +30912,6 @@ routes of spread... ^EMQvCTKW
 			"version": 125,
 			"versionNonce": 1045935519,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31015,7 +30958,6 @@ routes of spread... ^EMQvCTKW
 			"version": 124,
 			"versionNonce": 1012873169,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31058,7 +31000,6 @@ routes of spread... ^EMQvCTKW
 			"version": 126,
 			"versionNonce": 640526783,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31109,7 +31050,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1546261937,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31148,7 +31088,6 @@ routes of spread... ^EMQvCTKW
 			"version": 125,
 			"versionNonce": 1668291039,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31199,7 +31138,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 1587427217,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31238,7 +31176,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 187663871,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31277,7 +31214,6 @@ routes of spread... ^EMQvCTKW
 			"version": 122,
 			"versionNonce": 636689777,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -31316,13 +31252,15 @@ routes of spread... ^EMQvCTKW
 			"version": 186,
 			"versionNonce": 1013739039,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "South America",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "South America",
+			"originalText": "South America"
 		},
 		{
 			"type": "text",
@@ -31345,13 +31283,16 @@ routes of spread... ^EMQvCTKW
 			"seed": 1444835615,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 16,
 			"fontFamily": 1,
 			"text": "Africa",
-			"baseline": 14,
+			"baseline": 15,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Africa",
+			"originalText": "Africa"
 		},
 		{
 			"type": "text",
@@ -31369,18 +31310,21 @@ routes of spread... ^EMQvCTKW
 			"y": 1671.9000907782636,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 109,
+			"width": 110,
 			"height": 20,
 			"seed": 605172415,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 16,
 			"fontFamily": 1,
 			"text": "North America",
-			"baseline": 14,
+			"baseline": 15,
 			"textAlign": "center",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "North America",
+			"originalText": "North America"
 		},
 		{
 			"type": "text",
@@ -31398,18 +31342,21 @@ routes of spread... ^EMQvCTKW
 			"y": 1756.6369328835265,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 33,
+			"width": 34,
 			"height": 20,
 			"seed": 808797919,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 16,
 			"fontFamily": 1,
 			"text": "Asia",
-			"baseline": 14,
+			"baseline": 15,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Asia",
+			"originalText": "Asia"
 		},
 		{
 			"type": "text",
@@ -31432,13 +31379,16 @@ routes of spread... ^EMQvCTKW
 			"seed": 1194048895,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 16,
 			"fontFamily": 1,
 			"text": "Europe",
-			"baseline": 14,
+			"baseline": 15,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Europe",
+			"originalText": "Europe"
 		},
 		{
 			"type": "text",
@@ -31456,18 +31406,21 @@ routes of spread... ^EMQvCTKW
 			"y": 1832.9526902334444,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 73,
+			"width": 74,
 			"height": 20,
 			"seed": 423766015,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
-			"boundElementIds": [],
 			"fontSize": 16,
 			"fontFamily": 1,
 			"text": "Australia",
-			"baseline": 14,
+			"baseline": 15,
 			"textAlign": "left",
-			"verticalAlign": "top"
+			"verticalAlign": "top",
+			"boundElements": [],
+			"containerId": null,
+			"rawText": "Australia",
+			"originalText": "Australia"
 		},
 		{
 			"id": "Fmo9OXdy",
@@ -31490,13 +31443,15 @@ routes of spread... ^EMQvCTKW
 			"version": 82,
 			"versionNonce": 2116619903,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "?",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "?",
+			"originalText": "?"
 		},
 		{
 			"id": "fzgU9Dkf",
@@ -31519,13 +31474,15 @@ routes of spread... ^EMQvCTKW
 			"version": 114,
 			"versionNonce": 529816817,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "?",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "?",
+			"originalText": "?"
 		},
 		{
 			"type": "ellipse",
@@ -31550,7 +31507,7 @@ routes of spread... ^EMQvCTKW
 				"0WGEggmlfiPpTIpnzHktd"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -31576,7 +31533,6 @@ routes of spread... ^EMQvCTKW
 				"0WGEggmlfiPpTIpnzHktd"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -31599,7 +31555,8 @@ routes of spread... ^EMQvCTKW
 					0,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -31625,7 +31582,6 @@ routes of spread... ^EMQvCTKW
 				"0WGEggmlfiPpTIpnzHktd"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -31644,7 +31600,8 @@ routes of spread... ^EMQvCTKW
 					17.00802393389654,
 					15.817080969844255
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"id": "tfhJ1xV6",
@@ -31667,20 +31624,22 @@ routes of spread... ^EMQvCTKW
 			"version": 188,
 			"versionNonce": 389358769,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Between continents = ✔\nBetween countries = ❌",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "middle",
-			"baseline": 40
+			"baseline": 41,
+			"containerId": null,
+			"rawText": "Between continents = ✔\nBetween countries = ❌",
+			"originalText": "Between continents = ✔\nBetween countries = ❌"
 		},
 		{
 			"id": "B036OTrA",
 			"type": "text",
 			"x": -544.1321746639051,
 			"y": 1595.1901270081114,
-			"width": 371,
+			"width": 370,
 			"height": 25,
 			"angle": 0,
 			"strokeColor": "#000000",
@@ -31696,13 +31655,15 @@ routes of spread... ^EMQvCTKW
 			"version": 175,
 			"versionNonce": 404809375,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Third Pandemic (19th - 20th Century)",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 18
+			"baseline": 18,
+			"containerId": null,
+			"rawText": "Third Pandemic (19th - 20th Century)",
+			"originalText": "Third Pandemic (19th - 20th Century)"
 		},
 		{
 			"id": "EMQvCTKW",
@@ -31725,13 +31686,15 @@ routes of spread... ^EMQvCTKW
 			"version": 346,
 			"versionNonce": 92126463,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "We can't say much about \nroutes of spread...",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 34
+			"baseline": 35,
+			"containerId": null,
+			"rawText": "We can't say much about \nroutes of spread...",
+			"originalText": "We can't say much about \nroutes of spread..."
 		}
 	],
 	"appState": {

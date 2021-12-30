@@ -53,9 +53,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 270,
 			"versionNonce": 1330343086,
 			"isDeleted": false,
-			"boundElementIds": [
-				"oZqi-h2Pycq6KUbFCWKq8",
-				"z45yQhzn4xSa71IMYVL1z"
+			"boundElements": [
+				{
+					"type": "arrow",
+					"id": "oZqi-h2Pycq6KUbFCWKq8"
+				},
+				{
+					"type": "arrow",
+					"id": "z45yQhzn4xSa71IMYVL1z"
+				}
 			]
 		},
 		{
@@ -64,7 +70,7 @@ Made with Excalidraw ^i6B8YHks
 			"x": 252.3428562709264,
 			"y": 111.1904721941267,
 			"width": 329,
-			"height": 45,
+			"height": 46,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -79,13 +85,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 192,
 			"versionNonce": 2023098034,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Eaton et al. 2021",
 			"fontSize": 36,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 32
+			"baseline": 32,
+			"containerId": null,
+			"rawText": "Eaton et al. 2021",
+			"originalText": "Eaton et al. 2021"
 		},
 		{
 			"id": "nSXLRpUh",
@@ -93,7 +101,7 @@ Made with Excalidraw ^i6B8YHks
 			"x": 708.333641227086,
 			"y": 118.30784797364399,
 			"width": 362,
-			"height": 36,
+			"height": 35,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -108,13 +116,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 319,
 			"versionNonce": 2131984562,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Plagued by a cryptic clock",
 			"fontSize": 28,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 25
+			"baseline": 25,
+			"containerId": null,
+			"rawText": "Plagued by a cryptic clock",
+			"originalText": "Plagued by a cryptic clock"
 		},
 		{
 			"id": "lUkhLQ7I",
@@ -122,7 +132,7 @@ Made with Excalidraw ^i6B8YHks
 			"x": 371.80028115454127,
 			"y": 220.05563980888394,
 			"width": 266,
-			"height": 75,
+			"height": 74,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -137,13 +147,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 587,
 			"versionNonce": 1733978478,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Why is the molecular clock \nof Yersinia pestis \nso #*$@*! confusing?",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 68
+			"baseline": 67,
+			"containerId": null,
+			"rawText": "Why is the molecular clock \nof Yersinia pestis \nso #*$@*! confusing?",
+			"originalText": "Why is the molecular clock \nof Yersinia pestis \nso #*$@*! confusing?"
 		},
 		{
 			"type": "ellipse",
@@ -168,7 +180,7 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -193,7 +205,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -206,7 +217,8 @@ Made with Excalidraw ^i6B8YHks
 					-3.4692796610169694,
 					78.89300847457628
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -231,7 +243,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -244,7 +255,8 @@ Made with Excalidraw ^i6B8YHks
 					31.230137711864415,
 					48.113082627118615
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -269,7 +281,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -282,7 +293,8 @@ Made with Excalidraw ^i6B8YHks
 					-26.721398305084733,
 					44.696769067796595
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -307,7 +319,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -320,7 +331,8 @@ Made with Excalidraw ^i6B8YHks
 					30.336334745762713,
 					29.118114406779682
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -345,7 +357,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -358,7 +369,8 @@ Made with Excalidraw ^i6B8YHks
 					43.71689618644069,
 					-24.65572033898303
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -383,7 +395,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -404,7 +415,8 @@ Made with Excalidraw ^i6B8YHks
 					-51.589466914007886,
 					25.183517906002518
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -429,7 +441,6 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -462,7 +473,8 @@ Made with Excalidraw ^i6B8YHks
 					0,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "rectangle",
@@ -487,7 +499,7 @@ Made with Excalidraw ^i6B8YHks
 				"_7CSsIzSRKQ4dIOOJbbyr"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "ellipse",
@@ -512,7 +524,7 @@ Made with Excalidraw ^i6B8YHks
 				"yLTJX3xdfneAq1-1VLYQ1"
 			],
 			"strokeSharpness": "sharp",
-			"boundElementIds": []
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -537,7 +549,6 @@ Made with Excalidraw ^i6B8YHks
 				"yLTJX3xdfneAq1-1VLYQ1"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -560,7 +571,8 @@ Made with Excalidraw ^i6B8YHks
 					2.3827352889151805,
 					0
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"type": "line",
@@ -585,7 +597,6 @@ Made with Excalidraw ^i6B8YHks
 				"yLTJX3xdfneAq1-1VLYQ1"
 			],
 			"strokeSharpness": "round",
-			"boundElementIds": [],
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -604,7 +615,8 @@ Made with Excalidraw ^i6B8YHks
 					24.544645510574508,
 					13.203791869747858
 				]
-			]
+			],
+			"boundElements": []
 		},
 		{
 			"id": "SKDU5VTknyIMRVRoXJJnA",
@@ -626,8 +638,7 @@ Made with Excalidraw ^i6B8YHks
 			"seed": 1861299058,
 			"version": 551,
 			"versionNonce": 579852014,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "CitzgcsTAXre-jQsnyARL",
@@ -650,7 +661,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 1882183410,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.020198381438093656,
@@ -717,7 +727,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 421,
 			"versionNonce": 1284688174,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -759,7 +768,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 297543858,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.050495664658922614,
@@ -826,7 +834,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 368931694,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.02019838143809078,
@@ -888,7 +895,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 426,
 			"versionNonce": 1767391858,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.030297283220833138,
@@ -945,7 +951,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 424,
 			"versionNonce": 689493422,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -997,7 +1002,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 835396658,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.02019838143809078,
@@ -1059,7 +1063,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 2131619822,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -1126,7 +1129,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 888917490,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.020198959310704,
@@ -1178,7 +1180,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 65389102,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.030297283220834564,
@@ -1235,7 +1236,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 1743863730,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.050495664658922614,
@@ -1302,7 +1302,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 982076526,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -1359,7 +1358,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 114456946,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.050494508913695835,
@@ -1421,7 +1419,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 1623297710,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.04039560713095704,
@@ -1488,7 +1485,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 820411186,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.02019838143809078,
@@ -1540,7 +1536,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 322406638,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.01009890178273887,
@@ -1602,7 +1597,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 76825842,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.040396185003571505,
@@ -1664,7 +1658,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 1903442734,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.04039676287618267,
@@ -1726,7 +1719,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 996333234,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.04039560713095789,
@@ -1788,7 +1780,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 430,
 			"versionNonce": 1105241454,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.030297283220833138,
@@ -1865,7 +1856,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 1173958770,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.03029670534821912,
@@ -1932,7 +1922,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 365283246,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -1984,7 +1973,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 426,
 			"versionNonce": 1746817586,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.010100057527965186,
@@ -2041,7 +2029,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 1833738734,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.05049508678630961,
@@ -2103,7 +2090,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 427,
 			"versionNonce": 1421425650,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.04039676287618267,
@@ -2165,7 +2151,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 1534997550,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.020197225692865663,
@@ -2217,7 +2202,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 1238429106,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.07069231247917651,
@@ -2289,7 +2273,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 425,
 			"versionNonce": 709066350,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.010098323910127395,
@@ -2341,7 +2324,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 747399026,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					-0.030297283220833138,
@@ -2408,7 +2390,6 @@ Made with Excalidraw ^i6B8YHks
 			"version": 1006,
 			"versionNonce": 2120581294,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"points": [
 				[
 					0,
@@ -2430,8 +2411,8 @@ Made with Excalidraw ^i6B8YHks
 			"type": "text",
 			"x": 823.1505153618044,
 			"y": 465.29730422295813,
-			"width": 120.38288867687824,
-			"height": 19.734899783094793,
+			"width": 121,
+			"height": 19,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -2446,21 +2427,23 @@ Made with Excalidraw ^i6B8YHks
 			"version": 498,
 			"versionNonce": 624077106,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Collection Date",
 			"fontSize": 15.787919826475845,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 13.734899783094793
+			"baseline": 14,
+			"containerId": null,
+			"rawText": "Collection Date",
+			"originalText": "Collection Date"
 		},
 		{
 			"id": "effJIhMV",
 			"type": "text",
 			"x": 639.3574051869537,
 			"y": 346.23007266370826,
-			"width": 138.14429848166355,
-			"height": 19.734899783094793,
+			"width": 138,
+			"height": 19,
 			"angle": 4.71238898038469,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -2475,21 +2458,23 @@ Made with Excalidraw ^i6B8YHks
 			"version": 596,
 			"versionNonce": 2072853230,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Distance to Root",
 			"fontSize": 15.787919826475836,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 13.734899783094793
+			"baseline": 14,
+			"containerId": null,
+			"rawText": "Distance to Root",
+			"originalText": "Distance to Root"
 		},
 		{
 			"id": "wdDSviwr",
 			"type": "text",
 			"x": 795.6626536502847,
 			"y": 267.29053805933046,
-			"width": 66.11191427336756,
-			"height": 19.734899783094793,
+			"width": 66,
+			"height": 19,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -2504,13 +2489,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 428,
 			"versionNonce": 992654066,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "R2=BAD",
 			"fontSize": 15.787919826475845,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 13.734899783094793
+			"baseline": 14,
+			"containerId": null,
+			"rawText": "R2=BAD",
+			"originalText": "R2=BAD"
 		},
 		{
 			"id": "ezAJ39DRtf4uWj6vLkR-_",
@@ -2532,8 +2519,7 @@ Made with Excalidraw ^i6B8YHks
 			"seed": 208293038,
 			"version": 445,
 			"versionNonce": 1749265710,
-			"isDeleted": false,
-			"boundElementIds": null
+			"isDeleted": false
 		},
 		{
 			"id": "zvXkr3oc",
@@ -2556,13 +2542,15 @@ Made with Excalidraw ^i6B8YHks
 			"version": 300,
 			"versionNonce": 1660008370,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Is evolution going.... backwards?",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "Is evolution going.... backwards?",
+			"originalText": "Is evolution going.... backwards?"
 		},
 		{
 			"id": "i6B8YHks",
@@ -2585,19 +2573,22 @@ Made with Excalidraw ^i6B8YHks
 			"version": 110,
 			"versionNonce": 2126496306,
 			"isDeleted": false,
-			"boundElementIds": null,
 			"text": "Made with Excalidraw",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 14
+			"baseline": 15,
+			"containerId": null,
+			"rawText": "Made with Excalidraw",
+			"originalText": "Made with Excalidraw"
 		}
 	],
 	"appState": {
 		"gridSize": null,
 		"viewBackgroundColor": "#ffffff"
-	}
+	},
+	"files": {}
 }
 ```
 %%
