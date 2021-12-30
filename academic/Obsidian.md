@@ -1,38 +1,26 @@
 ---
-type: 
-  - [[Tool]]
-  - [[MOC]]
-tags:
-  - 📝/🌱   
+type:
+  - Tool
+  - MOC
+mindmap-plugin: basic 
 ---
 
 # Obsidian
-
-## Tasks
-
-### Pending
-
-```dataview
-table tags
-from ""
-where project=[[Obsidian]] and status!="done"
-```
-
-### Completed
-
-```dataview
-table tags
-from ""
-where project=[[Obsidian]] and status="done"
-```
 
 ## Summary
 
 Obsidian is software that performs...
 
+## Plugins
+
+- [[Admonition]]
+- [[Meld Encrypt]]
+- [[Mind Map]]
+- [[Enhancing Mind Map]]
+
 ## [[HTML]]
 
-For future reference, the following [[HTML]] tags work:
+	For future reference, the following [[HTML]] tags work:
 
 ```html
 <iframe>
@@ -101,3 +89,4 @@ file='Eaton et al. 2021 Plagued by a cryptic clock.md';
 latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
 git log -S "Bayes Factor" --follow -p $file;
 ```
+![[Recording 20211229190454.webm]]
