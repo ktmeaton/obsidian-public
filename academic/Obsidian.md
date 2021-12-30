@@ -19,7 +19,8 @@ Obsidian is software that performs...
 - [x] [[Excalidraw]]
 - [ ] [[Kanban]] (waiting for [[Dataview]] integration)
 - [ ] [[Macros]]
-- [ ] [[Map View]]
+- [x] [[Map View]]
+- [ ] [[obsidian-public/academic/RSS Feeds]]
 
 ## [[HTML]]
 
