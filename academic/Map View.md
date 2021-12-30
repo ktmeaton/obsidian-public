@@ -28,8 +28,16 @@ Test these out in the [[obsidian-public/academic/Slippy Tiles]] note.
 
 - [[OpenStreetMap]] | https://tile.openstreetmap.org/{z}/{x}/{y}.png
 	![|256](https://tile.openstreetmap.org/3/4/2.png)	
+	
 - [[Humanitarian]] | http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png
 	![](http://a.tile.openstreetmap.fr/hot/3/4/2.png)
+	
+- [[CartoDB]] Light | https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png
+	![|256](https://a.basemaps.cartocdn.com/light_all/3/4/2@2x.png)
+	
+- [[CartoDB]] Voyager | https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png
+	![|256](https://a.basemaps.cartocdn.com/rastertiles/voyager/3/4/2@2x.png)
+	
 - [[MapTiler]] Pastel | https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key={API_KEY}
 %%🔐α BaUtYIGp7ySSNiT7J6vF+QDHA3yljozhwZ8r8SjYpoowXFmbgt3t/dJMogrpQmafQ7cVpTx9UlopEDEvsTbooZSdCk7x0dCo9wovFkd5EV4jU+ccIw6nIO2eNiEp+0iXXsDsViaGGg8xvUIQrdoqfNF6kAzgjJwe5r1PZ/1RLcfuH/wNTRiJUby8zp3ZaDTjovCs4aN49COnP+mCbMtF1vjtlaYQ4ajWLuWMgPNoGltY8IkTGhQrJ++QkVXXnoZX 🔐%%
 - [[MapTiles]] English | https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png
