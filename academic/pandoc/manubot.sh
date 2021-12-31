@@ -273,4 +273,12 @@ cp -r build/assets/default.csl build/assets/style.csl
 # Remove output
 rm -rf output/
 
+# Remove included files from rootstock dir
+for filename in ${arrINCLUDE[@]}; do
+  # Check if it exists
+  if [[ -e $filename ]]; then
+    rm $filename;
+  fi
+done
+
 

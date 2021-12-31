@@ -94,7 +94,19 @@ compile-manubot: |
   && pandoc/manubot.sh \
     --input 'Eaton_2021_PhD_Dissertation.md' \
     --template ../../rootstock/templates/paper \
-    --include Eaton_2020_NCBImeta.md,Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md
+    --include Eaton_2020_NCBImeta.md,Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md,Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md
+authors:
+  - name: Katherine Eaton
+    github: ktmeaton
+    orcid: 0000-0001-6862-7756
+    affiliations: [
+      "McMaster Ancient DNA Centre, McMaster University",
+      "Department of Anthropology, McMaster University"
+    ]
+    email: ktmeaton@gmail.com
+lang: en-US	
+repo: ktmeaton/obsidian-public
+filepath: 'academic/Eaton_2021_PhD_Dissertation'
 tblPrefix: "Table"
 figPrefix: "Figure"
 ---
@@ -178,11 +190,9 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
-<!--
 ```{.include}
 [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
 ```
--->
 
 # Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
@@ -216,11 +226,9 @@ Katherine Eaton\*^1,2^, Ravneet Sidhu\*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^
 
 \setlength{\parindent}{2em}
 
-<!--
 ```{.include}
 [[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
 ```
--->
 
 # Conclusion
 
