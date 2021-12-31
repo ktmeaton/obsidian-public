@@ -9,3 +9,7 @@ type: [[Task]]
 ---
 
 # Add rootstock as submodule of obsidian vault
+
+## Local Changes
+
+1. Enable DOCX export by default.

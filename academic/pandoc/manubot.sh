@@ -2,19 +2,154 @@
 
 #USAGE ./manubot.sh input.md
 
-INPUT=$1
-BIB=$2
-ROOTSTOCK_DIR="${3:-rootstock}"
-CSL="${4:-${ROOTSTOCK_DIR}/build/assets/style.csl}"
+# -----------------------------------------------------------------------------
+# Argument Parsing
+# -----------------------------------------------------------------------------
+# Credit: Bruno Bronosky & Mateen Ulhaq
+# Source: https://stackoverflow.com/a/14203146
 
-# Backup default rootstock csl
-DEFAULT_CSL=${ROOTSTOCK_DIR}/build/assets/style.csl
-cp $DEFAULT_CSL ${DEFAULT_CSL}.bak
+# Default Arguments
+INPUT="Manubot.md"
+BIB="pandoc/bib/library.json"
+ROOTSTOCK_DIR="../../rootstock"
+DEFAULT_CSL="${ROOTSTOCK_DIR}/build/assets/default.csl"
+CSL="${DEFAULT_CSL}"
+DEFAULT_TEMPLATE="${ROOTSTOCK_DIR}/templates/default"
+TEMPLATE="${DEFAULT_TEMPLATE}"
+PDF=false
+DOCX=false
+LATEX=false
 
-# Copy over custom csl
+
+POSITIONAL_ARGS=()
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    # -------------------------------------------------------------------------
+    # Help
+    -h|--help)
+      echo "Typset Obsidian notes using Manubot."
+      shift # past argument
+      shift # past value
+      exit
+      ;;  
+    # -------------------------------------------------------------------------
+    # Markdown File
+    -i|--input)
+      INPUT="$2"
+      if [[ ! -e $INPUT ]]; then
+        echo "Input does not exist: $INPUT"
+        exit 1
+      fi
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------      
+    # Bibliography
+    -b|--bib)
+      BIB="$2"
+      if [[ ! -e $BIB ]]; then
+        echo "Bibliography does not exist: $BIB"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------      
+    # Rootstock Directory
+    -r|--rootstock)
+      ROOTSTOCK_DIR="$2"
+      if [[ ! -e $ROOTSTOCK_DIR ]]; then
+        echo "Rootstock does not exist: $ROOTSTOCK_DIR"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------       
+    # CSL
+    -c|--csl)
+      CSL="$2"
+      if [[ ! -e $CSL ]]; then
+        echo "CSL does not exist: $CSL"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------      
+    # Template
+    -t|--template)
+      TEMPLATE="$2"
+      if [[ ! -e $TEMPLATE ]]; then
+        echo "Template does not exist: $TEMPLATE"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------      
+    # PDF Output
+    --pdf)
+      PDF=true 
+      shift # past argument
+      ;;
+    # -------------------------------------------------------------------------      
+    # DOCX Output
+    --docx)
+      DOCX=true 
+      shift # past argument
+      ;;
+    # -------------------------------------------------------------------------      
+    # LATEX Output
+    --latex)
+      LATEX=true 
+      shift # past argument
+      ;;
+    # -------------------------------------------------------------------------             
+    # Unknown Options
+    -*|--*)
+      echo "Unknown option $1"
+      exit 1
+      ;;
+    # -------------------------------------------------------------------------      
+    # Positional Arguments      
+    *)
+      POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+    # -------------------------------------------------------------------------      
+  esac
+done
+
+# restore positional parameters
+set -- "${POSITIONAL_ARGS[@]}"
+
+# -----------------------------------------------------------------------------
+# Setup
+# -----------------------------------------------------------------------------
+
+echo "manubot.sh was configured with the following parameters:"
+echo "  Input:        ${INPUT}"
+echo "  Bibliography: ${BIB}"
+echo "  Rootstock:    ${ROOTSTOCK_DIR}"
+echo "  CSL:          ${CSL}"
+echo "  Template:     ${TEMPLATE}"
+echo "  PDF:          ${PDF}"
+echo "  DOCX:         ${DOCX}"
+echo "  LATEX:        ${LATEX}"
+echo ""
+
+
+# Copy over csl
 if [[ $CSL != $DEFAULT_CSL ]]; then
   cp $CSL $DEFAULT_CSL
-fi
+fi;
+
+# Remove old content dir
+rm -rf ${ROOTSTOCK_DIR}/content/
+# Copy over template
+cp -r $TEMPLATE ${ROOTSTOCK_DIR}/content/
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
@@ -23,11 +158,13 @@ input="$INPUT"
 output=${ROOTSTOCK_DIR}/content/01.manuscript.md.tmp
 ${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output ${output}
 
-
 # Copy over bibliography
 cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
 # For .bib this is deliberately not in the output directory
 #cp $BIB ${ROOTSTOCK_DIR}/
+
+# Copy over images
+cp -r ${ROOTSTOCK_DIR}/build/assets/images ${ROOTSTOCK_DIR}/content/
 
 # Strip out the Frontmatter
 echo "Preparing frontmatter..."
@@ -55,20 +192,38 @@ cwd=`pwd`
 export RESOURCE_DIR=$cwd
 cd ${ROOTSTOCK_DIR};
 
-# Build manuscripts
+# -----------------------------------------------------------------------------
+# Build
+# -----------------------------------------------------------------------------
+
+# Export Build Parameters
+export BUILD_PDF=$PDF
+export BUILD_DOCX=$DOCX
+export BUILD_LATEX=$LATEX
+
 echo "Building manuscript..."
 build/build.sh
 
+# Copy output to current working directory
+exts=("html" "pdf" "docx" "latex")
+for ext in ${exts[@]}; do
+  if [[ -e output/manuscript.${ext} ]]; then
+    cp -f output/manuscript.${ext} ${cwd}/"${INPUT%.*}".${ext}
+  fi
+done;
+
+# -----------------------------------------------------------------------------
+# Cleanup
+# -----------------------------------------------------------------------------
+
+# Restore default content
+rm -rf content/
+cp -r templates/default content
+
 # Restore default csl
-mv build/assets/style.csl.bak build/assets/style.csl
+cp -r build/assets/default.csl build/assets/style.csl
 
-#Cleanup
-cp -f output/manuscript.html ${cwd}/"${INPUT%.*}".html
-cp -f output/manuscript.pdf ${cwd}/"${INPUT%.*}".pdf
-cp -f output/manuscript.docx ${cwd}/"${INPUT%.*}".docx
+# Remove output
+rm -rf output/
 
-#rm output/*.{pdf,html,tsv,json,docx} output/manuscript.md
-#rm content/01.manuscript.md
-rm content/01.manuscript.md.tmp
-rm content/manual-references.json
-rm content/metadata.yaml
+

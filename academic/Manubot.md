@@ -5,12 +5,20 @@ aliases:
 tags:
   - 📝/🌱
 status: idea
-
+title: Manubot
+authors:
+  - name: Katherine Eaton
+    github: ktmeaton
+    orcid: 0000-0001-6862-7756
+    affiliations: [
+      "Department of Anthropology, McMaster University"
+    ]
+    email: ktmeaton@gmail.com
+date: 3 February 2020
+date: 31 December 2021
 ---
 
-# Manubot
-
-- Manubot requires the gcc compiler.
+Manubot requires the gcc compiler.
 
 ```bash
 sudo apt install build-essential

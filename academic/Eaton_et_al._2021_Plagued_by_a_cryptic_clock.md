@@ -9,7 +9,7 @@ people:
   - Leo Featherstone
 lang: en-US
 repo: ktmeaton/obsidian-public
-filepath: 'academic/Eaton et al. 2021 Plagued by a cryptic clock'
+filepath: 'academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock'
 tags: ✨
 status: done
 title: "Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_"
