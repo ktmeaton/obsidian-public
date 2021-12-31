@@ -12,6 +12,7 @@
 INPUT="Manubot.md"
 BIB="pandoc/bib/library.json"
 ROOTSTOCK_DIR="../../rootstock"
+LUA_DIR="pandoc/lua-filters"
 DEFAULT_CSL="${ROOTSTOCK_DIR}/build/assets/default.csl"
 CSL="${DEFAULT_CSL}"
 DEFAULT_TEMPLATE="${ROOTSTOCK_DIR}/templates/default"
@@ -19,7 +20,7 @@ TEMPLATE="${DEFAULT_TEMPLATE}"
 PDF=false
 DOCX=false
 LATEX=false
-
+TEST=false
 
 POSITIONAL_ARGS=()
 
@@ -30,9 +31,14 @@ while [[ $# -gt 0 ]]; do
     -h|--help)
       echo "Typset Obsidian notes using Manubot."
       shift # past argument
-      shift # past value
       exit
-      ;;  
+      ;;
+    # -------------------------------------------------------------------------
+    # Test
+    --test)
+      TEST=true
+      shift # past argument
+      ;;         
     # -------------------------------------------------------------------------
     # Markdown File
     -i|--input)
@@ -66,6 +72,17 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       shift # past value
       ;;
+    # -------------------------------------------------------------------------      
+    # Lua Directory
+    --lua-dir)
+      LUA_DIR="$2"
+      if [[ ! -e $LUA_DIR ]]; then
+        echo "Lua filters do not exist: $LUA_DIR"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;          
     # -------------------------------------------------------------------------       
     # CSL
     -c|--csl)
@@ -88,6 +105,13 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       shift # past value
       ;;
+    # -------------------------------------------------------------------------      
+    # Include Files
+    --include)
+      INCLUDE_FILES="$2"  
+      shift # past argument
+      shift # past value
+      ;;      
     # -------------------------------------------------------------------------      
     # PDF Output
     --pdf)
@@ -130,21 +154,29 @@ set -- "${POSITIONAL_ARGS[@]}"
 # -----------------------------------------------------------------------------
 
 echo "manubot.sh was configured with the following parameters:"
-echo "  Input:        ${INPUT}"
-echo "  Bibliography: ${BIB}"
-echo "  Rootstock:    ${ROOTSTOCK_DIR}"
-echo "  CSL:          ${CSL}"
-echo "  Template:     ${TEMPLATE}"
-echo "  PDF:          ${PDF}"
-echo "  DOCX:         ${DOCX}"
-echo "  LATEX:        ${LATEX}"
+echo "  Input:         ${INPUT}"
+echo "  Bibliography:  ${BIB}"
+echo "  Rootstock:     ${ROOTSTOCK_DIR}"
+echo "  Lua Filters:   ${LUA_DIR}"
+echo "  CSL:           ${CSL}"
+echo "  Template:      ${TEMPLATE}"
+echo "  Include Files: ${INCLUDE_FILES}"
+echo "  PDF:           ${PDF}"
+echo "  DOCX:          ${DOCX}"
+echo "  LATEX:         ${LATEX}"
 echo ""
 
+if [[ $TEST == true ]]; then
+  exit
+fi
 
 # Copy over csl
 if [[ $CSL != $DEFAULT_CSL ]]; then
   cp $CSL $DEFAULT_CSL
 fi;
+
+# Extend lua dir path
+LUA_DIR=`pwd`/$LUA_DIR
 
 # Remove old content dir
 rm -rf ${ROOTSTOCK_DIR}/content/
@@ -162,6 +194,20 @@ ${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output ${output}
 cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
 # For .bib this is deliberately not in the output directory
 #cp $BIB ${ROOTSTOCK_DIR}/
+
+
+# Copy Over Files to Include
+arrINCLUDE=(${INCLUDE_FILES//,/ })
+for filename in ${arrINCLUDE[@]}; do
+  # Check if it exists
+  if [[ ! -e $filename ]]; then
+    echo "Include file does not exist: $filename"
+    exit
+  else
+  cp $filename ${ROOTSTOCK_DIR}
+  fi
+done
+
 
 # Copy over images
 cp -r ${ROOTSTOCK_DIR}/build/assets/images ${ROOTSTOCK_DIR}/content/
@@ -200,6 +246,7 @@ cd ${ROOTSTOCK_DIR};
 export BUILD_PDF=$PDF
 export BUILD_DOCX=$DOCX
 export BUILD_LATEX=$LATEX
+export LUA_DIR=$LUA_DIR
 
 echo "Building manuscript..."
 build/build.sh

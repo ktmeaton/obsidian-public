@@ -13,10 +13,7 @@ copyright-year: 2021
 dedication-line-one: "'You have to know the past to understand the present.'"
 dedication-line-two: "- Carl Sagan"
 toc: true
-tags:
-  - 📝/🌱
 status: idea
-
   
 lay-abstract: "_The Plague_ is a disease that has profoundly impacted human history and is responsible for some of the most fatal pandemics ever recorded. It may surprise many to know that this disease is not a bygone of a past era, but in fact is still present in many regions of the world. Although researchers have been studying plague for hundreds of years, there are many aspects of its epidemiology that are enigmatic. In this thesis, I focus on how DNA from the plague bacterium can be used to estimate _where_ and _when_ this disease appeared in the past. To do so, I reconstruct the evolutionary relationships between modern and ancient strains of plague, using publicly available data and new DNA sequences retrieved from the skeletal remains of plague victims in Denmark. This work offers a new methodological framework for large-scale genetic analysis, provides a critique on what questions DNA evidence _can_ and _cannot_ answer, and expands our knowledge of the global diversity of plague."
 
@@ -75,6 +72,7 @@ sectionsDepth: 4
 reference-section-title: References
 link-citations: true
 colorlinks: true
+environment: "https://gitlab.cscscience.ca/keaton/rootstock/-/blob/00cc21eba27e19fd5d4a83891ccdd9d516a41537/build/environment.yml"
 compile-pandoc: |
   conda activate manubot \
   && pandoc/convert_wikilinks.py \
@@ -93,9 +91,10 @@ compile-pandoc: |
     && rm Eaton_2021_PhD_Dissertation_convert.md
 compile-manubot: |
   conda activate manubot \
-  && pandoc/manubot.sh 'Eaton_2021_PhD_Dissertation.md' \
-  pandoc/bib/library.json \
-  ../../rootstock
+  && pandoc/manubot.sh \
+    --input 'Eaton_2021_PhD_Dissertation.md' \
+    --template ../../rootstock/templates/paper \
+    --include Eaton_2020_NCBImeta.md,Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md
 tblPrefix: "Table"
 figPrefix: "Figure"
 ---
@@ -147,12 +146,9 @@ Katherine Eaton^1,2^  \
 \setlength{\parindent}{2em}
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-<!--
-```{.include shift-heading-level-by=1}
+```{.include}
 [[Eaton_2020_NCBImeta.md]]
 ```
--->
 
 # Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_
 
@@ -181,8 +177,6 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 ^10^Canadian Institute for Advanced Research, Toronto, Canada.  \
 
 \setlength{\parindent}{2em}
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 <!--
 ```{.include}
@@ -260,4 +254,4 @@ One field of ongoing research involves improving the scalability of these tools.
 Another parallel between this dissertation and the ongoing pandemic involves spatiotemporal modeling. In Chapter 3, we discovered that in our expanded genomic data set, _Y. pestis_' rate of spread tends to outpace its rate of evolutionary change. This leads to identical _Y. pestis_ isolates found across multiple countries, such as the case throughout the Black Death (1346-1353). However, we sporadically observed the opposite trend, in which _Y. pestis_ strains collected in a short time frame (<10 years) were _extremely_ different. This tremendous diversity in evolutionary rates meant that we were unable to estimate a single molecular clock for _Y. pestis_. These issues, clonal spread and rate variation, were also recently documented in SARS-CoV-2  [@ferreira2021CoVizuRapidAnalysis]. Ferreira et al. describe this as a paradox in which we _"become increasingly uncertain about the relationships among specific lineages as we collect greater amounts of data"_. This runs counterintuitive to the general expectation in scientific studies that _the more data we collect, the closer we get to the 'truth'_. Overall, this presents a complex theoretical problem that is becoming increasingly prevalent across various disciplines moving into the era of 'big data'.
 
  
-<!-- References Section will auto dump here -->
+<!-- References Section will auto dump here in pandoc thesis template -->
