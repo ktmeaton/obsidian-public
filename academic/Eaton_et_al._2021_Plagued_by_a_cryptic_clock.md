@@ -1,22 +1,19 @@
 ---
-project: [[plague-phylogeography]]
+project: phd
 due: Nov 17, 2021
 time: 11:59
 people:
-  - [[Katherine Eaton]]
-  - [[Hendrik Poinar]]
-  - [[Sebastian Duchene]]
-  - [[Leo Featherstone]]
+  - Katherine Eaton
+  - Hendrik Poinar
+  - Sebastian Duchene
+  - Leo Featherstone
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: 'academic/Eaton et al. 2021 Plagued by a cryptic clock'
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: "Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_"
-type:
-  - [[Task]]
-  - [[Note]]
-  - [[Paper]]
+type: Paper
 numberSections: True
 autoSectionLabels: True
 sectionsDepth: 4

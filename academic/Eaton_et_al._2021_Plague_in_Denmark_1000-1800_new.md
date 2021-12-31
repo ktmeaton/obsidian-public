@@ -1,8 +1,8 @@
 ---
-project: [[Plague Denmark]]
+project: Plague Denmark
 due: June 28, 2021
 authors:
-  - name: [[Katherine Eaton]]
+  - name: Katherine Eaton
     orcid: 0000-0001-6862-7756
     affiliations: [	
         "[[Department of Anthropology]], [[McMaster University]]",
@@ -73,11 +73,11 @@ authors:
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: academic/[[Plague Denmark Paper]]
-tags: 🧨 
-status: priority
+tags: ✨ 
+status: done
 title: Plague in Denmark (1000-1800)
 subtitle: A longitudinal study of _Yersinia pestis_
-type: [[Task]]
+type: Paper
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \

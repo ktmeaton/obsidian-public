@@ -1,11 +1,11 @@
 ---
-project: [[pla Depletion]]
-due: 2022-01-01
+project: pla Depletion
+due: 2022-01-16
 people:
 tags: 🧨
 status: priority
 title: Download Latvian Sample
-type: [[Task]]
+type: Task
 ---
 
 # Download Latvian Sample

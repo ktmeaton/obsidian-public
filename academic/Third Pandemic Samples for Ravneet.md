@@ -1,11 +1,11 @@
 ---
-project: [[pla Depletion]]
-due: 2022-01-03
+project: pla Depletion
+due: 2022-01-18
 people:
 tags: 🧨
 status: priority
 title: Third Pandemic Samples for Ravneet
-type: [[Task]]
+type: Task
 ---
 
 # Third Pandemic Samples for Ravneet
