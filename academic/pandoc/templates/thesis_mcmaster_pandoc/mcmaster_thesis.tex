@@ -417,22 +417,33 @@ $endif$
 % Pandoc Default Ends
 % ------------------------------------------------------------
 
-\setlength{\parskip}{1em} % Paragraph indent
-\setlength{\parindent}{2em} % Paragraph spacing
-\captionsetup[figure]{font=small} % Shrink caption font size
+% ------------------------------------------------------------
+% Custom Packages
+
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage[nokeyprefix]{refstyle}
-
-
-
-% ------------------------------------------------------------
-% Packages
 \usepackage{setspace} % doublespacing
 \usepackage{fancyhdr} % page style fancy
 \usepackage{calc,array} % table formatting and arraybackslash
+\usepackage{sectsty}
+
 %\usepackage{chngcntr}
 %\counterwithin{figure}{chapter}
 %\counterwithin{table}{chapter}
+
+%% pandoc-secnos: required package
+% \usepackage[capitalise]{cleveref}
+
+%% pandoc-secnos: change Cref names
+% \Crefname{section}{Chapter}{Sections}
+
+\setlength{\parskip}{1em} % Paragraph indent
+\setlength{\parindent}{2em} % Paragraph spacing
+% \captionsetup[figure]{font=small} % Shrink caption font size
+
+\chapternumberfont{\huge} 
+\chaptertitlefont{\huge}
+
 
 % #############################################################################
 % Document
@@ -486,7 +497,7 @@ $if(has-frontmatter)$\frontmatter$endif$
 
 \begin{center}
 	\large
-	\copyright\ Copyright\ by $author$, $subtmit-date$\\
+	\copyright\ Copyright\ by $author$, $copyright_year$\\
 		All Rights Reserved
 \end{center}
 \vskip.5in
@@ -495,7 +506,7 @@ $if(has-frontmatter)$\frontmatter$endif$
 % -------------------------------------
 % Signature Page
 \noindent
-$degree$ ($copyright-year$) \hfill  McMaster University \\
+$degree$ ($copyright_year$) \hfill  McMaster University \\
 ($department$)                                \hfill  Hamilton, Ontario, Canada
 
 
@@ -511,12 +522,14 @@ NUMBER OF PAGES: & \parbox[t]{4in}{\pageref{NumPrefacePages}, \pageref{NumDocume
 
 % -------------------------------------
 % Lay Abstract
-\chapter{Lay Abstract}
+\chapter*{Lay Abstract}
+\addcontentsline{toc}{chapter}{Lay Abstract}
 $lay_abstract$
 
 % -------------------------------------
 % Full Abstract
-\chapter{Abstract}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
 $abstract$
 
 % -------------------------------------
@@ -530,7 +543,8 @@ $abstract$
 	
 % -------------------------------------
 % Acknowledgements
-\chapter{Acknowledgments}
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgements}
 $for(acknowledgments)$
   $acknowledgments$\newline
 	\newline
@@ -564,7 +578,8 @@ $endfor$
 
 % -------------------------------------
 % List of abbreviations and symbols
-\chapter{List of Abbreviations and Symbols}
+\chapter*{List of Abbreviations and Symbols}
+\addcontentsline{toc}{chapter}{List of Abbreviations and Symbols}
 $for(abbreviations)$
   $abbreviations$\newline
 $endfor$
@@ -572,7 +587,8 @@ $endfor$
 
 % -------------------------------------
 % Declaration of Academic Achievement
-\chapter{Declaration of Academic Achievement}
+\chapter*{Declaration of Academic Achievement}
+\addcontentsline{toc}{chapter}{Declaration of Academic Achievement}
 $academic_declaration$\newline
 
 \begin{itemize}
@@ -597,8 +613,6 @@ $endfor$
 %\lhead{\bfseries My name}
 \cfoot{\thepage}
 \rfoot{}
-
-
 
 $body$
 

@@ -1,5 +1,4 @@
 ---
-documentclass: report
 full-title: "Big Data, Small Microbes: Genomic analysis of the plague bacterium _Yersinia pestis_"
 title: "Big Data, Small Microbes"
 subtitle: "Genomic analysis of the plague bacterium _Yersinia pestis_"
@@ -10,20 +9,14 @@ prev-degree-full: B.A. (Hons) Anthropology, University of Alberta
 prev-degree-short: B.A. (Hons)
 supervisor: Dr. Hendrik Poinar
 department: Department of Anthropology
-submit-date: June 2021
-copyright-year: 2021
+submit-date: January 30, 2022
+copyright_year: 2022
 dedication-line-one: "'You have to know the past to understand the present.'"
 dedication-line-two: "- Carl Sagan"
-toc: true
-status: priority
-copyright_statement: "© Copyright by Katherine Eaton, All Rights Reserved"
-submission_statement: "A thesis submitted to the Department of Anthropology and the school of graduate studies of McMaster University in partial fulfilment of the requirements for the degree of Doctor of Philosophy."
 
 lay_abstract: "_The Plague_ is a disease that has profoundly impacted human history and is responsible for some of the most fatal pandemics ever recorded. It may surprise many to know that this disease is not a bygone of a past era, but in fact is still present in many regions of the world. Although researchers have been studying plague for hundreds of years, there are many aspects of its epidemiology that are enigmatic. In this thesis, I focus on how DNA from the plague bacterium can be used to estimate _where_ and _when_ this disease appeared in the past. To do so, I reconstruct the evolutionary relationships between modern and ancient strains of plague, using publicly available data and new DNA sequences retrieved from the skeletal remains of plague victims in Denmark. This work offers a new methodological framework for large-scale genetic analysis, provides a critique on what questions DNA evidence _can_ and _cannot_ answer, and expands our knowledge of the global diversity of plague."
 
-abstract: "Pandemics of plague have reemerged multiple times throughout human history with tremendous mortality and extensive geographic spread. The First Pandemic (6^th^ - 8^th^ century) devastated the Mediterranean world, the Second Pandemic (14^th^ - 19^th^ century) swept across much of Afro-Eurasia, and the Third Pandemic (19^th^ - 20^th^ century) reached every continent except for Antarctica, and continues to persist in various endemic foci around the world. Despite centuries of historical research, the epidemiology of these pandemics remains enigmatic. However, recent technological advancements have yielded a novel form of evidence: ancient DNA of the plague bacterium _Yersinia pestis_. In this thesis, I explore how genomic data can be used to unravel the mysteries of _when_ and _where_ this disease appeared in the past. In particular, I focus on phylogenetic approaches to studying this 'small microbe' with 'big data' (ie. 100s - 1000s of genomes). I begin by describing novel software I developed that supports the acquisition and curation of large amounts of DNA sequences in public databases. I then use this tool to create an updated global phylogeny of _Y. pestis_, which includes ~600 genomes with standardized metadata. I devise and validate a new approach for temporal modeling (ie. molecular clock) that produces robust divergence dates in pandemic lineages of _Y. pestis_. In addition, I critically examine the questions that genomic evidence _can_ and _cannot_ address in isolation, such as whether the timing and spread of short-term epidemics can be confidently reconstructed. Finally, I apply this theoretical and methodological insight to a case study in which I reconstruct the appearance, persistence, and disappearance of plague in Denmark during the Second Pandemic. 
-The three papers enclosed in this sandwich-thesis contribute to a larger body of work on the anthropology of plague, which seeks to understand how disease exposure and experience change over time and between human populations. Furthermore, this dissertation more broadly impacts both prospective studies of infectious disease, such as environmental surveillance and outbreak monitoring, and retrospective studies, which seek to date the emergence and spread of past pandemics."
-
+abstract: "Pandemics of plague have reemerged multiple times throughout human history with tremendous mortality and extensive geographic spread. The First Pandemic (6^th^ - 8^th^ century) devastated the Mediterranean world, the Second Pandemic (14^th^ - 19^th^ century) swept across much of Afro-Eurasia, and the Third Pandemic (19^th^ - 20^th^ century) reached every continent except for Antarctica, and continues to persist in various endemic foci around the world. Despite centuries of historical research, the epidemiology of these pandemics remains enigmatic. However, recent technological advancements have yielded a novel form of evidence: ancient DNA of the plague bacterium _Yersinia pestis_. In this thesis, I explore how genomic data can be used to unravel the mysteries of _when_ and _where_ this disease appeared in the past. In particular, I focus on phylogenetic approaches to studying this 'small microbe' with 'big data' (ie. 100s - 1000s of genomes). I begin by describing novel software I developed that supports the acquisition and curation of large amounts of DNA sequences in public databases. I then use this tool to create an updated global phylogeny of _Y. pestis_, which includes ~600 genomes with standardized metadata. I devise and validate a new approach for temporal modeling (ie. molecular clock) that produces robust divergence dates in pandemic lineages of _Y. pestis_. In addition, I critically examine the questions that genomic evidence _can_ and _cannot_ address in isolation, such as whether the timing and spread of short-term epidemics can be confidently reconstructed. Finally, I apply this theoretical and methodological insight to a case study in which I reconstruct the appearance, persistence, and disappearance of plague in Denmark during the Second Pandemic. The three papers enclosed in this sandwich-thesis contribute to a larger body of work on the anthropology of plague, which seeks to understand how disease exposure and experience change over time and between human populations. Furthermore, this dissertation more broadly impacts both prospective studies of infectious disease, such as environmental surveillance and outbreak monitoring, and retrospective studies, which seek to date the emergence and spread of past pandemics."
 
 acknowledgments: 
 
@@ -52,7 +45,7 @@ acknowledgments:
   - "To my colleagues at Red Lobster: I worked in many kitchens to fund my education, but working at Red Lobster was by far my favorite. Also to the managers, thank you for letting me have so many free Cheddar Bay Biscuits, they were a crucial component of my student diet (no joke)."
   
   - "Finally, I would like to acknowledge all individuals who financially supported me throughout my doctoral research. I thank Hendrik Poinar, the Department of Anthropology, the MacDATA Institute, the Sherman Centre for Digital Scholarship, McMaster University, the Province of Alberta, and the Social Sciences Research and Humanities Research Council."
-  
+
 abbreviations:
   - "aDNA: Ancient DNA"
   - "DNA: Deoxyribonucleic acid"
@@ -60,7 +53,9 @@ abbreviations:
   - "NCBI: National Center for Biotechnology Information"
   - "SRA: Sequence Read Archive"
   - "tMRCA: Time to the most recent common ancestor"
+
 academic_declaration: "I, Katherine Eaton, declare that this thesis titled, 'Big Data, Small Microbes: Genomic analysis of the plague bacterium _Yersinia pestis_' and the work presented in it are my own. I confirm that:"
+
 academic_declaration_list:
   - "This work was done wholly or mainly while in candidature for a research degree at McMaster University."
   - "Where any part of this thesis has previously been submitted for a degree or any other qualification at McMaster University or any other institution, this has been clearly stated."
@@ -68,15 +63,10 @@ academic_declaration_list:
   - "Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work."
   - "I have acknowledged all main sources of help."
   - "Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself."
-bibliography: pandoc/bib/library.bib
-numberSections: true
-lof: true
-toc-depth: 3
-sectionsDepth: 4
-reference-section-title: References
-link-citations: true
-colorlinks: true
+
+# Compilation
 environment: "https://gitlab.cscscience.ca/keaton/rootstock/-/blob/00cc21eba27e19fd5d4a83891ccdd9d516a41537/build/environment.yml"
+
 compile-pandoc: |
   conda activate manubot \
   && pandoc/convert_wikilinks.py \
@@ -89,16 +79,17 @@ compile-pandoc: |
     --lua-filter pandoc/lua-filters/include-files/include-files.lua \
     --lua-filter pandoc/lua-filters/short-captions/short-captions.lua \
     --lua-filter pandoc/lua-filters/table-short-captions/table-short-captions.lua \
-    --filter pandoc-crossref \
-    --filter pandoc-secnos \
+    --filter pandoc-xnos \
     --citeproc \
     --csl pandoc/csl/apa.csl \
     && rm Eaton_2021_PhD_Dissertation_convert.md
+
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \
     --input 'Eaton_2021_PhD_Dissertation.md' \
     --template ../../rootstock/templates/thesis
+
 authors:
   - name: Katherine Eaton (B.A. Hons)
     github: ktmeaton
@@ -109,6 +100,7 @@ authors:
         "Department of Anthropology, McMaster University"
       ]
     email: eatonk3@mcmaster.ca
+
 supervisors:
   - name: Hendrik Poinar (PhD)
     orcid: 0000-0002-0314-4160
@@ -118,19 +110,37 @@ supervisors:
         "Department of Anthropology, McMaster University"
       ]
     email: poinarh@mcmaster.ca
+
+# Manubot
 lang: en-US	
 repo: ktmeaton/obsidian-public
 filepath: 'academic/Eaton_2021_PhD_Dissertation'
-tblPrefix: "Table"
-figPrefix: "Figure"
-xnos-cleveref: True
-xnos-capitalise: True
+copyright_statement: "© Copyright by Katherine Eaton, 2022<br>All Rights Reserved"
+submission_statement: "A thesis submitted to the Department of Anthropology and the school of graduate studies of McMaster University in partial fulfilment of the requirements for the degree of Doctor of Philosophy."
+
+# Pandoc General
+documentclass: report
+bibliography: pandoc/bib/library.bib
+toc: true
+lof: true
+toc-depth: 3
+sectionsDepth: 4
+reference-section-title: References
+link-citations: true
+colorlinks: true
+
+# Cross Reference: pandoc-xnos
+xnos-cleveref: true
+xnos-capitalise: true
 secnos-star-name: "Chapter"
+numbersections: true
+
+# Obsidian
+status: priority
+type: Thesis
 ---
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-- \*@sec:introduction.
 
 # Introduction {#sec:introduction}
 
@@ -148,18 +158,18 @@ Which brings us back to Dr. Hendrik Poinar and his team's seminal work on the my
 
 Armed with the proposal of finding more evidence of _Y. pestis_ in the archaeological record, I applied to work for Dr. Hendrik Poinar at the McMaster Ancient DNA Centre. In 2014, I had the delight and privilege of being accepted into the graduate program at McMaster University. Alongside other members of the "McMaster Plague Team", I set about the daunting task of screening the skeletal remains of more than 1000 individuals for molecular evidence of _Y. pestis_. This material was generously provided by archaeological collaborators, who were similarly invested in the idea that ancient DNA techniques could identify infectious diseases in their sites. These archaeological remains reflected nearly a millennium of human history, with sampling ages ranging from the 9^th^ to the 19^th^ century CE. The geographic diversity was also immense, with individuals sampled across Europe, Africa, and Asia. 
 
-Of the 1000+ individuals screened, approximately 30% originated in Denmark. Due to this large sample size, we, the "Plague Team", had the greatest success in identifying ancient _Y. pestis_ in this region. Over a period of 5 years, we retrieved _Y. pestis_ DNA from 13 Danish individuals dated to the medieval and early modern periods. To contextualize these plague isolates, we reconstructed their evolutionary relationships using a large comparative dataset of global _Y. pestis_. In Chapter 4, I present the results of this collaborative study, which marks the first longitudinal analysis of an ancient pathogen in a single region. I explore whether the genetic evidence of _Y. pestis_ aligns with the historical narrative of the Black Death, and whether or not subsequent epidemics can be attributed to long-distance reintroductions. However, while this high-throughput study was the first one I embarked on, as the chapter numbering indicates, it would be the last project I completed due to several unforeseen complications.
+Of the 1000+ individuals screened, approximately 30% originated in Denmark. Due to this large sample size, we, the "Plague Team", had the greatest success in identifying ancient _Y. pestis_ in this region. Over a period of 5 years, we retrieved _Y. pestis_ DNA from 13 Danish individuals dated to the medieval and early modern periods. To contextualize these plague isolates, we reconstructed their evolutionary relationships using a large comparative dataset of global _Y. pestis_. In \*@sec:denmark, I present the results of this collaborative study, which marks the first longitudinal analysis of an ancient pathogen in a single region. I explore whether the genetic evidence of _Y. pestis_ aligns with the historical narrative of the Black Death, and whether or not subsequent epidemics can be attributed to long-distance reintroductions. However, while this high-throughput study was the first one I embarked on, as the chapter numbering indicates, it would be the last project I completed due to several unforeseen complications.
 
-While the McMaster Plague Team was busy screening for _Y. pestis_, so too were other ancient DNA centres throughout the world. Between 2011 and 2021, more than 100 ancient _Y. pestis_ genomes were published, making plague the _most intensively sequenced historical disease_. The sequencing of modern isolates accelerated in tandem, with over 1500 genomes produced from culture collections of 20^th^ and 21^st^ century plague outbreaks [@zhou2020EnteroBaseUserGuide]. Because of this influx of evidence, the research questions changed accordingly. Geneticists were no longer interested in just establishing the _presence_ of _Y. pestis_ during the short time frame of the Black Death (1346-1353), they wanted to know _how_ it behaved and spread throughout the long 500 years of this pandemic. The longitudinal study design of Chapter 4 was therefore well-positioned to address these nuanced epidemiological questions. However, this novel genetic evidence also introduced new complexities. 
+While the McMaster Plague Team was busy screening for _Y. pestis_, so too were other ancient DNA centres throughout the world. Between 2011 and 2021, more than 100 ancient _Y. pestis_ genomes were published, making plague the _most intensively sequenced historical disease_. The sequencing of modern isolates accelerated in tandem, with over 1500 genomes produced from culture collections of 20^th^ and 21^st^ century plague outbreaks [@zhou2020EnteroBaseUserGuide]. Because of this influx of evidence, the research questions changed accordingly. Geneticists were no longer interested in just establishing the _presence_ of _Y. pestis_ during the short time frame of the Black Death (1346-1353), they wanted to know _how_ it behaved and spread throughout the long 500 years of this pandemic. The longitudinal study design of \*@sec:denmark was therefore well-positioned to address these nuanced epidemiological questions. However, this novel genetic evidence also introduced new complexities. 
 
-It quickly became clear that isolates of _Y. pestis_ sampled during epidemic periods were highly similar in terms of genetic content, if not indistinguishable clones [@spyrou2019PhylogeographySecondPlague]. This called into question the resolution of genomic evidence, and whether the geographic origins and spread of the Black Death could be accurately inferred using ancient DNA studies. This was further confounded by the finding that the rate of evolutionary change in _Y. pestis_ could vary tremendously [@cui2013HistoricalVariationsMutation] which led to the discovery that previously published temporal models were erroneous [@wagner2014YersiniaPestisPlague].  It became increasingly uncertain whether genetic evidence could be used to produce informative estimates of the timing of plague's frequent reemergences [@duchene2016GenomescaleRatesEvolutionary]. As I read these critical studies, I began developing an idea to address the substantial gaps in our evolutionary theory and methodology concerning the plague bacterium _Y. pestis_. This idea culminated in Chapter 3, where I curated and contextualized the largest global data set of plague genomes. I critiqued the existing spatiotemporal models of plague's evolutionary history, and with the assistance of my co-authors, devised a new methodological approach. This method would then be repurposed for Chapter 4, so that I could infer the emergence and disappearance of _Y. pestis_ in Denmark with greater accuracy. However, as the chapter numbering once again reflects, there was one final obstacle.
+It quickly became clear that isolates of _Y. pestis_ sampled during epidemic periods were highly similar in terms of genetic content, if not indistinguishable clones [@spyrou2019PhylogeographySecondPlague]. This called into question the resolution of genomic evidence, and whether the geographic origins and spread of the Black Death could be accurately inferred using ancient DNA studies. This was further confounded by the finding that the rate of evolutionary change in _Y. pestis_ could vary tremendously [@cui2013HistoricalVariationsMutation] which led to the discovery that previously published temporal models were erroneous [@wagner2014YersiniaPestisPlague].  It became increasingly uncertain whether genetic evidence could be used to produce informative estimates of the timing of plague's frequent reemergences [@duchene2016GenomescaleRatesEvolutionary]. As I read these critical studies, I began developing an idea to address the substantial gaps in our evolutionary theory and methodology concerning the plague bacterium _Y. pestis_. This idea culminated in \*@sec:cryptic_clock, where I curated and contextualized the largest global data set of plague genomes. I critiqued the existing spatiotemporal models of plague's evolutionary history, and with the assistance of my co-authors, devised a new methodological approach. This method would then be repurposed for \*@sec:denmark, so that I could infer the emergence and disappearance of _Y. pestis_ in Denmark with greater accuracy. However, as the chapter numbering once again reflects, there was one final obstacle.
 
-Synthesizing the largest genomic data set was a lofty ambition, especially considering that there were few software tools available to perform such a task. New plague genomes of _Y. pestis_ were being published monthly, and at times even weekly, with such volume that manual tracking became impossible. My excel spreadsheet of genetic metadata became riddled with errors and fields with missing data. The era of "Big Data" had arrived, and I was woefully unequipped to effectively manage this deluge of information. In response, I ventured into the tumultuous waters of software development. In Chapter 2, I describe my original software that automates the acquisition and organization of genetic metadata. Academic publishing in the field of software was a unique experience, as I had to both _produce a scholarly manuscript_ and demonstrate _expertise as a service-provider_. This database tool has continually proven to be indispensable, and is the backbone upon which the studies in Chapter 3 and Chapter 4 would be rebuilt upon.
+Synthesizing the largest genomic data set was a lofty ambition, especially considering that there were few software tools available to perform such a task. New plague genomes of _Y. pestis_ were being published monthly, and at times even weekly, with such volume that manual tracking became impossible. My excel spreadsheet of genetic metadata became riddled with errors and fields with missing data. The era of "Big Data" had arrived, and I was woefully unequipped to effectively manage this deluge of information. In response, I ventured into the tumultuous waters of software development. In \*@sec:ncbimeta, I describe my original software that automates the acquisition and organization of genetic metadata. Academic publishing in the field of software was a unique experience, as I had to both _produce a scholarly manuscript_ and demonstrate _expertise as a service-provider_. This database tool has continually proven to be indispensable, and is the backbone upon which the studies in \*@sec:cryptic_clock and \*@sec:denmark would be rebuilt upon.
 
-At this point, I re-introduce the dissertation as a collection of three hierarchical, but independently published, studies. I first describe an original piece of software in Chapter 2, which automates the retrieval and organization of publicly available sequence data. In Chapter 3, I outline how this tool was used to generate an updated and curated phylogeny of _Y. pestis_, which yielded novel insight regarding the timing and origins of past pandemics. In this chapter, I also conduct a critical examination of the historical questions that genomic evidence can, or cannot, address. In Chapter 4, I use these theories and methods to reconstruct the emergence and continuity of plague in Denmark over a period of 400 years. I conclude in Chapter 5 with a discussion of the contributions of each study, with a particular focus on their significance within the broader field of anthropology.
+At this point, I re-introduce the dissertation as a collection of three hierarchical, but independently published, studies. I first describe an original piece of software in \*@sec:ncbimeta, which automates the retrieval and organization of publicly available sequence data. In \*@sec:cryptic_clock, I outline how this tool was used to generate an updated and curated phylogeny of _Y. pestis_, which yielded novel insight regarding the timing and origins of past pandemics. In this chapter, I also conduct a critical examination of the historical questions that genomic evidence can, or cannot, address. In \*@sec:denmark, I use these theories and methods to reconstruct the emergence and continuity of plague in Denmark over a period of 400 years. I conclude in \*@sec:conclusion with a discussion of the contributions of each study, with a particular focus on their significance within the broader field of anthropology.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-# NCBImeta: Efficient and comprehensive metadata retrieval from NCBI databases
+# NCBImeta: Efficient and comprehensive metadata retrieval from NCBI databases {#sec:ncbimeta}
 
 \setlength{\parindent}{0em}
 
@@ -182,7 +192,7 @@ Katherine Eaton^1,2^
 ```
 -->
 
-# Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_
+# Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_ {#sec:cryptic_clock}
 
 \setlength{\parindent}{0em}
 
@@ -213,7 +223,7 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 ```
 -->
 
-# Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
+# Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_ {#sec:denmark}
 
 \setlength{\parindent}{0em}
 
@@ -247,19 +257,19 @@ Katherine Eaton\*^1,2^, Ravneet Sidhu\*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^
 ```
 -->
 
-# Conclusion
+# Conclusion {#sec:conclusion}
 
 ## Main Findings and Contributions
 
-In this dissertation, I developed computational methods for genomics research and used them to reconstruct past and present pandemics of plague. In Chapter 2, I presented a novel software called `NCBImeta` that facilitates the acquisition of sequence data and metadata from the NCBI repository. This specialized tool supports genomics research in the era of big data, where manual processing of abundant sequence records (10,000+) is impossible. As a paper on software development, its contributions and significance to the field of anthropology are understandably unclear. I targeted this article exclusively towards computational biologists because, at the time, few anthropologists had expressed interested in the issue of collecting and curating sequencing data. Reflecting this, `NCBImeta` has mainly been cited across biological fields including studies of the human microbiome [@agostinetto2021SKIOMEProjectCurated], plant-associated bacteria in agriculture [@strafella2021ComparativeGenomicsVitro], and emerging infectious diseases in public health (Matthew Gopez & Philip Mabon, *personal communication*, <https://github.com/ktmeaton/NCBImeta/pull/9>). 
+In this dissertation, I developed computational methods for genomics research and used them to reconstruct past and present pandemics of plague. In \*@sec:ncbimeta, I resented a novel software called `NCBImeta` that facilitates the acquisition of sequence data and metadata from the NCBI repository. This specialized tool supports genomics research in the era of big data, where manual processing of abundant sequence records (10,000+) is impossible. As a paper on software development, its contributions and significance to the field of anthropology are understandably unclear. I targeted this article exclusively towards computational biologists because, at the time, few anthropologists had expressed interested in the issue of collecting and curating sequencing data. Reflecting this, `NCBImeta` has mainly been cited across biological fields including studies of the human microbiome [@agostinetto2021SKIOMEProjectCurated], plant-associated bacteria in agriculture [@strafella2021ComparativeGenomicsVitro], and emerging infectious diseases in public health (Matthew Gopez & Philip Mabon, *personal communication*, <https://github.com/ktmeaton/NCBImeta/pull/9>). 
 
 In 2021, I took a more active approach in my discipline and used this software to support several bodies of anthropological research. `NCBImeta` was recently used in an environmental reconstruction of Beringia [@murchie2021PleistoceneMitogenomesReconstructed], the former land-bridge that facilitated early human migrations into North America from northeast Asia. The study by Murchie et al. furthers our understanding of the peopling of the Americas, and the possible interactions between early human populations and large animals (ie. megafauna) before the Last Glacial Period (~12,000 years ago). `NCBImeta` was also recently used to curate sequence data in a case study of the zoonotic disease brucellosis in the 14^th^ century [@hiderInPrepExaminingPathogenDNA]. The pioneering work by Hider et al. demonstrates how pathogen DNA preserves differently throughout the body, ranging from being the dominant microorganism in several tissues while being completely absent in others. It raises an important cautionary note for ancient DNA analysis and the anthropology of disease, by empirically demonstrating how sampling strategies can bias our understanding of what diseases were present in past populations. 
 
-In Chapter 3, I explored the challenges in estimating _where_ and _when_ plague appeared in the past, and why these estimates are often not reproducible between studies. I used the software tool from Chapter 2 to collect all publicly available _Y. pestis_ genomes, and carefully curated their collection dates, locations, and hosts. My co-authors and I then used this data set for phylodynamic analysis, and devised a new approach for modeling the rates of evolutionary change (ie. molecular clock). We used these results to explain why divergence dates varied between studies, and outlined a critical framework for identifying which divergence dates should be considered non-informative. In addition, we found that past pandemics of plague may have emerged decades, or even centuries, before they were historically documented in European sources. These early dates are in agreement with recent historical work that examines more diverse (ie. non-European) sources. Through this finding, we demonstrated how genomic dating plays an important role in expanding the timelines of past pandemics to make space for more diverse narratives.
+In \*@sec:cryptic_clock, I explored the challenges in estimating _where_ and _when_ plague appeared in the past, and why these estimates are often not reproducible between studies. I used the software tool from \*@sec:ncbimeta to collect all publicly available _Y. pestis_ genomes, and carefully curated their collection dates, locations, and hosts. My co-authors and I then used this data set for phylodynamic analysis, and devised a new approach for modeling the rates of evolutionary change (ie. molecular clock). We used these results to explain why divergence dates varied between studies, and outlined a critical framework for identifying which divergence dates should be considered non-informative. In addition, we found that past pandemics of plague may have emerged decades, or even centuries, before they were historically documented in European sources. These early dates are in agreement with recent historical work that examines more diverse (ie. non-European) sources. Through this finding, we demonstrated how genomic dating plays an important role in expanding the timelines of past pandemics to make space for more diverse narratives.
 
-In contrast to our claims of the 'power' of genomic evidence, a prominent takeway from Chapter 3 was our discussion of the limitations of DNA. In particular, we found that _Y. pestis_ genomes in isolation are not suitable for reconstructing evolutionary relationships during short-term epidemics. This is because the evolutionary rate of past pandemic lineages is approximately 1 substitution every 10 years. Isolates collected within this time frame (<10 years) are often identical, which means that the directionality of spread cannot be confidently inferred. To mitigate this weakness, complementary evidence is needed that has a higher temporal resolution. Historical case records are an excellent candidate, where plague cases are recorded annually if not weekly [@roosen2018DangersNoncriticalUse]. Based on initial comments from readers of the preprint, this conclusion was particularly exciting as it provided guidance on how to avoid over-interpreting ancient DNA evidence, and suggested a new avenue for inter-disciplinary collaboration (Boris Schmidt, *personal communication*).
+In contrast to our claims of the 'power' of genomic evidence, a prominent takeway from \*@sec:cryptic_clock was our discussion of the limitations of DNA. In particular, we found that _Y. pestis_ genomes in isolation are not suitable for reconstructing evolutionary relationships during short-term epidemics. This is because the evolutionary rate of past pandemic lineages is approximately 1 substitution every 10 years. Isolates collected within this time frame (<10 years) are often identical, which means that the directionality of spread cannot be confidently inferred. To mitigate this weakness, complementary evidence is needed that has a higher temporal resolution. Historical case records are an excellent candidate, where plague cases are recorded annually if not weekly [@roosen2018DangersNoncriticalUse]. Based on initial comments from readers of the preprint, this conclusion was particularly exciting as it provided guidance on how to avoid over-interpreting ancient DNA evidence, and suggested a new avenue for inter-disciplinary collaboration (Boris Schmidt, *personal communication*).
 
-In Chapter 4, I applied this updated genomic dataset and molecular clock method to a new problem. While in Chapter 3 we were concerned with estimating the first _emergence_ of pandemic lineages, in Chapter 4 we reconstructed the _persistence_ or _continuity_ of ancient pandemics. We designed a unique longitudinal study, where we sampled skeletal remains spanning 800 years (1000 - 1800 CE) dated to before, during, and after the Second Pandemic (14^th^th - 18^th^ century). Our sampling strategy focused on Scandinavia, particularly Denmark, as this region is underrepresented in the historical narrative and because the Anthropological DataBase Odense University collection (ADBOU, University of Southern Denmark) has exquisitely curated over 17,000 skeletal remains dated from the Viking Age (10^th^ century) to the Early Modern Period (18^th^ century). Using ancient DNA techniques, we recovered evidence of _Y. pestis_ throughout the 14^th^ to 17^th^ centuries, which perfectly aligns with the historical narrative, limited as it is. Furthermore, our positivity rate for _Y. pestis_ (3.3% - 14.3%) overlaps with mortality estimates from several historical outbreaks during the Second Pandemic.  Our results strengthen the argument that _Y. pestis_ was the causative agent of the Second Pandemic, and suggests that plague was a relatively new disease in medieval Denmark. These findings are being expanded on in two upcoming studies. The first, is an examination of how Danish populations responded to this new disease with regards to changes in the human immune system [@klunk2021BlackDeathShaped]. The second, is a reconstruction of how and when virulence in _Y. pestis_ became attenuated during the Second Pandemic. Taken together, we anticipate these studies will deepen our understanding of disease exposure and experience in Denmark and across Europe.
+In \*@sec:denmark, I applied this updated genomic dataset and molecular clock method to a new problem. While in \*@sec:cryptic_clock we were concerned with estimating the first _emergence_ of pandemic lineages, in \*@sec:denmark we reconstructed the _persistence_ or _continuity_ of ancient pandemics. We designed a unique longitudinal study, where we sampled skeletal remains spanning 800 years (1000 - 1800 CE) dated to before, during, and after the Second Pandemic (14^th^th - 18^th^ century). Our sampling strategy focused on Scandinavia, particularly Denmark, as this region is underrepresented in the historical narrative and because the Anthropological DataBase Odense University collection (ADBOU, University of Southern Denmark) has exquisitely curated over 17,000 skeletal remains dated from the Viking Age (10^th^ century) to the Early Modern Period (18^th^ century). Using ancient DNA techniques, we recovered evidence of _Y. pestis_ throughout the 14^th^ to 17^th^ centuries, which perfectly aligns with the historical narrative, limited as it is. Furthermore, our positivity rate for _Y. pestis_ (3.3% - 14.3%) overlaps with mortality estimates from several historical outbreaks during the Second Pandemic.  Our results strengthen the argument that _Y. pestis_ was the causative agent of the Second Pandemic, and suggests that plague was a relatively new disease in medieval Denmark. These findings are being expanded on in two upcoming studies. The first, is an examination of how Danish populations responded to this new disease with regards to changes in the human immune system [@klunk2021BlackDeathShaped]. The second, is a reconstruction of how and when virulence in _Y. pestis_ became attenuated during the Second Pandemic. Taken together, we anticipate these studies will deepen our understanding of disease exposure and experience in Denmark and across Europe.
 
 
 ## Future Directions
@@ -272,11 +282,11 @@ An alternative method, is to leverage the strengths and mitigate the weaknesses 
 
 ### New 'Plague', Same Problems
 
-During the course of this dissertation, my interest in global pandemics turned from an academic curiosity to a lived experience. In 2019, the novel coronavirus SARS-CoV-2 emerged to cause a global pandemic, with over 270 million cases recorded worldwide. While there are many unique aspects of this pandemic, one that has captured my attention is that it is the first pandemic to be monitored with real-time genomic surveillance [@oudemunnink2021NextPhaseSARSCoV2].  Over two million genomic sequences have been deposited in public repositories, which can be used to inform public health responses [@publichealthontario2021SARSCoV2WholeGenome]. However, this avalanche of data has also caused numerous problems, as researchers are struggling to manage this information and utilize it effectively [@morel2021PhylogeneticAnalysisSARSCoV2]. As a result, database tools such as `NCBImeta` presented in Chapter 2, are playing an important role in information management. 
+During the course of this dissertation, my interest in global pandemics turned from an academic curiosity to a lived experience. In 2019, the novel coronavirus SARS-CoV-2 emerged to cause a global pandemic, with over 270 million cases recorded worldwide. While there are many unique aspects of this pandemic, one that has captured my attention is that it is the first pandemic to be monitored with real-time genomic surveillance [@oudemunnink2021NextPhaseSARSCoV2].  Over two million genomic sequences have been deposited in public repositories, which can be used to inform public health responses [@publichealthontario2021SARSCoV2WholeGenome]. However, this avalanche of data has also caused numerous problems, as researchers are struggling to manage this information and utilize it effectively [@morel2021PhylogeneticAnalysisSARSCoV2]. As a result, database tools such as `NCBImeta` presented in \*@sec:ncbimeta, are playing an important role in information management. 
 
 One field of ongoing research involves improving the scalability of these tools. For example, `NCBImeta` was developed for a data set of 'only' 15,000 records, and in its current implementation, cannot process the 1+ million  SARS-CoV-2 records on NCBI. A second critical avenue is integrating information from multiple repositories, as surveillance data is inconsistently being deposited in national and international databases [@ncbiNationalCenterBiotechnology; @gisaidGISAIDInitiative; @cancogenVirusSeqPortal]. Progress towards these two objectives will result in more diverse genomic data being analyzed (geographically and temporally), which may improve of our understanding of transmission and spread between and within countries.
 
-Another parallel between this dissertation and the ongoing pandemic involves spatiotemporal modeling. In Chapter 3, we discovered that in our expanded genomic data set, _Y. pestis_' rate of spread tends to outpace its rate of evolutionary change. This leads to identical _Y. pestis_ isolates found across multiple countries, such as the case throughout the Black Death (1346-1353). However, we sporadically observed the opposite trend, in which _Y. pestis_ strains collected in a short time frame (<10 years) were _extremely_ different. This tremendous diversity in evolutionary rates meant that we were unable to estimate a single molecular clock for _Y. pestis_. These issues, clonal spread and rate variation, were also recently documented in SARS-CoV-2  [@ferreira2021CoVizuRapidAnalysis]. Ferreira et al. describe this as a paradox in which we _"become increasingly uncertain about the relationships among specific lineages as we collect greater amounts of data"_. This runs counterintuitive to the general expectation in scientific studies that _the more data we collect, the closer we get to the 'truth'_. Overall, this presents a complex theoretical problem that is becoming increasingly prevalent across various disciplines moving into the era of 'big data'.
+Another parallel between this dissertation and the ongoing pandemic involves spatiotemporal modeling. In \*@sec:cryptic_clock, we discovered that in our expanded genomic data set, _Y. pestis_' rate of spread tends to outpace its rate of evolutionary change. This leads to identical _Y. pestis_ isolates found across multiple countries, such as the case throughout the Black Death (1346-1353). However, we sporadically observed the opposite trend, in which _Y. pestis_ strains collected in a short time frame (<10 years) were _extremely_ different. This tremendous diversity in evolutionary rates meant that we were unable to estimate a single molecular clock for _Y. pestis_. These issues, clonal spread and rate variation, were also recently documented in SARS-CoV-2  [@ferreira2021CoVizuRapidAnalysis]. Ferreira et al. describe this as a paradox in which we _"become increasingly uncertain about the relationships among specific lineages as we collect greater amounts of data"_. This runs counterintuitive to the general expectation in scientific studies that _the more data we collect, the closer we get to the 'truth'_. Overall, this presents a complex theoretical problem that is becoming increasingly prevalent across various disciplines moving into the era of 'big data'.
  
 <!-- References Section will auto dump here in pandoc thesis template -->
 
