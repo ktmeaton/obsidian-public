@@ -12,6 +12,7 @@
 INPUT="Manubot.md"
 BIB="pandoc/bib/library.json"
 ROOTSTOCK_DIR="../../rootstock"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 LUA_DIR="pandoc/lua-filters"
 DEFAULT_CSL="${ROOTSTOCK_DIR}/build/assets/default.csl"
 CSL="${DEFAULT_CSL}"
@@ -170,51 +171,70 @@ if [[ $TEST == true ]]; then
   exit
 fi
 
-# Copy over csl
+# Remove old content dir and copy over template
+rm -rf ${ROOTSTOCK_DIR}/content/
+cp -r $TEMPLATE ${ROOTSTOCK_DIR}/content/
+
+# -----------------------------------------------------------------------------
+# Copy over bibliography fies
+
+# CSL
 if [[ $CSL != $DEFAULT_CSL ]]; then
   cp $CSL $DEFAULT_CSL
 fi;
 
-# Extend lua dir path
-LUA_DIR=`pwd`/$LUA_DIR
-
-# Remove old content dir
-rm -rf ${ROOTSTOCK_DIR}/content/
-# Copy over template
-cp -r $TEMPLATE ${ROOTSTOCK_DIR}/content/
-
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-
-# Convert Wikilinks
-input="$INPUT"
-output=${ROOTSTOCK_DIR}/content/01.manuscript.md.tmp
-${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output ${output}
-
-# Copy over bibliography
+# Bib
 cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
 # For .bib this is deliberately not in the output directory
 #cp $BIB ${ROOTSTOCK_DIR}/
 
+# -----------------------------------------------------------------------------
+# Lua
 
-# Copy Over Files to Include
-arrINCLUDE=(${INCLUDE_FILES//,/ })
+# Extend lua dir path
+LUA_DIR=`pwd`/$LUA_DIR
+LUA_FILTERS=(
+  "--lua-filter ${LUA_DIR}/include-files/include-files.lua"
+  "--lua-filter ${LUA_DIR}/short-captions/short-captions.lua"
+  "--lua-filter ${LUA_DIR}/table-short-captions/table-short-captions.lua"  
+)
+
+# -----------------------------------------------------------------------------
+# Convert Wikilinks
+
+input="$INPUT"
+output=${ROOTSTOCK_DIR}/content/01.manuscript.md.tmp
+${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output ${output}
+
+# -----------------------------------------------------------------------------
+# Assets and Inclusions
+
+# Identify file inclusions
+arrINCLUDE=(`grep -A 1 "{.include" $INPUT | grep -v "{.include\|--" | sed -E 's/\[|\]//g'`)
+
+# Convert links and copy over
 for filename in ${arrINCLUDE[@]}; do
   # Check if it exists
   if [[ ! -e $filename ]]; then
     echo "Include file does not exist: $filename"
     exit
   else
-  cp $filename ${ROOTSTOCK_DIR}
+  echo "Including file: $filename"
+
+  output=${ROOTSTOCK_DIR}/$filename
+  ${SCRIPT_DIR}/convert_wikilinks.py --input $filename --output $output  
   fi
 done
-
 
 # Copy over images
 cp -r ${ROOTSTOCK_DIR}/build/assets/images ${ROOTSTOCK_DIR}/content/
 
+# -----------------------------------------------------------------------------
+# Frontmatter Metadata
+
 # Strip out the Frontmatter
 echo "Preparing frontmatter..."
-input=${output}
+input=${ROOTSTOCK_DIR}/content/01.manuscript.md.tmp
 output=${ROOTSTOCK_DIR}/content/metadata.yaml
 
 # Add the frontmatter from the input markdown file
@@ -231,6 +251,25 @@ echo "Stripping frontmatter from markdown..."
 output=${input%.*}
 tail -n+`expr $end + 1` $input > ${output}
 
+# -----------------------------------------------------------------------------
+# Cross reference (xnos)
+
+XNOS_ARGS=(
+  "-M xnos-cleveref=True"
+  "-M xnos-capitalise=True"
+)
+
+# Sections in a thesis are chapters
+if [[ `basename $TEMPLATE` == "thesis" ]]; then
+  XNOS_ARGS+=(
+    "-M secnos-star-name=Chapter"
+  )
+fi
+
+# -----------------------------------------------------------------------------
+# Build
+# -----------------------------------------------------------------------------
+
 # Change to rootstock directory since relative links will be used
 cwd=`pwd`
 
@@ -238,15 +277,12 @@ cwd=`pwd`
 export RESOURCE_DIR=$cwd
 cd ${ROOTSTOCK_DIR};
 
-# -----------------------------------------------------------------------------
-# Build
-# -----------------------------------------------------------------------------
-
 # Export Build Parameters
 export BUILD_PDF=$PDF
 export BUILD_DOCX=$DOCX
 export BUILD_LATEX=$LATEX
-export LUA_DIR=$LUA_DIR
+export LUA=${LUA_FILTERS[@]}
+export XNOS=${XNOS_ARGS[@]}
 
 echo "Building manuscript..."
 build/build.sh
@@ -263,15 +299,8 @@ done;
 # Cleanup
 # -----------------------------------------------------------------------------
 
-# Restore default content
-rm -rf content/
-cp -r templates/default content
-
 # Restore default csl
 cp -r build/assets/default.csl build/assets/style.csl
-
-# Remove output
-rm -rf output/
 
 # Remove included files from rootstock dir
 for filename in ${arrINCLUDE[@]}; do
@@ -281,4 +310,9 @@ for filename in ${arrINCLUDE[@]}; do
   fi
 done
 
+# Restore default content
+rm -rf content/
+cp -r templates/default content
 
+# Remove output
+rm -rf output/

@@ -20,7 +20,8 @@ Obsidian is software that performs...
 - [ ] [[Kanban]] (waiting for [[Dataview]] integration)
 - [ ] [[Macros]]
 - [x] [[Map View]]
-- [ ] [[obsidian-public/academic/RSS Feeds]]
+- [x] [[RSS Feeds]]
+- [x] [[Emoji Toolbar]]
 
 ## [[HTML]]
 
