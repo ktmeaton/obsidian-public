@@ -29,12 +29,6 @@ compile-manubot: |
 lang: en-US
 repo: ktmeaton/obsidian-public
 filepath: 'academic/Eaton_2020_NCBImeta'
-numberSections: False
-autoSectionLabels: True
-sectionsDepth: 3
-tblPrefix: Table
-figPrefix: Figure
-secPrefix: Section
 ---
 
 ## Summary

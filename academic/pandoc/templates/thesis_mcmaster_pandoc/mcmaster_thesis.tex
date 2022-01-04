@@ -466,7 +466,7 @@ $if(has-frontmatter)$\frontmatter$endif$
 \thispagestyle{empty}
 \null\vfill
 \begin{center}
-	\LARGE \uppercase\expandafter{$half-title$}
+	\LARGE \uppercase\expandafter{$title$}
 \end{center}
 \vfill
 \vskip1in\newpage\setcounter{page}{1}
@@ -476,7 +476,7 @@ $if(has-frontmatter)$\frontmatter$endif$
 \thispagestyle{empty}
 \null\vskip1in
 \begin{center}
-	\large\uppercase\expandafter{$title$}
+	\large\uppercase\expandafter{$title$: $subtitle$}
 \end{center}
 \vfill
 \begin{center}
@@ -513,7 +513,7 @@ $degree$ ($copyright_year$) \hfill  McMaster University \\
 \vspace{1in}
 \noindent
 \begin{tabular}{ll}
-TITLE:           & \parbox[t]{4in}{$title$} \\ \\
+TITLE:           & \parbox[t]{4in}{$title$: $subtitle$} \\ \\
 AUTHOR:          & \parbox[t]{4in}{$author$ \\ $prev-degree-full$} \\ \\
 SUPERVISOR:      & \parbox[t]{4in}{$supervisor$} \\ \\
 NUMBER OF PAGES: & \parbox[t]{4in}{\pageref{NumPrefacePages}, \pageref{NumDocumentPages}}

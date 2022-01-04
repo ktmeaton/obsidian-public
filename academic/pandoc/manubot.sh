@@ -257,12 +257,14 @@ tail -n+`expr $end + 1` $input > ${output}
 XNOS_ARGS=(
   "-M xnos-cleveref=True"
   "-M xnos-capitalise=True"
+
 )
 
 # Sections in a thesis are chapters
 if [[ `basename $TEMPLATE` == "thesis" ]]; then
   XNOS_ARGS+=(
     "-M secnos-star-name=Chapter"
+    "-M xnos-number-by-section=True"
   )
 fi
 
@@ -315,4 +317,4 @@ rm -rf content/
 cp -r templates/default content
 
 # Remove output
-rm -rf output/
+#rm -rf output/

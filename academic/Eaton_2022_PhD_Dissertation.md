@@ -1,13 +1,12 @@
 ---
-full-title: "Big Data, Small Microbes: Genomic analysis of the plague bacterium _Yersinia pestis_"
 title: "Big Data, Small Microbes"
 subtitle: "Genomic analysis of the plague bacterium _Yersinia pestis_"
-half-title: Big Data, Small Microbes
 author: Katherine Eaton
 degree: Doctor of Philosophy
 prev-degree-full: B.A. (Hons) Anthropology, University of Alberta
 prev-degree-short: B.A. (Hons)
 supervisor: Dr. Hendrik Poinar
+university: McMaster University
 department: Department of Anthropology
 submit-date: January 30, 2022
 copyright_year: 2022
@@ -67,14 +66,14 @@ academic_declaration_list:
 # Compilation
 environment: "https://gitlab.cscscience.ca/keaton/rootstock/-/blob/00cc21eba27e19fd5d4a83891ccdd9d516a41537/build/environment.yml"
 
-compile-pandoc: |
+compile-official: |
   conda activate manubot \
   && pandoc/convert_wikilinks.py \
-    --input Eaton_2021_PhD_Dissertation.md \
-    --output Eaton_2021_PhD_Dissertation_convert.md \
+    --input Eaton_2022_PhD_Dissertation.md \
+    --output Eaton_2022_PhD_Dissertation_convert.md \
   && pandoc \
-    -s Eaton_2021_PhD_Dissertation_convert.md \
-    -o Eaton_2021_PhD_Dissertation.pdf \
+    -s Eaton_2022_PhD_Dissertation_convert.md \
+    -o Eaton_2022_PhD_Dissertation_official.pdf \
     --template pandoc/templates/thesis_mcmaster_pandoc/mcmaster_thesis.tex \
     --lua-filter pandoc/lua-filters/include-files/include-files.lua \
     --lua-filter pandoc/lua-filters/short-captions/short-captions.lua \
@@ -82,12 +81,12 @@ compile-pandoc: |
     --filter pandoc-xnos \
     --citeproc \
     --csl pandoc/csl/apa.csl \
-    && rm Eaton_2021_PhD_Dissertation_convert.md
+    && rm Eaton_2022_PhD_Dissertation_convert.md
 
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \
-    --input 'Eaton_2021_PhD_Dissertation.md' \
+    --input Eaton_2022_PhD_Dissertation.md \
     --template ../../rootstock/templates/thesis
 
 authors:
@@ -114,9 +113,7 @@ supervisors:
 # Manubot
 lang: en-US	
 repo: ktmeaton/obsidian-public
-filepath: 'academic/Eaton_2021_PhD_Dissertation'
-copyright_statement: "© Copyright by Katherine Eaton, 2022<br>All Rights Reserved"
-submission_statement: "A thesis submitted to the Department of Anthropology and the school of graduate studies of McMaster University in partial fulfilment of the requirements for the degree of Doctor of Philosophy."
+filepath: 'academic/Eaton_2022_PhD_Dissertation'
 
 # Pandoc General
 documentclass: report
@@ -134,6 +131,7 @@ xnos-cleveref: true
 xnos-capitalise: true
 secnos-star-name: "Chapter"
 numbersections: true
+xnos-number-by-section: true
 
 # Obsidian
 status: priority
@@ -171,6 +169,8 @@ At this point, I re-introduce the dissertation as a collection of three hierarch
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 # NCBImeta: Efficient and comprehensive metadata retrieval from NCBI databases {#sec:ncbimeta}
 
+<hr>
+
 \setlength{\parindent}{0em}
 
 Published 03 February 2020 in  \
@@ -185,14 +185,14 @@ Katherine Eaton^1,2^
 
 \setlength{\parindent}{2em}
 
-<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 ```{.include shift-heading-level-by=0}
 [[Eaton_2020_NCBImeta_dissertation.md]]
 ```
--->
 
 # Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_ {#sec:cryptic_clock}
+
+<hr>
 
 \setlength{\parindent}{0em}
 
