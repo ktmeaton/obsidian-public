@@ -105,14 +105,7 @@ while [[ $# -gt 0 ]]; do
       fi      
       shift # past argument
       shift # past value
-      ;;
-    # -------------------------------------------------------------------------      
-    # Include Files
-    --include)
-      INCLUDE_FILES="$2"  
-      shift # past argument
-      shift # past value
-      ;;      
+      ;;    
     # -------------------------------------------------------------------------      
     # PDF Output
     --pdf)
@@ -161,7 +154,6 @@ echo "  Rootstock:     ${ROOTSTOCK_DIR}"
 echo "  Lua Filters:   ${LUA_DIR}"
 echo "  CSL:           ${CSL}"
 echo "  Template:      ${TEMPLATE}"
-echo "  Include Files: ${INCLUDE_FILES}"
 echo "  PDF:           ${PDF}"
 echo "  DOCX:          ${DOCX}"
 echo "  LATEX:         ${LATEX}"

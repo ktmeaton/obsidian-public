@@ -81,13 +81,14 @@ compile-official: |
     --filter pandoc-xnos \
     --citeproc \
     --csl pandoc/csl/apa.csl \
-    && rm Eaton_2022_PhD_Dissertation_convert.md
+  && rm Eaton_2022_PhD_Dissertation_convert.md
 
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \
     --input Eaton_2022_PhD_Dissertation.md \
-    --template ../../rootstock/templates/thesis
+    --template ../../rootstock/templates/thesis \
+    --pdf
 
 authors:
   - name: Katherine Eaton (B.A. Hons)
@@ -216,14 +217,14 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
-<!--
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 ```{.include}
 [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
 ```
--->
 
 # Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_ {#sec:denmark}
+
+<hr>
 
 \setlength{\parindent}{0em}
 
@@ -251,11 +252,9 @@ Katherine Eaton\*^1,2^, Ravneet Sidhu\*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^
 
 \setlength{\parindent}{2em}
 
-<!--
 ```{.include}
 [[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
 ```
--->
 
 # Conclusion {#sec:conclusion}
 

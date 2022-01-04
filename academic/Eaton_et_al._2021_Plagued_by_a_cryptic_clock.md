@@ -1,39 +1,77 @@
 ---
-project: phd
-due: Nov 17, 2021
-time: 11:59
-people:
-  - Katherine Eaton
-  - Hendrik Poinar
-  - Sebastian Duchene
-  - Leo Featherstone
-lang: en-US
-repo: ktmeaton/obsidian-public
-filepath: 'academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock'
-tags: ✨
-status: done
-title: "Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_"
-type: Paper
-#numberSections: True
-autoSectionLabels: True
-sectionsDepth: 4
-#tblPrefix: Table
-#figPrefix: Figure
-#secPrefix: Section
+title: "Plagued by a cryptic clock"
+subtitle: "Insight and issues from the global phylogeny of _Yersinia pestis_"
+
+authors:
+  - name: Katherine Eaton
+    orcid: 0000-0001-6862-7756
+    affiliations: [	
+        "Department of Anthropology, McMaster University",
+        "McMaster Ancient DNA Center",
+    ]
+    email: ktmeaton@gmail.com
+
+  - name: Sebastian Duchene
+    orcid: 0000-0002-2863-0907
+    affiliations: ["The Peter Doherty Institute for Infection and Immunity, University of Melbourne"]
+    email: sebastian.duchene@unimelb.edu.au
+
+  - name: Leo Featherstone
+    orcid: 0000-0002-8878-1758
+    affiliations: ["The Peter Doherty Institute for Infection and Immunity, University of Melbourne"]
+    email: leo.featherstone@unimelb.edu.au
+
+  - name: Ann Carmichael
+    orcid: 0000-0001-7516-7460
+    affiliations: ["Department of History, Indiana University Bloomington"]
+    email: anncarmicha47@gmail.com 
+
+  - name: Nükhet Varlık
+    orcid: 0000-0001-6870-5945
+    affiliations: [ "Department of History, Rutgers University-Newark" ]
+    email: nvarlik@gmail.com
+
+  - name: Brian Golding
+    orcid: 0000-0002-7575-0282
+    affiliations: ["Department of Biology, McMaster University"]
+    email: golding@mcmaster.ca
+
+  - name: Edward Holmes
+    orcid: 0000-0001-9596-3552
+    affiliations: ["Sydney Institute for Infectious Diseases, School of Life & Environmental Sciences and School of Medical Sciences, University of Sydney"]
+    email: edward.holmes@sydney.edu.au
+
+  - name: Hendrik Poinar
+    orcid: 0000-0002-0314-4160
+    affiliations:
+      [
+        "McMaster Ancient DNA Center",
+        "Department of Anthropology, McMaster University"
+      ]
+    email: poinarh@mcmaster.ca
+
 notes-after-punctuation: false
+
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \
-     Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md \
-     pandoc/bib/library.json \
-     ../../rootstock \
-     pandoc/csl/nature.csl
-compile-pandoc: |
-  conda activate pandoc \
-  && pandoc/convert_wikilinks.py \
-     --input Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md \
-     --output Eaton_et_al._2021_Plagued_by_a_cryptic_clock_convert.md \
-url: https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.html
+    --input Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md \
+    --template ../../rootstock/templates/paper \
+    --pdf \
+    --docx
+
+# Manubot
+lang: en-US
+repo: ktmeaton/obsidian-public
+filepath: 'academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock'
+
+# Obsidian
+project: phd
+type: Paper
+due: Nov 17, 2021
+time: 11:59
+tags: ✨
+status: done
 ---
 
 
@@ -109,7 +147,7 @@ A final limitation is that several populations are curiously excluded from the p
 
 #### Integrative Approach
 
-There exists no current classification system which comprehensively represents the global population structure of _Y. pestis_. Instead, integrative approaches have been previously used in large comparative studies of _Y. pestis_ [@cui2013HistoricalVariationsMutation; @morelli2010YersiniaPestisGenome]. We therefore take the intersection of the three taxonomic systems discussed previously and describe 12 populations for further statistical analysis (\*@fig:divtree_map_timeline, Table S1). In the following sections, we highlight the novel insight and issues that arise when this population structure is explicitly incorporated into molecular clock models and phylogeographic reconstructions.
+There exists no current classification system which comprehensively represents the global population structure of _Y. pestis_. Instead, integrative approaches have been previously used in large comparative studies of _Y. pestis_ [@cui2013HistoricalVariationsMutation; @morelli2010YersiniaPestisGenome]. We therefore take the intersection of the three taxonomic systems discussed previously and describe 12 populations for further statistical analysis (\*@fig:divtree_map_timeline, Table S1, \*@tbl:table_si1). In the following sections, we highlight the novel insight and issues that arise when this population structure is explicitly incorporated into molecular clock models and phylogeographic reconstructions.
 
 ![The phylogenetic and spatiotemporal diversity of 601 _Y. pestis_ genomes. Populations were defined by integrating three nomenclature systems: the major branches, biovars, and time periods. **A**: The maximum likelihood phylogeny of _Y. pestis_ with branch lengths scaled by genetic distance from the root in the number of nucleotide substitutions per site. The tree was rooted using two genomes of the outgroup taxa _Y. pseudotuberculosis_, which were pruned before visualization. **B**: The mean sampling age of each genome with internal node dates bounded by ancient DNA calibrations. **C**: The sampling location of each genome with coordinates standardized to the centroid of the associated province/state.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/fde85ff83fdf/main/auspice/all/chromosome/full/filter5/ml/divtree_map_timeline.png){#fig:divtree_map_timeline width=85% short-caption="The phylogenetic and spatiotemporal diversity of 601 _Y. pestis_ genomes."}
@@ -294,6 +332,12 @@ K.E, G.B.G, and H.N.P designed the study. K.E, L.F., and S.D performed computati
 The authors declare no competing interests.
 
 ## Supplementary Information
+
+### Tables
+  -  [Table S1](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.xlsx){#tbl:table_si1 tag="S1"}
+  -  [Table S2](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.xlsx){#tbl:table_si2 tag="S2"}
+
+### Figures
 
 ![Geographic structure of the _Intermedium_ (1.IN) population which is ancestral to the Third Pandemic (1.ORI). Branches are colored based on a discrete, ancestral state reconstruction using sampling location (province). Branch labels indicate the likelihood of the ancestral location given the data.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/e0fa46716/main/auspice/all/chromosome/full/filter5/ml/divtree_1.IN_province.png){#fig:divtree_1.IN_province width=70% tag="S1" short-caption="Geographic structure of the _Intermedium_ (1.IN) population which is ancestral to the Third Pandemic (1.ORI)."}
 
