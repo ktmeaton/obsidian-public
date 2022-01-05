@@ -1,6 +1,6 @@
 ---
-project:
-due: 2022-01-04
+project: plague-denmark
+due: 2022-01-30
 people:
 tags: 🧨
 status: priority

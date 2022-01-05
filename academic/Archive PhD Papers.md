@@ -1,6 +1,6 @@
 ---
-project:
-due: 2021-12-31
+project: phd
+due: 2022-01-30
 people:
 tags: 🧨
 status: priority

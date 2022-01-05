@@ -30,6 +30,6 @@ project:
 |:------------------------:| --- |
 | ![[Bos et al. 2011 Draft Genome Yersinia\_figX.jpg]] |     |
 |     Figure caption.      |     |
-|   [[Bos et al. 2011 Draft Genome Yersinia\|Alias]]   |     |
+|   [[@bos2011DraftGenomeYersinia\|Alias]]   |     |
 
 ## Notes

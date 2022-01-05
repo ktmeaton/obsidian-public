@@ -60,7 +60,7 @@ Notes about the introduction section.
 <hr>
 
 1. **WHEN** did [[plague]] first appear in human populations [[Rasmussen 2015 Early Divergent Strains\|[@rasmussen2015EarlyDivergentStrains ]]] ?
-1. **WHERE** has [[plague]] appeared [[Bos et al. 2011 Draft Genome Yersinia\|[@bos2011DraftGenomeYersinia]]] ?
+1. **WHERE** has [[plague]] appeared [[@bos2011DraftGenomeYersinia\|[@bos2011DraftGenomeYersinia]]] ?
 1. **HOW** has [[plague]] moved across the landscape [[Guellil 2020 Genomic Historical Synthesis\|[@guellil2020GenomicHistoricalSynthesis]]] ?
 
 

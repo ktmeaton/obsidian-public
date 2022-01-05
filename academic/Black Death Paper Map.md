@@ -1,6 +1,7 @@
 ---
 project: Plague Immune
-due: 2021-12-31
+due: 2022-01-05
+time: 17:00
 people:
 tags: 🧨
 status: priority
