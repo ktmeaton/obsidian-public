@@ -4,9 +4,11 @@ aliases:
 tags:
   - 📝
 status: idea
-type: Note
+type: task
 due: 2022-01-21
-time: "08:00"
+time: 08:00
 ---
 
 # PhD Defense
+
+- [[PhD Defense Presentation]]
