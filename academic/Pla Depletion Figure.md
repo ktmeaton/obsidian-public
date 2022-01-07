@@ -1,11 +1,11 @@
 ---
-project:
+project: pla Depletion
 due: 2022-01-30
-people: [[Ravneet Sidhu]]
+people: Ravneet Sidhu
 tags: 🧨
 status: priority
 title: Pla Depletion Figure
-type: [[Task]]
+type: Task
 ---
 
 # Pla Depletion Figure

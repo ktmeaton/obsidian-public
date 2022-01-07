@@ -1,4 +1,5 @@
 ---
+project: "[[PhD]]"
 aliases:
   - PhD Defense
 tags:

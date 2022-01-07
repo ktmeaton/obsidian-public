@@ -1,5 +1,5 @@
 ---
-project:
+project: Poinar Lab
 due: 2022-01-30
 people:
 tags: 🧨

@@ -1,5 +1,5 @@
 ---
-project: Plague Immune
+project: "[[Plague Immune]]"
 due: 2022-01-05
 time: 17:00
 people:

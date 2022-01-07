@@ -1,5 +1,5 @@
 ---
-project: phd
+project: PhD
 due: 2022-01-30
 people:
 tags: 🧨
