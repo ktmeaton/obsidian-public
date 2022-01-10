@@ -1,0 +1,600 @@
+Plasmid Profiler: Comparative analysis of plasmid content 
+Title 
+1 
+Plasmid Profiler: Comparative Analysis of Plasmid Content in WGS Data  
+2 
+Authors  
+3 
+Adrian Zetner1, Jennifer Cabral1, Laura Mataseje1, Natalie C Knox1, Philip Mabon1, Michael 
+4 
+Mulvey1,2, Gary Van Domselaar1,2* 
+5 
+1 National Microbiology Laboratory, Public Health Agency of Canada, Winnipeg, Manitoba, 
+6 
+Canada 
+7 
+2 Department of Medical Microbiology and Infectious Diseases, University of Manitoba, 
+8 
+Winnipeg, Manitoba, Canada  
+9 
+ 
+10 
+* To whom correspondence should be addressed (gary.vandomselaar@canada.ca) 
+11 
+ 
+ 
+12 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+Abstract 
+13 
+Summary: Comparative analysis of bacterial plasmids from whole genome sequence (WGS) 
+14 
+data generated from short read sequencing is challenging. This is due to the difficulty in 
+15 
+identifying contigs harbouring plasmid sequence data, and further difficulty in assembling such 
+16 
+contigs into a full plasmid. As such, few software programs and bioinformatics pipelines exist to 
+17 
+perform comprehensive comparative analyses of plasmids within and amongst sequenced 
+18 
+isolates. To address this gap, we have developed Plasmid Profiler, a pipeline to perform 
+19 
+comparative plasmid content analysis without the need for de novo assembly. The pipeline is 
+20 
+designed to rapidly identify plasmid sequences by mapping reads to a plasmid reference 
+21 
+sequence database. Predicted plasmid sequences are then annotated with their incompatibility 
+22 
+group, if known. The pipeline allows users to query plasmids for genes or regions of interest and 
+23 
+visualize results as an interactive heat map. 
+24 
+ 
+25 
+ 
+26 
+ 
+27 
+ 
+28 
+ 
+29 
+ 
+30 
+ 
+31 
+ 
+32 
+  
+33 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+Availability and Implementation: Plasmid Profiler is freely available software released under 
+34 
+the Apache 2.0 open source software license. A stand-alone version of the entire Plasmid 
+35 
+Profiler pipeline is available as a Docker container at 
+36 
+https://hub.docker.com/r/phacnml/plasmidprofiler_0_1_6/.  
+37 
+The conda recipe for the Plasmid R package is available at:  
+38 
+https://anaconda.org/bioconda/r-plasmidprofiler 
+39 
+The custom Plasmid Profiler R package is also available as a CRAN package at:  
+40 
+https://cran.r-project.org/web/packages/Plasmidprofiler/index.html 
+41 
+Galaxy tools associated with the pipeline are available as a Galaxy tool suite at: 
+42 
+https://toolshed.g2.bx.psu.edu/repository?repository_id=55e082200d16a504 
+43 
+The source code is available at: https://github.com/phac-nml/plasmidprofiler 
+44 
+The Galaxy implementation is available at:  https://github.com/phac-nml/plasmidprofiler-galaxy 
+45 
+Contact:  
+46 
+Email: gary.vandomselaar@canada.ca  
+47 
+Address: National Microbiology Laboratory, Public Health Agency of Canada, 1015 Arlington 
+48 
+Street, Winnipeg, Manitoba, Canada 
+49 
+Supplementary information: 
+50 
+Documentation: http://plasmid-profiler.readthedocs.io/en/latest/ 
+51 
+ 
+ 
+52 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+1. Introduction 
+53 
+ Plasmids are circular or linear extrachromosomal double-stranded DNA molecules 
+54 
+capable of self-replication in a host and transfer between host cells. They are highly variable 
+55 
+both in length (from one to several hundred kilobases) and number of copies per cell with many 
+56 
+plasmids harboring genes beneficial to host fitness and pathogenicity. These genes confer 
+57 
+benefits like antimicrobial resistance (AMR), organic product degradation, and virulence factors 
+58 
+such as toxin production. Carriage and transfer of pathogenicity and AMR determinants makes 
+59 
+development of epidemiologically relevant tools and plasmid classification systems important 
+60 
+health care research topics. It was to these ends that in response to a multi-species plasmid-
+61 
+mediated drug-resistant outbreak Plasmid Profiler was developed to explore and visualize 
+62 
+cellular plasmid content directly from whole genome sequencing short reads.  
+63 
+The backbone of a given plasmid contains genes essential to its maintenance and stable 
+64 
+inheritance (Nordstrom,K. and Austin,S.J. 1989, Shintani,M., Sanchez,Z.K., et al. 2015). This 
+65 
+gives rise to one common method of plasmid classification driven by the concept of incompatibly 
+66 
+grouping where two plasmids with the same incompatibility group cannot replicate within the 
+67 
+same cell. These groups are defined by the plasmids replication or equipartitioning systems 
+68 
+(Couturier,M., Bex,F., et al. 1988). Currently, we are able to screen for 116 incompatibility 
+69 
+groups and subgroups based on the sequences within the Enterobacteriaceae plasmid typing 
+70 
+database provided by PlasmidFinder (Carattoli,A., Zankari,E., et al. 2014).  
+71 
+The role of plasmids in health and disease makes them important to characterize; 
+72 
+however, due to their structure it is stubbornly difficult to do so. Extensive mosaicism, repetitive 
+73 
+sequences, and smaller mobile elements (eg. transposons) within plasmids collectively impede 
+74 
+the ability to discriminate between plasmid and chromosomal DNA in whole genome 
+75 
+sequencing (WGS) data analysis.  
+76 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+Without resorting to long-read sequencing, assembling a full plasmid sequence from 
+77 
+short reads is difficult and success not guaranteed even when used in conjunction with mate-
+78 
+pair technologies (Lynch,T., Petkau,A., et al. 2016). Some software packages have made 
+79 
+attempts to address plasmid analysis from short read sequencing data including PLACNET 
+80 
+(Lanza,V.F., de Toro,M., et al. 2014), Recycler (Rozov,R., Brown Kav,A., et al. 2016), 
+81 
+plasmidSPAdes (Antipov,D., Hartwick,N., et al. 2016), PlasmidFinder (Carattoli,A., Zankari,E., et 
+82 
+al. 2014), but regretfully to date no system has been shown to be capable of reliably 
+83 
+reconstructing plasmids (Arredondo-Alonso,S., van Schaik,W., et al. 2017, Orlek,A., 
+84 
+Stoesser,N., et al. 2017). Accordingly, there is a scarcity of software available to explore the 
+85 
+unassembled plasmid content of bacterial short-read WGS data. We have developed the 
+86 
+Plasmid Profiler pipeline to explore plasmid content without having to resort to the time-
+87 
+consuming and unreliable de novo assembly process.  
+88 
+2. Methods 
+89 
+Plasmid Profiler is implemented as a Galaxy workflow and operates as follows: 
+90 
+1. Three inputs are required: WGS short reads in FastQ format, the supplied 
+91 
+plasmid sequence database, and the supplied but user-modifiable replicon sequence and 
+92 
+gene of interest database. The plasmid sequence database originates as a multi-fasta file 
+93 
+from NCBI starting with all Gammaproteobacteria plasmid sequences (n=2797, size range: 
+94 
+1065-727,905 bp). Database curation was performed by first removing redundancy using CD-
+95 
+HIT (v.4.6) (Fu,L., Niu,B., et al. 2012, Li,W. and Godzik,A. 2006) to cluster sequences at >99% 
+96 
+sequence identity and >99% length, then identify a representative sequence from each cluster. 
+97 
+All sequences containing the following annotation keywords: “draft”, “contig”, “scaffold”, “partial”, 
+98 
+“incomplete”, and “putative” were removed to avoid incomplete and low quality plasmid 
+99 
+sequence data. The database was then formatted for SRST2 using the Python scripts included 
+100 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+in the SRST2 distribution. The user-modifiable replicon and genes of interest database is a 
+101 
+multi-fasta file with plasmid replicon sequences from PlasmidFinder (Center for Genomic 
+102 
+Epidemiology’s PlasmidFinder database available at: https://cge.cbs.dtu.dk//services/data.php) 
+103 
+along with user-defined nucleotide sequences for genes of interest. These three elements are 
+104 
+then passed to the tools of the workflow. 
+105 
+2. KAT (v. 2.3.1) (Mapleson,D., Garcia Accinelli,G., et al. 2017) removes 
+106 
+unrepresented Gammaproteobacteria plasmid sequences to create an individualized 
+107 
+plasmid database per sample. As a measure to increase speed and efficiency, a customized 
+108 
+database is created for each WGS isolate to contain only sequences moderately homologous to 
+109 
+the isolate’s sequence data. This per isolate database reduction step is accomplished using 
+110 
+KAT to compare the k-mers of each isolate’s WGS reads to a series of k-mer hashes derived 
+111 
+from the entire Gammaproteobacteria plasmid database. Database sequences which are 
+112 
+represented at a minimum of 80% by the k-mers of a particular WGS isolate are retained in that 
+113 
+isolate’s individual plasmid database and all other sequences discarded. This process rapidly 
+114 
+creates individual databases for each WGS sample and avoids the memory intensive and time 
+115 
+consuming mapping process to references unrepresented in an isolate’s WGS reads.  
+116 
+3. SRST2 (v.0.1.6) (Inouye,M., Dashnow,H., et al. 2014) identifies putative plasmid 
+117 
+hits from the individual databases. SRST2 is a software package that allows for in silico 
+118 
+sequence typing of WGS data based on the mapping of short sequence reads to a custom gene 
+119 
+and/or allele database. Paired or single end reads are mapped with Bowtie2 (Langmead,B. and 
+120 
+Salzberg,S.L. 2012) and the resulting pileups scored according to sequence coverage and 
+121 
+divergence. Plasmid Profiler replaces the SRST2 gene database with the curated plasmid 
+122 
+database from Step 1. At this stage of the pipeline, SRST2 is run using the “Custom Virulence 
+123 
+Database” parameter with the individualized plasmid databases serving as the SRST2 database 
+124 
+for their respective isolate. 
+125 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+4. BLAST+ (v 2.2.31) (Camacho,C., Coulouris,G., et al. 2009) identifies the 
+126 
+incompatibility groups and genes of interest found in the high scoring sequences from 
+127 
+step 3. Plasmid sequences identified with SRST2 are used to create a custom BLAST database 
+128 
+against which 116 plasmid replicon sequences (Center for Genomic Epidemiology’s 
+129 
+PlasmidFinder database available at: https://cge.cbs.dtu.dk//services/data.php) are queried 
+130 
+using MegaBLAST (Morgulis,A., Coulouris,G., et al. 2008). Included in the query were the 
+131 
+coding sequences for user-specified genes of interest (eg. AMR genes). The query sequences 
+132 
+(PlasmidFinder replicons + AMR) are presented in a multi-FASTA file with AMR genes or genes 
+133 
+of interest appended to the end, prefixed with the tag “(AMR)”. Five carbapenemase genes are 
+134 
+included in the default database as examples to be modified or replaced as the user decides. 
+135 
+Only the best hit per plasmid is displayed on the final heat map. 
+136 
+5. The Plasmid Profiler R package parses and visualizes the results of steps 2-4. 
+137 
+The following steps are completed using a series of functions written in the R programming 
+138 
+language and published in the Plasmid Profiler R package which is available through CRAN. 
+139 
+The percent ID (PID) of each BLAST hit is adjusted by multiplying it by the ratio of query to hit 
+140 
+length to compensate for hits with high PID but incomplete sequence coverage. Hits of less than 
+141 
+80% adjusted PID are discarded. Each identified plasmid is labelled with its associated 
+142 
+incompatibility group (if no match is found then this is reported as “-“) and presence/absence of 
+143 
+the user-specified genes of interest (eg. AMR genes). Sureness values are calculated for each 
+144 
+sample from the sum of sequence coverage (normalized over the range 0 to 1) and sequence 
+145 
+divergence (normalized over the range -1 to 0). This measure is then normalized over the range 
+146 
+0 to 1. The Sureness values are used to create a distance matrix upon which hierarchical 
+147 
+clustering using complete linkage is applied creating a dendrogram and determining the 
+148 
+ordering of isolates on the resulting plot. This dendrogram reveals the similarity of putative 
+149 
+plasmid content in the samples examined. A tile geometry is plotted using ggplot2 (v2.1.0) 
+150 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+(Wickham,H. 2009) to simulate a heatmap with plasmids ordered and coloured by 
+151 
+incompatibility group then arranged by decreasing Sureness value with correspondingly 
+152 
+decreasing alpha values (Fig. 1). This heatmap is reproduced using plotly (v4.5.6) (Plotly 
+153 
+Technologies Inc.) to allow for interaction with the output in a web browser. The post-mapping 
+154 
+analysis steps can be run multiple times with varying filters such as length, Sureness value, or 
+155 
+mapping coverage applied.  
+156 
+ 
+157 
+Figure 1. An example PNG output of Plasmid Profiler. A) dendrogram revealing plasmid content 
+158 
+similarity amongst samples; B) heatmap created using ggplot2's tile geometry where colour 
+159 
+indicates incompatibility group membership and alpha value the Sureness value over a range 
+160 
+from filter cut-off to 1; C) legends for Sureness value, incompatibility group colour guide (“-“ if 
+161 
+unknown), and AMR gene or user-specified gene of interest colour and identity; D) any data 
+162 
+filtering applied is noted here; E) plasmid names below the heatmap are coloured according to 
+163 
+the best hit AMR gene or user-specified gene of interest found within that plasmid. 
+164 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+Users can run the pipeline locally through a standalone Galaxy (Afgan,E., Baker,D., et 
+165 
+al. 2016) instance in a Docker container (Boettiger,C. 2015). Alternatively, users can install the 
+166 
+galaxy pipeline and tools to a pre-existing Galaxy instance from the Galaxy Toolshed 
+167 
+(https://toolshed.g2.bx.psu.edu/) (Blankenberg,D., Von Kuster,G., et al. 2014). The R related 
+168 
+portion of the analysis is available as a conda recipe and as a package from the Comprehensive 
+169 
+R Archive Network (CRAN) that can be easily installed to a local R instance for further 
+170 
+manipulation of the mapping output.  
+171 
+3. Conclusion 
+172 
+Plasmid Profiler is a useful comparative tool for visualization of plasmid content in WGS data 
+173 
+from bacterial isolates without resorting to difficult and uncertain assembly methods or the use 
+174 
+of long-read sequencing technologies. It addresses a gap in current plasmid-mediated outbreak 
+175 
+analysis methods where an overview of plasmids and antimicrobial resistance genes within a 
+176 
+collection of isolates is difficult to obtain. Although the tool is limited by plasmids present in the 
+177 
+database, identification and visualization of plasmid backbones within outbreak organisms is 
+178 
+important to understanding and conveying the full context of an outbreak. 
+179 
+Acknowledgement 
+180 
+The authors would like to acknowledge the following people and groups for their help in bringing 
+181 
+this software to life: the Bioinformatics Core at the National Microbiology Laboratory (especially 
+182 
+Eric Enns, Philip Mabon, and Aaron Petkau), Chand Mangat for providing the necessary PacBio 
+183 
+sequence data for pipeline validation, and the Galaxy team for their rapid response to issues 
+184 
+raised during development as well as the integration within Galaxy for some of the necessary 
+185 
+bioinformatics tools used by Plasmid Profiler.  
+ 
+186 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+References 
+187 
+Afgan,E., Baker,D., et al. (2016) The Galaxy platform for accessible, reproducible and 
+188 
+collaborative biomedical analyses: 2016 update. Nucleic Acids Res., 44, W3-W10. 
+189 
+Altschul,S.F., Gish,W., et al. (1990) Basic local alignment search tool. J.Mol.Biol., 215, 403-410. 
+190 
+Antipov,D., Hartwick,N., et al. (2016) plasmidSPAdes: assembling plasmids from whole genome 
+191 
+sequencing data. Bioinformatics, 32, 3380-3387. 
+192 
+Arredondo-Alonso,S., van Schaik,W., et al. (2017) On the (im)possibility to reconstruct plasmids 
+193 
+from whole genome short-read sequencing data. bioRxiv. 
+194 
+Blankenberg,D., Von Kuster,G., et al. (2014) Dissemination of scientific software with Galaxy 
+195 
+ToolShed. Genome Biol., 15, 403. 
+196 
+Boettiger,C. (2015) An Introduction to Docker for Reproducible Research. SIGOPS 
+197 
+Oper.Syst.Rev., 49, 71-79. 
+198 
+Camacho,C., Coulouris,G., et al. (2009) BLAST+: architecture and applications. BMC 
+199 
+Bioinformatics, 10, 421. 
+200 
+Carattoli,A., Zankari,E., et al. (2014) In silico detection and typing of plasmids using 
+201 
+PlasmidFinder and plasmid multilocus sequence typing. Antimicrob.Agents Chemother., 58, 
+202 
+3895-3903. 
+203 
+Couturier,M., Bex,F., et al. (1988) Identification and classification of bacterial plasmids. 
+204 
+Microbiol.Rev., 52, 375-395. 
+205 
+Fu,L., Niu,B., et al. (2012) CD-HIT: accelerated for clustering the next-generation sequencing 
+206 
+data. Bioinformatics, 28, 3150-3152. 
+207 
+Inouye,M., Dashnow,H., et al. (2014) SRST2: Rapid genomic surveillance for public health and 
+208 
+hospital microbiology labs. Genome Med., 6, 90-014-0090-6. eCollection 2014. 
+209 
+Langmead,B. and Salzberg,S.L. (2012) Fast gapped-read alignment with Bowtie 2. Nature 
+210 
+methods, 9, 357-359. 
+211 
+Lanza,V.F., de Toro,M., et al. (2014) Plasmid Flux in Escherichia coli ST131 Sublineages, 
+212 
+Analyzed by Plasmid Constellation Network (PLACNET), a New Method for Plasmid 
+213 
+Reconstruction from Whole Genome Sequences. PLoS Genetics, 10, e1004766. 
+214 
+Li,W. and Godzik,A. (2006) Cd-hit: a fast program for clustering and comparing large sets of 
+215 
+protein or nucleotide sequences. Bioinformatics, 22, 1658-1659. 
+216 
+Lynch,T., Petkau,A., et al. (2016) A Primer on Infectious Disease Bacterial Genomics. Clinical 
+217 
+Microbiology Reviews, 29, 881-913. 
+218 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 
+Plasmid Profiler: Comparative analysis of plasmid content 
+Mapleson,D., Garcia Accinelli,G., et al. (2017) KAT: a K-mer analysis toolkit to quality control 
+219 
+NGS datasets and genome assemblies. Bioinformatics, 33, 574. 
+220 
+Morgulis,A., Coulouris,G., et al. (2008) Database indexing for production MegaBLAST searches. 
+221 
+Bioinformatics, 24, 1757-1764. 
+222 
+Nordstrom,K. and Austin,S.J. (1989) Mechanisms that contribute to the stable segregation of 
+223 
+plasmids. Annu.Rev.Genet., 23, 37-69. 
+224 
+Orlek,A., Stoesser,N., et al. (2017) Plasmid Classification in an Era of Whole-Genome 
+225 
+Sequencing: Application in Studies of Antibiotic Resistance Epidemiology. Frontiers in 
+226 
+Microbiology, 8, 182. 
+227 
+Plotly Technologies Inc. Collaborative data science. Montréal, QC, 2015. https://plot.ly.  
+228 
+R Core Team. (2016) R: A Language and Environment for Statistical Computing. R Foundation 
+229 
+for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/.  
+230 
+Rozov,R., Brown Kav,A., et al. (2016) Recycler: an algorithm for detecting plasmids from de 
+231 
+novo assembly graphs. Bioinformatics. 
+232 
+Shintani,M., Sanchez,Z.K., et al. (2015) Genomics of microbial plasmids: classification and 
+233 
+identification based on replication and transfer systems and host taxonomy. Front.Microbiol., 6, 
+234 
+242. 
+235 
+Wickham,H. (2009) ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 
+236 
+2009.  
+237 
+  
+238 
+.
+CC-BY 4.0 International license
+a
+certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under 
+The copyright holder for this preprint (which was not
+this version posted March 28, 2017. 
+; 
+https://doi.org/10.1101/121350
+doi: 
+bioRxiv preprint 

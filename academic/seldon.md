@@ -14,8 +14,10 @@ summary:
 ## Usage
 
 ```bash
-seldon/seldon.py \
+# cd obsidian-public/academic/
+conda activate seldon
+../../seldon/seldon/seldon.py \
   --wsl --bib-latex \
-  obsidian-public/academic/pandoc/bib/seldon.bib \
-  --note-dir obsidian-public/academic/
+  pandoc/bib/seldon.bib \
+  --note-dir .
 ```

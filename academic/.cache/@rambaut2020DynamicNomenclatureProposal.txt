@@ -1,0 +1,655 @@
+Articles
+https://doi.org/10.1038/s41564-020-0770-5
+1Institute of Evolutionary Biology, University of Edinburgh, Edinburgh, UK. 2Marie Bashir Institute for Infectious Diseases and Biosecurity, School of Life and 
+Environmental Sciences and School of Medical Sciences, University of Sydney, Sydney, New South Wales, Australia. 3Department of Medicine, University 
+of Cambridge, Cambridge, UK. 4Department of Zoology, University of Oxford, Oxford, UK. ✉e-mail: a.rambaut@ed.ac.uk; edward.holmes@sydney.edu.au; 
+oliver.pybus@zoo.ox.ac.uk
+T
+here are currently more than 35,000 publicly available com-
+plete or near-complete genome sequences of severe acute 
+respiratory syndrome coronavirus 2 (SARS-CoV-2) (as of 
+1 June 2020) and the number continues to grow. This remarkable 
+achievement has been made possible by the rapid genome sequenc-
+ing and online sharing of SARS-CoV-2 genomes by public health 
+and research teams worldwide. These genomes have the potential 
+to provide invaluable insights into the ongoing evolution and epi-
+demiology of the virus during the pandemic and will likely play an 
+important role in surveillance and its eventual mitigation and con-
+trol. Despite such a wealth of data, there is currently no coherent 
+system for naming and discussing the growing number of phyloge-
+netic lineages that comprise the population diversity of this virus, 
+with conflicting ad hoc and informal systems of virus nomencla-
+ture in circulation. A nomenclature system for the genetic diversity 
+of SARS-CoV-2 (a clade within the family Coronaviridae, genus 
+Betacoronavirus, subgenus Sarbecovirus, species Severe acute respi-
+ratory syndrome-related virus1) is urgently required before the scien-
+tific literature and communication become further confused.
+There is no universal approach to classifying virus genetic diver-
+sity below the level of a virus species2 and this is not covered by the 
+International Committee on Taxonomy of Viruses. Typically, genetic 
+diversity is categorized into distinct ‘clades’, each corresponding to 
+a monophyletic group on a phylogenetic tree. These clades may 
+be referred to by a variety of terms, such as ‘subtypes’, ‘genotypes’, 
+‘groups’, depending on the taxonomic level under investigation or 
+the established scientific literature for the virus in question. The 
+clades usually reflect an attempt to divide pathogen phylogeny 
+and genetic diversity into a set of groupings that are approximately 
+equally divergent, mutually exclusive and statistically well sup-
+ported. Therefore, all genome sequences are allocated to one clade or 
+provisionally labelled as ‘unclassified’. Often, multiple hierarchical  
+levels of classification exist for the same pathogens, such as the 
+terms ‘type’, ‘group’ and ‘subtype’ that are used in the field of human 
+immunodeficiency virus research.
+Such classification systems are useful for discussing epidemi-
+ology and transmission when the number of taxonomic labels is 
+roughly constant through time; this is the case for slowly evolv-
+ing pathogens (for example, many bacteria) and for rapidly evolv-
+ing viruses with low rates of lineage turnover (for example, human 
+immunodeficiency virus3 and hepatitis C virus4). In contrast, some 
+rapidly evolving viruses such as influenza A are characterized by 
+high rates of lineage turnover, so that the genetic diversity circulat-
+ing in any particular year largely emerges out of and replaces the 
+diversity present in the preceding few years. For human seasonal 
+influenza, this behaviour is the result of strong natural selection 
+among competing lineages. In such circumstances, a more explicitly 
+phylogenetic classification system is used. For example, avian influ-
+enza viruses are classified into ‘subtypes’, ‘clades’ and ‘higher-order 
+clades’ according to several quantitative criteria5. Such a system can 
+provide a convenient way to refer to the emergence of new (and 
+potentially antigenically distinct) variants and is suitable for the 
+process of selecting the component viruses for the regularly updated 
+influenza vaccine. A similar approach to tracking antigenic diver-
+sity may be needed to inform SARS-CoV-2 vaccine design efforts. 
+While useful, we recognize that dynamic nomenclature systems 
+based on genetic distance thresholds have the potential to overac-
+cumulate cumbersome lineage names.
+In an ongoing and rapidly changing epidemic such as 
+SARS-CoV-2, a nomenclature system can facilitate real-time epide-
+miology by providing commonly agreed labels to refer to viruses 
+circulating in different parts of the world, thereby revealing the links 
+between outbreaks that share similar virus genomes. Furthermore, a 
+nomenclature system is needed to describe virus lineages that vary 
+A dynamic nomenclature proposal for 
+SARS-CoV-2 lineages to assist genomic 
+epidemiology
+Andrew Rambaut   1 ✉, Edward C. Holmes   2 ✉, Áine O’Toole   1, Verity Hill1, John T. McCrone1, 
+Christopher Ruis3, Louis du Plessis4 and Oliver G. Pybus   4 ✉
+The ongoing pandemic spread of a new human coronavirus, SARS-CoV-2, which is associated with severe pneumonia/disease 
+(COVID-19), has resulted in the generation of tens of thousands of virus genome sequences. The rate of genome generation 
+is unprecedented, yet there is currently no coherent nor accepted scheme for naming the expanding phylogenetic diversity of 
+SARS-CoV-2. Here, we present a rational and dynamic virus nomenclature that uses a phylogenetic framework to identify those 
+lineages that contribute most to active spread. Our system is made tractable by constraining the number and depth of hierar-
+chical lineage labels and by flagging and delabelling virus lineages that become unobserved and hence are probably inactive. 
+By focusing on active virus lineages and those spreading to new locations, this nomenclature will assist in tracking and under-
+standing the patterns and determinants of the global spread of SARS-CoV-2.
+NATuRE MiCRObiOLOGy | VOL 5 | NOVEMBEr 2020 | 1403–1407 | www.nature.com/naturemicrobiology
+1403
+Articles
+NATuRe MICROBIOlOgy
+in phenotypic or antigenic properties. (Although it must be stressed 
+that at present there is no conclusive evidence of such variation 
+among currently available SARS-CoV-2 strains.)
+Principles of a dynamic nomenclature system
+There are several key challenges in the development of a dynamic 
+and utilitarian nomenclature system for SARS-CoV-2. To be valid 
+and broadly accepted a nomenclature needs to: (1) capture local and 
+global patterns of virus genetic diversity in a timely and coherent 
+manner; (2) track emerging lineages as they move between coun-
+tries and populations within each country; (3) be sufficiently robust 
+and flexible to accommodate new virus diversity as it is generated; 
+and (4) be dynamic, such that it can incorporate both the birth and 
+death of viral lineages through time.
+A special challenge in the case of COVID-19 is that genome 
+sequence data is being generated rapidly and at high volumes, such 
+that by the end of the pandemic we can expect hundreds of thou-
+sands of SARS-CoV-2 genomes to have been sequenced. Therefore, 
+any lineage naming system must be capable of handling tens to 
+hundreds of thousands of virus genomes sampled longitudinally 
+and densely through time. Furthermore, to be practical, any lineage 
+naming system should have no more than 100 or 200 active lineage 
+labels since any more would obfuscate rather than clarify discussion 
+and would be difficult to conceptualize.
+To fulfil these requirements, we propose a workable and practical 
+lineage nomenclature for SARS-CoV-2 that arises from a set of fun-
+damental evolutionary and phylogenetic principles. Some of these 
+principles are, necessarily, specific to the COVID-19 pandemic, 
+reflecting the new reality of large-scale real-time generation of virus 
+genome sequences. The nomenclature system is not intended to 
+represent every evolutionary change in SARS-CoV-2 since these 
+will number many thousands by the end of the pandemic. Instead, 
+the focus is on the genetic changes associated with important epi-
+demiological and biological events. Fortunately, because of the early 
+sampling and genome sequencing of COVID-19 cases in China, 
+especially in Hubei province, it appears that the ‘root sequence’ of 
+SARS-CoV-2 is known. Many of the genomes from the earliest sam-
+pled cases are genetically identical and hence also probably iden-
+tical to the most recent common ancestor of all sampled viruses. 
+This occurrence is different to previous viruses and epidemics and 
+provides some advantages for the development of a rational and 
+scalable classification scheme. Specifically, setting the ‘reference 
+sequence’ to be the root sequence forms a natural starting point 
+since direct comparisons in the number and position of mutations 
+can be made with respect to the root sequence.
+During the early phase of the pandemic, it is possible to unambig-
+uously assign a genome to a lineage through the presence/absence 
+of particular sets of mutations. However, a central component of a 
+useful nomenclature system is that it focuses on those virus lineages 
+that contribute most to global transmission and genetic diversity. 
+Hence, rather than naming every possible new lineage, classification 
+should focus on those that have exhibited onward spread in the pop-
+ulation, particularly those that have seeded an epidemic in a new 
+location. For example, the large epidemic in Lombardy, Northern 
+Italy, thought to have begun in early February6, has since been dis-
+seminated to other locations in northern Europe and elsewhere.
+Furthermore, because SARS-CoV-2 genomes are being gener-
+ated continuously and at a similar pace to changes in virus trans-
+mission and epidemic control efforts, we expect to see a continual 
+process of lineage generation and extinction through time. Rather 
+than maintaining a cumulative list of all lineages that have existed 
+since the start of the pandemic, it is more prudent to mark lineages 
+as ‘active’, ‘unobserved’ or ‘inactive’. This is a designation that reflects 
+our current understanding of whether they are actively transmit-
+ting in the population or not. Accordingly, lineages of SARS-CoV-2 
+documented within the last month are defined as ‘active’ in this 
+article, those last seen >1 month but <3 months ago are classified as 
+‘unobserved’ and those that have not been seen for >3 months are 
+termed ‘inactive’.
+Although this strategy allow us to track those lineages that are 
+contributing most to the epidemic, and so reduce the number of 
+names in use, it is important to keep open the possibility that new 
+lineages will appear through the generation of virus genomes from 
+unrepresented locations or from cases with travel history from such 
+locations. For example, the epidemic in Iran (designated B.4 in our 
+system) was identified via returning travellers to other countries7. 
+Furthermore, lineages that have not been seen for some time may 
+re-emerge after a period of cryptic transmission in a region. Hence, 
+it is possible for lineages that were previously classified as inactive 
+or unobserved to be later relabelled as active. We chose the term 
+‘lineages’ (rather than ‘clades’, ‘genotypes’ or other designations) 
+for SARS-CoV-2 because it captures the fact that they are dynamic, 
+rather than relying on a static and exclusive hierarchical structure.
+Lineage naming rules
+We propose that major lineage labels begin with a letter. At the 
+root of the phylogeny of SARS-CoV-2 are two lineages that we 
+simply denote as lineages A and B. The earliest lineage A viruses, 
+such as Wuhan/WH04/2020 (EPI_ISL_406801), sampled on 5 
+January 2020, share two nucleotides (positions 8,782 in ORF1ab 
+and 28,144 in ORF8) with the closest known bat viruses (RaTG13 
+and RmYN02). Different nucleotides are present at those sites in 
+viruses assigned to lineage B, of which Wuhan-Hu-1 (GenBank 
+accession no. MN908947) sampled on 26 December 2019 is an early 
+representative. Hence, although viruses from lineage B happen to 
+have been sequenced and published first8–10, it is likely (based on 
+current data) that the most recent common ancestor (MRCA) of 
+the SARS-CoV-2 phylogeny shares the same genome sequence as 
+the early lineage A sequences (for example, Wuhan/WH04/2020). 
+Importantly, this does not imply that the MRCA itself has been 
+sampled and sequenced, but rather that no mutations have accrued 
+between the MRCA and the early lineage A genome sequences. At 
+the time of writing, viruses from both lineages A and B are still cir-
+culating in many countries around the world, reflecting the expor-
+tation of viruses from Hubei province to other regions of China and 
+elsewhere before strict travel restrictions and quarantine measures 
+were imposed there.
+To add further lineage designations, we downloaded 27,767 com-
+plete SARS-CoV-2 genomes from the GISAID (Global Initiative on 
+Sharing All Influenza Data) database (http://gisaid.org)11 on 18 May 
+2020 and estimated a maximum likelihood tree for these data (see 
+Methods) (Fig. 1). We defined further SARS-CoV-2 lineages, each 
+descending from either lineage A or B, and assigned a numerical 
+value (for example, lineage A.1 or lineage B.2). Lineage designations 
+were made using the following set of conditions: (1) each descen-
+dant lineage should show phylogenetic evidence of emergence from 
+an ancestral lineage into another geographically distinct population, 
+implying substantial onward transmission in that population. In the 
+case of a rapidly expanding global lineage, the recipient population 
+may comprise multiple countries. In the case of large and populous 
+countries, it may represent a new region or province. To show phylo-
+genetic evidence, a new lineage must meet all of the following crite-
+ria: (a) it exhibits one or more shared nucleotide differences from the 
+ancestral lineage; (b) it comprises at least five genomes with >95% 
+of the genome sequenced; (c) genomes within the lineage exhibit at 
+least one shared nucleotide change among them; and (d) a bootstrap 
+value >70% for the lineage-defining node. Importantly, criterion (c) 
+helps to focus attention only on lineages with evidence of ongoing 
+transmission; (2) the lineages identified in step 1 can themselves 
+act as ancestors for virus lineages that then emerge in other geo-
+graphical areas or at later times, provided they satisfy criteria a–d. 
+This results in a new lineage designation (for example, A.1.1); (3) 
+NATuRE MiCRObiOLOGy | VOL 5 | NOVEMBEr 2020 | 1403–1407 | www.nature.com/naturemicrobiology
+1404
+Articles
+NATuRe MICROBIOlOgy
+the iterative procedure in step 2 can proceed for a maximum of 
+three sublevels (for example, A.1.1.1) after which new descendant 
+lineages are given a letter (in English alphabetical sequence from 
+C) so A.1.1.1.1 would become C.1 and A.1.1.1.2 would become C.2. 
+The rationale for this is that the system is intended only for tracking 
+currently circulating lineages, such that we do not try to capture the 
+entire history of a lineage in its label. (That complete history can 
+be obtained by reference to a phylogeny.) At the time of writing,  
+A
+B
+B.1
+B.2
+A.1
+0
+1
+2
+3
+4
+5
+Number of nucleotide changes
+A.1.1
+A.6
+A.4
+A.2
+A.5
+A.3
+B.10
+B.14
+B.13
+B.16
+B.3
+B.9
+B.5
+B.6
+B.4
+B.7
+B.15
+A.1.3
+B.2.6
+B.2.2
+B.2.7
+B.2.4
+B.2.5
+B.2.1
+B.1.34
+B.1.6
+B.1.69
+B.1.71
+B.1.19
+B.1.23
+B.1.22
+B.1.37
+B.1.36
+B.1.66
+B.1.40
+B.1.12
+B.1.30
+B.1.31
+B.1.39
+B.1.34
+B.1.26
+B.1.41
+B.1.38
+B.1.3
+B.1.43
+B.1.29
+B.1.5
+B.1.33
+B.1.32
+B.1.67
+B.1.70
+B.1.1
+B.1.35
+B.1.72
+B.1.13
+B.1.8
+Fig. 1 | Maximum likelihood phylogeny of globally sampled sequences of SARS-CoV-2 downloaded from the GiSAiD database on 18 May 2020. Five 
+representative genomes are included from each of the defined lineages. The largest lineages defined by our proposed nomenclature system are highlighted 
+with coloured areas and labelled on the right. The remaining lineages defined by the nomenclature system are denoted by triangles. The scale bar 
+represents the number of nucleotide changes within the coding region of the genome.
+NATuRE MiCRObiOLOGy | VOL 5 | NOVEMBEr 2020 | 1403–1407 | www.nature.com/naturemicrobiology
+1405
+Articles
+NATuRe MICROBIOlOgy
+no C level lineages have been assigned; (4) all sequences are assigned 
+to one lineage. For example, if a genome does not meet the criteria 
+for inclusion in a ‘higher-level’ lineage (for example, A.1.2, B.1.3.5) 
+then it is automatically classified into the lowest level for which it 
+meets the inclusion criteria, which ultimately is A or B.
+Using this scheme, we identified 81 viral lineages. These lineages 
+mostly belong to A, B and B.1. We identified six lineages derived 
+from lineage A (denoted A.1–A.6) and two descendant sublineages 
+of A.1 (A.1.1 and A.3). We also describe 16 lineages directly derived 
+from lineage B. To date, lineage B.1 is the predominant known 
+global lineage and has been subdivided into >70 sublineages. 
+Lineage B.2 currently has six descendant sublineages. We are not 
+yet able to further subdivide the other lineages, even though some 
+contain very large numbers of genomes. This is because many parts 
+of the world experienced numerous imported cases followed by 
+exponential growth in local transmission. We provide descriptions 
+of these initial lineages, including their geographical locations and 
+time span of sampling, in Table 1. We have also tried to be flexible 
+with the criteria where, for example, the bootstrap value is below 
+70% but there is strong previous evidence that the lineage exists and 
+is epidemiologically important. In particular, the Italian epidemic 
+comprises two large lineages in our scheme—B.1 and B.2—reflect-
+ing genomes from Italy as well as from large numbers of travellers 
+from these regions and that fall into both lineages.
+A unique and important aspect of our proposed nomenclature 
+is that the status of the currently circulating lineages be assessed 
+at regular intervals, with decisions made about identifying new 
+lineages and flagging those we believe are likely be unobserved or 
+inactive because none of their members have been sequenced for 
+a considerable time. The names of unobserved or inactive lineages 
+will not be reassigned. These are provisional timescales and the cat-
+egory thresholds may be altered in the future once the dynamics of 
+lineage generation and extinction are better understood. When visu-
+alizing the epidemic, we suggest that these lineages should no longer 
+be labelled to reduce both the number of names in circulation and 
+visual noise, and focus on the current epidemiological situation.
+Discussion
+While we regard this proposed nomenclature as practical and 
+robust, it is important to recognize that phylogenetic inference car-
+ries statistical uncertainty and much of the available genome data 
+is noisy, with incomplete genome coverage and errors arising from 
+the amplification and sequencing processes. We have suggested a 
+genome coverage threshold for proposing new lineages and we fur-
+ther suggest that sequences are not ascribed a lineage designation 
+unless the genome coverage of that sequence exceeds 70% of the 
+coding region. As noted earlier, when SARS-CoV-2 genetic diversity 
+is low during the early pandemic period, there is a direct association 
+between lineage assignation and the presence of particular sets of 
+mutations (with respect to the root sequence). This should help with 
+the development of rapid, algorithmic genome labelling tools. This 
+task will become more complex, but still tractable, as SARS-CoV-2 
+genetic diversity accumulates, increasing the chance of both homo-
+plasies and reverse mutations. Classification algorithms based on 
+lists of ‘lineage-defining’ mutations may be practical if they are 
+frequently cross-checked and validated against phylogenetic esti-
+mations but will not be as powerful as phylogenetic classification 
+methods, which make use of complete genome sequence data to 
+identify relationships. We encourage the research community to 
+develop software and online tools that will enable the automated 
+classification of newly generated genomes (one such implementa-
+tion is pangolin, https://github.com/hCoV-2019/pangolin).
+Coronaviruses also frequently recombine, meaning that a single 
+phylogenetic tree may not always adequately capture the evolution-
+ary history of SARS-CoV-2. Although this can make phylogenetic 
+analysis challenging, recombination is readily accommodated 
+within this system of lineage naming and assignment. A distinct 
+recombination event, if it establishes onward transmission, will cre-
+ate a new viral lineage with a distinct common ancestor. Because 
+this new lineage does not have a single ancestral lineage, it will be 
+assigned the next available alphabetical prefix.
+While we believe our proposed lineage nomenclature will greatly 
+assist those working with COVID-19, we do not see it as exclusive 
+to other naming systems, particularly those that are specifically 
+intended to track lineages circulating within individual countries for 
+which a finer scale will be helpful. Indeed, there are likely to be strong 
+sampling biases towards particular countries. Furthermore, we note 
+that future genome sequence generation may require adjustments 
+to the current proposal; any such changes will be detailed at http://
+cov-lineages.org/. However, we envisage that the general approach 
+described in this study may be readily adopted for these purposes 
+and for other viral epidemics where real-time genomic epidemiol-
+ogy is being undertaken. We expect this dynamic nomenclature 
+to be most useful for the duration of the global pandemic, which 
+may last a few years. After that time, SARS-CoV-2 will be either 
+globally eliminated or, more likely, become an endemic or seasonal 
+infection. The remaining endemic/seasonal lineages, which will be 
+genetically distinct by then, can simply retain their names from the 
+dynamic nomenclature system in the post-pandemic period.
+Methods
+We downloaded all SARS-CoV-2 genomes (at least 29,000 base pairs in length) 
+from GISAID on 18 May 2020. We trimmed the 5′- and 3′-untranslated regions 
+Table 1 | Proposed nomenclature of early major lineages of 
+SARS-CoV-2
+Lineage
+Genomes
+Date range
+Comments
+A
+223
+5 January–27 
+April 2020
+The root of the pandemic lies 
+in this lineage. Many Chinese 
+sequences with global exports
+A.1
+1,116
+20 February–25 
+March 2020
+Primary outbreak in 
+Washington State, USA
+A.2
+295
+26 February–27 
+April 2020
+European lineage
+A.3
+191
+28 January–21 
+April 2020
+USA lineage
+A.5
+118
+23 February–26 
+April 2020
+European lineage
+B
+1,713
+24 December 
+2019–3 May 
+2020
+The base of this lineage lies in 
+China, with extensive global 
+travel between multiple 
+locations
+B.1
+7,438
+24 January–10 
+May 2020
+Comprises the large Italian 
+outbreak; it now represents 
+many European outbreaks, 
+with travel within Europe and 
+from Europe to the rest of the 
+world
+B.1.1
+6,286
+15 February–9 
+May 2020
+Major European lineage; 
+exports to the rest of the world 
+from Europe
+B.2
+917
+13 February–4 
+May 2020
+With B.1, it comprises the large 
+Italian outbreak
+B.3
+752
+23 February–23 
+April 2020
+UK lineage
+B.4
+258
+18 January–14 
+April 2020
+This is probably the primary 
+Iranian outbreak
+See https://cov-lineages.org/ for full details of each lineage.
+NATuRE MiCRObiOLOGy | VOL 5 | NOVEMBEr 2020 | 1403–1407 | www.nature.com/naturemicrobiology
+1406
+Articles
+NATuRe MICROBIOlOgy
+and retained those genomes with at least 95% coverage of the reference genome 
+(Wuhan-Hu-1). We aligned these sequences using the MAFFT FFT-NS-2 
+algorithm and default parameter settings12. We then estimated a maximum 
+likelihood tree using IQ-TREE 2 (ref. 13) using the GTR+Γ model of nucleotide 
+substitution14,15, default heuristic search options and ultrafast bootstrapping with 
+1,000 replicates16.
+The maximum likelihood tree and associated sequence metadata were 
+manually curated and the phylogeny was annotated with the lineage designations. 
+This annotated tree, along with a table providing the lineage designation for each 
+genome in the dataset, is available for download at http://cov-lineages.org/. We 
+have also provided a high-resolution figure (in PDF format) of the entire tree 
+labelled with lineages. These will be updated on a regular basis. Representative 
+sequences from each lineage were selected to maximize within-lineage diversity 
+and minimize N-content and used to construct the maximum likelihood tree 
+shown in Fig. 1.
+Reporting Summary. Further information on research design is available in the 
+Nature Research Reporting Summary linked to this article.
+Data availability
+No new data have been reported. The viral genome sequences used in this paper are 
+publicly available from GISAID (http://gisaid.org). A table of acknowledgements 
+for the GISAID genome sequences used to develop this work is available at  
+https://cov-lineages.org/gisaid_acknowledgements.
+Code availability
+Details of the software and source code that implement the nomenclature system 
+reported in this paper are available at http://cov-lineages.org.
+Received: 16 April 2020; Accepted: 3 July 2020;  
+Published online: 15 July 2020
+References
+ 1. Walker, P. J. et al. Changes to virus taxonomy and the international code of 
+virus classification and nomenclature ratified by the international committee 
+on taxonomy of viruses (2019). Arch. Virol. 164, 2417–2429 (2019).
+ 2. ICTV Code: the International Code of Virus Classification and Nomenclature. 
+International Committee on Taxonomy of Viruses (ICTV) https://talk.ictvonline.
+org/information/w/ictv-information/383/ictv-code/ (2018).
+ 3. Robertson, D. L. et al. HIV-1 nomenclature proposal. Science 288, 55–56 (2000).
+ 4. Smith, D. B. et al. Expanded classification of hepatitis C virus into 7 
+genotypes and 67 subtypes: updated criteria and genotype assignment web 
+resource. Hepatology 59, 318–327 (2014).
+ 5. WHO/OIE/FAO H5N1 Evolution Working Group. Continued evolution of 
+highly pathogenic avian influenza A (H5N1): updated nomenclature. 
+Influenza Other Respir. Viruses 6, 1–5 (2012).
+ 6. Zehender, G. et al. Genomic characterization and phylogenetic analysis of 
+SARS-CoV-2 in Italy. J. Med. Virol. https://doi.org/10.1002/jmv.25794 (2020).
+ 7. Eden, J.-S. et al. An emergent clade of SARS-CoV-2 linked to returned 
+travellers from Iran. Virus Evol. 6, veaa027 (2020).
+ 8. Lu, R. et al. Genomic characterisation and epidemiology of 2019 novel 
+coronavirus: implications for virus origins and receptor binding. Lancet 395, 
+565–574 (2020).
+ 9. Wu, F. et al. A new coronavirus associated with human respiratory disease in 
+China. Nature 579, 265–269 (2020).
+ 10. Zhu, N. et al. A novel coronavirus from patients with pneumonia in China, 
+2019. N. Engl. J. Med. 382, 727–733 (2020).
+ 11. Shu, Y. & McCauley, J. GISAID: Global Initiative on Sharing All Influenza 
+Data—from vision to reality. Euro Surveill. 22, 30494 (2017).
+ 12. Katoh, K., Misawa, K., Kuma, K.-I. & Miyata, T. MAFFT: a novel method  
+for rapid multiple sequence alignment based on fast Fourier transform. 
+Nucleic Acids Res. 30, 3059–3066 (2002).
+ 13. Minh, B. Q. et al. IQ-TREE 2: new models and efficient methods for 
+phylogenetic inference in the genomic era. Mol. Biol. Evol. 37,  
+1530–1534 (2020).
+ 14. Tavaré, S. Some probabilistic and statistical problems in the analysis  
+of DNA sequences. In Proc. of the Symposium on Some Mathematical 
+Questions in Biology: DNA Sequence Analysis. Lectures on Mathematics  
+in the Life Sciences (ed. Miura, R. M.) 57–86 (American Mathematical  
+Society, 1986).
+ 15. Yang, Z. Maximum likelihood phylogenetic estimation from DNA sequences 
+with variable rates over sites: approximate methods. J. Mol. Evol. 39,  
+306–314 (1994).
+ 16. Minh, B. Q., Nguyen, M. A. T. & von Haeseler, A. Ultrafast approximation for 
+phylogenetic bootstrap. Mol. Biol. Evol. 30, 1188–1195 (2013).
+Acknowledgements
+This work was funded by the Wellcome Trust Collaborative Award (grant no. 
+206298/Z/17/Z—ARTIC Network), the European Research Council under the 
+European Union’s Horizon 2020 research and innovation programme (grant 
+no. 725422-ReservoirDOCS), the European Commission Seventh Framework 
+Programme (grant no. FP7/2007–2013)/European Research Council (grant no. 
+614725-PATHPHYLODYN), the UK COVID-19 Genomics Consortium, the Oxford 
+Martin School and the Australian Research Council (grant no. FL170100022).
+Author contributions
+A.R., E.C.H. and O.G.P. conceived, designed and supervised the study. Á.O.T., J.T.M. and 
+A.R. developed the phylogenetic methods. A.R., Á.O.T., V.H., J.T.M., C.R., L.D.P. and 
+O.G.P. analysed and interpreted the viral genomes. A.R., E.C.H., Á.O.T., V.H. and O.G.P. 
+wrote the paper with input from the other authors.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information is available for this paper at https://doi.org/10.1038/
+s41564-020-0770-5.
+Correspondence and requests for materials should be addressed to A.R., E.C.H. or 
+O.G.P.
+Peer review information Peer reviewer reports are available.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature Limited 2020
+NATuRE MiCRObiOLOGy | VOL 5 | NOVEMBEr 2020 | 1403–1407 | www.nature.com/naturemicrobiology
+1407
+1
+nature research  |  reporting summary
+October 2018
+Corresponding author(s): Edward C Holmes 
+Last updated by author(s): July 1, 2020
+Reporting Summary
+Nature Research wishes to improve the reproducibility of the work that we publish. This form provides structure for consistency and transparency 
+in reporting. For further information on Nature Research policies, see Authors & Referees and the Editorial Policy Checklist.
+Statistics
+For all statistical analyses, confirm that the following items are present in the figure legend, table legend, main text, or Methods section.
+n/a Confirmed
+The exact sample size (�) for each experimental group/condition, given as a discrete number and unit of measurement
+A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly
+The statistical test(s) used AND whether they are one- or two-sided 
+��������������������������������������������������������������������������������������������������������������
+A description of all covariates tested
+A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons
+A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient) 
+AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)
+For null hypothesis testing, the test statistic (e.g. �, �, �) with confidence intervals, effect sizes, degrees of freedom and � value noted 
+������������������������������������������������
+For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings
+For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes
+Estimates of effect sizes (e.g. Cohen's �, Pearson's �), indicating how they were calculated
+����������������������������������������������������������������������������������������������
+Software and code
+Policy information about availability of computer code
+Data collection
+No software used for data collection.
+Data analysis
+Custom code available at http://cov-lineages.org 
+Analysis used open source software: MAFFT v7.458, IQTree v1.6.12, Biopython v1.74, Dendropy v4.4.0
+For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors/reviewers. 
+We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Research guidelines for submitting code & software for further information.
+Data
+Policy information about availability of data
+All manuscripts must include a data availability statement. This statement should provide the following information, where applicable: 
+- Accession codes, unique identifiers, or web links for publicly available datasets 
+- A list of figures that have associated raw data 
+- A description of any restrictions on data availability
+This study uses data from the GISAID SARS-CoV-2 repository (http://gisaid.org/). An acknowledgment table is available on the Github repository: http://cov-
+lineages.org/gisaid_acknowledgements.html
+2
+nature research  |  reporting summary
+October 2018
+Field-specific reporting
+Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
+Life sciences
+Behavioural & social sciences
+ Ecological, evolutionary & environmental sciences
+For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
+Life sciences study design
+All studies must disclose on these points even when the disclosure is negative.
+Sample size
+Data exclusions
+The study used 27,767 SARS-CoV-2 publicly available genome sequences.
+Genome sequence data was excluded if it was of insufficient coverage or quality to produce a reliable phylogenetic placement.
+Replication
+Replication is not applicable to this study.
+Randomization
+Randomization is not applicable to this study.
+Blinding
+ Blinding is not applicable to this study.
+Reporting for specific materials, systems and methods
+We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material, 
+system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response. 
+Materials & experimental systems
+n/a Involved in the study
+Antibodies
+Eukaryotic cell lines
+Palaeontology
+Animals and other organisms
+Human research participants
+Clinical data
+Methods
+n/a Involved in the study
+ChIP-seq
+Flow cytometry
+MRI-based neuroimaging

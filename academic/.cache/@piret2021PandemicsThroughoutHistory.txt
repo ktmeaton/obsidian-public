@@ -1,0 +1,1972 @@
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 1
+REVIEW
+published: 15 January 2021
+doi: 10.3389/fmicb.2020.631736
+Edited by:
+Karl Kuchler,
+Medical University of Vienna, Austria
+Reviewed by:
+Axel Cloeckaert,
+Institut National de Recherche pour
+l’Agriculture, l’Alimentation et
+l’Environnement (INRAE), France
+Kingston H. Mills,
+Trinity College Dublin, Ireland
+*Correspondence:
+Guy Boivin
+Guy.Boivin@crchudequebec.ulaval.ca
+Specialty section:
+This article was submitted to
+Infectious Diseases,
+a section of the journal
+Frontiers in Microbiology
+Received: 20 November 2020
+Accepted: 23 December 2020
+Published: 15 January 2021
+Citation:
+Piret J and Boivin G (2021)
+Pandemics Throughout History.
+Front. Microbiol. 11:631736.
+doi: 10.3389/fmicb.2020.631736
+Pandemics Throughout History
+Jocelyne Piret and Guy Boivin*
+CHU de Québec – Laval University, Quebec City, QC, Canada
+The emergence and spread of infectious diseases with pandemic potential occurred
+regularly throughout history. Major pandemics and epidemics such as plague, cholera,
+ﬂu, severe acute respiratory syndrome coronavirus (SARS-CoV) and Middle East
+respiratory syndrome coronavirus (MERS-CoV) have already afﬂicted humanity. The
+world is now facing the new coronavirus disease 2019 (COVID-19) pandemic.
+Many infectious diseases leading to pandemics are caused by zoonotic pathogens
+that were transmitted to humans due to increased contacts with animals through
+breeding, hunting and global trade activities. The understanding of the mechanisms of
+transmission of pathogens to humans allowed the establishment of methods to prevent
+and control infections. During centuries, implementation of public health measures such
+as isolation, quarantine and border control helped to contain the spread of infectious
+diseases and maintain the structure of the society. In the absence of pharmaceutical
+interventions, these containment methods have still been used nowadays to control
+COVID-19 pandemic. Global surveillance programs of water-borne pathogens, vector-
+borne diseases and zoonotic spillovers at the animal-human interface are of prime
+importance to rapidly detect the emergence of infectious threats. Novel technologies
+for rapid diagnostic testing, contact tracing, drug repurposing, biomarkers of disease
+severity as well as new platforms for the development and production of vaccines are
+needed for an effective response in case of pandemics.
+Keywords: infectious diseases, zoonotic pathogens, pandemic, public health measures, pharmaceutical
+interventions, water-borne pathogens
+INTRODUCTION
+The shift from hunter-gatherers to agrarian societies has favored the spread of infectious diseases
+in the human population (Dobson and Carper, 1996). Expanded trades between communities
+have increased interactions between humans and animals and facilitated the transmission of
+zoonotic pathogens. Thereafter, expanded cities, extended trade territories, increased travels as
+well as eﬀects on ecosystems due to increased human population raised the emergence and
+spread of infectious diseases leading to higher risks for outbreaks, epidemics and even pandemics
+(Lindahl and Grace, 2015).
+The terms endemic, outbreak, epidemic and pandemic relate to the occurrence of a health
+condition compared to its predicted rate as well as to its spread in geographic areas (Grennan, 2019).
+An endemic condition occurs at a predictable rate among a population. An outbreak corresponds
+to an unpredicted increase in the number of people presenting a health condition or in the
+occurrence of cases in a new area. An epidemic is an outbreak that spreads to larger geographic
+areas. A pandemic is an epidemic that spreads globally.
+Frontiers in Microbiology | www.frontiersin.org
+1
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 2
+Piret and Boivin
+History of Pandemics
+An emerging infection newly appears in a population or is
+spread in a new geographic area (Morens et al., 2004). The
+zoonotic transmission of pathogens from animals to humans is
+a pivotal mechanism by which emerging infections have aﬄicted
+humans throughout history (Wolfe et al., 2007). The probability
+of cross-species transmission of pathogens was dramatically
+enhanced with increased interactions with animals through
+hunting, animal farming, trade of animal-based foods, wet
+markets or exotic pet trade (Bengis et al., 2004). The process
+of cross-species transmission of pathogens involves 5 diﬀerent
+stages (Wolfe et al., 2007). (1) the pathogen exclusively infects
+animals under natural conditions; (2) the pathogen evolves so
+that it can be transmitted to humans but without sustained
+human-to-human transmission; (3) the pathogen undergoes only
+a few cycles of secondary transmission between humans; (4)
+the disease exists in animals but long sequences of secondary
+human-to-human transmission occur without the involvement
+of animal hosts; and (5) the disease occurs exclusively in humans.
+The animal species that harbor the pathogen, the nature of
+human interaction with that animal and the frequency of these
+interactions likely modulate the risk of zoonotic transmission.
+Furthermore, land use and climate changes are suggested to play
+important roles in the transmission of pathogens from wildlife to
+humans (El-Sayed and Kamel, 2020; White and Razgour, 2020).
+There is thus a need to implement surveillance programs to
+rapidly detect the emergence of pathogens with a potential for
+zoonotic transmission at the animal-human interface.
+Climate changes also inﬂuence the transmission of pathogens
+(e.g., Dengue, Chikungunya, Zika, Japanese encephalitis, West
+Nile viruses, Borrelia burgdorferi) by expanding the habitats
+of various common zoonotic disease-carrying vectors (e.g.,
+Aedes albopictus mosquitos, ticks) (Caminade et al., 2019). The
+emergence of vector-borne pathogens in non-endemic regions
+often results in explosive epidemics. Land use due to increasing
+human population also aﬀects the distribution of disease-carrying
+vectors (Kilpatrick and Randolph, 2012). Control of vector-borne
+zoonotic pathogens usually requires vector control to reverse the
+drivers of transmission.
+Furthermore, the spread of several infectious diseases (e.g.,
+tuberculosis, malaria, cholera) to extended geographic areas are
+now raising health concerns for a signiﬁcant proportion of the
+population (Morens et al., 2004). These diseases show a wider
+spread as a result of the acquisition of drug resistance, tolerance
+of mosquito vector to insecticides, poor sanitation, land use and
+climate changes as well as increased in human mobility and
+travels (Cutler et al., 2010). Furthermore, outbreaks of cholera
+in regions where natural disasters occurred such as earthquakes
+and ﬂoods were also reported. Surveillance programs should be
+also implemented to control the spread of these pathogens from
+endemic to non-endemic regions.
+Finally, infectious agents (e.g., Bacillus anthracis, Yersinia
+pestis, variola virus) could be used as bioweapons and could
+thus constitute threats for humanity (Oliveira et al., 2020).
+These weapons are based on natural microorganisms or
+microorganisms that are engineered to be more virulent, highly
+transmissible or resistant to therapy (Narayanan et al., 2018). The
+release of these biological weapons is intended to induce diseases
+in humans or even death. Therefore, governments should
+establish biowarfare, bioterrorism and biocrime preparedness
+plans to protect the population.
+In this paper, we review major pandemics that have aﬄicted
+humankind throughout history such as plague, cholera, inﬂuenza
+and coronavirus diseases, the way they were controlled in the
+past and how these diseases are managed today. Infectious
+diseases still represent threats for human health as pathogens
+can spread rapidly through global trade and travels. Global
+surveillance programs are thus needed to detect and identify
+pathogens spillover from animals to humans as well as to control
+water-borne pathogens and vector-borne diseases. Furthermore,
+eﬀective non-pharmaceutical and pharmaceutical measures for
+the prevention and control of these infections are required to
+limit their dissemination in the human population.
+PLAGUE
+Plague is caused by the ﬂea-borne bacteria Yersinia pestis that is
+responsible of at least three human plague pandemics, the plague
+of Justinian, the Black Death and the third plague (Table 1)
+TABLE 1 | Timeline of the pandemics described in this paper.
+Years
+Pandemics
+Pathogens
+Vectors
+541–543
+Plague of Justinian
+Yersinia pestis
+Fleas associated to
+wild rodents
+1347–1351
+Black Death
+Yersinia pestis
+Fleas associated to
+wild rodents
+1817–1824
+First cholera pandemic
+Vibrio cholerae
+Contaminated water
+1827–1835
+Second cholera
+pandemic
+Vibrio cholerae
+Contaminated water
+1839–1856
+Third cholera
+pandemic
+Vibrio cholerae
+Contaminated water
+1863–1875
+Fourth cholera
+pandemic
+Vibrio cholerae
+Contaminated water
+1881–1886
+Fifth cholera pandemic
+Vibrio cholerae
+Contaminated water
+1885–ongoing
+Third plague
+Yersinia pestis
+Fleas associated to
+wild rodents
+1889–1893
+Russian ﬂu
+Inﬂuenza A/H3N8?
+Avian?
+1899–1923
+Sixth cholera
+pandemic
+Vibrio cholerae
+Contaminated water
+1918–1919
+Spanish ﬂu
+Inﬂuenza A/H1N1
+Avian
+1957–1959
+Asian ﬂu
+Inﬂuenza A/H2N2
+Avian
+1961-ongoing
+Seventh cholera
+pandemic
+Vibrio cholerae
+Contaminated water
+1968–1970
+Hong Kong ﬂu
+Inﬂuenza A/H3N2
+Avian
+2002–2003
+Severe acute
+respiratory syndrome
+(SARS)
+SARS-CoV
+Bats, palm civets
+2009–2010
+Swine ﬂu
+Inﬂuenza A/H1N1
+Pigs
+2015-ongoing
+Middle East
+respiratory syndrome
+(MERS)
+MERS-CoV
+Bats, dromedary
+camels
+2019-ongoing
+COVID-19
+SARS-CoV-2
+Bats, pangolins?
+CoV, coronavirus; COVID-19, coronavirus disease 2019.
+Frontiers in Microbiology | www.frontiersin.org
+2
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 3
+Piret and Boivin
+History of Pandemics
+(Zietz and Dunkelberg, 2004). Y. pestis is a gram-negative, rod-
+shaped, coccobacillus bacteria. Y. pestis is a facultative anaerobic
+bacteria that is transmitted by ﬂeas associated mainly to rodents
+and other mammalian hosts (Perry and Fetherston, 1997). Fleas
+acquire the bacteria by sucking blood from an infected rodent.
+Bacteria quickly multiply and block the alimentary canal in the
+gut of the ﬂeas (Bacot and Martin, 1914). The ﬂeas transmit
+the bacteria to new rodent hosts by regurgitating the clotted
+blood. Plague manifests in three forms, i.e., bubonic, septicemic
+and pneumonic, depending on the route of infection (Yang,
+2018). The bubonic form is the most common and results
+from the bite of an infected ﬂea. Clinical manifestations include
+ﬂu-like symptoms such as fever, chills, headache, body pains,
+weakness, vomiting and nausea followed by painful swollen
+lymph nodes. The bubonic form is likely to be fatal (50–90%
+of cases). Septicemic plague is rare (10–25% of cases) and
+consists of a progressive bloodstream infection in the absence
+of lymphadenopathy. The mortality rate is higher in patients
+with septicemic plague than in those with the bubonic form.
+Pneumonic plague occurs when the bacteria infects the lungs,
+either primarily by infectious respiratory droplets or secondarily
+as a complication of bubonic plague. This form is characterized
+by a fulminating onset and is rapidly fatal when left untreated.
+The Three Pandemics of Plague
+The plague of Justinian occurred in Egypt and spread throughout
+the Eastern Roman Empire and its neighbors (Table 1) (Cunha
+and Cunha, 2008). Between 541 and 543, the plague killed an
+estimated 100 million people in the Roman Empire and especially
+in its capital, Constantinople. The highly developed structure of
+the Roman Empire facilitated the spread of the Justinian plague
+along its trade and military routes. In contrast, the plague did
+not aﬀect the less organized barbarian societies outside of Rome’s
+borders. The high mortality caused by the disease might have
+contributed to the weakening and eventually to the decline of
+the Byzantine Empire. After this initial pandemic, intermittent
+plague outbreaks occurred every 8 to 12 years for two centuries
+and then disappeared for unknown reasons.
+The identiﬁcation of the causative pathogen involved in the
+death of victims of past pandemics usually relies on ancient
+DNA techniques aimed to directly extract DNA from skeletal
+remains. A great advance in paleomicrobiology techniques was
+the isolation of microbial DNA in dental pulp specimens
+(Drancourt et al., 1998). Indeed, bacteria are trapped in the dental
+pulp early in the course of a bacteremia and can be isolated from
+preserved teeth of victims. Therefore, analysis of the dental pulp
+is more eﬃcient than bones to accurately identify microbial DNA
+from rapidly fatal infections that occurred in the past. Corpses of
+victims of the Justinian plague could be recovered in burial sites.
+Ancient DNA techniques from dental pulp samples identiﬁed
+Y. pestis as the etiological pathogen responsible for this pandemic
+(Harbeck et al., 2013).
+The second plague pandemic, the Black Death, originated in
+East Asia and swept across Central Asia into Europe through
+the land and sea trade routes of the medieval Silk Road (Zietz
+and Dunkelberg, 2004). The second plague pandemic lasted
+in Europe until the early of the 19th century and killed 200
+million people. The lineages of Y. pestis that caused the plague
+of Justinian and the Black Death were independent emergences
+into human population (Wagner et al., 2014). The Black Death
+(1347–1351) killed as many as 30% of the European population
+and was followed by successive waves such as the plague of Milan
+(1630), the great plague of London (1665–1666) and the plague
+of Marseille (1720–1722). It is suggested that the bacteria may
+have persisted in rodent reservoirs in Europe and periodically
+re-emerged in the human population (Seifert et al., 2016).
+Another hypothesis could be that climate-driven outbreaks of
+Y. pestis in Asian rodent reservoirs were responsible for new
+waves of plague arriving into Europe through its maritime trade
+network with Asia (Schmid et al., 2015). The bacteria suddenly
+disappeared from Europe and this could be possibly related to
+the extinction of local rodent reservoirs (Spyrou et al., 2016).
+At that time, there was no eﬀective treatment against plague.
+Initial institutional responses to disease control began during the
+Black Death (Tognotti, 2013). A sanitary cordon was imposed
+by armed guards along transit routes and at access points to
+cities. A separation between healthy and infected persons was
+accomplished in camps and then in permanent plague hospitals
+(called lazarettos). Port cities were closed to ships arriving from
+plague-infected areas. Ships with suspicion of plague were put in
+quarantine, passengers and crew were isolated in lazarettos and
+vessels were thoroughly fumigated and retained for 40 days. The
+Black Death decimated Medieval Europe and had major impacts
+on its socio-economic development, culture, art, religion and
+politics (Bramanti et al., 2016).
+Based on genomic analysis of ancient and recent genomes,
+it was suggested that a wave of plague may have traveled from
+Europe to Asia after the Black Death, eventually setting in China
+and giving rise to the third plague pandemic (Spyrou et al.,
+2016). The latter plague pandemic originated in the middle of
+the 19th century in the Yunnan region (China), reached Canton
+and spread to Hong Kong (Zietz and Dunkelberg, 2004). In 1894,
+Alexandre Yersin discovered the bacteria, Y. pestis, in specimens
+of plague patients and dead rats in Hong Kong (Yersin, 1894).
+The pandemic then reached Japan, Singapore, Taiwan and India
+via ships. Over the following years, plague became endemic in
+many countries around the world (Stenseth et al., 2008).
+The Plague Nowadays
+Since the 1990’s, plague is classiﬁed as a re-emerging infectious
+disease by the World Health Organization (WHO) (World
+Health Organization [WHO], 2017a). Between 2010 and 2015,
+the number of plague cases was estimated at 3,248 with 584
+fatalities worldwide, most of them occurring in Democratic
+Republic of the Congo, Madagascar and Peru (Glatter and
+Finkelman, 2020). In September 2017, a large outbreak of plague
+occurred in Madagascar with 2,417 cases among whom 77%
+were clinically suspected to have the pneumonic form (Mead,
+2018). The basic reproduction number (Ro) was estimated at
+1.73 (Tsuzuki et al., 2017). The case fatality rate was as high as
+8.6% (Mead, 2018). Plague is seasonal in most endemic countries
+with a well-deﬁned geographic distribution which corresponds
+to those of the vectors and rodent reservoirs (Prentice and
+Rahalison, 2007). Nowadays, plague should be considered as a
+Frontiers in Microbiology | www.frontiersin.org
+3
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 4
+Piret and Boivin
+History of Pandemics
+neglected human threat due to its rapid spread, its high fatality
+rate without early treatment and its capacity to disrupt social
+and healthcare systems (Valles et al., 2020). The genetic plasticity
+of Y. pestis also suggests a potential risk for the emergence
+of antibiotic resistance (Radnedge et al., 2002). Surveillance
+and control programs of ﬂeas and animals involved in the life
+cycle of Y. pestis are required in endemic regions. Individuals
+should protect themselves against ﬂea bites in regions where
+plague is present. It is also recommended to avoid contact with
+infected body ﬂuids and tissues as well as animal carcasses.
+Public health interventions that can be put in place to prevent
+or limit plague outbreaks include the killing of ﬂeas with
+insecticides and, if required, the control of infected rodents; the
+early isolation of patients, the rapid diagnostic and treatment of
+infected individuals with antibiotics; the detection and isolation
+of contacts and the administration of chemoprophylaxis to
+exposed individuals (Prentice and Rahalison, 2007). Standard
+treatments against plague include streptomycin and doxycycline.
+Alternative drugs consist of gentamicin and ﬂuoroquinolones
+(Butler, 2014; Yang, 2018). The WHO does not recommend
+vaccination except for health care workers and laboratory
+personnel who are highly exposed to the pathogen. Fifty years
+ago, a plague vaccine based on whole Y. pestis killed with formalin
+was approved in the United States. This vaccine was eﬀective
+against bubonic plague but not against the pneumonic form
+of the disease. Furthermore, this vaccine was associated with a
+high reactogenicity. As highlighted in the Madagascar outbreak,
+Y. pestis can be responsible for pneumonic plague in a high
+number of cases. Furthermore, Y. pestis can be aerosolized for use
+as a bioweapon. Y. pestis is considered as a category A pathogen
+as it can be easily disseminated or transmitted from person
+to person, cause high mortality rates and have the potential
+for major public health impact (Ansari et al., 2020). Therefore,
+the development of a plague vaccine against the most deadly
+form of the disease is needed. In 2017, the US Food and Drug
+Administration (FDA) granted Orphan Drug designation to the
+recombinant F1 and V subunits vaccine (rF1V) that is intended as
+a prophylactic vaccine for individuals at high-risk of exposure to
+aerosolized Y. pestis. Several prophylactic and therapeutic plague
+vaccines are also being developed under the Plague Vaccine
+Target Product Proﬁle (TPP) established by the WHO in 2018
+(World Health Organization [WHO], 2018a). Vaccines under
+development include subunit, bacterial vector-based or viral
+vector-based vaccines expressing one or several antigens [F1
+capsular protein, low calcium response protein V (LcrV), YscF
+and/or pesticin coagulase] of Y. pestis (Sun and Singh, 2019).
+CHOLERA
+Cholera is an acute often fatal disease of the gastrointestinal
+tract caused by Vibrio cholerae (Faruque et al., 1998). V. cholerae
+is a gram-negative and coma-shaped bacteria. V. cholerae is
+a facultative anaerobe and has a ﬂagellum at one cell pole
+as well as pili. The bacteria colonizes the small intestine and
+produces the cholera toxin which is responsible for a rapid and
+massive loss of body ﬂuids leading to dehydration, hypovolemic
+shock and death. V. cholerae strains are classiﬁed based on their
+major lipopolysaccharide O antigens into approximately 206
+serogroups of which serogroups O1 (consisting of two biotypes
+known as classical and El Tor) and O139 cause epidemic cholera
+(Chatterjee and Chaudhuri, 2006). V. cholerae is a water-borne
+pathogen. Humans are infected through contaminated water
+used for drinking or preparing foods. The infection is often
+mild or asymptomatic and bacteria are eliminated with feces
+in 1 or 2 weeks. V. cholerae persists indeﬁnitely in aquatic
+reservoirs and may acquire mobile elements via horizontal gene
+transfer leading to the emergence of new toxigenic clones (Cho
+et al., 2010). V. cholerae are able to form a three-dimensional
+bioﬁlm where the organisms can survive during inter-epidemic
+periods (Alam et al., 2007). Optimal growth conditions of
+bacteria in aquatic reservoirs include 15% salinity, 30◦C water
+temperature and pH 8.5 that can be promoted by climate changes
+(Montilla et al., 1996).
+The Seven Cholera Pandemics
+Cholera was endemic in Asia until 1817, when a ﬁrst pandemic
+spread from India to several other regions of the world (Table 1)
+(Faruque et al., 1998). This pandemic emerged during a period
+of increasing globalization resulting from technological progress
+in transportation. Indeed, the advent of steamships and railways
+allowed a dramatic decrease in travel time and a rise in trade.
+At that time, health prevention strategies were essentially the
+same than those implemented during the Black Death (Tognotti,
+2013). Infected persons were isolated in lazarettos. Port entry
+was forbidden for ships arriving from regions where cholera
+was present. Travelers who had contacts with infected persons
+or who came from a place where cholera was circulating
+were quarantined.
+Thereafter, ﬁve additional major pandemics of cholera that
+originated from India and spread to other continents occurred
+during the 19th and 20th centuries (Table 1) (Faruque et al.,
+1998). The second and sixth pandemics, and presumably the
+other ones, were caused by the O1 classical biotype of V. cholerae
+(Devault et al., 2014; Siddique and Cash, 2014). The second
+pandemic of cholera reached the British islands. During the
+cholera outbreak in Soho (London), in 1854, the physician John
+Snow used for the ﬁrst time epidemiological methods to trace
+the source of the outbreak. He described the time course of the
+outbreak and its geographical spread in the city. He identiﬁed
+the public pumps used for water supply in these areas and
+understood that water was the source of the contamination. He
+then proposed eﬀective measures to prevent the transmission
+through the removal of pump handle in the city areas where
+the outbreak occurred (Smith, 2002). The bacillus of cholera
+was isolated during the ﬁfth pandemic that extensively aﬀected
+South America by Robert Koch (1884) who also understood the
+importance of clean water in preventing its transmission. The
+toxin responsible for the disease was only discovered in 1959 (De,
+1959). The seventh cholera pandemic is the most extensive in
+terms of geographic spread and duration (Mutreja et al., 2011;
+Hu et al., 2016). It began in Indonesia in 1961 and became
+endemic in many regions of the world. It periodically caused
+major epidemics such as those in Zimbabwe (2008), Haiti (2010),
+Frontiers in Microbiology | www.frontiersin.org
+4
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 5
+Piret and Boivin
+History of Pandemics
+Sierra Leone (2012), Mexico (2013), South Soudan and Ghana
+(2014) and Yemen (2016). Cholera epidemics usually ended
+because of a lack of favorable environmental conditions for the
+survival of vibrios. The seventh cholera pandemic was caused
+by El Tor biotype strain of V. cholerae that acquired virulence
+genes in the environment (Safa et al., 2010). In late 1992, the
+O139 serogroup caused a large cholera outbreak in Bangladesh
+and neighboring countries and raised the fear of a 8th cholera
+pandemic (Albert et al., 1993).
+Cholera Nowadays
+Cholera cannot be eradicated as it is a natural inhabitant of
+aquatic ecosystems. V. cholerae serogroups O1 and O139 are
+responsible for cholera outbreaks in developing countries. In
+2019, 923,037 cases and 1,911 deaths were reported to WHO
+in 31 countries (World Health Organization [WHO], 2020d).
+However, it is estimated that the global burden of cholera is
+higher due to underreporting. Between 2008 and 2012, the
+number of cases was shown to range between 1.3 and 4 millions
+per year with 95,000 deaths (Ali et al., 2015). Environmental and
+climate changes may increase the geographical distribution of
+cholera (Chowdhury et al., 2017). Furthermore, the emergence
+of environmental non-O1/O139 V. cholerae is increasing as
+genetic exchange mechanisms such as horizontal gene transfer
+and genetic recombination are favored by changes in ecosystem
+and climate (Vezzulli et al., 2020). These non-O1/O139 vibrios
+can cause illness that can be mild (e.g., gastroenteritis, otitis) to
+life-threatening (necrotizing fasciitis) and could thus constitute a
+potential threat for humans. The persistence of cholera is related
+to poor living conditions including shortage of safe drinking
+water, insuﬃcient sanitation, crowded housing and the lack
+of eﬃcient sewage systems. Re-emergence of the disease can
+also occur following natural disasters such as earthquakes that
+disrupt access to safe water supply. Cholera outbreaks could
+be predicted based on real-time monitoring of oceanic regions,
+climate ﬂuctuations and epidemiological surveillance program
+(Chowdhury et al., 2017). The disease could be prevented by
+implementation of public health measures to ensure adequate
+sanitation and safe water supply (Somboonwit et al., 2017).
+The access to safe drinking water and sanitation are among
+the primary priorities of the Millenium Development Goals
+and the sustainable Development Goals (Igere and Ekundayo,
+2020). Furthermore, the Water, Sanitation and Hygiene (WASH)
+program launched by the WHO is central to the prevention of
+cholera transmission (Wolfe et al., 2018). Currently, three oral
+cholera vaccines were pre-qualiﬁed by the WHO (Dukoral
+R⃝,
+SancholTM and Euvochol-Plus
+R⃝). These vaccines should be
+used in areas with endemic cholera, cholera outbreaks and
+humanitarian crisis with high-risk of cholera in combination
+with other cholera prevention and control measures (World
+Health Organization [WHO], 2019). Cholera is ﬁrst identiﬁed
+based on clinical symptoms of severe acute watery diarrhea. The
+disease is then conﬁrmed by the detection of V. cholerae in
+stool samples by culture, molecular testing or rapid diagnostic
+tests. The majority of infected individuals can be treated by
+the administration of prompt oral rehydration solution. Severely
+dehydrated patients who are at risk of shock require rapid
+administration of intravenous ﬂuids as well as antibiotics.
+First-line drug consists of doxycycline whereas alternative
+treatments include tetracycline, ciproﬂoxacin and azithromycin
+(Hsueh and Waters, 2019).
+INFLUENZA
+Inﬂuenza viruses belong to the Orthomyxoviridae family.
+Inﬂuenza viruses are enveloped, negative-sense, single-stranded
+RNA viruses (Wright and Webster, 2001). Their genome
+consists of 7 or 8 RNA segments encoding at least 10
+structural and non-structural proteins. Structural proteins
+include a hemagglutinin (HA), a neuraminidase (NA), two
+matrix proteins and a nucleoprotein. Inﬂuenza viruses can
+be distinguished in types A, B, C, and D. Inﬂuenza A
+and B are responsible for outbreaks in tropical regions and
+seasonal epidemics in temperate regions whereas inﬂuenza
+A viruses are the only ones with a pandemic potential
+(Lofgren et al., 2007). Indeed, inﬂuenza A virus is endemic
+in a number of species including humans, birds and pigs
+(Webster et al., 1992). Gene reassortments can thus occur
+between human and animal inﬂuenza A viruses and lead to
+a new virus subtype which can be pathogenic to humans
+(Webster et al., 1995).
+In a typical seasonal epidemics, inﬂuenza virus causes 3 to
+5 million cases of severe illness and approximately 500,000
+deaths worldwide (Iuliano et al., 2018). Most typical seasonal
+inﬂuenza infections are asymptomatic or cause only mild
+or classical inﬂuenza illness characterized by 4 or 5 days
+of fever, cough, chills, headache, muscle pain, weakness and
+sometimes upper respiratory tract symptoms (Zambon, 2001).
+Severe complications can occur especially in infants, elderly
+and individuals with chronic conditions such as diabetes
+mellitus and cardiac/pulmonary diseases. Among the most severe
+complications is pneumonia which can be associated with
+secondary bacterial infection.
+Annual inﬂuenza epidemics are sustained in the human
+population through mutations occurring especially in the HA
+and NA viral surface glycoproteins, the major targets for
+neutralizing antibodies. Seasonal inﬂuenza virus results from
+frequent antigenic drifts every 2–5 years in response to selection
+pressure to evade human immunity (Kim et al., 2018). Its genome
+contains segmented genes which may undergo reassortments
+in cells co-infected with two or more inﬂuenza viruses. Each
+inﬂuenza A virus has a gene encoding for 1 of 16 possible
+HAs and another gene encoding for 1 of 9 possible NAs
+that are involved in viral attachment and release, respectively
+(Dugan et al., 2008). Of the 144 total combinatorial possibilities,
+only 3 HAs and 3 NAs in only 4 combinations (A/H1N1,
+A/H2N2, A/H3N2 and possibly A/H3N8) were found to be
+truly adapted to humans. Rarely, antigenic shift which results
+from reassortment between human and animal viruses leads to
+the emergence of a new virus subtype (Webster et al., 1995;
+Ma et al., 2009). This antigenically distinct virus may have
+the ability to infect humans and achieve sustained human-
+to-human transmission and may cause a pandemic if the
+Frontiers in Microbiology | www.frontiersin.org
+5
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 6
+Piret and Boivin
+History of Pandemics
+immunity in the human population is partial or lacking
+(Webster et al., 1992).
+Inﬂuenza Pandemics
+The time in which inﬂuenza virus began to infect humans
+or cause a pandemic cannot be determined with accuracy but
+many historians agree that the ﬁrst inﬂuenza pandemic could
+have likely occurred in 1510 (Morens et al., 2010). The Russian
+ﬂu that occurred between 1889 and 1893 was the ﬁrst well-
+described pandemic (Taubenberger et al., 2007). This pandemic
+was possibly caused by an A/H3N8 virus based on serologic
+and epidemiologic data (Worobey et al., 2014). The virus spread
+rapidly as it took only 4 months to circumvent the planet
+(Valleron et al., 2010). The pandemic virus reappeared every
+year for 3 years and caused an estimated 1 million deaths
+worldwide (Table 1). The median Ro was estimated at 2.1
+(interquartile range 1.9–2.4) (Valleron et al., 2010). The case
+fatality rates ranged from 0.10 to 0.28% so the mortality burden
+of this pandemic was considered as low (Valleron et al., 2010).
+The median clinical attack rate was 60% (interquartile range
+45–70%) (Valleron et al., 2010). Attack rates were highest in
+individuals aged 1–60 years and lower in infants and seniors
+(Valtat et al., 2011). In contrast, mortality rate showed a J-shape
+curve with highest rates in infants and people over 20 years of age
+(Valtat et al., 2011).
+Twenty ﬁve years later, the Spanish ﬂu was caused by
+an A/H1N1 virus (Table 1) that apparently arose by genetic
+adaptation of an existing avian inﬂuenza virus to a new human
+host (Reid et al., 2004). Before its identiﬁcation, the virus
+spread silently around the world and its region of origin could
+not be determined. Analysis of formalin-ﬁxed and paraﬃn-
+embedded samples as well as permafrost-frozen corpses from
+that time conﬁrmed that the strain was an A/H1N1 inﬂuenza
+virus (Reid et al., 1999). Typical attack rates were 25–33% and
+the Ro was estimated at 2–3 (Mills et al., 2004). The 1918–1919
+pandemic spread in at least 3 distinct waves within a 9 month
+interval. The ﬁrst wave occurred during spring-summer 1918 and
+caused high morbidity and low mortality. Both the second and
+third waves in summer-fall 1918 and winter 1918–1919 caused
+high mortality. The 1918–1919 inﬂuenza pandemic resulted in
+approximately 500 million infections and 50 million deaths
+worldwide (Johnson and Mueller, 2002). Fatality of epidemic
+inﬂuenza usually follows a characteristic U-shape curve with
+high mortality rates in the very young (< 5 years) and the
+elderly (> 65 years). However, the 1918–1919 pandemic showed
+a W-shaped mortality curve with high case fatality rates in
+the very young and the elderly as well as in healthy young
+adults aged 20–40 years (Morens and Taubenberger, 2018). This
+uncommon age distribution suggests that the severity of the
+1918–1919 inﬂuenza pandemic was not primarily due to a hyper-
+virulent strain but was more likely related to host factors that
+prevent individuals to control the infection. It is suggested that
+an A/H3N8 virus was circulating between 1890 and 1900 and
+that individuals born at this time may have lacked immunity
+against the antigenically distinct 1918 A/H1N1 virus (Worobey
+et al., 2014). The most common clinical manifestation was an
+acute aggressive bronchopneumonia presenting with epithelial
+necrosis, microvasculitis/vascular necrosis, hemorrhages, edema
+and severe tissue damage to the lungs (Morens and Fauci, 2007)
+often followed by secondary bacteria invasion with Streptococcus
+pneumonia, Streptococcus pyogenes, Staphylococcus aureus and
+Haemophilus inﬂuenzae (Morens et al., 2008). It is suggested that
+the 1918 inﬂuenza virus had an enhanced capacity to spread
+to and damage bronchial and bronchiolar epithelial cells that
+could allow bacteria to breach the mucociliary barrier leading
+to fatal bacterial pneumonia (Morens and Fauci, 2007). The
+second common clinical manifestation was an acute respiratory
+distress syndrome (ARDS) associated with severe facial cyanosis
+that was observed in 10–15% of cases (Shanks, 2015). The H1
+hemagglutinin of the 1918–1919 pandemic virus was identiﬁed
+as a key virulence factor for mammalian and was associated with
+increased respiratory epithelial pathogenicity and elicitation of a
+strong pro-inﬂammatory response (Qi et al., 2014). Most deaths
+occurred from several days to weeks (median 7–10 days) after
+the onset of symptoms (Shanks and Brundage, 2012). In large
+cities of Western world, health authorities implemented a series
+of containment strategies to prevent the spread of the disease
+including the closure of schools, churches and theaters and
+the suspension of public gatherings. Physicians encouraged the
+practice of individual measures such as respiratory hygiene and
+social distancing. However, these measures were implemented
+too late and in an uncoordinated manner due to World War I.
+Travel restrictions and border controls were impossible to put
+in place. The movement of military troops and the poor living
+conditions of soldiers in the trench warfare in Europe facilitated
+the spread of the disease.
+Over the past century, descendants of the 1918 pandemic
+virus were the cause of almost all seasonal inﬂuenza A epidemics
+worldwide. All inﬂuenza A viruses responsible for the 1957,
+1968 and 2009 pandemics (Table 1) also derived from the
+founding 1918 virus by gene reassortments between human,
+avian and swine inﬂuenza viruses (Morens et al., 2009) as shown
+in Figure 1.
+The new subtype A/H2N2 that caused the 1957–1959
+pandemic (Asian ﬂu) derived from the 1918 virus by acquisition
+of 3 new avian gene segments (HA, NA and PB1 polymerase)
+by reassortment (Kawaoka et al., 1989) whereas the circulating
+A/H1N1 was totally replaced. Sustained transmission of the
+1957–1959 pandemic virus started on December 1957 with
+recurrent waves occurring over several years (Housworth and
+Langmuir, 1974). The morbidity was highest in children and
+the mortality was highest at the extremes of age. The case
+fatality rate was approximately 0.13% (Mc, 1958). The global
+mortality of the 1957–1959 inﬂuenza pandemic was estimated at
+1–2 millions based on excess death due to respiratory diseases
+(Viboud et al., 2016). The Ro was estimated at 1.65 (interquartile
+range 1.53–1.70) (Biggerstaﬀ et al., 2014). The highest attack
+rates were in school-age children through young adults up
+to 35 or 40 years of age (Serﬂing et al., 1967). Older adults,
+including those over the age of 60, had signiﬁcantly lower attack
+rates. This unusual distribution was attributed to the absence
+of protective antibody among children and middle-aged adults.
+Histopathological studies from autopsies were characterized by a
+rapid development of bronchial epithelial necrosis, preservation
+Frontiers in Microbiology | www.frontiersin.org
+6
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 7
+Piret and Boivin
+History of Pandemics
+FIGURE 1 | Timeline of inﬂuenza pandemics caused by the 1918 H1N1 virus and its descendants produced by reassortment of circulating strains with avian
+inﬂuenza viruses (AIV) and swine H1N1 viruses. The reassortment of genes is shown in parenthesis. The re-emergence of H1N1 virus in 1977 is also shown as it
+co-circulated with the H3N2 virus before being replaced by the H1N1pdm09. HA, hemagglutinin; NA, neuraminidase; NP, nucleoprotein; M, matrix proteins, PB1
+polymerase; PB2 polymerase; PA polymerase; NS, non-structural proteins.
+of the basal layer, limited inﬂammatory response and evidence
+of prompt repair (Walsh et al., 1961). Secondary bacterial
+pneumonia was a relatively minor cause of fatalities possibly as
+a result of the widespread use of antibiotics (Robertson et al.,
+1958; Oseasohn et al., 1959). The proportion of strains resistant
+to antibiotics was relatively high in fatal cases compared to those
+isolated from cases who recovered. Furthermore, mechanical
+ventilators were available in the intensive care units (ICU) to
+support cases presenting hypoxemia. At that time, the pathogenic
+agent had been identiﬁed (Smith and Andrewes, 1933) and
+knowledge on the pathogenesis of the disease had advanced. In
+1952, the WHO had implemented a global inﬂuenza surveillance
+network that provided information on the emergence and spread
+of the novel inﬂuenza virus. Containment measures (such as
+closure of schools and nursery, bans on public gatherings) varied
+from country to country but delayed the onset of the disease for
+a few weeks only. Inﬂuenza vaccination (vaccine eﬃcacy of 53–
+60%) failed to have a signiﬁcant impact on the pandemic due to
+inadequate coverage (Henderson et al., 2009).
+The 1968–1970 pandemic virus emerged when 2 gene
+segments encoding for HA and PB1 polymerase moved from an
+avian virus in the A/H2N2 virus through genetic reassortment
+whereas the NA remained unchanged (Kawaoka et al., 1989).
+The new A/H3N2 reassortant replaced the A/H2N2 virus that
+circulated in the human population since 1957. The global
+mortality rate of the 1968–1970 pandemic (Hong Kong ﬂu) was
+estimated to be 0.5–2 millions (Saunders-Hastings and Krewski,
+2016). The Ro was estimated at 1.80 (interquartile range 1.56–
+1.85) (Biggerstaﬀ et al., 2014). The mean age at death was 62–
+65 years. The ﬁrst pandemic season was more severe than the
+second one in North America whereas the opposite was seen in
+Europe and Asia (Viboud et al., 2005). The 1968–1970 inﬂuenza
+pandemic was mild in all countries and comparable to severe
+seasonal epidemics. The mildness of this pandemic is expected
+considering pre-existing immunity to the NA antigen in all age
+groups and to the HA in the elderly. No speciﬁc containment
+measures were implemented during this pandemic. In 1977,
+a descendant of the 1918 A/H1N1 re-emerged suspiciously in
+Russia and co-circulated with the reassortant A/H3N2 virus
+thereafter (Gregg et al., 1978).
+The 2009 A/H1N1 pandemic was a triple reassortant
+made of inﬂuenza genes originating from human A/H3N2
+(PB1 polymerase gene segment), avian (PB2 polymerase and
+PA polymerase gene segments) and North American (H1,
+nucleoprotein and Non-structural proteins gene segments) and
+Eurasian (N1 and matrix proteins gene segments) swine that
+was transmitted from pigs to humans (Easterbrook et al., 2011).
+The 2009 H1 protein had minimal antigenic drift compared
+to its 1918 counterpart. Due to its pathogenicity in humans,
+it is suggested that the maintenance of H1 immunity in the
+population may be important to prevent future pandemics
+(Morens and Taubenberger, 2018). The 2009 inﬂuenza virus
+emerged in Mexico and almost simultaneous outbreaks began in
+Mexico and in Southern United States (Neumann and Kawaoka,
+2011). The virus then spread globally over the next 6 weeks.
+The A/H1N1pdm09 virus was associated with a lower attack
+rate in older individuals possibly because of previous exposition
+to older A/H1N1 viruses. Clinical symptoms associated to
+the A/H1N1pdm09 range from mild respiratory irritations to
+severe pneumonia associated to ARDS when infection progressed
+(Chowell et al., 2009). Asymptomatic infections accounted for
+approximately 10% of cases (Papenburg et al., 2010). Severe
+disease developed in a small proportion of healthy adults, many of
+whom had no underlying conditions (Viboud et al., 2010). The Ro
+was estimated at 1.46 (interquartile 1.30–1.70) (Biggerstaﬀ et al.,
+2014). The WHO reported 18,631 laboratory-conﬁrmed deaths.
+However, the mortality burden was estimated to be between
+148,000 and 249,000 based on excess death due to respiratory
+Frontiers in Microbiology | www.frontiersin.org
+7
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 8
+Piret and Boivin
+History of Pandemics
+diseases in several countries (Simonsen et al., 2013). The case
+fatality rate based on conﬁrmed cases was 0.5% (Nishiura, 2010).
+Later studies estimated the symptomatic case fatality rate at
+0.05% of all medically attended symptomatic cases. Mortality
+rates in younger populations aﬀecting children, young adults and
+pregnant women were higher than in a typical inﬂuenza season.
+The average age of people who died with laboratory-conﬁrmed
+inﬂuenza was 37 years (Vaillant et al., 2009). Non-pharmaceutical
+interventions that were implemented included hand washing, use
+of face masks and cough etiquette (Cantey et al., 2013). The 2009
+pandemic was the ﬁrst one to combine vaccines and antiviral use.
+Symptomatic individuals and their contacts were isolated and
+received antiviral treatment as prophylaxis. Although the vaccine
+was approved only during the second wave, the immunization
+program in Canada covered 33 to 50% of its population compared
+to 13 to 39% in United States (Gilmour and Hofmann, 2010).
+The new pandemic virus completely replaced the prior circulating
+seasonal A/H1N1 whereas the inﬂuenza A/H3N2 continued to
+circulate.
+Overall, the impacts of an inﬂuenza pandemic depend on
+the transmissibility and virulence of the strain and on the
+susceptibility of the population, which may vary according to age
+and past exposure to inﬂuenza viruses. The impacts of inﬂuenza
+are not always higher during pandemics than during seasonal
+epidemic periods. However, a shift in the age distribution
+of mortality toward younger age groups distinguishes the
+impacts of a pandemic from those of seasonal epidemics
+(Simonsen et al., 1998).
+Avian Inﬂuenza and the Risks for a New
+Pandemic
+The constant adaptation and exchange of genes between
+inﬂuenza viruses in diﬀerent species, including at the animal-
+human interface, is still a critical challenge for the emergence
+of pandemic viruses nowadays. In this respect, a series of avian
+inﬂuenza A viruses have caused sporadic cases and outbreaks
+of severe diseases and deaths in humans (Li et al., 2019).
+These viruses are divided into two groups, low pathogenic avian
+inﬂuenza (LPAI) and highly pathogenic avian inﬂuenza (HPAI)
+viruses, based on their virulence in chicken. The ﬁrst human
+outbreak due to a HPAI was caused by an A/H5N1 virus in 1997
+in Hong Kong where 18 positive cases associated with 6 deaths
+were reported (Chan, 2002). This A/H5N1 HPAI virus continues
+to spread in poultry and in a large number of wild bird species
+on several continents. This virus caused severe and fatal spillover
+infections in humans and rarely resulted in human-to-human
+transmission (Ungchusak et al., 2005). This virus was eventually
+detected in 17 countries and led to 861 human cases with a
+case fatality rate of 53% as of October 23, 2020 (World Health
+Organization [WHO], 2020b). The A/H5N1 virus has thus a
+potential for high morbidity and mortality in humans but it seems
+unlikely that it could become adapted with eﬃcient human-to-
+human transmission (Morens and Taubenberger, 2015). A LPAI
+A/H7N9 virus emerged in China in 2013 (Gao et al., 2013).
+This virus was then shown to evolve to highly pathogenic strains
+in late 2016 (Kile et al., 2017). Infection with A/H7N9 has
+been reported in 1,567 human cases with a fatality rate of 39%
+as of September 5, 2018 (World Health Organization [WHO],
+2018b). To date, sporadic familial clusters of A/H7N9 have been
+reported but there is still no evidence of sustained human-to-
+human transmission of the virus (Wu et al., 2020). Sporadic cases
+of human infections with avian inﬂuenza viruses also occurred
+with A/H5N6, A/H6N1, A/H7N2, A/H7N3, A/H7N4, A/H7N7,
+A/H9N2, A/H10N7 and A/H10N8 strains (Widdowson et al.,
+2017). Surveillance programs for monitoring animal inﬂuenza
+viruses with zoonotic potential facilitate the rapid detection
+of human threats. However, obvious clinical manifestations of
+inﬂuenza infections may be lacking in avian species thereby
+complicating early detection and eﬃcient control of potential
+outbreaks (Li et al., 2019). Furthermore, the conditions required
+for cross-species transmission from avian species to humans
+are not yet elucidated and surveillance programs would most
+likely require longitudinal surveillance in multiple hosts. Non-
+pharmaceutical measures aim to reduce the number of live-
+bird markets and to decrease contacts between humans and
+birds in breeding facilities have been implemented to prevent
+and control zoonotic inﬂuenza virus infections. Animal facilities
+must be periodically disinfected and employees exposed to
+birds must wear protective personal equipment and be isolated
+in case of suspected contamination. Pharmaceutical measures
+include the use of vaccines (including poultry vaccination) and
+antiviral agents such as the neuraminidase inhibitors (oseltamivir,
+zanamivir and peramivir) and polymerase inhibitors (baloxavir
+marboxil and favipiravir) (Beigel and Hayden, 2020). The WHO
+together with reference laboratories determine viral antigenicity
+of strains circulating in avian species that could be used in the
+development of candidate vaccines for pandemic preparedness.
+To date, candidate vaccines are available for H5, H7 and H9
+inﬂuenza viruses (World Health Organization [WHO], 2020a).
+The development of a universal vaccine to prevent any subtype
+of inﬂuenza virus is a priority (Yamayoshi and Kawaoka, 2019).
+Finally, it is not excluded that the circulating human A/H3N2
+virus could acquire an avian H2 gene by reassortment. As the
+majority of the population has no protective immunity against
+the H2 subtype that circulated between 1957 and 1968, the
+emergence of a H2N2 reassortant could be a potential risk for a
+future pandemic (Taubenberger and Morens, 2010).
+CORONAVIRUSES
+Coronaviruses belong to the Coronaviridae family and include
+four genera, i.e., alpha-, beta-, gamma-, and delta-coronaviruses
+(Masters and Perlman, 2013). Coronaviruses are enveloped,
+positive-sense, single-stranded, RNA viruses that infect a wide
+range of animals and humans. The genome encodes non-
+structural proteins and 4 structural proteins including the
+membrane, spike, envelope and nucleocapsid proteins. Human
+coronaviruses (HCoVs) cause seasonal respiratory diseases, and
+to a lesser extent, gastroenteritis. HCoV-229E and HCoV-OC43,
+which belong to the alpha-coronavirus genus, are the causative
+agents of common cold (Kahn and McIntosh, 2005). HCoV-NL63
+and HCoV-HKU1, which are members of the beta-coronavirus
+Frontiers in Microbiology | www.frontiersin.org
+8
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 9
+Piret and Boivin
+History of Pandemics
+genus, cause more severe, although rarely fatal, infections of the
+upper and lower respiratory tracts (Kahn and McIntosh, 2005).
+Furthermore, beta-coronaviruses also include three highly
+pathogenic viruses such as severe acute respiratory syndrome
+coronavirus (SARS-CoV), Middle East respiratory syndrome
+coronavirus (MERS-CoV) and SARS-CoV-2 [the etiological
+agent of coronavirus disease 2019 (COVID-19)] that induce
+severe pneumonia in humans (Table 1) (Song et al., 2019).
+SARS-CoV Epidemic
+SARS-CoV originated in Guangdong province (China) in 2003.
+Bats are likely the possible natural reservoir of SARS-CoV (Li
+et al., 2005) and palm civets could be intermediary hosts before
+dissemination to humans (Guan et al., 2003). The causative
+agent was identiﬁed within a few weeks (Drosten et al., 2003;
+Ksiazek et al., 2003). During the 2002–2003 outbreak, SARS-
+CoV infection was reported in 29 countries in North America,
+South America, Europe and Asia. Overall, 8,437 probable
+cases were reported with 813 SARS-related fatalities (World
+Health Organization [WHO], 2003). The case fatality rate was
+9.7%. Transmission of SARS-CoV was mainly nosocomial with
+rates of 33–42% whereas rates of 22–39% occurred between
+family members (Chowell et al., 2015). Infection with SARS-
+CoV typically caused an inﬂuenza-like syndrome with rigors,
+fatigue and high fever. Less common symptoms include nausea,
+vomiting and diarrhea. In 20–30% of infected patients, the
+disease progressed to an atypical pneumonia, with shortness of
+breath and poor oxygen exchange in the alveoli with the patients
+requiring management in ICU or mechanical ventilation. Many
+of these patients also developed watery diarrhea with active
+virus shedding. Respiratory failure was the most common cause
+of death among patients infected with SARS-CoV. The major
+routes of transmission of SARS-CoV were droplets, aerosols
+and fomites (Seto et al., 2003). The Ro of SARS-CoV was
+approximately 3 (Petersen et al., 2020). SARS-CoV quickly
+became a global threat because of its rapid transmission and
+high mortality rate. Protective immunity against this virus as
+well as eﬀective antiviral drugs and vaccines were lacking. The
+low infectivity and long incubation period (viral load peaks at
+6–11 days after symptom onset) of SARS-CoV provided time
+for implementing a series of containment measures to prevent
+transmission (Weinstein, 2004). Case identiﬁcation and isolation
+followed by contact tracing and surveillance proved eﬀective in
+containing the global threat and eradicating the virus in almost
+7 months. However, some SARS-CoV-like viruses found in bats
+have been shown to be able to infect human cells without prior
+adaptation, which indicates that SARS could re-emerge in the
+future (Ge et al., 2013).
+MERS-CoV Epidemic
+Ten years after the ﬁrst emergence of SARS-CoV, MERS-CoV
+was reported in Jeddah in Saudi Arabia. The potential animal
+reservoirs of MERS-CoV are bats and dromedary camels have
+been suggested as the intermediary hosts (Conzade et al., 2018).
+Advances in molecular diagnostic tools such as next-generation
+sequencing allowed that the etiological agent was identiﬁed
+within weeks of global spread (Zaki et al., 2012). Between 2012
+and 2020, 2,519 laboratory-conﬁrmed cases of MERS-CoV with
+at least 866 deaths were reported in 27 countries (World Health
+Organization [WHO], 2020c). All cases have been linked to
+persons in the Arabian Peninsula or who had returned from
+traveling in MERS-CoV endemic areas. Almost 50% of MERS-
+CoV cases were due to nosocomial transmission to inpatients,
+health care workers and visitors (Hui et al., 2018). Transmission
+between family members has only occurred in 13–21% of cases
+(Chowell et al., 2015). Individuals with MERS-CoV present
+with a wide range of clinical features from mild to severe
+fulminant pulmonary disease (Memish et al., 2020). Those with
+severe disease are often older than 65 years with comorbidities
+and can develop symptoms at a later time. Asymptomatic to
+mild infection rates of 25–50% have been reported. Infection
+with MERS-CoV causes acute, highly lethal pneumonia and
+renal dysfunction with various clinical symptoms including
+fever, chills, rigors, headache, a non-productive cough, sore
+throat, arthralgia and myalgia. Other symptoms include nausea,
+vomiting, diarrhea and abdominal pain. It is estimated that 50–
+89% of patients with progression to respiratory and/or renal
+failure require ICU admission. The high incidence of ARDS
+in these patients is reﬂected by a high case fatality rate of
+34%. The Ro of MERS-CoV is low (approximately 1) (Petersen
+et al., 2020) which allows to control the transmission in the
+absence of mitigation strategies, although the virus caused
+several nosocomial outbreaks in hospital of Saudi Arabia, Jordan
+and South Korea.
+MERS-CoV is still circulating nowadays. The ubiquity of
+infected dromedary camels close to humans (Kandeil et al.,
+2019) and the continuing zoonotic transmission may explain
+why MERS-CoV continues to cause intermittent sporadic cases,
+community clusters and nosocomial outbreaks (Sikkema et al.,
+2019). Furthermore, the outbreak in South Korea highlights the
+potential of MERS-CoV to spread around the world and thus
+to be a threat for global health (Petersen et al., 2015). There
+is currently no licensed vaccine or treatment available against
+MERS-CoV infection. The clinical management of patients with
+MERS-CoV consists mainly in providing supportive care for
+the relief of pain and fever, supporting vital organ functions
+and treating concomitant or secondary bacterial infections
+with antibiotics (Memish et al., 2020). Critically ill patients
+required to be managed in an ICU. The WHO is supporting
+molecular and serological surveillance studies at the dromedary-
+human interface in several Middle East countries (World
+Health Organization [WHO], 2018c). Indeed, recombination
+events were reported to occur leading to diﬀerent lineages of
+MERS-CoV in dromedary camels (Sabir et al., 2016). New
+MERS-CoV variants were also shown to emerge over time
+(AlBalwi et al., 2020). Furthermore, this organization has issued
+recommendations for not consuming unpasteurized camel milk
+and undercooked animal products and to be cautious in cases
+of close contacts with dromedary camels. Appropriate hospital
+hygiene practices and implementation of contact and droplet
+precautions are crucial to limit future nosocomial outbreaks.
+The implementation of extensive contact tracing in order to
+rapidly diagnose suspected MERS-CoV cases and isolation of
+individuals to break the chain of infections in the community
+is also essential. The WHO calls for the development of three
+types of vaccines against MERS-CoV: a human vaccine that
+Frontiers in Microbiology | www.frontiersin.org
+9
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 10
+Piret and Boivin
+History of Pandemics
+is intended for long-term protection of individuals at high-
+risk of exposure such as health care workers and those having
+contacts with potentially infected dromedary camels, a human
+vaccine for use during outbreaks and a dromedary camel vaccine
+to prevent zoonotic transmission (World Health Organization
+[WHO], 2017b). The spike protein of MERS-CoV is an important
+target for the development of vaccines (Zhang N. et al., 2020).
+These vaccines are based on DNA, viral vectors, viral proteins,
+virus-like particles, bacterium-like particles and nanoparticles.
+The progression of most of these vaccines from pre-clinical
+studies to clinical trials are prevented by lack of funds. Only a
+few ones were tested in phase I clinical studies until now.
+SARS-CoV-2 Pandemic
+In early December 2019, atypical pneumonia were reported
+in a cluster of patients in Wuhan (China) and were shown
+to be caused by a new coronavirus, called SARS-CoV-2 (Zhu
+et al., 2020) whereas the disease is referred to as COVID-19. The
+animal reservoirs are likely bats (Lau et al., 2020). It was proposed
+that pangolins could be the animal hosts that transmit the virus
+to humans (Lam et al., 2020) but the intermediary host, if any,
+has not yet been deﬁnitely identiﬁed. SARS-CoV-2 infection may
+be asymptomatic (up to 40% of cases) or causes a wide spectrum
+of illness from mild symptoms to life-threatening disease
+(Wiersinga et al., 2020). Infected individuals most commonly
+present with fever, dry cough, shortness of breath, fatigue,
+myalgia, nausea/vomiting or diarrhea, headache, weakness,
+rhinorrhea, anosmia and ageusia. Common complications
+among hospitalized patients include pneumonia, ARDS, acute
+liver injury, cardiac injury, prothrombotic coagulopathy, acute
+kidney injury and neurologic manifestations. Critically ill
+patients could also develop a cytokine storm and a macrophage
+activation syndrome. Comorbidities such as hypertension,
+diabetes, cardiovascular disease, chronic pulmonary disease,
+chronic kidney disease, malignancy and chronic liver disease
+have been present in 60–90% of hospitalized patients (Richardson
+et al., 2020). Mild symptoms occurred in 80% of laboratory-
+conﬁrmed
+cases.
+Approximately
+14–19%
+of
+patients
+are
+hospitalized and 3–5% of cases require transfer to ICU, most
+commonly due to hypoxemic respiratory failure. Among
+them, 29–91% necessitate invasive mechanical ventilation.
+Overall, mortality of hospitalized patients with COVID-19 is
+approximately 15–20% whereas it is as high as 40% in patients
+requiring ICU admission. The global estimated case fatality rate
+ranges between 0.25 and 3.0% (Wilson N. et al., 2020). Mortality
+ranges from 0.02% in patients aged 20–49 years to 0.5% for
+patients aged 50–69 years and greater than 5.4% for patients
+aged more than 80 years. Children with COVID-19 have milder
+symptoms predominantly limited to the upper respiratory tract.
+However, a rare multisystem inﬂammatory syndrome has been
+described in some children with COVID-19 (Rowley et al., 2020).
+Impaired type I interferon response was shown to be involved
+in patients with life-threatening COVID-19 (Bastard et al., 2020;
+Zhang Q. et al., 2020). The Ro is estimated to be between 2 and
+3 (Petersen et al., 2020). COVID-19 has spread globally within a
+few months leading to more than 74 million contaminations and
+more than 1.6 million deaths worldwide as of December 18, 2020
+(World Health Organization [WHO], 2020e).
+Multiple public health measures have been implemented by
+most countries such as individual actions (physical distancing,
+hand washing, use of face masks and cough etiquette),
+identiﬁcation of clusters (case identiﬁcation, contact tracing and
+isolation), regulatory actions (school closure, workplace closure,
+stay-at-home order, public transport closure and restriction,
+limits on size of gatherings and business capacity), closures
+of internal and international borders, travel restrictions and
+enforced quarantine. The goal of these public health measures
+being to delay and ﬂatten the epidemic curve, preventing
+overwhelming capacity of the health care system and protecting
+individuals at highest risk of severe outcome before safe and
+eﬀective vaccines and treatments are available. However, in
+contrast to SARS-CoV, viral shedding in patients with COVID-
+19 starts a few days before symptom onset (pre-symptomatic)
+and some patients remain asymptomatic while they shed the
+virus which make case isolation measures less eﬃcient (Ganyani
+et al., 2020). In less than a year (as of December 11, 2020), a ﬁrst
+vaccine based on a new platform consisting of mRNA encoding
+the spike protein of the virus (developed by Pﬁzer/BioNTech)
+has been granted for Emergency Use designation by the US
+FDA. Several other vaccines based on inactivated whole virus,
+recombinant non-replicative viral vector, recombinant spike
+protein and virus-like particles are in late phases of clinical
+investigation (Batty et al., 2020). The antiviral remdesivir
+(a repurposed drug initially developed for the treatment of
+Ebola virus) received US FDA Emergency Use Authorization
+for the treatment of hospitalized patients with COVID-19
+requiring supplemental oxygen. The anti-inﬂammatory drug
+dexamethasone was recommended for critically ill patients with
+COVID-19 by the WHO (Lamontagne et al., 2020).
+HOW TO PREVENT A FUTURE
+PANDEMIC?
+Plague and cholera pandemics ﬁrst disseminated along trade and
+military routes. Thereafter, the geographical spread of pathogens
+followed the movement of human population through rail,
+ship and air travels. Nowadays, the globalization of travels and
+trade of animals and animal-based foods further increase the
+spread of infectious diseases and the speed with which they are
+disseminated around the world. Land use and urbanization to
+accommodate agriculture and living areas modify the habitats of
+pathogens, hosts and disease vectors and aﬀect the transmission
+dynamics of infections to humans. The geographic distribution
+of disease vectors and hosts as well as the living habitats of
+microorganisms is also aﬀected by climate changes and could
+potentially increase the spread of pathogens. Increased contacts
+between humans and animals through breeding, hunting, wet
+markets and trade of exotic pets also favor the risk of spillover
+of zoonotic pathogens. The spread of infectious diseases is
+thus expected to increase due to human activities and their
+eﬀects on the environment. Epidemics and pandemics will
+also occur more frequently and will represent new challenges
+for public health.
+In order to control the transmission of water-borne pathogens
+such as V. cholera, the WHO has launched a water, sanitation
+Frontiers in Microbiology | www.frontiersin.org
+10
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 11
+Piret and Boivin
+History of Pandemics
+and hygiene (WASH) program in developing countries (Matilla
+et al., 2018). This program emphasizes the provision of safe and
+clean sources of water, eﬀective sanitation infrastructure and
+ensures appropriate hygiene practices. The WASH program was
+reported to increase safe drinking water accesses, safe sanitation
+services and basic handwashing facilities with soap and water at
+home to 71%, 45% and 60% of the global population, respectively
+(UNICEF and World Health Organization [WHO], 2019).
+Vector control is the primary tool to control vector-borne
+diseases such as malaria, Dengue virus, Chikungunya virus and
+Zika virus (Wilson A.L. et al., 2020). These methods can target
+either the immature stages (by the use of predator species
+and chemical or biological larvicides or by the modiﬁcation
+of the habitat) or the adult vectors (by the use of nets,
+topical repellents, insecticides and spraying). Furthermore, novel
+vector control methods are under development such as the
+genetic manipulation of mosquitos (Hammond and Galizi, 2017),
+bacterial infection of vectors (e.g., Wolbachia) (Flores and
+O’Neill, 2018) and eave tubes with insecticide-laden electrostatic
+netting (Knols et al., 2016). However, the development of novel
+vector control tools is still needed.
+The implementation of global surveillance programs for the
+rapid detection of pathogen spillover from animal to the human
+population is of prime importance. The One Health concept
+promotes optimal health for human, animal and environment
+(One Health Commission [OHC], 2020). The environmental
+eﬀects resulting from land use, urbanization and climate changes
+may increase the risk of pathogens spillover from animals
+to humans and emphasize the importance of a One Health
+integrative approach for the surveillance of zoonosis (Okello
+et al., 2011; Rabozzi et al., 2012). Such integrative approaches are
+used to implement surveillance programs for the prevention and
+control of emerging and re-emerging infections in developing
+countries. These multidisciplinary eﬀorts could have positive
+impacts in these countries as they are the most aﬄicted by the
+eﬀects of zoonoses (Bidaisee and Macpherson, 2014).
+Viral zoonoses constitute particularly a serious threat to
+public health as viruses were at the origin of the most recent
+pandemics. It is thus important to evaluate the risk of cross-
+species transmission of viruses to humans. The viral richness
+associated to an animal species could predict zoonotic potential
+of mammalian viruses (Olival et al., 2017). It was shown that
+the cross-species transmission of mammalian viruses increases
+with respect to the phylogenetic proximity between hosts and
+humans. Furthermore, viruses that infect a phylogenetically
+broader ranges of hosts are more likely to be zoonotic.
+Characterizing the diversity of viruses in key wildlife species
+will help to reduce the time between detection and response
+during an outbreak (Epstein and Anthony, 2017). Furthermore,
+the global virome project was launched to detect and identify
+viral threats to human health, characterize the host ranges of
+viruses, identify behaviors that favor spillover, establish a global
+surveillance network and identify transmission and pathogenicity
+markers for high-risk viruses (Carroll et al., 2018; Kwok et al.,
+2020). Viral metagenomic next-generation sequencing analysis of
+nasal/throat swabs from individuals at risk of zoonotic infections
+was also used to expand the detection of novel viruses and the
+characterization of the respiratory virome of humans exposed to
+animals (Thi Kha Tu et al., 2020).
+CONCLUDING REMARKS
+The time of onset and the pathogen that will cause the next
+pandemic are unpredictable. Therefore, pandemic preparedness
+plans emphasize that non-pharmaceutical interventions should
+be implemented ﬁrst to control human-to-human transmission
+of the pathogen. Ideally, these interventions should adequately
+control the spread of an infection while minimizing societal
+and economic disruption. Risks of resurgence can follow
+once these non-pharmaceutical interventions are lifted. Once
+available, rapid testing together with contact tracing (Teixeira
+and Doetsch, 2020) and isolation of infected individuals
+should
+be
+put
+in
+place
+for
+a
+more
+eﬀective
+response.
+Furthermore, pharmaceutical interventions including rapid
+point-of-care diagnostic tests (Hussein et al., 2020), biomarkers
+for disease stratiﬁcation (Maertzdorf et al., 2016), broad
+spectrum antimicrobials/antivirals obtained through in silico
+drug repurposing (Mangione et al., 2020) or by the use of drugs
+targeting host cells (Lee and Yen, 2012) as well as new platforms
+for accelerated vaccine development and production (Rauch
+et al., 2018) should be developed to improve the global response
+to the pandemic.
+AUTHOR CONTRIBUTIONS
+JP wrote the manuscript. GB revised the manuscript. Both
+authors contributed to the article and approved the submitted
+version.
+FUNDING
+This study was supported by a Foundation Grant from the
+Canadian Institutes of Health Research (grant no. 148361 to GB).
+GB is the holder of the Canada research chair on emerging viruses
+and antiviral resistance.
+REFERENCES
+Alam, M., Sultana, M., Nair, G. B., Siddique, A. K., Hasan, N. A., Sack, R. B., et al.
+(2007). Viable but nonculturable Vibrio cholerae O1 in bioﬁlms in the aquatic
+environment and their role in cholera transmission. Proc. Natl. Acad. Sci. U.S.A.
+104, 17801–17806. doi: 10.1073/pnas.0705599104
+AlBalwi, M. A., Khan, A., AlDrees, M., Gk, U., Manie, B., Arabi, Y., et al.
+(2020). Evolving sequence mutations in the middle east respiratory syndrome
+coronavirus (MERS-CoV). J. Infect. Public Health 13, 1544–1550. doi: 10.1016/
+j.jiph.2020.06.030
+Albert, M. J., Siddique, A. K., Islam, M. S., Faruque, A. S., Ansaruzzaman, M.,
+Faruque, S. M., et al. (1993). Large outbreak of clinical cholera due to Vibrio
+Frontiers in Microbiology | www.frontiersin.org
+11
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 12
+Piret and Boivin
+History of Pandemics
+cholerae non-O1 in Bangladesh. Lancet 341:704. doi: 10.1016/0140-6736(93)
+90481-u
+Ali, M., Nelson, A. R., Lopez, A. L., and Sack, D. A. (2015). Updated global
+burden of cholera in endemic countries. PLoS Negl. Trop. Dis. 9:e0003832.
+doi: 10.1371/journal.pntd.0003832
+Ansari, I., Grier, G., and Byers, M. (2020). Deliberate release: plague - A review.
+J. Biosaf. Biosecur. 2, 10–22. doi: 10.1016/j.jobb.2020.02.001
+Bacot, A. W., and Martin, C. J. (1914). LXVII. Observations on the mechanism of
+the transmission of plague by ﬂeas. J. Hyg. 13, 423–439.
+Bastard, P., Rosen, L. B., Zhang, Q., Michailidis, E., Hoﬀmann, H. H., Zhang,
+Y., et al. (2020). Auto-antibodies against type I IFNs in patients with life-
+threatening COVID-19. Science 370:eabd4585. doi: 10.1126/science.abd4585
+Batty, C. J., Heise, M. T., Bachelder, E. M., and Ainslie, K. M. (2020). Vaccine
+formulations in clinical development for the prevention of severe acute
+respiratory syndrome coronavirus 2 infection. Adv. Drug. Deliv. Rev. S0169-
+409X, 30277–30275. doi: 10.1016/j.addr.2020.12.006
+Beigel, J. H., and Hayden, F. G. (2020). Inﬂuenza therapeutics in clinical practice-
+challenges and recent advances. Cold Spring Harb. Perspect. Med. a038463.
+doi: 10.1101/cshperspect.a038463
+Bengis, R. G., Leighton, F. A., Fischer, J. R., Artois, M., Morner, T., and Tate, C. M.
+(2004). The role of wildlife in emerging and re-emerging zoonoses. Rev. Sci.
+Tech. 23, 497–511.
+Bidaisee, S., and Macpherson, C. N. (2014). Zoonoses and one health: a review of
+the literature. J. Parasitol. Res. 2014:874345. doi: 10.1155/2014/874345
+Biggerstaﬀ, M., Cauchemez, S., Reed, C., Gambhir, M., and Finelli, L. (2014).
+Estimates of the reproduction number for seasonal, pandemic, and zoonotic
+inﬂuenza: a systematic review of the literature. BMC Infect. Dis. 14:480. doi:
+10.1186/1471-2334-14-480
+Bramanti, B., Stenseth, N. C., Walloe, L., and Lei, X. (2016). Plague: a disease
+which changed the path of human civilization. Adv. Exp. Med. Biol. 918, 1–26.
+doi: 10.1007/978-94-024-0890-4_1
+Butler, T. (2014). Plague history: Yersin’s discovery of the causative bacterium in
+1894 enabled, in the subsequent century, scientiﬁc progress in understanding
+the disease and the development of treatments and vaccines. Clin. Microbiol.
+Infect. 20, 202–209. doi: 10.1111/1469-0691.12540
+Caminade, C., McIntyre, K. M., and Jones, A. E. (2019). Impact of recent and future
+climate change on vector-borne diseases. Ann. N. Y. Acad. Sci. 1436, 157–173.
+doi: 10.1111/nyas.13950
+Cantey, P. T., Chuk, M. G., Kohl, K. S., Herrmann, J., Weiss, P., Graﬀunder,
+C. M., et al. (2013). Public health emergency preparedness: lessons learned
+about monitoring of interventions from the National Association of County
+and City Health Oﬃcial’s survey of nonpharmaceutical interventions for
+pandemic H1N1. J. Public Health Manag. Pract. 19, 70–76. doi: 10.1097/PHH.
+0b013e31824d4666
+Carroll, D., Daszak, P., Wolfe, N. D., Gao, G. F., Morel, C. M., Morzaria, S., et al.
+(2018). The global virome project. Science 359, 872–874. doi: 10.1126/science.
+aap7463
+Chan, P. K. (2002). Outbreak of avian inﬂuenza A(H5N1) virus infection in
+Hong Kong in 1997. Clin. Infect. Dis. 34(Suppl. 2), S58–S64. doi: 10.1086/
+338820
+Chatterjee, S. N., and Chaudhuri, K. (2006). Lipopolysaccharides of Vibrio cholerae:
+III. Biological functions. Biochim. Biophys. Acta 1762, 1–16. doi: 10.1016/j.
+bbadis.2005.08.005
+Cho, Y. J., Yi, H., Lee, J. H., Kim, D. W., and Chun, J. (2010). Genomic evolution
+of Vibrio cholerae. Curr. Opin. Microbiol. 13, 646–651. doi: 10.1016/j.mib.2010.
+08.007
+Chowdhury, F. R., Nur, Z., Hassan, N., von Seidlein, L., and Dunachie, S. (2017).
+Pandemics, pathogenicity and changing molecular epidemiology of cholera in
+the era of global warming. Ann. Clin. Microbiol. Antimicrob. 16:10. doi: 10.1186/
+s12941-017-0185-1
+Chowell, G., Abdirizak, F., Lee, S., Lee, J., Jung, E., Nishiura, H., et al. (2015).
+Transmission characteristics of MERS and SARS in the healthcare setting: a
+comparative study. BMC Med. 13:210. doi: 10.1186/s12916-015-0450-0
+Chowell, G., Bertozzi, S. M., Colchero, M. A., Lopez-Gatell, H., Alpuche-Aranda,
+C., Hernandez, M., et al. (2009). Severe respiratory disease concurrent with
+the circulation of H1N1 inﬂuenza. N. Engl. J. Med. 361, 674–679. doi: 10.1056/
+NEJMoa0904023
+Conzade, R., Grant, R., Malik, M. R., Elkholy, A., Elhakim, M., Samhouri, D.,
+et al. (2018). Reported direct and indirect contact with dromedary camels
+among laboratory-conﬁrmed MERS-CoV cases. Viruses 10:425. doi: 10.3390/
+v10080425
+Cunha, C. B., and Cunha, B. A. (2008). “Great plagues of the past and remaining
+questions,” in Paleomicrobiology, eds D. Raoult and M. Drancourt (Berlin:
+Springer), 1–20.
+Cutler, S. J., Fooks, A. R., and van der Poel, W. H. (2010). Public health threat of
+new, reemerging, and neglected zoonoses in the industrialized world. Emerg.
+Infect. Dis. 16, 1–7. doi: 10.3201/eid1601.081467
+De, S. N. (1959). Enterotoxicity of bacteria-free culture-ﬁltrate of Vibrio cholerae.
+Nature 183, 1533–1534. doi: 10.1038/1831533a0
+Devault, A. M., Golding, G. B., Waglechner, N., Enk, J. M., Kuch, M., Tien,
+J. H., et al. (2014). Second-pandemic strain of Vibrio cholerae from the
+Philadelphia cholera outbreak of 1849. N. Engl. J. Med. 370, 334–340. doi:
+10.1056/NEJMoa1308663
+Dobson, A. P., and Carper, E. R. (1996). Infectious diseases and human population
+history: throughout history the establishment of disease has been a side eﬀect of
+the growth of civilization. Bioscience 46, 115–126.
+Drancourt, M., Aboudharam, G., Signoli, M., Dutour, O., and Raoult, D. (1998).
+Detection of 400-year-old Yersinia pestis DNA in human dental pulp: an
+approach to the diagnosis of ancient septicemia. Proc. Natl. Acad. Sci. U.S.A.
+95, 12637–12640. doi: 10.1073/pnas.95.21.12637
+Drosten, C., Gunther, S., Preiser, W., van der Werf, S., Brodt, H. R., Becker,
+S., et al. (2003). Identiﬁcation of a novel coronavirus in patients with severe
+acute respiratory syndrome. N. Engl. J. Med. 348, 1967–1976. doi: 10.1056/
+NEJMoa030747
+Dugan, V. G., Chen, R., Spiro, D. J., Sengamalay, N., Zaborsky, J., Ghedin, E., et al.
+(2008). The evolutionary genetics and emergence of avian inﬂuenza viruses in
+wild birds. PLoS Pathog. 4:e1000076. doi: 10.1371/journal.ppat.1000076
+Easterbrook, J. D., Kash, J. C., Sheng, Z. M., Qi, L., Gao, J., Kilbourne, E. D.,
+et al. (2011). Immunization with 1976 swine H1N1- or 2009 pandemic H1N1-
+inactivated vaccines protects mice from a lethal 1918 inﬂuenza infection.
+Inﬂuenza Other Respir Viruses 5, 198–205. doi: 10.1111/j.1750-2659.2010.
+00191.x
+El-Sayed, A., and Kamel, M. (2020). Climatic changes and their role in emergence
+and re-emergence of diseases. Environ. Sci. Pollut. Res. Int. 27, 22336–22352.
+doi: 10.1007/s11356-020-08896-w
+Epstein, J. H., and Anthony, S. J. (2017). Viral discovery as a tool for pandemic
+preparedness. Rev. Sci. Tech. 36, 499–512. doi: 10.20506/rst.36.2.2669
+Faruque, S. M., Albert, M. J., and Mekalanos, J. J. (1998). Epidemiology, genetics,
+and ecology of toxigenic Vibrio cholerae. Microbiol. Mol. Biol. Rev. 62, 1301–
+1314.
+Flores, H. A., and O’Neill, S. L. (2018). Controlling vector-borne diseases by
+releasing modiﬁed mosquitoes. Nat. Rev. Microbiol. 16, 508–518. doi: 10.1038/
+s41579-018-0025-0
+Ganyani, T., Kremer, C., Chen, D., Torneri, A., Faes, C., Wallinga, J., et al. (2020).
+Estimating the generation interval for coronavirus disease (COVID-19) based
+on symptom onset data. March 2020. Euro Surveill 25:2000257. doi: 10.2807/
+1560-7917.ES.2020.25.17.2000257
+Gao, R., Cao, B., Hu, Y., Feng, Z., Wang, D., Hu, W., et al. (2013). Human infection
+with a novel avian-origin inﬂuenza A (H7N9) virus. N. Engl. J. Med. 368,
+1888–1897. doi: 10.1056/NEJMoa1304459
+Ge, X. Y., Li, J. L., Yang, X. L., Chmura, A. A., Zhu, G., Epstein, J. H., et al.
+(2013). Isolation and characterization of a bat SARS-like coronavirus that uses
+the ACE2 receptor. Nature 503, 535–538. doi: 10.1038/nature12711
+Gilmour, H., and Hofmann, N. (2010). H1N1 vaccination. Health Rep. 21, 63–69.
+Glatter, K., and Finkelman, P. (2020). History of the plague: an ancient pandemic
+for the age of Covid-19. Am. J. Med. S0002-9343, 30792–30800. doi: 10.1016/j.
+amjmed.2020.08.019
+Gregg, M. B., Hinman, A. R., and Craven, R. B. (1978). The russian ﬂu. its history
+and implications for this year’s inﬂuenza season. JAMA 240, 2260–2263. doi:
+10.1001/jama.240.21.2260
+Grennan, D. (2019). What is a pandemic? JAMA 321:910. doi: 10.1001/jama.2019.
+0700
+Guan, Y., Zheng, B. J., He, Y. Q., Liu, X. L., Zhuang, Z. X., Cheung, C. L., et al.
+(2003). Isolation and characterization of viruses related to the SARS coronavirus
+Frontiers in Microbiology | www.frontiersin.org
+12
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 13
+Piret and Boivin
+History of Pandemics
+from animals in southern China. Science 302, 276–278. doi: 10.1126/science.
+1087139
+Hammond, A. M., and Galizi, R. (2017). Gene drives to ﬁght malaria: current
+state and future directions. Pathog. Glob. Health 111, 412–423. doi: 10.1080/
+20477724.2018.1438880
+Harbeck, M., Seifert, L., Hansch, S., Wagner, D. M., Birdsell, D., Parise, K. L., et al.
+(2013). Yersinia pestis DNA from skeletal remains from the 6(th) century AD
+reveals insights into Justinianic Plague. PLoS Pathog. 9:e1003349. doi: 10.1371/
+journal.ppat.1003349
+Henderson, D. A., Courtney, B., Inglesby, T. V., Toner, E., and Nuzzo, J. B.
+(2009). Public health and medical responses to the 1957-58 inﬂuenza pandemic.
+Biosecur. Bioterror. 7, 265–273. doi: 10.1089/bsp.2009.0729
+Housworth, J., and Langmuir, A. D. (1974). Excess mortality from epidemic
+inﬂuenza, 1957-1966. Am J Epidemiol 100, 40–48. doi: 10.1093/oxfordjournals.
+aje.a112007
+Hsueh, B. Y., and Waters, C. M. (2019). Combating Cholera. F1000Res 8:F1000
+Faculty Rev-589. doi: 10.12688/f1000research.18093.1
+Hu, D., Liu, B., Feng, L., Ding, P., Guo, X., Wang, M., et al. (2016).
+Origins
+of
+the
+current
+seventh
+cholera
+pandemic.
+Proc.
+Natl.
+Acad.
+Sci.
+U.S.A.
+113,
+E7730–E7739.
+doi:
+10.1073/pnas.160873
+2113
+Hui, D. S., Azhar, E. I., Kim, Y. J., Memish, Z. A., Oh, M. D., and Zumla, A. (2018).
+Middle East respiratory syndrome coronavirus: risk factors and determinants
+of primary, household, and nosocomial transmission. Lancet Infect. Dis. 18,
+e217–e227. doi: 10.1016/S1473-3099(18)30127-0
+Hussein, H. A., Hassan, R. Y. A., Chino, M., and Febbraio, F. (2020). Point-of-care
+diagnostics of COVID-19: from current work to future perspectives. Sensors
+20:4289. doi: 10.3390/s20154289
+Igere, B. E., and Ekundayo, T. C. (2020). Global mapping of cholera vibrio
+and outbreaks in the pre-millennium development goals (MDG)/Sustainable
+Development Goals (SDG) and MDGs/SDGs era of 1990-2019. Microb. Pathog.
+149:104319. doi: 10.1016/j.micpath.2020.104319
+Iuliano, A. D., Roguski, K. M., Chang, H. H., Muscatello, D. J., Palekar, R., Tempia,
+S., et al. (2018). Estimates of global seasonal inﬂuenza-associated respiratory
+mortality: a modelling study. Lancet 391, 1285–1300. doi: 10.1016/S0140-
+6736(17)33293-2
+Johnson, N. P., and Mueller, J. (2002). Updating the accounts: global mortality
+of the 1918-1920 “Spanish” inﬂuenza pandemic. Bull. Hist. Med. 76, 105–115.
+doi: 10.1353/bhm.2002.0022
+Kahn, J. S., and McIntosh, K. (2005). History and recent advances in coronavirus
+discovery. Pediatr. Infect. Dis. J. 24, S223–S227. doi: 10.1097/01.inf.0000188166.
+17324.60 discussion S226,
+Kandeil, A., Gomaa, M., Nageh, A., Shehata, M. M., Kayed, A. E., Sabir, J. S. M.,
+et al. (2019). Middle East respiratory syndrome coronavirus (MERS-CoV) in
+dromedary camels in Africa and Middle East. Viruses 11:717. doi: 10.3390/
+v11080717
+Kawaoka, Y., Krauss, S., and Webster, R. G. (1989). Avian-to-human transmission
+of the PB1 gene of inﬂuenza A viruses in the 1957 and 1968 pandemics. J. Virol.
+63, 4603–4608.
+Kile, J. C., Ren, R., Liu, L., Greene, C. M., Roguski, K., Iuliano, A. D., et al. (2017).
+Update: increase in human infections with novel Asian lineage avian inﬂuenza
+A(H7N9) viruses during the ﬁfth epidemic - China, October 1, 2016-August
+7, 2017. MMWR Morb. Mortal. Wkly Rep. 66, 928–932. doi: 10.15585/mmwr.
+mm6635a2
+Kilpatrick, A. M., and Randolph, S. E. (2012). Drivers, dynamics, and control of
+emerging vector-borne zoonotic diseases. Lancet 380, 1946–1955. doi: 10.1016/
+S0140-6736(12)61151-9
+Kim, H., Webster, R. G., and Webby, R. J. (2018). Inﬂuenza virus: dealing with a
+drifting and shifting pathogen. Viral Immunol. 31, 174–183. doi: 10.1089/vim.
+2017.0141
+Knols, B. G., Farenhorst, M., Andriessen, R., Snetselaar, J., Suer, R. A., Osinga, A. J.,
+et al. (2016). Eave tubes for malaria control in Africa: an introduction. Malar J.
+15:404. doi: 10.1186/s12936-016-1452-x
+Koch, R. (1884). An address on cholera and its Bacillus. Br. Med. J. 2, 403–407.
+doi: 10.1136/bmj.2.1235.403
+Ksiazek, T. G., Erdman, D., Goldsmith, C. S., Zaki, S. R., Peret, T., Emery, S., et al.
+(2003). A novel coronavirus associated with severe acute respiratory syndrome.
+N. Engl. J. Med. 348, 1953–1966. doi: 10.1056/NEJMoa030781
+Kwok, K. T. T., Nieuwenhuijse, D. F., Phan, M. V. T., and Koopmans, M. P. G.
+(2020). Virus metagenomics in farm animals: a systematic review. Viruses
+12:107. doi: 10.3390/v12010107
+Lam, T. T., Jia, N., Zhang, Y. W., Shum, M. H., Jiang, J. F., Zhu, H. C., et al. (2020).
+Identifying SARS-CoV-2-related coronaviruses in Malayan pangolins. Nature
+583, 282–285. doi: 10.1038/s41586-020-2169-0
+Lamontagne, F., Agoritsas, T., Macdonald, H., Leo, Y. S., Diaz, J., Agarwal, A.,
+et al. (2020). A living WHO guideline on drugs for covid-19. BMJ 370:m3379.
+doi: 10.1136/bmj.m3379
+Lau, S. K. P., Luk, H. K. H., Wong, A. C. P., Li, K. S. M., Zhu, L., He, Z., et al. (2020).
+Possible bat origin of severe acute respiratory syndrome coronavirus 2. Emerg.
+Infect. Dis. 26, 1542–1547. doi: 10.3201/eid2607.200092
+Lee, S. M., and Yen, H. L. (2012). Targeting the host or the virus: current and novel
+concepts for antiviral approaches against inﬂuenza virus infection. Antiviral.
+Res. 96, 391–404. doi: 10.1016/j.antiviral.2012.09.013
+Li, W., Shi, Z., Yu, M., Ren, W., Smith, C., Epstein, J. H., et al. (2005). Bats
+are natural reservoirs of SARS-like coronaviruses. Science 310, 676–679. doi:
+10.1126/science.1118391
+Li, Y. T., Linster, M., Mendenhall, I. H., Su, Y. C. F., and Smith, G. J. D. (2019).
+Avian inﬂuenza viruses in humans: lessons from past outbreaks. Br. Med. Bull.
+132, 81–95. doi: 10.1093/bmb/ldz036
+Lindahl, J. F., and Grace, D. (2015). The consequences of human actions on risks
+for infectious diseases: a review. Infect. Ecol. Epidemiol. 5:30048. doi: 10.3402/
+iee.v5.30048
+Lofgren, E., Feﬀerman, N. H., Naumov, Y. N., Gorski, J., and Naumova, E. N.
+(2007). Inﬂuenza seasonality: underlying causes and modeling theories. J. Virol.
+81, 5429–5436. doi: 10.1128/JVI.01680-06
+Ma, W., Lager, K. M., Vincent, A. L., Janke, B. H., Gramer, M. R., and Richt, J. A.
+(2009). The role of swine in the generation of novel inﬂuenza viruses. Zoonoses
+Public Health 56, 326–337. doi: 10.1111/j.1863-2378.2008.01217.x
+Maertzdorf, J., McEwen, G., Weiner, J. III, Tian, S., Lader, E., Schriek, U., et al.
+(2016). Concise gene signature for point-of-care classiﬁcation of tuberculosis.
+EMBO Mol. Med. 8, 86–95. doi: 10.15252/emmm.201505790
+Mangione, W., Falls, Z., Melendy, T., Chopra, G., and Samudrala, R. (2020).
+Shotgun drug repurposing biotechnology to tackle epidemics and pandemics.
+Drug. Discov. Today 25, 1126–1128. doi: 10.1016/j.drudis.2020.05.002
+Masters, P. S., and Perlman, S. (2013). “Coronaviridae,” in Fields Virology, eds D. M.
+Knipe, P. M. Howley, and J. I. Cohen (Philadelphia, PA: Lippincott Williams &
+Wilkins).
+Matilla, F., Velleman, Y., Harrison, W., and Nevel, M. (2018). Animal inﬂuence on
+water, sanitation and hygiene measures for zoonosis control at the household
+level: a systematic literature review. PLoS Negl. Trop. Dis. 12:e0006619. doi:
+10.1371/journal.pntd.0006619
+Mc, D. J. (1958). Asian inﬂuenza in Great Britain 1957-58. Proc. R. Soc. Med. 51,
+1016–1018.
+Mead, P. S. (2018). Plague in madagascar - a tragic opportunity for improving
+public health. N. Engl. J. Med. 378, 106–108. doi: 10.1056/NEJMp1713881
+Memish, Z. A., Perlman, S., Van Kerkhove, M. D., and Zumla, A. (2020).
+Middle East respiratory syndrome. Lancet 395, 1063–1077. doi: 10.1016/S0140-
+6736(19)33221-0
+Mills, C. E., Robins, J. M., and Lipsitch, M. (2004). Transmissibility of 1918
+pandemic inﬂuenza. Nature 432, 904–906. doi: 10.1038/nature03063
+Montilla, R., Chowdhury, M. A., Huq, A., Xu, B., and Colwell, R. R. (1996).
+Serogroup conversion of Vibrio cholerae non-O1 to Vibrio cholerae O1: eﬀect
+of growth state of cells, temperature, and salinity. Can. J. Microbiol. 42, 87–93.
+doi: 10.1139/m96-014
+Morens, D. M., and Fauci, A. S. (2007). The 1918 inﬂuenza pandemic: insights for
+the 21st century. J. Infect. Dis. 195, 1018–1028. doi: 10.1086/511989
+Morens, D. M., Folkers, G. K., and Fauci, A. S. (2004). The challenge of
+emerging and re-emerging infectious diseases. Nature 430, 242–249. doi: 10.
+1038/nature02759
+Morens, D. M., and Taubenberger, J. K. (2015). How low is the risk of inﬂuenza
+A(H5N1) infection? J. Infect. Dis. 211, 1364–1366. doi: 10.1093/infdis/jiu530
+Morens, D. M., and Taubenberger, J. K. (2018). The mother of all pandemics
+Is 100 years old (and going strong)! Am. J. Public Health 108, 1449–1454.
+doi: 10.2105/AJPH.2018.304631
+Morens, D. M., Taubenberger, J. K., and Fauci, A. S. (2008). Predominant role of
+bacterial pneumonia as a cause of death in pandemic inﬂuenza: implications
+Frontiers in Microbiology | www.frontiersin.org
+13
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 14
+Piret and Boivin
+History of Pandemics
+for pandemic inﬂuenza preparedness. J. Infect. Dis. 198, 962–970. doi: 10.1086/
+591708
+Morens, D. M., Taubenberger, J. K., and Fauci, A. S. (2009). The persistent legacy
+of the 1918 inﬂuenza virus. N. Engl. J. Med. 361, 225–229. doi: 10.1056/
+NEJMp0904819
+Morens, D. M., Taubenberger, J. K., Folkers, G. K., and Fauci, A. S. (2010).
+Pandemic inﬂuenza’s 500th anniversary. Clin. Infect. Dis. 51, 1442–1444. doi:
+10.1086/657429
+Mutreja, A., Kim, D. W., Thomson, N. R., Connor, T. R., Lee, J. H., Kariuki, S., et al.
+(2011). Evidence for several waves of global transmission in the seventh cholera
+pandemic. Nature 477, 462–465. doi: 10.1038/nature10392
+Narayanan, N., Lacy, C. R., Cruz, J. E., Nahass, M., Karp, J., Barone, J. A.,
+et al. (2018). Disaster preparedness: biological threats and treatment options.
+Pharmacotherapy 38, 217–234. doi: 10.1002/phar.2068
+Neumann, G., and Kawaoka, Y. (2011). The ﬁrst inﬂuenza pandemic of the new
+millennium. Inﬂuenza Other Respir Viruses 5, 157–166. doi: 10.1111/j.1750-
+2659.2011.00231.x
+Nishiura, H. (2010). The virulence of pandemic inﬂuenza A (H1N1) 2009: an
+epidemiological perspective on the case-fatality ratio. Expert Rev. Respir. Med.
+4, 329–338. doi: 10.1586/ers.10.24
+Okello, A. L., Gibbs, E. P., Vandersmissen, A., and Welburn, S. C. (2011). One
+Health and the neglected zoonoses: turning rhetoric into reality. Vet. Rec. 169,
+281–285. doi: 10.1136/vr.d5378
+Olival, K. J., Hosseini, P. R., Zambrana-Torrelio, C., Ross, N., Bogich, T. L.,
+and Daszak, P. (2017). Host and viral traits predict zoonotic spillover from
+mammals. Nature 546, 646–650. doi: 10.1038/nature22975
+Oliveira, M., Mason-Buck, G., Ballard, D., Branicki, W., and Amorim, A. (2020).
+Biowarfare, bioterrorism and biocrime: a historical overview on microbial
+harmful applications. Forensic. Sci. Int. 314:110366. doi: 10.1016/j.forsciint.
+2020.110366
+One Health Commission [OHC] (2020). One Health. Available online at: https:
+//www.onehealthcommission.org/ (accessed December 18, 2020).
+Oseasohn, R., Adelson, L., and Kaji, M. (1959). Clinicopathologic study of thirty-
+three fatal cases of Asian inﬂuenza. N. Engl. J. Med. 260, 509–518. doi: 10.1056/
+NEJM195903122601101
+Papenburg, J., Baz, M., Hamelin, M. E., Rheaume, C., Carbonneau, J., Ouakki, M.,
+et al. (2010). Household transmission of the 2009 pandemic A/H1N1 inﬂuenza
+virus: elevated laboratory-conﬁrmed secondary attack rates and evidence of
+asymptomatic infections. Clin. Infect. Dis. 51, 1033–1041. doi: 10.1086/656582
+Perry, R. D., and Fetherston, J. D. (1997). Yersinia pestis–etiologic agent of plague.
+Clin. Microbiol. Rev. 10, 35–66.
+Petersen, E., Hui, D. S., Perlman, S., and Zumla, A. (2015). Middle East Respiratory
+Syndrome - advancing the public health and research agenda on MERS - lessons
+from the South Korea outbreak. Int. J. Infect. Dis. 36, 54–55. doi: 10.1016/j.ijid.
+2015.06.004
+Petersen, E., Koopmans, M., Go, U., Hamer, D. H., Petrosillo, N., Castelli, F., et al.
+(2020). Comparing SARS-CoV-2 with SARS-CoV and inﬂuenza pandemics.
+Lancet Infect. Dis. 20, e238–e244. doi: 10.1016/S1473-3099(20)30484-9
+Prentice, M. B., and Rahalison, L. (2007). Plague. Lancet 369, 1196–1207. doi:
+10.1016/S0140-6736(07)60566-2
+Qi, L., Pujanauski, L. M., Davis, A. S., Schwartzman, L. M., Chertow, D. S.,
+Baxter, D., et al. (2014). Contemporary avian inﬂuenza A virus subtype H1,
+H6, H7, H10, and H15 hemagglutinin genes encode a mammalian virulence
+factor similar to the 1918 pandemic virus H1 hemagglutinin. mBio 5:e02116.
+doi: 10.1128/mBio.02116-14
+Rabozzi, G., Bonizzi, L., Crespi, E., Somaruga, C., Sokooti, M., Tabibi, R., et al.
+(2012). Emerging zoonoses: the “one health approach”. Saf. Health Work 3,
+77–83. doi: 10.5491/SHAW.2012.3.1.77
+Radnedge, L., Agron, P. G., Worsham, P. L., and Andersen, G. L. (2002).
+Genome plasticity in Yersinia pestis. Microbiology 148, 1687–1698. doi: 10.1099/
+00221287-148-6-1687
+Rauch, S., Jasny, E., Schmidt, K. E., and Petsch, B. (2018). New vaccine technologies
+to combat outbreak situations. Front. Immunol. 9:1963. doi: 10.3389/ﬁmmu.
+2018.01963
+Reid, A. H., Fanning, T. G., Hultin, J. V., and Taubenberger, J. K. (1999). Origin
+and evolution of the 1918 “Spanish” inﬂuenza virus hemagglutinin gene. Proc.
+Natl. Acad. Sci. U.S.A. 96, 1651–1656. doi: 10.1073/pnas.96.4.1651
+Reid, A. H., Taubenberger, J. K., and Fanning, T. G. (2004). Evidence of an absence:
+the genetic origins of the 1918 pandemic inﬂuenza virus. Nat. Rev. Microbiol. 2,
+909–914. doi: 10.1038/nrmicro1027
+Richardson, S., Hirsch, J. S., Narasimhan, M., Crawford, J. M., McGinn, T.,
+Davidson, K. W., et al. (2020). Presenting characteristics, comorbidities, and
+outcomes among 5700 patients hospitalized with COVID-19 in the New York
+City area. JAMA 323, 2052–2059. doi: 10.1001/jama.2020.6775
+Robertson, L., Caley, J. P., and Moore, J. (1958). Importance of Staphylococcus
+aureus in pneumonia in the 1957 epidemic of inﬂuenza A. Lancet 2, 233–236.
+doi: 10.1016/s0140-6736(58)90060-6
+Rowley, A. H., Shulman, S. T., and Arditi, M. (2020). Immune pathogenesis of
+COVID-19-related multisystem inﬂammatory syndrome in children (MIS-C).
+J. Clin. Invest. 130, 5619–5621. doi: 10.1172/JCI143840
+Sabir, J. S., Lam, T. T., Ahmed, M. M., Li, L., Shen, Y., Abo-Aba, S. E., et al.
+(2016). Co-circulation of three camel coronavirus species and recombination of
+MERS-CoVs in Saudi Arabia. Science 351, 81–84. doi: 10.1126/science.aac8608
+Safa, A., Nair, G. B., and Kong, R. Y. (2010). Evolution of new variants of Vibrio
+cholerae O1. Trends Microbiol. 18, 46–54. doi: 10.1016/j.tim.2009.10.003
+Saunders-Hastings, P. R., and Krewski, D. (2016). Reviewing the history of
+pandemic inﬂuenza: understanding patterns of emergence and transmission.
+Pathogens 5:66. doi: 10.3390/pathogens5040066
+Schmid, B. V., Buntgen, U., Easterday, W. R., Ginzler, C., Walloe, L., Bramanti, B.,
+et al. (2015). Climate-driven introduction of the Black Death and successive
+plague reintroductions into Europe. Proc. Natl. Acad. Sci. U.S.A. 112, 3020–
+3025. doi: 10.1073/pnas.1412887112
+Seifert, L., Wiechmann, I., Harbeck, M., Thomas, A., Grupe, G., Projahn, M., et al.
+(2016). Genotyping Yersinia pestis in historical plague: evidence for long-term
+persistence of Y. pestis in Europe from the 14th to the 17th century. PLoS One
+11:e0145194. doi: 10.1371/journal.pone.0145194
+Serﬂing, R. E., Sherman, I. L., and Houseworth, W. J. (1967). Excess pneumonia-
+inﬂuenza mortality by age and sex in three major inﬂuenza A2 epidemics.
+United States, 1957-58, 1960 and 1963. Am. J. Epidemiol. 86, 433–441. doi:
+10.1093/oxfordjournals.aje.a120753
+Seto, W. H., Tsang, D., Yung, R. W., Ching, T. Y., Ng, T. K., Ho, M., et al. (2003).
+Eﬀectiveness of precautions against droplets and contact in prevention of
+nosocomial transmission of severe acute respiratory syndrome (SARS). Lancet
+361, 1519–1520. doi: 10.1016/s0140-6736(03)13168-6
+Shanks, G. D. (2015). Insights from unusual aspects of the 1918 inﬂuenza
+pandemic. Travel Med. Infect. Dis. 13, 217–222. doi: 10.1016/j.tmaid.2015.
+05.001
+Shanks, G. D., and Brundage, J. F. (2012). Pathogenic responses among young
+adults during the 1918 inﬂuenza pandemic. Emerg. Infect. Dis. 18, 201–207.
+doi: 10.3201/eid1802.102042
+Siddique, A. K., and Cash, R. (2014). Cholera outbreaks in the classical biotype era.
+Curr. Top. Microbiol. Immunol. 379, 1–16. doi: 10.1007/82_2013_361
+Sikkema, R. S., Farag, E., Islam, M., Atta, M., Reusken, C., Al-Hajri, M. M.,
+et al. (2019). Global status of Middle East respiratory syndrome coronavirus
+in dromedary camels: a systematic review. Epidemiol. Infect. 147:e84. doi: 10.
+1017/S095026881800345X
+Simonsen, L., Clarke, M. J., Schonberger, L. B., Arden, N. H., Cox, N. J., and
+Fukuda, K. (1998). Pandemic versus epidemic inﬂuenza mortality: a pattern of
+changing age distribution. J. Infect. Dis. 178, 53–60. doi: 10.1086/515616
+Simonsen, L., Spreeuwenberg, P., Lustig, R., Taylor, R. J., Fleming, D. M.,
+Kroneman, M., et al. (2013). Global mortality estimates for the 2009
+Inﬂuenza Pandemic from the GLaMOR project: a modeling study. PLoS Med.
+10:e1001558. doi: 10.1371/journal.pmed.1001558
+Smith, G. D. (2002). Commentary: behind the broad street pump: aetiology,
+epidemiology and prevention of cholera in mid-19th century Britain. Int. J.
+Epidemiol. 31, 920–932. doi: 10.1093/ije/31.5.920
+Smith, W., and Andrewes, C. H. (1933). A virus obtained from inﬂuenza patients.
+Lancet 222, 66–68.
+Somboonwit, C., Menezes, L. J., Holt, D. A., Sinnott, J. T., and Shapshak, P. (2017).
+Current views and challenges on clinical cholera. Bioinformation 13, 405–409.
+doi: 10.6026/97320630013405
+Song, Z., Xu, Y., Bao, L., Zhang, L., Yu, P., Qu, Y., et al. (2019). From SARS to
+MERS, thrusting coronaviruses into the spotlight. Viruses 11:59. doi: 10.3390/
+v11010059
+Frontiers in Microbiology | www.frontiersin.org
+14
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 15
+Piret and Boivin
+History of Pandemics
+Spyrou, M. A., Tukhbatova, R. I., Feldman, M., Drath, J., Kacki, S., Beltran de
+Heredia, J., et al. (2016). Historical Y. pestis genomes reveal the European Black
+Death as the source of ancient and modern plague pandemics. Cell Host Microbe
+19, 874–881. doi: 10.1016/j.chom.2016.05.012
+Stenseth, N. C., Atshabar, B. B., Begon, M., Belmain, S. R., Bertherat, E., Carniel,
+E., et al. (2008). Plague: past, present, and future. PLoS Med. 5:e3. doi: 10.1371/
+journal.pmed.0050003
+Sun, W., and Singh, A. K. (2019). Plague vaccine: recent progress and prospects.
+NPJ Vaccines 4:11. doi: 10.1038/s41541-019-0105-9
+Taubenberger, J. K., and Morens, D. M. (2010). Inﬂuenza: the once and future
+pandemic. Public Health Rep. 125(Suppl. 3), 16–26.
+Taubenberger, J. K., Morens, D. M., and Fauci, A. S. (2007). The next inﬂuenza
+pandemic: can it be predicted? JAMA 297, 2025–2027. doi: 10.1001/jama.297.
+18.2025
+Teixeira, R., and Doetsch, J. (2020). The multifaceted role of mobile technologies
+as a strategy to combat COVID-19 pandemic. Epidemiol. Infect. 148:e244. doi:
+10.1017/S0950268820002435
+Thi Kha Tu, N., Thi Thu Hong, N., Thi Han Ny, N., My Phuc, T., Thi Thanh
+Tam, P., Doorn, H. R. V., et al. (2020). The virome of acute respiratory
+diseases in individuals at risk of zoonotic infections. Viruses 12:960. doi: 10.
+3390/v12090960
+Tognotti, E. (2013). Lessons from the history of quarantine, from plague to
+inﬂuenza A. Emerg. Infect. Dis. 19, 254–259. doi: 10.3201/eid1902.120312
+Tsuzuki, S., Lee, H., Miura, F., Chan, Y. H., Jung, S. M., Akhmetzhanov, A. R., et al.
+(2017). Dynamics of the pneumonic plague epidemic in Madagascar, August to
+October 2017. Euro Surveill 22:17-00710. doi: 10.2807/1560-7917.ES.2017.22.
+46.17-00710
+Ungchusak, K., Auewarakul, P., Dowell, S. F., Kitphati, R., Auwanit, W.,
+Puthavathana, P., et al. (2005). Probable person-to-person transmission of
+avian inﬂuenza A (H5N1). N. Engl. J. Med. 352, 333–340. doi: 10.1056/
+NEJMoa044021
+UNICEF and World Health Organization [WHO] (2019). Progress on Household
+Drinking Water, Sanittion and Hygiene: 2000-2017. Available: https://www.
+unicef.org/reports/progress-on-drinking-water-sanitation-and-hygiene-2019
+(accessed December 18, 2020).
+Vaillant, L., La Ruche, G., Tarantola, A., Barboza, P., and epidemic intelligence team
+at InVS (2009). Epidemiology of fatal cases associated with pandemic H1N1
+inﬂuenza 2009. Euro Surveill 14:19309. doi: 10.2807/ese.14.33.19309-en
+Valleron, A. J., Cori, A., Valtat, S., Meurisse, S., Carrat, F., and Boelle, P. Y. (2010).
+Transmissibility and geographic spread of the 1889 inﬂuenza pandemic. Proc.
+Natl. Acad. Sci. U.S.A. 107, 8778–8781. doi: 10.1073/pnas.1000886107
+Valles, X., Stenseth, N. C., Demeure, C., Horby, P., Mead, P. S., Cabanillas, O., et al.
+(2020). Human plague: an old scourge that needs new answers. PLoS Negl. Trop.
+Dis. 14:e0008251. doi: 10.1371/journal.pntd.0008251
+Valtat, S., Cori, A., Carrat, F., and Valleron, A. J. (2011). Age distribution of cases
+and deaths during the 1889 inﬂuenza pandemic. Vaccine 29(Suppl. 2), B6–B10.
+doi: 10.1016/j.vaccine.2011.02.050
+Vezzulli, L., Baker-Austin, C., Kirschner, A., Pruzzo, C., and Martinez-Urtaza,
+J. (2020). Global emergence of environmental non-O1/O139 Vibrio cholerae
+infections linked with climate change: a neglected research ﬁeld? Environ.
+Microbiol. 22, 4342–4355. doi: 10.1111/1462-2920.15040
+Viboud, C., Grais, R. F., Lafont, B. A., Miller, M. A., Simonsen, L., Multinational
+Inﬂuenza Seasonal Mortality Study Group. (2005). Multinational impact of the
+1968 Hong Kong inﬂuenza pandemic: evidence for a smoldering pandemic.
+J. Infect. Dis. 192, 233–248. doi: 10.1086/431150
+Viboud, C., Miller, M., Olson, D., Osterholm, M., and Simonsen, L. (2010).
+Preliminary estimates of mortality and years of life lost associated with the 2009
+A/H1N1 pandemic in the US and comparison with past inﬂuenza seasons. PLoS
+Curr. 2:RRN1153. doi: 10.1371/currents.rrn1153
+Viboud, C., Simonsen, L., Fuentes, R., Flores, J., Miller, M. A., and Chowell, G.
+(2016). Global mortality impact of the 1957-1959 inﬂuenza pandemic. J. Infect.
+Dis. 213, 738–745. doi: 10.1093/infdis/jiv534
+Wagner, D. M., Klunk, J., Harbeck, M., Devault, A., Waglechner, N., Sahl, J. W.,
+et al. (2014). Yersinia pestis and the plague of Justinian 541-543 AD: a genomic
+analysis. Lancet Infect. Dis/ 14, 319–326. doi: 10.1016/S1473-3099(13)70
+323-2
+Walsh, J. J., Dietlein, L. F., Low, F. N., Burch, G. E., and Mogabgab, W. J. (1961).
+Bronchotracheal response in human inﬂuenza. Type A, Asian strain, as studied
+by light and electron microscopic examination of bronchoscopic biopsies. Arch
+Intern. Med. 108, 376–388. doi: 10.1001/archinte.1961.03620090048006
+Webster, R. G., Bean, W. J., Gorman, O. T., Chambers, T. M., and Kawaoka,
+Y. (1992). Evolution and ecology of inﬂuenza A viruses. Microbiol. Rev. 56,
+152–179.
+Webster, R. G., Sharp, G. B., and Claas, E. C. (1995). Interspecies transmission of
+inﬂuenza viruses. Am. J. Respir. Crit. Care Med. 152, S25–S30. doi: 10.1164/
+ajrccm/152.4_Pt_2.S25
+Weinstein, R. A. (2004). Planning for epidemics–the lessons of SARS. N. Engl. J.
+Med. 350, 2332–2334. doi: 10.1056/NEJMp048082
+White, R. J., and Razgour, O. (2020). Emerging zoonotic diseases originating
+in
+mammals:
+a
+systematic
+review
+of
+eﬀects
+of
+anthropogenic
+land-
+use
+change.
+Mamm.
+Rev.
+10.1111/mam.12201.
+doi:
+10.1111/mam.
+12201
+Widdowson, M. A., Bresee, J. S., and Jernigan, D. B. (2017). The global threat of
+animal inﬂuenza viruses of zoonotic concern: then and now. J. Infect. Dis. 216,
+S493–S498. doi: 10.1093/infdis/jix331
+Wiersinga, W. J., Rhodes, A., Cheng, A. C., Peacock, S. J., and Prescott, H. C.
+(2020). Pathophysiology, transmission, diagnosis, and treatment of coronavirus
+disease 2019 (COVID-19): a review. JAMA 324, 782–793. doi: 10.1001/jama.
+2020.12839
+Wilson, A. L., Courtenay, O., Kelly-Hope, L. A., Scott, T. W., Takken, W., Torr, S. J.,
+et al. (2020). The importance of vector control for the control and elimination of
+vector-borne diseases. PLoS Negl. Trop. Dis. 14:e0007831. doi: 10.1371/journal.
+pntd.0007831
+Wilson, N., Kvalsvig, A., Barnard, L. T., and Baker, M. G. (2020). Case-fatality risk
+estimates for COVID-19 calculated by using a lag time for fatality. Emerg. Infect.
+Dis. 26, 1339–1441. doi: 10.3201/eid2606.200320
+Wolfe, M., Kaur, M., Yates, T., Woodin, M., and Lantagne, D. (2018). A systematic
+review and meta-analysis of the association between water, sanitation, and
+hygiene exposures and cholera in case-control studies. Am. J. Trop. Med. Hyg.
+99, 534–545. doi: 10.4269/ajtmh.17-0897
+Wolfe, N. D., Dunavan, C. P., and Diamond, J. (2007). Origins of major
+human
+infectious
+diseases.
+Nature
+447,
+279–283.
+doi:
+10.1038/nature
+05775
+World Health Organization [WHO] (2003). Cumulative Number of Reported
+Probable Cases of SARS. Available online at: https://www.who.int/csr/sars/
+country/2003_07_11/en/ (accessed December 18, 2020).
+World Health Organization [WHO] (2017a). Plague. Available online at: https:
+//www.who.int/news-room/fact-sheets/detail/plague (accessed December 18,
+2020).
+World Health Organization [WHO] (2017b). WHO Target Product Proﬁles for
+MERS-CoV Vaccines. Available online at: https://www.who.int/publications/m/
+item/who-target-product-proﬁles-for-mers-cov-vaccines (accessed December
+18, 2020).
+World Health Organization [WHO] (2018a). WHO Target Product Proﬁle for
+Plague Vaccines. Available online at: https://www.who.int/blueprint/what/
+norms-standards/Plague_Vaccine_TPP_Online_Consultation.docx?ua=1
+(accessed December 18, 2020).
+World Health Organization [WHO] (2018b). Human Infection With Avian
+Inﬂuenza A(H7N9) Virus – China: Update. Available online at: https://www.
+who.int/csr/don/05-september-2018-ah7n9-china/en (accessed December 18,
+2020).
+World Health Organization [WHO] (2018c). Update on MERS-CoV Transmission
+From Animals to Humans, and Interim Recommendations for At-Risk Groups.
+Available online at: https://www.who.int/csr/disease/coronavirus_infections/
+transmission-and-recommendations/en/ (accessed December 18, 2020).
+World Health Organization [WHO] (2019). Cholera. Available: https://www.who.
+int/news-room/fact-sheets/detail/cholera (accessed December 18, 2020).
+World Health Organization [WHO] (2020a). Antigenic and Genetic Characteristics
+of Zoonotic Inﬂuenza A Viruses and Development of Candidate Vaccine Viruses
+for Pandemic Preparedness. Available online at: https://www.who.int/inﬂuenza/
+vaccines/virus/202009_zoonotic_vaccinevirusupdate.pdf?ua=1
+(accessed
+December 18, 2020).
+World Health Organization [WHO] (2020b). Cumulative Number of Conﬁrmed
+Human Cases for Avian Inﬂuenza A(H5N1) Reported to WHO, 2003-2020.
+Available online at: https://www.who.int/inﬂuenza/human_animal_interface/
+2020_OCT_tableH5N1.pdf (accessed December 18, 2020).
+Frontiers in Microbiology | www.frontiersin.org
+15
+January 2021 | Volume 11 | Article 631736
+fmicb-11-631736
+January 8, 2021
+Time: 15:40
+# 16
+Piret and Boivin
+History of Pandemics
+World Health Organization [WHO] (2020c). MERS Situation Update, January
+2020. Available online at: http://www.emro.who.int/health-topics/mers-cov/
+mers-outbreaks.html (accessed December 18, 2020).
+World Health Organization [WHO] (2020d). Weekly Epidemiological Record.
+Available online at: https://apps.who.int/iris/bitstream/handle/10665/274654/
+WER9338.pdf (accessed December 18, 2020).
+World Health Organization [WHO] (2020e). WHO Coronavirus Disease
+(COVID-19) Dashboard. Available online at: https://covid19.who.int/ (accessed
+December 18, 2020).
+Worobey, M., Han, G. Z., and Rambaut, A. (2014). Genesis and pathogenesis of
+the 1918 pandemic H1N1 inﬂuenza A virus. Proc. Natl. Acad. Sci. U.S.A. 111,
+8107–8112. doi: 10.1073/pnas.1324197111
+Wright, P. W., and Webster, R. G. (2001). “Orthomyxoviruses,” in Fields Virology,
+eds D. M. Knipe and P. M. Howley (Philadelphia, PA: Lippincott Williams &
+Wilkins), 1533–1579.
+Wu, X., Xiao, L., and Li, L. (2020). Research progress on human infection with
+avian inﬂuenza H7N9. Front. Med. 14:8–20. doi: 10.1007/s11684-020-0739-z
+Yamayoshi, S., and Kawaoka, Y. (2019). Current and future inﬂuenza vaccines. Nat.
+Med. 25, 212–220. doi: 10.1038/s41591-018-0340-z
+Yang, R. (2018). Plague: recognition, treatment, and prevention. J. Clin. Microbiol.
+56:e01519-17. doi: 10.1128/JCM.01519-17
+Yersin, A. (1894). La peste bubonique à Hong-Kong. Ann. Inst. Pasteur. 2,
+428–430.
+Zaki, A. M., van Boheemen, S., Bestebroer, T. M., Osterhaus, A. D., and Fouchier,
+R. A. (2012). Isolation of a novel coronavirus from a man with pneumonia in
+Saudi Arabia. N. Engl. J. Med. 367, 1814–1820. doi: 10.1056/NEJMoa1211721
+Zambon, M. C. (2001). The pathogenesis of inﬂuenza in humans. Rev. Med. Virol.
+11, 227–241. doi: 10.1002/rmv.319
+Zhang, N., Shang, J., Li, C., Zhou, K., and Du, L. (2020). An overview of Middle
+East respiratory syndrome coronavirus vaccines in preclinical studies. Expert
+Rev. Vaccines 19, 817–829. doi: 10.1080/14760584.2020.1813574
+Zhang, Q., Bastard, P., Liu, Z., Le Pen, J., Moncada-Velez, M., Chen, J., et al.
+(2020). Inborn errors of type I IFN immunity in patients with life-threatening
+COVID-19. Science 370:eabd4570. doi: 10.1126/science.abd4570
+Zhu, N., Zhang, D., Wang, W., Li, X., Yang, B., Song, J., et al. (2020). A novel
+coronavirus from patients with pneumonia in China, 2019. N. Engl. J. Med. 382,
+727–733. doi: 10.1056/NEJMoa2001017
+Zietz, B. P., and Dunkelberg, H. (2004). The history of the plague and the research
+on the causative agent Yersinia pestis. Int. J. Hyg. Environ. Health 207, 165–178.
+doi: 10.1078/1438-4639-00259
+Conﬂict of Interest: The authors declare that the research was conducted in the
+absence of any commercial or ﬁnancial relationships that could be construed as a
+potential conﬂict of interest.
+Copyright © 2021 Piret and Boivin. This is an open-access article distributed
+under the terms of the Creative Commons Attribution License (CC BY). The
+use, distribution or reproduction in other forums is permitted, provided the
+original author(s) and the copyright owner(s) are credited and that the original
+publication in this journal is cited, in accordance with accepted academic practice.
+No use, distribution or reproduction is permitted which does not comply with
+these terms.
+Frontiers in Microbiology | www.frontiersin.org
+16
+January 2021 | Volume 11 | Article 631736
