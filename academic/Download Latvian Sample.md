@@ -1,6 +1,6 @@
 ---
 project: pla Depletion
-due: 2022-01-16
+due: 2022-02-01
 people:
 tags: 🧨
 status: priority
