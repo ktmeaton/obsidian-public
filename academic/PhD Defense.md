@@ -2,12 +2,11 @@
 project: "[[PhD]]"
 aliases:
   - PhD Defense
-tags:
-  - 📝
-status: idea
+tags: 🧨 
+status: priority
 type: task
 due: 2022-01-21
-time: 08:00
+time: 08:00-10:00
 ---
 
 # PhD Defense
