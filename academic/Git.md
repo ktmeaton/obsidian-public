@@ -1,5 +1,6 @@
 ---
 aliases:
+  - GitHub
   - github
   - git
   - Git
@@ -100,4 +101,12 @@ file='Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md';
 string='position'
 latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
 git log --follow -S \"$string\" --follow -p $file;
+```
+
+## Merge and Rebase
+
+```bash
+git config --global pull.rebase true
+git rebase master dev
+git push origin dev --force
 ```

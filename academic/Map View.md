@@ -16,7 +16,7 @@ locations:
 
 By default, [[Map View]] uses [[OpenStreetMap]] as the search provider.
 
-- [Edmonton](geo:53.535411,-113.507996)
+- [Edmonton](geo:53.535411,-113.507996) #test
 
 ## Map Sources
 

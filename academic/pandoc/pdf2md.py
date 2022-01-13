@@ -23,6 +23,11 @@ def main(
     """Convert PDF to Markdown."""
 
     # Check if file exists
+    if not pdf:
+        ctx = click.get_current_context()
+        click.echo(ctx.get_help())
+        ctx.exit()
+
     if not os.path.exists(pdf):
         print("PDF does not exists", pdf)
         quit()

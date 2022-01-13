@@ -19,3 +19,10 @@ tags:
 - [x] [[NCBImeta Python 3.9]]
 - [ ] [[NCBImeta PyPI Release]]
 - [ ] [[NCBImeta Conda Release]]
+
+
+## Troubleshooting Install
+
+```bash
+mamba create -n test python=3.10 numpy
+```
