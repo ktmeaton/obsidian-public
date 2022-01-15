@@ -15,9 +15,9 @@ summary:
 
 ```bash
 # cd obsidian-public/academic/
-conda activate seldon
-../../seldon/seldon/seldon.py \
-  --wsl --bib-latex \
-  pandoc/bib/seldon.bib \
+conda activate seldon \
+&& ../../seldon/seldon/seldon \
+  --wsl \
+  --bib-latex pandoc/bib/seldon.bib \
   --note-dir .
 ```

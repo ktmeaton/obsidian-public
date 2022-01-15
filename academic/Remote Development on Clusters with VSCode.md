@@ -4,8 +4,8 @@ due: 2022-01-12
 time: 10:00
 people:
   - "[[Armin Sobhani]]"
-tags: 🧨, 🦈
-status: priority
+tags: 💡 , 🦈
+status: idea
 title: Remote Development on Clusters with VSCode
 type: Task
 authors:

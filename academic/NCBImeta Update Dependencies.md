@@ -2,8 +2,8 @@
 project: "[[NCBImeta]]"
 due: 2022-01-12
 people:
-tags: 🧨
-status: priority
+tags: ✨
+status: done
 title: NCBImeta Update Dependencies
 type: Task
 ---

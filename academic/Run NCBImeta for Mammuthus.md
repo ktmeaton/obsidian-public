@@ -2,9 +2,8 @@
 project: "[[NCBImeta]]"
 aliases:
   - Run NCBImeta for Mammuthus
-tags:
-  - 📝
-status: idea
+tags: ✨ 
+status: done
 type: Note
 due: 2022-01-12
 ---

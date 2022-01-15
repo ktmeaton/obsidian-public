@@ -32,6 +32,24 @@
   url = {https://www.theoj.org/joss-papers/joss.01990/10.21105.joss.01990.pdf}
 }
 
+@article{ferreira2021CoVizuRapidAnalysis,
+  title = {{{CoVizu}}: {{Rapid}} Analysis and Visualization of the Global Diversity of {{SARS-CoV-2}} Genomes},
+  shorttitle = {{{CoVizu}}},
+  author = {Ferreira, Roux-Cil and Wong, Emmanuel and Gugan, Gopi and Wade, Kaitlyn and Liu, Molly and Baena, Laura Muñoz and Chato, Connor and Lu, Bonnie and Olabode, Abayomi S and Poon, Art F Y},
+  date = {2021-12-01},
+  journaltitle = {Virus Evolution},
+  shortjournal = {Virus Evolution},
+  volume = {7},
+  number = {2},
+  pages = {veab092},
+  issn = {2057-1577},
+  doi = {10.1093/ve/veab092},
+  url = {https://doi.org/10.1093/ve/veab092},
+  urldate = {2021-12-18},
+  abstract = {Phylogenetics has played a pivotal role in the genomic epidemiology of severe acute respiratory syndrome coronavirus 2, such as tracking the emergence and global spread of variants and scientific communication. However, the rapid accumulation of genomic data from around the world—with over two million genomes currently available in the Global Initiative on Sharing All Influenza Data database—is testing the limits of standard phylogenetic methods. Here, we describe a new approach to rapidly analyze and visualize large numbers of SARS-CoV-2 genomes. Using Python, genomes are filtered for problematic sites, incomplete coverage, and excessive divergence from a strict molecular clock. All differences from the reference genome, including indels, are extracted using minimap2 and compactly stored as a set of features for each genome. For each Pango lineage (https://cov-lineages.org), we collapse genomes with identical features into ‘variants’, generate 100 bootstrap samples of the feature set union to generate weights, and compute the symmetric differences between the weighted feature sets for every pair of variants. The resulting distance matrices are used to generate neighbor-joining trees in RapidNJ that are converted into a majority-rule consensus tree for each lineage. Branches with support values below 50\,per cent or mean lengths below 0.5 differences are collapsed, and tip labels on affected branches are mapped to internal nodes as directly sampled ancestral variants. Currently, we process about 2 million genomes in approximately 9\,h on 52 cores. The resulting trees are visualized using the JavaScript framework D3.js as ‘beadplots’, in which variants are represented by horizontal line segments, annotated with beads representing samples by collection date. Variants are linked by vertical edges to represent branches in the consensus tree. These visualizations are published at https://filogeneti.ca/CoVizu. All source code was released under an MIT license at https://github.com/PoonLab/covizu.},
+  file = {C\:\\Users\\user5028384\\Zotero\\storage\\KN6HKNM5\\Ferreira et al. - 2021 - CoVizu Rapid analysis and visualization of the gl.pdf;C\:\\Users\\user5028384\\Zotero\\storage\\BZ95V9J5\\6431771.html}
+}
+
 @article{piret2021PandemicsThroughoutHistory,
   title = {Pandemics throughout History},
   author = {Piret, Jocelyne and Boivin, Guy},
