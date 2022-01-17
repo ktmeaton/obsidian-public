@@ -42,13 +42,22 @@ _I acknowledge the traditional land on which I reside, is in Treaty Six Territor
 
 <grid  drag="40 40" drop="10 -12" flow="col">
 [native-land.ca](https://native-land.ca/)
-![[Native-Land-Digital.png]]
+
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e01b29179742ae19de1fde9dae67bc7d2d0/academic/Native-Land-Digital.png" 
+	 width="400px">
+</img>
+
 </grid>
 
-<grid  drag="35 45" drop="-10 -1" flow="col">
+<grid  drag="35 56" drop="-10 -1" flow="col">
 [firstnations.org](https://www.firstnations.org/knowledge-center/recipes/)
 <br><br>
-![[Three sisters soup.png]]
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e01b29179742ae19de1fde9dae67bc7d2d0/academic/Three sisters soup.png" 
+	 width="250px">
+</img>
+
 </grid>
 ---
 
@@ -88,26 +97,29 @@ note: To prepare for this presentation, I started out with your required reading
 [Prabhu and Gergen (2021)](https://www.gavi.org/vaccineswork/long-view-historys-seven-deadliest-plagues)<br>
 The Long View: History’s Seven Deadliest Plagues
 
-![[Historys 7 Deadliest Plagues.png|400]]
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e01b29179742ae19de1fde9dae67bc7d2d0/academic/Historys%207%20Deadliest%20Plagues%20Annotate.png" 
+	 width="400px">
+</img>
 
-<grid  drag="25 20" drop="5 -1" flow="col" border="2px solid black">
+<grid  drag="25 15" drop="5 -1" flow="col" border="2px solid black">
 
 **First Plague Pandemic**<br>
-6<sup>th</sup> to 8<sup>th</sup> Century CE<br>
+6<sup>th</sup> - 8<sup>th</sup> Century CE<br>
 ~200 years
 
 </grid>
 
-<grid  drag="25 20" drop="37 -1" flow="col" border="2px solid black">
-**Second Pandemic**<br>
-14<sup>th</sup> to 19<sup>th</sup> century CE<br>
-~500+ years
+<grid  drag="28 15" drop="35 -1" flow="col" border="2px solid black">
+**Second Plague Pandemic**<br>
+14<sup>th</sup> - 19<sup>th</sup> century CE<br>
+~500 years
 </grid>
 
-<grid  drag="25 20" drop="-5 -1" flow="col" border="2px solid black">
-**Third Pandemic**<br>
-19<sup>th</sup> to 20<sup>th</sup> century CE<br>
-~100+ years
+<grid  drag="25 15" drop="-5 -1" flow="col" border="2px solid black">
+**Third Plague Pandemic**<br>
+19<sup>th</sup> - 20<sup>th</sup> century CE<br>
+~100 years
 </grid>
 
 
@@ -115,44 +127,86 @@ The Long View: History’s Seven Deadliest Plagues
 
 ## What is "Plague"?
 
-
----
-
-## Showdown
-
 <grid  drag="43 80" drop="5 17" flow="col" border="2px solid black">
 
 ### Plague
 
 _Yersinia pestis_
 
-- Bacteria
+- Lymphatic Disease
+
 - Rare inter-human transmission
-
-- Black Death (1356-1353)<br>
-	75-200 Million Dead
-
-- Third
-
+- Bacteria
 - Slow evolution:<br>
-	1 mutation / 10 years
+	1 mutation / 10 years<br>
+	[Eaton et al. (2021)](https://www.researchsquare.com/article/rs-1146895/v1)
 
 </grid>
 
 <grid  drag="43 80" drop="-5 17" flow="col" border="2px solid black">
 
-### COVID-19
+### COVID
 
 Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
+- Respiratory Disease
+
+- Inter-human transmission
 - Virus
-
-- Frequent inter-human transmission
-
 - Rapid evolution:<br>
 	2 mutations / month
 
+
 </grid>
+
+---
+
+## Are We Sure?
+
+<hr>
+
+- Diagnosing disease is hard.
+- You wake up in the morning, sore throat, cough, sneezing, and the first thing you think is Do I have COVID?
+- Common cold, flu, fatigue, pneumonia...
+- Retrospective diagnosis is really hard.
+- RESULT DEBATE
+- McMillen (p. 26-27), touches briefly on this in 
+
+---
+
+## Ancient DNA
+
+<hr>
+
+<grid  drag="50 80" drop="5 5" flow="col">
+![[@bos2011DraftGenomeYersinia_Title.png|500]]
+</grid>
+
+<grid  drag="35 80" drop="-5 5" flow="col">
+![](https://i.dailymail.co.uk/i/pix/2011/10/12/article-2048476-0E5905BF00000578-782_468x353.jpg)
+</grid>
+
+<grid  drag="80 20" drop="10 -17" flow="col" >
+
+ > "Here we report a reconstructed ancient genome of _Yersinia pestis_... from Black Death victims securely dated to episodes of pestilence-associated mortality in London, England, 1348–1350."
+
+ > "...the pathogen implicated in the Black Death has close relatives in the twenty-first century that are both endemic and emerging."
+> 
+</grid>
+
+
+---
+
+## Longitudinal Study
+
+<hr>
+
+[Eaton et al. (In Prep)](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plague_in_Denmark_1000-1800.html)<br>
+Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
+
+- We screened for plague (_Y. pestis_) in ~300 skeletal remains.
+- 13 archaeological sites, dated to between 1000 CE - 1800 CE
+- The positivity rate ranged from 3% to 14%.
 
 ---
 
@@ -173,13 +227,17 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 ### Plague
 
-![[Thornton Abbey Mass Grave.png|250]]
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e0/academic/Thornton Abbey Mass Grave.png" 
+	 width="250px">
+</img>
 
 [Willmott et al. (2020)](https://archaeology.co.uk/articles/news/black-death-mass-grave-at-thornton-abbey.htm)<br> Black Death Mass Grave <br>at Thornton Abbey
 
-> "This burial included the remains of at least 48 men, women, and children, who had clearly been struck down during a single catastrophic event."<br><br>
+> "This burial included the remains of at least 48 men, women, and children, who had clearly been struck down during a single catastrophic event."
+
 > "Throughout the grave, the dead were deposited and treated with great care."
-> 
+
 
 </grid>
 
@@ -187,11 +245,12 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 ### COVID-19
 
-![[@freyer2020CoronavirusChangingRituals_Figure.png|250]]
+<img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e0/academic/@freyer2020CoronavirusChangingRituals_Figure.png" width="250px"></img>
 
 [Frayer (2020)](https://www.npr.org/sections/goatsandsoda/2020/04/07/828317535/coronavirus-is-changing-the-rituals-of-death-for-many-religions)<br>Coronavirus Is Changing The Rituals <br>Of Death For Many Religions
 
-> "His father's body was among a group of bodies the government intended to bury in a field near Baghdad, outside the city." <br><br>
+> "His father's body was among a group of bodies the government intended to bury in a field near Baghdad, outside the city."
+
 > "...paramilitary forces in hazmat suits took over the process and conducted the burials according to Islamic rites at a sprawling cemetery in the holy city Najaf"
 
 </grid>
@@ -205,7 +264,7 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 ### [After the Plague](http://www.aftertheplague.com/)
 
-![[@cessford2021BeyondPlaguePits_Figure.PNG|250]]
+<img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/479a38451249/academic/After%20the%20Plague%20Single%20Graves.png" width="250px"></img>
 
 [Gershon (2021)](https://www.smithsonianmag.com/smart-news/some-black-death-victims-were-buried-care-not-mass-graves-180978025/)<br>
 Why Weren’t These Black Death Victims Buried in Mass Graves?<br>
