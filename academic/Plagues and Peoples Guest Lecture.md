@@ -10,27 +10,46 @@ type: Task
 
 # reveal.js
 theme: simple
-css: [css/layout.css,css/customFonts.css]
 slideNumber: true
 enableChalkboard: true
 showNote: true
 progress: true
+openButton: true
 ---
 
 
-##  From the Black Death to COVID-19
+## Title
 
 <hr>
 
 Katherine Eaton
 
-PhD. Candidate | [McMaster Ancient DNA Centre](https://socialsciences.mcmaster.ca/mcmaster-ancient-dna-centre)
+PhD. Candidate | [McMaster Ancient DNA Centre](https://socialsciences.mcmaster.ca/mcmaster-ancient-dna-centre)<br>
 Biologist | [Public Health Agency of Canada](https://www.canada.ca/en/public-health/programs/national-microbiology-laboratory.html)
 
 ktmeaton@gmail.com
 
 note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a guest lecture to you today. I'm a colleague of Creighton's in the Department of Anthropology. 
 
+---
+
+## Land Acknowledgement
+
+
+<grid  drag="80 30" drop="10 20" flow="col">
+_I acknowledge the traditional land on which I reside, is in Treaty Six Territory. I would like to thank the diverse Indigenous Peoples whose ancestors’ footsteps have marked this territory for centuries, such as nêhiyaw, Dené, Anishinaabe, Nakota Isga, and Niitsitapi peoples. I also acknowledge this as the Métis’ homeland and the home of one of the largest communities of Inuit south of the 60th parallel._
+</grid>
+
+<grid  drag="40 40" drop="10 -12" flow="col">
+[native-land.ca](https://native-land.ca/)
+![[Native-Land-Digital.png]]
+</grid>
+
+<grid  drag="35 45" drop="-10 -1" flow="col">
+[firstnations.org](https://www.firstnations.org/knowledge-center/recipes/)
+<br><br>
+![[Three sisters soup.png]]
+</grid>
 ---
 
 ## Preparation
@@ -61,7 +80,79 @@ note: To prepare for this presentation, I started out with your required reading
 
 ---
 
+## 7 Deadliest Plagues
+
+<hr>
+
+
+[Prabhu and Gergen (2021)](https://www.gavi.org/vaccineswork/long-view-historys-seven-deadliest-plagues)<br>
+The Long View: History’s Seven Deadliest Plagues
+
+![[Historys 7 Deadliest Plagues.png|400]]
+
+<grid  drag="25 20" drop="5 -1" flow="col" border="2px solid black">
+
+**First Plague Pandemic**<br>
+6<sup>th</sup> to 8<sup>th</sup> Century CE<br>
+~200 years
+
+</grid>
+
+<grid  drag="25 20" drop="37 -1" flow="col" border="2px solid black">
+**Second Pandemic**<br>
+14<sup>th</sup> to 19<sup>th</sup> century CE<br>
+~500+ years
+</grid>
+
+<grid  drag="25 20" drop="-5 -1" flow="col" border="2px solid black">
+**Third Pandemic**<br>
+19<sup>th</sup> to 20<sup>th</sup> century CE<br>
+~100+ years
+</grid>
+
+
+---
+
 ## What is "Plague"?
+
+
+---
+
+## Showdown
+
+<grid  drag="43 80" drop="5 17" flow="col" border="2px solid black">
+
+### Plague
+
+_Yersinia pestis_
+
+- Bacteria
+- Rare inter-human transmission
+
+- Black Death (1356-1353)<br>
+	75-200 Million Dead
+
+- Third
+
+- Slow evolution:<br>
+	1 mutation / 10 years
+
+</grid>
+
+<grid  drag="43 80" drop="-5 17" flow="col" border="2px solid black">
+
+### COVID-19
+
+Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
+
+- Virus
+
+- Frequent inter-human transmission
+
+- Rapid evolution:<br>
+	2 mutations / month
+
+</grid>
 
 ---
 
@@ -75,35 +166,122 @@ note: To prepare for this presentation, I started out with your required reading
 
 ---
 
+
 ## The Dead
 
-- Plague pits and mass graves
-- [After the Plague](http://www.aftertheplague.com/).
-- [Why Weren’t These Black Death Victims Buried in Mass Graves? New research suggests some Europeans who died of the bubonic plague were individually interred with care](https://www.smithsonianmag.com/smart-news/some-black-death-victims-were-buried-care-not-mass-graves-180978025/).
+<grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
 
-- [Wuhan](https://www.npr.org/sections/goatsandsoda/2020/04/10/829842284/a-son-in-wuhan-wants-a-moment-alone-with-his-fathers-remains-the-government-says)
+### Plague
+
+![[Thornton Abbey Mass Grave.png|250]]
+
+[Willmott et al. (2020)](https://archaeology.co.uk/articles/news/black-death-mass-grave-at-thornton-abbey.htm)<br> Black Death Mass Grave <br>at Thornton Abbey
+
+> "This burial included the remains of at least 48 men, women, and children, who had clearly been struck down during a single catastrophic event."<br><br>
+> "Throughout the grave, the dead were deposited and treated with great care."
+> 
+
+</grid>
+
+<grid  drag="45 80" drop="-5 17" flow="col" border="2px solid black">
+
+### COVID-19
+
+![[@freyer2020CoronavirusChangingRituals_Figure.png|250]]
+
+[Frayer (2020)](https://www.npr.org/sections/goatsandsoda/2020/04/07/828317535/coronavirus-is-changing-the-rituals-of-death-for-many-religions)<br>Coronavirus Is Changing The Rituals <br>Of Death For Many Religions
+
+> "His father's body was among a group of bodies the government intended to bury in a field near Baghdad, outside the city." <br><br>
+> "...paramilitary forces in hazmat suits took over the process and conducted the burials according to Islamic rites at a sprawling cemetery in the holy city Najaf"
+
+</grid>
+
 
 ---
 
-## The Dead : Mass Graves
+## The Dead
+
+<grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
+
+### [After the Plague](http://www.aftertheplague.com/)
+
+![[@cessford2021BeyondPlaguePits_Figure.PNG|250]]
+
+[Gershon (2021)](https://www.smithsonianmag.com/smart-news/some-black-death-victims-were-buried-care-not-mass-graves-180978025/)<br>
+Why Weren’t These Black Death Victims Buried in Mass Graves?<br>
+
+> "...individual people were being buried with considerable care and attention..." <br><br>
+> "...emergency cemeteries and mass burials are atypical, with most plague victims instead receiving individual burial in normal cemeteries..."
+
+</grid>
+
+<grid  drag="45 80" drop="-5 17" flow="col">
+- Initially focused on catastrophe and adaptation. "Deviant" burial practices.
+
+- Realized these are not representative.
+
+- Equally interesting to focus on diversity, and resilience. How did people maintain their practices?
+
+</grid>
+
+---
 
 
-<split even wrap=2>
+## The Living
 
-![[Thornton Abbey Mass Grave.png|300]]
+<grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
+
+### Plague
+
+McMillen (2016)
+
+>  "...plague preyed more upon the poor than the rich."
+
+> ...the dearth of laborers forced the abbot and the lord of the manor to enter into a new
+labor agreement with the tenants with far more favorable terms.
+
+> “servants are now masters and masters are servants"
 
 
-- Test
-- Test 2
+</grid>
 
-</split>
+<grid  drag="45 80" drop="-5 17" flow="col" border="2px solid black">
 
+### COVID-19
+
+[McGahey (2021)](https://www.forbes.com/sites/richardmcgahey/2021/10/29/is-covid-19-restructuring-the-job-market/?sh=1773a8348c60)<br>
+Is Covid-19 Restructuring The Job Market?
+
+> "...pre-pandemic labor market inequalities remain high and have even worsened by some measures, especially for those in lower-paying jobs."
+
+> "So teleworking has grown in importance, but it remains concentrated among professionals with higher education"
+
+[Markovitz (2021)](https://time.com/5974430/wealth-tax-covid-19/)<br>
+America's 1% Got Way Richer During the Pandemic
+
+> "...the disease highlights and worsens existing fault lines in American society, especially economic inequality."
+
+
+</grid>
 ---
 
 ## The Living
 
-- Social Examples
-- [[Plague Immune]]
+<grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
+
+### Immunity
+
+[Klunk et al. (Submitted)]()<br>
+Black Death shaped the evolution of immune genes
+
+> The Black Death actually changed human biology. Those that survived had particular mutations in their immune system.
+
+> However, these same mutations, "are today associated with increased susceptibility to autoimmune diseases"
+
+</grid>
+
+
+---
 
 ## The Bacteria
 
