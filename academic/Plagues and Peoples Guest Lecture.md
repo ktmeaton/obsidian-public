@@ -35,6 +35,7 @@ note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a gues
 
 ## Land Acknowledgement
 
+<hr>
 
 <grid  drag="80 30" drop="10 20" flow="col">
 _I acknowledge the traditional land on which I reside, is in Treaty Six Territory. I would like to thank the diverse Indigenous Peoples whose ancestors’ footsteps have marked this territory for centuries, such as nêhiyaw, Dené, Anishinaabe, Nakota Isga, and Niitsitapi peoples. I also acknowledge this as the Métis’ homeland and the home of one of the largest communities of Inuit south of the 60th parallel._
@@ -65,16 +66,11 @@ _I acknowledge the traditional land on which I reside, is in Treaty Six Territor
 
 <hr>
 
-1. [Pandemics: A Very Short Introduction](https://www.veryshortintroductions.com/view/10.1093/actrade/9780199340071.001.0001/actrade-9780199340071)<br>
-	Christian W. McMillen | Chapter 1 | Plague
-	
-1. Your COVID-19 Experiences
-
-3. Identified concepts that:
-	- Resonate with our current experience of the COVID-19 pandemic.
-	- Are unresolved questions, that we at the McMaster Ancient DNA Centre are investigating!
-
-note: To prepare for this presentation, I started out with your required reading, which is Chapter 1 of Pandemics: A Very Short Introduction by Christian W. McMillen. 
+1. "Your COVID-19 Experiences"
+1. [Pandemics: A Very Short Introduction](https://www.veryshortintroductions.com/view/10.1093/actrade/9780199340071.001.0001/actrade-9780199340071). Ch. 1 , Plague
+1. Identified concepts that:
+	- Resonate with our current pandemic experience.
+	- McMaster researchers are actively investigating.
 
 ---
 
@@ -99,9 +95,10 @@ The Long View: History’s Seven Deadliest Plagues
 
 <img 
 	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e01b29179742ae19de1fde9dae67bc7d2d0/academic/Historys%207%20Deadliest%20Plagues%20Annotate.png" 
-	 width="400px">
+	 width="550px">
 </img>
 
+<!--
 <grid  drag="25 15" drop="5 -1" flow="col" border="2px solid black">
 
 **First Plague Pandemic**<br>
@@ -121,38 +118,40 @@ The Long View: History’s Seven Deadliest Plagues
 19<sup>th</sup> - 20<sup>th</sup> century CE<br>
 ~100 years
 </grid>
+-->
 
+note: This infographic comes from an article by Prabu and Gergen (2021). I like it because...
+The X-axis is a timeline, going from 500 CE to present day. And the Y-axis is how long the series of epidemics lasted.
+Black Death is eye-catching.
+- What is missing are the pandemic durations.
 
 ---
 
-## What is "Plague"?
+## What is... Plague?
 
-<grid  drag="43 80" drop="5 17" flow="col" border="2px solid black">
+<grid  drag="45 80" drop="1 17" flow="col" border="2px solid black">
 
 ### Plague
 
 _Yersinia pestis_
 
-- Lymphatic Disease
-
-- Rare inter-human transmission
 - Bacteria
+- Lymphatic Disease
+- Rare inter-human transmission
 - Slow evolution:<br>
-	1 mutation / 10 years<br>
-	[Eaton et al. (2021)](https://www.researchsquare.com/article/rs-1146895/v1)
+	1 mutation / 10 years
 
 </grid>
 
-<grid  drag="43 80" drop="-5 17" flow="col" border="2px solid black">
+<grid  drag="45 80" drop="-1 17" flow="col" border="2px solid black">
 
 ### COVID
 
 Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
-- Respiratory Disease
-
-- Inter-human transmission
 - Virus
+- Respiratory Disease
+- Inter-human transmission
 - Rapid evolution:<br>
 	2 mutations / month
 
@@ -165,12 +164,13 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 <hr>
 
-- Diagnosing disease is hard.
-- You wake up in the morning, sore throat, cough, sneezing, and the first thing you think is Do I have COVID?
-- Common cold, flu, fatigue, pneumonia...
-- Retrospective diagnosis is really hard.
-- RESULT DEBATE
-- McMillen (p. 26-27), touches briefly on this in 
+- **Problem:** Diagnosing disease is <u>hard</u>.
+
+> ### You wake up sneezing, with a sore throat and a cough.<br>
+> ### Do you have COVID? Or a cold? Or a flu? Or fatigue?
+
+- Retrospective diagnosis of 1000+ year old diseases is <u>really hard</u>.
+- Ambiguous descriptions of "pestilence", inconsistent symptoms, regional variation, etc. (McMillen, 2016, p. 26-27)
 
 ---
 
@@ -179,7 +179,10 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 <hr>
 
 <grid  drag="50 80" drop="5 5" flow="col">
-![[@bos2011DraftGenomeYersinia_Title.png|500]]
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/fb9f2b831/academic/@bos2011DraftGenomeYersinia_Title.png" 
+	>
+</img>
 </grid>
 
 <grid  drag="35 80" drop="-5 5" flow="col">
@@ -188,25 +191,54 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 <grid  drag="80 20" drop="10 -17" flow="col" >
 
- > "Here we report a reconstructed ancient genome of _Yersinia pestis_... from Black Death victims securely dated to episodes of pestilence-associated mortality in London, England, 1348–1350."
+ > #### "Here we report a reconstructed ancient genome of _Yersinia pestis_... from Black Death victims securely dated to episodes of pestilence-associated mortality in London, England, 1348–1350."
 
- > "...the pathogen implicated in the Black Death has close relatives in the twenty-first century that are both endemic and emerging."
+ > #### "...the pathogen implicated in the Black Death has close relatives in the twenty-first century that are both endemic and emerging."
 > 
 </grid>
 
 
 ---
 
-## Longitudinal Study
+## A Larger Study
 
 <hr>
 
-[Eaton et al. (In Prep)](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plague_in_Denmark_1000-1800.html)<br>
+[Eaton et al.](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plague_in_Denmark_1000-1800.html)<br>
 Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
-- We screened for plague (_Y. pestis_) in ~300 skeletal remains.
-- 13 archaeological sites, dated to between 1000 CE - 1800 CE
-- The positivity rate ranged from 3% to 14%.
+- We extracted DNA from ~300 skeletal remains.
+- 13 archaeological sites: <u>1000 CE - 1800 CE</u>
+- Historical evidence of _pestilence_: <u>1350 CE - 1650 CE</u>
+- We screened the DNA for plague-specific molecules (_Y. pestis_).
+
+---
+
+## Results
+
+<hr>
+
+- DNA evidence <u>perfectly aligns</u> with the historical evidence.
+- INSERT TIMELINE IMAGE.
+- Where is _Y. pestis_ before the Black Death?
+- Why did this plague pandemic end?
+
+---
+
+## COVID Connections
+
+<hr>
+
+[Gragnani et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33928622/), [Latiano et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33383223/)<br>
+Was SARS-CoV-2 was already circulating in Italy in 2019?
+
+[Charumilind et al. (2021)](https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights/when-will-the-covid-19-pandemic-end)<br>
+When will the COVID-19 pandemic end?
+
+[WHO (2020)](https://www.who.int/news-room/feature-stories/detail/how-who-is-working-to-track-down-the-animal-reservoir-of-the-sars-cov-2-virus)<br>
+How WHO is working to track down the animal reservoir of the SARS-CoV-2 virus.
+
+>### "...understanding how an epidemic began is essential to preventing further introductions to the human population."
 
 ---
 
@@ -214,9 +246,11 @@ Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
 <hr>
 
->" _After the Black Death, loss of life on such a scale was not seen again._" McMillen (2016, p. 18)
+> ### " _After the Black Death, loss of life on such a scale was not seen again._" 
+> ### - McMillen (2016, p. 18)
 
-> _"Over the centuries Europeans adapted to the plague, even came to expect it, and developed ways of dealing with it ... it became a regular feature of life in many places."_ McMillen (2016, p. 10)
+> ### _"Over the centuries Europeans adapted to the plague, even came to expect it, and developed ways of dealing with it ... it became a regular feature of life in many places."_ 
+> ### - McMillen (2016, p. 10)
 
 ---
 
@@ -243,7 +277,7 @@ Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 
 <grid  drag="45 80" drop="-5 17" flow="col" border="2px solid black">
 
-### COVID-19
+### COVID
 
 <img src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/e22b5e0/academic/@freyer2020CoronavirusChangingRituals_Figure.png" width="250px"></img>
 
@@ -269,17 +303,18 @@ Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 [Gershon (2021)](https://www.smithsonianmag.com/smart-news/some-black-death-victims-were-buried-care-not-mass-graves-180978025/)<br>
 Why Weren’t These Black Death Victims Buried in Mass Graves?<br>
 
-> "...individual people were being buried with considerable care and attention..." <br><br>
+> "...individual people were being buried with considerable care and attention..."
+
 > "...emergency cemeteries and mass burials are atypical, with most plague victims instead receiving individual burial in normal cemeteries..."
 
 </grid>
 
-<grid  drag="45 80" drop="-5 17" flow="col">
-- Initially focused on catastrophe and adaptation. "Deviant" burial practices.
+<grid  drag="55 80" drop="-1 17" flow="col">
 
-- Realized these are not representative.
-
-- Equally interesting to focus on diversity, and resilience. How did people maintain their practices?
+- Early research focused on catastrophe, societal upheaval, "deviant" practices.
+- Starting to realize these examples are not representative.
+- There is now a greater focus on <u>diverse practices</u> and <u>resilience</u>.
+- How do people create stability to uphold their values?
 
 </grid>
 
@@ -306,7 +341,7 @@ labor agreement with the tenants with far more favorable terms.
 
 <grid  drag="45 80" drop="-5 17" flow="col" border="2px solid black">
 
-### COVID-19
+### COVID
 
 [McGahey (2021)](https://www.forbes.com/sites/richardmcgahey/2021/10/29/is-covid-19-restructuring-the-job-market/?sh=1773a8348c60)<br>
 Is Covid-19 Restructuring The Job Market?
@@ -328,7 +363,7 @@ America's 1% Got Way Richer During the Pandemic
 
 <grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
 
-### Immunity
+### Plague
 
 [Klunk et al. (Submitted)]()<br>
 Black Death shaped the evolution of immune genes
@@ -339,19 +374,56 @@ Black Death shaped the evolution of immune genes
 
 </grid>
 
+<grid  drag="40 80" drop="-5 17" flow="col" border="2px solid black">
+
+### COVID
+
+[Frangou (2022)](https://www.macleans.ca/longforms/chronic-exhaustion-derailed-lives-and-no-way-out-this-is-long-covid/)<br>
+Chronic exhaustion, derailed lives and<br> no way out. This is long COVID.
+
+> "Almost one year after getting COVID, she still wrestles with a cough, cognitive dysfunction, pain and postural orthostatic tachycardia syndrome..."
+
+> "...about 10 per cent of Canadians who contract COVID-19 will suffer prolonged symptoms."
+
+</grid>
+
 
 ---
 
-## The Bacteria
+## The Pathogen
 
-- [[pla Depletion]]
+<hr>
+
+> ### How does a bacteria/virus change during a pandemic?
+
+- Plague researchers are looking for DNA mutations that could explain why the <u>Black Death was so fatal</u>: 75-200 million deaths.
+- Problem: (_Y. pestis_) evolves <u>really</u> slowly ( 1 mutation / 10 years).
+- There is no "smoking gun", no answers in the DNA of ancient _Y. pestis._
+- Until...
 
 ---
 
-## Pandemic Response
+## The Pathogen (cont.)
 
-> In Alexandria, Egypt, rather than forcing people to adhere to strict public health measures, health
-officials enlisted local leaders to gain the trust and cooperation of the citizenry.
+<hr>
+
+[Susat et al. (2020)](https://www.nature.com/articles/s41598-020-71530-9)<br>_Yersinia pestis_ strains from Latvia show depletion of the _pla_ virulence gene
+
+- Plague (_Y. pestis_) can shuffle it's DNA around like a deck of cards!
+- Ravneet Sidhu, Dr. Hendrik Poinar, and I were inspired!
+- INSERT PLOT HERE!
+
+> ### We hypothesize that ancient *Yersinia pestis* during this period may have caused a less transmissible disease, with slower progression, and different symptoms than experienced in previous centuries.
+
+---
+
+## The Pathogen (cont.)
+
+<hr>
+
+![[@doucleffOmicronCauseLess_Title.png]]
+
+![[cbc_tracker_jan_2022.png]]
 
 ---
 
