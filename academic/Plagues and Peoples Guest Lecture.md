@@ -396,139 +396,68 @@ Chronic exhaustion, derailed lives and<br> no way out. This is long COVID.
 
 > ### How does a bacteria/virus change during a pandemic?
 
-- Plague researchers are looking for DNA mutations that could explain why the <u>Black Death was so fatal</u>: 75-200 million deaths.
+- The hunt begins! For DNA mutations that could explain why the <u>Black Death was so fatal</u>: 75-200 million deaths.
 - Problem: (_Y. pestis_) evolves <u>really</u> slowly ( 1 mutation / 10 years).
-- There is no "smoking gun", no answers in the DNA of ancient _Y. pestis._
+- There is no "smoking gun", no answers in the DNA of _Y. pestis._
 - Until...
 
 ---
 
+
 ## The Pathogen (cont.)
 
-<hr>
-
+<grid  drag="40 80" drop="5 17" flow="col" border="2px solid black">
 [Susat et al. (2020)](https://www.nature.com/articles/s41598-020-71530-9)<br>_Yersinia pestis_ strains from Latvia show depletion of the _pla_ virulence gene
 
 - Plague (_Y. pestis_) can shuffle it's DNA around like a deck of cards!
-- Ravneet Sidhu, Dr. Hendrik Poinar, and I were inspired!
+
+> ### The loss of a virulence gene may "have contributed to the disappearance of the second plague pandemic".
+
+</grid>
+
+<grid  drag="40 80" drop="-5 17" flow="col" border="2px solid black">
+**McMaster Ancient DNA Centre**<br>
+Ravneet Sidhu and Hendrik Poinar
+
 - INSERT PLOT HERE!
 
-> ### We hypothesize that ancient *Yersinia pestis* during this period may have caused a less transmissible disease, with slower progression, and different symptoms than experienced in previous centuries.
-
+</grid>
 ---
 
 ## The Pathogen (cont.)
 
 <hr>
 
-![[@doucleffOmicronCauseLess_Title.png]]
-
-![[cbc_tracker_jan_2022.png]]
-
----
-
-## Conclusion
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/@doucleffOmicronCauseLess_Title.png" 
+	>
+</img>
 
 ---
 
-## References
+## The Pathogen (cont.)
+
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/cbc_tracker_jan_2022.png" 
+	>
+</img>
 
 ---
 
-## Scratch
+## Wrap Up
 
-### Why Study Past Pandemics?
+<hr>
 
-- To seek comfort, in making the unknown familiar.
-- To find a way forward, in learning from our mistakes.
-
-### "Origins" (cause by what, where, when, why?)
-
-> "It is a disease we now know to be caused by a bacillus, Yersinia pestis ..." 
-> "It first appeared in the sixth century CE when the first identifiable pandemic occurred during the Byzantine Empire."
-> \- McMillen (2016, p. 7)
-
->_"It first appeared in the historical record in 1346 in the Black Sea port of Kaffa and spread inexorably across Europe."_
-> \- McMillen (2016, p. 10)
-
-> How can we know whether or not the disease that visited Constantinople in 542, Avignon in 1349, and London in 1665 was the same disease now known to be caused by Yersinia pestis? Some historians and biologists say they are not and stress possible differences in virulence; they claim that rats could not have traveled as fast as was necessary to spread the plague so quickly
-> \- McMillen (2016, p. 26)
-
-> By now, most historians, geneticists, and molecular biologists support the idea that the plague has always been Y. pestis. One reason for this is the emerging evidence from DNA sources originating in graves from antiquity, as well as from the late medieval and early modern periods.
-> \- McMillen (2016, p. 27)
-
-### Pandemic "Experience"
-- Long drawn out
-
-> _After the Black Death, loss of life on such a scale was not seen again._
-> \- McMillen (2016, p. 18)
-
-> _"Over the centuries Europeans adapted to the plague, even came to expect it, and developed ways of dealing with it."_
-> \- McMillen (2016, p. 10)
-
-> _"People became accustomed to plague as it became a regular feature of life in many places."_
-> \- McMillen (2016, p. 10)
-
-- [[pla Depletion]] Project!
-
-- How do pathogens (viruses, bacteria) evolve throughout a pandemic?
-- How does this affect their transmissibility, symptoms, severity?
-
-### Pandemic Response (public health measure)
-- Burials, graves
-
-> _"What they might have reflected and reinforced, however, was an emerging association between poverty and disease."_
-> ... plague preyed more upon the poor than the rich.
-> \- McMillen (2016, p. 20)
+### Objective 1
+---
 
 
-> _"...a move toward quarantine and isolation of both people and goods, travel restrictions, prohibitions on public gatherings"_
-> boards of health enforced laws regarding public health in times of plague. 
-> They had little effect; plague still came."_
-> \- McMillen (2016, p. 20)
+## Thank You!
 
-> Plague became a social problem. It took on meaning as a symbol of the divide between rich and poor. Fear of the plague and fear of the poor went hand in hand.
-> \- McMillen (2016, p. 21)
+<hr>
 
+### If you have any questions, Creighton Avery will <br>set up a forum for us to chat!
 
-> Not all states adopted quarantine with equal vigor. Those that did were in closer proximity to the sources of plague.
-> \- McMillen (2016, p. 21)
+### Otherwise, feel free to contact me by email at <eatonk3@mcmaster.ca>
 
-> In theory, household quarantine of the sick was a good idea; in practice it did little: plague victims disregarded orders to stay put, and there were simply too many of them. Quarantine as a public health measure and its effect on commerce would come under considerable fire in the eighteenth century as it increasingly began to seem like a holdover from a less enlightened time.
-> \- McMillen (2016, p. 21)
-
-> most of the strategies deployed against cholera had been developed during the second plague pandemic.
-> \- McMillen (2016, p. 23)
-
-> experience with pandemic cholera influence the ways in which the third plague pandemic would be managed
-> \- McMillen (2016, p. 23)
-
-
-
-
-
-> s. By then the focus had shifted to rats as the carrier of the disease, which in turn led to a focus on stopping plague at the ports of departure.
-> \- McMillen (2016, p. 28)
---> Remember when COVID was all about surface transmission? Cleaning groceries
-
-
-### Concepts
-
-- When and where has this disease appeared in the past?
-- Where did it "originate"?
-- How did it spread? Local re-introductions, vs. persistence?
-	- Community Transmission, "Imported", ""
-	- Border policy
-- How did it affect the people? (ex. Mortality)
-- How did the people respond?
-
-### The Big Problems
-
-- How do we put multi-dicsiplinary evidence together?
-- Different information and resolution
-	- History: Case Records (where and when)
-	- Genetic: Pathogen relationships
-	- Ecologists: Climate change (tree ring data)
-- No One Discipline can do it alone
-
-- Tree Ring Data: Seasonal, Annual Growth Ring
+(I'm away until January 24, apologies if my response to you is delayed.)
