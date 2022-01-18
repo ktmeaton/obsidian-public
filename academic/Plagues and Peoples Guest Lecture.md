@@ -29,7 +29,7 @@ Biologist | [Public Health Agency of Canada](https://www.canada.ca/en/public-hea
 
 ktmeaton@gmail.com
 
-note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a guest lecture for you today. I'm a colleague of Creighton's in the Department of Anthropology, I work in the McMaster Ancient DNA Centre, where I try to extract ancient bacteria and viruses from 
+note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a guest lecture for you today. I'm a colleague of Creighton's in the Department of Anthropology, I work in the McMaster Ancient DNA Centre, where I try to extract ancient bacteria and viruses from fossils and skeletal remains. And my specialty is the Plague, so I'm very excited to be here. I also work for the Public Health Agency of Canada, my role is to analyze the COVID sequencing that is going on across the country to try to understand what variants are emerging and how they're spreading. And so it's this nexus of plague and covid that has brought me here to you.
 
 ---
 
@@ -94,14 +94,14 @@ note: For today's lecture, I have 3 sources of inspiration. The first is that yo
 
 <hr>
 
-**What is the value in studying past pandemics?**
-
-1. How is the COVID pandemic similar to 14<sup>th</sup> century Plague?
-2. Objective 2
+### 1. How is the COVID pandemic <u>similar</u> to Plague?
+### 2. How is the COVID pandemic <u>different</u> from Plague?
+### 3. What is the value in studying past pandemics?
 
 note: So with those is mind, I have two objectives, which is to say that by the end of this presentation, you should be able to answer the following questions.
 
 1. How is COVID similar to plague in the 14th century? And conversely, how are they different?
+
 
 ---
 
@@ -469,6 +469,8 @@ Is it "normal" to have such long-lasting symptoms, to seek comfort.
 - There is no "smoking gun", no answers in the DNA of _Y. pestis._
 - Until...
 
+note: The last aspect of pandemic experience I want to talk about, is how the actual pathogen changes. A critical line of research is trying to figure out why past pandemics of plague have been so fatal. So there has been hope that we might be able to find a mutation that makes it more transmissible, or worse systems.
+
 ---
 
 
@@ -488,11 +490,19 @@ Is it "normal" to have such long-lasting symptoms, to seek comfort.
 Ravneet Sidhu and Hendrik Poinar
 
 <img 
-	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/denmark_timeline_simplified.png" 
-	>
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6e7d72dfb/academic/pla_depletion_simplified.png">
 </img>
 
 </grid>
+
+note: Really recent study found the plague bacteria did change during the pandemic. It evolved to be less virulent. And this was really hard to figure out, because plague can shuffle.
+
+These researchers think that this key mutation, is why that plague pandemic disappeared.
+
+So we at the Ancient DNA Centre, were really excited by this and dug a little deeper. We studied all the ancient DNA samples from plague collected before, during, and after the Black Death. Which we've plotted here. The X axis is time date when the DNA sample, or the individual, died. The Y axis is a scale of whether the bacteria had a high or low amount of this new mutation. We found that before 1400 (Black Death) time, these samples are normal, which is full virulence. And then something strange happens after 1400, and most samples become mutated to be possible a less deadly variant. There are a few outliers, so we're investigating this a bit further.
+
+I bring this study up, because this is a common question in the news lately, is COVID mutating to become less deadly, less severe cases, less hospitalizations.
+
 ---
 
 ## The Pathogen (cont.)
@@ -504,14 +514,25 @@ Ravneet Sidhu and Hendrik Poinar
 	>
 </img>
 
+note: This article came out last week as a discussion of the latest variant Omicron, and how it might be following this trajectory. The problem is, that in the last week, it's not looking so good now.
+
 ---
 
 ## The Pathogen (cont.)
+
+[D'Andrea (2022)](https://globalnews.ca/news/8511154/omicron-canada-covid-modelling/)<br>
+Canada in for ‘intense’ weeks of Omicron infections, hospitalization surges: data
+
+[CBC Coronavirus Tracker](https://newsinteractives.cbc.ca/coronavirustracker/)
 
 <img 
 	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/cbc_tracker_jan_2022.png" 
 	>
 </img>
+
+note: The narrative has now changed, omicron is now associated with the greatest amount of hospitalizations in Canada. 
+
+So there is a hope, that in studying the dynamics of other diseases, even plague from 100s of years ago, we might be able to make better epidemiological models, and make better predictions and policy recommendations for public health.
 
 ---
 
@@ -519,7 +540,48 @@ Ravneet Sidhu and Hendrik Poinar
 
 <hr>
 
-### Objective 1
+### 1. How is the COVID pandemic <u>similar</u> to Plague?
+
+- They are among the 7 deadliest pandemics in human history.
+- It's <u>extremely challenging</u> to accurately diagnosis. DNA/RNA sequencing helps resolve ambiguity.
+- We don't know what events set these pandemic in motion.
+- Funerary customs adapt in diverse ways.
+- We see both "catastrophic" burials (mass graves), but also resilience in making sure the dead are cared for properly.
+- There are long-term effects on human biology.
+
+
+---
+
+## Wrap Up
+
+<hr>
+
+### 2. How is the COVID pandemic <u>different</u> from Plague?
+
+- COVID has a new variant every couple months.
+- Plague stays genetically the same for years if not decades.
+- The poor who survived the Black Death were empowered.
+- The poor who survived COVID are facing greater inequalities.
+- Plague evolved to be <u>less virulent</u> during the pandemic.
+- Unknown whether COVID will become less virulent.
+
+
+---
+
+## Wrap Up
+
+<hr>
+
+### 3. What is the value in studying past pandemics?
+
+- Seek comfort, in knowing what is "normal" in human history. 
+- Develop better predictive models and public health policies.
+- Learn from past mistakes.
+
+[Vazquez (2020)](https://medicine.yale.edu/news-article/calling-covid-19-the-wuhan-virus-or-china-virus-is-inaccurate-and-xenophobic/)<br>
+Calling COVID-19 the “Wuhan Virus” or “China Virus” is inaccurate and xenophobic
+
+
 ---
 
 
