@@ -18,18 +18,18 @@ openButton: true
 ---
 
 
-## Title
-
+## Pandemic Parallels
+### How similar is COVID-19 to the Plague?
 <hr>
 
-Katherine Eaton
+Katherine Eaton                            
 
 PhD. Candidate | [McMaster Ancient DNA Centre](https://socialsciences.mcmaster.ca/mcmaster-ancient-dna-centre)<br>
 Biologist | [Public Health Agency of Canada](https://www.canada.ca/en/public-health/programs/national-microbiology-laboratory.html)
 
 ktmeaton@gmail.com
 
-note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a guest lecture to you today. I'm a colleague of Creighton's in the Department of Anthropology. 
+note: Hello! My name is [[Katherine Eaton]] and I've been invited to give a guest lecture for you today. I'm a colleague of Creighton's in the Department of Anthropology, I work in the McMaster Ancient DNA Centre, where I try to extract ancient bacteria and viruses from 
 
 ---
 
@@ -59,6 +59,17 @@ _I acknowledge the traditional land on which I reside, is in Treaty Six Territor
 	 width="250px">
 </img>
 
+note: I'd like to start out today with a land acknowledgement. While I live in Edmonton, Alberta...
+
+- _nêhiyaw_ (NAY-hee-yow)
+- Dené (DEH-neyh) (short)
+- Anishinaabe (AH-nish-in-ah-abay)
+- Nakota Isga (Na-KOHHH-tah EE-ska)
+- Niitsitapi (Nit-si-tuhp-ee)
+- Métis’ (May-tea)
+
+To learn more about the history of where we live, there's two resources I really enjoy. One is native-land.ca, where you can see all the nations that are found within Canada. And also firstnations.org has published free cookbooks, and I've really enjoyed learning about dishes made with plants that are found in my backyard.
+
 </grid>
 ---
 
@@ -72,6 +83,11 @@ _I acknowledge the traditional land on which I reside, is in Treaty Six Territor
 	- Resonate with our current pandemic experience.
 	- McMaster researchers are actively investigating.
 
+note: For today's lecture, I have 3 sources of inspiration. The first is that you have a required assignment about your own experiences living through a pandemic. The other is the first chapter in McMillen, concerning plague. So as I read that chapter, I looked for two things.
+
+1. The first is concepts that resonate with our current pandemic experience. So I've pulled out some quotes that are about life in 1350, but sure sound awfully familiar to today. 
+2. And the second, are outstanding questions concerning plagues and pandemics, that researchers at McMaster are actively investigating. So I thought I would give you the inside scoop on some upcoming projects.
+
 ---
 
 ## Objectives
@@ -80,8 +96,12 @@ _I acknowledge the traditional land on which I reside, is in Treaty Six Territor
 
 **What is the value in studying past pandemics?**
 
-1. What is "Plague".
+1. How is the COVID pandemic similar to 14<sup>th</sup> century Plague?
 2. Objective 2
+
+note: So with those is mind, I have two objectives, which is to say that by the end of this presentation, you should be able to answer the following questions.
+
+1. How is COVID similar to plague in the 14th century? And conversely, how are they different?
 
 ---
 
@@ -98,32 +118,10 @@ The Long View: History’s Seven Deadliest Plagues
 	 width="550px">
 </img>
 
-<!--
-<grid  drag="25 15" drop="5 -1" flow="col" border="2px solid black">
+note: Before we dive into these detailed questions, we need some context. This is an infographic that I really like that is about the 7 deadliest plagues in human history. Each bubble is an epidemic or series of epidemics with tremendous mortality. The X axis is a timeline, from the 500s to present day. The Y axis is how long the epidemic lasted for. 
+The most fatal pandemic in human history is the Black Death (20 years). This event is not only a plague in the colloquial sense, referring to a really terrible event, but also a specific biomedical term for a disease, plague.
 
-**First Plague Pandemic**<br>
-6<sup>th</sup> - 8<sup>th</sup> Century CE<br>
-~200 years
-
-</grid>
-
-<grid  drag="28 15" drop="35 -1" flow="col" border="2px solid black">
-**Second Plague Pandemic**<br>
-14<sup>th</sup> - 19<sup>th</sup> century CE<br>
-~500 years
-</grid>
-
-<grid  drag="25 15" drop="-5 -1" flow="col" border="2px solid black">
-**Third Plague Pandemic**<br>
-19<sup>th</sup> - 20<sup>th</sup> century CE<br>
-~100 years
-</grid>
--->
-
-note: This infographic comes from an article by Prabu and Gergen (2021). I like it because...
-The X-axis is a timeline, going from 500 CE to present day. And the Y-axis is how long the series of epidemics lasted.
-Black Death is eye-catching.
-- What is missing are the pandemic durations.
+And in this infographic, there are three bubbles that are truly the disease plague, and that is the plague of justinian, the Black Death, and the Third Plague.
 
 ---
 
@@ -158,6 +156,17 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 
 </grid>
 
+note: To try to clear up this confusion, I've tried here to describe the disease plague, by comparing it to something familiar to us  COVID-19. So What is Plague? Plague is bacterial disease as opposed to a virus. Plague is also mainly a disease of the lymphatic system, which is a circulatory system in the body. A common symptom of plague is buboes, which are swollen lymph nodes, often found in the neck, armpit, and groin. Because of this, plague is rarely transmitted between humans. It's possible, but considered rare.
+
+In contrast, COVID is primarily a respiratory disease, so infection of the lungs, and it definitely spreads between humans.
+
+And the last interesting feature is evolutionary rate. COVID is a rapidly evolving organism, 2 mutations every month. This is why, every couple of months, we have a new variant, with new characters, often a new wave.
+
+Plague evolves really really slowly. It's DNA accumulates 1 mutation every approximately 10 years. So the Black Death we talked about, was pretty much just 1 variant. But it was a very effective one at that.
+
+So to recap, these three epidemics, are all caused by the bacterial disease plague. But then again... how do we know that? Are we sure it's plague?
+
+
 ---
 
 ## Are We Sure?
@@ -169,8 +178,14 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 > ### You wake up sneezing, with a sore throat and a cough.<br>
 > ### Do you have COVID? Or a cold? Or a flu? Or fatigue?
 
-- Retrospective diagnosis of 1000+ year old diseases is <u>really hard</u>.
+- Diagnosis of 1000+ year old diseases is <u>really hard</u>.
 - Ambiguous descriptions of "pestilence", inconsistent symptoms, regional variation, etc. (McMillen, 2016, p. 26-27)
+
+note: This is where we encounter the problem that diagnosing disease is difficult. Many of us have experienced this on a personal level, for example... You have to do the mental gymnastics. Even when we're examining our own body, where we are the experts, it's hard to know.
+
+Which should put it into perspective, that trying to diagnosis disease from written descriptions that 100s if not 1000 years old is extremely difficult.
+
+The symptoms can be very ambiguously described, can be inconsistent between writers, there's regional variations, tons of problems. And McMillen touches briefly on the debate about the Black Death in Chapter 1.
 
 ---
 
@@ -197,6 +212,11 @@ Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2
 > 
 </grid>
 
+note: But, in 2011 there was a very exciting development in this debate. A team of researchers excavated victims of the Black Death, and extracted DNA from the skeletal tissue. And in that DNA they found molecules of the plague bacterium, Y. pestis. And they were able to reconstruct the entire genome of the bacteria that had infected, and presumably killed these individuals.
+
+You may recognize some of the authors because they are faculty at McMaster (Golding, Earn, Poinar)
+
+So this study was exciting evidence, but not irrefutable proof (if such a thing exists). Because correlation is not causation. So Dr. Poinar and I created a larger study to examine this question.
 
 ---
 
@@ -212,16 +232,25 @@ Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_
 - Historical evidence of _pestilence_: <u>1350 CE - 1650 CE</u>
 - We screened the DNA for plague-specific molecules (_Y. pestis_).
 
+note: We had an idea, let's try to study the DNA of people that died before, during, and after medieval plague. In our region of study, there is a pestilence, presumed to be plague, from 1350 - 1650. So we extracted DNA from people in archaeological sites dated to 1000 CE - 1800 CE. 
+
 ---
 
 ## Results
 
 <hr>
 
-- DNA evidence <u>perfectly aligns</u> with the historical evidence.
-- INSERT TIMELINE IMAGE.
+- DNA evidence almost <u>perfectly aligns</u> with the historical evidence.<br>
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/9a5a405/academic/denmark_timeline_simplified.png" 
+	width=400px>
+</img>
 - Where is _Y. pestis_ before the Black Death?
 - Why did this plague pandemic end?
+
+note: And what we found was that the DNA evidence of Yersinia pestis, Plague, almost perfectly aligns with the historical record. Plague seems to appear around 1350, the time of the Black Death, and disappears around 1650. Which helps us strengthen the argument that the Black Death was most probably caused by the a novel introduction of _Y. pestis_ to these populations. 
+
+But this finding also leaves several questions outstanding. Where is _Y. pestis_ before the Black Death, why does it suddenly appear, last for 300 years, and then disappear? These questions, are still heavily debated and intensively researched.
 
 ---
 
@@ -240,6 +269,12 @@ How WHO is working to track down the animal reservoir of the SARS-CoV-2 virus.
 
 >### "...understanding how an epidemic began is essential to preventing further introductions to the human population."
 
+note: And I bring these questions up specifically, because we are also grappling with these unknowns with regards to COVID. There are several publications debating where COVID first appeared, with a study proposing that it may have been in Italy before China.
+
+I think we're all asking when the current pandemic will end. And if we had a better idea of why pandemics in the past ended, we might have some more satisfying answers to that question. Because ultimately, if we can understand why epidemics begin, we might be able to prevent them in the future. 
+
+So now that we've talked about disease exposure, let's talk about disease experience.
+
 ---
 
 ## Experience and Response
@@ -251,6 +286,12 @@ How WHO is working to track down the animal reservoir of the SARS-CoV-2 virus.
 
 > ### _"Over the centuries Europeans adapted to the plague, even came to expect it, and developed ways of dealing with it ... it became a regular feature of life in many places."_ 
 > ### - McMillen (2016, p. 10)
+
+note: So when I was reading McMillen, there were two quotes that resonated with me. The first... and this caught my attention, because there's a lot of hope that first waves of COVID were the worst, and that's not going to happen again.
+
+The second, is that... so the key phrase there is over the centuries. Reminder (go back to infographic), pandemics of this scale tend to last a long time. I'm not saying we're going to have centuries of COVID, important point of reflection that the HIV crisis is still ongoing. It just has such a disproportionate distribution (mostly in southern Africa), that we in North America, tend to forget that other countries now have double pandemics.
+
+So with regards to pandemic experience, I'm going to explore three aspects. But the first is going to be the dead.
 
 ---
 
@@ -289,6 +330,9 @@ How WHO is working to track down the animal reservoir of the SARS-CoV-2 virus.
 
 </grid>
 
+note: The Black Death, as the most fatal pandemic of all time, introduced a societal crisis. When 50% of the population dies, what do you do with the bodies? A defining feature of this time period, are plague pits or mass graves. In 2020, I collaborated with archeologists to study a Mass Grave in England. My role was to find DNA evidence of plague, which I did, which helped us link this cemetery to the Black Death. So one hand, we have evidence that a pandemic changes one of the most important rituals in society, which is treatment of the dead. In the case of England, this is burial. However, what we observed is that even those these bodies were buried in a pit, they were treated with great care, being wrapped in special shrouds, and being placed precisely. 
+
+This changing of rituals, is something we're also seeing during COVID. This piece from NPR discusses how families are struggling in Baghdad because they're not allowed to bury their loved ones. So they're practice had to adapt, but they found creative solutions to retain the most important aspects of burial. And I bring this piece of, because it reflects a really important trend in plague research and covid reporting:
 
 ---
 
@@ -317,6 +361,15 @@ Why Weren’t These Black Death Victims Buried in Mass Graves?<br>
 - How do people create stability to uphold their values?
 
 </grid>
+
+note: Which is, that early plague research and early COVID reporting, has focused on catastrophe. These are all the ways are lives are changing, nothing will be the same every again, nothing will be normal, we have "deviant" practices.
+
+But what has recently been realized in plague research, is that these examples are extremes and not representative of the norm.
+
+In the previous section, I talked about our study of the Black Death in Denmark. Populations in Denmark did not use mass graves at all. You actually can't tell, just by looking at the graves, whether there was an epidemic or not. 
+
+So in plague research we're seeing a shift in focus towards describing diversity of practices and how people were resilient. Asking the question, in a time of crisis, how do people create stability so that they can uphold their values.
+
 
 ---
 
@@ -357,6 +410,13 @@ America's 1% Got Way Richer During the Pandemic
 
 
 </grid>
+
+note: Speaking of the people  who survived, let's talk about the living. So McMillen in Chapter 1 has some interesting tidbits about how the Black Death affected and changed society. Observation 1. ... preyed upon the poor. Which as a fact, is true of most diseases. Those who are more financially stable, are less vulnerable, because they have more resources to avoid getting sick or to seek treatment.
+
+The Black Death had a unique affect, in that it oddly empowered the poor. Because it created a labor shortage. The manual laborers had the power to negotiate for better wages and living conditions. And there's an amusing quote later from a noble talking about how he's bitter that his servants are now the masters and they're living a luxurious life.
+
+COVID, we're seeing the opposite. Inequalities that existed beforehand, are getting worse. Laborers are not being empowered. Instead the poor get poorer and the rich get richer.
+
 ---
 
 ## The Living
@@ -386,6 +446,14 @@ Chronic exhaustion, derailed lives and<br> no way out. This is long COVID.
 > "...about 10 per cent of Canadians who contract COVID-19 will suffer prolonged symptoms."
 
 </grid>
+
+note: In contrast to societal changes, there are also biological changes. Jennifer Klunk, also from McMaster, has discovered that the Black Death actually changed human biology. Good for them, because it gave those people a selective advantage. 
+
+The problem, is that those same mutations, which were helpful against plague, now actually make you more susceptible to auto-immune diseases. 
+
+This discussion of long-term effects reminds me of current discussions about long COVID. Which is a condition, in which you never truly recover. And these comparisons are really useful because they help us figure out our expectations.
+
+Is it "normal" to have such long-lasting symptoms, to seek comfort.
 
 
 ---
@@ -419,7 +487,10 @@ Chronic exhaustion, derailed lives and<br> no way out. This is long COVID.
 **McMaster Ancient DNA Centre**<br>
 Ravneet Sidhu and Hendrik Poinar
 
-- INSERT PLOT HERE!
+<img 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/denmark_timeline_simplified.png" 
+	>
+</img>
 
 </grid>
 ---
@@ -429,7 +500,7 @@ Ravneet Sidhu and Hendrik Poinar
 <hr>
 
 <img 
-	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/6dfb77901/academic/@doucleffOmicronCauseLess_Title.png" 
+	 src="https://raw.githubusercontent.com/ktmeaton/obsidian-public/9a5a405a6/academic/@doucleffOmicronCauseLess_Title.png" 
 	>
 </img>
 
