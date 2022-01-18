@@ -97,18 +97,14 @@ tags: 📰
 
 ### Misc
 
-- Tip Labels: 
-	- Canada/BC-BCCDC-107270|2021-06-09
-	- Mexico/CMX-INMEGEN-06-01-1|2021-05-30
-	- USA/CA-CDPH-3000028497|2021-03-03
+- Strategies for connections at multiple location.
 
-- Country/Province-Centre-ID|Collection Date
-- This could easily be split up for different.
+Single source -> Multiple target
+Multiple source -> Single target
+Multiple source -> Multiple target
 
-## Import/Export
-
-- Import into Canada [B.1.1.291]
-	![[covizu_import_canada.png]]
+Easiest: collapse to first collected
+Majority Vote
 
 
 ##  API
