@@ -138,3 +138,12 @@ done;
 1. Run Pipeline
 	```bash
 	```
+
+## prep_legacy_input_sra.sh
+
+```bash
+SRA_DIR="/2/scratch/keaton/plague-phylogeography/results/data/sra/SAMEA7313236_38/";
+LEGACY_DIR="/home/poinarlab/Projects/Plague/PlaDepletion/data/Test";
+
+/home/poinarlab/pipeline/scripts/prep_legacy_input_sra.sh $LEGACY_DIR $SRA_DIR;
+```

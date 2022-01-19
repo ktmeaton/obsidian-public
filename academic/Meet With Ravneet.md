@@ -11,6 +11,29 @@ status: done
 
 # Meet With Ravneet
 
+## [[2022-01-19]]
+
+### Example: _Yersinia pestis_ GLZ002.A
+
+#### Download from SRA Structure
+
+- BioSample: [SAMEA6812877](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMEA6812877)/
+	- Run: [ERR4093961](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR4093961)/
+		- R1: ERR4093961_1.fastq.gz
+		- R2: ERR4093961_2.fastq.gz
+	- Run: [ERR4093962](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR4093962)/
+		- R1: ERR4093962_1.fastq.gz
+		- R2: ERR4093962_1.fastq.gz 
+
+#### Recommended Structure for Pipeline
+
+- SecondPandemic/
+	- Sample_SAMEA6812877/
+		- SAMEA6812877_ERR4093961_L001_R1_001.fastq.gz
+		- SAMEA6812877_ERR4093961_L001_R2_001.fastq.gz
+		- SAMEA6812877_ERR4093962_L001_R1_001.fastq.gz
+		- SAMEA6812877_ERR4093962_L001_R2_001.fastq.gz
+
 ## [[2021-08-20]]
 
 - [[How much adapters in US and Madagascar]]
