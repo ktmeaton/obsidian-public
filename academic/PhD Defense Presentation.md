@@ -110,12 +110,13 @@ The Long View: History’s Seven Deadliest Plagues
 \- Swollen, necrotic lymph nodes.
 
 2. **The deadliest pandemic!**<br>
-\- Black Death
+\- The Black Death
 
 3. **It keeps coming back!**<br>
-\- Plague of Justinian (541 CE)<br>
-\- Black Death (1334 CE)<br>
-\- The Third Plague (1855 CE)<br>
+\- Plague of Justinian (541)<br>
+\- Black Death (1334)<br>
+\- The Third Plague (1855)<br>
+\- Madagascar Outbreak (2017)
 
 4. **It's everywhere**!<br>
 \- Has a persistent presence on every continent except Australia and Antarctica.
@@ -125,9 +126,32 @@ The Long View: History’s Seven Deadliest Plagues
 
 --
 
-## Ancient Plague
+## Enigmatic Epidemiology
 
 <hr>
+
+
+> ### Although researchers have been studying plague for hundreds of years, there are many aspects of its epidemiology that are enigmatic.
+
+- Why does plague suddenly appear in a population?
+- In many areas, limited surviving historical evidence.
+- Ancient DNA offers a new window into the past.
+![[@bos2011DraftGenomeYersinia_Title.png|400]]
+
+--
+
+## The Start of a PhD
+
+> ### Let's try to expand our knowledge of _where_ and _when_ plague appeared in the past.
+- Molecular detection of _Y. pestis_ in 1000+ skeletal remains.
+- Sampling ages range from the 9<sup>th</sup> to the 19<sup>th</sup> century CE. 
+- Wide geographic diversity, across Europe, Africa, and Asia.
+
+
+<hr>
+
+- 30% of samples originated in Denmark (\~300 individuals).
+- We had the greatest success in finding _Y. pestis_ in Denmark.
 
 ---
 
@@ -367,6 +391,7 @@ Katherine Eaton, Leo Featherstone, Sebastian Duchene, Ann G. Carmichael, Nükhet
 
 - Scandinavia is underrepresented in the historical archives.
 - Plague: 1350-1657 CE.
+- Did plague appear at any other time?
 </grid>
 
 --
