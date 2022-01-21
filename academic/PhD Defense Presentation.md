@@ -80,24 +80,54 @@ To learn more about the history of where we live, there's two resources I really
 ---
 
 
-## Disease Exposure and Experience
+## Infectious Disease
 
 <hr>
 
+> ### How does disease <u>exposure</u> and <u>experience</u> change over time and between human populations?
 
----
+- What causes an epidemic to appear?
+- How does the disease spread?
+- Why are some countries affected more than others?
+- How do people respond? How is society reshaped?
+
+--
 
 ## Plague
 
 <hr>
 
+<grid  drag="60 70" drop="1 20" flow="col">
+![[Historys 7 Deadliest Plagues Annotate.png]]
+[Prabhu and Gergen (2021)](https://www.gavi.org/vaccineswork/long-view-historys-seven-deadliest-plagues)<br>
+The Long View: History’s Seven Deadliest Plagues
 
----
+</grid>
+<grid  drag="45 70" drop="-1 20" flow="col">
+
+1. **Gruesome bacterial disease:**<br>
+\- _Yersinia pestis_<br>
+\- Swollen, necrotic lymph nodes.
+
+2. **The deadliest pandemic!**<br>
+\- Black Death
+
+3. **It keeps coming back!**<br>
+\- Plague of Justinian (541 CE)<br>
+\- Black Death (1334 CE)<br>
+\- The Third Plague (1855 CE)<br>
+
+4. **It's everywhere**!<br>
+\- Has a persistent presence on every continent except Australia and Antarctica.
+
+</grid>
+
+
+--
 
 ## Ancient Plague
 
 <hr>
-
 
 ---
 
@@ -176,10 +206,14 @@ note:
 <hr>
 
 - Wrote software to automate data collection and organization.
-- Written in `python`, executed as a `command-line` program.
+- Written in python, executed as a command-line program.
 - Fetches XML records from NCBI, formats into a pretty table.
 
+<!--
 ![NCBImeta user workflow.](https://rawcdn.githack.com/ktmeaton/NCBImeta/ae039b34/paper/figures/NCBImeta_Workflow.png)
+-->
+
+![[NCBImeta Table Example.png|800]]
 
 --
 
@@ -189,7 +223,12 @@ note:
 
 ### Efficient and comprehensive metadata retrieval from NCBI databases
 
-![[NCBImeta Table Example.png]]
+Katherine Eaton
+
+1. Saved me from having to click through 1000+ web pages...
+1. Can find and collect data split across multiple databases.
+1. Emphasizes real-time access to online repositories.
+1. Provides a more user-inclusive experience to metadata retrieval.
 
 
 --
@@ -199,7 +238,7 @@ note:
 <hr>
 
 
-![[phd_overview_fade_project1_check.png]]
+![[phd_overview_fade_project1_check.png|800]]
 
 --
 
@@ -208,7 +247,7 @@ note:
 <hr>
 
 
-![[phd_overview_fade_project2.png]]
+![[phd_overview_fade_project2.png|800]]
 
 ---
 
@@ -267,8 +306,8 @@ note:
 
 <hr>
 
-- Split up _Yersinia pestis_ by genetic population.
-- Estimate a clock model independently for each population.
+- Split up _Yersinia pestis_ by population (shared ancestry).
+- Estimate a "clock" independently for each population.
 
 ![[rtt_example_2.png|650]]
 
@@ -280,8 +319,80 @@ note:
 
 ### Insight and issues from the global phylogeny of _Yersinia pestis_
 
+Katherine Eaton, Leo Featherstone, Sebastian Duchene, Ann G. Carmichael, Nükhet Varlık, G. Brian Golding, Edward C. Holmes, Hendrik N. Poinar
+
+1. Devised a method to estimate robust divergence dates in _Y. pestis_.
+1. Pandemics may have _<u>emerged far earlier</u>_ than previously thought.
+1. Plague evolves _<u>very slowly</u>_: ~1 mutation every 10 years.
+1. Spread cannot be reconstructed from genetic evidence alone.
+
+
+--
+
+## Overview
+
+<hr>
+
+
+![[phd_overview_fade_project2_check.png|800]]
+
+--
+
+## Overview
+
+<hr>
+
+
+![[phd_overview_fade_project3.png|800]]
+
 ---
 
+## 3. Case Study
+
+<hr>
+
+### _<u>When</u>_ does plague appear in Denmark and<br> <u>where</u> did it come from?
+
+
+<grid  drag="45 55" drop="1 40" flow="col" border="2px solid black">
+
+### Background
+- Scandinavia has a uniquely long history of plague.
+- Ancient _Y. pestis_ found in Sweden (~5000 YBP).
+</grid>
+
+<grid  drag="45 55" drop="-1 40" flow="col" border="2px solid black">
+
+### Problem
+
+- Scandinavia is underrepresented in the historical archives.
+- Plague: 1350-1657 CE.
+</grid>
+
+--
+
+## Solution
+
+<hr>
+
+<grid  drag="60 70" drop="1 20" flow="col">
+
+![[denmark_map_simplified.png]]
+
+</grid>
+<grid  drag="45 70" drop="-1 20" flow="col">
+- Sampled 13 archaeological sites.
+
+- A total of 298 individuals.
+
+- Dated to 1000 - 1800 CE.
+
+- Molecular screening for _Y. pestis_.
+
+- Phylogenetic reconstruction.
+
+</grid>
+--
 
 ## Plague in Denmark (1000-1800)
 
@@ -289,4 +400,42 @@ note:
 
 ### A longitudinal study of _Yersinia pestis_
 
+Katherine Eaton, Ravneet Sidhu, Jennifer Klunk, Julia Gamble, Jesper Boldsen, Ann G. Carmichael, Nükhet Varlık,  Sebastian Duchene, Leo Featherstone, Vaughan Grimes, G. Brian Golding, Sharon DeWitte, Hendrik N. Poinar
+
+<grid  drag="60 70" drop="1 35" flow="col">
+
+
+![[denmark_timeline_simplified2.png|400]]
+
+</grid>
+<grid  drag="45 70" drop="-1 35" flow="col">
+
+
+1. Uncover undocumented pathogens.
+
+1. Danish plague is most closely related to isolates in the Baltics (Germany, Lithuania, Poland).
+
+1. Reveals new global connections, as Danish _Y. pestis_ is ancestral to modern plague outbreaks.
+
+1. The first positivity rate of historical _Y. pestis_ (3.3 - 14.3%).
+
+1. The timeline of _Y. pestis_ <u>aligns almost perfectly</u> with historical records of a mysterious _pestilence_ in Denmark.
+
+</grid>
+
+--
+
+## Overview
+
+<hr>
+
+
+![[phd_overview_fade_project3_check.png|800]]
+
 ---
+
+
+## Thank You!
+
+<hr>
+![[PhD Defense Acknowledgements.png|900]]
