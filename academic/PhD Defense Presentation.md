@@ -18,6 +18,8 @@ showNote: true
 progress: true
 openButton: true
 css: [css/phd_defense_presentation.css]
+transition: none
+enableMenu: true
 ---
 
 
@@ -78,12 +80,24 @@ To learn more about the history of where we live, there's two resources I really
 ---
 
 
-## Overview
+## Disease Exposure and Experience
 
 <hr>
 
 
-note: In this presentation, 
+---
+
+## Plague
+
+<hr>
+
+
+---
+
+## Ancient Plague
+
+<hr>
+
 
 ---
 
@@ -91,13 +105,83 @@ note: In this presentation,
 
 <hr>
 
-<img 
-	 src="map_omicron_2022-01-19.png" 
-	 style="border: 1px solid black;"
-	 >
-</img>
+![[phd_overview_1.png|800]]
+
+--
+
+## Overview
+
+<hr>
+
+![[phd_overview_2.png|800]]
+
+--
+
+## Overview
+
+<hr>
+
+![[phd_overview_3.png|800]]
+
+--
+
+## Overview
+
+<hr>
+
+![[phd_overview.png|800]]
+
+--
+
+## Overview
+
+<hr>
+
+![[phd_overview_fade_project1.png|800]]
 
 ---
+
+## 1. Collection
+
+<hr>
+
+### How do I access DNA collected by _<u>other</u>_ researchers?
+
+<grid  drag="45 65" drop="1 30" flow="col" border="2px solid black">
+
+### Background
+- Researchers are required to make their data publicly available.
+- National Centre for Biotechnology Information (NCBI).
+</grid>
+
+<grid  drag="45 65" drop="-1 30" flow="col" border="2px solid black">
+
+### Problem
+
+- NCBI has limited options for browsing large amounts of data.
+- Information is split across multiple databases.
+</grid>
+
+
+note: 
+
+- Avalanche of data, new plague genomes published weekly, 1000+.
+- Manual tracking was impossible, too much time, too many errors my excel sheet.
+- It'd be like if half of your book was in one library section.
+
+--
+
+## Solution
+
+<hr>
+
+- Wrote software to automate data collection and organization.
+- Written in `python`, executed as a `command-line` program.
+- Fetches XML records from NCBI, formats into a pretty table.
+
+![NCBImeta user workflow.](https://rawcdn.githack.com/ktmeaton/NCBImeta/ae039b34/paper/figures/NCBImeta_Workflow.png)
+
+--
 
 ## NCBImeta
 
@@ -105,8 +189,90 @@ note: In this presentation,
 
 ### Efficient and comprehensive metadata retrieval from NCBI databases
 
+![[NCBImeta Table Example.png]]
+
+
+--
+
+## Overview
+
+<hr>
+
+
+![[phd_overview_fade_project1_check.png]]
+
+--
+
+## Overview
+
+<hr>
+
+
+![[phd_overview_fade_project2.png]]
+
 ---
 
+## 2. CONTEXT
+
+<hr>
+
+### Can DNA help estimate _<u>when</u>_ and _<u>where</u>_ plague was in the past?
+
+<grid  drag="95 65" drop="1 30" flow="col" border="2px solid black">
+
+### Background
+
+
+![[clock_example_1.png|800]]
+
+</grid>
+
+--
+
+## 2. CONTEXT
+
+<hr>
+
+### Can DNA help estimate _<u>when</u>_ and _<u>where</u>_ plague was in the past?
+
+<grid  drag="95 65" drop="1 30" flow="col" border="2px solid black">
+
+### Background
+
+
+![[clock_example.png|800]]
+
+</grid>
+
+--
+
+## 2. CONTEXT
+
+<hr>
+
+### Can DNA help estimate _<u>when</u>_ and _<u>where</u>_ plague was in the past?
+
+<grid  drag="95 65" drop="1 30" flow="col" border="2px solid black">
+
+### Problem
+
+![[rtt_example_1.png|650]]
+
+
+</grid>
+
+--
+
+## Solution
+
+<hr>
+
+- Split up _Yersinia pestis_ by genetic population.
+- Estimate a clock model independently for each population.
+
+![[rtt_example_2.png|650]]
+
+--
 
 ## Plagued by a Cryptic Clock
 

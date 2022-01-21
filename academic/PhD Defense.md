@@ -12,7 +12,7 @@ time: 08:00
 
 # PhD Defense
 
-![[PhD Defense Information.png]]
+![[PhD Defense Information.png|500]]
 
 ## Preparation
 
@@ -31,6 +31,99 @@ time: 08:00
 - Whether radiocarbon dating data were obtained on the Danish samples.
 - The main limitations in current approaches to studying plague evolutionary history. 
 - Possible experimental design to study (epi)genetic changes in the host genome as a response to past pandemics and more.
+
+
+
+### [[BEAST]] and MCMC (Markov Chain Monte Carlo)
+
+#### Algorithms
+
+---
+
+```ad-note
+![[Bayes Theorem.png|500]]
+The denominator (p(D) is the marginal likelihood.
+```
+
+```ad-note
+title: Markov Chain
+icon: dog
+A stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
+```
+
+```ad-note
+title: Monte Carlo
+icon: dog
+- Monte Carlo methods typically assume that we can efficiently draw samples from the target distribution. 
+- From the samples that are drawn, we can then estimate the sum or integral quantity as the mean or variance of the drawn samples.
+```
+
+- Standard MCMC inference of posterior distributions avoids estimating the normalization constant or marginal likelihood p(D|H)
+
+---
+
+- Stepping Stone Sampling
+- [[BEAST]] v1 vs v2
+- Marginal Likelihood
+
+#### Model Comparison
+
+- Bayes Factors:
+	![[Bayes Factor Equation.png]]
+	Where p(D|M) is the marginal likelihood of model M. Calculation of the marginal likelihood of model M requires integration of its likelihood across model parameter values θ, weighted by the model's prior distribution
+	![[Marginal Likelihood Formula.png]]
+
+
+	For our model comparison in BETS, we estimated (log) marginal likelihoods using generalised stepping-stone sampling (Fan et al. 2011; Baele, Lemey, and Suchard 2016).
+
+Path sampling (under the term ‘thermodynamic integration’; Lartillot and Philippe, 2006), stepping-stone sampling (Xie et al., 2011) and generalized stepping-stone sampling (Fan et al., 2011) with the latter approach currently only applicable on a fixed underlying topology. We aim to relax this latter assumption by providing two working distributions in a genealogical framework (Baele et al., 2016, Syst. Biol.)
+
+##### Stepping Stone (SS)
+
+![[Stepping Stone.png]]
+
+This method generalizes the standard SS approach (Xie et al. 2011) by making use of a “working” distribution that is parameterized using samples from the posterior distribution. The authors show that if this working distribution exactly matches the posterior distribution, the marginal likelihood can be estimated exactly.
+
+#### Tree Priors
+
+---
+
+> "In addition to general models of branching times such as the coalescent and Yule priors, the tree prior may also include specific distributions and/or constraints on certain node heights and topological features. These additional priors may represent other sources of knowledge such as expert interpretation of the fossil record."
+
+##### Parametric
+
+- Constant Size: Population size (_N_)
+- Exponential: Initial population size (_N^0^_), growth rate (_r_)
+![[Tree Priors.png|500]]
+
+##### Non-Parametric
+- Skyride
+	1. Assuming population size changes smoothly over time
+	1. Places a smooth Gaussian process prior on the population sizes.
+- Skygrid
+- Yule
+- Birth Death
+
+##### Hyperpriors:
+- **Population size (_N_)**: lognormal with a mean of 10, standard deviation of 100. This leads to a prior 95% credibility interval (CI) of [0.015, 67.06]. This prior is reasonably uninformative, while remaining proper.
+	\* I think the key here is that this is an uninformative prior. Because our posterior is very different from the prior.
+	\* I don't know what the units are, but I think you need generation time to turn it into effective population size (_Ne_).
+	![[Exponential Distribution Mean 10.png|500]]
+	![[Population Size Output.png|500]]
+- Exponential vs. No Hyperprior
+
+#### Rate Priors
+
+- Uncorrelated relaxed lognormal clock (UCLN)
+- Hyperpriors
+	- **Mean Rate**: a CTMC Conditional Reference Prior
+	![[CTMC Conditional Reference Prior.png]]
+	- **Standard Deviation of Rates**: an exponential prior with mean 1/3
+
+#### Proper Priors
+
+- Integrate to 1.0. The uniform distribution (x=1) is not proper.
+
 
 ## Oral Examination
 
