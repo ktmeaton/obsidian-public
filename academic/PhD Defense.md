@@ -3,8 +3,8 @@ title: PhD Defense
 project: "[[PhD]]"
 aliases:
   - PhD Defense
-tags: 🧨 
-status: priority
+tags: ✨
+status: done
 type: task
 due: 2022-01-21
 time: 08:00

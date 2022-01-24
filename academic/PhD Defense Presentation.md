@@ -4,8 +4,8 @@ subtitle: "Genomic analysis of the plague bacterium _Yersinia pestis_"
 project: "[[PhD Defense]]"
 aliases:
   - PhD Defense Presentation
-tags: 🧨 
-status: priority
+tags: ✨
+status: done
 type: task
 due: 2022-01-21
 time: 08:00
