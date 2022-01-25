@@ -1,6 +1,7 @@
 ---
 project: Poinar Lab
-due: 2022-01-30
+due: 2022-02-01
+time: 09:00
 people:
 tags: 🧨
 status: priority
