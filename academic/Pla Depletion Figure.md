@@ -1,7 +1,7 @@
 ---
 project: pla Depletion
 due: 2022-02-01
-time: 09:00
+time: "--"
 people: Ravneet Sidhu
 tags: 🧨
 status: priority

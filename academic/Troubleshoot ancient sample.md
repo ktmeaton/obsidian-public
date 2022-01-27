@@ -1,9 +1,10 @@
 ---
 project: pla Depletion
-due: 2022-02-01
+due: 2022-01-25
+time: "--"
 people:
-tags: 🧨
-status: priority
+tags: ✨ 
+status: done
 title: Troubleshoot ancient sample
 type: Task
 ---

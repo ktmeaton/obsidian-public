@@ -1,7 +1,7 @@
 ---
 project: "[[Plague Denmark]]"
-due: 2022-01-26
-time: 19:00
+due: 2022-01-31
+time: "--"
 people:
 tags: 🧨
 status: priority
