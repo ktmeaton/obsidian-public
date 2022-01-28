@@ -11,7 +11,19 @@ tags:
 
 Auspice is software that performs visualization of [[Phylogenetic|phylogenies]].
 
-### Configurable Defaults
+## Install
+
+```bash
+mamba create --name auspice nodejs=12
+conda activate auspice
+npm install --global auspice
+
+# Grab test data
+mkdir -p data
+curl https://data.nextstrain.org/zika.json --compressed -o data/zika.json
+```
+
+## Configurable Defaults
 
 |      Property      |                              Description                              |                      Example                       |
 |:------------------:|:---------------------------------------------------------------------:|:--------------------------------------------------:|
