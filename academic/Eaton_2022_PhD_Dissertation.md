@@ -115,6 +115,7 @@ supervisors:
 lang: en-US	
 repo: ktmeaton/obsidian-public
 filepath: 'academic/Eaton_2022_PhD_Dissertation'
+base_url: "https://ktmeaton.github.io/obsidian-public/academic/Eaton_2022_PhD_Dissertation"
 
 # Pandoc General
 documentclass: report
