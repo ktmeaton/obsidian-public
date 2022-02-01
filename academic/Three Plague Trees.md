@@ -1,12 +1,12 @@
 ---
 project: pla Depletion
-due: 2022-02-01
-time: "--"
 people: Ravneet Sidhu
-tags: 🧨
-status: priority
 title: Three Trees for Rav
 type: Task
+due: 2022-02-01
+time: "--"
+status: backlog
+tags: 🚂 
 ---
 
 # Three Plague Trees

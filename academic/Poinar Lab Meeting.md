@@ -1,12 +1,12 @@
 ---
-title:
-  - Poinar Lab Meeting
+title: Poinar Lab Meeting
+project: Lab Admin
 people: null
-tags: ✨
-status: done
+tags: 🧨
+status: priority
 type: [[Meeting]]
-due: 2021-11-16
-time: 11:00
+due: 2022-02-01
+time: 08:30
 ---
 
 # Poinar Lab Meeting

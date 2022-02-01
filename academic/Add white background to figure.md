@@ -1,12 +1,12 @@
 ---
 project: "[[Plague Denmark]]"
-due: 2022-01-31
-time: "--"
 people:
-tags: 🧨
-status: priority
 title: Add white background to figure
 type: Task
+due: 2022-02-01
+time: "--"
+status: backlog
+tags: 🚂 
 ---
 
 # Add white background to figure

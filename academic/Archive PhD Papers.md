@@ -1,12 +1,12 @@
 ---
 project: "[[PhD]]"
-due: 2022-01-31
-time: "--"
 people:
-tags: 🧨
-status: priority
 title: Archive PhD Papers
 type: Task
+due: 2022-02-01
+time: "--"
+status: backlog
+tags: 🚂 
 ---
 
 # Archive PhD Papers

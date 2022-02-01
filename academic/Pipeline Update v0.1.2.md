@@ -1,12 +1,12 @@
 ---
 project: Poinar Lab
-due: 2022-02-01
-time: "--"
 people:
-tags: 🧨
-status: priority
 title: Pipeline Update v0.1.2
 type: [[Task]]
+due: 2022-02-01
+time: "--"
+status: backlog
+tags: 🚂 
 ---
 
 # Pipeline Update v0.1.2

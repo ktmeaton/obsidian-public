@@ -1,12 +1,12 @@
 ---
 project: Poinar Lab
-due: 2022-02-01
-time: "--"
 people:
-tags: 🧨
-status: priority
 title: Transfer Plague Database to Poinarlab
 type: Task
+due: 2022-02-01
+time: "--"
+status: backlog
+tags: 🚂 
 ---
 
 # Transfer Plague Database to Poinarlab
