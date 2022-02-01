@@ -147,7 +147,7 @@ A final limitation is that several populations are curiously excluded from the p
 
 #### Integrative Approach
 
-There exists no current classification system which comprehensively represents the global population structure of _Y. pestis_. Instead, integrative approaches have been previously used in large comparative studies of _Y. pestis_ [@cui2013HistoricalVariationsMutation; @morelli2010YersiniaPestisGenome]. We therefore take the intersection of the three taxonomic systems discussed previously and describe 12 populations for further statistical analysis (\*@fig:divtree_map_timeline, Table S1, \*@tbl:table_si1). In the following sections, we highlight the novel insight and issues that arise when this population structure is explicitly incorporated into molecular clock models and phylogeographic reconstructions.
+There exists no current classification system which comprehensively represents the global population structure of _Y. pestis_. Instead, integrative approaches have been previously used in large comparative studies of _Y. pestis_ [@cui2013HistoricalVariationsMutation; @morelli2010YersiniaPestisGenome]. We therefore take the intersection of the three taxonomic systems discussed previously and describe 12 populations for further statistical analysis (\*@fig:divtree_map_timeline, Table S1). In the following sections, we highlight the novel insight and issues that arise when this population structure is explicitly incorporated into molecular clock models and phylogeographic reconstructions.
 
 ![The phylogenetic and spatiotemporal diversity of 601 _Y. pestis_ genomes. Populations were defined by integrating three nomenclature systems: the major branches, biovars, and time periods. **A**: The maximum likelihood phylogeny of _Y. pestis_ with branch lengths scaled by genetic distance from the root in the number of nucleotide substitutions per site. The tree was rooted using two genomes of the outgroup taxa _Y. pseudotuberculosis_, which were pruned before visualization. **B**: The mean sampling age of each genome with internal node dates bounded by ancient DNA calibrations. **C**: The sampling location of each genome with coordinates standardized to the centroid of the associated province/state.
 ](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/fde85ff83fdf/main/auspice/all/chromosome/full/filter5/ml/divtree_map_timeline.png){#fig:divtree_map_timeline width=85% short-caption="The phylogenetic and spatiotemporal diversity of 601 _Y. pestis_ genomes."}
@@ -200,7 +200,7 @@ The inability to infer divergence dates due to sampling bias also has several hi
 |   Sampling Bias    |    0.PE    |    -26641, -598     |   -4394, 510    |       -377, 499       |  1573, 1876  |
 | Informative Dates  |   0.PRE    |         --          |       --        |          --           | -3098, -2786 |
 
-Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies. Uncertainty surrounding the tMRCA is represented by the 95% highest posterior density (HPD) interval. A dash indicates the study did not incorporate genomes from the population. []{#tbl:comparison_dates short-caption="Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies."}
+Table: Bayesian estimates of the time to most recent common ancestor (tMRCA) across _Y. pestis_ studies. Uncertainty surrounding the tMRCA is represented by the 95% highest posterior density (HPD) interval. A dash indicates the study did not incorporate genomes from the population {#tbl:comparison_dates}
 
 \* Visually estimated from the published time-scaled phylogeny.
 
@@ -253,7 +253,7 @@ We estimated that the Second Pandemic (1.PRE) diverged from an ancestral populat
 
 This then begs the question of whether more ancient DNA samples will improve these geographic estimates? As it currently stands, the relationships between all countries could not be resolved during the 14^th^ century, nor among the Baltic states sampled in the 15^th^ century, or between England and Russia in the 17^th^ century. Furthermore, the historical evidence indicates that plague often spread to multiple countries, if not continents, in the span of a decade [@slavin2021OutWestFormation]. This migration rate is far higher than the substitution rate of the Second Pandemic (1.PRE), which accumulates 1 mutation every 9.5 years. The genomic data alone does not have sufficient resolving power to reconstruct the spread of short-term, episodic waves of plague. Instead, this evidence is best used in conjunction with higher-resolution evidence, such as historical case records [@roosen2018DangersNoncriticalUse; @featherstone2021InfectiousDiseasePhylodynamics].
 
-![Geographic origins and spread of the Second Pandemic (1.PRE), the ancestral _Antiqua_ (0.ANT) and descendant _Intermedium_ (1.IN) populations. Ancestral locations were estimated by fitting a discrete mugration model to the maximum likelihood phylogeny using sampling locations by province. Arrows reflect inferred migrations from one location to another but do not represent routes of spread. Grey arrows indicate the migration was poorly supported by the data, with an ancestral likelihood less than 0.95 and/or a branch support bootstrap less than 95%..](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/8426350/main/auspice/all/chromosome/full/filter5/ml/map_second_pandemic.png){#fig:map_second_pandemic width=70% short-caption="Geographic origins and spread of the Second Pandemic (1.PRE), the ancestral _Antiqua_ (0.ANT) and descendant _Intermedium_ (1.IN) populations."}
+![Geographic origins and spread of the Second Pandemic (1.PRE), the ancestral _Antiqua_ (0.ANT) and descendant _Intermedium_ (1.IN) populations. Ancestral locations were estimated by fitting a discrete mugration model to the maximum likelihood phylogeny using sampling locations by province. Arrows reflect the directionality of spread, but not the precise route taken. Grey arrows indicate the migration was poorly supported by the data, with an ancestral likelihood less than 0.95 and/or a branch support bootstrap less than 95%..](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/8426350/main/auspice/all/chromosome/full/filter5/ml/map_second_pandemic.png){#fig:map_second_pandemic width=70% short-caption="Geographic origins and spread of the Second Pandemic (1.PRE), the ancestral _Antiqua_ (0.ANT) and descendant _Intermedium_ (1.IN) populations."}
 
 ## Conclusions
 
@@ -334,8 +334,7 @@ The authors declare no competing interests.
 ## Supplementary Information
 
 ### Tables
-  -  [Table S1](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.xlsx){#tbl:table_si1 tag="S1"}
-  -  [Table S2](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.xlsx){#tbl:table_si2 tag="S2"}
+  -  [Table S1-S7](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock.xlsx)
 
 ### Figures
 
@@ -351,7 +350,7 @@ The authors declare no competing interests.
 
 ![The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations with (A) no detectable temporal signal, (B) insufficient internal calibrations, and (C) informative rates and dates. Stars indicate the node representing the most recent common ancestor (MRCA). Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/f2aa4bd/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths.png){#fig:branch_lengths width=80% tag="S6" short-caption="The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations."}
 
-![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6bea409/main/report/workflow.png){#fig:workflow tag="S7"}
+![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6bea409/main/report/workflow.png){#fig:workflow tag="S7" short-caption="Computational methods workflow."}
 
 <!-- Comment out for dissertation
 ## References 

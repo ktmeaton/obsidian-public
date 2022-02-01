@@ -81,7 +81,7 @@ compile-official: |
     --filter pandoc-xnos \
     --citeproc \
     --csl pandoc/csl/apa.csl \
-  && rm Eaton_2022_PhD_Dissertation_convert.md
+  && rm -f Eaton_2022_PhD_Dissertation_convert.md
 
 compile-manubot: |
   conda activate manubot \
@@ -218,6 +218,7 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \setlength{\parindent}{2em}
 
+
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 ```{.include}
 [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
@@ -253,6 +254,7 @@ Katherine Eaton\*^1,2^, Ravneet Sidhu\*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^
 
 \setlength{\parindent}{2em}
 
+
 ```{.include}
 [[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
 ```
@@ -282,7 +284,7 @@ An alternative method, is to leverage the strengths and mitigate the weaknesses 
 
 ### New 'Plague', Same Problems
 
-During the course of this dissertation, my interest in global pandemics turned from an academic curiosity to a lived experience. In 2019, the novel coronavirus SARS-CoV-2 emerged to cause a global pandemic, with over 370 million cases recorded worldwide (<https://www.worldometers.info/coronavirus/>, 2022 January 31). While there are many unique aspects of this pandemic, one that has captured my attention is that it is the first pandemic to be monitored with real-time genomic surveillance [@oudemunnink2021NextPhaseSARSCoV2].  Over two million genomic sequences have been deposited in public repositories, which can be used to inform public health responses [@publichealthontario2021SARSCoV2WholeGenome]. However, this avalanche of data has also caused numerous problems, as researchers are struggling to manage this information and utilize it effectively [@morel2021PhylogeneticAnalysisSARSCoV2]. As a result, database tools such as `NCBImeta` presented in \*@sec:ncbimeta, are playing an important role in information management. 
+During the course of this dissertation, my interest in global pandemics turned from an academic curiosity to a lived experience. In 2019, the novel coronavirus SARS-CoV-2 emerged to cause a global pandemic, with over 370 million cases recorded worldwide (2022 January 31). While there are many unique aspects of this pandemic, one that has captured my attention is that it is the first pandemic to be monitored with real-time genomic surveillance [@oudemunnink2021NextPhaseSARSCoV2].  Over two million genomic sequences have been deposited in public repositories, which can be used to inform public health responses [@publichealthontario2021SARSCoV2WholeGenome]. However, this avalanche of data has also caused numerous problems, as researchers are struggling to manage this information and utilize it effectively [@morel2021PhylogeneticAnalysisSARSCoV2]. As a result, database tools such as `NCBImeta` presented in \*@sec:ncbimeta, are playing an important role in information management. 
 
 One field of ongoing research involves improving the scalability of these tools. For example, `NCBImeta` was developed for a data set of 'only' 15,000 records, and in its current implementation, cannot process the 1+ million  SARS-CoV-2 records on NCBI. A second critical avenue is integrating information from multiple repositories, as surveillance data is inconsistently being deposited in national and international databases [@ncbiNationalCenterBiotechnology; @gisaidGISAIDInitiative; @cancogenVirusSeqPortal]. Progress towards these two objectives will result in more diverse genomic data being analyzed (geographically and temporally), which may improve of our understanding of transmission and spread between and within countries.
 
