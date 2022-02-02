@@ -594,3 +594,24 @@ Calling COVID-19 the “Wuhan Virus” or “China Virus” is inaccurate and xe
 ### Otherwise, feel free to contact me by email at <eatonk3@mcmaster.ca>
 
 (I'm away until January 24, apologies if my response to you is delayed.)
+
+## Questions
+
+> _"How is it that a bacterial genome (Y. Pestis in this case) can stay intact for so many years and still be isolated/reconstructed effectively? Would you expect that in some cases the DNA might not appear despite the individual having succumbed to infection?"_
+
+> _"Why does the Y. pestis bacteria evolve so slowly (what prevents it from developing more mutations?) Similarly, why is human-to-human transmission rare? Could Y. pestis be transmitted through similar means to HIV (shared needles, unprotected sex)?"_
+
+>_"When we compare past pandemics to now, why do we assume that we will see similar patterns now to that of before rather than each novel pandemic being unique in terms of epidemiology."_
+
+>_"Really fascinating lecture!
+>
+>I was wondering if you could explain what technology and methods you use to extract aDNA? 
+>You also mentioned that understanding how an epidemics began is essential to preventing further introductions to the human populations, so I wasn't sure if testing suspected animal population bones DNA for specific viruses or bacteria was also an option?
+>
+>My last question is, do you have any insights on how one-health and increasing destruction of habitats could attribute to potentially more zoonotic disease and how this could be compared/related to past pandemics and plagues?
+>
+>Thank you so much!_
+
+>_"What do you think is the most likely way our pandemic will play out in the long run?"_
+
+--
