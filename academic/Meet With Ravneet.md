@@ -5,8 +5,8 @@ time: 08:00
 people:
   - Ravneet Sidhu
   - Hendrik Poinar
-tags: 🧨    
-status: priority
+tags: ✨     
+status: done
 ---
 
 # Meet With Ravneet

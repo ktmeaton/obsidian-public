@@ -4,8 +4,8 @@ project: Lab Admin
 people: null
 tags: 🧨
 status: priority
-type: [[Meeting]]
-due: 2022-02-01
+type: Meeting
+due: 2022-02-08
 time: 08:30
 ---
 

@@ -1,7 +1,7 @@
 ---
 project: "[[PhD]]"
-due: 2022-01-31
-time: 19:00
+due: 2022-02-04
+time: "--"
 people:
 tags: 🧨
 status: priority
