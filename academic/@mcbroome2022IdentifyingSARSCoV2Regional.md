@@ -84,3 +84,42 @@ input:
   
 ```
 
+
+## Output
+
+Input:
+	- Phylogeny where the branch lengths are number of mutations.
+	- Auspice json file.
+
+1. How many introduction events have there been into a region?
+2. Where did this introduction originate from?
+3. What level of community transmission did this lead to? (cluster_size)
+4. How fast did this cluster grow? (clutser_size normalized by sampling time frame)
+5. What mutations did this migration introduce into the region?
+6. Which node on the phylogeny did the introduction occur?
+	- Link to border sample.
+
+## Conclusions
+
+Good news, I think the McBroome 2022 paper/method is exactly what we're looking for!
+
+### What questions can this method answer?
+1. How many introduction events have there been into a region?
+1. Where did this introduction originate from?
+1. How much community transmission did this introduce lead to?
+1. How fast did this community transmission grow?
+1. What new mutations did this introduce into the region?
+1. Was this introduction associated with a border sample?
+
+### Input
+1\. A metadata table that at minimum, maps sample IDs to collection region.
+2a. A phylogenetic tree where branch lengths are scaled in number of mutations.
+2b. OR. An auspice JSON file!
+
+### Method
+1. Convert Auspice JSON to MAT ("mutation annotated tree"): (`auspice_json_to_mat.py`)
+1. Estimate introduction events: (`matUtils introduce ...`)
+
+### Output
+- A statistics rich `tsv` file. Each row is a sample. The columns are statistics relating to putative introduction events, community transmission, confidence values, etc.
+- Filtering/visualizing this `tsv` file will produce answers to questions 1-6.
