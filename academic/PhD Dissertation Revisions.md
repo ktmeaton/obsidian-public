@@ -1,9 +1,9 @@
 ---
-project: "[[PhD]]"
-due: 2022-02-04
+project: "PhD"
+due: 2022-02-05
 time: "--"
 people:
-tags: 🧨
+tags: 📝
 status: priority
 title: PhD Dissertation Edits
 type: Task
