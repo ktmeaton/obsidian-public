@@ -5,7 +5,7 @@ people: null
 tags: 🧨
 status: priority
 type: Meeting
-due: 2022-02-08
+due: 2022-02-15
 time: 08:30
 ---
 
