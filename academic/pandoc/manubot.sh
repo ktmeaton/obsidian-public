@@ -63,6 +63,17 @@ while [[ $# -gt 0 ]]; do
       shift # past value
       ;;
     # -------------------------------------------------------------------------      
+    # Script Directory
+    -s|--script-dir)
+      SCRIPT_DIR="$2"
+			if [[ ! -d $SCRIPT_DIR ]]; then
+        echo "Script directory does not exist: $SCRIPT_DIR"
+        exit 1
+      fi      
+      shift # past argument
+      shift # past value
+      ;;
+    # -------------------------------------------------------------------------      
     # Rootstock Directory
     -r|--rootstock)
       ROOTSTOCK_DIR="$2"
@@ -170,6 +181,7 @@ cp -r $TEMPLATE ${ROOTSTOCK_DIR}/content/
 # -----------------------------------------------------------------------------
 # Copy over bibliography fies
 
+DEFAULT_CSL="${ROOTSTOCK_DIR}/build/assets/default.csl"
 # CSL
 if [[ $CSL != $DEFAULT_CSL ]]; then
   cp $CSL $DEFAULT_CSL
@@ -309,4 +321,4 @@ rm -rf content/
 cp -r templates/default content
 
 # Remove output
-#rm -rf output/
+rm -rf output/
