@@ -1,14 +1,13 @@
 ---
-project: [[plague-phylogeography]]
+project: Poinar Lab
 title:
   - Meet with Hendrik
 people: 
-- [[Hendrik Poinar]]
-
-tags: ✨
-status: done
-type: [[Meeting]]
-due: 2021-10-28
+- Hendrik Poinar
+tags: 👥  
+status: priority
+type: Meeting
+due: 2022-02-15
 time: 15:00
 ---
 
