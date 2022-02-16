@@ -8,10 +8,14 @@ tags: 👥
 status: priority
 type: Meeting
 due: 2022-02-15
-time: 15:00
+time: 13:15
 ---
 
 # Meet with Hendrik
+
+## [[2022-02-15]]
+
+![[Leaving the Poinar Lab]]
 
 ## [[2021-12-02]]
 
