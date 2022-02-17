@@ -5,7 +5,7 @@ title:
 people: 
 - Hendrik Poinar
 tags: 👥  
-status: priority
+status: done
 type: Meeting
 due: 2022-02-15
 time: 13:15
