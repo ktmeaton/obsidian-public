@@ -152,7 +152,7 @@ What does not make sense:
 ### Tasks
 
 - [ ] [[Katherine Eaton]] | [[Create geographic traits file by Clade]].
-- [ ] [[Katherine Eaton]] | [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock]].
+- [ ] [[Katherine Eaton]] | [[Eaton_et_al._2022_Plagued_by_a_cryptic_clock]].
 - [ ] [[Sebastian Duchene]] | [[Run BETS on all Clades]].
 
 ### Next Meeting
