@@ -3,7 +3,7 @@ project: PhD
 people:
 title: Editorial Policy Checklist
 type: Task
-due: 2022-02-18
+due: "--"
 time: "--"
 tags: 📝     
 status: priority

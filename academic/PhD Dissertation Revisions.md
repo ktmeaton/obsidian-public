@@ -1,6 +1,6 @@
 ---
 project: "PhD"
-due: 2022-02-18
+due: "--"
 time: "--"
 people:
 tags: 📝

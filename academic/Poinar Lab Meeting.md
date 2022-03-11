@@ -5,11 +5,15 @@ people: null
 tags: 🧨
 status: priority
 type: Meeting
-due: 2022-03-01
+due: 2022-03-15
 time: 08:30
 ---
 
 # Poinar Lab Meeting
+
+## [[2022-03-15|March 15, 2022]]
+
+- [Zoom Meeting Link](https://mcmaster.zoom.us/j/93324048304)
 
 ## [[2021-12-14]]
 
