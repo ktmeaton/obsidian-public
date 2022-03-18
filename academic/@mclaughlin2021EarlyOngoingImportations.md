@@ -33,3 +33,19 @@ tags: 📰
 - Although proportion of international transmission decreased over time, this  coincided with exponential growth of within-province transmission – in fact, total number of  sampled transmission events from international or interprovincial sources increased from winter  2020 into spring 2020 in many provinces.
 - However, if we look at the total number of sampled  transmission events traced to international origins instead of the proportion (Fig. 5), there was  an increase in the number of detected transmission events traced to USA or other international  sources between winter and spring 2020 for all provinces.
 - Canadian sublineages were designated as international introductions resulting in  onward transmission with a minimum of two downstream sequenced cases, where a Canadian  internal node was preceded by a non-Canadian internal node.
+
+## Materials and Methods
+
+|                 | McLaughlin et al. (2021)          |
+| --------------- | --------------------------------- |
+| Sequences       | 50,000                            |
+| Subsampling     | Canadian: All<br>Global: Proportional | 
+| Sampling Period | Start - 2021 Feb 11               |
+| Tree Estimation | ML (FastTree)                     |
+| Clock Model     | Least Squares (LSD2)              |
+| ASR             | ML (ape)                          |
+| Transmission    | R (custom)                        |
+
+ASR: Ancestral State Reconstruction
+ML: Maximum-Likelihood
+MP: Maximum Parsimony

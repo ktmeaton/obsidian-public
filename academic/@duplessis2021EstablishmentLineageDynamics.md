@@ -53,3 +53,20 @@ tags: 📰
 - To be detected, a UK transmission lineage must contain two or more sampled genomes; singletons are not classified here as UK transmission lineages.
 - Note that only half of the cases in the top UK transmission lineage are observed, and the bottom UK transmission lineage is unobserved.
 - Colored boxes next to lineage names are as depicted in Fig. 2D. RESEARCH | RESEARCH ARTICLE Downloaded from https://www.science.org on March 03, 2022 transmission lineages, and larger lineages were more geographically widespread.
+
+## Materials and Methods
+
+|                 | du Plessis et al. (2021) |
+| --------------- | ------------------------ |
+| Region          | UK                       |
+| Sequences       | 50,887                   |
+| Subsampling     | ???                      |
+| Sampling Period | Start - 2020 June 26     |
+| Tree Estimation | Bayes (BEAST)            |
+| Clock Model     | Bayes (BEAST)            |
+| ASR             | Bayes (BEAST)            |
+| Transmission    | Custom (R)               | 
+
+ASR: Ancestral State Reconstruction
+ML: Maximum-Likelihood
+MP: Maximum Parsimony

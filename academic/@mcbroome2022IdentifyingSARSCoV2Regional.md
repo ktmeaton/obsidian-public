@@ -49,6 +49,27 @@ exploration and visualization.
 
 - We performed this analysis twice- once including all samples in their tree from any region and once excluding samples from the USA in their tree that were excluded from their clusters.
 
+## Materials and Methods
+
+|                   | McBroome et al. (2021) |
+| ----------------- | ---------------------- |
+| Region            | USA                    |
+| Sequences         | 5,563,847              |
+| Subsampling       | None                   |
+| Sampling End Date | 2021 Nov 28            |
+| Tree Estimation   | MP (UShER)             |
+| Clock Model       | None                   |
+| ASR               | Heuristic (matUtils)   | 
+| Transmission      | MP (matUtils)          |
+
+## Index Example
+
+Li = 1
+Di  = 1
+
+Do = 1
+Di = 1
+
 ## Notes
 
 - **Regional Transmission Event** | A child node is from a different region than the parent node.

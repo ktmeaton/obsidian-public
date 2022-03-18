@@ -18,6 +18,13 @@ git fetch upstream
 
 ## Rebase
 
+Rebase dev on master
+
+```bash
+git checkout dev
+git rebase master dev
+```
+
 ### Undo
 
 ```bash
@@ -37,6 +44,9 @@ git reset --hard HEAD@{2}
 git submodule update --init --recursive
 ```
 
+```bash
+git config --remove-section submodule.surveiller
+```
 ## Update File Permissions
 
 ```bash
