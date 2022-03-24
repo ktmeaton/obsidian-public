@@ -3,7 +3,7 @@ title: Poinar Lab Meeting
 project: Lab Admin
 people: null
 tags: 🧨
-status: priority
+status: done
 type: Meeting
 due: 2022-03-15
 time: 08:30
