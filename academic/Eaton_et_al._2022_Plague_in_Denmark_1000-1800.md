@@ -91,13 +91,20 @@ compile-manubot: |
   && pandoc/manubot.sh \
     --input Eaton_et_al._2022_Plague_in_Denmark_1000-1800.md \
     --template ../../rootstock/templates/paper \
+    --csl pandoc/csl/nature-communications.csl \
+    --bib-plain \
+    --page-numbering \
     --pdf \
     --docx
 
 # Manubot
 lang: en-US	
 repo: ktmeaton/obsidian-public
+repo_url: https://github.com/ktmeaton/obsidian-public
 filepath: 'academic/Eaton_et_al._2022_Plague_in_Denmark_1000-1800'
+base_url: "https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2022_Plague_in_Denmark_1000-1800"
+authors_manual: true
+draft: false
 
 # Obsidian
 project: Plague Denmark
@@ -105,6 +112,25 @@ tags: 🧨
 status: priority
 type: Paper
 ---
+
+**Katherine Eaton**\*^1,2^, **Ravneet Sidhu**^\*1,3^, Jennifer Klunk^1,4^, Julia Gamble^5^, Jesper Boldsen^6^, Ann G. Carmichael^7^, Nükhet Varlık^8^,  Sebastian Duchene^9^, Leo Featherstone^9^, Vaughan Grimes^10^, G. Brian Golding^3^, Sharon DeWitte^11^, Hendrik N. Poinar^1,2,12,13,14^
+
+^\*^Contributed equally.
+
+^1^McMaster Ancient DNA Centre, McMaster University, Hamilton, Canada.  \
+^2^Department of Anthropology, McMaster University, Hamilton, Canada.  \
+^3^Department of Biology, McMaster University, Hamilton, Canada.  \
+^4^Daicel Arbor Biosciences, Ann Arbor, USA.  \
+^5^Department of Anthropology, University of Manitoba, Winnipeg, Canada. \
+^6^Department of Forensic Medicine, Unit of Anthropology (ADBOU), University of Southern Denmark, Odense, Denmark. \
+^7^Department of History, Indiana University Bloomington, Bloomington, USA.  \
+^8^Department of History, Rutgers University-Newark, Newark, USA.  \
+^9^The Peter Doherty Institute for Infection and Immunity, University of Melbourne, Melbourne, Australia.  \
+^10^Department of Archaeology, Memorial University of Newfoundland, St. Johns, Canada. \
+^11^Department of Anthropology, University of South Carolina, Columbia, USA. \
+^12^Department of Biochemistry, McMaster University, Hamilton, Canada.  \
+^13^Michael G. DeGroote Institute of Infectious Disease Research, McMaster University, Hamilton, Canada.  \
+^14^Canadian Institute for Advanced Research, Toronto, Canada.
 
 ## Abstract
 
@@ -134,30 +160,31 @@ We observed a gap in the continuity of plague at Ribe, as no _Y. pestis_ was det
 
 In the 16^th^ century, we once again observed _Y. pestis_ at Ribe. We dated two _Y. pestis_ isolates from this region to 1513 (1484-1546) and 1525 (1494-1560).  Furthermore, we also found evidence of _Y. pestis_ in the northern site of Faldborg dated to 1594 (1550-1649). As an estimate of plague's disappearance (1649), this is congruent with the historical record which documents the last recorded outbreak of plague in Jutland to last from 1654-1657 [@benedictow2016BlackDeathLater]. We found no evidence of _Y. pestis_ in Denmark after this point, specifically between 1649 and 1800 CE.  However, no individuals definitively post-date 1649 CE, although this period could include a maximum of 70 individuals (\*@fig:1.PRE_timeline A).  We would therefore expect to detect _Y. pestis_ in 0 to 2 individuals (3.3%) from this time frame if it were present. Our results do not differ from this expectation, and are therefore not informative with regards to the disappearance of _Y. pestis_ in Denmark. To address this question, additional samples would be required from the 17^th^ and 18^th^ centuries.
 
-## Conclusion
-
-This study marks the first population-level analysis of ancient _Y. pestis_, where we performed in-depth (N=298), longitudinal sampling (800 years) within a single country (Denmark). We describe the earliest known appearance of _Y. pestis_ in Denmark (14^th^ century), and document the continuity of this pathogen in Scandinavia over a period of 400 years (17^th^ century). Furthermore, we provide the first positivity rates of historical plague from molecular evidence, as we 
-detected _Y. pestis_ in 8.3% of Danish individuals. Our phylogenetic analysis was highly congruent with the sparse textual evidence of _pestilence_ in Denmark, with regards to the timing of outbreaks and geographic ties to the Baltic region. We also provide novel evidence of plague exposure among Danish populations, such as the site of Tirup, where there is no surviving historical evidence. These results are of importance for both researchers of plague and other infectious diseases, as they (1) illuminate undocumented pathogens in the historical record, (2) reveal new connections between our past and present experience of plague, (3) broaden our understanding of the epidemiology of re-emerging diseases.
 
 
-![Geographic distribution of 298 archaeological samples used in this study. **A**. Map of 6 municipalities sampled in Denmark encompassing 13 archaeological sites. Site labels indicate: Archaeological Site (Earliest Date Sampled - Latest Date Sampled) _Y. pestis_ positive individuals / total individuals. Plague positive sites are bolded. **B**. Map of 49 _Y. pestis_ genomes used for phylogenetic analysis. The sampling locations were standardized to the centroid of the associated province/state. Colors indicate the sampling dates as estimated from the Bayesian molecular clock analysis. Numbered labels indicate the number of genomes sampled from each location.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e29e80b/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map width=90% short-caption="Geographic distribution of 298 archaeological samples used in this study."}
+![Geographic distribution of 298 archaeological samples used in this study. **A**. Map of 6 municipalities sampled in Denmark encompassing 13 archaeological sites. Site labels indicate: Archaeological Site (Earliest Date Sampled - Latest Date Sampled) _Y. pestis_ positive individuals / total individuals. Plague positive sites are bolded. **B**. Map of 49 _Y. pestis_ genomes used for phylogenetic analysis. The sampling locations were standardized to the centroid of the associated province/state. Colors indicate the sampling dates as estimated from the Bayesian molecular clock analysis. Numbered labels indicate the number of genomes sampled from each location.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e29e80b/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_map.png){#fig:1.PRE_map width=80% short-caption="Geographic distribution of 298 archaeological samples used in this study."}
 
 
 ::: columns
 
 <!--Left-->
 :::: column
-![Temporal distribution of archaeological samples used in this study. **A**. Distribution of the mean skeletal dates for all individuals (N=298). **B**. Distribution of skeletal intervals for all individuals (N=298) using a bin width of 50 years. The y-axis indicates the number of individuals whose dating uncertainty contains the corresponding interval on the x-axis.**C**. The distribution of _Y. pestis_ tip-dates for plague-positive individuals (N=9) according to the 95% highest posterior density (HPD) from the Bayesian molecular clock analysis. Asterisks indicate the phylogenetic placement had strong posterior support (>= 0.95). **D**. The mean sequencing depth of the _Y. pestis_ chromosome.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e29e80b/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timeline.png){#fig:1.PRE_timeline width=70% short-caption="Temporal distribution of archaeological samples used in this study."}
+![Temporal distribution of archaeological samples used in this study. **A**. Mean skeletal dates for all individuals (N=298). **B**. Skeletal date intervals for all individuals (N=298) using a bin width of 50 years. **C**. Distribution of _Y. pestis_ tip-dates for plague-positive individuals (N=9) according to the 95% highest posterior density (HPD) from the Bayesian molecular clock analysis. Asterisks indicate the phylogenetic placement had strong posterior support (>= 0.95). **D**. Mean sequencing depth of the _Y. pestis_ chromosome.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e29e80b/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timeline.png){#fig:1.PRE_timeline width=70% short-caption="Temporal distribution of archaeological samples used in this study."}
 ::::
 
 <!--Right-->
 :::: column
-![Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes. Asterisks indicate clades with strong posterior support (>=0.95). Colors indicate the mean sampling dates as estimated from the Bayesian molecular clock analysis. Bars indicate tip-dating uncertainty, as represented by the 95% highest posterior density (HPD) interval.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/e29e80b/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree width=80% short-caption="Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes."}
+![Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes. Asterisks indicate clades with strong posterior support (>=0.95). Colors indicate the mean sampling dates as estimated from the Bayesian molecular clock analysis. Bars indicate tip-dating uncertainty, as represented by the 95% highest posterior density (HPD) interval.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/878663e/denmark/auspice/all/chromosome/full/filter30/beast/1.PRE_timetree.png){#fig:1.PRE_timetree width=80% short-caption="Maximum-clade credibility (MCC) tree depicting a time-scaled phylogeny of 49 European _Y. pestis_ genomes."}
 ::::
 
 :::
 
-## Materials and Methods {.page_break_before}
+## Conclusion
+
+This study marks the first population-level analysis of ancient _Y. pestis_, where we performed in-depth (N=298), longitudinal sampling (800 years) within a single country (Denmark). We describe the earliest known appearance of _Y. pestis_ in Denmark (14^th^ century), and document the continuity of this pathogen in Scandinavia over a period of 400 years (17^th^ century). Furthermore, we provide the first positivity rates of historical plague from molecular evidence, as we 
+detected _Y. pestis_ in 8.3% of Danish individuals. Our phylogenetic analysis was highly congruent with the sparse textual evidence of _pestilence_ in Denmark, with regards to the timing of outbreaks and geographic ties to the Baltic region. We also provide novel evidence of plague exposure among Danish populations, such as the site of Tirup, where there is no surviving historical evidence. These results are of importance for both researchers of plague and other infectious diseases, as they (1) illuminate undocumented pathogens in the historical record, (2) reveal new connections between our past and present experience of plague, (3) broaden our understanding of the epidemiology of re-emerging diseases.
+
+## Materials and Methods
 
 We sampled 298 individuals across 13 archaeological sites in Denmark (\*@fig:1.PRE_timeline A, Dataset S1). Site occupation dates spanned from the 11^th^ to the 19^th^ century CE. We estimated individual date ranges based on burial position, which was categorized according to cultural shifts that occurred in Denmark throughout the medieval and early modern period [@boldsen2009LeprosyMedievalDenmark]. When the original stratigraphic context was preserved, we refined these individual estimates further. For individuals with ambiguous or conflicting archaeological estimates, we performed radiocarbon dating when additional destructive sampling was permitted.
 
@@ -185,7 +212,3 @@ K.E, R.S, J.K, and H.N.P designed the study. J.G, J.B, and S.D provided access t
 ## Competing Interests Statement
 
 The authors declare no competing interests.
-
-<!-- Comment out for dissertation
-## References 
--->
