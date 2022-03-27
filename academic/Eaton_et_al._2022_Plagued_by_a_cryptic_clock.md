@@ -55,7 +55,7 @@ notes-after-punctuation: false
 compile-manubot: |
   conda activate manubot \
   && pandoc/manubot.sh \
-    --input Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md \
+    --input Eaton_et_al._2022_Plagued_by_a_cryptic_clock.md \
     --template ../../rootstock/templates/paper \
     --pdf \
     --docx
@@ -63,7 +63,7 @@ compile-manubot: |
 # Manubot
 lang: en-US
 repo: ktmeaton/obsidian-public
-filepath: 'academic/Eaton_et_al._2021_Plagued_by_a_cryptic_clock'
+filepath: 'academic/Eaton_et_al._2022_Plagued_by_a_cryptic_clock'
 
 # Obsidian
 project: phd

@@ -13,7 +13,7 @@ Exaclidraw is a drawing software for which there is an [[Obsidian]] plugin.
 
 ## Links
 
-### [[Eaton_et_al._2021_Plagued_by_a_cryptic_clock]]
+### [[Eaton_et_al._2022_Plagued_by_a_cryptic_clock]]
 - https://excalidraw.com/#json=6324562585190400,VCtg6-yBez1A4panvLR1NA
 
 ![[Eaton et al. 2021 Plagued by a cryptic clock.png]]
