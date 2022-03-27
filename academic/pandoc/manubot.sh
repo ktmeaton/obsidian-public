@@ -22,6 +22,8 @@ PDF=false
 DOCX=false
 LATEX=false
 TEST=false
+PAGE_NUMBERING=false
+BIB_PLAIN=false
 
 POSITIONAL_ARGS=()
 
@@ -135,6 +137,18 @@ while [[ $# -gt 0 ]]; do
       LATEX=true 
       shift # past argument
       ;;
+    # -------------------------------------------------------------------------      
+    # Page Numbering
+    --page-numbering)
+      PAGE_NUMBERING=true 
+      shift # past argument
+      ;;
+    # -------------------------------------------------------------------------      
+    # Plain Bib (remove markup tags)
+    --bib-plain)
+      BIB_PLAIN=true
+      shift # past argument
+      ;;         
     # -------------------------------------------------------------------------             
     # Unknown Options
     -*|--*)
@@ -158,17 +172,19 @@ set -- "${POSITIONAL_ARGS[@]}"
 # Setup
 # -----------------------------------------------------------------------------
 
+echo 
 echo "manubot.sh was configured with the following parameters:"
-echo "  Input:         ${INPUT}"
-echo "  Bibliography:  ${BIB}"
-echo "  Rootstock:     ${ROOTSTOCK_DIR}"
-echo "  Lua Filters:   ${LUA_DIR}"
-echo "  CSL:           ${CSL}"
-echo "  Template:      ${TEMPLATE}"
-echo "  PDF:           ${PDF}"
-echo "  DOCX:          ${DOCX}"
-echo "  LATEX:         ${LATEX}"
-echo ""
+echo "  Input:          ${INPUT}"
+echo "  Bibliography:   ${BIB}"
+echo "  Rootstock:      ${ROOTSTOCK_DIR}"
+echo "  Lua Filters:    ${LUA_DIR}"
+echo "  CSL:            ${CSL}"
+echo "  Template:       ${TEMPLATE}"
+echo "  PDF:            ${PDF}"
+echo "  DOCX:           ${DOCX}"
+echo "  LATEX:          ${LATEX}"
+echo "  Page Numbering: ${PAGE_NUMBERING}"
+echo "  Bib Plain:      ${BIB_PLAIN}"
 
 if [[ $TEST == true ]]; then
   exit
@@ -188,9 +204,17 @@ if [[ $CSL != $DEFAULT_CSL ]]; then
 fi;
 
 # Bib
-cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
+# Should we strip formatting tags from the bibliography?
 # For .bib this is deliberately not in the output directory
 #cp $BIB ${ROOTSTOCK_DIR}/
+
+tags="(<|<\/)i>"
+if [[ $BIB_PLAIN == "true" ]]; then
+  sed -E "s/$tags//g" $BIB > ${ROOTSTOCK_DIR}/content/manual-references.json
+else
+  cp $BIB ${ROOTSTOCK_DIR}/content/manual-references.json
+fi
+
 
 # -----------------------------------------------------------------------------
 # Lua
@@ -292,6 +316,12 @@ export XNOS=${XNOS_ARGS[@]}
 
 echo "Building manuscript..."
 build/build.sh
+
+if [[ "${PAGE_NUMBERING}" == "true" ]]; then
+  echo "Numbering pages..."
+  pspdftool 'number(x=-1pt,y=-1pt,start=1,size=10)' output/manuscript.pdf output/manuscript_page-numbering.pdf
+  mv output/manuscript_page-numbering.pdf output/manuscript.pdf
+fi
 
 # Copy output to current working directory
 exts=("html" "pdf" "docx" "latex")
