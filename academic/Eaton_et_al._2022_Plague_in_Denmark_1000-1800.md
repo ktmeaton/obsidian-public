@@ -113,6 +113,8 @@ status: priority
 type: Paper
 ---
 
+<!-- Comment out for dissertation -->
+<!--
 **Katherine Eaton**\*^1,2^, **Ravneet Sidhu**^\*1,3^, Jennifer Klunk^1,4^, Julia Gamble^5^, Jesper Boldsen^6^, Ann G. Carmichael^7^, Nükhet Varlık^8^,  Sebastian Duchene^9^, Leo Featherstone^9^, Vaughan Grimes^10^, G. Brian Golding^3^, Sharon DeWitte^11^, Hendrik N. Poinar^1,2,12,13,14^
 
 ^\*^Contributed equally.
@@ -132,6 +134,9 @@ type: Paper
 ^13^Michael G. DeGroote Institute of Infectious Disease Research, McMaster University, Hamilton, Canada.  \
 ^14^Canadian Institute for Advanced Research, Toronto, Canada.
 
+-->
+<!-- -->
+
 ## Abstract
 
 The epidemiology of plague in the past is highly controversial, owing to the scarcity and ambiguity of historical evidence. A frequent source of debate is the re-emergence and continuity of plague in Europe during the 14^th^ to 18^th^ centuries CE. Scandinavia is particularly underrepresented in the historical archives, despite having a uniquely long history of plague (5000 years) as revealed through ancient DNA analysis. To better understand the historical epidemiology of plague in this region, we performed in-depth (N=298), longitudinal screening (800 years) for the plague bacterium, _Yersinia pestis_, across 13 archaeological sites in Denmark. We captured the emergence and continuity of _Y. pestis_ in this region over a period of 400 years (14^th^ - 17^th^ century CE), for which the plague-positivity rate was 8.3% (3.3% - 14.3% by site). These results deepen the epidemiological link between the plague bacterium, _Y. pestis_, and the unknown _pestilence_ that afflicted medieval and early modern Europe. Furthermore, this study paves the way for the next generation of historical disease research, in which hypotheses concerning mortality can be tested using population-scale, genomic evidence from ancient pathogens.
@@ -148,7 +153,7 @@ To evaluate the possibility of undocumented plague persistence, we screened for 
 
 We detected _Y. pestis_ in 7 archaeological sites using PCR assays and targeted sequencing (\*@fig:1.PRE_map A). Across the 7 sites, 8.3% of individuals (13/157) tested positive for _Y. pestis_, ranging from 3.3% at Ribe Lindegärden to 14.3% at Hågerup. This positivity rate could be considered an underestimate of the 'true' prevalence of _Y. pestis_ in Danish populations, due to variable DNA preservation. On the other hand, it may be an overestimate due to the osteological paradox [@wood1992OsteologicalParadoxProblems], in which mortality is selective and the deceased are not representative of the living population. While the exact extrapolation is unclear, our _Y. pestis_ positivity rate (3.3 - 14.3%) does align with mortality estimates (5 - 20%) during the later epidemics of the medieval and early modern period [@dewitte2017BlackDeathBodies; @slavin2021OutWestFormation].
 
-Of the 13 plague-positive individuals, 9 had sufficient sequencing depth (>3X) of the _Y. pestis_ chromosome for phylogenetic analysis (\*@fig:1.PRE_timeline C). To estimate a time-scaled phylogeny and dates for these 9 samples, we fit a relaxed molecular clock to an alignment of _Y. pestis_ genomes which included 40 other isolates (\*@fig:1.PRE_map B). We observed that all Danish strains clustered strongly (posterior: 1.0) within the known diversity of medieval and early modern _Y. pestis_ in Europe (\*@fig:1.PRE_timetree). We found no evidence to suggest that Neolithic lineages of _Y. pestis_ in Scandinavia (5000 YBP) [@rascovan2019EmergenceSpreadBasal] left descendants in medieval Danish populations. If long-term persistence of _Y. pestis_ did occur in this region, it fell outside the geographic and temporal scope of this study.
+Of the 13 plague-positive individuals, 9 had sufficient sequencing depth (>3X) of the _Y. pestis_ chromosome for phylogenetic analysis (\*@fig:1.PRE_timeline D). To estimate a time-scaled phylogeny and dates for these 9 samples, we fit a relaxed molecular clock to an alignment of _Y. pestis_ genomes which included 40 other isolates (\*@fig:1.PRE_map B). We observed that all Danish strains clustered strongly (posterior: 1.0) within the known diversity of medieval and early modern _Y. pestis_ in Europe (\*@fig:1.PRE_timetree). We found no evidence to suggest that Neolithic lineages of _Y. pestis_ in Scandinavia (5000 YBP) [@rascovan2019EmergenceSpreadBasal] left descendants in medieval Danish populations. If long-term persistence of _Y. pestis_ did occur in this region, it fell outside the geographic and temporal scope of this study.
 
 We found no evidence of _Y. pestis_ in Denmark between 1000 and 1300 CE. The factors influencing the preservation of ancient DNA are wide-ranging and complex, thus the absence of evidence cannot prove evidence of absence. That being said, we sampled a minimum of 85 individuals and a maximum of 165 individuals that pre-date the 14^th^ century (\*@fig:1.PRE_timeline A). Taking the mean positivity rate observed in this study (8.3%), we would expect to detect _Y. pestis_ in 7 to 13 individuals from this time frame if it were present. We therefore interpret our negative results from this period as tentative evidence that _Y. pestis_ was a relatively new pathogen in medieval Denmark, that did not become abundant and/or widespread until at least the 14^th^ century.
 
@@ -186,7 +191,7 @@ detected _Y. pestis_ in 8.3% of Danish individuals. Our phylogenetic analysis wa
 
 ## Materials and Methods
 
-We sampled 298 individuals across 13 archaeological sites in Denmark (\*@fig:1.PRE_timeline A, Dataset S1). Site occupation dates spanned from the 11^th^ to the 19^th^ century CE. We estimated individual date ranges based on burial position, which was categorized according to cultural shifts that occurred in Denmark throughout the medieval and early modern period [@boldsen2009LeprosyMedievalDenmark]. When the original stratigraphic context was preserved, we refined these individual estimates further. For individuals with ambiguous or conflicting archaeological estimates, we performed radiocarbon dating when additional destructive sampling was permitted.
+We sampled 298 individuals across 13 archaeological sites in Denmark (\*@fig:1.PRE_timeline A, Table S1). Site occupation dates spanned from the 11^th^ to the 19^th^ century CE. We estimated individual date ranges based on burial position, which was categorized according to cultural shifts that occurred in Denmark throughout the medieval and early modern period [@boldsen2009LeprosyMedievalDenmark]. When the original stratigraphic context was preserved, we refined these individual estimates further. For individuals with ambiguous or conflicting archaeological estimates, we performed radiocarbon dating when additional destructive sampling was permitted.
 
 DNA was extracted from teeth and dental pulp according to a specialized protocol for ancient DNA [@dabney2013CompleteMitochondrialGenome]. Reagent blanks were introduced as negative controls to monitor DNA contamination in subsequent steps. We screened for plague using a PCR assay that targets the _pla_ virulence gene in _Yersinia pestis_ [@wagner2014YersiniaPestisPlague]. Extracts showing amplification in at least 4/6 replicates were converted into paired-end sequencing libraries [@kircher2012DoubleIndexingOvercomes]. Targeted capture of the _Y. pestis_ genome was performed using previously designed probes [@wagner2014YersiniaPestisPlague] and sequenced on an Illumina platform.
 
@@ -198,7 +203,7 @@ Data visualization was performed using the python package _seaborn_ and _auspice
 
 ## Data Availability
 
-Raw sequence reads have been deposited in NCBI BioProject PRJNAXXXXX. Archaeological metadata is provided in the supplementary information (Dataset SI).
+Raw sequence reads have been deposited in NCBI BioProject PRJNAXXXXX. Archaeological metadata is provided in the supplementary information (Table S1).
 
 
 ## Acknowledgments
@@ -212,3 +217,8 @@ K.E, R.S, J.K, and H.N.P designed the study. J.G, J.B, and S.D provided access t
 ## Competing Interests Statement
 
 The authors declare no competing interests.
+
+## Supplementary Information
+
+### Tables
+  -  [Table S1](https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2022_Plague_in_Denmark_1000-1800.xlsx)

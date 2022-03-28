@@ -146,7 +146,7 @@ type: Thesis
 
 In 2011, I learned about a researcher named Dr. Hendrik Poinar. His team had just published a seminal paper, in which they identified the causative agent of the infamous Black Death [@bos2011DraftGenomeYersinia]. I discovered that this morbid term describes a pandemic that devastated the world in the 14^th^ century, with unprecedented mortality and spread. In less than 10 years (1346-1353) the Black Death swept across Afro-Eurasia, killing 50% of the population [@benedictow2004BlackDeath13461353]. Outbreaks of this new and mysterious disease, often referred to as Plague, reoccurred every 10 years on average [@christensen2003ThesePerilousTimes]. This epidemic cycling continued for 500 long years in Europe, but in Western Asia, the disease never truly disappeared [@varlik2020PlagueThatNever]. The 10-year window of the Black Death alone has an estimated global mortality of 200 million people, making it the most fatal pandemic in human history [@sampath2021PandemicsThroughoutHistory], and also one of the most mysterious.
 
-The cryptic nature of this medieval disease led to significant debate among contemporaries. The dominant theory of contagion at the time was _miasma_, in which diseases were spread through noxious air [@ober1982PlagueGranada13481349]. However, alternative theories of communicable disease, such as Galen's "seeds of plague", had been circulating for more than a millennium prior [@nutton1983SeedsDiseaseExplanation]. Like these doctors of antiquity, Ibn al-Khatib, a notable Islamic scholar, took issue with the concept of _miasma_. After studying outbreaks of plague in the 14^th^ century, he proposed an alternative hypothesis in which _minute bodies_ were transmissible between humans [@syed1981IslamicMedicine1000]. Like most controversial theories, this idea was not readily embraced. Some 400 years later, the British botanist Richard Bradley wrote a radical treatise on _The Plague_ [@bradley1721PlagueMarseillesConsider] where he similarly proposed that infectious diseases were caused by living, microscopic agents. Again, this theory was rejected. It was not until the bacteriological revolution of 19^th^ century that this "new" perspective would receive widespread acceptance [@santer2009RichardBradleyUnified]. It is quite remarkable that our modern conceptions of epidemiology and bacteriology can be traced back to diverse "founders" throughout history, many of which were grappling with the perplexing nature of plague.
+The cryptic nature of this medieval disease led to significant debate among contemporaries. The dominant theory of etiology and transmission at the time was _miasma_, in which diseases were spread through noxious air [@ober1982PlagueGranada13481349]. However, alternative theories of communicable disease, such as Galen's "seeds of plague", had been circulating for more than a millennium prior [@nutton1983SeedsDiseaseExplanation]. Like these doctors of antiquity, Ibn al-Khatib, a notable Islamic scholar, took issue with the concept of _miasma_. After studying outbreaks of plague in the 14^th^ century, he proposed an alternative hypothesis in which _minute bodies_ were transmissible between humans [@syed1981IslamicMedicine1000]. Like most controversial theories, this idea was not readily embraced. Some 400 years later, the British botanist Richard Bradley wrote a radical treatise on _The Plague_ [@bradley1721PlagueMarseillesConsider] where he similarly proposed that infectious diseases were caused by living, microscopic agents. Again, this theory was rejected. It was not until the bacteriological revolution of 19^th^ century that this "new" perspective would receive widespread acceptance [@santer2009RichardBradleyUnified]. It is quite remarkable that our modern conceptions of epidemiology and bacteriology can be traced back to diverse "founders" throughout history, many of which were grappling with the perplexing nature of plague.
 
 After it was established that _a_ living organism caused the Black Death, the intuitive next step was to precisely identify _the_ organism. The symptoms described in historical texts seemed to incriminate bubonic plague [@benedictow2004BlackDeath13461353], a bacterial pathogen that passes from _rodents to humans_, and leads to grotesquely swollen lymph nodes (buboes). On the other hand, the rapid spread of the Black Death suggests this was a contagion primarily driven by _human to human_ transmission, which more closely fit the profile of an Ebola-like virus [@scott2001BiologyPlaguesEvidence].  In the 1990s and 2000s, geneticists began contributing novel evidence to the debate, by retrieving pathogenic DNA from skeletal remains [@drancourt1998Detection400yearoldYersinia]. The plague bacterium, _Yersinia pestis_, played a central role in these molecular investigations, as researchers sought to either establish or refute its presence in medieval victims [@gilbert2004AbsenceYersiniaPestisspecific]. The competitive nature of this discourse fueled significant technological progress, and over the next decade, the study of ancient DNA became a well-established discipline. However, the origins of the Black Death remained unresolved, due to numerous controversies surrounding DNA contamination and scientific rigor [@cooper2000AncientDNAIt].
 
@@ -187,10 +187,12 @@ Katherine Eaton^1,2^
 
 \setlength{\parindent}{2em}
 
+
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 ```{.include shift-heading-level-by=0}
 [[Eaton_2020_NCBImeta_dissertation.md]]
 ```
+
 
 # Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_ {#sec:cryptic_clock}
 
@@ -221,8 +223,9 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 ```{.include}
-[[Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md]]
+[[Eaton_et_al._2022_Plagued_by_a_cryptic_clock.md]]
 ```
+
 
 # Plague in Denmark (1000-1800): A longitudinal study of _Yersinia pestis_ {#sec:denmark}
 
@@ -256,7 +259,7 @@ Katherine Eaton\*^1,2^, Ravneet Sidhu\*^1,3^, Jennifer Klunk^1,4^, Julia Gamble^
 
 
 ```{.include}
-[[Eaton_et_al._2021_Plague_in_Denmark_1000-1800.md]]
+[[Eaton_et_al._2022_Plague_in_Denmark_1000-1800.md]]
 ```
 
 # Conclusion {#sec:conclusion}

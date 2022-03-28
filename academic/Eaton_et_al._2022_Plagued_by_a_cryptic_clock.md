@@ -1,5 +1,6 @@
 ---
-title: "Plagued by a cryptic clock: Insight and issues from the global phylogeny of _Yersinia pestis_"
+title: "Plagued by a cryptic clock"
+subtitle: "Insight and issues from the global phylogeny of _Yersinia pestis_"
 
 author:
   - name: Katherine Eaton
@@ -56,13 +57,21 @@ compile-manubot: |
   && pandoc/manubot.sh \
     --input Eaton_et_al._2022_Plagued_by_a_cryptic_clock.md \
     --template ../../rootstock/templates/paper \
+    --csl pandoc/csl/nature-communications.csl \
+    --bib-plain \
+    --page-numbering \
     --pdf \
     --docx
 
 # Manubot
 lang: en-US
 repo: ktmeaton/obsidian-public
+repo_url: https://github.com/ktmeaton/obsidian-public
 filepath: 'academic/Eaton_et_al._2022_Plagued_by_a_cryptic_clock'
+base_url: "https://ktmeaton.github.io/obsidian-public/academic/Eaton_et_al._2022_Plagued_by_a_cryptic_clock"
+authors_manual: true
+draft: false
+
 
 # Obsidian
 project: phd
@@ -73,10 +82,10 @@ tags: ✨
 status: done
 ---
 
-
 <!-- Comment out for dissertation -->
+<!--
 
-Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmichael^4^, Nükhet Varlık^5^, G. Brian Golding^6^, Edward C. Holmes^7^, Hendrik N. Poinar^1,2,8,9,10^
+Katherine Eaton\*^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmichael^4^, Nükhet Varlık^5^, G. Brian Golding^6^, Edward C. Holmes^7^, Hendrik N. Poinar\*^1,2,8,9,10^
 
 ### Author Affiliations
 
@@ -93,9 +102,8 @@ Katherine Eaton^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmicha
 
 \*Corresponding authors: <eatonk3@mcmaster.com>, <poinarh@mcmaster.ca>
 
+-->
 <!-- -->
-
-<div style="page-break-after: always;"></div>
 
 ## Abstract
 
@@ -127,7 +135,7 @@ The oldest classification system of _Y. pestis_ is the biovar nomenclature that 
 
 #### Major Branches
 
-In contrast to the biovar nomenclature which emphasizes phenotype, the major branch nomenclature focuses on genotype. This system divides the global phylogeny of *[[Yersinia pestis\|Y. pestis]]* into populations according to their relative position to a multifurcation called the “Big Bang” polytomy  [@cui2013HistoricalVariationsMutation]. All lineages that diverged prior to this polytomy are grouped into Branch 0 and those diverging after form Branches 1 through 4. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [@green2020HowMicrobeBecomes; @green2020FourBlackDeaths].
+In contrast to the biovar nomenclature which emphasizes phenotype, the major branch nomenclature focuses on genotype. This system divides the global phylogeny of _Y. pestis_ into populations according to their relative position to a multifurcation called the “Big Bang” polytomy  [@cui2013HistoricalVariationsMutation]. All lineages that diverged prior to this polytomy are grouped into Branch 0 and those diverging after form Branches 1 through 4. Because this multifurcation plays such a central role in this system, there is great interest in estimating its timing and geographic origins [@green2020HowMicrobeBecomes; @green2020FourBlackDeaths].
 
 #### Time Period
 
@@ -353,7 +361,3 @@ A visual overview of the computational methods is provided in \*@fig:workflow an
 ![The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations with (A) no detectable temporal signal, (B) insufficient internal calibrations, and (C) informative rates and dates. Stars indicate the node representing the most recent common ancestor (MRCA). Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/f2aa4bd/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths.png){#fig:branch_lengths width=80% tag="S6" short-caption="The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations."}
 
 ![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6bea409/main/report/workflow.png){#fig:workflow tag="S7" short-caption="Computational methods workflow."}
-
-<!-- Comment out for dissertation
-## References 
--->

@@ -3,7 +3,7 @@
 	url = https://gitlab.com/vimalkvn/pandoc-mvp-css.git
 [submodule "academic/pandoc/lua-filters"]
 	path = academic/pandoc/lua-filters
-	url = https://github.com/pandoc/lua-filters
+	url = https://github.com/ktmeaton/lua-filters
 [submodule "academic/pandoc/plugins/reveal.js-menu"]
 	path = academic/pandoc/plugins/reveal.js-menu
 	url = https://github.com/denehyg/reveal.js-menu.git

@@ -426,6 +426,7 @@ $endif$
 \usepackage{fancyhdr} % page style fancy
 \usepackage{calc,array} % table formatting and arraybackslash
 \usepackage{sectsty}
+\usepackage[titles]{tocloft}
 
 %\usepackage{chngcntr}
 %\counterwithin{figure}{chapter}
@@ -436,6 +437,9 @@ $endif$
 
 %% pandoc-secnos: change Cref names
 % \Crefname{section}{Chapter}{Sections}
+
+\cftsetindents{figure}{0em}{3.5em}
+\cftsetindents{table}{0em}{3.5em}
 
 \setlength{\parskip}{1em} % Paragraph indent
 \setlength{\parindent}{2em} % Paragraph spacing
