@@ -83,7 +83,6 @@ status: done
 ---
 
 <!-- Comment out for dissertation -->
-<!--
 
 Katherine Eaton\*^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmichael^4^, Nükhet Varlık^5^, G. Brian Golding^6^, Edward C. Holmes^7^, Hendrik N. Poinar\*^1,2,8,9,10^
 
@@ -102,12 +101,12 @@ Katherine Eaton\*^1,2^, Leo Featherstone^3^, Sebastian Duchene^3^, Ann G. Carmic
 
 \*Corresponding authors: <eatonk3@mcmaster.com>, <poinarh@mcmaster.ca>
 
--->
 <!-- -->
 
 ## Abstract
 
 Plague has an enigmatic history as a zoonotic pathogen. This potentially devastating infectious disease will unexpectedly appear in human populations and disappear just as suddenly. As a result, a long-standing line of inquiry has been to estimate when and where plague appeared in the past. However, there have been significant disparities between phylogenetic studies of the causative bacterium, _Yersinia pestis_, regarding the timing and geographic origins of its reemergence. Here, we curate and contextualize an updated phylogeny of _Y. pestis_ using 601 genome sequences sampled globally. We perform a detailed Bayesian evaluation of temporal signal in subsets of these data and demonstrate that a _Y. pestis_-wide molecular clock model is unstable. To resolve this, we devised a new approach in which each _Y. pestis_ population was assessed independently. This enabled us to recover significant temporal signal in five populations, including the ancient pandemic lineages which we now estimate may have emerged decades, or even centuries, before a pandemic was historically documented from European sources. Despite this, we only obtain robust divergence dates from populations sampled over a period of at least 90 years, indicating that genetic evidence alone is insufficient for accurately reconstructing the timing and spread of short-term plague epidemics. Finally, we identify key historical data sets that can be used in future research, which will complement the strengths and mitigate the weaknesses of genomic data. 
+
 
 <div style="page-break-after: always;"></div>
 
@@ -187,6 +186,8 @@ The inability to infer divergence dates due to sampling bias also has several hi
 
 ![Ancestor-descendant relationships in the maximum likelihood phylogeny reveal tMRCA conflicts between _Antiqua_ (0.ANT) and the First Pandemic (0.ANT4). Node dates (95% HPD) were estimated from the Bayesian analysis, where each population was assessed independently. Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/9c4cd394b8df3bf1db5/main/iqtree_stats/all/chromosome/full/filter5/divtree_first_pandemic.png){#fig:divtree_first_pandemic width=80% short-caption="Ancestor-descendant relationships in the maximum likelihood phylogeny reveal tMRCA conflicts between _Antiqua_ (0.ANT) and the First Pandemic (0.ANT4)."}
 
+<div style="page-break-after: always;"></div>
+
 |      Category      | Population | Morelli et al. 2010 | Cui et al. 2013 | Pisarenko et al. 2021 |  This Study  |
 |:------------------:|:----------:|:-------------------:|:---------------:|:---------------------:|:------------:|
 | Informative Dates  |   1.ORI    |     -326, 1793      |   1735, 1863    |      1744, 1842       |  1806, 1901  |
@@ -244,8 +245,6 @@ The strength and specificity of our estimated origin is striking, given that we 
 
 ![Geographic origins and spread of the Third Pandemic (1.ORI) and the _Intermedium_ (1.IN) population. Ancestral locations were estimated by fitting a discrete migration model to the maximum likelihood phylogeny using sampling locations by province. Arrows reflect the directionality of spread, but not the precise route taken. Grey arrows indicate the migration was poorly supported by the data, with an ancestral likelihood less than 0.95 and/or a branch support bootstrap less than 95%.](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/fc9e7aa/main/auspice/all/chromosome/full/filter5/ml/map_third_pandemic.png){#fig:map_third_pandemic width=70% short-caption="Geographic origins and spread of the Third Pandemic (1.ORI) and the _Intermedium_ (1.IN) population."}
 
-<div style="page-break-after: always;"></div>
-
 
 #### The Second Pandemic (14^th^ - 19^th^ Century CE)
 
@@ -274,25 +273,25 @@ Finally, we asked whether _Y. pestis_ has sufficient geographic signal to accura
 
 ### Data Collection
 
-_Y. pestis_ genome sequencing projects were retrieved from the National Centre for Biotechnology Information (NCBI) databases using NCBImeta v0.7.0 [@eaton2020NCBImetaEfficientComprehensive]. 1657 projects were identified and comprised three genomic types. 1473 projects came from isolates sampled during the 20^th^ and 21^st^ centuries, which we label as "modern". Of these, (i) 586 projects were available as assembled genomic contigs (FASTA), and (ii) 887 were only available as unassembled sequences (FASTQ). An additional (iii) 184 projects came from skeletal remains with sampling ages older than the 19^th^ century, which we label as "ancient". The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. 
+_Y. pestis_ genome sequencing projects were retrieved from the National Centre for Biotechnology Information (NCBI) databases using NCBImeta (v0.7.0)[@eaton2020NCBImetaEfficientComprehensive]. 1657 projects were identified and comprised three genomic types. 1473 projects came from isolates sampled during the 20^th^ and 21^st^ centuries, which we label as "modern". Of these, (i) 586 projects were available as assembled genomic contigs (FASTA), and (ii) 887 were only available as unassembled sequences (FASTQ). An additional (iii) 184 projects came from skeletal remains with sampling ages older than the 19^th^ century, which we label as "ancient". The 887 modern unassembled genomes were excluded from this project, as the wide variety of laboratory methods and sequencing strategies precluded a standardized workflow. In contrast, the 184 ancient unassembled genomes were retained given the relatively standardized, albeit specialized, laboratory procedures required to process ancient tissues. 
 
-Collection location, date, and host metadata were curated by cross-referencing the original publications. Locations were transformed to latitude and longitude coordinates using GeoPy v2.0.0 and the Nominatim API (<https://github.com/osm-search/Nominatim>) for OpenStreetMap. Coordinates were standardized at the level of country and province/state, using the centroid of each. Collection dates were standardized according to their year and recording uncertainty arising from missing data and radiocarbon estimates. Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation.
+Collection location, date, and host metadata were curated by cross-referencing the original publications. Locations were transformed to latitude and longitude coordinates using GeoPy (v2.0.0) and the Nominatim API (<https://github.com/osm-search/Nominatim>) for OpenStreetMap. Coordinates were standardized at the level of country and province/state, using the centroid of each. Collection dates were standardized according to their year and recording uncertainty arising from missing data and radiocarbon estimates. Genomes were removed if no associated date or location information could be identified in the literature, or if there was documented evidence of laboratory manipulation.
 
 Two additional data sets were required for downstream analyses. First, _Y. pestis_ strain CO92 (GCA_000009065.1) was used as the reference genome for sequence alignment and annotation. Second, _Yersinia pseudotuberculosis_ strains NCTC10275 (GCA_900637475.1) and IP32953 (GCA_000834295.1) served as an outgroup to root the maximum likelihood phylogeny.
 
 ### Sequence Alignment
 
-Modern assembled genomes were aligned to the reference genome using snippy v 4.6.0 (<https://github.com/tseemann/snippy>), a pipeline for core genome alignments. Default parameters were used, along with the following minimum thresholds: depth of 10X, base quality of 20, mapping quality of 30, major allele frequency of 0.9. Modern genomes were excluded if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome. After applying this filter, 540 modern genomes remained.
+Modern assembled genomes were aligned to the reference genome using snippy (v4.6.0) (<https://github.com/tseemann/snippy>), a pipeline for core genome alignments. Default parameters were used, along with the following minimum thresholds: depth of 10X, base quality of 20, mapping quality of 30, major allele frequency of 0.9. Modern genomes were excluded if the number of sites covered at a minimum depth of 10X was less than 70% of the reference genome. After applying this filter, 540 modern genomes remained.
 
-Ancient unassembled genomes were downloaded from the SRA database in FASTQ format using the SRA Toolkit. Pre-processing and alignment to the reference genome was performed using the nf-core/eager pipeline v2.2.1, a reproducible workflow for ancient genome reconstruction [@yates2021ReproduciblePortableEfficient]. Default parameters were used, along with the following minimum filters: read length of 35 bp, an edit distance of 0.01, and a 16 bp seed length. Only merged reads were retained from paired end-sequencing projects. Ancient genomes were removed if the number of sites covered at a minimum depth of 3X was less than 70% of the reference genome. After applying this filter, 61 ancient genomes remained.
+Ancient unassembled genomes were downloaded from the SRA database in FASTQ format using the SRA Toolkit (v2.10.8). Pre-processing and alignment to the reference genome was performed using the nf-core/eager pipeline (v2.2.1), a reproducible workflow for ancient genome reconstruction [@yates2021ReproduciblePortableEfficient]. Default parameters were used, along with the following minimum filters: read length of 35 bp, an edit distance of 0.01, and a 16 bp seed length. Only merged reads were retained from paired end-sequencing projects. Ancient genomes were removed if the number of sites covered at a minimum depth of 3X was less than 70% of the reference genome. After applying this filter, 61 ancient genomes remained.
 
-A multiple sequence alignment was constructed using the snippy core module of the _snippy_ v4.6.0 pipeline. The output alignment was filtered to only include chromosomal sites that were present in at least 95% of samples (i.e. a missing data threshold of 5%). The filtered alignment included 10,249 variant positions exclusive to _Y. pestis_, with 3,844 sites shared by at least two strains.
+A multiple sequence alignment was constructed using the snippy core module of the snippy pipeline (v4.6.0). The output alignment was filtered to only include chromosomal sites that were present in at least 95% of samples (i.e. a missing data threshold of 5%). The filtered alignment included 10,249 variant positions exclusive to _Y. pestis_, with 3,844 sites shared by at least two strains.
 
 ### Maximum Likelihood Phylogenetic Analysis
 
-Model selection was performed on the full data set (N=601) using Modelfinder [@kalyaanamoorthy2017ModelFinderFastModel] which identified the K3Pu+F+I model as the optimal choice based on the Bayesian Information Criterion (BIC). The K3P model, also known as K81, estimates substitution rates using three categories, in this case: (1) A<->C equals G<->T, (2) A<->G equals C <->T, and (3) A<->T equals C<->G). The "u+F"suffix indicates that base frequencies will be empirically evaluated and thus are not assumed to be equal. The "+I" suffix indicates that a proportion of the alignment includes invariable sites (i.e. non-SNPS), 
+Model selection was performed on the full data set (N=601) using Modelfinder [@kalyaanamoorthy2017ModelFinderFastModel] as implemented in IQTREE2 (v2.2.1). Modelfinder identified the K3Pu+F+I model as the optimal choice based on the Bayesian Information Criterion (BIC). The K3P model, also known as K81, estimates substitution rates using three categories, in this case: (1) A<->C equals G<->T, (2) A<->G equals C <->T, and (3) A<->T equals C<->G). The "u+F"suffix indicates that base frequencies will be empirically evaluated and thus are not assumed to be equal. The "+I" suffix indicates that a proportion of the alignment includes invariable sites (i.e. non-SNPS), 
 
-A maximum likelihood phylogeny was estimated for this data across 10 independent runs of IQTREE2 [@minh2020IQTREENewModels]. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation [@hoang2018UFBoot2ImprovingUltrafast], with a threshold of 95% required for strong support.
+A maximum likelihood phylogeny was estimated for this data across 10 independent runs of IQTREE2 (v2.2.1) [@minh2020IQTREENewModels]. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation [@hoang2018UFBoot2ImprovingUltrafast], with a threshold of 95% required for strong support.
 
 ### Data Partitions
 
@@ -305,20 +304,20 @@ In an attempt to improve the performance and convergence of molecular clock anal
 
 To explore the degree of temporal signal present in the data, two categories of tests were performed. The first was a root-to-tip (RTT) regression on the mean sampling age using the _statsmodels_ python package. Given the relative simplicity of a regression model, the full data set of 601 genomes was used. 
 
-For the second test of temporal signal, a Bayesian Evaluation of Temporal Signal (BETS) was conducted. This consisted of running four model configurations: either with or without sampling dates, and under a strict or uncorrelated lognormal relaxed clock models (strict and UCLN, respectively). We calculated the log marginal likelihood under each model configuration using stepping-stone sampling as implemented in BEAST v1.10 [@suchard2018BayesianPhylogeneticPhylodynamic]. To this end, we ran 200 path steps, each with a Markov chain Monte Carlo (MCMC) of length 10^6^ steps. In addition to the clock model we used a constant-size coalescent tree prior, a GTR+gamma nucleotide substitution model. 
+For the second test of temporal signal, a Bayesian Evaluation of Temporal Signal (BETS) was conducted. This consisted of running four model configurations: either with or without sampling dates, and under a strict or uncorrelated lognormal relaxed clock models (strict and UCLN, respectively). We calculated the log marginal likelihood under each model configuration using stepping-stone sampling as implemented in BEAST (v1.10) [@suchard2018BayesianPhylogeneticPhylodynamic]. To this end, we ran 200 path steps, each with a Markov chain Monte Carlo (MCMC) of length 10^6^ steps. In addition to the clock model we used a constant-size coalescent tree prior, a GTR+gamma nucleotide substitution model. 
 
 Importantly, the models involved priors that were proper for all parameters, which is essential for marginal likelihood calculations [@baele2013AccurateModelSelection]. In particular, the molecular clock rate (i.e. the mean of the UCLN clock model or the global rate of the strict clock) had a continuous time Markov chain reference prior [@ferreira2008BayesianAnalysisElapsed], the population size of the constant-size coalescent an exponential prior distribution with mean 10, and the standard deviation of the UCLN had an exponential prior with mean 0.33. Marginal likelihood estimation with stepping- stone sampling does not require from the posterior distribution. To obtain the posterior distribution we used an MCMC of 10^9^ steps, sampling every 10^3^ steps. For situations where the effective sample size (ESS) of any parameters was below 200 we increased the chain length by 50% and reduced sampling frequency accordingly.
 
 
 ### Estimating Ancestral Locations and Spread
 
-To explore underlying phylogeography, we performed ancestral state reconstruction using the maximum likelihood method implemented in TreeTime [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic]. We independently fit three discrete mugration models to the maximum likelihood phylogeny using the sampling locations by: (1) continent, (2) country, and (3) province. The mapping of countries to continents was defined according to the open-source resource GeoJSONRegions (<https://geojson-maps.ash.ms/>). For each internal node, we extracted the ancestral location with the highest likelihood given the data. 
+To explore underlying phylogeography, we performed ancestral state reconstruction using the maximum likelihood method implemented in TreeTime (v0.8.1) [@sagulenko2018TreeTimeMaximumlikelihoodPhylodynamic]. We independently fit three discrete mugration models to the maximum likelihood phylogeny using the sampling locations by: (1) continent, (2) country, and (3) province. The mapping of countries to continents was defined according to the open-source resource GeoJSONRegions (<https://geojson-maps.ash.ms/>). For each internal node, we extracted the ancestral location with the highest likelihood given the data. 
 
-We also conducted a discrete trait analysis in BEAST [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. A coalescent constant population size tree prior was chosen with an exponential prior placed on the effective population size with mean 100000. We modeled evolutionary rate with an uncorrelated relaxed lognormal clock, with a CTMC scale prior on the mean  and exponential prior with mean 1/3 on the standard deviation of the underlying lognormal distribution [@drummond2006RelaxedPhylogeneticsDating]. A GTR+gamma nucleotide substitution model with estimated base frequencies for 1.ORI, 1.PRE, 0.ANT4, and 0.PRE. The same settings were used for 2.MED with the exception of swapping the GTR+gamma model to an HKY+gamma model. MCMC chains were run for 10^7^ steps with sampling every 10^3^ steps. We used logCombiner to combine between 3-5 replicate runs, with 10% burnin, for each clade to achieve ESS above 200 for each parameter and Maximum Clade Credibility (MCC) trees [@drummond2007BEASTBayesianEvolutionary].
+We also conducted a discrete trait analysis in BEAST (v1.10) [@lemey2009BayesianPhylogeographyFinds; @suchard2018BayesianPhylogeneticPhylodynamic]. Country of sample origin was chosen as the discrete trait of interest. A coalescent constant population size tree prior was chosen with an exponential prior placed on the effective population size with mean 100000. We modeled evolutionary rate with an uncorrelated relaxed lognormal clock, with a CTMC scale prior on the mean  and exponential prior with mean 1/3 on the standard deviation of the underlying lognormal distribution [@drummond2006RelaxedPhylogeneticsDating]. A GTR+gamma nucleotide substitution model with estimated base frequencies for 1.ORI, 1.PRE, 0.ANT4, and 0.PRE. The same settings were used for 2.MED with the exception of swapping the GTR+gamma model to an HKY+gamma model. MCMC chains were run for 10^7^ steps with sampling every 10^3^ steps. We used logCombiner to combine between 3-5 replicate runs, with 10% burnin, for each clade to achieve ESS above 200 for each parameter and Maximum Clade Credibility (MCC) trees [@drummond2007BEASTBayesianEvolutionary].
 
 ### Visualization
 
-Data visualization was performed using the python package seaborn [@waskom2021SeabornStatisticalData] and Auspice  [@hadfield2018NextstrainRealtimeTracking], a component of the Nextstrain visualization suite.
+Data visualization was performed using the python package seaborn (v0.11.1) [@waskom2021SeabornStatisticalData] and Auspice (v2.23.0)[@hadfield2018NextstrainRealtimeTracking], a component of the Nextstrain visualization suite.
 
 ## Acknowledgments
 
@@ -339,7 +338,7 @@ All genomic sequences used in this study are publicly available and were downloa
 
 ## Code Availability
 
-A visual overview of the computational methods is provided in \*@fig:workflow and is publicly available as a snakemake pipeline (https://github.com/ktmeaton/plague-phylogeography/).
+The computational workflow is publicly available as a snakemake pipeline (https://github.com/ktmeaton/plague-phylogeography/).
 
 ## Supplementary Information
 
@@ -359,5 +358,3 @@ A visual overview of the computational methods is provided in \*@fig:workflow an
 ![Population-specific rate variation in _Yersinia pestis_ as observed through regressions of root-to-tip distance on sampling age. The distance to the population MRCA was calculated using subtrees extracted from the maximum likelihood phylogeny. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/1f888baa3/main/iqtree_stats/all/chromosome/full/filter5/rtt_regression_population.png){#fig:rtt_population width=100% tag="S5" short-caption="Population-specific rate variation in _Yersinia pestis_ as observed through regressions of root-to-tip distance on sampling age."}
 
 ![The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations with (A) no detectable temporal signal, (B) insufficient internal calibrations, and (C) informative rates and dates. Stars indicate the node representing the most recent common ancestor (MRCA). Grey branches indicate outliers, as defined by the 90% confidence interval of external branch lengths from all populations. ](https://raw.githubusercontent.com/ktmeaton/plague-phylogeography-projects/f2aa4bd/main/iqtree_stats/all/chromosome/full/filter5/branch_lengths.png){#fig:branch_lengths width=80% tag="S6" short-caption="The subtrees extracted from the maximum likelihood phylogeny for the _Yersinia pestis_ populations."}
-
-![Computational methods workflow.](https://rawcdn.githack.com/ktmeaton/plague-phylogeography-projects/6bea409/main/report/workflow.png){#fig:workflow tag="S7" short-caption="Computational methods workflow."}
