@@ -107,8 +107,8 @@ git checkout 13512b8 -- $file;
 ```
 
 ```bash
-file='Eaton_et_al._2021_Plagued_by_a_cryptic_clock.md';
-string='position'
+file="workflow/Snakefile";
+string="taxonium"
 latest=`git log --oneline $file | head -n 1 | cut -d " " -f 1`;
 git log --follow -S \"$string\" --follow -p $file;
 ```
