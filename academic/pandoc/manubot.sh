@@ -238,7 +238,7 @@ ${SCRIPT_DIR}/convert_wikilinks.py --input "$input" --output ${output}
 # Assets and Inclusions
 
 # Identify file inclusions
-arrINCLUDE=(`grep -A 1 "{.include" $INPUT | grep -v "{.include\|--" | sed -E 's/\[|\]//g'`)
+arrINCLUDE=(`grep -A 1 "{.include" "$INPUT" | grep -v "{.include\|--" | sed -E 's/\[|\]//g'`)
 
 # Convert links and copy over
 for filename in ${arrINCLUDE[@]}; do
