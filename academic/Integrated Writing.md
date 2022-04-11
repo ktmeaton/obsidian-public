@@ -22,9 +22,9 @@ I have multiple different platforms that I write in. I would like to [[Integrate
 - [[Obsidian]] is my editor and main powerhouse for writing, linking, and thinking.
 - It uses [[Markdown]].
 
-### [[Auspice]]
+### [[obsidian-public/academic/Auspice]]
 
-[[Auspice]] is my data visualization platform.
+[[obsidian-public/academic/Auspice]] is my data visualization platform.
 - It uses [[Markdown]].
 
 ### [[Zotero]]

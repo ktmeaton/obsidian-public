@@ -7,7 +7,7 @@ tags:
 
 # Nextstrain Citations
 
-1. I want to be able to add and manage citations in [[Nextstrain]] and [[Auspice]].
+1. I want to be able to add and manage citations in [[Nextstrain]] and [[obsidian-public/academic/Auspice]].
 2. I want to write [[Nextstrain Narratives]] in [[Obsidian]].
 
 ## Footnotes

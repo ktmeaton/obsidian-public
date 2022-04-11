@@ -4,9 +4,8 @@ due: 2022-03-31
 time: "--"
 people:
 tags: 📝 
-status: priority
+status: done
 title: File with SGS
-type: Task
 ---
 
 # File with SGS
