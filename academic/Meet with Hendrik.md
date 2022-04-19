@@ -13,6 +13,14 @@ time: 13:15
 
 # Meet with Hendrik
 
+## [[2022-04-19|2022 April 19]] | [Zoom Link](https://us02web.zoom.us/j/87027544321?pwd=YXFLbFZtRFdGbmE4SFZJTVUySDVzQT09)
+
+1. Eaton et al. (2022) [[Eaton_et_al._2022_Plagued_by_a_cryptic_clock|Plagued by a cryptic clock]]
+2. Eaton et al. (2022) [[Eaton_et_al._2022_Plague_in_Denmark_1000-1800|Plague in Denmark]]
+3. Project/Sample Summary
+3. Upload notebooks to MacDrive/infoserv.
+
+
 ## [[2022-02-15]]
 
 ![[Leaving the Poinar Lab]]

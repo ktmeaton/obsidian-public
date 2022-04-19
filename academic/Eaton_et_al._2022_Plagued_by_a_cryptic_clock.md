@@ -1,6 +1,9 @@
 ---
 title: "Plagued by a cryptic clock"
 subtitle: "Insight and issues from the global phylogeny of _Yersinia pestis_"
+aliases:
+  - "Eaton et al. (2022) Plagued by a cryptic clock"
+  - "Plagued by a cryptic clock"
 
 author:
   - name: Katherine Eaton

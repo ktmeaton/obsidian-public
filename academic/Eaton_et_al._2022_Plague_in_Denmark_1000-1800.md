@@ -2,7 +2,9 @@
 # Metadata
 title: Plague in Denmark (1000-1800)
 subtitle: A longitudinal study of _Yersinia pestis_
-
+aliases:
+  - "Plague in Denmark"
+  - "Eaton et al. (2022) Plague in Denmark"
 authors:
   - name: Katherine Eaton
     orcid: 0000-0001-6862-7756
