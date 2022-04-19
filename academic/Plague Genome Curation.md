@@ -8,7 +8,7 @@ type: [ [ Experiment ] ]
 tags:
   - 🧨
   - 📝/🌱
-status: priority
+status: done
 ---
 
 # Plague Genome Curation

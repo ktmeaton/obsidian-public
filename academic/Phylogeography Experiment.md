@@ -6,7 +6,7 @@ title:
 tags:
   - 🧨
 status:
-  - priority
+  - done
 ---
 
 # Phylogeography Experiment

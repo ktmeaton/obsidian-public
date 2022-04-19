@@ -136,8 +136,7 @@ numbersections: true
 xnos-number-by-section: true
 
 # Obsidian
-status: priority
-type: Thesis
+status: done
 ---
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>

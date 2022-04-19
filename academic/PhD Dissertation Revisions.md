@@ -4,7 +4,7 @@ due: "--"
 time: "--"
 people:
 tags: 📝
-status: priority
+status: done
 title: PhD Dissertation Edits
 type: Task
 ---

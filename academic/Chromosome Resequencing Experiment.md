@@ -10,7 +10,7 @@ tags:
   - 🚂
   - 📝/🌿
 status:
-  - priority
+  - done
 ---
 
 # Chromosome Resequencing Experiment

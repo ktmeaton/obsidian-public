@@ -6,7 +6,7 @@ type: Task
 due: "--"
 time: "--"
 tags: 📝     
-status: priority
+status: done
 ---
 
 # Editorial Policy Checklist
