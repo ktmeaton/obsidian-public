@@ -120,3 +120,40 @@ git config --global pull.rebase true
 git rebase master dev
 git push origin dev --force
 ```
+
+## Release
+
+**Branch Sync**
+
+**GitHub**
+
+- [ ] Tag Release
+
+	```bash
+	git tag -a -m "Update Dependencies" v0.8.3
+	```
+
+- [ ] Update CHANGELOG
+
+	```bash
+	autologs/autologs --changelog -o CHANGELOG.md
+	```
+
+- [ ] Undo and Redo Tag
+
+	```bash
+	git tag -d v0.8.3
+	git add -A
+	git commit -m "update CHANGELOG"
+	git tag -a -m "Update Dependencies" v0.8.3
+	```
+
+- [ ] Upload Tag
+
+	```bash
+	git push
+	git push origin v0.8.3
+	```
+
+- [ ] Verify all CI
+- [ ] Publish release.
