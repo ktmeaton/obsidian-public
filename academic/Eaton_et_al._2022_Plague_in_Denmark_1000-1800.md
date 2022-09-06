@@ -111,7 +111,7 @@ draft: false
 # Obsidian
 project: Plague Denmark
 tags: 🧨 
-status: priority
+status: done
 type: Paper
 ---
 

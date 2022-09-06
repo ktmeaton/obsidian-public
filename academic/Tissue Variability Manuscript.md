@@ -2,7 +2,7 @@
 title: Tissue Variability Manuscript
 project: Brucellosis
 tags: 📰 
-status: priority
+status: done
 ---
 
 # Tissue Variability Manuscript

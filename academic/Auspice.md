@@ -1,6 +1,6 @@
 ---
 title: Auspice
-type: [[Tool]]
+project: "[[Auspice]]"
 tags:
   - 📝/🌱
 ---
