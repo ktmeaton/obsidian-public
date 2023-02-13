@@ -4,6 +4,12 @@
 
 Plotly is software that creates interactive charts.
 
+## [[ggplot2]]
+
+```r
+saveWidget(ggplotly(gg), file = "test.html");
+```
+
 ## Embed in [[Markdown]]
 - Link: <https://chart-studio.plotly.com/~ktmeaton/1/#/>
 -[[iframe]] [[HTML]]:

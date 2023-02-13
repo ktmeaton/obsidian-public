@@ -82,7 +82,9 @@ Di = 1
 
 
 - The method will perform best when within-region transmission is substantially more common than between-region transmission (as in e.g., country-level or state-level analyses).
-	
+
+![[@mcbroome2022IdentifyingSARSCoV2Regional_regional_index.png]]
+
 ## Reproduce
 
 1. Replicate a published phylogeographic analysis for the [[COVID-19|SARS-CoV-2 pandemic]].

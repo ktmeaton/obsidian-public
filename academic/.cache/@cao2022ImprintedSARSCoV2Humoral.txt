@@ -1,0 +1,6420 @@
+1 
+ 
+Imprinted SARS-CoV-2 humoral immunity induces convergent Omicron 
+RBD evolution 
+Yunlong Cao1,2,#,*, Fanchong Jian1,3,#, Jing Wang1,4,#, Yuanling Yu2,#, Weiliang Song1,4,#, 
+Ayijiang Yisimayi1,4, Jing Wang2, Ran An2, Xiaosu Chen5, Na Zhang2, Yao Wang2, Peng Wang2, 
+Lijuan Zhao2, Haiyan Sun2, Lingling Yu2, Sijie Yang1,6, Xiao Niu1,3, Tianhe Xiao1,7, Qingqing 
+5 
+Gu2, Fei Shao2, Xiaohua Hao8, Yanli Xu8, Ronghua Jin8, Zhongyang Shen9, Youchun Wang2,10,*, 
+Xiaoliang Sunney Xie1,2,*  
+1Biomedical Pioneering Innovation Center (BIOPIC), Peking University, Beijing, P.R. China. 
+2Changping Laboratory, Beijing, P.R. China. 
+3College of Chemistry and Molecular Engineering, Peking University, Beijing, P.R. China. 
+10 
+4School of Life Sciences, Peking University, Beijing, P.R. China. 
+5Institute for Immunology, College of Life Sciences, Nankai University, Tianjin, P. R. China. 
+6Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, P.R. China. 
+7Joint Graduate Program of Peking-Tsinghua-NIBS, Academy for Advanced Interdisciplinary 
+Studies, Peking University, Beijing, China. 
+15 
+8Beijing Ditan Hospital, Capital Medical University, Beijing, P.R. China. 
+9Organ Transplant Center, NHC Key Laboratory for Critical Care Medicine, Tianjin First 
+Central Hospital, Nankai University, Tianjin, P. R. China. 
+10Division of HIV/AIDS and Sex-transmitted Virus Vaccines, Institute for Biological Product 
+Control, National Institutes for Food and Drug Control (NIFDC), Beijing, P.R. China. 
+20 
+*Correspondence: Youchun Wang (wangyc@nifdc.org.cn); Xiaoliang Sunney Xie 
+(sunneyxie@biopic.pku.edu.cn); Yunlong Cao (yunlongcao@pku.edu.cn).  
+#These authors contributed equally. 
+ 
+ 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+2 
+ 
+Abstract 
+25 
+Continuous evolution of Omicron has led to a rapid and simultaneous emergence of numerous 
+variants that display growth advantages over BA.5. Despite their divergent evolutionary 
+courses, mutations on their receptor-binding domain (RBD) converge on several hotspots. The 
+driving force and destination of such convergent evolution and its impact on humoral immunity 
+remain unclear. Here, we demonstrate that these convergent mutations can cause striking 
+30 
+evasion of neutralizing antibody (NAb) drugs and convalescent plasma, including those from 
+BA.5 breakthrough infection, while maintaining sufficient ACE2 binding capability. BQ.1.1.10, 
+BA.4.6.3, XBB, and CH.1.1 are the most antibody-evasive strain tested, even exceeding SARS-
+CoV-1 level. To delineate the origin of the convergent evolution, we determined the escape 
+mutation profiles and neutralization activity of monoclonal antibodies (mAbs) isolated from 
+35 
+BA.2 and BA.5 breakthrough-infection convalescents. Importantly, due to humoral immune 
+imprinting, BA.2 and especially BA.5 breakthrough infection caused significant reductions in 
+the epitope diversity of NAbs and increased proportion of non-neutralizing mAbs, which in 
+turn concentrated humoral immune pressure and promoted convergent evolution. Moreover, 
+we showed that the convergent RBD mutations could be accurately inferred by integrated deep 
+40 
+mutational scanning (DMS) profiles, and the evolution trends of BA.2.75/BA.5 subvariants 
+could be well-simulated through constructed convergent pseudovirus mutants. Together, our 
+results suggest current herd immunity and BA.5 vaccine boosters may not provide good 
+protection against infection. Broad-spectrum SARS-CoV-2 vaccines and NAb drugs 
+development should be highly prioritized, and the constructed mutants could help to examine 
+45 
+their effectiveness in advance.  
+ 
+ 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+3 
+ 
+Main 
+SARS-CoV-2 Omicron BA.1, BA.2, and BA.5 have demonstrated strong neutralization evasion 
+capability, posing severe challenges to the efficacy of existing humoral immunity established 
+50 
+through vaccination and infection 1-14. Nevertheless, Omicron is continuously evolving, leading 
+to various new subvariants, including BA.2.75, BA.4.6, and BF.7 15-21. Importantly, a high 
+proportion of these emerging variants display significant growth advantages over BA.5, such 
+as BA.2.3.20, BA.2.75.2, BQ.1.1, and especially XBB, a recombinant of BJ.1 and BM.1.1.1 
+(Fig. 1) 22. Such rapid and simultaneous emergence of multiple variants with enormous growth 
+55 
+advantages is unprecedented. Notably, although these derivative subvariants appear to diverge 
+along the evolutionary course, the mutations they carry on the receptor-binding domain (RBD) 
+converge on the same sites, including R346, K356, K444, V445, G446, N450, L452, N460, 
+F486, F490, R493, and S494 (Fig. 1). Most mutations on these residues are known to be 
+antibody-evasive, as revealed by deep mutational scanning (DMS) 1,2,23-25. It’s crucial to 
+60 
+examine the impact of these convergent mutations on antibody-escaping capability, receptor 
+binding affinity, and the efficacy of vaccines and antibody therapeutics. It’s also important to 
+investigate the driving force behind this suddenly accelerated emergence of RBD mutations, 
+what such mutational convergence would lead to, and how we can prepare for such convergent 
+RBD evolution. 
+65 
+NAb evasion caused by convergent variants 
+First, we tested the antibody evasion capability of these convergent variants. We constructed 
+the VSV-based spike-pseudotyped virus of Omicron BA.2, BA.2.75, and BA.4/5 sublineages 
+carrying those convergent mutations and examined the neutralizing activities of therapeutic 
+neutralizing antibodies (NAbs) against them (Fig. 2a and Extended Data Fig. 1a) 26-28. In total, 
+70 
+pseudoviruses of 50 convergent variants were constructed and tested. COV2-2196+COV2-
+2130 (Evusheld) 26,29 is vulnerable to F486, R346, and K444-G446 mutations, evaded or highly 
+impaired 
+by 
+BJ.1 
+(R346T), 
+XBB 
+(R346T+V445P+F486S), 
+BA.2.75.2/CA.1/BM.1.1/BM.1.1.1/CH.1.1 (R346T+F486S), CJ.1 (R346T+F486P), BR.2 
+(R346T+F486I), BA.4.6.1 (R346T+F486V), BA.5.6.2/BQ.1 (K444T+F486V), BU.1 
+75 
+(K444M+F486V), and BQ.1.1 (R346T+K444T+F486V). LY-CoV1404 (Bebtelovimab) 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+4 
+ 
+remains potent against BF.16 (K444R) and BA.5.5.1 (N450D) and shows reduced potency 
+against BA.5.1.12 (V445A) 27 (Extended Data Fig. 1a). However, LY-CoV1404 was escaped 
+by BJ.1, XBB, BR.1, CH.1.1, BA.4.6.3 and BQ.1.1 while exhibiting strongly reduced activity 
+against BA.2.38.1, BA.5.6.2, and BQ.1 due to K444N/T mutations and the combination of 
+80 
+K444M/G446S or V445P/G446S 27. SA55+SA58 is a pair of broad NAbs isolated from 
+vaccinated SARS convalescents that target non-competing conserved epitopes 2,28. SA58 is 
+weak to G339H and R346T mutations and showed reduced neutralization efficacy against 
+BJ.1/XBB and BA.2.75 sublineages. SA55 is the only NAb demonstrating high potency against 
+all tested Omicron subvariants. Among the tested variants, XBB and BQ.1.1 exhibited the 
+85 
+strongest resistance to therapeutic mAbs and cocktails (Fig. 2a). Since the SA55+SA58 cocktail 
+is still in preclinical development, the efficacy of available antibody drugs, including the 
+BA.2.75/BA.5-effective Evusheld and Bebtelovimab, are extensively affected by the emerging 
+subvariants with convergent mutations.  
+Sufficient ACE2-binding affinity is essential for SARS-CoV-2 transmission. Thus, we 
+90 
+examined the relative hACE2 binding capability of these variants by evaluating hACE2 
+inhibitory efficiency against the pseudoviruses. Higher inhibitory efficiency of soluble hACE2 
+against pseudoviruses indicates higher ACE2-binding capability 17. Overall, these convergent 
+variants all demonstrate sufficient ACE2-binding efficiency, at least higher than that of D614G, 
+including the most antibody-evasive XBB, BQ.1.1, and CH.1.1 (Fig. 2b and Extended Data 
+95 
+Fig. 1b). Specifically, R493Q reversion increases the inhibitory efficiency of hACE2, which is 
+consistent with previous reports 3,17,19. K417T shows a moderate increase in the inhibitory 
+efficiency of hACE2. In contrast, F486S, K444M, and K444N have a clear negative impact on 
+inhibitory efficiency, while K444T and F486P do not cause significant impairment of ACE2 
+binding. These observations are also in line with previous DMS results 30. 
+100 
+Most importantly, we investigated how these variants escape the neutralization of plasma 
+samples from individuals with various immune histories. We recruited cohorts of individuals 
+who received 3 doses of CoronaVac 31 with or without breakthrough infection by BA.1, BA.2, 
+or BA.5. Convalescent plasma samples were collected on average around 4 weeks after hospital 
+discharge (Supplementary Table 1). Plasma from CoronaVac vaccinees was obtained 4 weeks 
+105 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+5 
+ 
+after the third dose. A significant reduction in the NT50 against most tested BA.2, BA.2.75, or 
+BA.5 subvariants has been observed, compared to that against corresponding ancestral BA.2, 
+BA.2.75, or BA.5, respectively (Fig. 2c-f and Extended Data Fig. 2a-d).  
+Specifically, BA.2.3.20 and BA.2.75.2 are significantly more immune evasive than BA.5 (Fig. 
+2c-f), explaining their high growth advantage. Nevertheless, multiple convergent variants 
+110 
+showed even stronger antibody evasion capability, including BM.1.1.1 (BM.1.1+F490S), CJ.1 
+(BM.1.1.1+S486P), CA.1 (BA.2.75.2+L452R+T604I), CA.2 (BA.2.75.2+S494P), CH.1 
+(BA.2.75+R346T+K444T+F486S), CH.1.1 (CH.1+L452R) in the BA.2.75 sublineages, and 
+BQ.1.1 (BA.5+R346T+K444T+N460K), BQ.1.1.10 (BQ.1.1+Y144del), and BA.4.6.3 
+(BA.4.6+K444N+N460K+Y144del) in the BA.4/5 sublineages. Strikingly, the BJ.1/BM.1.1.1 
+115 
+recombinant strain XBB and XBB.1 (XBB+G252V) are among the most humoral immune 
+evasive strains tested, comparable to that of CH.1.1, BQ.1.1.10 and BA.4.6.3. Importantly, 
+BA.5 breakthrough infection yields higher plasma NT50 against BA.5 sublineages, including 
+BQ.1.1; however, plasma from BA.5 breakthrough infection neutralize poorly against XBB, 
+CH.1.1, BQ.1.1.10 and BA.4.6.3, suggesting that the NTD mutations they carry are extremely 
+120 
+effective at evading NAbs elicited by BA.5 breakthrough infection (Fig. 2f). Notably, the 
+strongest immune-evasive convergent variants have displayed even lower NT50 than SARS-
+CoV-1, suggesting immense antigenic drift and potential serotype conversion.  
+Immune imprinting induces convergent evolution 
+It is crucial to investigate the origin of such accelerated RBD convergent evolution. Therefore, 
+125 
+we characterized the antibody repertoires induced by Omicron BA.2 and BA.5 breakthrough 
+infection, which is the dominant immune background of current global herd immunity. 
+Following the strategy described in our previous report using pooled PBMC from BA.1 
+breakthrough infection 2, we enriched antigen-specific memory B cells by fluorescence-
+activated cell sorting (FACS) for individuals who had recovered from BA.2 and BA.5 
+130 
+breakthrough infection (Supplementary Table 1). RBD-binding CD27+/IgM-/IgD- cells were 
+subjected to single-cell V(D)J sequencing (scVDJ-seq) to determine the BCR sequences 
+(Extended Data Fig. 3a-b).  
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+6 
+ 
+Similar to that reported in BA.1 breakthrough infection, immune imprinting, or so-called 
+“original antigenic sin”, is also observed in BA.2 and BA.5 breakthrough infection 2,32-35. Post-
+135 
+vaccination infection with BA.2 and BA.5 mainly recalls cross-reactive memory B cells 
+elicited by wildtype-based vaccine, but rarely produces BA.2/BA.5 specific B cells, similar to 
+BA.1 breakthrough infection (Fig. 3a-b). This is in marked contrast to Omicron infection 
+without previous vaccination (Fig. 3c and Extended Data Fig. 3c). The RBD-targeting antibody 
+sequences determined by scVDJ-seq are then expressed in vitro as human IgG1 monoclonal 
+140 
+antibodies (mAbs). As expected, only a small proportion of the expressed mAbs specifically 
+bind to BA.2/BA.5 RBD and are not cross-reactive to WT RBD, determined by enzyme-linked 
+immunosorbent assay (ELISA), concordant with the FACS results (Fig. 3d). Importantly, cross-
+reactive mAbs exhibit significantly higher somatic hypermutation (SHM), indicating that these 
+antibodies are more affinity-matured and are indeed most likely recalled from previously 
+145 
+vaccination-induced memory (Fig. 3d).  
+Next, we determined the escape mutation profiles of these antibodies by high-throughput DMS 
+and measured their neutralizing activities against SARS-CoV-2 D614G, BA.2, BA.5, BA.2.75, 
+BQ.1.1 and XBB (Fig. 3e, 3g and Extended Data Fig. 4a-b). Previously, we reported the DMS 
+profiles and the epitope distribution of antibodies isolated from WT vaccinated/infected 
+150 
+individuals, SARS-CoV-2 vaccinated SARS convalescents, and BA.1 convalescents, which 
+could be classified into 12 epitope groups 2. Among them, mAbs in groups A, B, C, D1, D2, 
+F2, and F3 compete with ACE2 and exhibit neutralizing activity (Fig. 3h, Extended Data Fig. 
+5a-d and 6a-d); while mAbs in groups E1, E2.1, E2.2, E3, and F1 do not compete with ACE2 
+(Fig. 3h, Extended Data Fig. 7a-c). Antibodies in groups E2.2, E3, and F1 exhibit low or no 
+155 
+neutralizing capability (Extended Data Fig. 4b, 7d). To integrate the previous dataset with DMS 
+profiles of the new mAbs isolated from BA.2 and BA.5 convalescents, we co-embedded all 
+antibodies using multidimensional scaling (MDS) based on their DMS profiles, followed by t-
+distributed stochastic neighbor embedding (t-SNE) for visualization, and used KNN-based 
+classification to determine the epitope groups of new mAbs (Fig. 3e). This results in a dataset 
+160 
+containing the DMS profiles of 3051 SARS-CoV-2 WT RBD-targeting mAbs in total 
+(Supplementary Table 2). The epitope distribution of mAbs from BA.2 breakthrough infection 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+7 
+ 
+is generally similar to those elicited by BA.1, except for the increased proportion of mAbs in 
+group C (Fig. 3f). However, BA.5-elicited mAbs showed a more distinct distribution compared 
+to BA.1, with a significantly increased proportion of mAbs in group D2 and E2.2, and 
+165 
+decreased ratio of antibodies in groups B and E2.1. The main reason is that the F486 and L452 
+mutations carried by BA.5 make these cross-reactive memory B cells unable to be activated 
+and recalled (Fig. 3f, Extended Data Fig. 5b, 6a and 7a). Remarkably, antibody repertoires 
+induced by all Omicron breakthrough infections are distinct from those stimulated by WT. 
+Compared to WT infection or vaccination, BA.1, BA.2, and BA.5 breakthrough infection 
+170 
+mainly elicit mAbs of group E2.2, E3, and F1, which do not compete with ACE2 and 
+demonstrate weak neutralizing activity, while WT-elicited antibodies enrich mAbs of groups 
+A, B, and C which compete with ACE2 and exhibit strong neutralization potency (Fig. 3f-h). 
+Strikingly, the combined proportion of E2.2, E3, and F1 antibodies rose from 29% in WT 
+convalescents/vaccinees, 53% in BA.1 convalescents, 51% in BA.2 convalescents, to 63% in 
+175 
+BA.5 convalescents (Fig. 3f). Overall, the proportion and diversity of neutralizing antibody 
+epitopes are reduced in Omicron breakthrough infection, especially in BA.5 breakthrough 
+infection.  
+To better delineate the impact of immune imprinting and consequent reduction of NAb epitope 
+diversity on the RBD evolutionary pressure, we aggregated the DMS profiles of large 
+180 
+collections of mAbs to estimate the impact of mutations on the efficacy of humoral immunity, 
+as inspired by previous works (Supplementary Table 2) 36. It is essential to incorporate the 
+effects of ACE2 binding, RBD expression, neutralizing activity of mAbs, and codon usage 
+constraint with the escape profiles to estimate the SARS-CoV-2 evolution trend on the RBD. 
+In brief, each mutation on the RBD would have an impact on each mAb in the set, which is 
+185 
+quantified by the escape scores determined by DMS and weighted by its IC50 against the 
+evolving strain. For each residue, only those amino acids that are accessible by one nucleotide 
+mutation are included. Impacts on ACE2-binding capability (as measured by pseudovirus 
+inhibitory efficiency) and RBD expression of each mutation are also considered in the analyses, 
+using data determined by DMS in previous reports 30,37,38. Finally, the estimated relative 
+190 
+preference of each mutation is calculated using the sum of weighted escape scores of all mAbs 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+8 
+ 
+in the specific set.  
+The reduced NAb epitope diversity caused by imprinted humoral response could be strikingly 
+shown by the estimated mutation preference spectrum (Fig. 4a). Diversified escaping-score 
+peaks, which also represent immune pressure, could be observed when using BA.2-elicited 
+195 
+antibodies, while only two major peaks could be identified, R346T/S and K444E/Q/N/T/M, 
+when using BA.5-elicited antibodies (Fig. 4a). Interestingly, these two hotspots are the most 
+frequently mutated sites in continuously evolving BA.4/5 subvariants, and convergently 
+occurred in multiple lineages (Fig. 1). Similar analyses for WT and BA.1 also demonstrated 
+diversified peaks; thus, the concentrated immune pressure strikingly reflects the reduced 
+200 
+diversity of NAbs elicited by BA.5 breakthrough infection due to immune imprinting, and these 
+concentrated preferred mutations highly overlapped with convergent hotspots observed in the 
+real world (Extended Data Fig. 8a-b). Together, our results indicate that due to immune 
+imprinting, BA.5 breakthrough infection caused significant reductions of NAb epitope 
+diversity and increased proportion of non-neutralizing mAbs, which in turn concentrated 
+205 
+immune pressure and promoted the convergent RBD evolution.  
+Accurate inference of RBD evolution hotspots 
+Moreover, we wonder if the real-world evolutionary trends of SARS-CoV-2 RBD could be 
+rationalized and even predicted by aggregating this large DMS dataset containing mAbs from 
+various immune histories. Using the mAbs elicited from WT vaccinees or convalescents 
+210 
+weighted by IC50 against the D614G strain, we identified mutation hotspots including 
+K417N/T, K444-G446, N450, L452R, and especially E484K (Extended Data Fig. 8a). Most of 
+these residues were mutated in previous VOCs, such as K417N/E484K in Beta, K417T/E484K 
+in Gamma, L452R in Delta, and G446S/E484A in Omicron BA.1, confirming our estimation 
+and inference. Evidence of the emergence of BA.2.75 and BA.5 could also be found using WT, 
+215 
+BA.1, and BA.2-elicited mAbs with IC50 against BA.2, where peaks on 444-446, 452, 460, 
+and 486 could be identified (Extended Data Fig. 8c). To better investigate the evolution trends 
+of BA.2.75 and BA.5, the two major lineages circulating currently, we then included antibodies 
+elicited by various immune background, including WT/BA.1/BA.2/BA.5 convalescents, which 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+9 
+ 
+we believe is the best way to represent the current heterogeneous global humoral immunity 
+220 
+(Fig. 4b and Extended Data Fig. 8d). For BA.2.75, the most significant sites are R346T/S, 
+K356T, N417Y/H/I/T, K444E/Q/N/T/M, V445D/G/A, N450T/D/K/S, L452R, I468N, A484P, 
+F486S/V, and F490S/Y. We noticed that these identified residues, even specific mutations, 
+highly overlapped with recent mutation hotspots of BA.2.75 (Fig. 1). Two exceptions are A484 
+and I468N. E484 is a featured residue of Group C antibodies and could be covered by L452 
+225 
+and F490 (Extended Data Fig. 5c). I468N mutation is also highly associated with K356 
+mutations, and its function could be covered by K356T (Extended Data Fig. 7a-b). Due to 
+stronger antibody evasion, the preference spectrum of BA.5 is much more concentrated 
+compared to BA.2.75, but the remaining sites are highly overlapped and complementary with 
+BA.2.75. The most striking residues are R346, K444-G446, and N450, followed by K356, 
+230 
+N417, L455, N460, and A484. As expected, L452R/F486V does not stand out in BA.5 
+preference spectrum, while N460K harbored by BA.2.75 appears. These sites and mutations 
+are also popular in emerging BA.4/5 subvariants, proving that our RBD evolution inference 
+system works accurately. 
+NAb evasion mechanism of convergent mutations 
+235 
+It is important to examine where this convergent evolution would lead. Based on the observed 
+and predicted convergent hotpots on RBD of BA.2.75 and BA.5, we wonder if we could 
+construct the convergent variants in advance and investigate to what extent they will evade the 
+humoral immune response. To do this, we must first evaluate the antibody evasion mechanism 
+and impact on hACE2-binding capability of the convergent mutations and their combinations. 
+240 
+Thus, we selected a panel of 178 NAbs from 8 epitope groups that could potently neutralize 
+BA.2 and determined their neutralizing activity against constructed mutants carrying single or 
+multiple convergent mutations (Fig. 4c, Extended Data Fig. 9a). Most of these sites were 
+selected since we have observed at least 5 independent emergences in distinct lineages of BA.2 
+and BA.5 that exhibited a growth advantage. NAbs from F1-F3 epitope groups were not 
+245 
+included since they are either completely escaped by BA.2 or too rare in Omicron-infected 
+convalescents (Fig. 3f). As expected, R493Q and N417T are not major contributors to antibody 
+evasion, but R493Q significantly benefits ACE2 binding. V445A and K444N caused slightly, 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+10 
+ 
+and F486S/V caused significantly reduced ACE2-binding capability, consistent with the 
+measurement of emerging subvariants (Fig. 2a, 4c and Extended Data Fig. 1a). The 
+250 
+neutralization of NAbs in each group is generally in line with DMS profiles. Most group A 
+NAbs are sensitive to N460K and L455S, and BA.5+N460K escapes the majority of NAbs in 
+group A due to the combination of F486V and N460K (Extended Data Fig. 5a). All NAbs in 
+group B are escaped by F486S/V, and Group C NAbs are heavily escaped by F490S and are 
+strongly affected by L452R and F486S/V (Extended Data Fig. 5b-c). A part of group C NAbs 
+255 
+is also slightly affected by K444N/T, S494P and N450D. G446S affects a part of the D1/D2 
+NAbs, as previously reported 19. D1/D2 NAbs are more susceptible to K444N/T, V445A and 
+N450D, and some D1 NAbs could also be escaped by L452R, F490S, and S494P (Extended 
+Data Fig. 6a-b). E1 is mainly affected by R346T, D339H and K356T (Extended Data Fig. 6c). 
+E2.1 and E2.2 exhibit similar properties, evaded by K356T, R346T and L452R (Extended Data 
+260 
+Fig. 7a-b). E3 antibodies seem not significantly affected by any of the constructed mutants, as 
+expected (Extended Data Fig. 7c), but they generally exhibit very low neutralization (Extended 
+Data Fig. 7d). BA.5+R346T escapes most antibodies in D1, E1, and E2.1/E2.2, and an 
+additional K444N further escapes most mAbs in D2, demonstrating the feasibility and 
+effectiveness of combining convergent mutations to achieve further evasion. Importantly, 
+265 
+adding six mutations to BA.5 could achieve the evasion of the vast majority of RBD NAbs, 
+while exhibiting high hACE2-binding capability, despite the reduction caused by K444N/T and 
+F486V. BQ.1.1, XBB and CH.1.1 could also escape the majority of RBD-targeting NAbs. 
+Together, these findings indicate the feasibility of generating a heavy-antibody-escaping 
+mutant harboring accumulated convergent escape mutations while maintaining sufficient 
+270 
+hACE2-binding capability (Fig. 4c and Extended Data Fig. 9a).  
+Although the proportion of Omicron-specific mAbs is low due to immune imprinting, it is still 
+necessary to evaluate their neutralization potency and breadth, especially against the 
+convergent mutants. We tested the neutralizing activity of a panel of Omicron-specific RBD-
+targeting mAbs against D614G, BA.1, BA.2, BA.5, BA.2.75, BA.2.75.2, BR.1, BR.2, CA.1, 
+275 
+BQ.1.1 and XBB. These mAbs were isolated from convalescent plasma one month after 
+Omicron breakthrough infection (Fig. 4d). They could bind RBD of the corresponding exposed 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+11 
+ 
+Omicron variant but do not cross-bind WT RBD, as confirmed by ELISA. We found these 
+mAbs could effectively neutralize against the exposed strain, as expected, but exhibited poor 
+neutralizing breadth, which means their potency would be largely impaired by other Omicron 
+280 
+subvariants, consistent with our previous discovery 2. Notably, BQ.1.1 and XBB could escape 
+most of these Omicron-specific NAbs. Thus, these Omicron-specific antibodies would not 
+effectively expand the breadth of the neutralizing antibody repertoire of Omicron breakthrough 
+infection when facing convergent variants. Further affinity maturation may improve the breadth, 
+but additional experiment is needed. 
+285 
+We then evaluated the potency of NTD-targeting NAbs against BA.2, BA.4/5, BA.2.75 and 
+their sublineages and constructed mutants with selected NTD mutations using a panel of 14 
+NTD-targeting NAbs, as it is reported that NTD-targeting antibodies are abundant in plasma 
+from BA.2 breakthrough infection and contribute to cross-reactivity 39. Most selected 
+mutations are from recently designated Omicron subvariants, except for R237T, which was 
+290 
+near V83A, designed to escape mAbs targeting an epitope reported recently 19. None of the 
+NTD-targeting NAbs exhibit strong neutralizing potency, and the IC50 values are all over 0.2 
+μg/mL 40,41 (Fig. 4e and Extended Data Fig. 9b). We found the tested BA.2-effective NTD-
+targeting NAbs could be separated into two clusters, named group α and δ in our previous 
+report, respectively 19 (Extended Data Fig. 9c). NAbs in group α target the well-known 
+295 
+antigenic supersite on NTD 42, which is sensitive to K147E and W152R harbored by BA.2.75*, 
+and Y144del harbored by BJ.1/XBB; while the other group δ is affected by V83A (XBB) and 
+R237T. The other three NTD mutations harbored by BA.2.75, F157L, I210V and G257S did 
+not significantly affect the tested mAbs, consistent with previous sera neutralization data 17. 
+Two of the NTD mutations harbored by BJ.1 or XBB, Y144del and V83A, each escapes a 
+300 
+cluster of them and together would enable XBB to exhibit extremely strong capability of 
+escaping NTD-targeting NAbs. Notably, XBB.1 escaped all NTD-targeting NAbs tested here.  
+Simulation of convergent variant evolution 
+Based on the above results, we designed multiple VSV-based pseudoviruses that gradually gain 
+convergent mutations that could induce RBD/NTD-targeting NAb resistance (Fig. 5a). The 
+305 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+12 
+ 
+constructed final mutant contains 11 additional mutations on the NTD and RBD compared to 
+BA.5, or 9 mutations compared to BA.2.75. The neutralizing activities of Omicron-effective 
+NAb drugs were first evaluated. As expected, the majority of existing effective NAb drugs, 
+except SA55, are escaped by these mutants (Fig. 5b). Similarly, we also determined the ACE2-
+binding capability of these mutants by neutralization assays using hACE2 (Fig. 5c). Although 
+310 
+some of the designed pseudoviruses, especially those with K444N and F486V, exhibit reduced 
+activity to hACE2 compared to original BA.2.75 or BA.5 variants, their binding affinities are 
+still higher than that of D614G (Fig. 2b). Importantly, our designed pseudoviruses could largely 
+evade the plasma of vaccinees and convalescents after BA.1 breakthrough infection, BA.2 
+breakthrough infection, and even BA.5 breakthrough infection (Fig. 5d-g). Among the 
+315 
+derivative mutants of BA.2.75, L452R, K444M, R346T, and F486V contribute mainly to the 
+significant reduction in neutralization (Fig. 5d-g). Adding more NTD mutations does not 
+contribute to stronger evasion in BA.2.75-based mutants, but we observed a significant 
+reduction in NT50 of BA.2/BA.5 convalescents against BA.5-based mutants with 
+K147E+W152R, suggesting BA.2/BA.5 convalescent plasma contains a large proportion of 
+320 
+NTD-targeting antibodies 39. As the NTD of BA.1 differs from that of BA.2 and BA.5, we did 
+not observe significant effects of NTD mutations on the efficacy of BA.1 convalescent plasma. 
+Plasma neutralization titers of most vaccinees and convalescents decreased to the lower 
+detection limit against BA.2.75 with 5 extra RBD mutations L452R, K444M, R346T, F486V, 
+and K356T. The same applies to vaccinees or BA.1 convalescents against BA.5 with 4 extra 
+325 
+RBD mutations K444N, R346T, N460K, and K356T. The plasma from BA.2/BA.5 
+convalescents can tolerate more mutations based on BA.5, and extra NTD mutations such as 
+K147E and W152R are needed to completely eliminate their neutralization. Together, we 
+demonstrate that as few as five additional mutations on BA.5 or BA.2.75 could completely 
+evade most plasma samples, including those from BA.5 breakthrough infection, while 
+330 
+maintaining high hACE2-binding capability. Similar efforts have been made in a recent report 
+despite different construction strategies 43. The constructed evasive mutants, such as BA.2.75-
+S5/6/7/8 and BA.5-S7/8, could serve to examine the effectiveness of broad-spectrum vaccines 
+and NAbs in advance. 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+13 
+ 
+Discussion 
+335 
+In this work, we showed that convergent RBD evolution can cause severe immune evasion and 
+could be rationalized by integrating DMS profiles. Given the existence of immune imprinting, 
+the humoral immune repertoire is not effectively diversified by infection with new Omicron 
+variants, while the immune pressure on the RBD becomes increasingly concentrated and 
+promotes convergent evolution, posing a great challenge to current vaccines and antibody drugs.  
+340 
+Although this study only examines inactivated vaccines, immune imprinting is also observed 
+in those receiving mRNA vaccines 44,45. In fact, mRNA-vaccinated individuals displayed an 
+even higher proportion of cross-reactive memory B cells, probably because the overall humoral 
+immune response induced by mRNA vaccines is stronger than that induced by inactivated 
+vaccines 45. Also, recent studies on mRNA vaccinees who receive a BA.5 booster or BA.5 
+345 
+breakthrough infection displayed similar neutralization reduction trend against BA.2.75.2, 
+BQ.1 and BQ.1.1, suggesting high consistency of neutralization data among vaccine types 46,47. 
+As the antibodies undergo affinity maturation, their SHM rate would increase 45. This may lead 
+to a higher proportion of variant-specific antibodies, enhanced binding affinity, and increased 
+neutralization breadth, which could potentially resist the convergent mutations carried by 
+350 
+variants like XBB and BQ.1.1 48. However, the effect of affinity maturation may be 
+counteracted by waning immunity 45,49. The affinity-matured memory B cells would require a 
+second booster or reinfection to be effectively deployed. 
+We also observed that plasma from convalescents with BA.5 breakthrough infection exhibited 
+higher neutralization against BA.5-derived variants like BQ.1 and BQ.1.1, suggesting that 
+355 
+BA.5-based boosters are beneficial to protection against convergent variants of BA.5 
+sublineages. However, this may be mainly driven by the enrichment of NTD-targeting 
+antibodies after BA.5 breakthrough infection, which was also reported in BA.2 convalescents 
+39. Significant mutations on NTD, such as Y144del in XBB and BQ.1.18, and mutations of 
+many BA.2.75 sublineages, would cause severe reduction in BA.5 breakthrough infection 
+360 
+plasma neutralization titers. Therefore, the effectiveness of BA.5-based boosters against the 
+convergent mutants carrying critical NTD mutations should be closely monitored. 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+14 
+ 
+Notably, the antibody evasion capability of many variants, such as BQ.1.1, CA.1, BQ.1.18, 
+XBB, and CH.1.1, have already reached or even exceeded SARS-CoV-1, indicating extensive 
+antigenic drift (Fig. 5d-g). Indeed, by constructing an antigenic map of the tested SARS-CoV-
+365 
+2/SARS-CoV-1 variants using the plasma NT50 data, we found that the antigenicity distances 
+of SARS-CoV-2 ancestral strain to CA.1, CH.1.1, XBB and BQ.1.1 are already comparable to 
+that of SARS-CoV-1 (Extended Data Fig. 10a-b). Given that there are ~50 different amino 
+acids between SARS-CoV-1 and SARS-CoV-2 RBD, but only 21 mutations on BQ.1.1 RBD 
+compared to the ancestral strain, these results indicate that the global pandemic indeed has 
+370 
+greatly promoted the efficiency of the virus to evolve immune escape mutations. 
+Finally, our prediction demonstrated a remarkable consistency with real-world observations. 
+Some variants close to the predicted and constructed variants have already emerged while we 
+performed the experiments, validating our prediction model. For example, BQ.1.1 is highly 
+similar to BA.5-S3, and CH.1.1 to BA.2.75-S4/S6 (Fig. 4c). The whole pipeline for 
+375 
+constructing pseudoviruses carrying predicted mutations could be safely conducted in biosafety 
+level 2 (BSL-2) laboratories, and does not involve any infectious pandemic virus. If we had 
+this prediction model at the beginning of the pandemic, the development of NAb drugs and 
+vaccines might not be so frustrated against the continuously emerging SARS-CoV-2 variants. 
+Broad-spectrum SARS-CoV-2 vaccines and NAb drugs development should be of high priority, 
+380 
+and the constructed convergent mutants could serve to examine their effectiveness in advance.  
+References 
+Main text references 
+1 
+Cao, Y. et al. Omicron escapes the majority of existing SARS-CoV-2 neutralizing antibodies. Nature 602, 
+657-663, doi:10.1038/s41586-021-04385-3 (2022). 
+385 
+2 
+Cao, Y. et al. BA.2.12.1, BA.4 and BA.5 escape antibodies elicited by Omicron infection. Nature 608, 
+593-602, doi:10.1038/s41586-022-04980-y (2022). 
+3 
+Wang, Q. et al. Antibody evasion by SARS-CoV-2 Omicron subvariants BA.2.12.1, BA.4 and BA.5. 
+Nature 608, 603-608, doi:10.1038/s41586-022-05053-w (2022). 
+4 
+Tuekprakhon, A. et al. Antibody escape of SARS-CoV-2 Omicron BA.4 and BA.5 from vaccine and 
+390 
+BA.1 serum. Cell 185, 2422-2433 e2413, doi:10.1016/j.cell.2022.06.005 (2022). 
+5 
+Uraki, R. et al. Characterization and antiviral susceptibility of SARS-CoV-2 Omicron/BA.2. Nature, 
+doi:10.1038/s41586-022-04856-1 (2022). 
+6 
+Liu, L. et al. Striking antibody evasion manifested by the Omicron variant of SARS-CoV-2. Nature 602, 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+15 
+ 
+676-681, doi:10.1038/s41586-021-04388-0 (2022). 
+395 
+7 
+Cele, S. et al. Omicron extensively but incompletely escapes Pfizer BNT162b2 neutralization. Nature 
+602, 654-656, doi:10.1038/s41586-021-04387-1 (2022). 
+8 
+Cameroni, E. et al. Broadly neutralizing antibodies overcome SARS-CoV-2 Omicron antigenic shift. 
+Nature 602, 664-670, doi:10.1038/s41586-021-04386-2 (2022). 
+9 
+Yamasoba, D. et al. Virological characteristics of the SARS-CoV-2 Omicron BA.2 spike. Cell 185, 2103-
+400 
+2115 e2119, doi:10.1016/j.cell.2022.04.035 (2022). 
+10 
+Nutalai, R. et al. Potent cross-reactive antibodies following Omicron breakthrough in vaccinees. Cell 
+185, 2116-2131 e2118, doi:10.1016/j.cell.2022.05.014 (2022). 
+11 
+Dejnirattisai, W. et al. SARS-CoV-2 Omicron-B.1.1.529 leads to widespread escape from neutralizing 
+antibody responses. Cell 185, 467-484 e415, doi:10.1016/j.cell.2021.12.046 (2022). 
+405 
+12 
+Cui, Z. et al. Structural and functional characterizations of infectivity and immune evasion of SARS-
+CoV-2 Omicron. Cell 185, 860-871 e813, doi:10.1016/j.cell.2022.01.019 (2022). 
+13 
+Wang, K. et al. Memory B cell repertoire from triple vaccinees against diverse SARS-CoV-2 variants. 
+Nature 603, 919-925, doi:10.1038/s41586-022-04466-x (2022). 
+14 
+Kimura, I. et al. Virological characteristics of the SARS-CoV-2 Omicron BA.2 subvariants including 
+410 
+BA.4 and BA.5. Cell, doi:10.1016/j.cell.2022.09.018 (2022). 
+15 
+Shu, Y. & McCauley, J. GISAID: Global initiative on sharing all influenza data – from vision to reality. 
+Eurosurveillance 22, 30494, doi:doi:https://doi.org/10.2807/1560-7917.ES.2017.22.13.30494 (2017). 
+16 
+Rambaut, A. et al. A dynamic nomenclature proposal for SARS-CoV-2 lineages to assist genomic 
+epidemiology. Nature Microbiology 5, 1403-1407, doi:10.1038/s41564-020-0770-5 (2020). 
+415 
+17 
+Wang, Q. et al. Antigenic characterization of the SARS-CoV-2 Omicron subvariant BA.2.75. Cell Host 
+& Microbe, doi:https://doi.org/10.1016/j.chom.2022.09.002 (2022). 
+18 
+Sheward, D. J. et al. Evasion of neutralising antibodies by omicron sublineage BA.2.75. Lancet Infect 
+Dis, doi:10.1016/S1473-3099(22)00524-2 (2022). 
+19 
+Cao, Y. et al. Characterizations of enhanced infectivity and antibody evasion of Omicron BA.2.75. 
+420 
+bioRxiv, 2022.2007.2018.500332, doi:10.1101/2022.07.18.500332 (2022). 
+20 
+Jian, F. et al. Further humoral immunity evasion of emerging SARS-CoV-2 BA.4 and BA.5 subvariants. 
+bioRxiv, 2022.2008.2009.503384, doi:10.1101/2022.08.09.503384 (2022). 
+21 
+Saito, A. et al. Virological characteristics of the SARS-CoV-2 Omicron BA.2.75. bioRxiv, 
+2022.2008.2007.503115, doi:10.1101/2022.08.07.503115 (2022). 
+425 
+22 
+Chen, C. et al. CoV-Spectrum: Analysis of Globally Shared SARS-CoV-2 Data to Identify and 
+Characterize New Variants. Bioinformatics 38, 1735-1737, doi:10.1093/bioinformatics/btab856 (2021). 
+23 
+Greaney, A. J. et al. Comprehensive mapping of mutations in the SARS-CoV-2 receptor-binding domain 
+that affect recognition by polyclonal human plasma antibodies. Cell Host Microbe 29, 463-476 e466, 
+doi:10.1016/j.chom.2021.02.003 (2021). 
+430 
+24 
+Greaney, A. J. et al. Complete Mapping of Mutations to the SARS-CoV-2 Spike Receptor-Binding 
+Domain 
+that 
+Escape 
+Antibody 
+Recognition. 
+Cell 
+Host 
+Microbe 
+29, 
+44-57 
+e49, 
+doi:10.1016/j.chom.2020.11.007 (2021). 
+25 
+Greaney, A. J. et al. Mapping mutations to the SARS-CoV-2 RBD that escape binding by different classes 
+of antibodies. Nature Communications 12, 4196, doi:10.1038/s41467-021-24435-8 (2021). 
+435 
+26 
+Zost, S. J. et al. Potently neutralizing and protective human antibodies against SARS-CoV-2. Nature 584, 
+443-449, doi:10.1038/s41586-020-2548-6 (2020). 
+27 
+Westendorf, K. et al. LY-CoV1404 (bebtelovimab) potently neutralizes SARS-CoV-2 variants. Cell Rep 
+39, 110812, doi:10.1016/j.celrep.2022.110812 (2022). 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+16 
+ 
+28 
+Cao, Y. et al. Rational identification of potent and broad sarbecovirus-neutralizing antibody cocktails 
+440 
+from SARS convalescents. bioRxiv, 2022.2008.2003.499114, doi:10.1101/2022.08.03.499114 (2022). 
+29 
+Loo, Y. M. et al. The SARS-CoV-2 monoclonal antibody combination, AZD7442, is protective in 
+nonhuman primates and has an extended half-life in humans. Sci Transl Med 14, eabl8124, 
+doi:10.1126/scitranslmed.abl8124 (2022). 
+30 
+Starr, T. N. et al. Deep mutational scans for ACE2 binding, RBD expression, and antibody escape in the 
+445 
+SARS-CoV-2 Omicron BA.1 and BA.2 receptor-binding domains. bioRxiv, 2022.2009.2020.508745, 
+doi:10.1101/2022.09.20.508745 (2022). 
+31 
+Gao, Q. et al. Development of an inactivated vaccine candidate for SARS-CoV-2. Science 369, 77-81, 
+doi:10.1126/science.abc1932 (2020). 
+32 
+Quandt, J. et al. Omicron BA.1 breakthrough infection drives cross-variant neutralization and memory 
+450 
+B cell formation against conserved epitopes. Sci Immunol 7, eabq2427, doi:10.1126/sciimmunol.abq2427 
+(2022). 
+33 
+Khan, K. et al. Omicron BA.4/BA.5 escape neutralizing immunity elicited by BA.1 infection. Nature 
+Communications 13, 4686, doi:10.1038/s41467-022-32396-9 (2022). 
+34 
+Park, Y. J. et al. Imprinted antibody responses against SARS-CoV-2 Omicron sublineages. bioRxiv, 
+455 
+2022.2005.2008.491108, doi:10.1101/2022.05.08.491108 (2022). 
+35 
+Reynolds, C. J. et al. Immune boosting by B.1.1.529 (Omicron) depends on previous SARS-CoV-2 
+exposure. Science 377, eabq1841, doi:10.1126/science.abq1841 (2022). 
+36 
+Greaney, A. J., Starr, T. N. & Bloom, J. D. An antibody-escape estimator for mutations to the SARS-
+CoV-2 receptor-binding domain. Virus Evol 8, veac021, doi:10.1093/ve/veac021 (2022). 
+460 
+37 
+Starr, T. N. et al. Deep Mutational Scanning of SARS-CoV-2 Receptor Binding Domain Reveals 
+Constraints on Folding and ACE2 Binding. Cell 182, 1295-1310 e1220, doi:10.1016/j.cell.2020.08.012 
+(2020). 
+38 
+Starr, T. N. et al. Shifting mutational constraints in the SARS-CoV-2 receptor-binding domain during 
+viral evolution. Science 377, 420-424, doi:10.1126/science.abo7896 (2022). 
+465 
+39 
+Muik, A. et al. Omicron BA.2 breakthrough infection enhances cross-neutralization of BA.2.12.1 and 
+BA.4/BA.5. Science Immunology 0, eade2283, doi:10.1126/sciimmunol.ade2283 (2022). 
+40 
+Wang, Z. et al. Analysis of memory B cells identifies conserved neutralizing epitopes on the N-terminal 
+domain 
+of 
+variant 
+SARS-Cov-2 
+spike 
+proteins. 
+Immunity 
+55, 
+998-1012 
+e1018, 
+doi:10.1016/j.immuni.2022.04.003 (2022). 
+470 
+41 
+Chi, X. et al. A neutralizing human antibody binds to the N-terminal domain of the Spike protein of 
+SARS-CoV-2. Science 369, 650-655, doi:doi:10.1126/science.abc6952 (2020). 
+42 
+McCallum, M. et al. N-terminal domain antigenic mapping reveals a site of vulnerability for SARS-CoV-
+2. Cell 184, 2332-2347 e2316, doi:10.1016/j.cell.2021.03.028 (2021). 
+43 
+Witte, L. et al. Epistasis lowers the genetic barrier to SARS-CoV-2 neutralizing antibody escape. bioRxiv, 
+475 
+2022.2008.2017.504313, doi:10.1101/2022.08.17.504313 (2022). 
+44 
+Alsoussi, W. B. et al. SARS-CoV-2 Omicron boosting induces de novo B cell response in humans. 
+bioRxiv, 2022.2009.2022.509040, doi:10.1101/2022.09.22.509040 (2022). 
+45 
+Kaku, C. I. et al. Evolution of antibody immunity following Omicron BA.1 breakthrough infection. 
+bioRxiv, 2022.2009.2021.508922, doi:10.1101/2022.09.21.508922 (2022). 
+480 
+46 
+Qu, P. et al. Distinct Neutralizing Antibody Escape of SARS-CoV-2 Omicron Subvariants BQ.1, BQ.1.1, 
+BA.4.6, BF.7 and BA.2.75.2. bioRxiv, 2022.2010.2019.512891, doi:10.1101/2022.10.19.512891 (2022). 
+47 
+Wang, Q. et al. Antibody responses to Omicron BA.4/BA.5 bivalent mRNA vaccine booster shot. bioRxiv, 
+2022.2010.2022.513349, doi:10.1101/2022.10.22.513349 (2022). 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+17 
+ 
+48 
+Marzi, R. et al. Maturation of SARS-CoV-2 Spike-specific memory B cells drives resilience to viral 
+485 
+escape. bioRxiv, 2022.2009.2030.509852, doi:10.1101/2022.09.30.509852 (2022). 
+49 
+Levin, E. G. et al. Waning Immune Humoral Response to BNT162b2 Covid-19 Vaccine over 6 Months. 
+New England Journal of Medicine 385, e84, doi:10.1056/NEJMoa2114583 (2021). 
+50 
+Barnes, C. O. et al. SARS-CoV-2 neutralizing antibody structures inform therapeutic strategies. Nature 
+588, 682-687, doi:10.1038/s41586-020-2852-1 (2020). 
+490 
+Figure legends 
+Fig. 1 | Convergent evolution of Omicron RBD with growth advantage over BA.5. 
+Phylogenetic tree of featured Omicron subvariants carrying convergent mutations. Their 
+relative growth advantage values calculated using the CoV-Spectrum website are indicated as 
+color scale. Specific convergent mutations carried by each lineage are labeled. 
+495 
+Fig. 2 | Convergent Omicron subvariants induce striking NAb evasion. 
+a, IC50 of therapeutic NAbs against VSV-based pseudoviruses with spike glycoproteins of 
+emerging SARS-CoV-2 BA.2/BA.5/BA.2.75 convergent subvariants. green, IC50 ≤ 
+100ng/mL; white, 100ng/mL < IC50 < 1,000ng/mL; red, IC50 ≥ 1,000ng/mL; *, IC50 ≥ 
+10,000ng/mL. b, Relative hACE2-binding capability measured by IC50 of hACE2 against 
+500 
+pseudoviruses of variants. Error bars indicate mean±s.d. P-values were calculated using two-
+tailed Student’s t-test. *, p < 0.05; **, p < 0.01; ***, p < 0.001. No label on variants with p > 
+0.05. Variants with significantly stronger binding are colored blue, while those with weaker 
+binding are colored red. c-f, Pseudovirus-neutralizing titers against SARS-CoV-2 D614G and 
+Omicron subvariants of plasma from vaccinated individuals or convalescents of breakthrough 
+505 
+infection. c, Individuals who had received 3 doses of CoronaVac (n = 40). d, Convalescents 
+who had been infected with BA.1 after receiving 3 doses of CoronaVac (n = 50). e, 
+Convalescents who had been infected with BA.2 after receiving 3 doses of CoronaVac (n = 39). 
+f, Convalescents who had been infected with BA.5 after receiving 3 doses of CoronaVac (n = 
+36). The geometric mean titers are labeled. Statistical tests are performed using two-tailed 
+510 
+Wilcoxon signed-rank tests of paired samples. *, p < 0.05; **, p < 0.01; ***, p < 0.001; NS, 
+not significant, p > 0.05. NT50 against BA.2 and BA.2.75-derived subvariants are compared 
+to both that against BA.4/5 (the first line) and BA.2.75 (the second line); while BA.4/5-derived 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+18 
+ 
+subvariants are only compared with BA.4/5. 
+Fig. 3 | Epitope characterization of mAbs elicited by Omicron breakthrough 
+515 
+convalescents. 
+a-c, FACS analysis of pooled memory B cells (IgM-, IgD-/CD27+) from Omicron convalescents. 
+a, BA.5 breakthrough infection; b, BA.2 breakthrough infection; c, BA.2 convalescents 
+without vaccination. d, The heavy chain variable domain SHM rate of mAbs from BA.2 and 
+BA.5 breakthrough infection convalescents. Binding specificity is determined by ELISA. 
+520 
+Statistical tests are determined using two-tailed Wilcoxon signed-rank tests. Boxes display the 
+25th percentile, median and 75th percentile, and violin plots show kernel density estimation 
+curves of the distribution. e, t-SNE and clustering of SARS-CoV-2 wildtype RBD-binding 
+antibodies based on DMS profiles of 3051 antibodies. f, Epitope distribution of mAbs from 
+wildtype convalescents and post-vaccination BA.1/BA.2/BA.5 infection convalescents. Two-
+525 
+tailed binomial tests were used to compare the proportion of each epitope group from BA.2 
+and BA.5 convalescents with that from BA.1. *, p < 0.05; **, p < 0.01; ***, p < 0.001; No 
+label for p > 0.05. g, Neutralizing activity projection of mAbs against SARS-CoV-2 D614G 
+(n=3046), BA.2.75 (n=3046), and BA.4/5 (n=3046), respectively. h, ACE2 competition level 
+projection of mAbs determined by competition ELISA (n=1317). 
+530 
+Fig. 4 | Immune imprinting promotes convergent evolution of NAb-evasive mutations. 
+a-b, Normalized average escape scores weighted by IC50 against a, BA.2 and BA.5 using DMS 
+profiles of NAbs from corresponding convalescents. b, BA.2.75 and BA.5 using DMS profiles 
+of all NAbs except those from SARS convalescents. c, IC50 of representative potent BA.2-
+neutralizing antibodies in epitope group against emerging and constructed Omicron subvariants 
+535 
+pseudovirus with escape mutations, in addition to IC50 of hACE2 against these variants. 
+Classes of the NAbs as defined by Barnes et al. 50 are also annotated below this map. Error bars 
+indicate mean±s.d. P-values were calculated using two-tailed Student’s t-test. *, p < 0.05; **, 
+p < 0.01; ***, p < 0.001. No label on variants with p > 0.05. Variants with significantly stronger 
+binding are colored blue, while those with weaker binding are colored red. d, IC50 against 
+540 
+featured subvariants of RBD-targeting Omicron-specific NAbs from BA.1 (N=108), BA.2 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+19 
+ 
+(N=92), and BA.5 (N=17) breakthrough convalescents. The geometric mean IC50s are labeled, 
+and error bars indicate the geometric standard deviation. P-values are calculated using two-
+tailed Wilcoxon signed-rank tests compared to the corresponding strain. *, p < 0.05; **, p < 
+0.01; ***, p < 0.001; NS, not significant, p > 0.05. e, IC50 of NTD-targeting NAbs against 
+545 
+emerging Omicron subvariants and BA.2 mutants with single NTD substitution. 
+Fig. 5 | Accumulation of convergent escape mutations leads to complete loss of plasma 
+neutralization. 
+a, Mutations of multiple designed mutants that harbor key convergent escape mutations based 
+on BA.2.75 and BA.5. b, IC50 of therapeutic mAbs and cocktails against pseudoviruses of 
+550 
+designed mutants. green, IC50 ≤ 100ng/mL; white, 100ng/mL < IC50 < 1,000ng/mL; red, 
+IC50 ≥ 1,000ng/mL; *, IC50 ≥ 10,000ng/mL. c, IC50 of hACE2 against the designed 
+mutants. Error bars indicate mean±s.d. P-values were calculated using two-tailed Student’s t- 
+test, compared to BA.2.75 and BA.5 respectively for BA.2.75 and BA.5-derived mutants. *, p 
+< 0.05; **, p < 0.01; ***, p < 0.001. No label on variants with p > 0.05. d-g, Pseudovirus 
+555 
+neutralizing titers against SARS-CoV-2 D614G, Omicron subvariants and designed mutants of 
+plasma from vaccinated or convalescent individuals from breakthrough infection. d, 
+Individuals who received 3 doses of CoronaVac (n = 40). e, Convalescents infected with BA.1 
+after receiving 3 doses of CoronaVac (n = 50). f, Convalescents infected with BA.2 after 
+receiving 3 doses of CoronaVac (n = 39). g, Convalescents infected with BA.5 after receiving 
+560 
+3 doses of CoronaVac (n = 36). Key additional mutations harbored by each designed mutant 
+are annotated above the points. The geometric mean titers are labeled. P-values are determined 
+using two-tailed Wilcoxon signed-rank tests of paired samples. *, p < 0.05; **, p < 0.01; ***, 
+p < 0.001; NS, not significant, p > 0.05. Statistical tests are determined using two-tailed 
+Wilcoxon signed-rank tests. 
+565 
+ 
+Methods 
+Isolation of peripheral blood mononuclear cells and plasma 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+20 
+ 
+Samples from vaccinees and individuals who had recovered from BA.1, BA.2, or BA.5 
+infection were obtained under study protocols approved by Beijing Ditan Hospital, Capital 
+570 
+Medical University (Ethics committee archiving No. LL-2021-024-02) and the Tianjin 
+Municipal Health Commission, and the Ethics Committee of Tianjin First Central Hospital 
+(Ethics committee archiving No. 2022N045KY). All donors provided written informed consent 
+for the collection of information, the use of blood and blood components, and the publication 
+of data generated from this study. Whole blood samples were diluted 1:1 with PBS+2% FBS 
+575 
+(Gibco) and subjected to Ficoll (Cytiva) gradient centrifugation. Plasma was collected from the 
+upper layer. Cells were collected at the interface and further prepared by centrifugation, red 
+blood cell lysis (Invitrogen eBioscience) and washing steps. The date of vaccination, 
+hospitalization and sampling can be found in Supplementary Table 1. 
+BCR sequencing, analysis, and antibody production. 
+580 
+CD19+ B cells were isolated from PBMCs with EasySep Human CD19 Positive Selection Kit 
+II (STEMCELL, 17854). Every 106 B cells in 100 μl solution were stained with 3 μl FITC anti-
+human CD20 antibody (BioLegend, 302304, clone: 2H7), 3.5 μl Brilliant Violet 421 anti-
+human CD27 antibody (BioLegend, 302824, clone: O323), 2 μl PE/Cyanine7 anti-human IgM 
+antibody (BioLegend, 314532, clone: MHM-88), 2 μl PE/Cyanine7 anti-human IgD antibody 
+585 
+(BioLegend, 348210, clone: IA6-2), 0.13 μg biotinylated SARS-CoV-2 BA.2 RBD protein 
+(customized from Sino Biological) or 0.13 μg biotinylated SARS-CoV-2 BA.5 RBD protein 
+(customized from Sino Biological) conjugated with PE-streptavidin (BioLegend, 405204) and 
+APC-streptavidin (BioLegend, 405207), 0.13 μg SARS-CoV-2 WT biotinylated RBD protein 
+(Sino Biological, 40592-V27H-B) conjugated with Brilliant Violet 605 Streptavidin 
+590 
+(BioLegend, 405229). Cells are also labeled with biotinylated RBD conjugated to DNA-oligo-
+streptavidin. Omicron RBD (BA.2 or BA.5) were labeled with TotalSeq-C0971 Streptavidin 
+(Biolegend, 405271) and TotalSeq-C0972 Streptavidin (Biolegend, 405273); WT RBD were 
+labled with TotalSeq-C0973 Streptavidin (Biolegend, 405275) and TotalSeq-C0974 
+Streptavidin (Biolegend, 405277). Cells were washed twice after 30 minutes of incubation on 
+595 
+ice. 
+7-AAD 
+(Invitrogen, 
+00-6993-50) 
+was 
+used 
+to 
+label 
+dead 
+cells. 
+7-
+AAD−CD20+CD27+IgM−IgD− SARS-CoV-2 BA.2 RBD+ or BA.5 RBD+ cells were sorted 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+21 
+ 
+with a MoFlo Astrios EQ Cell Sorter. FACS data were analyzed using FlowJo v10.8 (BD 
+Biosciences).  
+Sorted B cells were resuspended in the appropriate volume and then processed with Chromium 
+600 
+Next GEM Single Cell V(D)J Reagent Kits v1.1 following the manufacturer’s user guide (10x 
+Genomics, CG000208). Gel beads-in-emulsion (GEMs) were obtained with a 10X Chromium 
+controller. GEMs were subjected to reverse transcription and purification. Reverse 
+transcription products were subject to preamplification and purification with SPRIselect 
+Reagent Kit (Beckman Coulter, B23318). BCR sequences (paired V(D)J) were enriched with 
+605 
+10X BCR primers. After library preparation, libraries were sequenced with the Illumina 
+sequencing platform. 
+10X Genomics V(D)J sequencing data were assembled as BCR contigs and aligned using Cell 
+Ranger (v6.1.1) pipeline according to the GRCh38 BCR reference. Only the productive contigs 
+and the B cells with one heavy chain and one light chain were kept for quality control. The 
+610 
+germline V(D)J gene identification and annotation were performed by IgBlast (v1.17.1)51. 
+Somatic hypermutation sites in the antibody variable domain were detected using Change-O 
+toolkit (v1.2.0)52. 
+Antibody heavy and light chain genes were optimized for human cell expression and 
+synthesized by GenScript. VH and VL were inserted separately into plasmids (pCMV3-CH, 
+615 
+pCMV3-CL or pCMV3-CK) through infusion (Vazyme, C112). Plasmids encoding the heavy 
+chain and light chain of antibodies were co-transfected by polyethylenimine-transfection to 
+Expi293F™ cell (ThermoFisher, A14527). Cells were cultured at 36.5℃, 5% CO2, 175 rpm 
+for 6-10 days. Supernatants containing mAbs were collected, and the supernatants were further 
+purified with protein A magnetic beads (Genscript, L00695). 
+620 
+High-throughput deep mutation scanning 
+High-throughput DMS platform has been described previously1,2. Briefly, deep mutation 
+scanning libraries were constructed by mutagenesis PCR based on the Wuhan-Hu-1 RBD 
+sequence (GenBank: MN908947, residues N331-T531). A unique 26-nucleotide (N26) barcode 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+22 
+ 
+was appended to each RBD variant in mutant libraries by PCR, and the correspondence 
+625 
+between the N26 barcode and mutations in RBD variants was acquired by PacBio sequencing. 
+RBD mutant libraries were first transformed in the EBY100 strain of Saccharomyces cerevisiae 
+and then enriched for properly folded ACE2 binders, which were used for subsequent mutation 
+escape profiling. The above ACE2 binders were grown in SG-CAA media (2% w/v d-galactose, 
+0.1% w/v dextrose (d-glucose), 0.67% w/v yeast nitrogen base, 0.5% w/v casamino acids (−ade, 
+630 
+−ura, −trp), 100 mM phosphate buffer, pH 6.0) at room temperature for 16-18h with agitation. 
+Then these yeast cells were washed twice and proceeded to three rounds of magnetic beads-
+based selection. Obtained yeast cells after sequential sorting were recovered overnight in SD-
+CAA media (2% w/v dextrose (d-glucose), 0.67% w/v yeast nitrogen base, 0.5% w/v casamino 
+acids (−ade, −ura, −trp), 70 mM citrate buffer, pH 4.5). Pre- and post-sort yeast populations 
+635 
+were submitted to plasmid extraction by 96 Well Plate Yeast Plasmid Preps Kit (Coolaber, 
+PE053). N26 barcode sequences were amplified with the extracted plasmid templates, and PCR 
+products were purified and submitted to Illumina Nextseq 550 sequencing.  
+Antibody clustering and embedding based on DMS profiles 
+Data analysis of DMS was performed as described in previous reports 1,2. In brief, the detected 
+640 
+barcode sequences of both the antibody-screened and reference library were aligned to the 
+barcode-variant lookup table generated using dms_variants (v0.8.9). The escape scores of each 
+variant X in the library were defined as F×(nX,ab / Nab) / (nX,ref / Nref), where F is a scale factor 
+to normalize the scores to the 0-1 range, while n and N are the number of detected barcodes for 
+variant X and total barcodes in post-selected (ab) or reference (ref) samples, respectively. The 
+645 
+escape scores of each mutation were calculated by fitting an epistasis model as described 
+previously 37,53.  
+Epitope groups of new antibodies not included in our previous report are determined by k-
+nearest neighbors (KNN)-based classification. In brief, site escape scores of each antibody are 
+first normalized and considered as a distribution across RBD residues, and only residues whose 
+650 
+standard derivation is among the highest 50% of all residues are retained for further analysis. 
+Then the dissimilarity or distance of two antibodies is defined by the Jessen-Shannon 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+23 
+ 
+divergence of the normalized escape scores. Pair-wise dissimilarities of all antibodies in the 
+dataset are calculated using the scipy package (scipy.spatial.distance.jensenshannon, v1.7.0). 
+For each antibody, 15 nearest neighbors whose epitope groups have been determined by 
+655 
+unsupervised clustering in our previous paper are identified and simply voted to determine the 
+group of the selected antibody. To project the dataset onto a 2D space for visualization, we 
+performed MDS to represent each antibody in a 32-dimensional space, and then t-SNE to get 
+the 2D representation, using sklearn.manifold.MDS and sklearn.manifold.TSNE (v0.24.2). 
+Calculation of the estimated preference of RBD mutations 
+660 
+Four different weights are included in the calculation, including the weight for ACE2-binding 
+affinity, RBD expression, codon constraint, and neutralizing activity. Impact on ACE2-binding 
+affinity and RBD expression of each mutation based on WT, BA.1 and BA.2 are obtained from 
+public DMS results. And for BA.5 (BA.2+L452R+F486V+R493Q) and BA.2.75 
+(BA.2+D339H+G446S+N460K+R493Q), BA.2 results are used except for these mutated 
+665 
+residues, whose scores for each mutant are subtracted by the score for the mutation in BA.5 or 
+BA.2.75. As the reported values are log fold changes, the weight is simply defined by the 
+exponential of reported values, i.e., exp [������������bind]  or exp[������������expr] , respectively. For codon 
+constraint, the weight is 1.0 for mutants that could be accessed by one nucleotide mutation, and 
+0.0 for others. We used the following RBD nucleotide sequences for determination of 
+670 
+accessible mutants, WT/D614G (Wuhan-Hu-1 reference genome), BA.1 (EPI_ISL_10000028), 
+BA.2 (EPI_ISL_10000005), BA.4/5 (EPI_ISL_11207535), BA.2.75 (EPI_ISL_13302209). 
+For neutralizing activity, the weight is -log10(IC50). The IC50 values (μg/mL), which are 
+smaller than 0.0005 or larger than 1.0 are considered as 0.0005 or 1.0, respectively. The raw 
+escape scores for each antibody are first normalized by the max score among all mutants, and 
+675 
+the final weighted score for each antibody and each mutation is the production of the 
+normalized scores and four corresponding weights. The final mutation-specific weighted score 
+is the summation of scores of all antibodies in the designated antibody set, and then normalized 
+again to make it a value between 0 and 1. Logo plots for visualization of escape maps were 
+generated by the Python package logomaker (v0.8). 
+680 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+24 
+ 
+Pseudovirus neutralization assay 
+The Spike gene (GenBank: MN908947) was mammalian condon-optimized and inserted into 
+the pcDNA3.1 vector. Site-directed mutagenesis PCR was performed as described previously54. 
+The sequence of mutants is shown in Supplementary Table 3. Pseudotyped viruses were 
+generated by transfection 293T cells (ATCC, CRL-3216) with pcDNA3.1-Spike with 
+685 
+Lipofectamine 3000 (Invitrogen). The cells were subsequently infected with G*ΔG-VSV 
+(Kerafast) that packages expression cassettes for firefly luciferase instead of VSV-G in the VSV 
+genome. The cell supernatants were discarded after 6-8h harvest and replaced with complete 
+culture media. The cell was cultured for one day, and then the cell supernatant containing 
+pseudotyped virus was harvested, filtered (0.45-μm pore size, Millipore), aliquoted, and stored 
+690 
+at -80 °C. Viruses of multiple variants were diluted to the same number of copies before use. 
+mAbs or plasma was serially diluted and incubated with the pseudotyped virus in 96-well plates 
+for 1 h at 37°C. Trypsin-treated Huh-7 cells (Japanese Collection of Research Bioresources, 
+0403) were added to the plate. The cells were cultured for 20-28 h in 5% CO2, 37°C incubators. 
+The supernatants were removed and left 100 μL in each well, and 100 μL luciferase substrate 
+695 
+(Perkinelmer, 6066769) was added and incubated in the dark for 2 min. The cell lysate was 
+removed, and the chemiluminescence signals were collected by PerkinElmer Ensight. Each 
+experiment was repeated at least twice. 
+Inhibitory efficiencies of hACE2 against the pseudoviruses were determined with the same 
+procedure, using hACE2-Fc dimer (Sino Biological, 10108-H02H), and each experiment was 
+700 
+conducted in five biological replicates. 
+Dulbecco’s modified Eagle medium (DMEM, high glucose; HyClone) with 100 U/mL of 
+penicillin-streptomycin solution (Gibco), 20 mM N-2-hydroxyethylpiperazine-N-2-ethane 
+sulfonic acid (HEPES, Gibco) and 10% fetal bovine serum (FBS, Gibco) were used in cell 
+culture. Trypsin-EDTA (0.25%, Gibco) was used to detach cells before seeding to the plate. 
+705 
+Enzyme-linked immunosorbent assay 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+25 
+ 
+WT/BA.2/BA.1 RBD or spikes in PBS was pre-coated onto ELISA plates at 4 °C overnight 
+and were washed and blocked. 1 μg ml−1 purified antibodies or serially diluted antibodies were 
+added and incubated at room temperature for 20 min. Peroxidase-conjugated AffiniPure Goat 
+Anti-Human IgG (H+L) (JACKSON, 109-035-003) was added to plates and incubated at room 
+710 
+temperature for 15 min. Tetramethylbenzidine (TMB) (Solarbio, 54827-17-7) was added and 
+incubated for 10 mins, and then the reaction was terminated with 2 M H2SO4. Absorbance was 
+measured at 450 nm using a microplate reader (PerkinElmer, HH3400).  
+Methods references 
+51 
+Ye, J., Ma, N., Madden, T. L. & Ostell, J. M. IgBLAST: an immunoglobulin variable domain sequence 
+715 
+analysis tool. Nucleic Acids Res 41, W34-40, doi:10.1093/nar/gkt382 (2013). 
+52 
+Gupta, N. T. et al. Change-O: a toolkit for analyzing large-scale B cell immunoglobulin repertoire 
+sequencing data. Bioinformatics 31, 3356-3358, doi:10.1093/bioinformatics/btv359 (2015). 
+53 
+Otwinowski, J., McCandlish, D. M. & Plotkin, J. B. Inferring the shape of global epistasis. Proc Natl 
+Acad Sci U S A 115, E7550-E7558, doi:10.1073/pnas.1804015115 (2018). 
+720 
+54 
+Nie, J. et al. Quantification of SARS-CoV-2 neutralizing antibody by a pseudotyped virus-based assay. 
+Nat Protoc 15, 3699-3715, doi:10.1038/s41596-020-0394-5 (2020). 
+Acknowledgments 
+We thank J. Bloom for his gift of the yeast SARS-CoV-2 RBD libraries. We thank all volunteers 
+for providing the blood samples. We thank all the scientists around the globe for performing 
+725 
+SARS-CoV-2 sequencing and surveillance analysis. This project is financially supported by the 
+Ministry of Science and Technology of China and Changping Laboratory (2021A0201; 
+2021D0102), and National Natural Science Foundation of China (32222030). 
+Author contributions 
+Y.C. designed the study. X.S.X supervised the study. Y.C, F.J., A.Y, Q.G. and X.S.X. wrote the 
+730 
+manuscript with inputs from all authors. A.Y., W.S., R.A., Yao W., and X.N. performed B-cell 
+sorting, single-cell VDJ sequencing, and antibody sequence analyses. J.W. (BIOPIC), H.S., and 
+F.J. performed and analyzed the DMS data. Y.Y. and Youchun W. constructed the pseudotyped 
+virus. N.Z., P.W., L.Y., T.X. and F.S. performed the pseudotyped virus neutralization assays. 
+W.S. and Y.C. analyzed the neutralization data. X.H., Y.X., X.C., Z.S. and R.J. recruited the 
+735 
+SARS-CoV-2 vaccinees and convalescents. J.W. (Changping Laboratory), L.Y. and F.S. 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+26 
+ 
+performed the antibody expression. 
+Conflicts of interest 
+X.S.X. and Y.C. are inventors on the provisional patent applications of BD series antibodies, 
+which include BD30-604 (DXP-604), BD55-5840 (SA58) and BD55-5514 (SA55). X.S.X. and 
+740 
+Y.C. are founders of Singlomics Biopharmaceuticals. Other authors declare no competing 
+interests. 
+Data and Code Availability 
+Processed mutation escape scores and custom scripts to analyze the data can be downloaded at 
+https://github.com/jianfcpku/convergent_RBD_evolution. Sequences and neutralization of the 
+745 
+antibodies are included in Supplementary Table 2. Any other raw data of specific antibodies 
+are 
+available 
+from 
+the 
+corresponding 
+authors 
+upon 
+request. 
+We 
+used 
+vdj_GRCh38_alts_ensembl-5.0.0 as the reference of V(D)J alignment, which can be obtained 
+from 
+https://support.10xgenomics.com/single-cell-vdj/software/downloads/latest. 
+IMGT/DomainGapAlign is based on the built-in latest IMGT antibody database, and we let the 
+750 
+“Species” parameter as “Homo sapiens” while keeping the others as default. 
+Extended Data Figures 
+Extended Data Fig. 1 | Antibody drug evasion and hACE2 binding capability of 
+convergent Omicron variants. 
+a, IC50 of therapeutic NAbs against pseudoviruses of additional emerging SARS-CoV-2 
+755 
+Omicron subvariants. b, Relative hACE2-binding capability measured by IC50 of hACE2 
+against pseudoviruses. Error bars indicate mean±s.d. P-values were calculated using a two-
+tailed Student’s t-test. *, p < 0.05; **, p < 0.01; ***, p < 0.001. No label on variants with p > 
+0.05. Variants with significantly stronger binding are colored blue, while those with weaker 
+binding are colored red. 
+760 
+Extended Data Fig. 2 | Plasma neutralization evasion of convergent Omicron variants. 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+27 
+ 
+a-d, NT50 against SARS-CoV-2 previous variants of concern and additional Omicron 
+subvariants of plasma from vaccinated individuals or convalescents of breakthrough infection. 
+Plasma samples, statistical methods and meaning of labels are the same as in Fig. 2.  
+Extended Data Fig. 3 | FACS gating strategy for isolating mAbs from BA.2 and BA.5 
+765 
+convalescents. 
+a, FACS gating strategy of antigen-specific B cells from individuals who recovered from BA.5 
+breakthrough infection. Data from an independent experiment compared to Fig. 3a are shown 
+here. b, FACS gating strategy of antigen-specific B cells from individuals who recovered from 
+BA.2 breakthrough infection. Data from an independent experiment compared to Fig. 3b are 
+770 
+shown here. c, FACS gating strategy of antigen-specific B cells from individuals who recovered 
+from BA.5 infection.  
+Extended Data Fig. 4 | Distribution of antibody sources and neutralizing activities on the 
+DMS landscape. 
+a, Sources of the 3051 mAbs involved in this study projected on the t-SNE of DMS profiles. 
+775 
+b, IC50 against SARS-CoV-1 (N=1870 determined), Omicron BA.1 (N=3031), BA.2 
+(N=3046), BQ.1.1 (N=3051), and XBB (N=3033) of these mAbs projected on the embedding. 
+Extended Data Fig. 5 | Escape hotspots and neutralization of mAbs in epitope groups A, 
+B and C 
+a-c, Average escape scores from DMS of epitope groups A (a), B (b), C (c) and each RBD 
+780 
+residue. Scores are projected onto the structure of SARS-CoV-2 RBD (PDB: 6M0J). Average 
+escape maps that indicate the score of each mutation from DMS on escape hotspots of 
+antibodies, grouped by their sources, in epitope groups A (a), B (b) and C (c), and 
+corresponding sequence alignment of SARS-CoV-2 WT and Omicron RBDs are also shown. 
+The height of each amino acid in the escape maps represents its mutation escape score. Mutated 
+785 
+sites in Omicron variants are marked in bold. d, Pseudovirus-neutralizing IC50 of antibodies 
+in group A, B, and C, from wildtype convalescents or vaccinees (WT-elicited, n=133, 50, 106 
+for A-C, respectively), BA.1 convalescents (BA.1-elicited, n=51, 49, 24), BA.2 convalescents 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+28 
+ 
+(BA.2-elicited, n=34, 36, 56) and BA.5 convalescents (BA.5-elicited, n=16, 6, 14). The 
+geometric mean IC50s are labeled, and error bars indicate the geometric standard deviation. P-
+790 
+values are calculated using two-tailed Wilcoxon signed-rank tests. *, p < 0.05; **, p < 0.01; 
+***, p < 0.001; NS, not significant, p > 0.05. 
+Extended Data Fig. 6 | Escape hotspots and neutralization of mAbs in epitope group D 
+and E1 
+a-c, Average escape scores from DMS of epitope groups D1 (a), D2 (b), E1 (c) and each RBD 
+795 
+residue. d, Pseudovirus-neutralizing IC50 of antibodies in group D1, D2, and E1 For WT-
+elicited mAbs (n=49, 37, 19 for D1, D2 and E1, respectively), BA.1 convalescents (n=59, 21, 
+14 for D1, D2 and E1, respectively), BA.2 convalescents (n=56, 15, 9 for D1, D2 and E1, 
+respectively), and BA.5 convalescents (n=14, 17, 9 for D1, D2 and E1, respectively). 
+Extended Data Fig. 7 | Escape hotspots and neutralization of mAbs in epitope group E2 
+800 
+and E3 
+a-c, Average escape scores from DMS of epitope groups E2.1 (a), E2.2 (b), E3 (c) and each 
+RBD residue. d, Pseudovirus-neutralizing IC50 of antibodies in group E2.1, E2.2, and E3 for 
+WT-elicited mAbs (n=49, 37, 19 for E2.1, E2.2, and E3, respectively), BA.1 convalescents 
+(n=59, 21, 14 for E2.1, E2.2, and E3, respectively), BA.2 convalescents (n=56, 15, 9 for E2.1, 
+805 
+E2.2, and E3, respectively), and BA.5 convalescents (n=14, 17, 9 for E2.1, E2.2, and E3, 
+respectively). 
+Extended Data Fig. 8 | Predicted escape hotspots of SARS-CoV-2 variants 
+a, Normalized average escape scores weighted by IC50 against D614G using DMS profiles of 
+mAbs from ancestral strain infection or vaccination with a logo plot showing specific mutations 
+810 
+on important residues. b, Normalized average escape scores of mAbs from BA.1 breakthrough 
+infection, weighted by IC50 against BA.1. c, Normalized average escape scores of mAbs from 
+ancestral strain infection or vaccination and BA.1 breakthrough infection, weighted by IC50 
+against BA.2. d, WT/BA.1/BA.2-elicited mAbs with IC50 against BA.2.75 and BA.5, similar 
+to Fig. 4b. 
+815 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+29 
+ 
+Extended Data Fig. 9 | IC50 heatmaps of representative mAbs against constructed 
+Omicron variants. 
+a, Color shades indicate IC50 of antibodies (columns) against constructed Omicron BA.2 or 
+BA.5 subvariants (rows) carrying mutations on the epitope of each group. The order of mAbs 
+is the same as in Figure 4c. b, IC50 of NTD-targeting antibodies against SARS-CoV-2 variants, 
+820 
+which is related to Fig. 4e. c, Epitope groups and escape hotspots on BA.2 NTD. 
+Extended Data Fig. 10 | Antigenic map of current SARS-CoV-2 variants 
+a, Antigenic map of SARS-CoV-2 variants constructed using plasma neutralization data by 
+principal component analysis (PCA). b, Antigenic map of SARS-CoV-2 variants with 
+constructed Omicron subvariants removed. 
+825 
+ 
+ 
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+BA.2.10.4
+BJ.1
+BP.1
+BA.2.3.20
+BA.2.12.1
+BA.2.13
+BA.2.38.1
+BH.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BA.2.83
+BS.1.1
+BA.2.75
+BA.2.75.2
+CA.1
+CA.2
+BA.2.75.4
+BA.2.75.5
+BA.2.75.6
+BA.2.75.7
+BL.1
+BL.1.3
+BM.1
+BM.1.1
+BM.1.1.1
+CJ.1
+BM.4.1
+BM.4.1.1
+CH.1
+CH.1.1
+BN.1
+BN.1.1.1
+BN.2.1
+BN.3
+BR.1
+BR.2
+BR.3
+BR.4
+BA.2.75.8
+BA.5
+BA.4.6
+BA.4.6.1
+BA.4.6.2
+BA.4.6.3
+BA.4.7
+BA.5.9
+BA.5.1.12
+BE.4.1.1
+BA.5.5.1
+BA.5.6.2
+BA.5.6.4
+BA.5.2.7
+BF.7
+BF.7.2
+BF.16
+BQ.1
+BQ.1.1
+BQ.1.1.10
+BQ.1.18
+BU.1
+CQ.2
+XBB
+XBB.1
+XBB.4
+XBC
+XBC.1
+R346X
+K356X
+K444X
+V445X
+G446X
+N450X
+L452X
+N460X
+F486X
+F490X
+R493X
+S494X
+−50
+0
+100
+200
+Growth advantage against BA.5 (%)
+0
+2
+4
+6
+8
+Number of 
+convergent mutations
+BA.2*
+Recombinants
+BA.4/5*
+S
+P
+Q
+P
+T
+P
+S
+V
+T
+M
+R
+D
+M
+K
+Q
+Q M
+N
+S
+Q
+T
+M
+T
+T
+R
+Q
+D
+T
+T
+S
+K
+Q
+T
+T
+R
+K
+Q
+S
+P
+Q
+S
+M
+P
+Q
+T
+P
+S
+K
+S
+S
+Q
+T
+P
+S
+K
+S
+S
+Q
+T
+R
+P
+S
+K
+S
+S
+Q
+R
+V
+Q
+S
+R
+V
+Q
+I
+R
+V
+Q
+A
+R
+V
+Q
+T
+R
+R
+V
+Q
+D
+R
+V
+Q
+T
+R
+V
+Q
+E
+R
+V
+Q
+M
+R
+V
+Q
+R
+R
+V
+Q
+M
+R
+K
+V
+Q
+T
+R
+A
+R
+V
+Q
+T
+R
+V
+Q
+T
+R
+I
+Q
+T
+R
+V
+Q
+T
+R
+V
+Q
+T
+A
+R
+V
+Q
+T
+N
+R
+K
+V
+Q
+T
+R
+K
+V
+Q
+T
+T
+R
+K
+V
+Q
+T
+T
+R
+K
+V
+Q
+T
+T
+R
+K
+V
+Q
+S
+K
+Q
+S
+R
+K
+Q
+T
+S
+K
+Q
+T
+S
+K
+Q
+S
+K
+S
+Q
+T
+S
+K
+S
+Q
+T
+S
+D
+K
+S
+Q
+S
+Q
+K
+Q
+T
+S
+K
+Q
+T
+S
+K
+L
+Q
+T
+T
+S
+K
+S
+Q
+T
+T
+S
+K
+S
+Q
+P
+T
+S
+K
+S
+Q
+T
+S
+R
+K
+S
+Q
+T
+S
+K
+S
+Q
+P
+S
+K
+S
+Q
+T
+S
+K
+S
+Q
+T
+S
+K
+S
+S
+Q
+T
+S
+K
+P
+S
+Q
+S
+K
+S
+Q
+T
+S
+K
+S
+Q
+T
+T
+S
+K
+S
+Q
+T
+T
+S
+R
+K
+S
+Q
+M
+S
+R
+K
+Q
+T
+S
+R
+K
+I
+Q
+T
+S
+R
+K
+Q
+T
+R
+K
+Q
+Figure 1
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+IC50 of hACE2 (μg/mL)
+c
+e
+d
+f
+b
+a
+Pseudovirus IC50 (ng/mL)
+<100
+100~1,000
+>1,000
+* >10,000
+CoronaVac × 3
+Plasma NT50
+Plasma NT50
+CoronaVac × 3 → BA.1 infection
+CoronaVac × 3 → BA.2 infection
+CoronaVac × 3 → BA.5 infection
+Pango
+lineages
+REGN
+10933
+REGN
+10987
+REGN10933
++10987
+COV2
+-2196
+COV2
+-2130
+COV2-
+2196+2130
+BRII-
+196
+BRII-
+198
+BRII-
+196+198 S309 DXP-
+604
+LY-CoV
+1404
+SA58 SA55 SA55+
+SA58
+Additional RBD
+mutations
+BA.2
+*
+590
+821
+4312
+6.3
+8.2
+8530 8990
+8610
+852
+219
+0.9
+5.1
+7.2
+7.8
+BA.2.3.20
+111
+*
+201
+12
+*
+23
+4591
+*
+8823
+961
+6990
+7.9
+18
+3.9
+7.5
+K444R+N450D+L452M+
+N460K+A484R+R493Q
+BS.1.1
+92
+435
+177
+790
+*
+1100
+2011
+*
+4012
+*
+7803
+1.3
+5981
+5.1
+9.9
+R346T+K356T+L452R+
+N460K+G476S+R493Q
+XBC
+*
+*
+*
+*
+12
+21
+*
+*
+*
+69
+*
+0.8
+20
+5.2
+7.0
+D339G+G446S+F486P
++R493Q
+XBB
+*
+*
+*
+*
+*
+*
+*
+*
+*
+963
+*
+*
+8805
+5.3
+9.8
+D339H+R346T+L368I+
+V445P+G446S+N460K+
+F486S+F490S+R493Q
+BA.2.75
+278
+*
+410
+119
+352
+121
+1730 6622
+3861
+672
+5920
+2.2
+246
+4.3
+9.6
+BN.1
+344
+*
+599
+70
+*
+166
+3683
+*
+7791
+*
+6012
+3.3
+8295
+4.9
+9.0
+R346T+K356T+F490S
+BA.2.75.2
+*
+*
+*
+*
+*
+*
+*
+*
+*
+852
+*
+3.0
+6922
+5.9
+9.7
+R346T+F486S
+BM.1.1.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+956
+*
+1.9
+8082
+4.8
+10
+R346T+F486S+F490S
+CJ.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+747
+*
+5.0
+8024
+5.1
+9.8
+R346T+F486P+F490S
+BR.2
+*
+*
+*
+*
+*
+*
+*
+*
+*
+921
+*
+2.6
+7263
+4.7
+11
+R346T+L452R+F486I
+CA.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+897
+*
+3.2
+6927
+6.0
+12
+R346T+L452R+F486S
+CA.2
+*
+*
+*
+*
+*
+*
+*
+*
+*
+683
+*
+1.7
+6789
+4.9
+9.7
+R346T+F486S+S494P
+CH.1.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+924
+*
+*
+*
+7.1
+11
+R346T+K444T+L452R+
+F486S
+BA.4/5
+*
+520
+709
+*
+23
+40
+7124
+*
+*
+1055 6264
+0.8
+3.9
+5.0
+4.5
+BF.7
+*
+2195
+4388
+*
+*
+*
+4356
+*
+8307
+3543 4116
+1.0
+341
+6.6
+9.0
+R346T
+BA.5.6.2
+*
+*
+*
+*
+*
+*
+4636
+*
+7883
+1408 5892
+1662
+58
+5.1
+8.9
+K444T
+BU.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+1082
+*
+26
+56
+5.3
+11
+K444M+N460K
+BQ.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+1709
+*
+1905
+44
+6.6
+9.2
+K444T+N460K
+BQ.1.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+5581
+*
+*
+900
+5.9
+10
+R346T+K444T+N460K
+BA.4.6.3
+*
+*
+*
+*
+*
+*
+*
+*
+*
+4987
+*
+*
+1809
+6.7
+9.9
+R346T+K444N+N460K
+0.19***
+BA.4.6.3
+0.16
+BQ.1.1
+0.17
+BQ.1
+0.18**
+BU.1
+0.14
+BA.5.6.2
+0.15
+BA.4.6.1
+0.12*
+BA.4/5
+0.17*
+CH.1.1
+0.15
+CA.2
+0.14
+CA.1
+0.14
+BR.2
+0.13
+CJ.1
+0.15
+BM.1.1.1
+0.15
+BA.2.75.2
+0.09***
+BN.1
+0.07***
+BA.2.75
+0.15
+XBB
+0.10***
+XBC
+0.12**
+BA.2.3.20
+0.14
+BA.2
+0.24***
+D614G
+0.1
+0.2
+0.3
+Plasma NT50
+Plasma NT50
+652
+122 130 42
+28
+20
+20
+90
+27
+22
+21
+21
+21
+21
+21
+20
+72
+45
+27
+24
+21
+21
+41
+2.1x 3.3x 4.4x 4.5x
+3.4x 4.2x 4.3x 4.3x 4.4x 4.3x 4.3x 4.4x
+1.6x 2.7x 3.0x 3.4x 3.4x
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+1.7x 2.6x 3.6x 3.6x 0.8x 2.7x 3.4x 3.5x 3.4x 3.5x 3.5x 3.5x 3.6x
+***
+***
+***
+***
+*
+***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+XBC
+BA.2.3.20
+XBB
+XBB.1
+BA.2.75
+BN.1
+BA.2.75.2
+BM.1.1.1
+CJ.1
+BR.2
+CA.1
+CA.2
+CH.1.1
+BA.4/5
+BF.7
+BQ.1
+BQ.1.1
+BQ.1.1.10
+BA.4.6.3
+SARS−CoV−1
+1245
+282 696 182 80
+23
+22 217 58
+35
+27
+28
+26
+25
+28
+22 175 97
+45
+40
+22
+22
+25
+2.7x 9.5x 10x
+3.8x 6.2x 8.2x 7.8x 8.5x 8.8x 7.7x 9.9x
+1.8x 3.9x 4.4x 7.8x 7.8x
+NS ***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+2.2x 7.7x 8.1x
+3.0x 5.0x 6.6x 6.2x 6.8x 7.1x 6.2x 7.9x
+NS ***
+***
+***
+NS ***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+XBC
+BA.2.3.20
+XBB
+XBB.1
+BA.2.75
+BN.1
+BA.2.75.2
+BM.1.1.1
+CJ.1
+BR.2
+CA.1
+CA.2
+CH.1.1
+BA.4/5
+BF.7
+BQ.1
+BQ.1.1
+BQ.1.1.10
+BA.4.6.3
+SARS−CoV−1
+1136
+209 729 328 94
+27
+26 145 55
+49
+40
+43
+40
+38
+43
+26 508 208 129 77
+27
+27
+29
+0.4x 1.5x 5.4x 5.7x
+2.6x 3.0x 3.6x 3.3x 3.7x 3.8x 3.4x 5.5x
+2.4x 3.9x 6.6x 19x 19x
+***
+**
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+5.4x 19x 20x 3.5x 9.3x 10x 13x 12x 13x 13x 12x 19x
+NS ***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+XBC
+BA.2.3.20
+XBB
+XBB.1
+BA.2.75
+BN.1
+BA.2.75.2
+BM.1.1.1
+CJ.1
+BR.2
+CA.1
+CA.2
+CH.1.1
+BA.4/5
+BF.7
+BQ.1
+BQ.1.1
+BQ.1.1.10
+BA.4.6.3
+SARS−CoV−1
+1557
+852 452 82
+83
+23
+23 197 84
+34
+27
+28
+27
+26
+28
+22 107 70
+32
+27
+23
+23
+79
+2.4x 2.4x 8.7x 8.7x
+2.3x 5.9x 7.4x 7.1x 7.4x 7.6x 7.1x 8.8x
+1.5x 3.3x 3.9x 4.7x 4.6x
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+1.3x 1.3x 4.7x 4.7x 0.5x
+3.2x 4.0x 3.9x 4.0x 4.1x 3.8x 4.8x
+*
+*
+***
+***
+**
+NS ***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+XBC
+BA.2.3.20
+XBB
+XBB.1
+BA.2.75
+BN.1
+BA.2.75.2
+BM.1.1.1
+CJ.1
+BR.2
+CA.1
+CA.2
+CH.1.1
+BA.4/5
+BF.7
+BQ.1
+BQ.1.1
+BQ.1.1.10
+BA.4.6.3
+SARS−CoV−1
+0.12
+BS.1.1
+Figure 2
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+WT RBD-BV605
+CD20-FITC
+b
+c
+d
+a
+BA.5 RBD+
+0.28
+BA.2 RBD-PE
+BA.2 RBD-APC
+BA.5 breakthrough infection
+BA.2 RBD+
+0.086
+BA.2 RBD-PE
+BA.2 RBD-APC
+WT RBD-BV605
+CD20-FITC
+BA.2 RBD+
+0.048
+BA.2 RBD-PE
+BA.2 RBD-APC
+WT RBD-BV605
+CD20-FITC
+BA.2 breakthrough infection
+BA.2 infection without vaccination
+BA.2
+convalescents
+BA.5
+convalescents
+VH SHM rate
+WT+ in BA.2+
+71.1
+WT+ in BA.2+
+19.7
+WT+ in BA.5+
+68.6
+DXP−593
+DXP−604
+S309
+S2H97
+LY−CoV555
+COV2−2196
+COV2−2130
+S304
+LY−CoV1404
+ADG−2
+DH1047
+LY−CoV016
+C110
+BD−744
+BD55−1239
+SA55
+SA58
+TSNE1
+TSNE2
+Epitope
+Group
+A
+B
+C
+D1
+D2
+E1
+E2.1
+E2.2
+E3
+F1
+F2
+F3
+WT convalescents/vaccinees
+BA.1 convalescents
+BA.2 convalescents
+BA.5 convalescents
+e
+f
+g
+h
+Non-competing
+Competing
+Competition Level
+680
+2% 10%
+9%
+9%
+10%
+5%
+2%
+5%
+7%
+15%
+7%
+18%
+652
+4%
+16%
+13%
+24%
+12%
+2%
+3%
+8%
+3%
+8%
+6%
+600
+*
+1% 4%
+*
+12%
+**
+17%
+22%
+9%
+1%
+2%
+9%
+**
+9%
+6%
+6%
+238
+5%
+15%
+15%
+**
+33%
+***
+5%
+4%
+**
+7%
+5%
+*
+6%
+**
+3%3%
+0.001
+0.1
+10
+IC50 (μg/mL)
+Figure 3
+RBDWT non-binders
+RBDWT binders
+0.00
+0.05
+0.10
+0.15
+n=151
+19.9%
+n=606
+80.1%
+P<0.0001
+n=31
+10.4%
+n=266
+89.6%
+P<0.0001
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+A
+B
+C
+D1
+D2
+E1
+E2.1
+E2.2
+E3
+CH.1.1
+XBB
+BQ.1.1
+CH.1.1
+XBB
+BQ.1.1
+BA.5+D339H+R346T+K356T+N417T+K444T+N460K
+BA.5+D339H+R346T+K356T+N417T+K444N+N460K
+BA.5+K444N+R346T
+BA.5+R346T
+BA.5+K444N
+BA.5+K444T
+BA.5+N417T+N460K
+BA.5+N460K
+BA.4/5
+BA.2.75
+BA.2+D339H
+BA.2+K356T
+BA.2+R346T
+BA.2+L452R
+BA.2+V445A
+BA.2+K444N
+BA.2+K444T
+BA.2+N450D
+BA.2+G446S
+BA.2+S494P
+BA.2+F490S
+BA.2+F486S
+BA.2+F486V
+BA.2+L455S
+BA.2+N460K
+BA.2+R493Q
+BA.2+N417T
+346
+356
+444
+445
+446
+450
+460
+455
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+417
+444
+445
+446
+449
+450
+452
+455
+460
+468
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+IC50 Fold change
+compared to BA.2
+0.0001
+0.01
+1
+100
+10,000
+346
+356
+417
+444
+445
+449
+450
+452
+455
+468
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+417
+444
+445
+446
+450
+455
+460
+484
+486
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+Normalized weighted escape score
+Normalized weighted escape score
+RBD residues
+RBD residues
+a
+b
+c
+d
+e
+mAbs from BA.2 breakthrough infection - weighted by IC50 against BA.2
+mAbs from BA.5 breakthrough infection - weighted by IC50 against BA.5
+mAbs from WT/BA.1/BA.2/BA.5 - weighted by IC50 against BA.5
+mAbs from WT/BA.1/BA.2/BA.5 - weighted by IC50 against BA.2.75
+IC50 of hACE2 (μg/mL)
+Figure 4
+346
+356
+417
+444
+445
+450
+452
+460
+468
+484
+486
+490
+346
+356
+417
+444
+445
+450
+452
+460
+468
+484
+486
+490
+346
+356
+417
+444
+445
+450
+452
+460
+468
+484
+486
+490
+346
+356
+417
+444
+445
+450
+452
+460
+468
+484
+486
+490
+10-3
+10-2
+10-1
+100
+101
+Pseudovirus IC50 (μg/mL)
+Class 1
+Class 2/3
+Class 3
+Class 4
+Class 2
+Omicron specific (BA.1-elicited)
+Omicron specific (BA.2-elicited)
+Omicron specific (BA.5-elicited)
+NTD-targeting NAbs
+IC50 Fold change compared to BA.2
+0.1
+1
+10
+10 0.010.20 2.3 0.98 2.6 4.2 6.4 4.3 8.6
+***
+***
+***
+***
+***
+***
+***
+***
+19x 230x 95x 260x520x650x530x870x
+D614G
+BA.1
+BA.2
+BA.5
+BA.2.75
+BA.2.75.2
+CA.1
+BQ.1.1
+BM.1.1.1
+XBB
+10 0.380.050.93 1.1 3.0 3.2 3.2 3.6 4.8
+***
+***
+***
+***
+***
+***
+***
+***
+12x
+36x 44x 150x160x160x180x260x
+D614G
+BA.1
+BA.2
+BA.5
+BA.2.75
+BA.2.75.2
+CA.1
+BQ.1.1
+BM.1.1.1
+XBB
+10
+8.1 3.2 0.70 3.0 3.3 3.7 3.4 3.9 4.8
+***
+***
+***
+***
+***
+***
+***
+***
+68x 14x
+12x 15x 18x 15x 19x 27x
+D614G
+BA.1
+BA.2
+BA.5
+BA.2.75
+BA.2.75.2
+CA.1
+BQ.1.1
+BM.1.1.1
+XBB
+BA.4/5
+BA.2.75
+BU.1
+BA.2.3.20
+BA.2.10.4
+BN.2.1
+XBB
+XBB.1
+BA.2+K147E
+BA.2+W152R
+BA.2+Y144del
+BA.2+V83A
+BA.2+R237T
+BA.2+F157L
+BA.2+H146Q
+BA.2+P251H
+BA.2+D138N
+BA.2+V213E
+BA.2+A264T
+BA.2+G257S
+BA.2+Q183E
+BA.2+I210T
+BA.2+I210V
+mAbs
+variants
+0.14
+BA.2
+0.13
+BA.2+N417T
+0.07***
+BA.2+R493Q
+0.15
+BA.2+N460K
+0.15
+BA.2+L455S
+0.20***
+BA.2+F486V
+0.21***
+BA.2+F486S
+0.15
+BA.2+F490S
+0.15
+BA.2+S494P
+0.15
+BA.2+G446S
+0.15
+BA.2+N450D
+0.15
+BA.2+K444T
+0.16*
+BA.2+K444N
+0.16*
+BA.2+V445A
+0.14
+BA.2+L452R
+0.14
+BA.2+R346T
+0.15
+BA.2+K356T
+0.14
+BA.2+D339H
+0.07***
+BA.2.75
+0.12*
+BA.4/5
+0.13
+BA.5+N460K
+0.11**
+BA.5+N417T+N460K
+0.14
+BA.5+K444T
+0.17**
+BA.5+K444N
+0.13
+BA.5+R346T
+0.17**
+BA.5+K444N+R346T
+0.15
+0.14
+0.16
+0.15
+0.17*
+0.1
+0.2
+0.3
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+a
+b
+c
+d
+e
+f
+g
+BA.2.75
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+BA.2.75
+COV2-
+2196+2130
+REGN10933
++10987
+BRII-196
++198
+S309
+LY-CoV
+1404
+SA55+SA58
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+69−70del
+K147E
+W152R
+F157L
+I210V
+I210T
+R237T
+G257S
+G339D
+G339H
+R346T
+K356T
+K417N
+K417T
+K444N
+K444T
+K444M
+G446S
+L452R
+N460K
+F486V
+IC50 of hACE2 (μg/mL)
+CoronaVac × 3
+CoronaVac × 3 → BA.1 infection
+CoronaVac × 3 → BA.2 infection
+CoronaVac × 3 → BA.5 infection
+Plasma NT50
+Plasma NT50
+Plasma NT50
+Plasma NT50
+410
+121
+3861
+672
+2.2
+10
+461
+194
+2714
+424
+4.0
+8.2
+679
+170
+3160
+564
+*
+10
+428
+148
+2396
+1552
+*
+10
+*
+*
+*
+2503
+*
+10
+*
+*
+*
+*
+*
+8.5
+*
+*
+*
+*
+*
+14
+*
+*
+*
+*
+*
+9.3
+*
+*
+*
+*
+*
+10
+709
+40
+*
+1055
+0.8
+4.5
+*
+*
+9228
+1395
+1504
+9.3
+*
+*
+7755
+2957
+*
+7.3
+*
+*
+*
+3663
+*
+8.5
+*
+*
+*
+*
+*
+13
+*
+*
+*
+*
+*
+7.5
+*
+*
+*
+*
+*
+10
+*
+*
+*
+*
+*
+11
+*
+*
+*
+*
+*
+9.2
+0.15*
+BA.5−S8
+0.15*
+BA.5−S7
+0.14*
+BA.5−S6
+0.15**
+BA.5−S5
+0.16*
+BA.5−S4
+0.15*
+BA.5−S3
+0.17***
+BA.5−S2
+0.17**
+BA.5−S1
+0.12
+BA.5
+0.15***
+BA.2.75−S8
+0.16***
+BA.2.75−S7
+0.15***
+BA.2.75−S6
+0.17***
+BA.2.75−S5
+0.17***
+BA.2.75−S4
+0.09*
+BA.2.75−S3
+0.10**
+BA.2.75−S2
+0.07
+BA.2.75−S1
+0.07
+BA.2.75
+0.1
+0.2
+Figure 5
+L452R
+K444M
+R346T
+F486V
+K444N
+R346T
+N460K
+K356T
+L452R
+K444M
+R346T
+F486V
+K444N
+R346T
+N460K
+K356T
+L452R
+K444M
+R346T
+F486V
+K444N
+R346T
+N460K
+K356T
+L452R
+K444M
+R346T
+F486V
+K444N
+R346T
+N460K
+K356T
+Pseudovirus IC50 (ng/mL)
+<100
+100~1,000
+>1,000
+* >10,000
+652
+122 130
+90
+44
+30
+26
+20
+20
+20
+20
+20
+72
+40
+27
+24
+21
+21
+21
+20
+20
+41
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+BA.2.75
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+SARS−CoV−1
+***
+2.0x
+NS NS NS NS
+***
+1.5x ***
+1.4x ***
+1.3x
+NS NS NS NS
+2.0x 1.5x 1.1x 1.1x
+1557
+852 452
+197
+117 88
+61
+24
+22
+23
+22
+22
+107
+51
+34
+28
+24
+25
+25
+23
+22
+79
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+BA.2.75
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+SARS−CoV−1
+***
+1.7x
+NS
+NS
+***
+1.3x ***
+1.4x ***
+2.5x **
+1.1x
+*
+1.0x
+NS NS NS NS
+***
+2.1x ***
+1.5x ***
+1.2x ***
+1.2x
+1245
+282 696 217 99
+63
+49
+22
+22
+22
+20
+20
+175 62
+49
+39
+33
+32
+33
+22
+20
+25
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+BA.2.75
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+SARS−CoV−1
+NS
+NS
+***
+2.8x ***
+1.3x ***
+1.3x ***
+1.2x
+***
+1.5x
+NS
+***
+1.2x
+NS
+NS
+***
+1.6x ***
+1.3x ***
+2.2x NS
+NS
+1136
+209
+729
+145 121
+69
+40
+31
+27
+27
+24
+25
+508 191 126
+68
+46
+46
+47
+27
+25
+29
+101
+102
+103
+104
+D614G
+BA.1
+BA.2
+BA.2.75
+BA.2.75−S1
+BA.2.75−S2
+BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S5
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+BA.5
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+SARS−CoV−1
+***
+NS
+NS
+NS
+***
+1.8x 1.7x
+***
+2.7x ***
+1.5x ***
+1.9x ***
+1.5x
+***
+1.3x
+***
+1.7x
+NS
+***
+1.2x
+**
+1.1x
+**
+1.1x
+**
+1.1x
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+Extended Data Fig 1
+IC50 of hACE2 (μg/mL)
+b
+a
+0.16
+BE.4.1.1
+0.13
+BA.5.6.4
+0.14
+BA.5.9
+0.15
+BA.4.7
+0.15
+BA.5.5.1
+0.17
+BA.5.1.12
+0.17*
+BA.5.2.7
+0.15
+BF.16
+0.12*
+BA.4/5
+0.16
+BM.1.1
+0.17**
+CH.1
+0.16
+BM.1
+0.10***
+BR.1
+0.09***
+BL.1
+0.08***
+BN.2.1
+0.08***
+BA.2.75.5
+0.07***
+BA.2.75.4
+0.07***
+BA.2.75
+0.16
+BJ.1
+0.13
+BA.2.80
+0.15
+BA.2.79
+0.15
+BA.2.77
+0.13
+BA.2.76
+0.12*
+BA.2.74
+0.16*
+BA.2.38.1
+0.11**
+BA.2.10.4
+0.14
+BA.2
+0.1
+0.2
+Pseudovirus IC50 (ng/mL)
+<100
+100~1,000
+>1,000
+* >10,000
+Pango
+lineages
+REGN
+10933
+REGN
+10987
+REGN10933
++10987
+COV2
+-2196
+COV2
+-2130
+COV2-
+2196+2130
+BRII-
+196
+BRII-
+198
+BRII-
+196+198 S309 DXP-
+604
+LY-CoV
+1404
+SA58 SA55 SA55+
+SA58
+Additional RBD
+mutations
+BA.2
+*
+590
+821
+4312
+6.3
+8.2
+8530 8990
+8610
+852
+219
+0.9
+5.1
+7.2
+7.8
+BA.2.10.4
+*
+*
+*
+*
+289
+501
+2109 7990
+3984
+706
+6348
+1.3
+4.3
+4.9
+5.0
+G446S+F486P+R493Q+
+S494P
+BA.2.38.1
+*
+*
+*
+3391
+*
+4736
+4571
+*
+6212
+876
+33
+1504
+83
+11
+13
+N417T+K444N
+BA.2.74
+*
+2250
+3211
+3214
+*
+4300
+6780
+*
+*
+4943
+191
+2.6
+293
+4.2
+6.9
+R346T+L452M
+BA.2.76
+*
+2336
+4241
+3162
+*
+5450
+6021
+*
+*
+6303
+181
+1.3
+376
+3.8
+5.2
+R346T
+BA.2.77
+*
+657
+584
+4745
+24
+45
+7209
+*
+*
+*
+259
+0.9
+*
+4.6
+6.6
+K356R+L452R+E340K
+BA.2.79
+*
+3051
+7703
+3587
+3633
+3019
+3797
+*
+7767
+1023
+178
+14
+6.1
+7.2
+4.9
+N450D
+BA.2.80
+*
+2096
+2201
+4022
+*
+4133
+5096
+*
+7202
+*
+206
+1.0
+*
+6.2
+10
+R346T+K356R+E340K
+BJ.1
+*
+*
+*
+3076
+*
+5985
+7609
+*
+*
+709
+166
+*
+8163
+3.7
+8.6
+D339H+R346T+L368I+
+V445P+G446S+V483A+
+F490V
+BA.2.75
+278
+*
+410
+119
+352
+121
+1730 6622
+3861
+672
+5920
+2.2
+246
+4.3
+9.6
+BA.2.75.4
+249
+*
+461
+80
+*
+194
+1448
+*
+2714
+424
+6553
+4.0
+254
+4.0
+8.2
+L452R
+BA.2.75.5
+245
+*
+410
+101
+550
+188
+1590
+*
+3699
+4780 6691
+2.2
+3305
+4.8
+9.1
+K356T
+BN.2.1
+390
+*
+701
+59
+303
+109
+4101
+*
+8444
+6979 8901
+1.7
+4960
+5.7
+9.4
+K356T+F490S
+BL.1
+260
+*
+511
+93
+*
+174
+1251
+*
+3075
+508
+7193
+2.8
+7975
+6.3
+10
+R346T
+BR.1
+319
+*
+679
+117
+*
+170
+1992
+*
+3160
+564
+6689
+*
+1616
+5.9
+9.7
+L452R+K444M
+BM.1
+*
+*
+*
+*
+301
+563
+*
+*
+*
+796
+*
+1.9
+330
+7.0
+10
+F486S
+BM.1.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+879
+*
+2.3
+8823
+5.2
+8.9
+R346T+F486S
+CH.1
+*
+*
+*
+*
+*
+*
+*
+*
+*
+990
+*
+*
+*
+6.0
+10
+R346T+K444T+F486S
+BA.4/5
+*
+520
+709
+*
+23
+40
+7124
+*
+*
+1055 6264
+0.8
+3.9
+5.0
+4.5
+BF.16
+*
+883
+1863
+*
+48
+79
+4715
+*
+5507
+1575 7505
+2.7
+6.7
+3.3
+6.0
+K444R
+BA.5.2.7
+*
+*
+*
+*
+*
+*
+3701
+*
+6502
+1419 6263
+25
+63
+4.3
+9.6
+K444M
+BA.5.1.12
+*
+*
+*
+*
+1843
+4818
+3505
+*
+4849
+1752 8268
+98
+3.6
+3.4
+4.6
+V445A
+BA.5.5.1
+*
+1936
+2963
+*
+*
+*
+5023
+*
+8236
+1293 6807
+5.1
+17
+6.0
+8.0
+N450D
+BA.4.7
+*
+1362
+2420
+*
+*
+*
+3395
+*
+5209
+2899 5189
+1.4
+598
+3.8
+6.8
+R346S
+BA.5.9
+*
+2701
+3498
+*
+*
+*
+4023
+*
+7695
+4780 8360
+1.3
+404
+4.8
+8.7
+R346I
+BA.5.6.4
+*
+1096
+2291
+*
+*
+*
+3127
+*
+6669
+5598 7988
+0.9
+*
+3.8
+7.8
+R346E
+BE.4.1.1
+*
+5133
+*
+*
+*
+*
+3192
+*
+6042
+2764 6896
+8.4
+798
+4.8
+7.9
+R346T+K444R
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+Extended Data Fig 2
+a
+b
+c
+d
+Plasma NT50
+Plasma NT50
+Plasma NT50
+Plasma NT50
+CoronaVac × 3
+CoronaVac × 3 → BA.1 infection
+CoronaVac × 3 → BA.2 infection
+CoronaVac × 3 → BA.5 infection
+652 122 112 105 130 117 124 105
+79
+93
+75
+85
+74
+69
+44
+41
+36
+90
+44
+45
+30
+31
+32
+32
+26
+22
+21
+72
+53
+44
+48
+46
+48
+48
+43
+41
+34
+29
+24
+5.3x 5.8x 6.2x
+1.2x 1.6x 1.4x 1.7x 1.5x 1.8x 1.9x 2.9x 3.1x 3.6x
+2.0x 2.0x 3.1x 2.9x 2.8x 2.8x 3.4x 4.2x 4.3x
+1.4x 1.6x 1.5x 1.6x 1.5x 1.5x 1.7x 1.8x 2.1x 2.5x 3.0x
+***
+***
+***
+NS
+NS
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+**
+***
+***
+***
+***
+**
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.1.1
+BA.3
+BA.2
+BA.2.13
+BA.2.38
+BA.2.12.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BA.2.38.1
+BS.1.1
+BJ.1
+BA.2.10.4
+BA.2.75
+BA.2.75.4
+BA.2.75.5
+BR.1
+BL.1
+BN.2.1
+BA.2.75.6
+BA.2.75.7
+BM.1.1
+CH.1
+BA.4/5
+BA.5.5.1
+BA.5.6.2
+BA.5.9
+BA.5.2.7
+BF.16
+BA.5.1.12
+BA.4.7
+BA.5.6.4
+BA.4.6.1
+BE.4.1.1
+BU.1
+1557 852 786 518 452 400 443 244 205 267 212 221 194 173 123
+87
+73
+197 117 142
+88
+113 104 114
+59
+33
+25
+107
+78
+52
+71
+56
+60
+56
+65
+66
+59
+40
+31
+1.8x 2.0x 3.0x
+1.9x 2.2x 1.7x 2.1x 2.0x 2.3x 2.6x 3.7x 5.2x 6.2x
+1.7x 1.4x 2.2x 1.8x 1.9x 1.7x 3.3x 6.0x 7.9x
+1.4x 2.1x 1.5x 1.9x 1.8x 1.9x 1.6x 1.6x 1.8x 2.7x 3.4x
+***
+***
+***
+NS
+NS
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.1.1
+BA.3
+BA.2
+BA.2.13
+BA.2.38
+BA.2.12.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BA.2.38.1
+BS.1.1
+BJ.1
+BA.2.10.4
+BA.2.75
+BA.2.75.4
+BA.2.75.5
+BR.1
+BL.1
+BN.2.1
+BA.2.75.6
+BA.2.75.7
+BM.1.1
+CH.1
+BA.4/5
+BA.5.5.1
+BA.5.6.2
+BA.5.9
+BA.5.2.7
+BF.16
+BA.5.1.12
+BA.4.7
+BA.5.6.4
+BA.4.6.1
+BE.4.1.1
+BU.1
+1245 282 245 277 696 518 613 290 301 341 307 242 271 195 136 114 126 217
+99
+108
+63
+97
+80
+98
+57
+36
+24
+175
+90
+62
+103
+66
+69
+64
+94
+95
+67
+50
+33
+4.4x 5.1x 4.5x
+1.3x 1.1x 2.4x 2.3x 2.0x 2.3x 2.9x 2.6x 3.6x 5.1x 6.1x 5.5x
+2.2x 2.0x 3.5x 2.2x 2.7x 2.2x 3.8x 6.1x 9.0x
+1.9x 2.8x 1.7x 2.6x 2.5x 2.7x 1.9x 1.8x 2.6x 3.5x 5.3x
+***
+***
+***
+**
+*
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.1.1
+BA.3
+BA.2
+BA.2.13
+BA.2.38
+BA.2.12.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BA.2.38.1
+BS.1.1
+BJ.1
+BA.2.10.4
+BA.2.75
+BA.2.75.4
+BA.2.75.5
+BR.1
+BL.1
+BN.2.1
+BA.2.75.6
+BA.2.75.7
+BM.1.1
+CH.1
+BA.4/5
+BA.5.5.1
+BA.5.6.2
+BA.5.9
+BA.5.2.7
+BF.16
+BA.5.1.12
+BA.4.7
+BA.5.6.4
+BA.4.6.1
+BE.4.1.1
+BU.1
+1136 209 161 168 729 667 719 596 399 393 474 313 380 205 121 128 105 145 121
+91
+69
+87
+71
+89
+77
+48
+34
+508 241 195 218 190 228 206 203 191 139 127
+83
+5.4x 7.1x 6.8x
+1.1x
+1.2x 1.8x 1.9x 1.5x 2.3x 1.9x 3.5x 6.0x 5.7x 6.9x
+1.2x 1.6x 2.1x 1.7x 2.0x 1.6x 1.9x 3.0x 4.2x
+2.1x 2.6x 2.3x 2.7x 2.2x 2.5x 2.5x 2.7x 3.7x 4.0x 6.1x
+***
+***
+***
+**
+NS
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+101
+102
+103
+104
+D614G
+BA.1
+BA.1.1
+BA.3
+BA.2
+BA.2.13
+BA.2.38
+BA.2.12.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BA.2.38.1
+BS.1.1
+BJ.1
+BA.2.10.4
+BA.2.75
+BA.2.75.4
+BA.2.75.5
+BR.1
+BL.1
+BN.2.1
+BA.2.75.6
+BA.2.75.7
+BM.1.1
+CH.1
+BA.4/5
+BA.5.5.1
+BA.5.6.2
+BA.5.9
+BA.5.2.7
+BF.16
+BA.5.1.12
+BA.4.7
+BA.5.6.4
+BA.4.6.1
+BE.4.1.1
+BU.1
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+Extended Data Fig 3
+a
+b
+c
+cells
+63.7
+FSC-A
+SSC-A
+singlets1
+95.3
+FSC-H
+FSC-W
+singlets2
+99.3
+SSC-H
+SSC-W
+CD27+, IgM-, IgD-
+19.3
+IgM/IgD-PE/Cy7
+CD27-BV421
+live CD20+
+87.2
+CD20-FITC
+7-AAD
+BA.5 RBD+
+0.071
+BA.5 RBD-PE
+BA.5 RBD-APC
+WT RBD+
+0.024
+WT RBD-BV605
+CD20-FITC
+WT+ in BA.5+
+10.3
+WT RBD-BV605
+CD20-FITC
+cells
+88.7
+FSC-A
+SSC-A
+singlets1
+98.1
+FSC-H
+FSC-W
+singlets2
+99.7
+SSC-H
+SSC-W
+live CD20+
+85.3
+CD20-FITC
+7-AAD
+CD27+, IgM-, IgD-
+18.1
+IgM/IgD-PE/Cy7
+CD27-BV421
+BA.5 RBD+
+0.17
+BA.5 RBD-PE
+BA.5 RBD-APC
+WT+ in BA.5+
+61.4
+WT RBD-BV605
+CD20-FITC
+WT RBD+
+0.14
+WT RBD-BV605
+CD20-FITC
+BA.2 breakthrough infection (replicate) 
+BA.5 breakthrough infection (replicate) 
+BA.5 infection without previous vaccination
+singlets1
+96.8
+0
+20K 40K 60K 80K 100K
+FSC-H
+0
+20K
+40K
+60K
+80K
+100K
+FSC-W
+singlets2
+99.7
+0
+20K 40K 60K 80K 100K
+SSC-H
+0
+20K
+40K
+60K
+80K
+100K
+SSC-W
+live CD20+
+94.5
+CD20-FITC
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+100 101 102 103 104 105
+100
+101
+102
+103
+104
+105
+7-AAD
+CD27+, IgM-, IgD-
+31.1
+IgM/IgD-PE/Cy7
+CD27-BV421
+BA.2 RBD+
+0.071
+BA.2 RBD-PE
+BA.2 RBD-APC
+WT+ in BA.2+
+58.9
+WT RBD-BV605
+CD20-FITC
+WT RBD+
+0.057
+WT RBD-BV605
+CD20-FITC
+cells
+92.1
+0
+20K 40K 60K 80K 100K
+FSC-A
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K 40K 60K 80K 100K
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K 40K 60K 80K 100K
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K 40K 60K 80K 100K
+0
+20K 40K 60K 80K 100K
+0
+20K 40K 60K 80K 100K
+0
+20K 40K 60K 80K 100K
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K
+40K
+60K
+80K
+100K
+0
+20K
+40K
+60K
+80K
+100K
+SSC-A
+Q1
+86.2
+Q2
+13.8
+Q3
+0
+Q4
+0
+WT RBD-BV605
+BA.2 RBD-APC
+Q1
+31.6
+Q2
+68.4
+Q3
+0
+Q4
+0
+WT RBD-BV605
+BA.5 RBD-APC
+Q1
+35.1
+Q2
+64.9
+Q3
+0
+Q4
+0
+WT RBD-BV605
+BA.2 RBD-APC
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+Extended Data Fig 4
+a
+b
+0.001
+0.1
+10
+IC50 (μg/mL)
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+������������������������
+Source
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+WT elicited
+BA.1 elicited
+BA.2 elicited
+BA.5 elicited
+***
+NS ***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+10��
+10��
+10��
+100
+101
+NS NS NS
+***
+***
+***
+***
+***
+***
+***
+*
+***
+***
+***
+**
+*
+NS ***
+*
+NS NS
+10��
+10��
+10��
+100
+101
+*
+*
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+***
+NS
+**
+**
+***
+*
+NS
+10��
+10��
+10��
+100
+101
+Epitope group A
+Epitope group B
+Epitope group C
+Extended Data Fig 5
+Group A (WT)
+Group A (BA.1)
+Group A (BA.2)
+Group A (BA.5)
+K D L F N I Y AGE F N YQN
+ND L F N I Y AGA F N Y R Y
+ND L F K I Y AGA F N YQY
+ND L F K I Y AGA S N YQY
+ND L F K I Y AGA V N YQY
+ND L F K I Y AGA F N YQY
+ND L F N I Y AGA F N Y R Y
+ND L F N I Y AGA V N YQY
+417
+420
+455
+456
+460
+472
+473
+475
+476
+484
+486
+487
+489
+493
+501
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group B (WT)
+Group B (BA.1)
+Group B (BA.2)
+Group B (BA.5)
+K L F I Y AGS T V EG F N Y
+N L F I Y AGN K V AG F N Y
+N L F I Y AGN K V AG F N Y
+N L F I Y AGN K V AGS N Y
+N L F I Y AGN K V AGV N Y
+N L F I Y AGN K V AG F N Y
+N L F I Y AGN K V AG F N Y
+N L F I Y AGN K V AGV N Y
+417
+455
+456
+472
+473
+475
+476
+477
+478
+483
+484
+485
+486
+487
+489
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group C (WT)
+Group C (BA.1)
+Group C (BA.2)
+Group C (BA.5)
+GN Y L F T I C V EG F QSG
+GN Y L F T I C V AG F R S S
+GN Y L F T I C V AG F QSG
+GN Y L F T I C V AG F QSG
+GN Y R F T I C V AG F QSG
+GN Y R F T I C V AG F QSG
+GN Y L F T I C V AG F R SG
+GN Y R F T I C V AG F QSG
+447
+448
+449
+452
+456
+470
+472
+480
+483
+484
+485
+490
+493
+494
+496
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+a
+b
+c
+d
+180°
+180°
+180°
+N460
+K417
+L455
+F456
+A475
+N487
+F486
+F486
+E484
+F490
+G485
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+������������������������
+Source
+WT elicited
+BA.1 elicited
+BA.2 elicited
+BA.5 elicited
+***
+**
+**
+***
+***
+***
+***
+***
+***
+*
+*
+***
+***
+***
+***
+NS NS NS
+**
+***
+***
+10��
+10��
+10��
+100
+101
+*
+NS
+**
+*** NS NS
+***
+**
+NS
+***
+**
+NS
+*** NS NS
+NS NS
+*
+NS
+*
+NS
+10��
+10��
+10��
+100
+101
+NS NS NS
+*
+NS
+**
+*
+NS
+**
+**
+NS ***
+**
+NS
+**
+NS NS NS
+NS
+*
+**
+10��
+10��
+10��
+100
+101
+Epitope group D1
+Epitope group D2
+Epitope group E1 
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+Extended Data Fig 6
+180°
+180°
+180°
+a
+b
+c
+d
+Group D1 (WT)
+Group D1 (BA.1)
+Group D1 (BA.2)
+Group D1 (BA.5)
+RA KGGNYN L T I E F SG
+RA K SGNYN L T I A F S S
+RA K SGNYN L T I A F SG
+T A K SGNYN L T I A F SG
+T A TGGNYNR T I A F SG
+RAMSGNYNR T I A F SG
+RA KGGNYN L T I A F SG
+RA KGGNYNR T I A F SG
+346
+352
+444
+446
+447
+448
+449
+450
+452
+470
+472
+484
+490
+494
+496
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group D2 (WT)
+Group D2 (BA.1)
+Group D2 (BA.2)
+Group D2 (BA.5)
+RS F N L S K VGGNNP T V
+R L F N L S K V SGNNP T V
+R F F N L S K V SGNNP T V
+T F F N L S K V SGNNP T V
+T F F N L S T VGGNNP T V
+R F F N L SMV SGNNP T V
+R F F N L S K VGGNNP T V
+R F F N L S K VGGNNP T V
+346
+371
+374
+439
+441
+443
+444
+445
+446
+447
+448
+450
+499
+500
+503
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group E1 (WT)
+Group E1 (BA.1)
+Group E1 (BA.2)
+Group E1 (BA.5)
+L G E A T R A K N L K GN N
+L D E A T R A K K L K GN N
+L H E A T R A K K L K GN N
+L H E A T T A K K L K GN N
+L D E A T T A K K L T GN N
+L H E A T R A K K L MGN N
+L D E A T R A K K L K GN N
+L D E A T R A K K L K GN N
+335
+339
+340
+344
+345
+346
+348
+356
+440
+441
+444
+447
+448
+450
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+E484
+F490
+L452
+K444
+K444
+G446
+V445
+P499
+R346
+R346
+T345
+G339
+E340
+N450
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+������������������������
+Source
+WT elicited
+BA.1 elicited
+BA.2 elicited
+BA.5 elicited
+*
+**
+NS
+***
+***
+**
+***
+***
+**
+***
+***
+***
+***
+***
+**
+NS NS NS
+**
+**
+***
+10��
+10��
+10��
+100
+101
+**
+NS
+*
+NS NS NS
+NS NS NS
+NS NS ***
+NS NS NS
+***
+*
+***
+***
+*
+***
+10��
+10��
+10��
+100
+101
+*
+*
+NS
+NS NS NS
+NS NS NS
+NS NS
+*
+NS NS NS
+NS NS NS
+*
+NS
+*
+10��
+10��
+10��
+100
+101
+Epitope group E2.1
+Epitope group E2.2
+Epitope group E3
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+D614G
+BA.1
+BA.2
+������
+BA.2.75
+BQ.1.1
+XBB
+Extended Data Fig 7
+a
+b
+c
+180°
+180°
+180°
+Group E2.1 (WT)
+Group E2.1 (BA.1)
+Group E2.1 (BA.2)
+Group E2.1 (BA.5)
+R F A S ANKRN L I T E F
+R F A S ANKRN L I T A F
+R F A S ANKRN L I T A F
+T F A S ANKRN L I T A F
+T F A S ANKRNR I T A F
+R F A S ANKRNR I T A F
+R F A S ANKRN L I T A F
+R F A S ANKRNR I T A F
+346
+347
+348
+349
+352
+354
+356
+357
+450
+452
+468
+470
+484
+490
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group E2.2 (WT)
+Group E2.2 (BA.1)
+Group E2.2 (BA.2)
+Group E2.2 (BA.5)
+RAANKRYP L I TE I EF
+RAANKRYP L I TE I AF
+RAANKRYP L I TE I AF
+TAANKRYP L I TE I AF
+TAANKRYPR I TE I AF
+RAANKRYPR I TE I AF
+RAANKRYP L I TE I AF
+RAANKRYPR I TE I AF
+346
+348
+352
+354
+356
+357
+396
+426
+452
+468
+470
+471
+472
+484
+490
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+Group E3 (WT)
+Group E3 (BA.1)
+Group E3 (BA.2)
+Group E3 (BA.5)
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+R C T N Y D D K S E L H
+357
+391
+393
+394
+396
+427
+428
+462
+514
+516
+518
+519
+BR.1
+BA.2.75.2
+BA.2.75
+BQ.1.1
+BA.4/5
+BA.2
+BA.1
+WT
+d
+R346
+I468
+I468
+K462
+A348
+A352
+K356
+K356
+R357
+R357 D428
+C391
+Y396
+L518
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+346
+354
+356
+405
+408
+417
+444
+445
+450
+452
+455
+460
+468
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+408
+417
+444
+445
+446
+450
+452
+455
+460
+484
+486
+490
+493
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+417
+444
+445
+450
+452
+455
+460
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+417
+444
+445
+449
+450
+452
+455
+468
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+346
+356
+417
+444
+445
+446
+450
+455
+460
+484
+486
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+Extended Data Fig 8
+a
+b
+c
+d
+346
+356
+417
+444
+445
+446
+450
+452
+455
+460
+468
+484
+486
+490
+499
+331
+336
+341
+346
+351
+356
+361
+366
+371
+376
+381
+386
+391
+396
+401
+406
+411
+416
+421
+426
+431
+436
+441
+446
+451
+456
+461
+466
+471
+476
+481
+486
+491
+496
+501
+506
+511
+516
+Normalized weighted escape score
+Normalized weighted escape score
+Normalized weighted escape score
+Normalized weighted escape score
+mAbs from WT infection/vaccination - weighted by IC50 against D614G
+mAbs from BA.1 - weighted by IC50 against BA.1
+mAbs from WT/BA.1 - weighted by IC50 against BA.2
+mAbs from WT/BA.1/BA.2 - weighted by IC50 against BA.2
+mAbs from WT/BA.1/BA.2 - weighted by IC50 against BA.2.75
+mAbs from WT/BA.1/BA.2 - weighted by IC50 against BA.5
+RBD residues
+RBD residues
+RBD residues
+RBD residues
+346
+356
+417
+444
+445
+450
+452
+460
+468
+484
+486
+490
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+A
+B
+C
+D1
+D2
+E1
+E2.1
+E2.2
+E3
+CH.1.1 (BA.2.75+R346T+K444T+L452R+F486S)
+XBB
+BQ.1.1 (BA.5+R346T+K444T+N460K)
+BA.5+D339H+R346T+K356T+N417T+K444T+N460K
+BA.5+D339H+R346T+K356T+N417T+K444N+N460K
+BA.5+K444N+R346T
+BA.5+R346T
+BA.5+K444N
+BA.5+K444T
+BA.5+N417T+N460K
+BA.5+N460K
+BA.4/5
+BA.2.75
+BA.2+D339H
+BA.2+K356T
+BA.2+R346T
+BA.2+L452R
+BA.2+V445A
+BA.2+K444N
+BA.2+K444T
+BA.2+N450D
+BA.2+G446S
+BA.2+S494P
+BA.2+F490S
+BA.2+F486S
+BA.2+F486V
+BA.2+L455S
+BA.2+N460K
+BA.2+R493Q
+BA.2+N417T
+BA.2
+log10 (IC50/ug mL)
+−3
+−2
+−1
+0
+1
+XG2v−104
+XG2v−037
+XGv−283
+XGv−006
+XGv−108
+XGv−330
+XGv−280
+XGv−015
+XGv−163
+XGv−183
+XG2v−024
+XGv−411
+XG2v−025
+XGv−378
+BA.2
+BA.4/5
+BA.2.75
+BU.1
+BA.2.3.20
+BA.2.10.4
+BN.2.1
+XBB
+XBB.1
+BA.2+K147E
+BA.2+W152R
+BA.2+Y144del
+BA.2+V83A
+BA.2+R237T
+BA.2+F157L
+BA.2+H146Q
+BA.2+P251H
+BA.2+D138N
+BA.2+V213E
+BA.2+A264T
+BA.2+G257S
+BA.2+Q183E
+BA.2+I210T
+BA.2+I210V
+Extended Data Fig 9
+mAbs
+variants
+a
+b
+c
+Class 1
+Class 2/3
+Class 3
+Class 4
+Class 2
+NTD-targeting mAbs
+BA.2 NTD
+90°
+α
+β
+Q183
+I210
+P251
+Y144
+F157
+H146
+K147
+W152
+A264
+α
+γ
+δ
+D138
+Y144
+F157
+W152
+K147
+H146
+R237
+V83
+P251
+G257
+Q183
+G213
+A264
+IC50 (μg/mL)
+0
+10
+20
+30
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
+Extended Data Fig 10
+a
+b
+non−Omicron
+BA.1*
+BA.2*
+BA.2.75*
+BA.2.75−S
+BA.3*
+BA.4/5*
+BA.5−S
+SARS−CoV−1
+D614G
+BA.1
+BA.2
+BA.2.10.4
+BA.2.3.20
+BA.5
+BA.2.38.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BJ.1
+BS.1.1
+XBC
+XBB XBB.1
+BM.1.1.1
+CJ.1
+BA.2.75
+BL.1
+BA.2.75.2
+CA.1
+CA.2
+CH.1
+CH.1.1
+BA.2.75.7
+BR.2
+BM.1.1
+BA.2.75.5
+BN.1
+BN.2.1
+BA.2.75.6
+BF.7
+BA.4.6.1
+BA.5.6.2
+BA.5.2.7
+BF.16
+BE.4.1.1
+BA.5.1.12
+BA.5.5.1
+BU.1
+BQ.1
+BQ.1.1
+BQ.1.18
+BA.4.6.3
+SARS−CoV−1
+Alpha
+Beta
+Gamma
+Delta
+BA.1.1
+BA.3
+BA.2.13
+BA.2.12.1
+BA.2.38
+BA.5.9
+BA.4.7
+BA.5.6.4
+BA.5−S1
+BA.5−S2
+BA.5−S3
+BA.5−S4
+BA.5−S5
+BA.5−S6
+BA.5−S7
+BA.5−S8
+BA.2.75−S1
+BA.2.75−S2 BA.2.75−S3
+BA.2.75−S4
+BA.2.75−S6
+BA.2.75−S7
+BA.2.75−S8
+−4
+0
+4
+−30
+−20
+−10
+0
+10
+PC_1
+PC_2
+D614G
+BA.1
+BA.2
+BA.2.10.4
+BA.2.3.20
+BA.5
+BA.2.38.1
+BA.2.74
+BA.2.76
+BA.2.77
+BA.2.79
+BA.2.80
+BJ.1
+BS.1.1
+XBC
+XBB XBB.1
+BM.1.1.1
+CJ.1
+BA.2.75
+BL.1
+BA.2.75.2
+CA.1
+CA.2
+CH.1
+CH.1.1
+BA.2.75.7
+BR.2
+BM.1.1
+BA.2.75.5
+BN.1
+BN.2.1
+BA.2.75.6
+BF.7
+BA.4.6.1
+BA.5.6.2
+BA.5.2.7
+BF.16
+BE.4.1.1
+BA.5.1.12
+BA.5.5.1
+BU.1
+BQ.1
+BQ.1.1
+BQ.1.18
+BA.4.6.3
+SARS−CoV−1
+Alpha
+Beta
+Gamma
+Delta
+BA.1.1
+BA.3
+BA.2.13
+BA.2.12.1
+BA.2.38
+BA.5.9
+BA.4.7
+BA.5.6.4
+−4
+0
+4
+−20
+−10
+0
+10
+PC_1
+PC_2
+.
+CC-BY-NC-ND 4.0 International license
+perpetuity. It is made available under a
+preprint (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in 
+The copyright holder for this
+this version posted October 30, 2022. 
+; 
+https://doi.org/10.1101/2022.09.15.507787
+doi: 
+bioRxiv preprint 
