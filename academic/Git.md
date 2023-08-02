@@ -53,6 +53,15 @@ git config --remove-section submodule.surveiller
 git update-index --chmod=+x 
 ```
 
+## Delete File from History
+
+
+```
+wget https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo
+python git-filter-repo --analyze
+python git-filter-repo --invert-paths --path <path to the file or directory>
+```
+
 ## Auto Update
 
 
