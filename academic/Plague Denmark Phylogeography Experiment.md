@@ -35,7 +35,7 @@ Part 2.
 ## Objectives
 
 1. Estimate a [[Maximum-likelihood\|maximum-likelihood]] [[Phylogenetic\|phylogeny]] of [[Second Pandemic]] [[Plague]] genomes.
-1. Estimate a clock model and geographic model using [[BEAST]].
+1. Estimate a clock model and geographic model using [[obsidian-public/academic/BEAST]].
 
 ---
 ## Outline
@@ -143,7 +143,7 @@ The output multiple alignment was filtered to only include chromosomal regions, 
 ---
 ### [[Maximum-likelihood]] [[Phylogenetic|Tree]]
 
-Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[IQTREE]] using a K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation  [[Hoang 2018 UFBoot2 Improving Ultrafast|UFBoot]], with a threshold of 95% required for strong support.
+Model selection was performed using [[Modelfinder]] and a [[Maximum-likelihood|maximum-likelihood]] tree was estimated across 10 independent runs of [[obsidian-public/academic/IQTREE]] using a K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the ultrafast bootstrap approximation  [[Hoang 2018 UFBoot2 Improving Ultrafast|UFBoot]], with a threshold of 95% required for strong support.
 
 ```bash
 snakemake iqtree_filter_all --profile profiles/infoserv

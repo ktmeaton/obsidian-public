@@ -18,7 +18,7 @@ mamba create -n beast1 -c bioconda beast=1.10.4
 ### Inputs
 
 #### Tree
-1. What kind of [[Nexus]] format does [[BEAST#BEAST1|BEAST1]] need?
+1. What kind of [[Nexus]] format does [[obsidian-public/academic/BEAST#BEAST1|BEAST1]] need?
   - Rooted, bifurcating (binary) trees.
   - Confidence values?
   - Internally named nodes?
@@ -73,12 +73,12 @@ to:
 
 ## BEAST2
 
-Bayesian Evolutionary Analysis by Sampling Trees ( [[BEAST|BEAST]] ).
+Bayesian Evolutionary Analysis by Sampling Trees ( [[obsidian-public/academic/BEAST|BEAST]] ).
 
 
 #### Alignment
 
-1. [[BEAST#BEAST2|BEAST2]] needs an alignment in [[Nexus]] or [[FASTA]] format.
+1. [[obsidian-public/academic/BEAST#BEAST2|BEAST2]] needs an alignment in [[Nexus]] or [[FASTA]] format.
 
 #### Tree
 
@@ -141,7 +141,7 @@ C:/users/ktmea/Programs/BEAST_with_JRE.v2.6.2.Windows/bat/beast.bat -seed 115479
 beast -beagle_info
 ```
 
-- To use beagle with the [[BEAST]] GUI, you have to download the BEAST version that includes the JRE.
+- To use beagle with the [[obsidian-public/academic/BEAST]] GUI, you have to download the BEAST version that includes the JRE.
 - But using my NVIDIA GPU was 3X slower.
 
 ### Packages

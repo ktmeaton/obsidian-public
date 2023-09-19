@@ -19,10 +19,10 @@ aliases:
 
 This paper was cited by [[Duchene et al. 2020 Impact Early Public|Duchene et al. 2020]].
 
-The authors propose a [[Phylodynamics]] workflow for large and complex genomic datasets. While Bayesian [[Phylogeography|phylogeographic]] inference is the gold standard, this approach is extremely computationally intensive. Instead, the authors advocate using [[TreeTime]] to create an initial time-scaled tree, which is then used as a fixed empirical tree for [[BEAST]] phylogeography inference.
+The authors propose a [[Phylodynamics]] workflow for large and complex genomic datasets. While Bayesian [[Phylogeography|phylogeographic]] inference is the gold standard, this approach is extremely computationally intensive. Instead, the authors advocate using [[obsidian-public/academic/TreeTime]] to create an initial time-scaled tree, which is then used as a fixed empirical tree for [[obsidian-public/academic/BEAST]] phylogeography inference.
 
 Workflow steps:
-1. Create a time-scaled phylogeny with [[TreeTime]].
+1. Create a time-scaled phylogeny with [[obsidian-public/academic/TreeTime]].
 1. Run a preliminary discrete phylogeographic analysis to count the introduction. This was done as a binary (internal Belgium, outside). MCMC chain on empiricla tree for 10^6 generations, sampled every 1000.
 1. Run a continuous phylogeography analysis, using [[Relaxed Random Walk]].
 1. Perform distinct continuous phylogeography on each clade with a subtree.

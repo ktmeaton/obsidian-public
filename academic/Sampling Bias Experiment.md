@@ -246,7 +246,7 @@ style 11 fill:#2ca02c,stroke:#333,stroke-width:1px,fill-opacity:0.25
 1. Manually delete geo trait lines that are missing data in xml.
 1. Manually change storing and logging frequency in xml.
 
-###### [[BEAST]]
+###### [[obsidian-public/academic/BEAST]]
 1. Run the analysis (locally: ~50min):
 	```bash
 	beast -seed 1154791454 -threads 4 -beagle_SSE -beagle_double modern.xml | tee modern_screen.log

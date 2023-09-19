@@ -34,7 +34,7 @@ time: 08:00
 
 
 
-### [[BEAST]] and MCMC (Markov Chain Monte Carlo)
+### [[obsidian-public/academic/BEAST]] and MCMC (Markov Chain Monte Carlo)
 
 #### Algorithms
 
@@ -63,7 +63,7 @@ icon: dog
 ---
 
 - Stepping Stone Sampling
-- [[BEAST]] v1 vs v2
+- [[obsidian-public/academic/BEAST]] v1 vs v2
 - Marginal Likelihood
 
 #### Model Comparison

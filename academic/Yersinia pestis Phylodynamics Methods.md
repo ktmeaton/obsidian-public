@@ -116,7 +116,7 @@ done;
 	conda activate beast2
 	cd beast/all/chromosome/full/filter5/
 	```
-1. Increase [[BEAST]] memory.
+1. Increase [[obsidian-public/academic/BEAST]] memory.
 	```bash
 	sed -i 's/Xmx8g/Xmx24g/g' ~/miniconda3/envs/beast2/bin/beast
 	```  

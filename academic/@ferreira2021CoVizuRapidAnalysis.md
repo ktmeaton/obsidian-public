@@ -74,7 +74,7 @@ tags: 📰
 
 1. A divergence tree is estimated with [[FastTree]]. 
 1. Internal nodes with a parametric bootstrap support below 50 per cent are collapsed into polytomies.
-1. A time-tree is estimated using [[TreeTime]], with a clock rate of (8×10−4 substitutions/site/year and retaining polytomies.
+1. A time-tree is estimated using [[obsidian-public/academic/TreeTime]], with a clock rate of (8×10−4 substitutions/site/year and retaining polytomies.
 1. The final tree is serialized into the Newick tree format with terminal nodes labeled by Pango lineage.
 > This tree can be downloaded from the [[@ferreira2021CoVizuRapidAnalysis|CoVizu]] webapp. Example: [[covizu_timetree.nwk]].
 

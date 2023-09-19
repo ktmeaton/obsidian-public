@@ -24,8 +24,8 @@ This page explores [[Phylogeography]], particularly the [[Geographic Origin]](s)
 
 ## Tools
 
-- [[TreeTime]]
-- [[BEAST]]
+- [[obsidian-public/academic/TreeTime]]
+- [[obsidian-public/academic/BEAST]]
 - [[spreaD3]]
 
 ## Ideas

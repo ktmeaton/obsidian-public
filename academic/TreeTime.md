@@ -2,7 +2,7 @@
 
 ## Summary
 
-[[TreeTime]] can infer an [[Evolution|evolutionary model]], [[Root|reroot]]  a tree to maximize #[[Clock Model|temporal signal]], estimate a [[Timetree|timetree]], and a [[Tree Prior|population size history]] with the [[Tree Prior#Coalescent|coalescent]] and [[Tree Prior#Skyline|skyline]].
+[[obsidian-public/academic/TreeTime]] can infer an [[Evolution|evolutionary model]], [[Root|reroot]]  a tree to maximize #[[Clock Model|temporal signal]], estimate a [[Timetree|timetree]], and a [[Tree Prior|population size history]] with the [[Tree Prior#Coalescent|coalescent]] and [[Tree Prior#Skyline|skyline]].
 
 ---
 

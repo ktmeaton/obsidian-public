@@ -21,7 +21,7 @@ echo -e "Reference\t-29" >> /mnt/c/Users/ktmea/Projects/plague-phylogeography/re
 
 ## Notes
 
-When [[IQTREE]] runs [[LSD2]], the command looks like this:
+When [[obsidian-public/academic/IQTREE]] runs [[LSD2]], the command looks like this:
 
 ```bash
 lsd -i /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.subst -s 4246718 -o /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree -f 100 -e 3 -r a -d /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.date -g sdfsdf

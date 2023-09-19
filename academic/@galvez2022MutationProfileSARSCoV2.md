@@ -88,4 +88,4 @@ tags:
 
 ## [[Mutational Fitness]]
 
-- [[Mutational Fitness]] as used in [[NextStrain]]/[[obsidian-public/academic/Auspice]]/[[Augur]] originates from the [[@galvez2022MutationProfileSARSCoV2|pyro-cov]] model.
+- [[Mutational Fitness]] as used in [[Nextstrain]]/[[obsidian-public/academic/Auspice]]/[[Augur]] originates from the [[@galvez2022MutationProfileSARSCoV2|pyro-cov]] model.

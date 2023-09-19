@@ -88,7 +88,7 @@ Di = 1
 ## Reproduce
 
 1. Replicate a published phylogeographic analysis for the [[COVID-19|SARS-CoV-2 pandemic]].
-2. [[@alpert2021EarlyIntroductionsTransmission|Alpert et al. (2021)]] used [[BEAST|Bayesian]] [[Phylogeography|phylogeography]] to identify 23 distinct introductions of
+2. [[@alpert2021EarlyIntroductionsTransmission|Alpert et al. (2021)]] used [[obsidian-public/academic/BEAST|Bayesian]] [[Phylogeography|phylogeography]] to identify 23 distinct introductions of
 [[B.1.1.7]] into the [[United States]] as of [[2020-04-04|March 4th 2020]]. 
 3. Obtain their subsampled tree and applied our heuristic using country labels to define the relevant regions. 
 4. We exactly replicated their identified clusters . 

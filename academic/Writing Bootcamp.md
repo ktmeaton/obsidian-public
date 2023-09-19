@@ -60,7 +60,7 @@ LibGuides—Writing: https://libguides.mcmaster.ca/c.php?g=718509
 #### Goals
 
 - Update [[Ravneet Sidhu|Ravneet]] on [[Chromosome Resequencing Experiment|Chromosome Resequencing]].
-- Email [[Emil Karpinski|Emil]] about [[BEAST|BEAST]] run.
+- Email [[Emil Karpinski|Emil]] about [[obsidian-public/academic/BEAST|BEAST]] run.
 
 ### Wednesday
 

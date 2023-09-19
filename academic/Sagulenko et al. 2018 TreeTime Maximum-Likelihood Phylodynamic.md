@@ -11,7 +11,7 @@ tags:
 
 | Field   | Value                                                             |
 | ------- | ----------------------------------------------------------------- |
-| Title   | [[TreeTime]]: [[Maximum-likelihood]] [[Phylodynamics\|phylodynamic]] analysis. |
+| Title   | [[obsidian-public/academic/TreeTime]]: [[Maximum-likelihood]] [[Phylodynamics\|phylodynamic]] analysis. |
 | Year    | 2018                                                              |
 | Authors | Sagulenko et al.                                                  |
 | DOI     | <https://dx.doi.org/10.1093%2Fve%2Fvex042>                        |
@@ -19,11 +19,11 @@ tags:
 
 ## Summary
 
-This is the publication to accompany the tool [[TreeTime]].
+This is the publication to accompany the tool [[obsidian-public/academic/TreeTime]].
 
-The core of [[TreeTime|TreeTime's]] algorithm structure is iterative optimization. This includes estimation and optimization of branch lengths, ancestral sequences, parameters of a clock model, and parameters of the tree structure like the coalescent. When branches are short (ie. little ambiguity), this algorithm can achieve convergence in a short period of time.
+The core of [[obsidian-public/academic/TreeTime|TreeTime's]] algorithm structure is iterative optimization. This includes estimation and optimization of branch lengths, ancestral sequences, parameters of a clock model, and parameters of the tree structure like the coalescent. When branches are short (ie. little ambiguity), this algorithm can achieve convergence in a short period of time.
 
-Another useful feature is the ability to estimate joint and/or marginal likelihoods. A joint likelihood is the global configuration which has the highest likelihood. For example, after taking in consideration the tree topology, branch lengths, substitution model, date constraints etc. The marginal likelihood is used to estimate a single parameter after all other unknown states have been summed or integrated over. [[TreeTime]] operates on a fixed phylogeny (aside from polytomy resolution) so joint and marginal likelihood are for node dates and node ancestral sequences. 
+Another useful feature is the ability to estimate joint and/or marginal likelihoods. A joint likelihood is the global configuration which has the highest likelihood. For example, after taking in consideration the tree topology, branch lengths, substitution model, date constraints etc. The marginal likelihood is used to estimate a single parameter after all other unknown states have been summed or integrated over. [[obsidian-public/academic/TreeTime]] operates on a fixed phylogeny (aside from polytomy resolution) so joint and marginal likelihood are for node dates and node ancestral sequences. 
 
 ### Algorithm
 

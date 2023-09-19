@@ -32,7 +32,7 @@ iqtree \
  >- 11.5385% internal branches were collapsed.
  >- The estimated rate reaches the given lower bound. To change the lower bound, use option -t.
 
-This produces the exact same problem as with the [[clock rate being extremely small]] in [[BEAST|BEAST]].
+This produces the exact same problem as with the [[clock rate being extremely small]] in [[obsidian-public/academic/BEAST|BEAST]].
 
 
 ### Trees
@@ -65,7 +65,7 @@ This produces the exact same problem as with the [[clock rate being extremely sm
 grep -A 1 outliers lsd.log | tail -n 1 | awk '{for (i=1; i<=NF; i++){print $i}}'
 ```
 
-### [[BEAST]]
+### [[obsidian-public/academic/BEAST]]
 
 ```bash
 # info2020, screen "beast"

@@ -24,4 +24,4 @@ Pathogen spread analysis using the D3 javascript library.
 - But how about a distribution of trees?
 
 ---
-tags: [[Tool]], [[BEAST]]
+tags: [[Tool]], [[obsidian-public/academic/BEAST]]
